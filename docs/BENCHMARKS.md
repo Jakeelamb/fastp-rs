@@ -51,7 +51,7 @@ For each row: fixture (**A** or **B**), explicit **`-t N`** for both tools, comp
 
 ## CI
 
-**Every PR / `main` push:** **[`.github/workflows/ci.yml`](../.github/workflows/ci.yml)** — `cargo fmt --check`, `cargo test --locked`, `cargo clippy --locked --all-targets -- -D warnings`. Integration tests enforce **`contracts/report-json-v1.json`**, HTML smoke strings, and **`fixtures/a/`** golden FASTQ vs **`expected/`** (`tests/json_contract_and_html_smoke.rs`, `tests/golden_fixture_a.rs`).
+**Every PR / `main` push:** **[`.github/workflows/ci.yml`](../.github/workflows/ci.yml)** — `cargo fmt --check`, `cargo test --locked`, `cargo clippy --locked --all-targets -- -D warnings`. Integration tests enforce **`contracts/report-json-v1.json`**, HTML smoke strings, golden FASTQ **A** vs **`expected/`** (`tests/json_contract_and_html_smoke.rs`, `tests/golden_fixture_a.rs`), and **`tests/cli_smoke.rs`** (`--help` / `--version` on the `fastp-rs` binary).
 
 **Nightly / label / dispatch:** **[`.github/workflows/bench.yml`](../.github/workflows/bench.yml)** — SHA256-pinned upstream `fastp`, release `fastp-rs`, **`scripts/ci/bench_compare.sh`**. Job summary gets the markdown table from the script.
 
