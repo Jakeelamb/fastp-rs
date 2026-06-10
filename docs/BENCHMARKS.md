@@ -51,6 +51,8 @@ For each row: fixture (**A** or **B**), explicit **`-t N`** for both tools, comp
 
 ## CI
 
-Workflow: **[`.github/workflows/bench.yml`](../.github/workflows/bench.yml)** (nightly cron, `workflow_dispatch`, PRs on this repo with label **`bench`**). It builds `fastp-rs`, verifies the pinned upstream binary (see table above), and runs **`scripts/ci/bench_compare.sh`**. Job summary gets the markdown table from the script.
+**Every PR / `main` push:** **[`.github/workflows/ci.yml`](../.github/workflows/ci.yml)** — `cargo fmt --check`, `cargo test --locked`, `cargo clippy --locked --all-targets -- -D warnings`.
 
-Perf ratio jobs: **nightly** and when a PR has the **`bench`** label (exact string—configure workflows and contributor docs accordingly). Default PR CI does not block on these ratios.
+**Nightly / label / dispatch:** **[`.github/workflows/bench.yml`](../.github/workflows/bench.yml)** — SHA256-pinned upstream `fastp`, release `fastp-rs`, **`scripts/ci/bench_compare.sh`**. Job summary gets the markdown table from the script.
+
+Perf ratio jobs do **not** block default PR CI unless you add a gate later.

@@ -1,5 +1,8 @@
 # fastp-rs
 
+[![CI](https://github.com/Jakeelamb/fastp-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/Jakeelamb/fastp-rs/actions/workflows/ci.yml)
+[![Bench](https://github.com/Jakeelamb/fastp-rs/actions/workflows/bench.yml/badge.svg)](https://github.com/Jakeelamb/fastp-rs/actions/workflows/bench.yml)
+
 Rust implementation of a **fastp**-style FASTQ preprocessor, inspired by [OpenGene/fastp](https://github.com/OpenGene/fastp) (C++). Not affiliated with OpenGene; not a byte-for-byte reimplementation.
 
 See **[docs/PARITY.md](docs/PARITY.md)** for upstream vs fastp-rs coverage (threading, ISA-L, adapter auto-detect, and other gaps). Shared **parity** vocabulary (CLI strictness, hybrid output contract, perf SLO shape, CI gates, gold fixtures): **[CONTEXT.md](CONTEXT.md)**. Benchmark tables and pinned baseline fields (fill as numbers land): **[docs/BENCHMARKS.md](docs/BENCHMARKS.md)**. JSON report contract stubs: **[contracts/README.md](contracts/README.md)**.
@@ -65,11 +68,12 @@ fastp-rs -i big.fq.gz -o out.fq.gz --split 1000000
 ## Development
 
 ```bash
-cargo test
-cargo clippy --all-targets -- -D warnings
+cargo fmt --all -- --check
+cargo test --locked
+cargo clippy --locked --all-targets -- -D warnings
 ```
 
-Opt-in **perf / upstream-compare** CI (when workflows land) runs on **nightly** and on pull requests labeled **`bench`** (exact string). See **[docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)** for the full convention and links to [CONTEXT.md](CONTEXT.md) / [docs/BENCHMARKS.md](docs/BENCHMARKS.md).
+Default **CI** (badge above) runs on **every PR** and on **pushes to `main`**. Opt-in **Bench** runs on **nightly**, **`workflow_dispatch`**, and PRs labeled **`bench`**. See **[docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)** for details and [CONTEXT.md](CONTEXT.md) / [docs/BENCHMARKS.md](docs/BENCHMARKS.md).
 
 ## License
 

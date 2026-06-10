@@ -87,7 +87,8 @@ pub fn open_fastq_reader(path: &Path, opts: ReaderOptions) -> Result<FastqReader
     if path_is_stdio_dash(path) {
         if is_likely_gzip_path(path) {
             return Err(crate::Error::Config(
-                "stdin path '-' does not support .gz suffix; use --stdin-gzip or pipe plain FASTQ".into(),
+                "stdin path '-' does not support .gz suffix; use --stdin-gzip or pipe plain FASTQ"
+                    .into(),
             ));
         }
         if opts.stdin_gzip {

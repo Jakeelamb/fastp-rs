@@ -78,7 +78,14 @@ pub fn apply_pe_overlap_correction(
     max_mismatch_frac: f64,
 ) {
     let r2rc = reverse_complement(&r2.seq);
-    let Some(o) = find_best_overlap(r1, &r2rc, overlap_min, match_frac, max_mismatches, max_mismatch_frac) else {
+    let Some(o) = find_best_overlap(
+        r1,
+        &r2rc,
+        overlap_min,
+        match_frac,
+        max_mismatches,
+        max_mismatch_frac,
+    ) else {
         return;
     };
     for (i, &brc) in r2rc.iter().take(o).enumerate() {
@@ -115,7 +122,14 @@ pub fn try_merge_pe(
     }
     let r2rc = reverse_complement(&r2.seq);
     let q2_rev: Vec<u8> = r2.qual.iter().rev().copied().collect();
-    let o = find_best_overlap(r1, &r2rc, overlap_min, match_frac, max_mismatches, max_mismatch_frac)?;
+    let o = find_best_overlap(
+        r1,
+        &r2rc,
+        overlap_min,
+        match_frac,
+        max_mismatches,
+        max_mismatch_frac,
+    )?;
 
     let mut seq = Vec::with_capacity(r1.seq.len() - o + r2rc.len() - o);
     seq.extend_from_slice(&r1.seq[0..r1.seq.len() - o]);

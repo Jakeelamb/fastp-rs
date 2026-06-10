@@ -271,14 +271,9 @@ fn main() -> anyhow::Result<()> {
         o
     };
 
-    let out2 = if cli.stdout {
-        None
-    } else {
-        cli.out2.clone()
-    };
+    let out2 = if cli.stdout { None } else { cli.out2.clone() };
 
-    let complexity_threshold =
-        (cli.complexity_threshold_pct.min(100) as f64) / 100.0;
+    let complexity_threshold = (cli.complexity_threshold_pct.min(100) as f64) / 100.0;
 
     let umi_source = match (cli.umi_loc, cli.umi_len) {
         (UmiLocCli::Read1, Some(n)) => UmiSource::Read1Prefix(n),

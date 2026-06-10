@@ -111,10 +111,7 @@ enum PeOut {
 impl PeOut {
     fn create(cfg: &RunConfig, writer_opts: WriterOptions) -> Result<Self> {
         if path_is_stdio_dash(&cfg.out1) {
-            return Ok(Self::Stdout(open_fastq_writer(
-                &cfg.out1,
-                writer_opts,
-            )?));
+            return Ok(Self::Stdout(open_fastq_writer(&cfg.out1, writer_opts)?));
         }
         let o2 = cfg.out2.clone().ok_or_else(|| {
             Error::Config("paired mode requires -O/--out2 when not using stdout (-o -)".into())
@@ -186,11 +183,7 @@ fn read_passes_output_filters(r: &MutableRead, cfg: &RunConfig) -> bool {
     if r.is_empty() {
         return false;
     }
-    if !passes_low_complexity(
-        &r.seq,
-        cfg.low_complexity_filter,
-        cfg.complexity_threshold,
-    ) {
+    if !passes_low_complexity(&r.seq, cfg.low_complexity_filter, cfg.complexity_threshold) {
         return false;
     }
     if !cfg.disable_length_filtering {
@@ -749,11 +742,7 @@ mod tests {
         let dir = tempdir().unwrap();
         let inp = dir.path().join("in.fq");
         let out = dir.path().join("out.fq");
-        std::fs::write(
-            &inp,
-            "@r\nAAAAAAAAAAAAAAAAAAAA\n+\nFFFFFFFFFFFFFFFFFFFF\n",
-        )
-        .unwrap();
+        std::fs::write(&inp, "@r\nAAAAAAAAAAAAAAAAAAAA\n+\nFFFFFFFFFFFFFFFFFFFF\n").unwrap();
         let cfg = RunConfig {
             read1: inp,
             out1: out,

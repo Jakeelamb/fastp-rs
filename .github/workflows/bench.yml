@@ -33,11 +33,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
       - name: Install GNU time
         run: sudo apt-get update && sudo apt-get install -y time
-
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
 
       - name: Build fastp-rs (release)
         run: cargo build --locked --release

@@ -2,10 +2,15 @@
 
 ## Local checks
 
+These mirror the **CI** workflow ([`.github/workflows/ci.yml`](../.github/workflows/ci.yml)):
+
 ```bash
-cargo test
-cargo clippy --all-targets -- -D warnings
+cargo fmt --all -- --check
+cargo test --locked
+cargo clippy --locked --all-targets -- -D warnings
 ```
+
+These match **CI** flags (`--locked` everywhere).
 
 ## Docs you might need
 
@@ -13,8 +18,9 @@ cargo clippy --all-targets -- -D warnings
 |-----|---------|
 | [CONTEXT.md](../CONTEXT.md) | Parity vocabulary: CLI strictness, hybrid output contract, perf SLO shape, CI gates, gold fixtures **A/B**, semantic FASTQ **F1/F2**, JSON contracts, HTML smoke. |
 | [PARITY.md](PARITY.md) | Feature-level matrix vs upstream fastp. |
-| [BENCHMARKS.md](BENCHMARKS.md) | Pinned upstream binary, throughput/RSS methodology, result tables, **CI workflow** entry point. |
+| [BENCHMARKS.md](BENCHMARKS.md) | Pinned upstream binary, throughput/RSS methodology, result tables, **Bench** workflow entry point. |
 | [Contracts](../contracts/README.md) | Versioned JSON allowlist stubs for strict report tests. |
+| [CI workflow](../.github/workflows/ci.yml) | Every PR / push to `main`: **fmt**, **test**, **clippy** (`--locked`). |
 
 ## CI — opt-in heavy jobs
 

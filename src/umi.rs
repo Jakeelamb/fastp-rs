@@ -3,7 +3,12 @@
 use crate::config::UmiSource;
 use crate::read_parts::MutableRead;
 
-pub fn apply_umi(r1: &mut MutableRead, r2: &mut MutableRead, source: UmiSource, cfg: &crate::config::RunConfig) {
+pub fn apply_umi(
+    r1: &mut MutableRead,
+    r2: &mut MutableRead,
+    source: UmiSource,
+    cfg: &crate::config::RunConfig,
+) {
     match source {
         UmiSource::None => {}
         UmiSource::Read1Prefix(n) if n > 0 && r1.seq.len() >= n => {
@@ -35,7 +40,11 @@ pub fn apply_umi(r1: &mut MutableRead, r2: &mut MutableRead, source: UmiSource, 
 }
 
 /// Single-end UMI: strip leading bases from the read and tag the name.
-pub fn apply_umi_single_end(r: &mut MutableRead, source: UmiSource, cfg: &crate::config::RunConfig) {
+pub fn apply_umi_single_end(
+    r: &mut MutableRead,
+    source: UmiSource,
+    cfg: &crate::config::RunConfig,
+) {
     match source {
         UmiSource::None => {}
         UmiSource::Read1Prefix(n) | UmiSource::Read2Prefix(n) if n > 0 && r.seq.len() >= n => {

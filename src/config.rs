@@ -186,7 +186,9 @@ impl RunConfig {
             && !self.merge_pe
             && !crate::io::path_is_stdio_dash(&self.out1)
         {
-            return Err("paired-end mode requires -O/--out2 unless --merge or stdout (-o -)".into());
+            return Err(
+                "paired-end mode requires -O/--out2 unless --merge or stdout (-o -)".into(),
+            );
         }
         if self.interleaved && self.read2.is_some() {
             return Err("use either --interleaved or -I/--in2, not both".into());
