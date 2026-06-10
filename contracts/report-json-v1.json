@@ -1,6 +1,30 @@
 {
   "contract_version": 1,
   "report_kind": "fastp-style-qc-json",
-  "description": "Allowlisted JSON Pointer paths with per-path comparison rules (see CONTEXT.md). Paths and rules are filled in as the report schema stabilizes.",
-  "paths": []
+  "description": "Allowlisted JSON Pointer paths (RFC 6901) for fastp-rs QC JSON from src/report.rs. Rules: present | object | array | integer | number (see contracts/README.md).",
+  "html_smoke_substrings": [
+    "<!DOCTYPE html>",
+    "fastp-rs QC"
+  ],
+  "paths": [
+    { "pointer": "/summary", "rule": "object" },
+    { "pointer": "/summary/total_reads_before_filtering", "rule": "integer" },
+    { "pointer": "/summary/total_reads_after_filtering", "rule": "integer" },
+    { "pointer": "/summary/total_bases_before_filtering", "rule": "integer" },
+    { "pointer": "/summary/total_bases_after_filtering", "rule": "integer" },
+    { "pointer": "/summary/q20_rate_before", "rule": "number" },
+    { "pointer": "/summary/q30_rate_before", "rule": "number" },
+    { "pointer": "/summary/q20_rate_after", "rule": "number" },
+    { "pointer": "/summary/q30_rate_after", "rule": "number" },
+    { "pointer": "/summary/gc_content_before_percent", "rule": "number" },
+    { "pointer": "/summary/gc_content_after_percent", "rule": "number" },
+    { "pointer": "/duplication", "rule": "object" },
+    { "pointer": "/duplication/estimated_duplication_ratio", "rule": "number" },
+    { "pointer": "/before_cycle", "rule": "object" },
+    { "pointer": "/before_cycle/mean_q", "rule": "array" },
+    { "pointer": "/before_cycle/gc_percent", "rule": "array" },
+    { "pointer": "/after_cycle", "rule": "object" },
+    { "pointer": "/after_cycle/mean_q", "rule": "array" },
+    { "pointer": "/after_cycle/gc_percent", "rule": "array" }
+  ]
 }

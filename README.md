@@ -5,7 +5,7 @@
 
 Rust implementation of a **fastp**-style FASTQ preprocessor, inspired by [OpenGene/fastp](https://github.com/OpenGene/fastp) (C++). Not affiliated with OpenGene; not a byte-for-byte reimplementation.
 
-See **[docs/PARITY.md](docs/PARITY.md)** for upstream vs fastp-rs coverage (threading, ISA-L, adapter auto-detect, and other gaps). Shared **parity** vocabulary (CLI strictness, hybrid output contract, perf SLO shape, CI gates, gold fixtures): **[CONTEXT.md](CONTEXT.md)**. Benchmark tables and pinned baseline fields (fill as numbers land): **[docs/BENCHMARKS.md](docs/BENCHMARKS.md)**. JSON report contract stubs: **[contracts/README.md](contracts/README.md)**.
+See **[docs/PARITY.md](docs/PARITY.md)** for upstream vs fastp-rs coverage (threading, ISA-L, adapter auto-detect, and other gaps). Shared **parity** vocabulary (CLI strictness, hybrid output contract, perf SLO shape, CI gates, gold fixtures): **[CONTEXT.md](CONTEXT.md)**. Benchmark tables and pinned baseline fields (fill as numbers land): **[docs/BENCHMARKS.md](docs/BENCHMARKS.md)**. JSON report contract (**`contracts/report-json-v1.json`**, PR-tested): **[contracts/README.md](contracts/README.md)**.
 
 ## Features (v0.2)
 |------|-----------|

@@ -51,8 +51,12 @@ For each row: fixture (**A** or **B**), explicit **`-t N`** for both tools, comp
 
 ## CI
 
-**Every PR / `main` push:** **[`.github/workflows/ci.yml`](../.github/workflows/ci.yml)** — `cargo fmt --check`, `cargo test --locked`, `cargo clippy --locked --all-targets -- -D warnings`.
+**Every PR / `main` push:** **[`.github/workflows/ci.yml`](../.github/workflows/ci.yml)** — `cargo fmt --check`, `cargo test --locked`, `cargo clippy --locked --all-targets -- -D warnings`. Integration tests enforce **`contracts/report-json-v1.json`** (JSON pointers + HTML smoke substrings).
 
 **Nightly / label / dispatch:** **[`.github/workflows/bench.yml`](../.github/workflows/bench.yml)** — SHA256-pinned upstream `fastp`, release `fastp-rs`, **`scripts/ci/bench_compare.sh`**. Job summary gets the markdown table from the script.
+
+**Fixture A** is the synthetic PE input generated inside **`scripts/ci/bench_compare.sh`** (small, in-repo policy).
+
+**Fixture B** (optional larger corpus): pin **`FIXTURE_B_URL`** + **`FIXTURE_B_SHA256`**, then run **`scripts/ci/fetch_fixture_b.sh`** (writes **`fixtures/b/corpus.pe.fastq.gz`**). See **[fixtures/b/README.md](../fixtures/b/README.md)**. Not wired into default PR CI until a URL is chosen and documented in this table.
 
 Perf ratio jobs do **not** block default PR CI unless you add a gate later.
