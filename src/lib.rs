@@ -64,10 +64,7 @@ pub fn run_passthrough_single_end(read_path: &Path, write_path: &Path) -> Result
     let mut global_line = 0usize;
     let mut count = 0u64;
 
-    loop {
-        let Some(record_start) = rec.read_four_lines(&mut reader, &mut global_line)? else {
-            break;
-        };
+    while let Some(record_start) = rec.read_four_lines(&mut reader, &mut global_line)? {
         rec.validate(record_start)?;
         rec.as_owned().write_to(&mut writer)?;
         count += 1;
