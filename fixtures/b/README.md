@@ -2,7 +2,7 @@
 
 Policy: [CONTEXT.md](../../CONTEXT.md) (**Golden inputs**, **B**).
 
-- **PR CI** uses fixture **A** only (synthetic data in `scripts/ci/bench_compare.sh` and unit/integration tests).
+- **PR CI** uses fixture **A** only: **`fixtures/a/`** (checked-in FASTQ + `tests/golden_fixture_a.rs`) and synthetic data inside **`scripts/ci/bench_compare.sh`**.
 - **B** is for nightly / manual / label-**`bench`** workflows once you pin a public URL and SHA256.
 
 Download and verify:

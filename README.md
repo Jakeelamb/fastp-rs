@@ -5,10 +5,12 @@
 
 Rust implementation of a **fastp**-style FASTQ preprocessor, inspired by [OpenGene/fastp](https://github.com/OpenGene/fastp) (C++). Not affiliated with OpenGene; not a byte-for-byte reimplementation.
 
-See **[docs/PARITY.md](docs/PARITY.md)** for upstream vs fastp-rs coverage (threading, ISA-L, adapter auto-detect, and other gaps). Shared **parity** vocabulary (CLI strictness, hybrid output contract, perf SLO shape, CI gates, gold fixtures): **[CONTEXT.md](CONTEXT.md)**. Benchmark tables and pinned baseline fields (fill as numbers land): **[docs/BENCHMARKS.md](docs/BENCHMARKS.md)**. JSON report contract (**`contracts/report-json-v1.json`**, PR-tested): **[contracts/README.md](contracts/README.md)**.
+See **[docs/PARITY.md](docs/PARITY.md)** for upstream vs fastp-rs coverage (threading, ISA-L, adapter auto-detect, and other gaps). Shared **parity** vocabulary (CLI strictness, hybrid output contract, perf SLO shape, CI gates, gold fixtures): **[CONTEXT.md](CONTEXT.md)**. Benchmark tables and pinned baseline fields (fill as numbers land): **[docs/BENCHMARKS.md](docs/BENCHMARKS.md)**. JSON report contract (**`contracts/report-json-v1.json`**, PR-tested): **[contracts/README.md](contracts/README.md)**. Golden FASTQ **A** (F1, checked-in expected): **[fixtures/a/README.md](fixtures/a/README.md)**.
 
 ## Features (v0.2)
-|------|-----------|
+
+| Area | Notes |
+|------|-------|
 | **I/O** | Single-end and paired-end; **interleaved** PE; `.gz` files; **`-z` / `--compression`** (1–9). Stdin/stdout (`-`, `--stdin`, `--stdout`); **`--stdin-gzip`** / **`--stdout-gzip`** for gzip on pipes. **`--phred64` / `-6`** converts input qualities to Phred+33. |
 | **Split** | `--split N` with optional **`-d` / `--split_prefix_digits`** (use `0` for unpadded part numbers). |
 | **QC / reports** | Per-cycle mean Q and GC; Q20/Q30; duplication estimate; **`--dont_eval_duplication`**. **`--report_title`** for HTML. |
