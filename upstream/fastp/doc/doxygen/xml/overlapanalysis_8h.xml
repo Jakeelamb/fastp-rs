@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="overlapanalysis_8h" kind="file" language="C++">
+    <compoundname>overlapanalysis.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="common_8h" local="yes">common.h</includes>
+    <includes refid="options_8h" local="yes">options.h</includes>
+    <includes refid="read_8h" local="yes">read.h</includes>
+    <includedby refid="adaptertrimmer_8h" local="yes">src/adaptertrimmer.h</includedby>
+    <includedby refid="basecorrector_8h" local="yes">src/basecorrector.h</includedby>
+    <includedby refid="duplicate_8cpp" local="yes">src/duplicate.cpp</includedby>
+    <includedby refid="filter_8cpp" local="yes">src/filter.cpp</includedby>
+    <includedby refid="overlapanalysis_8cpp" local="yes">src/overlapanalysis.cpp</includedby>
+    <includedby refid="peprocessor_8h" local="yes">src/peprocessor.h</includedby>
+    <includedby refid="polyx_8h" local="yes">src/polyx.h</includedby>
+    <includedby refid="unittest_8cpp" local="yes">src/unittest.cpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="8">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/overlapanalysis.h</label>
+        <link refid="overlapanalysis_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/adaptertrimmer.cpp</label>
+        <link refid="adaptertrimmer_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/adaptertrimmer.h</label>
+        <link refid="adaptertrimmer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/basecorrector.cpp</label>
+        <link refid="basecorrector_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/basecorrector.h</label>
+        <link refid="basecorrector_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/duplicate.cpp</label>
+        <link refid="duplicate_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/overlapanalysis.cpp</label>
+        <link refid="overlapanalysis_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/overlapanalysis.h</label>
+        <link refid="overlapanalysis_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/peprocessor.h</label>
+        <link refid="peprocessor_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/polyx.cpp</label>
+        <link refid="polyx_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/polyx.h</label>
+        <link refid="polyx_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/processor.cpp</label>
+        <link refid="processor_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/unittest.cpp</label>
+        <link refid="unittest_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classOverlapResult" prot="public">OverlapResult</innerclass>
+    <innerclass refid="classOverlapAnalysis" prot="public">OverlapAnalysis</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OVERLAP_ANALYSIS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OVERLAP_ANALYSIS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="common_8h" kindref="compound">common.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="options_8h" kindref="compound">options.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="read_8h" kindref="compound">read.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classOverlapResult" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classOverlapResult_1a0d0f672ba3de27b761455ecab4775e7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOverlapResult_1a0d0f672ba3de27b761455ecab4775e7d" kindref="member">overlapped</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classOverlapResult_1a620e9b344e2e20f87bad0b223f1f8f28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOverlapResult_1a620e9b344e2e20f87bad0b223f1f8f28" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="19" refid="classOverlapResult_1ac387d549618c2b40902fcc3d32c971d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOverlapResult_1ac387d549618c2b40902fcc3d32c971d5" kindref="member">overlap_len</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classOverlapResult_1a66087523a68e044fa3ece5248d7d6f46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOverlapResult_1a66087523a68e044fa3ece5248d7d6f46" kindref="member">diff</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classOverlapResult_1a28e727f83b748a386c1df79b49fea10d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOverlapResult_1a28e727f83b748a386c1df79b49fea10d" kindref="member">hasGap</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classOverlapAnalysis" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOverlapAnalysis_1a266dbf56120f22cf47917228c9708cb0" kindref="member">OverlapAnalysis</ref>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOverlapAnalysis_1a266dbf56120f22cf47917228c9708cb0" kindref="member">OverlapAnalysis</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOverlapAnalysis_1a71e3d057d972244d794bc89f43644449" kindref="member">~OverlapAnalysis</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref><sp/><ref refid="classOverlapAnalysis_1a0e7ca83bab963df0c2fa5fe412556e66" kindref="member">analyze</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/><sp/>r1,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/><sp/>r2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diffLimit,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>overlapRequire,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>diffPercentLimit,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allowGap<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref><sp/><ref refid="classOverlapAnalysis_1a0e7ca83bab963df0c2fa5fe412556e66" kindref="member">analyze</ref>(<ref refid="classRead" kindref="compound">Read</ref>*<sp/>r1,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>r2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diffLimit,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>overlapRequire,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>diffPercentLimit,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allowGap<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/><ref refid="classOverlapAnalysis_1adc1adda85d3ec75224d5cb2f13179b07" kindref="member">merge</ref>(<ref refid="classRead" kindref="compound">Read</ref>*<sp/>r1,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>r2,<sp/><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref><sp/>ov);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOverlapAnalysis_1ab295b094006e4f42e56988b93645afa2" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/overlapanalysis.h"/>
+  </compounddef>
+</doxygen>

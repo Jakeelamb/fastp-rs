@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classUnitTest" kind="class" language="C++" prot="public">
+    <compoundname>UnitTest</compoundname>
+    <includes refid="unittest_8h" local="no">unittest.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUnitTest_1a67ddaff817b55a624741d32550052f4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UnitTest::UnitTest</definition>
+        <argsstring>()</argsstring>
+        <name>UnitTest</name>
+        <qualifiedname>UnitTest::UnitTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unittest.h" line="12" column="5" bodyfile="src/unittest.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnitTest_1ab007b0ca0f5cf3f165305e71d67b20c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitTest::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>UnitTest::run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unittest.h" line="13" column="10" bodyfile="src/unittest.cpp" bodystart="19" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnitTest_1a5a0b0db9bbd54d879f429954753b8e15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnitTest::report</definition>
+        <argsstring>(bool result, string message)</argsstring>
+        <name>report</name>
+        <qualifiedname>UnitTest::report</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/unittest.h" line="14" column="10" bodyfile="src/unittest.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/unittest.h" line="10" column="1" bodyfile="src/unittest.h" bodystart="10" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classUnitTest_1a5a0b0db9bbd54d879f429954753b8e15" prot="public" virt="non-virtual"><scope>UnitTest</scope><name>report</name></member>
+      <member refid="classUnitTest_1ab007b0ca0f5cf3f165305e71d67b20c0" prot="public" virt="non-virtual"><scope>UnitTest</scope><name>run</name></member>
+      <member refid="classUnitTest_1a67ddaff817b55a624741d32550052f4b" prot="public" virt="non-virtual"><scope>UnitTest</scope><name>UnitTest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="simd_8h" kind="file" language="C++">
+    <compoundname>simd.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includedby refid="adaptertrimmer_8cpp" local="yes">src/adaptertrimmer.cpp</includedby>
+    <includedby refid="filter_8cpp" local="yes">src/filter.cpp</includedby>
+    <includedby refid="overlapanalysis_8cpp" local="yes">src/overlapanalysis.cpp</includedby>
+    <includedby refid="sequence_8cpp" local="yes">src/sequence.cpp</includedby>
+    <includedby refid="unittest_8cpp" local="yes">src/unittest.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/simd.h</label>
+        <link refid="simd_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstddef</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/adaptertrimmer.cpp</label>
+        <link refid="adaptertrimmer_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/overlapanalysis.cpp</label>
+        <link refid="overlapanalysis_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/sequence.cpp</label>
+        <link refid="sequence_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/simd.h</label>
+        <link refid="simd_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/unittest.cpp</label>
+        <link refid="unittest_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacefastp__simd">fastp_simd</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FASTP_SIMD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FASTP_SIMD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacefastp__simd" kindref="compound">fastp_simd</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Count<sp/>quality<sp/>metrics<sp/>for<sp/>a<sp/>read<sp/>in<sp/>one<sp/>pass.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>qualstr/seqstr:<sp/>quality<sp/>and<sp/>sequence<sp/>strings<sp/>of<sp/>length<sp/>len.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>qualThreshold:<sp/>phred+33<sp/>encoded<sp/>quality<sp/>threshold<sp/>for<sp/>&quot;low<sp/>quality&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Outputs:<sp/>lowQualNum,<sp/>nBaseNum,<sp/>totalQual<sp/>(sum<sp/>of<sp/>qual-33<sp/>values).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespacefastp__simd_1a0d37fd2176056744aa824515162fe777" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacefastp__simd_1a0d37fd2176056744aa824515162fe777" kindref="member">countQualityMetrics</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>qualstr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>seqstr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>qualThreshold,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>lowQualNum,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>nBaseNum,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>totalQual);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Reverse<sp/>complement<sp/>a<sp/>DNA<sp/>sequence.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>src:<sp/>input<sp/>sequence<sp/>of<sp/>length<sp/>len.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>dst:<sp/>output<sp/>buffer<sp/>of<sp/>at<sp/>least<sp/>len<sp/>bytes<sp/>(must<sp/>NOT<sp/>alias<sp/>src).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacefastp__simd_1a64bdfe0037ec7400a0fe20f273f4e33b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacefastp__simd_1a64bdfe0037ec7400a0fe20f273f4e33b" kindref="member">reverseComplement</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>dst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Count<sp/>adjacent-base<sp/>differences<sp/>for<sp/>low<sp/>complexity<sp/>filter.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>number<sp/>of<sp/>positions<sp/>where<sp/>data[i]<sp/>!=<sp/>data[i+1].</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespacefastp__simd_1a1b83a43952d3a86f96e399a7b6b7fb8a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacefastp__simd_1a1b83a43952d3a86f96e399a7b6b7fb8a" kindref="member">countAdjacentDiffs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Count<sp/>mismatches<sp/>between<sp/>two<sp/>byte<sp/>strings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>number<sp/>of<sp/>positions<sp/>where<sp/>a[i]<sp/>!=<sp/>b[i],<sp/>up<sp/>to<sp/>len<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespacefastp__simd_1a044ddcf257373b649d64d5aeea9fc7f6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacefastp__simd_1a044ddcf257373b649d64d5aeea9fc7f6" kindref="member">countMismatches</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Count<sp/>mismatches<sp/>with<sp/>early<sp/>exit.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Returns<sp/>mismatch<sp/>count<sp/>if<sp/>&lt;=<sp/>limit,<sp/>or<sp/>a<sp/>value<sp/>&gt;<sp/>limit<sp/>if<sp/>exceeded.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacefastp__simd_1a3835a28467a63a5485754e4a48f49a71" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacefastp__simd_1a3835a28467a63a5485754e4a48f49a71" kindref="member">countMismatchesBounded</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>limit);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Run<sp/>all<sp/>SIMD<sp/>unit<sp/>tests.<sp/>Returns<sp/>true<sp/>if<sp/>all<sp/>pass.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespacefastp__simd_1a1b89fa328564d427691ee2b3d59fce1a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacefastp__simd_1a1b89fa328564d427691ee2b3d59fce1a" kindref="member">testSimd</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>fastp_simd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>FASTP_SIMD_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/simd.h"/>
+  </compounddef>
+</doxygen>

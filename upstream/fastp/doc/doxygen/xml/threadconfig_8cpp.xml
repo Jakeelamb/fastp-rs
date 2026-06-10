@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="threadconfig_8cpp" kind="file" language="C++">
+    <compoundname>threadconfig.cpp</compoundname>
+    <includes refid="threadconfig_8h" local="yes">threadconfig.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="17">
+        <label>filterresult.h</label>
+        <link refid="filterresult_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>singleproducersingleconsumerlist.h</label>
+        <link refid="singleproducersingleconsumerlist_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stats.h</label>
+        <link refid="stats_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/threadconfig.cpp</label>
+        <link refid="threadconfig_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>threadconfig.h</label>
+        <link refid="threadconfig_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>algorithm</label>
+      </node>
+      <node id="19">
+        <label>atomic</label>
+      </node>
+      <node id="21">
+        <label>cassert</label>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>libdeflate.h</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="20">
+        <label>memory.h</label>
+      </node>
+      <node id="26">
+        <label>mutex</label>
+      </node>
+      <node id="27">
+        <label>regex</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="23">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="25">
+        <label>time.h</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="threadconfig_8h" kindref="compound">threadconfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="classThreadConfig_1a3c2e705cc20fe6334be383494943f76c" kindref="member">ThreadConfig::ThreadConfig</ref>(<ref refid="classOptions" kindref="compound">Options</ref>*<sp/>opt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>threadId,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>paired){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref><sp/>=<sp/>opt;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a7fcfaf57ee37e3719081816e66fe7c74" kindref="member">mThreadId</ref><sp/>=<sp/>threadId;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" kindref="member">mWorkingSplit</ref><sp/>=<sp/>threadId;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1aa466b1c938a46b1f8a94a0581e8394ed" kindref="member">mCurrentSplitReads</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a9db36257d603fb77176fa3280608377f" kindref="member">mPreStats1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Stats(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a5ff6eea599e61373ba516ebecd234063" kindref="member">mPostStats1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Stats(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(paired){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab46090ab5acbe9c15bfe7604631ac227" kindref="member">mPreStats2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Stats(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1abc1ea19456912250eec66e4e4466282c" kindref="member">mPostStats2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Stats(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab46090ab5acbe9c15bfe7604631ac227" kindref="member">mPreStats2</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1abc1ea19456912250eec66e4e4466282c" kindref="member">mPostStats2</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" kindref="member">mWriter1</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a3ed6719d273c54ec3cf5e6d9b5ccc4c5" kindref="member">mWriter2</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" kindref="member">mFilterResult</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>FilterResult(opt,<sp/>paired);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a1404e1172d98e0d5285ced698393dee9" kindref="member">mCanBeStopped</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" kindref="member">mLeftInputList</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab434aaa6e058e872a9f09fdf3ba8cf39" kindref="member">mRightInputList</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="classThreadConfig_1ac11109f3f8d98f2821ad647640213b98" kindref="member">ThreadConfig::~ThreadConfig</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a83b1b2aefa819cfb3f91f9a5b816ca00" kindref="member">cleanup</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a83b1b2aefa819cfb3f91f9a5b816ca00" kindref="member">ThreadConfig::cleanup</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.enabled<sp/>&amp;&amp;<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.byFileNumber)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a58a1212ae209519a6aaa2643cd2213dd" kindref="member">writeEmptyFilesForSplitting</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a1d9d35713d7afba5c22b47b4df1c025f" kindref="member">deleteWriter</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" kindref="member">mLeftInputList</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" kindref="member">mLeftInputList</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" kindref="member">mLeftInputList</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ab434aaa6e058e872a9f09fdf3ba8cf39" kindref="member">mRightInputList</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1ab434aaa6e058e872a9f09fdf3ba8cf39" kindref="member">mRightInputList</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab434aaa6e058e872a9f09fdf3ba8cf39" kindref="member">mRightInputList</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1a9db36257d603fb77176fa3280608377f" kindref="member">mPreStats1</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a9db36257d603fb77176fa3280608377f" kindref="member">mPreStats1</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a9db36257d603fb77176fa3280608377f" kindref="member">mPreStats1</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1a5ff6eea599e61373ba516ebecd234063" kindref="member">mPostStats1</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a5ff6eea599e61373ba516ebecd234063" kindref="member">mPostStats1</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a5ff6eea599e61373ba516ebecd234063" kindref="member">mPostStats1</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ab46090ab5acbe9c15bfe7604631ac227" kindref="member">mPreStats2</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1ab46090ab5acbe9c15bfe7604631ac227" kindref="member">mPreStats2</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab46090ab5acbe9c15bfe7604631ac227" kindref="member">mPreStats2</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1abc1ea19456912250eec66e4e4466282c" kindref="member">mPostStats2</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1abc1ea19456912250eec66e4e4466282c" kindref="member">mPostStats2</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1abc1ea19456912250eec66e4e4466282c" kindref="member">mPostStats2</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" kindref="member">mFilterResult</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" kindref="member">mFilterResult</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" kindref="member">mFilterResult</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1ae7fce490836eac6a84cb84d45cfa33bd" kindref="member">ThreadConfig::setInputList</ref>(<ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList&lt;ReadPack*&gt;</ref>*<sp/>list)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" kindref="member">mLeftInputList</ref><sp/>=<sp/>list;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a8f01d23de95158db4a81533016ae634a" kindref="member">ThreadConfig::setInputListPair</ref>(<ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList&lt;ReadPack*&gt;</ref>*<sp/>left,<sp/><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList&lt;ReadPack*&gt;</ref>*<sp/>right)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" kindref="member">mLeftInputList</ref><sp/>=<sp/>left;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab434aaa6e058e872a9f09fdf3ba8cf39" kindref="member">mRightInputList</ref><sp/>=<sp/>right;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a1d9d35713d7afba5c22b47b4df1c025f" kindref="member">ThreadConfig::deleteWriter</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" kindref="member">mWriter1</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" kindref="member">mWriter1</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" kindref="member">mWriter1</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1a3ed6719d273c54ec3cf5e6d9b5ccc4c5" kindref="member">mWriter2</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a3ed6719d273c54ec3cf5e6d9b5ccc4c5" kindref="member">mWriter2</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a3ed6719d273c54ec3cf5e6d9b5ccc4c5" kindref="member">mWriter2</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a7328638acc46a45009833bda2774b5e7" kindref="member">ThreadConfig::initWriter</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename1)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a1d9d35713d7afba5c22b47b4df1c025f" kindref="member">deleteWriter</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" kindref="member">mWriter1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Writer(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>,<sp/>filename1,<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;compression);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a7328638acc46a45009833bda2774b5e7" kindref="member">ThreadConfig::initWriter</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename1,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename2)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a1d9d35713d7afba5c22b47b4df1c025f" kindref="member">deleteWriter</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" kindref="member">mWriter1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Writer(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>,<sp/>filename1,<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;compression);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a3ed6719d273c54ec3cf5e6d9b5ccc4c5" kindref="member">mWriter2</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Writer(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>,<sp/>filename2,<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;compression);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a6c55c466123792c864e8189af9364bc6" kindref="member">ThreadConfig::addFilterResult</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>result,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>readNum)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" kindref="member">mFilterResult</ref>-&gt;addFilterResult(result,<sp/>readNum);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a496f939454adbb2f7ccd90c46e14739a" kindref="member">ThreadConfig::addMergedPairs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pairs)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" kindref="member">mFilterResult</ref>-&gt;addMergedPairs(pairs);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a1c894eafd8e4bb0bd665297e8c15c0dc" kindref="member">ThreadConfig::initWriterForSplit</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;out1.empty())</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>1-based<sp/>naming</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>num<sp/>=<sp/>to_string(<ref refid="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" kindref="member">mWorkingSplit</ref><sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>padding<sp/>for<sp/>digits<sp/>like<sp/>0001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.digits<sp/>&gt;<sp/>0){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(num.size()<sp/>&lt;<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.digits)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal"><sp/>+<sp/>num;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename1<sp/>=<sp/><ref refid="util_8h_1a5c4817483f5adf9cbad21804fa64ae1f" kindref="member">joinpath</ref>(<ref refid="util_8h_1a547fc92f1098254e78a7067eed578358" kindref="member">dirname</ref>(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;out1),<sp/>num<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="util_8h_1a7657042f76bf50bcbabd087b2573a86b" kindref="member">basename</ref>(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;out1));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;isPaired())<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a7328638acc46a45009833bda2774b5e7" kindref="member">initWriter</ref>(filename1);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename2<sp/>=<sp/><ref refid="util_8h_1a5c4817483f5adf9cbad21804fa64ae1f" kindref="member">joinpath</ref>(<ref refid="util_8h_1a547fc92f1098254e78a7067eed578358" kindref="member">dirname</ref>(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;out2),<sp/>num<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="util_8h_1a7657042f76bf50bcbabd087b2573a86b" kindref="member">basename</ref>(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;out2));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a7328638acc46a45009833bda2774b5e7" kindref="member">initWriter</ref>(filename1,<sp/>filename2);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1af5ca1fe7b47c617332176f2f0b0b7026" kindref="member">ThreadConfig::markProcessed</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>readNum)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1aa466b1c938a46b1f8a94a0581e8394ed" kindref="member">mCurrentSplitReads</ref><sp/>+=<sp/>readNum;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.enabled)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>splitting<sp/>is<sp/>enabled,<sp/>check<sp/>whether<sp/>current<sp/>file<sp/>is<sp/>full</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1aa466b1c938a46b1f8a94a0581e8394ed" kindref="member">mCurrentSplitReads</ref><sp/>&gt;=<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.size)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>it&apos;s<sp/>splitting<sp/>by<sp/>file<sp/>number,<sp/>totally<sp/>we<sp/>cannot<sp/>exceed<sp/>split.number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>it&apos;s<sp/>splitting<sp/>by<sp/>file<sp/>lines,<sp/>then<sp/>we<sp/>don&apos;t<sp/>need<sp/>to<sp/>check</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.byFileLines<sp/>||<sp/><ref refid="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" kindref="member">mWorkingSplit</ref><sp/>+<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;thread<sp/>&lt;<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.number<sp/>){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" kindref="member">mWorkingSplit</ref><sp/>+=<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;thread;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a1c894eafd8e4bb0bd665297e8c15c0dc" kindref="member">initWriterForSplit</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1aa466b1c938a46b1f8a94a0581e8394ed" kindref="member">mCurrentSplitReads</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>thread<sp/>can<sp/>be<sp/>stoped<sp/>now<sp/>since<sp/>all<sp/>its<sp/>tasks<sp/>are<sp/>done</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>only<sp/>a<sp/>part<sp/>of<sp/>threads<sp/>have<sp/>to<sp/>deal<sp/>with<sp/>the<sp/>remaining<sp/>reads</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.number<sp/>%<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;thread<sp/>&gt;0<sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="classThreadConfig_1a7fcfaf57ee37e3719081816e66fe7c74" kindref="member">mThreadId</ref><sp/>&gt;=<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.number<sp/>%<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;thread)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a1404e1172d98e0d5285ced698393dee9" kindref="member">mCanBeStopped</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>a<sp/>task<sp/>of<sp/>writting<sp/>N<sp/>files<sp/>is<sp/>assigned<sp/>to<sp/>this<sp/>thread,<sp/>but<sp/>the<sp/>input<sp/>file<sp/>doesn&apos;t<sp/>have<sp/>so<sp/>many<sp/>reads<sp/>to<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//<sp/>write<sp/>some<sp/>empty<sp/>files<sp/>so<sp/>it<sp/>will<sp/>not<sp/>break<sp/>following<sp/>pipelines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a58a1212ae209519a6aaa2643cd2213dd" kindref="member">ThreadConfig::writeEmptyFilesForSplitting</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" kindref="member">mWorkingSplit</ref><sp/>+<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;thread<sp/>&lt;<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;split.number)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" kindref="member">mWorkingSplit</ref><sp/>+=<sp/><ref refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kindref="member">mOptions</ref>-&gt;thread;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1a1c894eafd8e4bb0bd665297e8c15c0dc" kindref="member">initWriterForSplit</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classThreadConfig_1aa466b1c938a46b1f8a94a0581e8394ed" kindref="member">mCurrentSplitReads</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a064f8bf41ae77bb519bc5b756a41af38" kindref="member">ThreadConfig::canBeStopped</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classThreadConfig_1a1404e1172d98e0d5285ced698393dee9" kindref="member">mCanBeStopped</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/threadconfig.cpp"/>
+  </compounddef>
+</doxygen>

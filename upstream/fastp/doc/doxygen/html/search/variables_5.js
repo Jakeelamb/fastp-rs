@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['fail_5fadapter_5fdimer_0',['FAIL_ADAPTER_DIMER',['../common_8h.html#a5ce8461e9a1e188c3e5c844b821abb86',1,'common.h']]],
+  ['fail_5fcomplexity_1',['FAIL_COMPLEXITY',['../common_8h.html#ade3d51417c3d348c98e0eab75effd5e6',1,'common.h']]],
+  ['fail_5flength_2',['FAIL_LENGTH',['../common_8h.html#a8f231abf36def208f31f59426009d874',1,'common.h']]],
+  ['fail_5fn_5fbase_3',['FAIL_N_BASE',['../common_8h.html#a180425a3a63300cdfcd8dcdc2c76101e',1,'common.h']]],
+  ['fail_5foverlap_4',['FAIL_OVERLAP',['../common_8h.html#a516da73383244c14769e19e4a7d9225f',1,'common.h']]],
+  ['fail_5fpoly_5fx_5',['FAIL_POLY_X',['../common_8h.html#ab58b4f24b1b469a3ca88dcfaa64be1ec',1,'common.h']]],
+  ['fail_5fquality_6',['FAIL_QUALITY',['../common_8h.html#a00c2e23c2b29b775c2f1a79d5420badb',1,'common.h']]],
+  ['fail_5ftoo_5flong_7',['FAIL_TOO_LONG',['../common_8h.html#ab23168d51983d2f29062168cdf3514e8',1,'common.h']]],
+  ['failed_5ftypes_8',['FAILED_TYPES',['../common_8h.html#ace09a16677423cf8d67aa596f688ffa0',1,'common.h']]],
+  ['failedout_9',['failedOut',['../classOptions.html#a2d6303a7fca31c581b777cd6764bc113',1,'Options']]],
+  ['fastafile_10',['fastaFile',['../classAdapterOptions.html#a03a967ea397016c78b59bbc0a8ee18a6',1,'AdapterOptions']]],
+  ['filter_5fresult_5ftypes_11',['FILTER_RESULT_TYPES',['../common_8h.html#a8c5a7ac041084fa41637b7a74e177763',1,'common.h']]],
+  ['fixmgi_12',['fixMGI',['../classOptions.html#add32d97f9897d4ecee65c8d71fe66d8a',1,'Options']]],
+  ['front1_13',['front1',['../classTrimmingOptions.html#a79a55f3bdd8e036c701e81985d74a063',1,'TrimmingOptions']]],
+  ['front2_14',['front2',['../classTrimmingOptions.html#a3e5e76adb90ef72b70ac37a39079e93a',1,'TrimmingOptions']]],
+  ['ftr_15',['ftr',['../classcmdline_1_1parser.html#a260075b8d293161c7357f50b7cf71e88',1,'cmdline::parser']]]
+];

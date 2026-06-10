@@ -1,0 +1,77 @@
+\doxysection{threadconfig.\+h}
+\hypertarget{threadconfig_8h_source}{}\label{threadconfig_8h_source}\index{src/threadconfig.h@{src/threadconfig.h}}
+\doxymbox{\hyperlink{threadconfig_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ THREAD\_CONFIG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ THREAD\_CONFIG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{stats_8h}{stats.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{writer_8h}{writer.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{filterresult_8h}{filterresult.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{singleproducersingleconsumerlist_8h}{singleproducersingleconsumerlist.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classThreadConfig_a3c2e705cc20fe6334be383494943f76c}{ThreadConfig}}\{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{classThreadConfig_a3c2e705cc20fe6334be383494943f76c}{ThreadConfig}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt,\ \textcolor{keywordtype}{int}\ threadId,\ \textcolor{keywordtype}{bool}\ paired\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{classThreadConfig_ac11109f3f8d98f2821ad647640213b98}{\string~ThreadConfig}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classStats}{Stats}}*\ \doxymbox{\hyperlink{classThreadConfig_a23233d659251c0f5d16a3f1ee78746cb}{getPreStats1}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_a9db36257d603fb77176fa3280608377f}{mPreStats1}};\}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classStats}{Stats}}*\ \doxymbox{\hyperlink{classThreadConfig_af572e6e0652ebdc44807b5204f8a18c0}{getPostStats1}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_a5ff6eea599e61373ba516ebecd234063}{mPostStats1}};\}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classStats}{Stats}}*\ \doxymbox{\hyperlink{classThreadConfig_a9797bd498b4d392bfab23aa2ec0a933d}{getPreStats2}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_ab46090ab5acbe9c15bfe7604631ac227}{mPreStats2}};\}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classStats}{Stats}}*\ \doxymbox{\hyperlink{classThreadConfig_acc217e60e637f3e58a6cd98592e665eb}{getPostStats2}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_abc1ea19456912250eec66e4e4466282c}{mPostStats2}};\}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classWriter}{Writer}}*\ \doxymbox{\hyperlink{classThreadConfig_a296efaa78d4b5d5f1c6e7dd2aa49ce71}{getWriter1}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_a5eb14a688584058bf539743a6c8e1d2b}{mWriter1}};\}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classWriter}{Writer}}*\ \doxymbox{\hyperlink{classThreadConfig_af5a6eddd34b67d96c9c72f6d39decde0}{getWriter2}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_a3ed6719d273c54ec3cf5e6d9b5ccc4c5}{mWriter2}};\}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classFilterResult}{FilterResult}}*\ \doxymbox{\hyperlink{classThreadConfig_aadbf8a20156fc0367fd256b5c65643c5}{getFilterResult}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_ab66fc9188a2db2abb1196317ac3f6531}{mFilterResult}};\}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a7328638acc46a45009833bda2774b5e7}{initWriter}}(\textcolor{keywordtype}{string}\ filename1);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a7328638acc46a45009833bda2774b5e7}{initWriter}}(\textcolor{keywordtype}{string}\ filename1,\ \textcolor{keywordtype}{string}\ filename2);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a6c55c466123792c864e8189af9364bc6}{addFilterResult}}(\textcolor{keywordtype}{int}\ result,\ \textcolor{keywordtype}{int}\ readNum);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a496f939454adbb2f7ccd90c46e14739a}{addMergedPairs}}(\textcolor{keywordtype}{int}\ pairs);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classThreadConfig_a16755b525b2e0cb5b321706a9cc7b0d6}{getThreadId}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_a7fcfaf57ee37e3719081816e66fe7c74}{mThreadId}};\}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ for\ splitting\ output}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ increase\ mCurrentSplitReads\ by\ readNum,\ and\ check\ it\ with\ options-\/>split.size;}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_af5ca1fe7b47c617332176f2f0b0b7026}{markProcessed}}(\textcolor{keywordtype}{long}\ readNum);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a1c894eafd8e4bb0bd665297e8c15c0dc}{initWriterForSplit}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classThreadConfig_a064f8bf41ae77bb519bc5b756a41af38}{canBeStopped}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a83b1b2aefa819cfb3f91f9a5b816ca00}{cleanup}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ input\ list}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_ae7fce490836eac6a84cb84d45cfa33bd}{setInputList}}(\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}*\ list);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a8f01d23de95158db4a81533016ae634a}{setInputListPair}}(\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}*\ left,\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}*\ right);}
+\DoxyCodeLine{00045\ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}*\ \doxymbox{\hyperlink{classThreadConfig_a92b24277bcd99f5caa4827f131b37536}{getLeftInput}}()\{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_ad234e80f886b7bbb703fe573d34136e4}{mLeftInputList}};\}}
+\DoxyCodeLine{00046\ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}*\ \doxymbox{\hyperlink{classThreadConfig_aafa5bd8c77bea841ddef64aeb63c6f38}{getRightInput}}()\{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classThreadConfig_ab434aaa6e058e872a9f09fdf3ba8cf39}{mRightInputList}};\}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a1d9d35713d7afba5c22b47b4df1c025f}{deleteWriter}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classThreadConfig_a58a1212ae209519a6aaa2643cd2213dd}{writeEmptyFilesForSplitting}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \doxymbox{\hyperlink{classStats}{Stats}}*\ \doxymbox{\hyperlink{classThreadConfig_a9db36257d603fb77176fa3280608377f}{mPreStats1}};}
+\DoxyCodeLine{00054\ \ \ \ \ \doxymbox{\hyperlink{classStats}{Stats}}*\ \doxymbox{\hyperlink{classThreadConfig_a5ff6eea599e61373ba516ebecd234063}{mPostStats1}};}
+\DoxyCodeLine{00055\ \ \ \ \ \doxymbox{\hyperlink{classStats}{Stats}}*\ \doxymbox{\hyperlink{classThreadConfig_ab46090ab5acbe9c15bfe7604631ac227}{mPreStats2}};}
+\DoxyCodeLine{00056\ \ \ \ \ \doxymbox{\hyperlink{classStats}{Stats}}*\ \doxymbox{\hyperlink{classThreadConfig_abc1ea19456912250eec66e4e4466282c}{mPostStats2}};}
+\DoxyCodeLine{00057\ \ \ \ \ \doxymbox{\hyperlink{classWriter}{Writer}}*\ \doxymbox{\hyperlink{classThreadConfig_a5eb14a688584058bf539743a6c8e1d2b}{mWriter1}};}
+\DoxyCodeLine{00058\ \ \ \ \ \doxymbox{\hyperlink{classWriter}{Writer}}*\ \doxymbox{\hyperlink{classThreadConfig_a3ed6719d273c54ec3cf5e6d9b5ccc4c5}{mWriter2}};}
+\DoxyCodeLine{00059\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classThreadConfig_ae9218c686dbeba8ab560b60c113d2c9d}{mOptions}};}
+\DoxyCodeLine{00060\ \ \ \ \ \doxymbox{\hyperlink{classFilterResult}{FilterResult}}*\ \doxymbox{\hyperlink{classThreadConfig_ab66fc9188a2db2abb1196317ac3f6531}{mFilterResult}};}
+\DoxyCodeLine{00061\ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}*\ \doxymbox{\hyperlink{classThreadConfig_ad234e80f886b7bbb703fe573d34136e4}{mLeftInputList}};}
+\DoxyCodeLine{00062\ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}*\ \doxymbox{\hyperlink{classThreadConfig_ab434aaa6e058e872a9f09fdf3ba8cf39}{mRightInputList}};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{//\ for\ spliting\ output}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classThreadConfig_a7fcfaf57ee37e3719081816e66fe7c74}{mThreadId}};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classThreadConfig_afe39eb02aa3dfc04ff20c52e86b2207d}{mWorkingSplit}};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classThreadConfig_aa466b1c938a46b1f8a94a0581e8394ed}{mCurrentSplitReads}};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classThreadConfig_a1404e1172d98e0d5285ced698393dee9}{mCanBeStopped}};}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

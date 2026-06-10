@@ -1,0 +1,33 @@
+\doxysection{adaptertrimmer.\+h}
+\hypertarget{adaptertrimmer_8h_source}{}\label{adaptertrimmer_8h_source}\index{src/adaptertrimmer.h@{src/adaptertrimmer.h}}
+\doxymbox{\hyperlink{adaptertrimmer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ADAPTER\_TRIMMER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ADAPTER\_TRIMMER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{overlapanalysis_8h}{overlapanalysis.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{filterresult_8h}{filterresult.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classAdapterTrimmer_ab3d901e9e802b027f8f3db80d7305808}{AdapterTrimmer}}\{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \doxymbox{\hyperlink{classAdapterTrimmer_ab3d901e9e802b027f8f3db80d7305808}{AdapterTrimmer}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{classAdapterTrimmer_a504d451be959998f6a5b368d910dcb8a}{\string~AdapterTrimmer}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classAdapterTrimmer_aff4fe6cd45e0641d5590922d7d008c14}{trimByOverlapAnalysis}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r2,\ \doxymbox{\hyperlink{classFilterResult}{FilterResult}}*\ fr,\ \textcolor{keywordtype}{int}\ diffLimit,\ \textcolor{keywordtype}{int}\ overlapRequire,\ \textcolor{keywordtype}{double}\ diffPercentLimit);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classAdapterTrimmer_aff4fe6cd45e0641d5590922d7d008c14}{trimByOverlapAnalysis}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r2,\ \doxymbox{\hyperlink{classFilterResult}{FilterResult}}*\ fr,\ \doxymbox{\hyperlink{classOverlapResult}{OverlapResult}}\ ov,\ \textcolor{keywordtype}{int}\ frontTrimmed1\ =\ 0,\ \textcolor{keywordtype}{int}\ frontTrimmed2\ =\ 0);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classAdapterTrimmer_a12d23e7ec408b7ff7327969e2492aa40}{trimBySequence}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classFilterResult}{FilterResult}}*\ fr,\ \textcolor{keywordtype}{string}\&\ adapter,\ \textcolor{keywordtype}{bool}\ isR2\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{int}\ matchReq\ =\ 4);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classAdapterTrimmer_aaa48744b28fd12fb282bb2e5104efd73}{trimByMultiSequences}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classFilterResult}{FilterResult}}*\ fr,\ vector<string>\&\ adapterList,\ \textcolor{keywordtype}{bool}\ isR2\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classAdapterTrimmer_afffbea20b02ccb66c13ebab06c4f0ae0}{test}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

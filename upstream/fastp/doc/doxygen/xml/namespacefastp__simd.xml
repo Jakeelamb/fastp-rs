@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacefastp__simd" kind="namespace" language="C++">
+    <compoundname>fastp_simd</compoundname>
+    <innernamespace refid="namespacefastp__simd_1_1HWY__NAMESPACE">fastp_simd::HWY_NAMESPACE</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacefastp__simd_1a0d37fd2176056744aa824515162fe777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fastp_simd::countQualityMetrics</definition>
+        <argsstring>(const char *qualstr, const char *seqstr, int len, char qualThreshold, int &amp;lowQualNum, int &amp;nBaseNum, int &amp;totalQual)</argsstring>
+        <name>countQualityMetrics</name>
+        <qualifiedname>fastp_simd::countQualityMetrics</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>qualstr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>seqstr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>qualThreshold</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>lowQualNum</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nBaseNum</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>totalQual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.h" line="12" column="6" declfile="src/simd.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1a64bdfe0037ec7400a0fe20f273f4e33b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fastp_simd::reverseComplement</definition>
+        <argsstring>(const char *src, char *dst, int len)</argsstring>
+        <name>reverseComplement</name>
+        <qualifiedname>fastp_simd::reverseComplement</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.h" line="19" column="6" declfile="src/simd.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1a1b83a43952d3a86f96e399a7b6b7fb8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fastp_simd::countAdjacentDiffs</definition>
+        <argsstring>(const char *data, int len)</argsstring>
+        <name>countAdjacentDiffs</name>
+        <qualifiedname>fastp_simd::countAdjacentDiffs</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.h" line="23" column="5" declfile="src/simd.h" declline="23" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1a044ddcf257373b649d64d5aeea9fc7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fastp_simd::countMismatches</definition>
+        <argsstring>(const char *a, const char *b, int len)</argsstring>
+        <name>countMismatches</name>
+        <qualifiedname>fastp_simd::countMismatches</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.h" line="27" column="5" declfile="src/simd.h" declline="27" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1a3835a28467a63a5485754e4a48f49a71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fastp_simd::countMismatchesBounded</definition>
+        <argsstring>(const char *a, const char *b, int len, int limit)</argsstring>
+        <name>countMismatchesBounded</name>
+        <qualifiedname>fastp_simd::countMismatchesBounded</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.h" line="31" column="5" declfile="src/simd.h" declline="31" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1a1b89fa328564d427691ee2b3d59fce1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fastp_simd::testSimd</definition>
+        <argsstring>()</argsstring>
+        <name>testSimd</name>
+        <qualifiedname>fastp_simd::testSimd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.h" line="34" column="6" declfile="src/simd.h" declline="34" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/simd.cpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="writerthread_8h" kind="file" language="C++">
+    <compoundname>writerthread.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="writer_8h" local="yes">writer.h</includes>
+    <includes refid="options_8h" local="yes">options.h</includes>
+    <includes local="no">atomic</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">libdeflate.h</includes>
+    <includes refid="singleproducersingleconsumerlist_8h" local="yes">singleproducersingleconsumerlist.h</includes>
+    <includedby refid="peprocessor_8h" local="yes">src/peprocessor.h</includedby>
+    <includedby refid="seprocessor_8h" local="yes">src/seprocessor.h</includedby>
+    <includedby refid="writerthread_8cpp" local="yes">src/writerthread.cpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="11">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>singleproducersingleconsumerlist.h</label>
+        <link refid="singleproducersingleconsumerlist_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/writerthread.h</label>
+        <link refid="writerthread_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>atomic</label>
+      </node>
+      <node id="17">
+        <label>cassert</label>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>libdeflate.h</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="16">
+        <label>memory.h</label>
+      </node>
+      <node id="14">
+        <label>mutex</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/peprocessor.h</label>
+        <link refid="peprocessor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/processor.cpp</label>
+        <link refid="processor_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/seprocessor.h</label>
+        <link refid="seprocessor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/writerthread.cpp</label>
+        <link refid="writerthread_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/writerthread.h</label>
+        <link refid="writerthread_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structOffsetSlot" prot="public">OffsetSlot</innerclass>
+    <innerclass refid="classWriterThread" prot="public">WriterThread</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="writerthread_8h_1ab539b40c685ab3d11cf4aa1d257a97d9" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int OFFSET_RING_SIZE</definition>
+        <argsstring></argsstring>
+        <name>OFFSET_RING_SIZE</name>
+        <initializer>= 512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="17" column="22" bodyfile="src/writerthread.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>WRITER_THREAD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WRITER_THREAD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="writer_8h" kindref="compound">writer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="options_8h" kindref="compound">options.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atomic&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libdeflate.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="singleproducersingleconsumerlist_8h" kindref="compound">singleproducersingleconsumerlist.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="writerthread_8h_1ab539b40c685ab3d11cf4aa1d257a97d9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="writerthread_8h_1ab539b40c685ab3d11cf4aa1d257a97d9" kindref="member">OFFSET_RING_SIZE</ref><sp/>=<sp/>512;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structOffsetSlot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="keyword">alignas</highlight><highlight class="normal">(64)<sp/><ref refid="structOffsetSlot" kindref="compound">OffsetSlot</ref><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="structOffsetSlot_1af3e846bee8ff1861427c7b945eb0d004" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::atomic&lt;size_t&gt;<sp/><ref refid="structOffsetSlot_1af3e846bee8ff1861427c7b945eb0d004" kindref="member">cumulative_offset</ref>{0};</highlight></codeline>
+<codeline lineno="21" refid="structOffsetSlot_1a4de0c6d01bcf34ce33692ac17a8de4c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::atomic&lt;size_t&gt;<sp/><ref refid="structOffsetSlot_1a4de0c6d01bcf34ce33692ac17a8de4c6" kindref="member">published_seq</ref>{SIZE_MAX};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classWriterThread" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWriterThread_1ad85722858d6f73e7db995d7c940038eb" kindref="member">WriterThread</ref>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ad85722858d6f73e7db995d7c940038eb" kindref="member">WriterThread</ref>(<ref refid="classOptions" kindref="compound">Options</ref>*<sp/>opt,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSTDOUT<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a1f6800d9e272c0cb2eb7a0c774b14f4e" kindref="member">~WriterThread</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a876dbb8b56ba5660ad370212e31b1b72" kindref="member">initWriter</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename1,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSTDOUT<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a8bea61e2a4a63dd11ab55e5284026626" kindref="member">initBufferLists</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1ad5a34ac64a25fed4e1e8b5c63061d579" kindref="member">cleanup</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a79f1d3c1090568800b7613b8a7689468" kindref="member">isCompleted</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a213a85cf26e05550566c3779a2b588b1" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a9b29200184e58f51fc366e38691c174b" kindref="member">input</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tid,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a590319d06f1de992b9621624dbbb8fc9" kindref="member">setInputCompleted</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classWriterThread_1a09e82ab15e9a38c213117495c9c9fe58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a09e82ab15e9a38c213117495c9c9fe58" kindref="member">bufferLength</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" kindref="member">mBufferLength</ref>;};</highlight></codeline>
+<codeline lineno="40" refid="classWriterThread_1a3d1949e8e7ba391898e67a6034cf61ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a3d1949e8e7ba391898e67a6034cf61ce" kindref="member">getFilename</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" kindref="member">mFilename</ref>;}</highlight></codeline>
+<codeline lineno="41" refid="classWriterThread_1a5b9aa1dd1c66c4507414ead32caef0c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a5b9aa1dd1c66c4507414ead32caef0c7" kindref="member">isPwriteMode</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref>;}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1aec981cb042ef8d7d422c8ae1e92c11b6" kindref="member">deleteWriter</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a0d8d2f35142de5a61d3efdcdd8526dfc" kindref="member">inputPwrite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tid,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>data);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a502ba2307fe879b41e5bfb01a253e675" kindref="member">setInputCompletedPwrite</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriter" kindref="compound">Writer</ref>*<sp/><ref refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" kindref="member">mWriter1</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOptions" kindref="compound">Options</ref>*<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" kindref="member">mFilename</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" kindref="member">mInputCompleted</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>atomic_long<sp/><ref refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" kindref="member">mBufferLength</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList&lt;string*&gt;</ref>**<sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" kindref="member">mWorkingBufferList</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pwrite<sp/>mode:<sp/>parallel<sp/>libdeflate<sp/>gz<sp/>compression<sp/>+<sp/>direct<sp/>file<sp/>write</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref>;</highlight></codeline>
+<codeline lineno="61" refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structOffsetSlot" kindref="compound">OffsetSlot</ref>*<sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref>;</highlight></codeline>
+<codeline lineno="62" refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">*<sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref>;</highlight></codeline>
+<codeline lineno="63" refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>libdeflate_compressor**<sp/><ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>per-worker<sp/>pre-allocated<sp/>compress<sp/>output<sp/>buffers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">*<sp/><ref refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kindref="member">mCompBufSizes</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>per-worker<sp/>buffer<sp/>sizes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/writerthread.h"/>
+  </compounddef>
+</doxygen>

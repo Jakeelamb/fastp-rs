@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classCorrectionOptions" kind="class" language="C++" prot="public">
+    <compoundname>CorrectionOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCorrectionOptions_1a2ca3a0d12493f37e74ab6bc04548bf48" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CorrectionOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>CorrectionOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="129" column="10" bodyfile="src/options.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCorrectionOptions_1a74029fa3f80876864d1b2d5d6e0999a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CorrectionOptions::CorrectionOptions</definition>
+        <argsstring>()</argsstring>
+        <name>CorrectionOptions</name>
+        <qualifiedname>CorrectionOptions::CorrectionOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="125" column="5" bodyfile="src/options.h" bodystart="125" bodyend="127"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="123" column="1" bodyfile="src/options.h" bodystart="123" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classCorrectionOptions_1a74029fa3f80876864d1b2d5d6e0999a3" prot="public" virt="non-virtual"><scope>CorrectionOptions</scope><name>CorrectionOptions</name></member>
+      <member refid="classCorrectionOptions_1a2ca3a0d12493f37e74ab6bc04548bf48" prot="public" virt="non-virtual"><scope>CorrectionOptions</scope><name>enabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

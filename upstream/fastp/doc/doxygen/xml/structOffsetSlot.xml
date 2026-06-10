@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structOffsetSlot" kind="struct" language="C++" prot="public">
+    <compoundname>OffsetSlot</compoundname>
+    <includes refid="writerthread_8h" local="no">writerthread.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structOffsetSlot_1af3e846bee8ff1861427c7b945eb0d004" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; size_t &gt;</type>
+        <definition>std::atomic&lt;size_t&gt; OffsetSlot::cumulative_offset</definition>
+        <argsstring></argsstring>
+        <name>cumulative_offset</name>
+        <qualifiedname>OffsetSlot::cumulative_offset</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="20" column="17" bodyfile="src/writerthread.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="structOffsetSlot_1a4de0c6d01bcf34ce33692ac17a8de4c6" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; size_t &gt;</type>
+        <definition>std::atomic&lt;size_t&gt; OffsetSlot::published_seq</definition>
+        <argsstring></argsstring>
+        <name>published_seq</name>
+        <qualifiedname>OffsetSlot::published_seq</qualifiedname>
+        <initializer>{SIZE_MAX}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="21" column="17" bodyfile="src/writerthread.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/writerthread.h" line="19" column="1" bodyfile="src/writerthread.h" bodystart="19" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structOffsetSlot_1af3e846bee8ff1861427c7b945eb0d004" prot="public" virt="non-virtual"><scope>OffsetSlot</scope><name>cumulative_offset</name></member>
+      <member refid="structOffsetSlot_1a4de0c6d01bcf34ce33692ac17a8de4c6" prot="public" virt="non-virtual"><scope>OffsetSlot</scope><name>published_seq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

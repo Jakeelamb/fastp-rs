@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01std_1_1string_00_01false_01_4" kind="class" language="C++" prot="public">
+    <compoundname>cmdline::detail::lexical_cast_t&lt; Target, std::string, false &gt;</compoundname>
+    <includes refid="cmdline_8h" local="no">cmdline.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Target</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01std_1_1string_00_01false_01_4_1a8612edb07ba3ba15be8615dcacbf58e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Target</type>
+        <definition>static Target cmdline::detail::lexical_cast_t&lt; Target, std::string, false &gt;::cast</definition>
+        <argsstring>(const std::string &amp;arg)</argsstring>
+        <name>cast</name>
+        <qualifiedname>cmdline::detail::lexical_cast_t&lt; Target, std::string, false &gt;::cast</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="80" column="17" bodyfile="src/cmdline.h" bodystart="80" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cmdline.h" line="78" column="1" bodyfile="src/cmdline.h" bodystart="78" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01std_1_1string_00_01false_01_4_1a8612edb07ba3ba15be8615dcacbf58e3" prot="public" virt="non-virtual"><scope>cmdline::detail::lexical_cast_t&lt; Target, std::string, false &gt;</scope><name>cast</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

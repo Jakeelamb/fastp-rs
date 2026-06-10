@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classNucleotideTree" kind="class" language="C++" prot="public">
+    <compoundname>NucleotideTree</compoundname>
+    <includes refid="nucleotidetree_8h" local="no">nucleotidetree.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNucleotideTree_1a976040ee498341e59ef81aac71c143f2" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* NucleotideTree::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>NucleotideTree::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="35" column="13" bodyfile="src/nucleotidetree.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNucleotideTree_1ab333a59c80b16db395c188fbd79b5e14" prot="private" static="no" mutable="no">
+        <type><ref refid="classNucleotideNode" kindref="compound">NucleotideNode</ref> *</type>
+        <definition>NucleotideNode* NucleotideTree::mRoot</definition>
+        <argsstring></argsstring>
+        <name>mRoot</name>
+        <qualifiedname>NucleotideTree::mRoot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="36" column="20" bodyfile="src/nucleotidetree.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNucleotideTree_1a01e9e88349d84ec59426bc20de8ade7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NucleotideTree::NucleotideTree</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>NucleotideTree</name>
+        <qualifiedname>NucleotideTree::NucleotideTree</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="27" column="5" bodyfile="src/nucleotidetree.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classNucleotideTree_1ad1672fa610fa21f5deab703055d00094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NucleotideTree::~NucleotideTree</definition>
+        <argsstring>()</argsstring>
+        <name>~NucleotideTree</name>
+        <qualifiedname>NucleotideTree::~NucleotideTree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="28" column="5" bodyfile="src/nucleotidetree.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classNucleotideTree_1a4193d9b8cd76a6a09ffe29c0b810bd63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NucleotideTree::addSeq</definition>
+        <argsstring>(string seq)</argsstring>
+        <name>addSeq</name>
+        <qualifiedname>NucleotideTree::addSeq</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>seq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="29" column="10" bodyfile="src/nucleotidetree.cpp" bodystart="42" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classNucleotideTree_1a9b2f5fe74bd8873c7442170d8421a80a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string NucleotideTree::getDominantPath</definition>
+        <argsstring>(bool &amp;reachedLeaf)</argsstring>
+        <name>getDominantPath</name>
+        <qualifiedname>NucleotideTree::getDominantPath</qualifiedname>
+        <param>
+          <type>bool &amp;</type>
+          <declname>reachedLeaf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="30" column="12" bodyfile="src/nucleotidetree.cpp" bodystart="57" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classNucleotideTree_1ae4dc5bccdecca1b7f3b19d8abda53efa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NucleotideTree::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>NucleotideTree::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="32" column="17" bodyfile="src/nucleotidetree.cpp" bodystart="90" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="18">
+        <label>NucleotideNode</label>
+        <link refid="classNucleotideNode"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>NucleotideTree</label>
+        <link refid="classNucleotideTree"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mRoot</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/nucleotidetree.h" line="25" column="1" bodyfile="src/nucleotidetree.h" bodystart="25" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classNucleotideTree_1a4193d9b8cd76a6a09ffe29c0b810bd63" prot="public" virt="non-virtual"><scope>NucleotideTree</scope><name>addSeq</name></member>
+      <member refid="classNucleotideTree_1a9b2f5fe74bd8873c7442170d8421a80a" prot="public" virt="non-virtual"><scope>NucleotideTree</scope><name>getDominantPath</name></member>
+      <member refid="classNucleotideTree_1a976040ee498341e59ef81aac71c143f2" prot="private" virt="non-virtual"><scope>NucleotideTree</scope><name>mOptions</name></member>
+      <member refid="classNucleotideTree_1ab333a59c80b16db395c188fbd79b5e14" prot="private" virt="non-virtual"><scope>NucleotideTree</scope><name>mRoot</name></member>
+      <member refid="classNucleotideTree_1a01e9e88349d84ec59426bc20de8ade7d" prot="public" virt="non-virtual"><scope>NucleotideTree</scope><name>NucleotideTree</name></member>
+      <member refid="classNucleotideTree_1ae4dc5bccdecca1b7f3b19d8abda53efa" prot="public" virt="non-virtual"><scope>NucleotideTree</scope><name>test</name></member>
+      <member refid="classNucleotideTree_1ad1672fa610fa21f5deab703055d00094" prot="public" virt="non-virtual"><scope>NucleotideTree</scope><name>~NucleotideTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

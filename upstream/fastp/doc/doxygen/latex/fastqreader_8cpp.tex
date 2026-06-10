@@ -1,0 +1,39 @@
+\doxysection{src/\+fastqreader.cpp File Reference}
+\hypertarget{fastqreader_8cpp}{}\label{fastqreader_8cpp}\index{src/fastqreader.cpp@{src/fastqreader.cpp}}
+{\ttfamily \+\#include "{}fastqreader.\+h"{}}\newline
+{\ttfamily \+\#include "{}util.\+h"{}}\newline
+{\ttfamily \+\#include "{}bgzf.\+h"{}}\newline
+{\ttfamily \+\#include $<$string.\+h$>$}\newline
+{\ttfamily \+\#include $<$cassert$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{fastqreader_8cpp_aae8da8d1c2d5228f065b169a54ce9bae}{FQ\+\_\+\+BUF\+\_\+\+SIZE}}~(1$<$$<$23)
+\item 
+\+\#define \doxymbox{\hyperlink{fastqreader_8cpp_af91026fea8271e534ec7ecc7c8454826}{IGZIP\+\_\+\+IN\+\_\+\+BUF\+\_\+\+SIZE}}~(1$<$$<$22)
+\item 
+\+\#define \doxymbox{\hyperlink{fastqreader_8cpp_a1f2ee1734e5accdf79a62c31d6a13337}{GZIP\+\_\+\+HEADER\+\_\+\+BYTES\+\_\+\+REQ}}~(1$<$$<$16)
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{fastqreader_8cpp_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{fastqreader_8cpp_aae8da8d1c2d5228f065b169a54ce9bae}\index{fastqreader.cpp@{fastqreader.cpp}!FQ\_BUF\_SIZE@{FQ\_BUF\_SIZE}}
+\index{FQ\_BUF\_SIZE@{FQ\_BUF\_SIZE}!fastqreader.cpp@{fastqreader.cpp}}
+\doxysubsubsection{\texorpdfstring{FQ\_BUF\_SIZE}{FQ\_BUF\_SIZE}}
+{\footnotesize\ttfamily \label{fastqreader_8cpp_aae8da8d1c2d5228f065b169a54ce9bae} 
+\+\#define FQ\+\_\+\+BUF\+\_\+\+SIZE~(1$<$$<$23)}
+
+\Hypertarget{fastqreader_8cpp_a1f2ee1734e5accdf79a62c31d6a13337}\index{fastqreader.cpp@{fastqreader.cpp}!GZIP\_HEADER\_BYTES\_REQ@{GZIP\_HEADER\_BYTES\_REQ}}
+\index{GZIP\_HEADER\_BYTES\_REQ@{GZIP\_HEADER\_BYTES\_REQ}!fastqreader.cpp@{fastqreader.cpp}}
+\doxysubsubsection{\texorpdfstring{GZIP\_HEADER\_BYTES\_REQ}{GZIP\_HEADER\_BYTES\_REQ}}
+{\footnotesize\ttfamily \label{fastqreader_8cpp_a1f2ee1734e5accdf79a62c31d6a13337} 
+\+\#define GZIP\+\_\+\+HEADER\+\_\+\+BYTES\+\_\+\+REQ~(1$<$$<$16)}
+
+\Hypertarget{fastqreader_8cpp_af91026fea8271e534ec7ecc7c8454826}\index{fastqreader.cpp@{fastqreader.cpp}!IGZIP\_IN\_BUF\_SIZE@{IGZIP\_IN\_BUF\_SIZE}}
+\index{IGZIP\_IN\_BUF\_SIZE@{IGZIP\_IN\_BUF\_SIZE}!fastqreader.cpp@{fastqreader.cpp}}
+\doxysubsubsection{\texorpdfstring{IGZIP\_IN\_BUF\_SIZE}{IGZIP\_IN\_BUF\_SIZE}}
+{\footnotesize\ttfamily \label{fastqreader_8cpp_af91026fea8271e534ec7ecc7c8454826} 
+\+\#define IGZIP\+\_\+\+IN\+\_\+\+BUF\+\_\+\+SIZE~(1$<$$<$22)}
+

@@ -1,0 +1,279 @@
+\doxysection{Bgzf\+Mt\+Reader Class Reference}
+\hypertarget{classBgzfMtReader}{}\label{classBgzfMtReader}\index{BgzfMtReader@{BgzfMtReader}}
+
+
+{\ttfamily \+\#include $<$bgzf.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classBgzfMtReader_a35b61e054961e9804bcb8d6485e9073c}{Bgzf\+Mt\+Reader}} (FILE \texorpdfstring{$\ast$}{*}fp, int thread\+Budget=0)
+\item 
+\doxymbox{\hyperlink{classBgzfMtReader_aff2fa38aa587c5817a2fe287d9954f91}{\texorpdfstring{$\sim$}{\string~}\+Bgzf\+Mt\+Reader}} ()
+\item 
+int \doxymbox{\hyperlink{classBgzfMtReader_a24d228983d8bf1f3bcf952d915edcfa3}{read}} (char \texorpdfstring{$\ast$}{*}out\+Buf, int out\+Buf\+Size)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693}{Slot\+State}} \{ \newline
+\doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22}{FREE}}
+, \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2}{COMPRESSED}}
+, \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a00089ae9def2cc2ecf08ce1ffd0256bd}{DECOMPRESSING}}
+, \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228}{READY}}
+, \newline
+\doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1}{DONE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classBgzfMtReader_a4bb241d72e8decbe65b44d0d6324c6c1}{reader\+Loop}} ()
+\item 
+void \doxymbox{\hyperlink{classBgzfMtReader_a55cfa7330d2503ff958eef2bf2d038cf}{decomp\+Worker}} ()
+\item 
+bool \doxymbox{\hyperlink{classBgzfMtReader_a2179d5e54e5ebfdde86a007aacf78817}{claim\+Slot}} (\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}out)
+\item 
+void \doxymbox{\hyperlink{classBgzfMtReader_a41024dc0fb9f432b51920dd09671b74c}{mark\+Done}} (\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}} \&s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classBgzfMtReader_a9ef9a5cd59156ddd64b3de39e8e87fb2}{m\+Fp}}
+\item 
+\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246}{m\+Slots}}
+\item 
+int \doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{m\+Ring\+Size}}
+\item 
+std::\+atomic$<$ int $>$ \doxymbox{\hyperlink{classBgzfMtReader_a2562478e5080c81552a82c50142e9100}{m\+Consume\+Idx}}
+\item 
+int \doxymbox{\hyperlink{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}{m\+Consume\+Offset}}
+\item 
+std::\+atomic$<$ int $>$ \doxymbox{\hyperlink{classBgzfMtReader_ad9fe79c25105be430e2f64229bf333e8}{m\+Produce\+Idx}}
+\item 
+int \doxymbox{\hyperlink{classBgzfMtReader_a7063733b17ed8a7bdbc5fdf08879af81}{m\+Max\+Pool}}
+\item 
+std::\+atomic$<$ bool $>$ \doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{m\+Stop}}
+\item 
+std::\+thread \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classBgzfMtReader_a60f12801d6f3a632fc01c0fd63e27a6f}{m\+Reader\+Thread}}
+\item 
+std::\+vector$<$ std::\+thread \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{classBgzfMtReader_a1ec53f83c42eac0ded6e591867d50191}{m\+Pool}}
+\item 
+std::\+mutex \doxymbox{\hyperlink{classBgzfMtReader_ab2e951f140ecaedc0d1111e4e65899e1}{m\+Consume\+Mtx}}
+\item 
+std::\+mutex \doxymbox{\hyperlink{classBgzfMtReader_af4c9b162a77e2119ec1878cbdd602d42}{m\+Produce\+Mtx}}
+\item 
+std::\+mutex \doxymbox{\hyperlink{classBgzfMtReader_ab53aa58d024aadb0ea5c3887b513acc7}{m\+Decomp\+Mtx}}
+\item 
+std::\+condition\+\_\+variable \doxymbox{\hyperlink{classBgzfMtReader_aabb14dbaa99b86ff493f61f66ad81c2c}{m\+Consume\+Cv}}
+\item 
+std::\+condition\+\_\+variable \doxymbox{\hyperlink{classBgzfMtReader_ad4fac5895b050216e9352aeb97adf5ce}{m\+Produce\+Cv}}
+\item 
+std::\+condition\+\_\+variable \doxymbox{\hyperlink{classBgzfMtReader_a2f1aa5f2807c4985211afb97022db2f2}{m\+Decomp\+Cv}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-enum-members}
+\Hypertarget{classBgzfMtReader_doc-enum-members}
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classBgzfMtReader_aee797ed97678328320db273ca1e75693}\index{BgzfMtReader@{BgzfMtReader}!SlotState@{SlotState}}
+\index{SlotState@{SlotState}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{SlotState}{SlotState}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_aee797ed97678328320db273ca1e75693} 
+enum \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693}{Bgzf\+Mt\+Reader::\+\+Slot\+State}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FREE@{FREE}!BgzfMtReader@{BgzfMtReader}}
+\index{BgzfMtReader@{BgzfMtReader}!FREE@{FREE}}
+}\Hypertarget{classBgzfMtReader_aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22}\label{classBgzfMtReader_aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22} 
+FREE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMPRESSED@{COMPRESSED}!BgzfMtReader@{BgzfMtReader}}
+\index{BgzfMtReader@{BgzfMtReader}!COMPRESSED@{COMPRESSED}}
+}\Hypertarget{classBgzfMtReader_aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2}\label{classBgzfMtReader_aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2} 
+COMPRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DECOMPRESSING@{DECOMPRESSING}!BgzfMtReader@{BgzfMtReader}}
+\index{BgzfMtReader@{BgzfMtReader}!DECOMPRESSING@{DECOMPRESSING}}
+}\Hypertarget{classBgzfMtReader_aee797ed97678328320db273ca1e75693a00089ae9def2cc2ecf08ce1ffd0256bd}\label{classBgzfMtReader_aee797ed97678328320db273ca1e75693a00089ae9def2cc2ecf08ce1ffd0256bd} 
+DECOMPRESSING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{READY@{READY}!BgzfMtReader@{BgzfMtReader}}
+\index{BgzfMtReader@{BgzfMtReader}!READY@{READY}}
+}\Hypertarget{classBgzfMtReader_aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228}\label{classBgzfMtReader_aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228} 
+READY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DONE@{DONE}!BgzfMtReader@{BgzfMtReader}}
+\index{BgzfMtReader@{BgzfMtReader}!DONE@{DONE}}
+}\Hypertarget{classBgzfMtReader_aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1}\label{classBgzfMtReader_aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1} 
+DONE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-constructors}
+\Hypertarget{classBgzfMtReader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classBgzfMtReader_a35b61e054961e9804bcb8d6485e9073c}\index{BgzfMtReader@{BgzfMtReader}!BgzfMtReader@{BgzfMtReader}}
+\index{BgzfMtReader@{BgzfMtReader}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{BgzfMtReader()}{BgzfMtReader()}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a35b61e054961e9804bcb8d6485e9073c} 
+Bgzf\+Mt\+Reader::\+\+Bgzf\+Mt\+Reader (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{fp}{, }\item[{int}]{thread\+Budget}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classBgzfMtReader_aff2fa38aa587c5817a2fe287d9954f91}\index{BgzfMtReader@{BgzfMtReader}!````~BgzfMtReader@{\texorpdfstring{$\sim$}{\string~}BgzfMtReader}}
+\index{````~BgzfMtReader@{\texorpdfstring{$\sim$}{\string~}BgzfMtReader}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BgzfMtReader()}{\string~BgzfMtReader()}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_aff2fa38aa587c5817a2fe287d9954f91} 
+Bgzf\+Mt\+Reader::\+\texorpdfstring{$\sim$}{\string~}\+Bgzf\+Mt\+Reader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classBgzfMtReader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBgzfMtReader_a2179d5e54e5ebfdde86a007aacf78817}\index{BgzfMtReader@{BgzfMtReader}!claimSlot@{claimSlot}}
+\index{claimSlot@{claimSlot}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{claimSlot()}{claimSlot()}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a2179d5e54e5ebfdde86a007aacf78817} 
+bool Bgzf\+Mt\+Reader::\+claim\+Slot (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{out}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a55cfa7330d2503ff958eef2bf2d038cf}\index{BgzfMtReader@{BgzfMtReader}!decompWorker@{decompWorker}}
+\index{decompWorker@{decompWorker}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{decompWorker()}{decompWorker()}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a55cfa7330d2503ff958eef2bf2d038cf} 
+void Bgzf\+Mt\+Reader::\+decomp\+Worker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a41024dc0fb9f432b51920dd09671b74c}\index{BgzfMtReader@{BgzfMtReader}!markDone@{markDone}}
+\index{markDone@{markDone}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{markDone()}{markDone()}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a41024dc0fb9f432b51920dd09671b74c} 
+void Bgzf\+Mt\+Reader::\+mark\+Done (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}} \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a24d228983d8bf1f3bcf952d915edcfa3}\index{BgzfMtReader@{BgzfMtReader}!read@{read}}
+\index{read@{read}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a24d228983d8bf1f3bcf952d915edcfa3} 
+int Bgzf\+Mt\+Reader::\+read (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{out\+Buf}{, }\item[{int}]{out\+Buf\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classBgzfMtReader_a4bb241d72e8decbe65b44d0d6324c6c1}\index{BgzfMtReader@{BgzfMtReader}!readerLoop@{readerLoop}}
+\index{readerLoop@{readerLoop}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{readerLoop()}{readerLoop()}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a4bb241d72e8decbe65b44d0d6324c6c1} 
+void Bgzf\+Mt\+Reader::\+reader\+Loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classBgzfMtReader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classBgzfMtReader_aabb14dbaa99b86ff493f61f66ad81c2c}\index{BgzfMtReader@{BgzfMtReader}!mConsumeCv@{mConsumeCv}}
+\index{mConsumeCv@{mConsumeCv}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mConsumeCv}{mConsumeCv}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_aabb14dbaa99b86ff493f61f66ad81c2c} 
+std::\+condition\+\_\+variable Bgzf\+Mt\+Reader::\+m\+Consume\+Cv\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a2562478e5080c81552a82c50142e9100}\index{BgzfMtReader@{BgzfMtReader}!mConsumeIdx@{mConsumeIdx}}
+\index{mConsumeIdx@{mConsumeIdx}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mConsumeIdx}{mConsumeIdx}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a2562478e5080c81552a82c50142e9100} 
+std::\+atomic$<$int$>$ Bgzf\+Mt\+Reader::\+m\+Consume\+Idx\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_ab2e951f140ecaedc0d1111e4e65899e1}\index{BgzfMtReader@{BgzfMtReader}!mConsumeMtx@{mConsumeMtx}}
+\index{mConsumeMtx@{mConsumeMtx}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mConsumeMtx}{mConsumeMtx}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_ab2e951f140ecaedc0d1111e4e65899e1} 
+std::\+mutex Bgzf\+Mt\+Reader::\+m\+Consume\+Mtx\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}\index{BgzfMtReader@{BgzfMtReader}!mConsumeOffset@{mConsumeOffset}}
+\index{mConsumeOffset@{mConsumeOffset}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mConsumeOffset}{mConsumeOffset}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767} 
+int Bgzf\+Mt\+Reader::\+m\+Consume\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a2f1aa5f2807c4985211afb97022db2f2}\index{BgzfMtReader@{BgzfMtReader}!mDecompCv@{mDecompCv}}
+\index{mDecompCv@{mDecompCv}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mDecompCv}{mDecompCv}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a2f1aa5f2807c4985211afb97022db2f2} 
+std::\+condition\+\_\+variable Bgzf\+Mt\+Reader::\+m\+Decomp\+Cv\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_ab53aa58d024aadb0ea5c3887b513acc7}\index{BgzfMtReader@{BgzfMtReader}!mDecompMtx@{mDecompMtx}}
+\index{mDecompMtx@{mDecompMtx}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mDecompMtx}{mDecompMtx}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_ab53aa58d024aadb0ea5c3887b513acc7} 
+std::\+mutex Bgzf\+Mt\+Reader::\+m\+Decomp\+Mtx\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a9ef9a5cd59156ddd64b3de39e8e87fb2}\index{BgzfMtReader@{BgzfMtReader}!mFp@{mFp}}
+\index{mFp@{mFp}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mFp}{mFp}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a9ef9a5cd59156ddd64b3de39e8e87fb2} 
+FILE\texorpdfstring{$\ast$}{*} Bgzf\+Mt\+Reader::\+m\+Fp\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a7063733b17ed8a7bdbc5fdf08879af81}\index{BgzfMtReader@{BgzfMtReader}!mMaxPool@{mMaxPool}}
+\index{mMaxPool@{mMaxPool}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mMaxPool}{mMaxPool}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a7063733b17ed8a7bdbc5fdf08879af81} 
+int Bgzf\+Mt\+Reader::\+m\+Max\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a1ec53f83c42eac0ded6e591867d50191}\index{BgzfMtReader@{BgzfMtReader}!mPool@{mPool}}
+\index{mPool@{mPool}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mPool}{mPool}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a1ec53f83c42eac0ded6e591867d50191} 
+std::\+vector$<$std::\+thread\texorpdfstring{$\ast$}{*}$>$ Bgzf\+Mt\+Reader::\+m\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_ad4fac5895b050216e9352aeb97adf5ce}\index{BgzfMtReader@{BgzfMtReader}!mProduceCv@{mProduceCv}}
+\index{mProduceCv@{mProduceCv}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mProduceCv}{mProduceCv}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_ad4fac5895b050216e9352aeb97adf5ce} 
+std::\+condition\+\_\+variable Bgzf\+Mt\+Reader::\+m\+Produce\+Cv\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_ad9fe79c25105be430e2f64229bf333e8}\index{BgzfMtReader@{BgzfMtReader}!mProduceIdx@{mProduceIdx}}
+\index{mProduceIdx@{mProduceIdx}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mProduceIdx}{mProduceIdx}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_ad9fe79c25105be430e2f64229bf333e8} 
+std::\+atomic$<$int$>$ Bgzf\+Mt\+Reader::\+m\+Produce\+Idx\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_af4c9b162a77e2119ec1878cbdd602d42}\index{BgzfMtReader@{BgzfMtReader}!mProduceMtx@{mProduceMtx}}
+\index{mProduceMtx@{mProduceMtx}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mProduceMtx}{mProduceMtx}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_af4c9b162a77e2119ec1878cbdd602d42} 
+std::\+mutex Bgzf\+Mt\+Reader::\+m\+Produce\+Mtx\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a60f12801d6f3a632fc01c0fd63e27a6f}\index{BgzfMtReader@{BgzfMtReader}!mReaderThread@{mReaderThread}}
+\index{mReaderThread@{mReaderThread}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mReaderThread}{mReaderThread}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a60f12801d6f3a632fc01c0fd63e27a6f} 
+std::\+thread\texorpdfstring{$\ast$}{*} Bgzf\+Mt\+Reader::\+m\+Reader\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}\index{BgzfMtReader@{BgzfMtReader}!mRingSize@{mRingSize}}
+\index{mRingSize@{mRingSize}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mRingSize}{mRingSize}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8} 
+int Bgzf\+Mt\+Reader::\+m\+Ring\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246}\index{BgzfMtReader@{BgzfMtReader}!mSlots@{mSlots}}
+\index{mSlots@{mSlots}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mSlots}{mSlots}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246} 
+\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}\texorpdfstring{$\ast$}{*} Bgzf\+Mt\+Reader::\+m\+Slots\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}\index{BgzfMtReader@{BgzfMtReader}!mStop@{mStop}}
+\index{mStop@{mStop}!BgzfMtReader@{BgzfMtReader}}
+\doxysubsubsection{\texorpdfstring{mStop}{mStop}}
+{\footnotesize\ttfamily \label{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7} 
+std::\+atomic$<$bool$>$ Bgzf\+Mt\+Reader::\+m\+Stop\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{bgzf_8h}{bgzf.\+h}}\end{DoxyCompactItemize}

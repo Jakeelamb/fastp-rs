@@ -1,0 +1,340 @@
+\doxysection{Thread\+Config Class Reference}
+\hypertarget{classThreadConfig}{}\label{classThreadConfig}\index{ThreadConfig@{ThreadConfig}}
+
+
+{\ttfamily \+\#include $<$threadconfig.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classThreadConfig_a3c2e705cc20fe6334be383494943f76c}{Thread\+Config}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt, int thread\+Id, bool paired=false)
+\item 
+\doxymbox{\hyperlink{classThreadConfig_ac11109f3f8d98f2821ad647640213b98}{\texorpdfstring{$\sim$}{\string~}\+Thread\+Config}} ()
+\item 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_a23233d659251c0f5d16a3f1ee78746cb}{get\+Pre\+Stats1}} ()
+\item 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_af572e6e0652ebdc44807b5204f8a18c0}{get\+Post\+Stats1}} ()
+\item 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_a9797bd498b4d392bfab23aa2ec0a933d}{get\+Pre\+Stats2}} ()
+\item 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_acc217e60e637f3e58a6cd98592e665eb}{get\+Post\+Stats2}} ()
+\item 
+\doxymbox{\hyperlink{classWriter}{Writer}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_a296efaa78d4b5d5f1c6e7dd2aa49ce71}{get\+Writer1}} ()
+\item 
+\doxymbox{\hyperlink{classWriter}{Writer}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_af5a6eddd34b67d96c9c72f6d39decde0}{get\+Writer2}} ()
+\item 
+\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_aadbf8a20156fc0367fd256b5c65643c5}{get\+Filter\+Result}} ()
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_a7328638acc46a45009833bda2774b5e7}{init\+Writer}} (string filename1)
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_afe46c4614a4e303d46589615f6a841d9}{init\+Writer}} (string filename1, string filename2)
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_a6c55c466123792c864e8189af9364bc6}{add\+Filter\+Result}} (int result, int read\+Num)
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_a496f939454adbb2f7ccd90c46e14739a}{add\+Merged\+Pairs}} (int pairs)
+\item 
+int \doxymbox{\hyperlink{classThreadConfig_a16755b525b2e0cb5b321706a9cc7b0d6}{get\+Thread\+Id}} ()
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_af5ca1fe7b47c617332176f2f0b0b7026}{mark\+Processed}} (long read\+Num)
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_a1c894eafd8e4bb0bd665297e8c15c0dc}{init\+Writer\+For\+Split}} ()
+\item 
+bool \doxymbox{\hyperlink{classThreadConfig_a064f8bf41ae77bb519bc5b756a41af38}{can\+Be\+Stopped}} ()
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_a83b1b2aefa819cfb3f91f9a5b816ca00}{cleanup}} ()
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_ae7fce490836eac6a84cb84d45cfa33bd}{set\+Input\+List}} (\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}list)
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_a8f01d23de95158db4a81533016ae634a}{set\+Input\+List\+Pair}} (\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}left, \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}right)
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_a92b24277bcd99f5caa4827f131b37536}{get\+Left\+Input}} ()
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_aafa5bd8c77bea841ddef64aeb63c6f38}{get\+Right\+Input}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_a1d9d35713d7afba5c22b47b4df1c025f}{delete\+Writer}} ()
+\item 
+void \doxymbox{\hyperlink{classThreadConfig_a58a1212ae209519a6aaa2643cd2213dd}{write\+Empty\+Files\+For\+Splitting}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_a9db36257d603fb77176fa3280608377f}{m\+Pre\+Stats1}}
+\item 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_a5ff6eea599e61373ba516ebecd234063}{m\+Post\+Stats1}}
+\item 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_ab46090ab5acbe9c15bfe7604631ac227}{m\+Pre\+Stats2}}
+\item 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_abc1ea19456912250eec66e4e4466282c}{m\+Post\+Stats2}}
+\item 
+\doxymbox{\hyperlink{classWriter}{Writer}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_a5eb14a688584058bf539743a6c8e1d2b}{m\+Writer1}}
+\item 
+\doxymbox{\hyperlink{classWriter}{Writer}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_a3ed6719d273c54ec3cf5e6d9b5ccc4c5}{m\+Writer2}}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_ae9218c686dbeba8ab560b60c113d2c9d}{m\+Options}}
+\item 
+\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_ab66fc9188a2db2abb1196317ac3f6531}{m\+Filter\+Result}}
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_ad234e80f886b7bbb703fe573d34136e4}{m\+Left\+Input\+List}}
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classThreadConfig_ab434aaa6e058e872a9f09fdf3ba8cf39}{m\+Right\+Input\+List}}
+\item 
+int \doxymbox{\hyperlink{classThreadConfig_a7fcfaf57ee37e3719081816e66fe7c74}{m\+Thread\+Id}}
+\item 
+int \doxymbox{\hyperlink{classThreadConfig_afe39eb02aa3dfc04ff20c52e86b2207d}{m\+Working\+Split}}
+\item 
+long \doxymbox{\hyperlink{classThreadConfig_aa466b1c938a46b1f8a94a0581e8394ed}{m\+Current\+Split\+Reads}}
+\item 
+bool \doxymbox{\hyperlink{classThreadConfig_a1404e1172d98e0d5285ced698393dee9}{m\+Can\+Be\+Stopped}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classThreadConfig_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classThreadConfig_a3c2e705cc20fe6334be383494943f76c}\index{ThreadConfig@{ThreadConfig}!ThreadConfig@{ThreadConfig}}
+\index{ThreadConfig@{ThreadConfig}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{ThreadConfig()}{ThreadConfig()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a3c2e705cc20fe6334be383494943f76c} 
+Thread\+Config::\+\+Thread\+Config (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{, }\item[{int}]{thread\+Id}{, }\item[{bool}]{paired}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_ac11109f3f8d98f2821ad647640213b98}\index{ThreadConfig@{ThreadConfig}!````~ThreadConfig@{\texorpdfstring{$\sim$}{\string~}ThreadConfig}}
+\index{````~ThreadConfig@{\texorpdfstring{$\sim$}{\string~}ThreadConfig}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ThreadConfig()}{\string~ThreadConfig()}}
+{\footnotesize\ttfamily \label{classThreadConfig_ac11109f3f8d98f2821ad647640213b98} 
+Thread\+Config::\+\texorpdfstring{$\sim$}{\string~}\+Thread\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classThreadConfig_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classThreadConfig_a6c55c466123792c864e8189af9364bc6}\index{ThreadConfig@{ThreadConfig}!addFilterResult@{addFilterResult}}
+\index{addFilterResult@{addFilterResult}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{addFilterResult()}{addFilterResult()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a6c55c466123792c864e8189af9364bc6} 
+void Thread\+Config::\+add\+Filter\+Result (\begin{DoxyParamCaption}\item[{int}]{result}{, }\item[{int}]{read\+Num}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_a496f939454adbb2f7ccd90c46e14739a}\index{ThreadConfig@{ThreadConfig}!addMergedPairs@{addMergedPairs}}
+\index{addMergedPairs@{addMergedPairs}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{addMergedPairs()}{addMergedPairs()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a496f939454adbb2f7ccd90c46e14739a} 
+void Thread\+Config::\+add\+Merged\+Pairs (\begin{DoxyParamCaption}\item[{int}]{pairs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_a064f8bf41ae77bb519bc5b756a41af38}\index{ThreadConfig@{ThreadConfig}!canBeStopped@{canBeStopped}}
+\index{canBeStopped@{canBeStopped}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{canBeStopped()}{canBeStopped()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a064f8bf41ae77bb519bc5b756a41af38} 
+bool Thread\+Config::\+can\+Be\+Stopped (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_a83b1b2aefa819cfb3f91f9a5b816ca00}\index{ThreadConfig@{ThreadConfig}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a83b1b2aefa819cfb3f91f9a5b816ca00} 
+void Thread\+Config::\+cleanup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_a1d9d35713d7afba5c22b47b4df1c025f}\index{ThreadConfig@{ThreadConfig}!deleteWriter@{deleteWriter}}
+\index{deleteWriter@{deleteWriter}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{deleteWriter()}{deleteWriter()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a1d9d35713d7afba5c22b47b4df1c025f} 
+void Thread\+Config::\+delete\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_aadbf8a20156fc0367fd256b5c65643c5}\index{ThreadConfig@{ThreadConfig}!getFilterResult@{getFilterResult}}
+\index{getFilterResult@{getFilterResult}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getFilterResult()}{getFilterResult()}}
+{\footnotesize\ttfamily \label{classThreadConfig_aadbf8a20156fc0367fd256b5c65643c5} 
+\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Filter\+Result (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_a92b24277bcd99f5caa4827f131b37536}\index{ThreadConfig@{ThreadConfig}!getLeftInput@{getLeftInput}}
+\index{getLeftInput@{getLeftInput}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getLeftInput()}{getLeftInput()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a92b24277bcd99f5caa4827f131b37536} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Left\+Input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_af572e6e0652ebdc44807b5204f8a18c0}\index{ThreadConfig@{ThreadConfig}!getPostStats1@{getPostStats1}}
+\index{getPostStats1@{getPostStats1}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getPostStats1()}{getPostStats1()}}
+{\footnotesize\ttfamily \label{classThreadConfig_af572e6e0652ebdc44807b5204f8a18c0} 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Post\+Stats1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_acc217e60e637f3e58a6cd98592e665eb}\index{ThreadConfig@{ThreadConfig}!getPostStats2@{getPostStats2}}
+\index{getPostStats2@{getPostStats2}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getPostStats2()}{getPostStats2()}}
+{\footnotesize\ttfamily \label{classThreadConfig_acc217e60e637f3e58a6cd98592e665eb} 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Post\+Stats2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_a23233d659251c0f5d16a3f1ee78746cb}\index{ThreadConfig@{ThreadConfig}!getPreStats1@{getPreStats1}}
+\index{getPreStats1@{getPreStats1}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getPreStats1()}{getPreStats1()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a23233d659251c0f5d16a3f1ee78746cb} 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Pre\+Stats1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_a9797bd498b4d392bfab23aa2ec0a933d}\index{ThreadConfig@{ThreadConfig}!getPreStats2@{getPreStats2}}
+\index{getPreStats2@{getPreStats2}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getPreStats2()}{getPreStats2()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a9797bd498b4d392bfab23aa2ec0a933d} 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Pre\+Stats2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_aafa5bd8c77bea841ddef64aeb63c6f38}\index{ThreadConfig@{ThreadConfig}!getRightInput@{getRightInput}}
+\index{getRightInput@{getRightInput}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getRightInput()}{getRightInput()}}
+{\footnotesize\ttfamily \label{classThreadConfig_aafa5bd8c77bea841ddef64aeb63c6f38} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Right\+Input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_a16755b525b2e0cb5b321706a9cc7b0d6}\index{ThreadConfig@{ThreadConfig}!getThreadId@{getThreadId}}
+\index{getThreadId@{getThreadId}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getThreadId()}{getThreadId()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a16755b525b2e0cb5b321706a9cc7b0d6} 
+int Thread\+Config::\+get\+Thread\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_a296efaa78d4b5d5f1c6e7dd2aa49ce71}\index{ThreadConfig@{ThreadConfig}!getWriter1@{getWriter1}}
+\index{getWriter1@{getWriter1}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getWriter1()}{getWriter1()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a296efaa78d4b5d5f1c6e7dd2aa49ce71} 
+\doxymbox{\hyperlink{classWriter}{Writer}} \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Writer1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_af5a6eddd34b67d96c9c72f6d39decde0}\index{ThreadConfig@{ThreadConfig}!getWriter2@{getWriter2}}
+\index{getWriter2@{getWriter2}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{getWriter2()}{getWriter2()}}
+{\footnotesize\ttfamily \label{classThreadConfig_af5a6eddd34b67d96c9c72f6d39decde0} 
+\doxymbox{\hyperlink{classWriter}{Writer}} \texorpdfstring{$\ast$}{*} Thread\+Config::\+get\+Writer2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classThreadConfig_a7328638acc46a45009833bda2774b5e7}\index{ThreadConfig@{ThreadConfig}!initWriter@{initWriter}}
+\index{initWriter@{initWriter}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{initWriter()}{initWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classThreadConfig_a7328638acc46a45009833bda2774b5e7} 
+void Thread\+Config::\+init\+Writer (\begin{DoxyParamCaption}\item[{string}]{filename1}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_afe46c4614a4e303d46589615f6a841d9}\index{ThreadConfig@{ThreadConfig}!initWriter@{initWriter}}
+\index{initWriter@{initWriter}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{initWriter()}{initWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classThreadConfig_afe46c4614a4e303d46589615f6a841d9} 
+void Thread\+Config::\+init\+Writer (\begin{DoxyParamCaption}\item[{string}]{filename1}{, }\item[{string}]{filename2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_a1c894eafd8e4bb0bd665297e8c15c0dc}\index{ThreadConfig@{ThreadConfig}!initWriterForSplit@{initWriterForSplit}}
+\index{initWriterForSplit@{initWriterForSplit}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{initWriterForSplit()}{initWriterForSplit()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a1c894eafd8e4bb0bd665297e8c15c0dc} 
+void Thread\+Config::\+init\+Writer\+For\+Split (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_af5ca1fe7b47c617332176f2f0b0b7026}\index{ThreadConfig@{ThreadConfig}!markProcessed@{markProcessed}}
+\index{markProcessed@{markProcessed}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{markProcessed()}{markProcessed()}}
+{\footnotesize\ttfamily \label{classThreadConfig_af5ca1fe7b47c617332176f2f0b0b7026} 
+void Thread\+Config::\+mark\+Processed (\begin{DoxyParamCaption}\item[{long}]{read\+Num}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_ae7fce490836eac6a84cb84d45cfa33bd}\index{ThreadConfig@{ThreadConfig}!setInputList@{setInputList}}
+\index{setInputList@{setInputList}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{setInputList()}{setInputList()}}
+{\footnotesize\ttfamily \label{classThreadConfig_ae7fce490836eac6a84cb84d45cfa33bd} 
+void Thread\+Config::\+set\+Input\+List (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{list}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_a8f01d23de95158db4a81533016ae634a}\index{ThreadConfig@{ThreadConfig}!setInputListPair@{setInputListPair}}
+\index{setInputListPair@{setInputListPair}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{setInputListPair()}{setInputListPair()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a8f01d23de95158db4a81533016ae634a} 
+void Thread\+Config::\+set\+Input\+List\+Pair (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{left}{, }\item[{\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}}]{right}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classThreadConfig_a58a1212ae209519a6aaa2643cd2213dd}\index{ThreadConfig@{ThreadConfig}!writeEmptyFilesForSplitting@{writeEmptyFilesForSplitting}}
+\index{writeEmptyFilesForSplitting@{writeEmptyFilesForSplitting}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{writeEmptyFilesForSplitting()}{writeEmptyFilesForSplitting()}}
+{\footnotesize\ttfamily \label{classThreadConfig_a58a1212ae209519a6aaa2643cd2213dd} 
+void Thread\+Config::\+write\+Empty\+Files\+For\+Splitting (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classThreadConfig_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classThreadConfig_a1404e1172d98e0d5285ced698393dee9}\index{ThreadConfig@{ThreadConfig}!mCanBeStopped@{mCanBeStopped}}
+\index{mCanBeStopped@{mCanBeStopped}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mCanBeStopped}{mCanBeStopped}}
+{\footnotesize\ttfamily \label{classThreadConfig_a1404e1172d98e0d5285ced698393dee9} 
+bool Thread\+Config::\+m\+Can\+Be\+Stopped\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_aa466b1c938a46b1f8a94a0581e8394ed}\index{ThreadConfig@{ThreadConfig}!mCurrentSplitReads@{mCurrentSplitReads}}
+\index{mCurrentSplitReads@{mCurrentSplitReads}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mCurrentSplitReads}{mCurrentSplitReads}}
+{\footnotesize\ttfamily \label{classThreadConfig_aa466b1c938a46b1f8a94a0581e8394ed} 
+long Thread\+Config::\+m\+Current\+Split\+Reads\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_ab66fc9188a2db2abb1196317ac3f6531}\index{ThreadConfig@{ThreadConfig}!mFilterResult@{mFilterResult}}
+\index{mFilterResult@{mFilterResult}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mFilterResult}{mFilterResult}}
+{\footnotesize\ttfamily \label{classThreadConfig_ab66fc9188a2db2abb1196317ac3f6531} 
+\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}}\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Filter\+Result\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_ad234e80f886b7bbb703fe573d34136e4}\index{ThreadConfig@{ThreadConfig}!mLeftInputList@{mLeftInputList}}
+\index{mLeftInputList@{mLeftInputList}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mLeftInputList}{mLeftInputList}}
+{\footnotesize\ttfamily \label{classThreadConfig_ad234e80f886b7bbb703fe573d34136e4} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$\doxymbox{\hyperlink{structReadPack}{Read\+Pack}}\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Left\+Input\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_ae9218c686dbeba8ab560b60c113d2c9d}\index{ThreadConfig@{ThreadConfig}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classThreadConfig_ae9218c686dbeba8ab560b60c113d2c9d} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_a5ff6eea599e61373ba516ebecd234063}\index{ThreadConfig@{ThreadConfig}!mPostStats1@{mPostStats1}}
+\index{mPostStats1@{mPostStats1}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mPostStats1}{mPostStats1}}
+{\footnotesize\ttfamily \label{classThreadConfig_a5ff6eea599e61373ba516ebecd234063} 
+\doxymbox{\hyperlink{classStats}{Stats}}\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Post\+Stats1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_abc1ea19456912250eec66e4e4466282c}\index{ThreadConfig@{ThreadConfig}!mPostStats2@{mPostStats2}}
+\index{mPostStats2@{mPostStats2}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mPostStats2}{mPostStats2}}
+{\footnotesize\ttfamily \label{classThreadConfig_abc1ea19456912250eec66e4e4466282c} 
+\doxymbox{\hyperlink{classStats}{Stats}}\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Post\+Stats2\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_a9db36257d603fb77176fa3280608377f}\index{ThreadConfig@{ThreadConfig}!mPreStats1@{mPreStats1}}
+\index{mPreStats1@{mPreStats1}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mPreStats1}{mPreStats1}}
+{\footnotesize\ttfamily \label{classThreadConfig_a9db36257d603fb77176fa3280608377f} 
+\doxymbox{\hyperlink{classStats}{Stats}}\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Pre\+Stats1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_ab46090ab5acbe9c15bfe7604631ac227}\index{ThreadConfig@{ThreadConfig}!mPreStats2@{mPreStats2}}
+\index{mPreStats2@{mPreStats2}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mPreStats2}{mPreStats2}}
+{\footnotesize\ttfamily \label{classThreadConfig_ab46090ab5acbe9c15bfe7604631ac227} 
+\doxymbox{\hyperlink{classStats}{Stats}}\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Pre\+Stats2\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_ab434aaa6e058e872a9f09fdf3ba8cf39}\index{ThreadConfig@{ThreadConfig}!mRightInputList@{mRightInputList}}
+\index{mRightInputList@{mRightInputList}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mRightInputList}{mRightInputList}}
+{\footnotesize\ttfamily \label{classThreadConfig_ab434aaa6e058e872a9f09fdf3ba8cf39} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$\doxymbox{\hyperlink{structReadPack}{Read\+Pack}}\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Right\+Input\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_a7fcfaf57ee37e3719081816e66fe7c74}\index{ThreadConfig@{ThreadConfig}!mThreadId@{mThreadId}}
+\index{mThreadId@{mThreadId}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mThreadId}{mThreadId}}
+{\footnotesize\ttfamily \label{classThreadConfig_a7fcfaf57ee37e3719081816e66fe7c74} 
+int Thread\+Config::\+m\+Thread\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_afe39eb02aa3dfc04ff20c52e86b2207d}\index{ThreadConfig@{ThreadConfig}!mWorkingSplit@{mWorkingSplit}}
+\index{mWorkingSplit@{mWorkingSplit}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mWorkingSplit}{mWorkingSplit}}
+{\footnotesize\ttfamily \label{classThreadConfig_afe39eb02aa3dfc04ff20c52e86b2207d} 
+int Thread\+Config::\+m\+Working\+Split\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_a5eb14a688584058bf539743a6c8e1d2b}\index{ThreadConfig@{ThreadConfig}!mWriter1@{mWriter1}}
+\index{mWriter1@{mWriter1}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mWriter1}{mWriter1}}
+{\footnotesize\ttfamily \label{classThreadConfig_a5eb14a688584058bf539743a6c8e1d2b} 
+\doxymbox{\hyperlink{classWriter}{Writer}}\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Writer1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classThreadConfig_a3ed6719d273c54ec3cf5e6d9b5ccc4c5}\index{ThreadConfig@{ThreadConfig}!mWriter2@{mWriter2}}
+\index{mWriter2@{mWriter2}!ThreadConfig@{ThreadConfig}}
+\doxysubsubsection{\texorpdfstring{mWriter2}{mWriter2}}
+{\footnotesize\ttfamily \label{classThreadConfig_a3ed6719d273c54ec3cf5e6d9b5ccc4c5} 
+\doxymbox{\hyperlink{classWriter}{Writer}}\texorpdfstring{$\ast$}{*} Thread\+Config::\+m\+Writer2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{threadconfig_8h}{threadconfig.\+h}}\item 
+src/\+\doxymbox{\hyperlink{threadconfig_8cpp}{threadconfig.\+cpp}}\end{DoxyCompactItemize}

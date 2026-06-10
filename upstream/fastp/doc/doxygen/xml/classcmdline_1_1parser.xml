@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcmdline_1_1parser" kind="class" language="C++" prot="public">
+    <compoundname>cmdline::parser</compoundname>
+    <includes refid="cmdline_8h" local="no">cmdline.h</includes>
+    <innerclass refid="classcmdline_1_1parser_1_1option__base" prot="private">cmdline::parser::option_base</innerclass>
+    <innerclass refid="classcmdline_1_1parser_1_1option__without__value" prot="private">cmdline::parser::option_without_value</innerclass>
+    <innerclass refid="classcmdline_1_1parser_1_1option__with__value" prot="private">cmdline::parser::option_with_value</innerclass>
+    <innerclass refid="classcmdline_1_1parser_1_1option__with__value__with__reader" prot="private">cmdline::parser::option_with_value_with_reader</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcmdline_1_1parser_1a4205b1e938b5190672298c3c4a8e6de5" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classcmdline_1_1parser_1_1option__base" kindref="compound">option_base</ref> * &gt;</type>
+        <definition>std::map&lt;std::string, option_base*&gt; cmdline::parser::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <qualifiedname>cmdline::parser::options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="799" column="12" bodyfile="src/cmdline.h" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcmdline_1_1parser_1a84bdf2ea140a970f1acdcb51e12bec2c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcmdline_1_1parser_1_1option__base" kindref="compound">option_base</ref> * &gt;</type>
+        <definition>std::vector&lt;option_base*&gt; cmdline::parser::ordered</definition>
+        <argsstring></argsstring>
+        <name>ordered</name>
+        <qualifiedname>cmdline::parser::ordered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="800" column="15" bodyfile="src/cmdline.h" bodystart="800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcmdline_1_1parser_1a260075b8d293161c7357f50b7cf71e88" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cmdline::parser::ftr</definition>
+        <argsstring></argsstring>
+        <name>ftr</name>
+        <qualifiedname>cmdline::parser::ftr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="801" column="15" bodyfile="src/cmdline.h" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcmdline_1_1parser_1aacbd60921933dfc5606d22dbe1e30625" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cmdline::parser::prog_name</definition>
+        <argsstring></argsstring>
+        <name>prog_name</name>
+        <qualifiedname>cmdline::parser::prog_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="803" column="15" bodyfile="src/cmdline.h" bodystart="803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcmdline_1_1parser_1aee5711cafc2f46c238fadf593e08e599" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; cmdline::parser::others</definition>
+        <argsstring></argsstring>
+        <name>others</name>
+        <qualifiedname>cmdline::parser::others</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="804" column="15" bodyfile="src/cmdline.h" bodystart="804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcmdline_1_1parser_1a2818ba785f310ba0f88359d1ba9833cc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; cmdline::parser::errors</definition>
+        <argsstring></argsstring>
+        <name>errors</name>
+        <qualifiedname>cmdline::parser::errors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="806" column="15" bodyfile="src/cmdline.h" bodystart="806" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcmdline_1_1parser_1a436c7cba6efd596729d18d58f1016cad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cmdline::parser::parser</definition>
+        <argsstring>()</argsstring>
+        <name>parser</name>
+        <qualifiedname>cmdline::parser::parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="312" column="3" bodyfile="src/cmdline.h" bodystart="312" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1ad656d8b9b4a38ce85cd2b630c4fc9a6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cmdline::parser::~parser</definition>
+        <argsstring>()</argsstring>
+        <name>~parser</name>
+        <qualifiedname>cmdline::parser::~parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="314" column="3" bodyfile="src/cmdline.h" bodystart="314" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a122aab1fb389f16170397971be1e75b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::add</definition>
+        <argsstring>(const std::string &amp;name, char short_name=0, const std::string &amp;desc=&quot;&quot;)</argsstring>
+        <name>add</name>
+        <qualifiedname>cmdline::parser::add</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>short_name</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="320" column="8" bodyfile="src/cmdline.h" bodystart="320" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1af97ab18f409599df07146da819c96bae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cmdline::parser::add</definition>
+        <argsstring>(const std::string &amp;name, char short_name=0, const std::string &amp;desc=&quot;&quot;, bool need=true, const T def=T())</argsstring>
+        <name>add</name>
+        <qualifiedname>cmdline::parser::add</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>short_name</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>need</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>def</declname>
+          <defval>T()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="329" column="8" bodyfile="src/cmdline.h" bodystart="329" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1aa6d002a3ef165c240d65c1e87f61a77c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cmdline::parser::add</definition>
+        <argsstring>(const std::string &amp;name, char short_name=0, const std::string &amp;desc=&quot;&quot;, bool need=true, const T def=T(), F reader=F())</argsstring>
+        <name>add</name>
+        <qualifiedname>cmdline::parser::add</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>short_name</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>need</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>def</declname>
+          <defval>T()</defval>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>reader</declname>
+          <defval>F()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="338" column="8" bodyfile="src/cmdline.h" bodystart="338" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a00f22e1d9ac1b8d73dfc990b4f87a598" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::footer</definition>
+        <argsstring>(const std::string &amp;f)</argsstring>
+        <name>footer</name>
+        <qualifiedname>cmdline::parser::footer</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="349" column="8" bodyfile="src/cmdline.h" bodystart="349" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1afdf4cb8deaead2d735c7803ede5b6b6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::set_program_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>set_program_name</name>
+        <qualifiedname>cmdline::parser::set_program_name</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="353" column="8" bodyfile="src/cmdline.h" bodystart="353" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1abe6c9ad7c3991062076917de0514376c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::exist</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>exist</name>
+        <qualifiedname>cmdline::parser::exist</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="357" column="8" bodyfile="src/cmdline.h" bodystart="357" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a5a28fa4f122ee70230c291187196edac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; cmdline::parser::get</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>get</name>
+        <qualifiedname>cmdline::parser::get</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="363" column="11" bodyfile="src/cmdline.h" bodystart="363" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a75193000dd4842d7bf249e4f99a5d52e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt; &amp;</type>
+        <definition>const std::vector&lt; std::string &gt; &amp; cmdline::parser::rest</definition>
+        <argsstring>() const</argsstring>
+        <name>rest</name>
+        <qualifiedname>cmdline::parser::rest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="370" column="21" bodyfile="src/cmdline.h" bodystart="370" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1ab8ca75cca3abf36b9474edcf0ce21ca6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::parse</definition>
+        <argsstring>(const std::string &amp;arg)</argsstring>
+        <name>parse</name>
+        <qualifiedname>cmdline::parser::parse</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="374" column="8" bodyfile="src/cmdline.h" bodystart="374" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a745c9519abe50562987487b6bf794fd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::parse</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;args)</argsstring>
+        <name>parse</name>
+        <qualifiedname>cmdline::parser::parse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="416" column="8" bodyfile="src/cmdline.h" bodystart="416" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a83175f24d7d9e29256b855fb249f427b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::parse</definition>
+        <argsstring>(int argc, const char *const argv[])</argsstring>
+        <name>parse</name>
+        <qualifiedname>cmdline::parser::parse</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>const char *const</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="426" column="8" bodyfile="src/cmdline.h" bodystart="426" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1af22be174b0ab09f03462c02e9afa03c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::parse_check</definition>
+        <argsstring>(const std::string &amp;arg)</argsstring>
+        <name>parse_check</name>
+        <qualifiedname>cmdline::parser::parse_check</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="527" column="8" bodyfile="src/cmdline.h" bodystart="527" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a0829039262c93910a9fee8c80f3edb64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::parse_check</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;args)</argsstring>
+        <name>parse_check</name>
+        <qualifiedname>cmdline::parser::parse_check</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="533" column="8" bodyfile="src/cmdline.h" bodystart="533" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a9c1aebc54c4bc0387c884888185b4941" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::parse_check</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>parse_check</name>
+        <qualifiedname>cmdline::parser::parse_check</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="539" column="8" bodyfile="src/cmdline.h" bodystart="539" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a9bcaaea243a949bf30a40d938480d303" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string cmdline::parser::error</definition>
+        <argsstring>() const</argsstring>
+        <name>error</name>
+        <qualifiedname>cmdline::parser::error</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="545" column="15" bodyfile="src/cmdline.h" bodystart="545" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a0267b636f34a788f57d5eeffcc5daf44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string cmdline::parser::error_full</definition>
+        <argsstring>() const</argsstring>
+        <name>error_full</name>
+        <qualifiedname>cmdline::parser::error_full</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="549" column="15" bodyfile="src/cmdline.h" bodystart="549" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a50b57c8179fe1b0dd8f5d2b8e8f3261b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string cmdline::parser::usage</definition>
+        <argsstring>() const</argsstring>
+        <name>usage</name>
+        <qualifiedname>cmdline::parser::usage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="556" column="15" bodyfile="src/cmdline.h" bodystart="556" bodyend="585"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcmdline_1_1parser_1aff0a9fa22a3263996f9dff90b16dd661" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::check</definition>
+        <argsstring>(int argc, bool ok)</argsstring>
+        <name>check</name>
+        <qualifiedname>cmdline::parser::check</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ok</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="589" column="8" bodyfile="src/cmdline.h" bodystart="589" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1a98e10dc469505563b643ea5166ac1d59" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::set_option</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>set_option</name>
+        <qualifiedname>cmdline::parser::set_option</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="601" column="8" bodyfile="src/cmdline.h" bodystart="601" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1ab43ce046c972a052c89cd9caaabd4327" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cmdline::parser::set_option</definition>
+        <argsstring>(const std::string &amp;name, const std::string &amp;value)</argsstring>
+        <name>set_option</name>
+        <qualifiedname>cmdline::parser::set_option</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="612" column="8" bodyfile="src/cmdline.h" bodystart="612" bodyend="621"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cmdline.h" line="310" column="1" bodyfile="src/cmdline.h" bodystart="310" bodyend="807"/>
+    <listofallmembers>
+      <member refid="classcmdline_1_1parser_1a122aab1fb389f16170397971be1e75b6" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>add</name></member>
+      <member refid="classcmdline_1_1parser_1af97ab18f409599df07146da819c96bae" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>add</name></member>
+      <member refid="classcmdline_1_1parser_1aa6d002a3ef165c240d65c1e87f61a77c" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>add</name></member>
+      <member refid="classcmdline_1_1parser_1aff0a9fa22a3263996f9dff90b16dd661" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>check</name></member>
+      <member refid="classcmdline_1_1parser_1a9bcaaea243a949bf30a40d938480d303" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>error</name></member>
+      <member refid="classcmdline_1_1parser_1a0267b636f34a788f57d5eeffcc5daf44" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>error_full</name></member>
+      <member refid="classcmdline_1_1parser_1a2818ba785f310ba0f88359d1ba9833cc" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>errors</name></member>
+      <member refid="classcmdline_1_1parser_1abe6c9ad7c3991062076917de0514376c" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>exist</name></member>
+      <member refid="classcmdline_1_1parser_1a00f22e1d9ac1b8d73dfc990b4f87a598" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>footer</name></member>
+      <member refid="classcmdline_1_1parser_1a260075b8d293161c7357f50b7cf71e88" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>ftr</name></member>
+      <member refid="classcmdline_1_1parser_1a5a28fa4f122ee70230c291187196edac" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>get</name></member>
+      <member refid="classcmdline_1_1parser_1a4205b1e938b5190672298c3c4a8e6de5" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>options</name></member>
+      <member refid="classcmdline_1_1parser_1a84bdf2ea140a970f1acdcb51e12bec2c" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>ordered</name></member>
+      <member refid="classcmdline_1_1parser_1aee5711cafc2f46c238fadf593e08e599" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>others</name></member>
+      <member refid="classcmdline_1_1parser_1ab8ca75cca3abf36b9474edcf0ce21ca6" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>parse</name></member>
+      <member refid="classcmdline_1_1parser_1a745c9519abe50562987487b6bf794fd7" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>parse</name></member>
+      <member refid="classcmdline_1_1parser_1a83175f24d7d9e29256b855fb249f427b" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>parse</name></member>
+      <member refid="classcmdline_1_1parser_1af22be174b0ab09f03462c02e9afa03c9" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>parse_check</name></member>
+      <member refid="classcmdline_1_1parser_1a0829039262c93910a9fee8c80f3edb64" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>parse_check</name></member>
+      <member refid="classcmdline_1_1parser_1a9c1aebc54c4bc0387c884888185b4941" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>parse_check</name></member>
+      <member refid="classcmdline_1_1parser_1a436c7cba6efd596729d18d58f1016cad" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>parser</name></member>
+      <member refid="classcmdline_1_1parser_1aacbd60921933dfc5606d22dbe1e30625" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>prog_name</name></member>
+      <member refid="classcmdline_1_1parser_1a75193000dd4842d7bf249e4f99a5d52e" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>rest</name></member>
+      <member refid="classcmdline_1_1parser_1a98e10dc469505563b643ea5166ac1d59" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>set_option</name></member>
+      <member refid="classcmdline_1_1parser_1ab43ce046c972a052c89cd9caaabd4327" prot="private" virt="non-virtual"><scope>cmdline::parser</scope><name>set_option</name></member>
+      <member refid="classcmdline_1_1parser_1afdf4cb8deaead2d735c7803ede5b6b6a" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>set_program_name</name></member>
+      <member refid="classcmdline_1_1parser_1a50b57c8179fe1b0dd8f5d2b8e8f3261b" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>usage</name></member>
+      <member refid="classcmdline_1_1parser_1ad656d8b9b4a38ce85cd2b630c4fc9a6d" prot="public" virt="non-virtual"><scope>cmdline::parser</scope><name>~parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

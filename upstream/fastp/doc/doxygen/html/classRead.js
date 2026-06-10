@@ -1,0 +1,26 @@
+var classRead =
+[
+    [ "Read", "classRead.html#a72c9e2290cf8c794558a3e7d0507ca4a", null ],
+    [ "Read", "classRead.html#a3f2637bd14bd268c7e66dc84e925f8f4", null ],
+    [ "~Read", "classRead.html#a08d6c302dc2478f6a479c9ebc4350828", null ],
+    [ "appendToString", "classRead.html#a07052c7a404ae9d8f233fe0dde4260f5", null ],
+    [ "appendToStringWithTag", "classRead.html#ac7c4ebfdb66573e20c493eba6835ddd4", null ],
+    [ "convertPhred64To33", "classRead.html#a27854545a1385a16bdab760dfcc9ae17", null ],
+    [ "firstIndex", "classRead.html#a7f89589fb5b4218377f16d1fec89fb5d", null ],
+    [ "fixMGI", "classRead.html#a28c440362f78c2971ee6586a9ca48a0d", null ],
+    [ "lastIndex", "classRead.html#a258e5420bb4a2d598d83dcfe37daf9d0", null ],
+    [ "length", "classRead.html#ace429c91f54e941be218efa5ea4df299", null ],
+    [ "lowQualCount", "classRead.html#a97b44c2731a781029981ab558f0a3a3b", null ],
+    [ "print", "classRead.html#aa4abac4521d71824a4306dc3d0277b20", null ],
+    [ "printFile", "classRead.html#afb48f45ec769f5415cc131d2c7897d69", null ],
+    [ "resize", "classRead.html#a6ad42dd210ed4766e5eb5cf6e53f5562", null ],
+    [ "reverseComplement", "classRead.html#ab174708c21a3423e34a84fe82fe589c3", null ],
+    [ "test", "classRead.html#a9280b4341e197bf54c75ef9a0ba83f24", null ],
+    [ "toString", "classRead.html#a7c58e168bdacb8a14d99624334e769ff", null ],
+    [ "toStringWithTag", "classRead.html#a74196dd9084f16947fa92f6b0eb00e8c", null ],
+    [ "trimFront", "classRead.html#ada3719d937b1c4c0920371a8089364c4", null ],
+    [ "mName", "classRead.html#a39b956c50ccdaf3b1bd75775b6fa49f0", null ],
+    [ "mQuality", "classRead.html#aab4ffbb6b9ca25898cbab51923526092", null ],
+    [ "mSeq", "classRead.html#a6b78edd02cfdac07156691f13a7aa481", null ],
+    [ "mStrand", "classRead.html#a35a15be184b2456bb012eb3e938ccea8", null ]
+];

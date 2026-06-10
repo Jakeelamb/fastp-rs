@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['uint16_0',['uint16',['../common_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e',1,'common.h']]],
+  ['uint32_1',['uint32',['../common_8h.html#a1134b580f8da4de94ca6b1de4d37975e',1,'common.h']]],
+  ['uint64_2',['uint64',['../common_8h.html#a5975ce0896ee5ec5db2f1a411620a51a',1,'common.h']]],
+  ['uint8_3',['uint8',['../common_8h.html#adde6aaee8457bee49c2a92621fe22b79',1,'common.h']]],
+  ['umi_4',['umi',['../classOptions.html#aca57a9fc44e26fc73c1f98e87b515818',1,'Options']]],
+  ['umi_5floc_5findex1_5',['UMI_LOC_INDEX1',['../options_8h.html#a7f21eb844e334922fe953a98534c1e3f',1,'options.h']]],
+  ['umi_5floc_5findex2_6',['UMI_LOC_INDEX2',['../options_8h.html#a191ce48412c4baeab455ccfd4e56d8bb',1,'options.h']]],
+  ['umi_5floc_5fnone_7',['UMI_LOC_NONE',['../options_8h.html#adfaeb64fa9964f7883cc83df0c4a837b',1,'options.h']]],
+  ['umi_5floc_5fper_5findex_8',['UMI_LOC_PER_INDEX',['../options_8h.html#a8949a3db0997bcee09260efb4b46c46e',1,'options.h']]],
+  ['umi_5floc_5fper_5fread_9',['UMI_LOC_PER_READ',['../options_8h.html#a3cb6ab26c4387d164cfce0eff0f3ab42',1,'options.h']]],
+  ['umi_5floc_5fread1_10',['UMI_LOC_READ1',['../options_8h.html#a47c65cefbd05003c253b1ce56867993d',1,'options.h']]],
+  ['umi_5floc_5fread2_11',['UMI_LOC_READ2',['../options_8h.html#a8023d8803b58cbca4838b63fdf65eb03',1,'options.h']]],
+  ['umioptions_12',['UMIOptions',['../classUMIOptions.html',1,'UMIOptions'],['../classUMIOptions.html#a2ed315ff07cf2d6de053c588593468ca',1,'UMIOptions::UMIOptions()']]],
+  ['umiprocessor_13',['UmiProcessor',['../classUmiProcessor.html',1,'UmiProcessor'],['../classUmiProcessor.html#aba53b09204bd4d30b31744304a1b754d',1,'UmiProcessor::UmiProcessor()']]],
+  ['umiprocessor_2ecpp_14',['umiprocessor.cpp',['../umiprocessor_8cpp.html',1,'']]],
+  ['umiprocessor_2eh_15',['umiprocessor.h',['../umiprocessor_8h.html',1,'']]],
+  ['unittest_16',['UnitTest',['../classUnitTest.html',1,'UnitTest'],['../classUnitTest.html#a67ddaff817b55a624741d32550052f4b',1,'UnitTest::UnitTest()']]],
+  ['unittest_2ecpp_17',['unittest.cpp',['../unittest_8cpp.html',1,'']]],
+  ['unittest_2eh_18',['unittest.h',['../unittest_8h.html',1,'']]],
+  ['unpaired1_19',['unpaired1',['../classOptions.html#addbd3e5b3ee85340af93e210c5a67119',1,'Options']]],
+  ['unpaired2_20',['unpaired2',['../classOptions.html#a6c05e96f20473f11f105fdddbc748c9e',1,'Options']]],
+  ['unqualifiedpercentlimit_21',['unqualifiedPercentLimit',['../classQualityFilteringOptions.html#a595a8d5eea688533159b482537a82f1a',1,'QualityFilteringOptions']]],
+  ['updatefullstatus_22',['updateFullStatus',['../classReadPool.html#aaff28dd30958fae192e4a6fc4edbd4c0',1,'ReadPool']]],
+  ['usage_23',['usage',['../classcmdline_1_1parser.html#a50b57c8179fe1b0dd8f5d2b8e8f3261b',1,'cmdline::parser']]],
+  ['util_2eh_24',['util.h',['../util_8h.html',1,'']]]
+];

@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFilter" kind="class" language="C++" prot="public">
+    <compoundname>Filter</compoundname>
+    <includes refid="filter_8h" local="no">filter.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFilter_1af59e53198737709d138fbe29a5332655" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* Filter::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>Filter::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="28" column="13" bodyfile="src/filter.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFilter_1a92fa6d109e4b8a798e1f3a1b3bc0d651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Filter::Filter</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>Filter</name>
+        <qualifiedname>Filter::Filter</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="15" column="5" bodyfile="src/filter.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilter_1a502ee334d42eac3edbaf32b599f9c35e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Filter::~Filter</definition>
+        <argsstring>()</argsstring>
+        <name>~Filter</name>
+        <qualifiedname>Filter::~Filter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="16" column="5" bodyfile="src/filter.cpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilter_1ad0ed0d10583bb939f9451052f9cce930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Filter::passFilter</definition>
+        <argsstring>(Read *r)</argsstring>
+        <name>passFilter</name>
+        <qualifiedname>Filter::passFilter</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="17" column="9" bodyfile="src/filter.cpp" bodystart="15" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilter_1ad621657b7da9b0387447c4694e1db157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Filter::passLowComplexityFilter</definition>
+        <argsstring>(Read *r)</argsstring>
+        <name>passLowComplexityFilter</name>
+        <qualifiedname>Filter::passLowComplexityFilter</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="18" column="10" bodyfile="src/filter.cpp" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilter_1a2eee564e8d970850c1f87d06e3e5b55c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+        <definition>Read * Filter::trimAndCut</definition>
+        <argsstring>(Read *r, int front, int tail, int &amp;frontTrimmed)</argsstring>
+        <name>trimAndCut</name>
+        <qualifiedname>Filter::trimAndCut</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>front</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tail</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>frontTrimmed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="19" column="10" bodyfile="src/filter.cpp" bodystart="68" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilter_1af529fbec75e362270bc1db6f483847b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Filter::filterByIndex</definition>
+        <argsstring>(Read *r)</argsstring>
+        <name>filterByIndex</name>
+        <qualifiedname>Filter::filterByIndex</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="20" column="10" bodyfile="src/filter.cpp" bodystart="209" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilter_1a90f5e73b9d694de6b5af3cc626780d54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Filter::filterByIndex</definition>
+        <argsstring>(Read *r1, Read *r2)</argsstring>
+        <name>filterByIndex</name>
+        <qualifiedname>Filter::filterByIndex</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="21" column="10" bodyfile="src/filter.cpp" bodystart="217" bodyend="225"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFilter_1a6bd65071e3f2f8f715f79968dc7148b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Filter::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>Filter::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="22" column="17" bodyfile="src/filter.cpp" bodystart="245" bodyend="264"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFilter_1a67f3a45429fbef9f6ce8bcb9dd04f91e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Filter::match</definition>
+        <argsstring>(vector&lt; string &gt; &amp;list, string target, int threshold)</argsstring>
+        <name>match</name>
+        <qualifiedname>Filter::match</qualifiedname>
+        <param>
+          <type>vector&lt; string &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filter.h" line="25" column="10" bodyfile="src/filter.cpp" bodystart="227" bodyend="243"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="1">
+        <label>Filter</label>
+        <link refid="classFilter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/filter.h" line="13" column="1" bodyfile="src/filter.h" bodystart="13" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classFilter_1a92fa6d109e4b8a798e1f3a1b3bc0d651" prot="public" virt="non-virtual"><scope>Filter</scope><name>Filter</name></member>
+      <member refid="classFilter_1af529fbec75e362270bc1db6f483847b0" prot="public" virt="non-virtual"><scope>Filter</scope><name>filterByIndex</name></member>
+      <member refid="classFilter_1a90f5e73b9d694de6b5af3cc626780d54" prot="public" virt="non-virtual"><scope>Filter</scope><name>filterByIndex</name></member>
+      <member refid="classFilter_1a67f3a45429fbef9f6ce8bcb9dd04f91e" prot="private" virt="non-virtual"><scope>Filter</scope><name>match</name></member>
+      <member refid="classFilter_1af59e53198737709d138fbe29a5332655" prot="private" virt="non-virtual"><scope>Filter</scope><name>mOptions</name></member>
+      <member refid="classFilter_1ad0ed0d10583bb939f9451052f9cce930" prot="public" virt="non-virtual"><scope>Filter</scope><name>passFilter</name></member>
+      <member refid="classFilter_1ad621657b7da9b0387447c4694e1db157" prot="public" virt="non-virtual"><scope>Filter</scope><name>passLowComplexityFilter</name></member>
+      <member refid="classFilter_1a6bd65071e3f2f8f715f79968dc7148b2" prot="public" virt="non-virtual"><scope>Filter</scope><name>test</name></member>
+      <member refid="classFilter_1a2eee564e8d970850c1f87d06e3e5b55c" prot="public" virt="non-virtual"><scope>Filter</scope><name>trimAndCut</name></member>
+      <member refid="classFilter_1a502ee334d42eac3edbaf32b599f9c35e" prot="public" virt="non-virtual"><scope>Filter</scope><name>~Filter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

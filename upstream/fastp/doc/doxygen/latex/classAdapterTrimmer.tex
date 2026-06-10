@@ -1,0 +1,84 @@
+\doxysection{Adapter\+Trimmer Class Reference}
+\hypertarget{classAdapterTrimmer}{}\label{classAdapterTrimmer}\index{AdapterTrimmer@{AdapterTrimmer}}
+
+
+{\ttfamily \+\#include $<$adaptertrimmer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classAdapterTrimmer_ab3d901e9e802b027f8f3db80d7305808}{Adapter\+Trimmer}} ()
+\item 
+\doxymbox{\hyperlink{classAdapterTrimmer_a504d451be959998f6a5b368d910dcb8a}{\texorpdfstring{$\sim$}{\string~}\+Adapter\+Trimmer}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{classAdapterTrimmer_aff4fe6cd45e0641d5590922d7d008c14}{trim\+By\+Overlap\+Analysis}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r1, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r2, \doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}fr, int diff\+Limit, int overlap\+Require, double diff\+Percent\+Limit)
+\item 
+static bool \doxymbox{\hyperlink{classAdapterTrimmer_ac6cae026f71af02a3e0467e092714e04}{trim\+By\+Overlap\+Analysis}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r1, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r2, \doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}fr, \doxymbox{\hyperlink{classOverlapResult}{Overlap\+Result}} ov, int front\+Trimmed1=0, int front\+Trimmed2=0)
+\item 
+static bool \doxymbox{\hyperlink{classAdapterTrimmer_a12d23e7ec408b7ff7327969e2492aa40}{trim\+By\+Sequence}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r1, \doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}fr, string \&adapter, bool is\+R2=false, int match\+Req=4)
+\item 
+static bool \doxymbox{\hyperlink{classAdapterTrimmer_aaa48744b28fd12fb282bb2e5104efd73}{trim\+By\+Multi\+Sequences}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r1, \doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}fr, vector$<$ string $>$ \&adapter\+List, bool is\+R2=false)
+\item 
+static bool \doxymbox{\hyperlink{classAdapterTrimmer_afffbea20b02ccb66c13ebab06c4f0ae0}{test}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classAdapterTrimmer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAdapterTrimmer_ab3d901e9e802b027f8f3db80d7305808}\index{AdapterTrimmer@{AdapterTrimmer}!AdapterTrimmer@{AdapterTrimmer}}
+\index{AdapterTrimmer@{AdapterTrimmer}!AdapterTrimmer@{AdapterTrimmer}}
+\doxysubsubsection{\texorpdfstring{AdapterTrimmer()}{AdapterTrimmer()}}
+{\footnotesize\ttfamily \label{classAdapterTrimmer_ab3d901e9e802b027f8f3db80d7305808} 
+Adapter\+Trimmer::\+\+Adapter\+Trimmer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classAdapterTrimmer_a504d451be959998f6a5b368d910dcb8a}\index{AdapterTrimmer@{AdapterTrimmer}!````~AdapterTrimmer@{\texorpdfstring{$\sim$}{\string~}AdapterTrimmer}}
+\index{````~AdapterTrimmer@{\texorpdfstring{$\sim$}{\string~}AdapterTrimmer}!AdapterTrimmer@{AdapterTrimmer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AdapterTrimmer()}{\string~AdapterTrimmer()}}
+{\footnotesize\ttfamily \label{classAdapterTrimmer_a504d451be959998f6a5b368d910dcb8a} 
+Adapter\+Trimmer::\+\texorpdfstring{$\sim$}{\string~}\+Adapter\+Trimmer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classAdapterTrimmer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAdapterTrimmer_afffbea20b02ccb66c13ebab06c4f0ae0}\index{AdapterTrimmer@{AdapterTrimmer}!test@{test}}
+\index{test@{test}!AdapterTrimmer@{AdapterTrimmer}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classAdapterTrimmer_afffbea20b02ccb66c13ebab06c4f0ae0} 
+bool Adapter\+Trimmer::\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classAdapterTrimmer_aaa48744b28fd12fb282bb2e5104efd73}\index{AdapterTrimmer@{AdapterTrimmer}!trimByMultiSequences@{trimByMultiSequences}}
+\index{trimByMultiSequences@{trimByMultiSequences}!AdapterTrimmer@{AdapterTrimmer}}
+\doxysubsubsection{\texorpdfstring{trimByMultiSequences()}{trimByMultiSequences()}}
+{\footnotesize\ttfamily \label{classAdapterTrimmer_aaa48744b28fd12fb282bb2e5104efd73} 
+bool Adapter\+Trimmer::\+trim\+By\+Multi\+Sequences (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r1}{, }\item[{\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}}]{fr}{, }\item[{vector$<$ string $>$ \&}]{adapter\+List}{, }\item[{bool}]{is\+R2}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classAdapterTrimmer_aff4fe6cd45e0641d5590922d7d008c14}\index{AdapterTrimmer@{AdapterTrimmer}!trimByOverlapAnalysis@{trimByOverlapAnalysis}}
+\index{trimByOverlapAnalysis@{trimByOverlapAnalysis}!AdapterTrimmer@{AdapterTrimmer}}
+\doxysubsubsection{\texorpdfstring{trimByOverlapAnalysis()}{trimByOverlapAnalysis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classAdapterTrimmer_aff4fe6cd45e0641d5590922d7d008c14} 
+bool Adapter\+Trimmer::\+trim\+By\+Overlap\+Analysis (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r1}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r2}{, }\item[{\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}}]{fr}{, }\item[{int}]{diff\+Limit}{, }\item[{int}]{overlap\+Require}{, }\item[{double}]{diff\+Percent\+Limit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classAdapterTrimmer_ac6cae026f71af02a3e0467e092714e04}\index{AdapterTrimmer@{AdapterTrimmer}!trimByOverlapAnalysis@{trimByOverlapAnalysis}}
+\index{trimByOverlapAnalysis@{trimByOverlapAnalysis}!AdapterTrimmer@{AdapterTrimmer}}
+\doxysubsubsection{\texorpdfstring{trimByOverlapAnalysis()}{trimByOverlapAnalysis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classAdapterTrimmer_ac6cae026f71af02a3e0467e092714e04} 
+bool Adapter\+Trimmer::\+trim\+By\+Overlap\+Analysis (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r1}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r2}{, }\item[{\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}}]{fr}{, }\item[{\doxymbox{\hyperlink{classOverlapResult}{Overlap\+Result}}}]{ov}{, }\item[{int}]{front\+Trimmed1}{ = {\ttfamily 0}, }\item[{int}]{front\+Trimmed2}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classAdapterTrimmer_a12d23e7ec408b7ff7327969e2492aa40}\index{AdapterTrimmer@{AdapterTrimmer}!trimBySequence@{trimBySequence}}
+\index{trimBySequence@{trimBySequence}!AdapterTrimmer@{AdapterTrimmer}}
+\doxysubsubsection{\texorpdfstring{trimBySequence()}{trimBySequence()}}
+{\footnotesize\ttfamily \label{classAdapterTrimmer_a12d23e7ec408b7ff7327969e2492aa40} 
+bool Adapter\+Trimmer::\+trim\+By\+Sequence (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r1}{, }\item[{\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}}]{fr}{, }\item[{string \&}]{adapter}{, }\item[{bool}]{is\+R2}{ = {\ttfamily false}, }\item[{int}]{match\+Req}{ = {\ttfamily 4}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{adaptertrimmer_8h}{adaptertrimmer.\+h}}\item 
+src/\+\doxymbox{\hyperlink{adaptertrimmer_8cpp}{adaptertrimmer.\+cpp}}\end{DoxyCompactItemize}

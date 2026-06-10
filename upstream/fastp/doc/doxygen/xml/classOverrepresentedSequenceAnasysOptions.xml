@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classOverrepresentedSequenceAnasysOptions" kind="class" language="C++" prot="public">
+    <compoundname>OverrepresentedSequenceAnasysOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOverrepresentedSequenceAnasysOptions_1afca60512bf9a402355cb56d6fb382200" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OverrepresentedSequenceAnasysOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>OverrepresentedSequenceAnasysOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="78" column="10" bodyfile="src/options.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOverrepresentedSequenceAnasysOptions_1a3c357eb931d4a1b8bae0b695461b2e3f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OverrepresentedSequenceAnasysOptions::sampling</definition>
+        <argsstring></argsstring>
+        <name>sampling</name>
+        <qualifiedname>OverrepresentedSequenceAnasysOptions::sampling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="79" column="9" bodyfile="src/options.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOverrepresentedSequenceAnasysOptions_1aa15c1166e77e9c03ead53aea94e4443b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>OverrepresentedSequenceAnasysOptions::OverrepresentedSequenceAnasysOptions</definition>
+        <argsstring>()</argsstring>
+        <name>OverrepresentedSequenceAnasysOptions</name>
+        <qualifiedname>OverrepresentedSequenceAnasysOptions::OverrepresentedSequenceAnasysOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="73" column="5" bodyfile="src/options.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="71" column="1" bodyfile="src/options.h" bodystart="71" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classOverrepresentedSequenceAnasysOptions_1afca60512bf9a402355cb56d6fb382200" prot="public" virt="non-virtual"><scope>OverrepresentedSequenceAnasysOptions</scope><name>enabled</name></member>
+      <member refid="classOverrepresentedSequenceAnasysOptions_1aa15c1166e77e9c03ead53aea94e4443b" prot="public" virt="non-virtual"><scope>OverrepresentedSequenceAnasysOptions</scope><name>OverrepresentedSequenceAnasysOptions</name></member>
+      <member refid="classOverrepresentedSequenceAnasysOptions_1a3c357eb931d4a1b8bae0b695461b2e3f" prot="public" virt="non-virtual"><scope>OverrepresentedSequenceAnasysOptions</scope><name>sampling</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

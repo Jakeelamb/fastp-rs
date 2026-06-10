@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classIndexFilterOptions" kind="class" language="C++" prot="public">
+    <compoundname>IndexFilterOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classIndexFilterOptions_1ae35b6f2704c88e70e511e57c8666f98b" prot="public" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; IndexFilterOptions::blacklist1</definition>
+        <argsstring></argsstring>
+        <name>blacklist1</name>
+        <qualifiedname>IndexFilterOptions::blacklist1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="54" column="12" bodyfile="src/options.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIndexFilterOptions_1aa80f659267e4386537dc4879e71d60b4" prot="public" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; IndexFilterOptions::blacklist2</definition>
+        <argsstring></argsstring>
+        <name>blacklist2</name>
+        <qualifiedname>IndexFilterOptions::blacklist2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="55" column="12" bodyfile="src/options.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIndexFilterOptions_1a40ea1b4ebfb784b75f428b9dfe390793" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IndexFilterOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>IndexFilterOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="56" column="10" bodyfile="src/options.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIndexFilterOptions_1ac142d33ed03b8066c83f403f784760fe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IndexFilterOptions::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>IndexFilterOptions::threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="57" column="9" bodyfile="src/options.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIndexFilterOptions_1a1106fb2f37ca24d2512200a82dad8c7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IndexFilterOptions::IndexFilterOptions</definition>
+        <argsstring>()</argsstring>
+        <name>IndexFilterOptions</name>
+        <qualifiedname>IndexFilterOptions::IndexFilterOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="49" column="5" bodyfile="src/options.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="47" column="1" bodyfile="src/options.h" bodystart="47" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classIndexFilterOptions_1ae35b6f2704c88e70e511e57c8666f98b" prot="public" virt="non-virtual"><scope>IndexFilterOptions</scope><name>blacklist1</name></member>
+      <member refid="classIndexFilterOptions_1aa80f659267e4386537dc4879e71d60b4" prot="public" virt="non-virtual"><scope>IndexFilterOptions</scope><name>blacklist2</name></member>
+      <member refid="classIndexFilterOptions_1a40ea1b4ebfb784b75f428b9dfe390793" prot="public" virt="non-virtual"><scope>IndexFilterOptions</scope><name>enabled</name></member>
+      <member refid="classIndexFilterOptions_1a1106fb2f37ca24d2512200a82dad8c7b" prot="public" virt="non-virtual"><scope>IndexFilterOptions</scope><name>IndexFilterOptions</name></member>
+      <member refid="classIndexFilterOptions_1ac142d33ed03b8066c83f403f784760fe" prot="public" virt="non-virtual"><scope>IndexFilterOptions</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

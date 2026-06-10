@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classTrimmingOptions" kind="class" language="C++" prot="public">
+    <compoundname>TrimmingOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classTrimmingOptions_1a79a55f3bdd8e036c701e81985d74a063" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrimmingOptions::front1</definition>
+        <argsstring></argsstring>
+        <name>front1</name>
+        <qualifiedname>TrimmingOptions::front1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="235" column="9" bodyfile="src/options.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTrimmingOptions_1a5e739d4562aa43144cc55230bfe17f2a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrimmingOptions::tail1</definition>
+        <argsstring></argsstring>
+        <name>tail1</name>
+        <qualifiedname>TrimmingOptions::tail1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="237" column="9" bodyfile="src/options.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTrimmingOptions_1a3e5e76adb90ef72b70ac37a39079e93a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrimmingOptions::front2</definition>
+        <argsstring></argsstring>
+        <name>front2</name>
+        <qualifiedname>TrimmingOptions::front2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="239" column="9" bodyfile="src/options.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTrimmingOptions_1ad4ebcc05efb88d43826446e867d5685d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrimmingOptions::tail2</definition>
+        <argsstring></argsstring>
+        <name>tail2</name>
+        <qualifiedname>TrimmingOptions::tail2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="241" column="9" bodyfile="src/options.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTrimmingOptions_1ae5596fb8dcd2f3da378edf46cb6bb9f2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrimmingOptions::maxLen1</definition>
+        <argsstring></argsstring>
+        <name>maxLen1</name>
+        <qualifiedname>TrimmingOptions::maxLen1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="243" column="9" bodyfile="src/options.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTrimmingOptions_1a2bdfe7d2e789f3f3d6e795497e13ce9a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TrimmingOptions::maxLen2</definition>
+        <argsstring></argsstring>
+        <name>maxLen2</name>
+        <qualifiedname>TrimmingOptions::maxLen2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="245" column="9" bodyfile="src/options.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTrimmingOptions_1a778b5a15f7c665d0ce9a603a8c8d3f7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TrimmingOptions::TrimmingOptions</definition>
+        <argsstring>()</argsstring>
+        <name>TrimmingOptions</name>
+        <qualifiedname>TrimmingOptions::TrimmingOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="225" column="5" bodyfile="src/options.h" bodystart="225" bodyend="232"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="223" column="1" bodyfile="src/options.h" bodystart="223" bodyend="246"/>
+    <listofallmembers>
+      <member refid="classTrimmingOptions_1a79a55f3bdd8e036c701e81985d74a063" prot="public" virt="non-virtual"><scope>TrimmingOptions</scope><name>front1</name></member>
+      <member refid="classTrimmingOptions_1a3e5e76adb90ef72b70ac37a39079e93a" prot="public" virt="non-virtual"><scope>TrimmingOptions</scope><name>front2</name></member>
+      <member refid="classTrimmingOptions_1ae5596fb8dcd2f3da378edf46cb6bb9f2" prot="public" virt="non-virtual"><scope>TrimmingOptions</scope><name>maxLen1</name></member>
+      <member refid="classTrimmingOptions_1a2bdfe7d2e789f3f3d6e795497e13ce9a" prot="public" virt="non-virtual"><scope>TrimmingOptions</scope><name>maxLen2</name></member>
+      <member refid="classTrimmingOptions_1a5e739d4562aa43144cc55230bfe17f2a" prot="public" virt="non-virtual"><scope>TrimmingOptions</scope><name>tail1</name></member>
+      <member refid="classTrimmingOptions_1ad4ebcc05efb88d43826446e867d5685d" prot="public" virt="non-virtual"><scope>TrimmingOptions</scope><name>tail2</name></member>
+      <member refid="classTrimmingOptions_1a778b5a15f7c665d0ce9a603a8c8d3f7d" prot="public" virt="non-virtual"><scope>TrimmingOptions</scope><name>TrimmingOptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

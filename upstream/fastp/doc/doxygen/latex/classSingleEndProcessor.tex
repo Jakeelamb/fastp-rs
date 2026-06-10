@@ -1,0 +1,236 @@
+\doxysection{Single\+End\+Processor Class Reference}
+\hypertarget{classSingleEndProcessor}{}\label{classSingleEndProcessor}\index{SingleEndProcessor@{SingleEndProcessor}}
+
+
+{\ttfamily \+\#include $<$seprocessor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classSingleEndProcessor_a23517a53bf114797efd701582dee0bd6}{Single\+End\+Processor}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt)
+\item 
+\doxymbox{\hyperlink{classSingleEndProcessor_a200e744048328418b3f4c5e4cfe1e9db}{\texorpdfstring{$\sim$}{\string~}\+Single\+End\+Processor}} ()
+\item 
+bool \doxymbox{\hyperlink{classSingleEndProcessor_a0a884b7985b3b5eca45bf371fbfed1b7}{process}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classSingleEndProcessor_aec4c12b0c0136eb961a5134a645b8714}{process\+Single\+End}} (\doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*}pack, \doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}config)
+\item 
+void \doxymbox{\hyperlink{classSingleEndProcessor_aa705b2b4e1bc9f4b321e835bcc3425b0}{reader\+Task}} ()
+\item 
+void \doxymbox{\hyperlink{classSingleEndProcessor_af9bb82a7162e6a3ba59d52013262a5ac}{processor\+Task}} (\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}config)
+\item 
+void \doxymbox{\hyperlink{classSingleEndProcessor_a4ba145f919e7d68855a436c31b6c8468}{init\+Config}} (\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}config)
+\item 
+void \doxymbox{\hyperlink{classSingleEndProcessor_a0d0fdb7d4c150cd3e2f8e98df15e8062}{init\+Output}} ()
+\item 
+void \doxymbox{\hyperlink{classSingleEndProcessor_ae602db756c00dbab997e5f9e41ce1ff2}{close\+Output}} ()
+\item 
+void \doxymbox{\hyperlink{classSingleEndProcessor_aab7f54169933a17185add9ac7118aeb3}{writer\+Task}} (\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*}config)
+\item 
+void \doxymbox{\hyperlink{classSingleEndProcessor_a7a56680ab84e4dd860fa1eebe4d5512c}{recycle\+To\+Pool}} (int tid, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleEndProcessor_a6059329cf8ba803109dc3e2d36761e0a}{m\+Options}}
+\item 
+atomic\+\_\+bool \doxymbox{\hyperlink{classSingleEndProcessor_a890cdf4098c90cb744c8570e16179137}{m\+Reader\+Finished}}
+\item 
+atomic\+\_\+int \doxymbox{\hyperlink{classSingleEndProcessor_a1402e30a474628f53eec6d9856e69aa4}{m\+Finished\+Threads}}
+\item 
+\doxymbox{\hyperlink{classFilter}{Filter}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleEndProcessor_ad912dbe7a716206d219acda8b7fc8353}{m\+Filter}}
+\item 
+\doxymbox{\hyperlink{classUmiProcessor}{Umi\+Processor}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleEndProcessor_a65df518c3160d8f3044e4c7a2c8290a7}{m\+Umi\+Processor}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleEndProcessor_a1fad72710625479ad4d40ac6446abe2a}{m\+Left\+Writer}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleEndProcessor_a0f60e8f7f2f61ac138acd6623616bf4d}{m\+Failed\+Writer}}
+\item 
+\doxymbox{\hyperlink{classDuplicate}{Duplicate}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleEndProcessor_ae0bb52b08011d7ed9b550c1764f4befc}{m\+Duplicate}}
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleEndProcessor_a830dac4b4a410f01f30c412b0c54cfa5}{m\+Input\+Lists}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classSingleEndProcessor_a73ae44ab8a034d023e5aaade84eeda36}{m\+Pack\+Read\+Counter}}
+\item 
+atomic\+\_\+long \doxymbox{\hyperlink{classSingleEndProcessor_a7d3c968d3c4cd97f1492562ed07b7bed}{m\+Pack\+Processed\+Counter}}
+\item 
+\doxymbox{\hyperlink{classReadPool}{Read\+Pool}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleEndProcessor_a069271c1e226a4a70af4dfe7af524d01}{m\+Read\+Pool}}
+\item 
+std::\+mutex \doxymbox{\hyperlink{classSingleEndProcessor_a6a3b727418f1d61c222f469fda5b5ad2}{m\+Backpressure\+Mtx}}
+\item 
+std::\+condition\+\_\+variable \doxymbox{\hyperlink{classSingleEndProcessor_a7510e45c48aa401028e5a6db13173b9d}{m\+Backpressure\+CV}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classSingleEndProcessor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSingleEndProcessor_a23517a53bf114797efd701582dee0bd6}\index{SingleEndProcessor@{SingleEndProcessor}!SingleEndProcessor@{SingleEndProcessor}}
+\index{SingleEndProcessor@{SingleEndProcessor}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{SingleEndProcessor()}{SingleEndProcessor()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a23517a53bf114797efd701582dee0bd6} 
+Single\+End\+Processor::\+\+Single\+End\+Processor (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classSingleEndProcessor_a200e744048328418b3f4c5e4cfe1e9db}\index{SingleEndProcessor@{SingleEndProcessor}!````~SingleEndProcessor@{\texorpdfstring{$\sim$}{\string~}SingleEndProcessor}}
+\index{````~SingleEndProcessor@{\texorpdfstring{$\sim$}{\string~}SingleEndProcessor}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SingleEndProcessor()}{\string~SingleEndProcessor()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a200e744048328418b3f4c5e4cfe1e9db} 
+Single\+End\+Processor::\+\texorpdfstring{$\sim$}{\string~}\+Single\+End\+Processor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classSingleEndProcessor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSingleEndProcessor_ae602db756c00dbab997e5f9e41ce1ff2}\index{SingleEndProcessor@{SingleEndProcessor}!closeOutput@{closeOutput}}
+\index{closeOutput@{closeOutput}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{closeOutput()}{closeOutput()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_ae602db756c00dbab997e5f9e41ce1ff2} 
+void Single\+End\+Processor::\+close\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a4ba145f919e7d68855a436c31b6c8468}\index{SingleEndProcessor@{SingleEndProcessor}!initConfig@{initConfig}}
+\index{initConfig@{initConfig}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{initConfig()}{initConfig()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a4ba145f919e7d68855a436c31b6c8468} 
+void Single\+End\+Processor::\+init\+Config (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a0d0fdb7d4c150cd3e2f8e98df15e8062}\index{SingleEndProcessor@{SingleEndProcessor}!initOutput@{initOutput}}
+\index{initOutput@{initOutput}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{initOutput()}{initOutput()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a0d0fdb7d4c150cd3e2f8e98df15e8062} 
+void Single\+End\+Processor::\+init\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a0a884b7985b3b5eca45bf371fbfed1b7}\index{SingleEndProcessor@{SingleEndProcessor}!process@{process}}
+\index{process@{process}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a0a884b7985b3b5eca45bf371fbfed1b7} 
+bool Single\+End\+Processor::\+process (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classSingleEndProcessor_af9bb82a7162e6a3ba59d52013262a5ac}\index{SingleEndProcessor@{SingleEndProcessor}!processorTask@{processorTask}}
+\index{processorTask@{processorTask}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{processorTask()}{processorTask()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_af9bb82a7162e6a3ba59d52013262a5ac} 
+void Single\+End\+Processor::\+processor\+Task (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_aec4c12b0c0136eb961a5134a645b8714}\index{SingleEndProcessor@{SingleEndProcessor}!processSingleEnd@{processSingleEnd}}
+\index{processSingleEnd@{processSingleEnd}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{processSingleEnd()}{processSingleEnd()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_aec4c12b0c0136eb961a5134a645b8714} 
+bool Single\+End\+Processor::\+process\+Single\+End (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*}}]{pack}{, }\item[{\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_aa705b2b4e1bc9f4b321e835bcc3425b0}\index{SingleEndProcessor@{SingleEndProcessor}!readerTask@{readerTask}}
+\index{readerTask@{readerTask}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{readerTask()}{readerTask()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_aa705b2b4e1bc9f4b321e835bcc3425b0} 
+void Single\+End\+Processor::\+reader\+Task (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a7a56680ab84e4dd860fa1eebe4d5512c}\index{SingleEndProcessor@{SingleEndProcessor}!recycleToPool@{recycleToPool}}
+\index{recycleToPool@{recycleToPool}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{recycleToPool()}{recycleToPool()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a7a56680ab84e4dd860fa1eebe4d5512c} 
+void Single\+End\+Processor::\+recycle\+To\+Pool (\begin{DoxyParamCaption}\item[{int}]{tid}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_aab7f54169933a17185add9ac7118aeb3}\index{SingleEndProcessor@{SingleEndProcessor}!writerTask@{writerTask}}
+\index{writerTask@{writerTask}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{writerTask()}{writerTask()}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_aab7f54169933a17185add9ac7118aeb3} 
+void Single\+End\+Processor::\+writer\+Task (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classSingleEndProcessor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classSingleEndProcessor_a7510e45c48aa401028e5a6db13173b9d}\index{SingleEndProcessor@{SingleEndProcessor}!mBackpressureCV@{mBackpressureCV}}
+\index{mBackpressureCV@{mBackpressureCV}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mBackpressureCV}{mBackpressureCV}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a7510e45c48aa401028e5a6db13173b9d} 
+std::\+condition\+\_\+variable Single\+End\+Processor::\+m\+Backpressure\+CV\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a6a3b727418f1d61c222f469fda5b5ad2}\index{SingleEndProcessor@{SingleEndProcessor}!mBackpressureMtx@{mBackpressureMtx}}
+\index{mBackpressureMtx@{mBackpressureMtx}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mBackpressureMtx}{mBackpressureMtx}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a6a3b727418f1d61c222f469fda5b5ad2} 
+std::\+mutex Single\+End\+Processor::\+m\+Backpressure\+Mtx\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_ae0bb52b08011d7ed9b550c1764f4befc}\index{SingleEndProcessor@{SingleEndProcessor}!mDuplicate@{mDuplicate}}
+\index{mDuplicate@{mDuplicate}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mDuplicate}{mDuplicate}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_ae0bb52b08011d7ed9b550c1764f4befc} 
+\doxymbox{\hyperlink{classDuplicate}{Duplicate}}\texorpdfstring{$\ast$}{*} Single\+End\+Processor::\+m\+Duplicate\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a0f60e8f7f2f61ac138acd6623616bf4d}\index{SingleEndProcessor@{SingleEndProcessor}!mFailedWriter@{mFailedWriter}}
+\index{mFailedWriter@{mFailedWriter}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mFailedWriter}{mFailedWriter}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a0f60e8f7f2f61ac138acd6623616bf4d} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Single\+End\+Processor::\+m\+Failed\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_ad912dbe7a716206d219acda8b7fc8353}\index{SingleEndProcessor@{SingleEndProcessor}!mFilter@{mFilter}}
+\index{mFilter@{mFilter}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mFilter}{mFilter}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_ad912dbe7a716206d219acda8b7fc8353} 
+\doxymbox{\hyperlink{classFilter}{Filter}}\texorpdfstring{$\ast$}{*} Single\+End\+Processor::\+m\+Filter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a1402e30a474628f53eec6d9856e69aa4}\index{SingleEndProcessor@{SingleEndProcessor}!mFinishedThreads@{mFinishedThreads}}
+\index{mFinishedThreads@{mFinishedThreads}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mFinishedThreads}{mFinishedThreads}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a1402e30a474628f53eec6d9856e69aa4} 
+atomic\+\_\+int Single\+End\+Processor::\+m\+Finished\+Threads\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a830dac4b4a410f01f30c412b0c54cfa5}\index{SingleEndProcessor@{SingleEndProcessor}!mInputLists@{mInputLists}}
+\index{mInputLists@{mInputLists}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mInputLists}{mInputLists}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a830dac4b4a410f01f30c412b0c54cfa5} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$\doxymbox{\hyperlink{structReadPack}{Read\+Pack}}\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Single\+End\+Processor::\+m\+Input\+Lists\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a1fad72710625479ad4d40ac6446abe2a}\index{SingleEndProcessor@{SingleEndProcessor}!mLeftWriter@{mLeftWriter}}
+\index{mLeftWriter@{mLeftWriter}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mLeftWriter}{mLeftWriter}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a1fad72710625479ad4d40ac6446abe2a} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Single\+End\+Processor::\+m\+Left\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a6059329cf8ba803109dc3e2d36761e0a}\index{SingleEndProcessor@{SingleEndProcessor}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a6059329cf8ba803109dc3e2d36761e0a} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Single\+End\+Processor::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a7d3c968d3c4cd97f1492562ed07b7bed}\index{SingleEndProcessor@{SingleEndProcessor}!mPackProcessedCounter@{mPackProcessedCounter}}
+\index{mPackProcessedCounter@{mPackProcessedCounter}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mPackProcessedCounter}{mPackProcessedCounter}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a7d3c968d3c4cd97f1492562ed07b7bed} 
+atomic\+\_\+long Single\+End\+Processor::\+m\+Pack\+Processed\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a73ae44ab8a034d023e5aaade84eeda36}\index{SingleEndProcessor@{SingleEndProcessor}!mPackReadCounter@{mPackReadCounter}}
+\index{mPackReadCounter@{mPackReadCounter}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mPackReadCounter}{mPackReadCounter}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a73ae44ab8a034d023e5aaade84eeda36} 
+size\+\_\+t Single\+End\+Processor::\+m\+Pack\+Read\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a890cdf4098c90cb744c8570e16179137}\index{SingleEndProcessor@{SingleEndProcessor}!mReaderFinished@{mReaderFinished}}
+\index{mReaderFinished@{mReaderFinished}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mReaderFinished}{mReaderFinished}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a890cdf4098c90cb744c8570e16179137} 
+atomic\+\_\+bool Single\+End\+Processor::\+m\+Reader\+Finished\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a069271c1e226a4a70af4dfe7af524d01}\index{SingleEndProcessor@{SingleEndProcessor}!mReadPool@{mReadPool}}
+\index{mReadPool@{mReadPool}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mReadPool}{mReadPool}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a069271c1e226a4a70af4dfe7af524d01} 
+\doxymbox{\hyperlink{classReadPool}{Read\+Pool}}\texorpdfstring{$\ast$}{*} Single\+End\+Processor::\+m\+Read\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleEndProcessor_a65df518c3160d8f3044e4c7a2c8290a7}\index{SingleEndProcessor@{SingleEndProcessor}!mUmiProcessor@{mUmiProcessor}}
+\index{mUmiProcessor@{mUmiProcessor}!SingleEndProcessor@{SingleEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mUmiProcessor}{mUmiProcessor}}
+{\footnotesize\ttfamily \label{classSingleEndProcessor_a65df518c3160d8f3044e4c7a2c8290a7} 
+\doxymbox{\hyperlink{classUmiProcessor}{Umi\+Processor}}\texorpdfstring{$\ast$}{*} Single\+End\+Processor::\+m\+Umi\+Processor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{seprocessor_8h}{seprocessor.\+h}}\item 
+src/\+\doxymbox{\hyperlink{seprocessor_8cpp}{seprocessor.\+cpp}}\end{DoxyCompactItemize}

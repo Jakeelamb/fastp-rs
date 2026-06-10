@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classReadPool" kind="class" language="C++" prot="public">
+    <compoundname>ReadPool</compoundname>
+    <includes refid="readpool_8h" local="no">readpool.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classReadPool_1a3c9368db6a2c159ecd7413273649b9db" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* ReadPool::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>ReadPool::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="30" column="13" bodyfile="src/readpool.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classReadPool_1a111f8ebf35d25500709fe93d2b51381f" prot="private" static="no" mutable="no">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="classRead" kindref="compound">Read</ref> * &gt; **</type>
+        <definition>SingleProducerSingleConsumerList&lt;Read*&gt;** ReadPool::mBufferLists</definition>
+        <argsstring></argsstring>
+        <name>mBufferLists</name>
+        <qualifiedname>ReadPool::mBufferLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="31" column="38" bodyfile="src/readpool.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classReadPool_1aae1704c64552b788533e2811dbaa8edf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ReadPool::mProduced</definition>
+        <argsstring></argsstring>
+        <name>mProduced</name>
+        <qualifiedname>ReadPool::mProduced</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="32" column="12" bodyfile="src/readpool.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classReadPool_1a1cd1bb4013436d075e115e180073cedb" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ReadPool::mConsumed</definition>
+        <argsstring></argsstring>
+        <name>mConsumed</name>
+        <qualifiedname>ReadPool::mConsumed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="33" column="12" bodyfile="src/readpool.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classReadPool_1a6e366610d7da83db5aba13ccafdf1e56" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long ReadPool::mLimit</definition>
+        <argsstring></argsstring>
+        <name>mLimit</name>
+        <qualifiedname>ReadPool::mLimit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="34" column="19" bodyfile="src/readpool.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classReadPool_1a1466ad7e924bd613a382797334befb73" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ReadPool::mIsFull</definition>
+        <argsstring></argsstring>
+        <name>mIsFull</name>
+        <qualifiedname>ReadPool::mIsFull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="35" column="10" bodyfile="src/readpool.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classReadPool_1a825e4a1cd2b8445e1fe0d06b1f4eb432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReadPool::ReadPool</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>ReadPool</name>
+        <qualifiedname>ReadPool::ReadPool</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="18" column="5" bodyfile="src/readpool.cpp" bodystart="7" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPool_1a649907fc0ebf67cb25cf807719345a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReadPool::~ReadPool</definition>
+        <argsstring>()</argsstring>
+        <name>~ReadPool</name>
+        <qualifiedname>ReadPool::~ReadPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="19" column="5" bodyfile="src/readpool.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPool_1a84def75bf8adf5aa647d177526422cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ReadPool::input</definition>
+        <argsstring>(int tid, Read *r)</argsstring>
+        <name>input</name>
+        <qualifiedname>ReadPool::input</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="20" column="10" bodyfile="src/readpool.cpp" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPool_1ae6f0349e3cc99f3127f84e4a4fe16907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+        <definition>Read * ReadPool::getOne</definition>
+        <argsstring>()</argsstring>
+        <name>getOne</name>
+        <qualifiedname>ReadPool::getOne</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="21" column="10" bodyfile="src/readpool.cpp" bodystart="64" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPool_1a51b4843262445cbe3655d1d4519a1fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReadPool::initBufferLists</definition>
+        <argsstring>()</argsstring>
+        <name>initBufferLists</name>
+        <qualifiedname>ReadPool::initBufferLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="22" column="10" bodyfile="src/readpool.cpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPool_1ab64601b8e4cbd985ceb07f5c193eb189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReadPool::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <qualifiedname>ReadPool::cleanup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="23" column="10" bodyfile="src/readpool.cpp" bodystart="33" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPool_1ae265b7030e0718d847858b17d88829a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t ReadPool::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <qualifiedname>ReadPool::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="24" column="12" bodyfile="src/readpool.cpp" bodystart="56" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classReadPool_1aaff28dd30958fae192e4a6fc4edbd4c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReadPool::updateFullStatus</definition>
+        <argsstring>()</argsstring>
+        <name>updateFullStatus</name>
+        <qualifiedname>ReadPool::updateFullStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/readpool.h" line="27" column="6" bodyfile="src/readpool.cpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="19">
+        <label>LockFreeListItem&lt; Read * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="20">
+        <label>Read</label>
+        <link refid="classRead"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="1">
+        <label>ReadPool</label>
+        <link refid="classReadPool"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mBufferLists</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SingleProducerSingleConsumerList&lt; Read * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/readpool.h" line="16" column="1" bodyfile="src/readpool.h" bodystart="16" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classReadPool_1ab64601b8e4cbd985ceb07f5c193eb189" prot="public" virt="non-virtual"><scope>ReadPool</scope><name>cleanup</name></member>
+      <member refid="classReadPool_1ae6f0349e3cc99f3127f84e4a4fe16907" prot="public" virt="non-virtual"><scope>ReadPool</scope><name>getOne</name></member>
+      <member refid="classReadPool_1a51b4843262445cbe3655d1d4519a1fae" prot="public" virt="non-virtual"><scope>ReadPool</scope><name>initBufferLists</name></member>
+      <member refid="classReadPool_1a84def75bf8adf5aa647d177526422cb5" prot="public" virt="non-virtual"><scope>ReadPool</scope><name>input</name></member>
+      <member refid="classReadPool_1a111f8ebf35d25500709fe93d2b51381f" prot="private" virt="non-virtual"><scope>ReadPool</scope><name>mBufferLists</name></member>
+      <member refid="classReadPool_1a1cd1bb4013436d075e115e180073cedb" prot="private" virt="non-virtual"><scope>ReadPool</scope><name>mConsumed</name></member>
+      <member refid="classReadPool_1a1466ad7e924bd613a382797334befb73" prot="private" virt="non-virtual"><scope>ReadPool</scope><name>mIsFull</name></member>
+      <member refid="classReadPool_1a6e366610d7da83db5aba13ccafdf1e56" prot="private" virt="non-virtual"><scope>ReadPool</scope><name>mLimit</name></member>
+      <member refid="classReadPool_1a3c9368db6a2c159ecd7413273649b9db" prot="private" virt="non-virtual"><scope>ReadPool</scope><name>mOptions</name></member>
+      <member refid="classReadPool_1aae1704c64552b788533e2811dbaa8edf" prot="private" virt="non-virtual"><scope>ReadPool</scope><name>mProduced</name></member>
+      <member refid="classReadPool_1a825e4a1cd2b8445e1fe0d06b1f4eb432" prot="public" virt="non-virtual"><scope>ReadPool</scope><name>ReadPool</name></member>
+      <member refid="classReadPool_1ae265b7030e0718d847858b17d88829a9" prot="public" virt="non-virtual"><scope>ReadPool</scope><name>size</name></member>
+      <member refid="classReadPool_1aaff28dd30958fae192e4a6fc4edbd4c0" prot="private" virt="non-virtual"><scope>ReadPool</scope><name>updateFullStatus</name></member>
+      <member refid="classReadPool_1a649907fc0ebf67cb25cf807719345a90" prot="public" virt="non-virtual"><scope>ReadPool</scope><name>~ReadPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

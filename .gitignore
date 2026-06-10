@@ -1,0 +1,6 @@
+/target
+upstream/fastp/doc/joern/logs/
+
+# Default fastp QC filenames when run from repo root (local bench smoke)
+/fastp.json
+/fastp.html

@@ -1,0 +1,1006 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classOptions" kind="class" language="C++" prot="public">
+    <compoundname>Options</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOptions_1a867153943d87550b22de1708a20283f4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::in1</definition>
+        <argsstring></argsstring>
+        <name>in1</name>
+        <qualifiedname>Options::in1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="303" column="12" bodyfile="src/options.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a2663a57894fb248dbad36d06f843bd3f" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::in2</definition>
+        <argsstring></argsstring>
+        <name>in2</name>
+        <qualifiedname>Options::in2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="305" column="12" bodyfile="src/options.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a9c791494d7e9b5dc239bf270bca6773c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::out1</definition>
+        <argsstring></argsstring>
+        <name>out1</name>
+        <qualifiedname>Options::out1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="307" column="12" bodyfile="src/options.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a4b8a79bb8da7fd1a7701b2a0f3f11bb2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::out2</definition>
+        <argsstring></argsstring>
+        <name>out2</name>
+        <qualifiedname>Options::out2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="309" column="12" bodyfile="src/options.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1addbd3e5b3ee85340af93e210c5a67119" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::unpaired1</definition>
+        <argsstring></argsstring>
+        <name>unpaired1</name>
+        <qualifiedname>Options::unpaired1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="311" column="12" bodyfile="src/options.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a6c05e96f20473f11f105fdddbc748c9e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::unpaired2</definition>
+        <argsstring></argsstring>
+        <name>unpaired2</name>
+        <qualifiedname>Options::unpaired2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="313" column="12" bodyfile="src/options.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a2d6303a7fca31c581b777cd6764bc113" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::failedOut</definition>
+        <argsstring></argsstring>
+        <name>failedOut</name>
+        <qualifiedname>Options::failedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="315" column="12" bodyfile="src/options.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1abf91da4425a1516d1feac2e7f05cf3eb" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::overlappedOut</definition>
+        <argsstring></argsstring>
+        <name>overlappedOut</name>
+        <qualifiedname>Options::overlappedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="317" column="12" bodyfile="src/options.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a56ff625b05f95289ea1267c64bc1d10c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::jsonFile</definition>
+        <argsstring></argsstring>
+        <name>jsonFile</name>
+        <qualifiedname>Options::jsonFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="319" column="12" bodyfile="src/options.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1ae18cc08006898e9f836b5a6c5352a2f6" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::htmlFile</definition>
+        <argsstring></argsstring>
+        <name>htmlFile</name>
+        <qualifiedname>Options::htmlFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="321" column="12" bodyfile="src/options.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a33eb0827641e09a164e40e2dbc221de2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Options::reportTitle</definition>
+        <argsstring></argsstring>
+        <name>reportTitle</name>
+        <qualifiedname>Options::reportTitle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="323" column="12" bodyfile="src/options.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a1aed9ab748113ac3b4f8e4a37d12d56d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::compression</definition>
+        <argsstring></argsstring>
+        <name>compression</name>
+        <qualifiedname>Options::compression</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="325" column="9" bodyfile="src/options.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1ac45b72d19f458d16919fe63be8c9c8c2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Options::phred64</definition>
+        <argsstring></argsstring>
+        <name>phred64</name>
+        <qualifiedname>Options::phred64</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="327" column="10" bodyfile="src/options.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a30e4e9592ecb76499dd68fb66b872561" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Options::dontOverwrite</definition>
+        <argsstring></argsstring>
+        <name>dontOverwrite</name>
+        <qualifiedname>Options::dontOverwrite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="329" column="10" bodyfile="src/options.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1aafe6b1439eaa776263ac8568c2cc8e2c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Options::inputFromSTDIN</definition>
+        <argsstring></argsstring>
+        <name>inputFromSTDIN</name>
+        <qualifiedname>Options::inputFromSTDIN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="331" column="10" bodyfile="src/options.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a6dd223e9b98ca2760d6b89fb4c30af42" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Options::outputToSTDOUT</definition>
+        <argsstring></argsstring>
+        <name>outputToSTDOUT</name>
+        <qualifiedname>Options::outputToSTDOUT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="333" column="10" bodyfile="src/options.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1aea3b69af761016c407a0c69623a5c4b7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Options::interleavedInput</definition>
+        <argsstring></argsstring>
+        <name>interleavedInput</name>
+        <qualifiedname>Options::interleavedInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="335" column="10" bodyfile="src/options.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1aa632a4f70ac7aa1d2694d8aedb236fd4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::readsToProcess</definition>
+        <argsstring></argsstring>
+        <name>readsToProcess</name>
+        <qualifiedname>Options::readsToProcess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="337" column="9" bodyfile="src/options.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1add32d97f9897d4ecee65c8d71fe66d8a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Options::fixMGI</definition>
+        <argsstring></argsstring>
+        <name>fixMGI</name>
+        <qualifiedname>Options::fixMGI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="339" column="10" bodyfile="src/options.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a17ed7d97ffc6c85ec7d1a4279d7f79a3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <qualifiedname>Options::thread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="341" column="9" bodyfile="src/options.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a9a36c385d3551208d57f9cece88b2e22" prot="public" static="no" mutable="no">
+        <type><ref refid="classTrimmingOptions" kindref="compound">TrimmingOptions</ref></type>
+        <definition>TrimmingOptions Options::trim</definition>
+        <argsstring></argsstring>
+        <name>trim</name>
+        <qualifiedname>Options::trim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="343" column="21" bodyfile="src/options.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a9c549e5b7b31497e356ef740de44a3b9" prot="public" static="no" mutable="no">
+        <type><ref refid="classQualityFilteringOptions" kindref="compound">QualityFilteringOptions</ref></type>
+        <definition>QualityFilteringOptions Options::qualfilter</definition>
+        <argsstring></argsstring>
+        <name>qualfilter</name>
+        <qualifiedname>Options::qualfilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="345" column="29" bodyfile="src/options.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a24e6a0097f4e22f0efbf60749a39ad21" prot="public" static="no" mutable="no">
+        <type><ref refid="classReadLengthFilteringOptions" kindref="compound">ReadLengthFilteringOptions</ref></type>
+        <definition>ReadLengthFilteringOptions Options::lengthFilter</definition>
+        <argsstring></argsstring>
+        <name>lengthFilter</name>
+        <qualifiedname>Options::lengthFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="347" column="32" bodyfile="src/options.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1af08ef7491aea7025205eb593c00093fd" prot="public" static="no" mutable="no">
+        <type><ref refid="classAdapterOptions" kindref="compound">AdapterOptions</ref></type>
+        <definition>AdapterOptions Options::adapter</definition>
+        <argsstring></argsstring>
+        <name>adapter</name>
+        <qualifiedname>Options::adapter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="349" column="20" bodyfile="src/options.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1ade71d85bc107c67e8e6c3e4c1032e12a" prot="public" static="no" mutable="no">
+        <type><ref refid="classSplitOptions" kindref="compound">SplitOptions</ref></type>
+        <definition>SplitOptions Options::split</definition>
+        <argsstring></argsstring>
+        <name>split</name>
+        <qualifiedname>Options::split</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="351" column="18" bodyfile="src/options.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1aee9b2785fa43d178a4a600c05d108bca" prot="public" static="no" mutable="no">
+        <type><ref refid="classQualityCutOptions" kindref="compound">QualityCutOptions</ref></type>
+        <definition>QualityCutOptions Options::qualityCut</definition>
+        <argsstring></argsstring>
+        <name>qualityCut</name>
+        <qualifiedname>Options::qualityCut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="353" column="23" bodyfile="src/options.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a2a224dbab4c8d8a508a7c1dc3b111b3f" prot="public" static="no" mutable="no">
+        <type><ref refid="classCorrectionOptions" kindref="compound">CorrectionOptions</ref></type>
+        <definition>CorrectionOptions Options::correction</definition>
+        <argsstring></argsstring>
+        <name>correction</name>
+        <qualifiedname>Options::correction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="355" column="23" bodyfile="src/options.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1aca57a9fc44e26fc73c1f98e87b515818" prot="public" static="no" mutable="no">
+        <type><ref refid="classUMIOptions" kindref="compound">UMIOptions</ref></type>
+        <definition>UMIOptions Options::umi</definition>
+        <argsstring></argsstring>
+        <name>umi</name>
+        <qualifiedname>Options::umi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="357" column="16" bodyfile="src/options.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a70a604ae8c23c944eccdc4ae8c723563" prot="public" static="no" mutable="no">
+        <type><ref refid="classPolyGTrimmerOptions" kindref="compound">PolyGTrimmerOptions</ref></type>
+        <definition>PolyGTrimmerOptions Options::polyGTrim</definition>
+        <argsstring></argsstring>
+        <name>polyGTrim</name>
+        <qualifiedname>Options::polyGTrim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="359" column="25" bodyfile="src/options.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a73af0c454838a42eb903289fc1862478" prot="public" static="no" mutable="no">
+        <type><ref refid="classPolyXTrimmerOptions" kindref="compound">PolyXTrimmerOptions</ref></type>
+        <definition>PolyXTrimmerOptions Options::polyXTrim</definition>
+        <argsstring></argsstring>
+        <name>polyXTrim</name>
+        <qualifiedname>Options::polyXTrim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="361" column="25" bodyfile="src/options.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1ab921d7a7d4f79284f02c09828dea20d8" prot="public" static="no" mutable="no">
+        <type><ref refid="classOverrepresentedSequenceAnasysOptions" kindref="compound">OverrepresentedSequenceAnasysOptions</ref></type>
+        <definition>OverrepresentedSequenceAnasysOptions Options::overRepAnalysis</definition>
+        <argsstring></argsstring>
+        <name>overRepAnalysis</name>
+        <qualifiedname>Options::overRepAnalysis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="363" column="42" bodyfile="src/options.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1ac5c3bf17db780c4d53ae4dee622572fb" prot="public" static="no" mutable="no">
+        <type>map&lt; string, long &gt;</type>
+        <definition>map&lt;string, long&gt; Options::overRepSeqs1</definition>
+        <argsstring></argsstring>
+        <name>overRepSeqs1</name>
+        <qualifiedname>Options::overRepSeqs1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="364" column="9" bodyfile="src/options.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a4d07f14084acd69dc3c934f4357ee98f" prot="public" static="no" mutable="no">
+        <type>map&lt; string, long &gt;</type>
+        <definition>map&lt;string, long&gt; Options::overRepSeqs2</definition>
+        <argsstring></argsstring>
+        <name>overRepSeqs2</name>
+        <qualifiedname>Options::overRepSeqs2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="365" column="9" bodyfile="src/options.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1aa9eb3c81561f72107a83ea0916134f3b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::seqLen1</definition>
+        <argsstring></argsstring>
+        <name>seqLen1</name>
+        <qualifiedname>Options::seqLen1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="366" column="9" bodyfile="src/options.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a9db285ebd621e0f10d0ac4c96c87f9ee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::seqLen2</definition>
+        <argsstring></argsstring>
+        <name>seqLen2</name>
+        <qualifiedname>Options::seqLen2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="367" column="9" bodyfile="src/options.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1afcfa6c7f8ce55e09a31fdf332e31239c" prot="public" static="no" mutable="no">
+        <type><ref refid="classLowComplexityFilterOptions" kindref="compound">LowComplexityFilterOptions</ref></type>
+        <definition>LowComplexityFilterOptions Options::complexityFilter</definition>
+        <argsstring></argsstring>
+        <name>complexityFilter</name>
+        <qualifiedname>Options::complexityFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="369" column="32" bodyfile="src/options.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1aee7b084d86aad106f69fad176e993d85" prot="public" static="no" mutable="no">
+        <type><ref refid="classIndexFilterOptions" kindref="compound">IndexFilterOptions</ref></type>
+        <definition>IndexFilterOptions Options::indexFilter</definition>
+        <argsstring></argsstring>
+        <name>indexFilter</name>
+        <qualifiedname>Options::indexFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="371" column="24" bodyfile="src/options.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a7c560dfc5ad0c0ef0a72be3bde0bdf57" prot="public" static="no" mutable="no">
+        <type><ref refid="classDuplicationOptions" kindref="compound">DuplicationOptions</ref></type>
+        <definition>DuplicationOptions Options::duplicate</definition>
+        <argsstring></argsstring>
+        <name>duplicate</name>
+        <qualifiedname>Options::duplicate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="373" column="24" bodyfile="src/options.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1ac3d553b690e7c29c4124d42cf1f2dfff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::insertSizeMax</definition>
+        <argsstring></argsstring>
+        <name>insertSizeMax</name>
+        <qualifiedname>Options::insertSizeMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="375" column="9" bodyfile="src/options.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1adb967c5e73e2884a1e1d5c142a6be75a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::overlapRequire</definition>
+        <argsstring></argsstring>
+        <name>overlapRequire</name>
+        <qualifiedname>Options::overlapRequire</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="377" column="9" bodyfile="src/options.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1adcae7e271b99c64a5371019e54a2d1ef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::overlapDiffLimit</definition>
+        <argsstring></argsstring>
+        <name>overlapDiffLimit</name>
+        <qualifiedname>Options::overlapDiffLimit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="378" column="9" bodyfile="src/options.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a22a205937d87423b3d051e988c2efafb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Options::overlapDiffPercentLimit</definition>
+        <argsstring></argsstring>
+        <name>overlapDiffPercentLimit</name>
+        <qualifiedname>Options::overlapDiffPercentLimit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="379" column="9" bodyfile="src/options.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1abaa084df3c7ed900634b4d187aa58ea0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Options::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <qualifiedname>Options::verbose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="381" column="10" bodyfile="src/options.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a7be5bed96d23e92d9154cd9dbd9b2036" prot="public" static="no" mutable="no">
+        <type><ref refid="classMergeOptions" kindref="compound">MergeOptions</ref></type>
+        <definition>MergeOptions Options::merge</definition>
+        <argsstring></argsstring>
+        <name>merge</name>
+        <qualifiedname>Options::merge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="383" column="18" bodyfile="src/options.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOptions_1a5913dc2fd969d6128b09ca7f1aafd86f" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Options::writerBufferSize</definition>
+        <argsstring></argsstring>
+        <name>writerBufferSize</name>
+        <qualifiedname>Options::writerBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="385" column="12" bodyfile="src/options.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOptions_1ab72fb640172a6109e34c8a5366563753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Options::Options</definition>
+        <argsstring>()</argsstring>
+        <name>Options</name>
+        <qualifiedname>Options::Options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="288" column="5" bodyfile="src/options.cpp" bodystart="8" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1ae4b17f909414d89c505db817a39608db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Options::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>Options::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="289" column="10" bodyfile="src/options.cpp" bodystart="33" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1ac12e9cc14732d8f545170ce92f76d4a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Options::isPaired</definition>
+        <argsstring>()</argsstring>
+        <name>isPaired</name>
+        <qualifiedname>Options::isPaired</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="290" column="10" bodyfile="src/options.cpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1a6871fc2c01fb3d11b605149e71962f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Options::validate</definition>
+        <argsstring>()</argsstring>
+        <name>validate</name>
+        <qualifiedname>Options::validate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="291" column="10" bodyfile="src/options.cpp" bodystart="84" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1ab257f1a699b3631813f2c4df6dfe54fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Options::adapterCuttingEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>adapterCuttingEnabled</name>
+        <qualifiedname>Options::adapterCuttingEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="292" column="10" bodyfile="src/options.cpp" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1ac3ce80db1b153984ab7f40b5584715e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Options::polyXTrimmingEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>polyXTrimmingEnabled</name>
+        <qualifiedname>Options::polyXTrimmingEnabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="293" column="10" bodyfile="src/options.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1a9b1b48038f8a323d2f821f96c4593e7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Options::getAdapter1</definition>
+        <argsstring>()</argsstring>
+        <name>getAdapter1</name>
+        <qualifiedname>Options::getAdapter1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="294" column="12" bodyfile="src/options.cpp" bodystart="511" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1a4de05c86b46d2d7ce2a88f149fefa7b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Options::getAdapter2</definition>
+        <argsstring>()</argsstring>
+        <name>getAdapter2</name>
+        <qualifiedname>Options::getAdapter2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="295" column="12" bodyfile="src/options.cpp" bodystart="518" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1ac4278f42d3ab2db76bb5adef237c1ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Options::initIndexFiltering</definition>
+        <argsstring>(string blacklistFile1, string blacklistFile2, int threshold=0)</argsstring>
+        <name>initIndexFiltering</name>
+        <qualifiedname>Options::initIndexFiltering</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>blacklistFile1</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>blacklistFile2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="296" column="10" bodyfile="src/options.cpp" bodystart="460" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1aa27446a132792738f4c1e4d16964309a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt; string &gt; Options::makeListFromFileByLine</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>makeListFromFileByLine</name>
+        <qualifiedname>Options::makeListFromFileByLine</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="297" column="12" bodyfile="src/options.cpp" bodystart="481" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1a5dbbf87d408711f24deecd3e786d4273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Options::shallDetectAdapter</definition>
+        <argsstring>(bool isR2=false)</argsstring>
+        <name>shallDetectAdapter</name>
+        <qualifiedname>Options::shallDetectAdapter</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>isR2</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="298" column="10" bodyfile="src/options.cpp" bodystart="446" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classOptions_1ac109dc037a08b45c3b4dc964ebbd97c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Options::loadFastaAdapters</definition>
+        <argsstring>()</argsstring>
+        <name>loadFastaAdapters</name>
+        <qualifiedname>Options::loadFastaAdapters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="299" column="10" bodyfile="src/options.cpp" bodystart="52" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="8">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="15">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="14">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="13">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="16">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="1">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="10">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="7">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="3">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="4">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="6">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="2">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="9">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/options.h" line="286" column="1" bodyfile="src/options.h" bodystart="286" bodyend="387"/>
+    <listofallmembers>
+      <member refid="classOptions_1af08ef7491aea7025205eb593c00093fd" prot="public" virt="non-virtual"><scope>Options</scope><name>adapter</name></member>
+      <member refid="classOptions_1ab257f1a699b3631813f2c4df6dfe54fe" prot="public" virt="non-virtual"><scope>Options</scope><name>adapterCuttingEnabled</name></member>
+      <member refid="classOptions_1afcfa6c7f8ce55e09a31fdf332e31239c" prot="public" virt="non-virtual"><scope>Options</scope><name>complexityFilter</name></member>
+      <member refid="classOptions_1a1aed9ab748113ac3b4f8e4a37d12d56d" prot="public" virt="non-virtual"><scope>Options</scope><name>compression</name></member>
+      <member refid="classOptions_1a2a224dbab4c8d8a508a7c1dc3b111b3f" prot="public" virt="non-virtual"><scope>Options</scope><name>correction</name></member>
+      <member refid="classOptions_1a30e4e9592ecb76499dd68fb66b872561" prot="public" virt="non-virtual"><scope>Options</scope><name>dontOverwrite</name></member>
+      <member refid="classOptions_1a7c560dfc5ad0c0ef0a72be3bde0bdf57" prot="public" virt="non-virtual"><scope>Options</scope><name>duplicate</name></member>
+      <member refid="classOptions_1a2d6303a7fca31c581b777cd6764bc113" prot="public" virt="non-virtual"><scope>Options</scope><name>failedOut</name></member>
+      <member refid="classOptions_1add32d97f9897d4ecee65c8d71fe66d8a" prot="public" virt="non-virtual"><scope>Options</scope><name>fixMGI</name></member>
+      <member refid="classOptions_1a9b1b48038f8a323d2f821f96c4593e7b" prot="public" virt="non-virtual"><scope>Options</scope><name>getAdapter1</name></member>
+      <member refid="classOptions_1a4de05c86b46d2d7ce2a88f149fefa7b3" prot="public" virt="non-virtual"><scope>Options</scope><name>getAdapter2</name></member>
+      <member refid="classOptions_1ae18cc08006898e9f836b5a6c5352a2f6" prot="public" virt="non-virtual"><scope>Options</scope><name>htmlFile</name></member>
+      <member refid="classOptions_1a867153943d87550b22de1708a20283f4" prot="public" virt="non-virtual"><scope>Options</scope><name>in1</name></member>
+      <member refid="classOptions_1a2663a57894fb248dbad36d06f843bd3f" prot="public" virt="non-virtual"><scope>Options</scope><name>in2</name></member>
+      <member refid="classOptions_1aee7b084d86aad106f69fad176e993d85" prot="public" virt="non-virtual"><scope>Options</scope><name>indexFilter</name></member>
+      <member refid="classOptions_1ae4b17f909414d89c505db817a39608db" prot="public" virt="non-virtual"><scope>Options</scope><name>init</name></member>
+      <member refid="classOptions_1ac4278f42d3ab2db76bb5adef237c1ff5" prot="public" virt="non-virtual"><scope>Options</scope><name>initIndexFiltering</name></member>
+      <member refid="classOptions_1aafe6b1439eaa776263ac8568c2cc8e2c" prot="public" virt="non-virtual"><scope>Options</scope><name>inputFromSTDIN</name></member>
+      <member refid="classOptions_1ac3d553b690e7c29c4124d42cf1f2dfff" prot="public" virt="non-virtual"><scope>Options</scope><name>insertSizeMax</name></member>
+      <member refid="classOptions_1aea3b69af761016c407a0c69623a5c4b7" prot="public" virt="non-virtual"><scope>Options</scope><name>interleavedInput</name></member>
+      <member refid="classOptions_1ac12e9cc14732d8f545170ce92f76d4a4" prot="public" virt="non-virtual"><scope>Options</scope><name>isPaired</name></member>
+      <member refid="classOptions_1a56ff625b05f95289ea1267c64bc1d10c" prot="public" virt="non-virtual"><scope>Options</scope><name>jsonFile</name></member>
+      <member refid="classOptions_1a24e6a0097f4e22f0efbf60749a39ad21" prot="public" virt="non-virtual"><scope>Options</scope><name>lengthFilter</name></member>
+      <member refid="classOptions_1ac109dc037a08b45c3b4dc964ebbd97c2" prot="public" virt="non-virtual"><scope>Options</scope><name>loadFastaAdapters</name></member>
+      <member refid="classOptions_1aa27446a132792738f4c1e4d16964309a" prot="public" virt="non-virtual"><scope>Options</scope><name>makeListFromFileByLine</name></member>
+      <member refid="classOptions_1a7be5bed96d23e92d9154cd9dbd9b2036" prot="public" virt="non-virtual"><scope>Options</scope><name>merge</name></member>
+      <member refid="classOptions_1ab72fb640172a6109e34c8a5366563753" prot="public" virt="non-virtual"><scope>Options</scope><name>Options</name></member>
+      <member refid="classOptions_1a9c791494d7e9b5dc239bf270bca6773c" prot="public" virt="non-virtual"><scope>Options</scope><name>out1</name></member>
+      <member refid="classOptions_1a4b8a79bb8da7fd1a7701b2a0f3f11bb2" prot="public" virt="non-virtual"><scope>Options</scope><name>out2</name></member>
+      <member refid="classOptions_1a6dd223e9b98ca2760d6b89fb4c30af42" prot="public" virt="non-virtual"><scope>Options</scope><name>outputToSTDOUT</name></member>
+      <member refid="classOptions_1adcae7e271b99c64a5371019e54a2d1ef" prot="public" virt="non-virtual"><scope>Options</scope><name>overlapDiffLimit</name></member>
+      <member refid="classOptions_1a22a205937d87423b3d051e988c2efafb" prot="public" virt="non-virtual"><scope>Options</scope><name>overlapDiffPercentLimit</name></member>
+      <member refid="classOptions_1abf91da4425a1516d1feac2e7f05cf3eb" prot="public" virt="non-virtual"><scope>Options</scope><name>overlappedOut</name></member>
+      <member refid="classOptions_1adb967c5e73e2884a1e1d5c142a6be75a" prot="public" virt="non-virtual"><scope>Options</scope><name>overlapRequire</name></member>
+      <member refid="classOptions_1ab921d7a7d4f79284f02c09828dea20d8" prot="public" virt="non-virtual"><scope>Options</scope><name>overRepAnalysis</name></member>
+      <member refid="classOptions_1ac5c3bf17db780c4d53ae4dee622572fb" prot="public" virt="non-virtual"><scope>Options</scope><name>overRepSeqs1</name></member>
+      <member refid="classOptions_1a4d07f14084acd69dc3c934f4357ee98f" prot="public" virt="non-virtual"><scope>Options</scope><name>overRepSeqs2</name></member>
+      <member refid="classOptions_1ac45b72d19f458d16919fe63be8c9c8c2" prot="public" virt="non-virtual"><scope>Options</scope><name>phred64</name></member>
+      <member refid="classOptions_1a70a604ae8c23c944eccdc4ae8c723563" prot="public" virt="non-virtual"><scope>Options</scope><name>polyGTrim</name></member>
+      <member refid="classOptions_1a73af0c454838a42eb903289fc1862478" prot="public" virt="non-virtual"><scope>Options</scope><name>polyXTrim</name></member>
+      <member refid="classOptions_1ac3ce80db1b153984ab7f40b5584715e5" prot="public" virt="non-virtual"><scope>Options</scope><name>polyXTrimmingEnabled</name></member>
+      <member refid="classOptions_1a9c549e5b7b31497e356ef740de44a3b9" prot="public" virt="non-virtual"><scope>Options</scope><name>qualfilter</name></member>
+      <member refid="classOptions_1aee9b2785fa43d178a4a600c05d108bca" prot="public" virt="non-virtual"><scope>Options</scope><name>qualityCut</name></member>
+      <member refid="classOptions_1aa632a4f70ac7aa1d2694d8aedb236fd4" prot="public" virt="non-virtual"><scope>Options</scope><name>readsToProcess</name></member>
+      <member refid="classOptions_1a33eb0827641e09a164e40e2dbc221de2" prot="public" virt="non-virtual"><scope>Options</scope><name>reportTitle</name></member>
+      <member refid="classOptions_1aa9eb3c81561f72107a83ea0916134f3b" prot="public" virt="non-virtual"><scope>Options</scope><name>seqLen1</name></member>
+      <member refid="classOptions_1a9db285ebd621e0f10d0ac4c96c87f9ee" prot="public" virt="non-virtual"><scope>Options</scope><name>seqLen2</name></member>
+      <member refid="classOptions_1a5dbbf87d408711f24deecd3e786d4273" prot="public" virt="non-virtual"><scope>Options</scope><name>shallDetectAdapter</name></member>
+      <member refid="classOptions_1ade71d85bc107c67e8e6c3e4c1032e12a" prot="public" virt="non-virtual"><scope>Options</scope><name>split</name></member>
+      <member refid="classOptions_1a17ed7d97ffc6c85ec7d1a4279d7f79a3" prot="public" virt="non-virtual"><scope>Options</scope><name>thread</name></member>
+      <member refid="classOptions_1a9a36c385d3551208d57f9cece88b2e22" prot="public" virt="non-virtual"><scope>Options</scope><name>trim</name></member>
+      <member refid="classOptions_1aca57a9fc44e26fc73c1f98e87b515818" prot="public" virt="non-virtual"><scope>Options</scope><name>umi</name></member>
+      <member refid="classOptions_1addbd3e5b3ee85340af93e210c5a67119" prot="public" virt="non-virtual"><scope>Options</scope><name>unpaired1</name></member>
+      <member refid="classOptions_1a6c05e96f20473f11f105fdddbc748c9e" prot="public" virt="non-virtual"><scope>Options</scope><name>unpaired2</name></member>
+      <member refid="classOptions_1a6871fc2c01fb3d11b605149e71962f33" prot="public" virt="non-virtual"><scope>Options</scope><name>validate</name></member>
+      <member refid="classOptions_1abaa084df3c7ed900634b4d187aa58ea0" prot="public" virt="non-virtual"><scope>Options</scope><name>verbose</name></member>
+      <member refid="classOptions_1a5913dc2fd969d6128b09ca7f1aafd86f" prot="public" virt="non-virtual"><scope>Options</scope><name>writerBufferSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

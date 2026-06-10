@@ -1,0 +1,227 @@
+\doxysection{src/\+util.h File Reference}
+\hypertarget{util_8h}{}\label{util_8h}\index{src/util.h@{src/util.h}}
+{\ttfamily \+\#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$sys/\+stat.\+h$>$}\newline
+{\ttfamily \+\#include $<$algorithm$>$}\newline
+{\ttfamily \+\#include $<$time.\+h$>$}\newline
+{\ttfamily \+\#include $<$mutex$>$}\newline
+{\ttfamily \+\#include $<$regex$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \doxymbox{\hyperlink{util_8h_aca609a0aa2078b7464de53a2efb58398}{complement}} (char base)
+\item 
+bool \doxymbox{\hyperlink{util_8h_a1ea2bedaa83ba9cd9e1df8d2f4c3491d}{starts\+\_\+with}} (string const \&value, string const \&starting)
+\item 
+bool \doxymbox{\hyperlink{util_8h_a93891416e1ad59c6d4df7445a7ef2524}{starts\+\_\+with}} (string \texorpdfstring{$\ast$}{*}value, string const \&starting)
+\item 
+bool \doxymbox{\hyperlink{util_8h_ac2a4e8bb60abae8b64dab7107e114cbb}{ends\+\_\+with}} (string const \&value, string const \&ending)
+\item 
+string \doxymbox{\hyperlink{util_8h_a3101bc0142a49d9d11ad3f8cac766a2d}{trim}} (const string \&str)
+\item 
+int \doxymbox{\hyperlink{util_8h_a02d36220606e7d11fc876a9ddee0b330}{split}} (const string \&str, vector$<$ string $>$ \&ret\+\_\+, string sep="{},"{})
+\item 
+string \doxymbox{\hyperlink{util_8h_a06e4bfc654793aba950d37afb6cc1f21}{replace}} (const string \&str, const string \&src, const string \&dest)
+\item 
+string \doxymbox{\hyperlink{util_8h_a04982192b779b50ab1d45dc3109a8795}{reverse}} (const string \&str)
+\item 
+string \doxymbox{\hyperlink{util_8h_a7657042f76bf50bcbabd087b2573a86b}{basename}} (const string \&filename)
+\item 
+string \doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}} (const string \&filename)
+\item 
+string \doxymbox{\hyperlink{util_8h_a5c4817483f5adf9cbad21804fa64ae1f}{joinpath}} (const string \&\doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}}, const string \&\doxymbox{\hyperlink{util_8h_a7657042f76bf50bcbabd087b2573a86b}{basename}})
+\item 
+bool \doxymbox{\hyperlink{util_8h_a073d984a68d92e2e1d39c69a384e71f6}{file\+\_\+exists}} (const string \&s)
+\item 
+bool \doxymbox{\hyperlink{util_8h_acee6930819622fb8b8d6c34e14d1970c}{is\+\_\+directory}} (const string \&path)
+\item 
+void \doxymbox{\hyperlink{util_8h_ae8a320da8f44d767b65c5b1e14e0fbc8}{check\+\_\+file\+\_\+valid}} (const string \&s)
+\item 
+bool \doxymbox{\hyperlink{util_8h_a9f9902b2f45276fb9a76f3417131bd0f}{check\+\_\+filename\+\_\+valid}} (const string \&s)
+\item 
+void \doxymbox{\hyperlink{util_8h_a88bf9c00f9ead979e48971460683a8f3}{check\+\_\+file\+\_\+writable}} (const string \&s)
+\item 
+string \doxymbox{\hyperlink{util_8h_ad0284669b46ac0ba4224a41bc9a08eb4}{str\+\_\+keep\+\_\+alpha}} (const string \&s)
+\item 
+void \doxymbox{\hyperlink{util_8h_a418b85315c08d490370eb6909079b869}{str\+\_\+keep\+\_\+valid\+\_\+sequence}} (string \&s, bool force\+Upper\+Case=false)
+\item 
+int \doxymbox{\hyperlink{util_8h_a24aedeca4efb117878d684045bf9bece}{find\+\_\+with\+\_\+right\+\_\+pos}} (const string \&str, const string \&pattern, int start=0)
+\item 
+void \doxymbox{\hyperlink{util_8h_a9ebd1bf0139dbe0896ef5fc94e490f72}{str2upper}} (string \&s)
+\item 
+void \doxymbox{\hyperlink{util_8h_aa79ff12decf7b10244321877981a1003}{str2lower}} (string \&s)
+\item 
+char \doxymbox{\hyperlink{util_8h_a36d185a90fd1da8f9bb53d738425ec15}{num2qual}} (int num)
+\item 
+void \doxymbox{\hyperlink{util_8h_a72cc7f4c6bfdafb18d052826b06723d6}{error\+\_\+exit}} (const string \&msg)
+\item 
+void \doxymbox{\hyperlink{util_8h_ad169d39591982ee923eab31de7c8179b}{loginfo}} (const string s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+mutex \doxymbox{\hyperlink{util_8h_afc3396b0d9b1e34b1043a0a586eabddb}{logmtx}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{util_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{util_8h_a7657042f76bf50bcbabd087b2573a86b}\index{util.h@{util.h}!basename@{basename}}
+\index{basename@{basename}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{basename()}{basename()}}
+{\footnotesize\ttfamily \label{util_8h_a7657042f76bf50bcbabd087b2573a86b} 
+string basename (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_ae8a320da8f44d767b65c5b1e14e0fbc8}\index{util.h@{util.h}!check\_file\_valid@{check\_file\_valid}}
+\index{check\_file\_valid@{check\_file\_valid}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{check\_file\_valid()}{check\_file\_valid()}}
+{\footnotesize\ttfamily \label{util_8h_ae8a320da8f44d767b65c5b1e14e0fbc8} 
+void check\+\_\+file\+\_\+valid (\begin{DoxyParamCaption}\item[{const string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a88bf9c00f9ead979e48971460683a8f3}\index{util.h@{util.h}!check\_file\_writable@{check\_file\_writable}}
+\index{check\_file\_writable@{check\_file\_writable}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{check\_file\_writable()}{check\_file\_writable()}}
+{\footnotesize\ttfamily \label{util_8h_a88bf9c00f9ead979e48971460683a8f3} 
+void check\+\_\+file\+\_\+writable (\begin{DoxyParamCaption}\item[{const string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a9f9902b2f45276fb9a76f3417131bd0f}\index{util.h@{util.h}!check\_filename\_valid@{check\_filename\_valid}}
+\index{check\_filename\_valid@{check\_filename\_valid}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{check\_filename\_valid()}{check\_filename\_valid()}}
+{\footnotesize\ttfamily \label{util_8h_a9f9902b2f45276fb9a76f3417131bd0f} 
+bool check\+\_\+filename\+\_\+valid (\begin{DoxyParamCaption}\item[{const string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_aca609a0aa2078b7464de53a2efb58398}\index{util.h@{util.h}!complement@{complement}}
+\index{complement@{complement}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{complement()}{complement()}}
+{\footnotesize\ttfamily \label{util_8h_aca609a0aa2078b7464de53a2efb58398} 
+char complement (\begin{DoxyParamCaption}\item[{char}]{base}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a547fc92f1098254e78a7067eed578358}\index{util.h@{util.h}!dirname@{dirname}}
+\index{dirname@{dirname}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{dirname()}{dirname()}}
+{\footnotesize\ttfamily \label{util_8h_a547fc92f1098254e78a7067eed578358} 
+string dirname (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_ac2a4e8bb60abae8b64dab7107e114cbb}\index{util.h@{util.h}!ends\_with@{ends\_with}}
+\index{ends\_with@{ends\_with}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{ends\_with()}{ends\_with()}}
+{\footnotesize\ttfamily \label{util_8h_ac2a4e8bb60abae8b64dab7107e114cbb} 
+bool ends\+\_\+with (\begin{DoxyParamCaption}\item[{string const \&}]{value}{, }\item[{string const \&}]{ending}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a72cc7f4c6bfdafb18d052826b06723d6}\index{util.h@{util.h}!error\_exit@{error\_exit}}
+\index{error\_exit@{error\_exit}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{error\_exit()}{error\_exit()}}
+{\footnotesize\ttfamily \label{util_8h_a72cc7f4c6bfdafb18d052826b06723d6} 
+void error\+\_\+exit (\begin{DoxyParamCaption}\item[{const string \&}]{msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a073d984a68d92e2e1d39c69a384e71f6}\index{util.h@{util.h}!file\_exists@{file\_exists}}
+\index{file\_exists@{file\_exists}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{file\_exists()}{file\_exists()}}
+{\footnotesize\ttfamily \label{util_8h_a073d984a68d92e2e1d39c69a384e71f6} 
+bool file\+\_\+exists (\begin{DoxyParamCaption}\item[{const string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a24aedeca4efb117878d684045bf9bece}\index{util.h@{util.h}!find\_with\_right\_pos@{find\_with\_right\_pos}}
+\index{find\_with\_right\_pos@{find\_with\_right\_pos}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{find\_with\_right\_pos()}{find\_with\_right\_pos()}}
+{\footnotesize\ttfamily \label{util_8h_a24aedeca4efb117878d684045bf9bece} 
+int find\+\_\+with\+\_\+right\+\_\+pos (\begin{DoxyParamCaption}\item[{const string \&}]{str}{, }\item[{const string \&}]{pattern}{, }\item[{int}]{start}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_acee6930819622fb8b8d6c34e14d1970c}\index{util.h@{util.h}!is\_directory@{is\_directory}}
+\index{is\_directory@{is\_directory}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{is\_directory()}{is\_directory()}}
+{\footnotesize\ttfamily \label{util_8h_acee6930819622fb8b8d6c34e14d1970c} 
+bool is\+\_\+directory (\begin{DoxyParamCaption}\item[{const string \&}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a5c4817483f5adf9cbad21804fa64ae1f}\index{util.h@{util.h}!joinpath@{joinpath}}
+\index{joinpath@{joinpath}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{joinpath()}{joinpath()}}
+{\footnotesize\ttfamily \label{util_8h_a5c4817483f5adf9cbad21804fa64ae1f} 
+string joinpath (\begin{DoxyParamCaption}\item[{const string \&}]{dirname}{, }\item[{const string \&}]{basename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_ad169d39591982ee923eab31de7c8179b}\index{util.h@{util.h}!loginfo@{loginfo}}
+\index{loginfo@{loginfo}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{loginfo()}{loginfo()}}
+{\footnotesize\ttfamily \label{util_8h_ad169d39591982ee923eab31de7c8179b} 
+void loginfo (\begin{DoxyParamCaption}\item[{const string}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a36d185a90fd1da8f9bb53d738425ec15}\index{util.h@{util.h}!num2qual@{num2qual}}
+\index{num2qual@{num2qual}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{num2qual()}{num2qual()}}
+{\footnotesize\ttfamily \label{util_8h_a36d185a90fd1da8f9bb53d738425ec15} 
+char num2qual (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a06e4bfc654793aba950d37afb6cc1f21}\index{util.h@{util.h}!replace@{replace}}
+\index{replace@{replace}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{util_8h_a06e4bfc654793aba950d37afb6cc1f21} 
+string replace (\begin{DoxyParamCaption}\item[{const string \&}]{str}{, }\item[{const string \&}]{src}{, }\item[{const string \&}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a04982192b779b50ab1d45dc3109a8795}\index{util.h@{util.h}!reverse@{reverse}}
+\index{reverse@{reverse}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{reverse()}{reverse()}}
+{\footnotesize\ttfamily \label{util_8h_a04982192b779b50ab1d45dc3109a8795} 
+string reverse (\begin{DoxyParamCaption}\item[{const string \&}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a02d36220606e7d11fc876a9ddee0b330}\index{util.h@{util.h}!split@{split}}
+\index{split@{split}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{util_8h_a02d36220606e7d11fc876a9ddee0b330} 
+int split (\begin{DoxyParamCaption}\item[{const string \&}]{str}{, }\item[{vector$<$ string $>$ \&}]{ret\+\_\+}{, }\item[{string}]{sep}{ = {\ttfamily "{},"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a93891416e1ad59c6d4df7445a7ef2524}\index{util.h@{util.h}!starts\_with@{starts\_with}}
+\index{starts\_with@{starts\_with}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{starts\_with()}{starts\_with()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{util_8h_a93891416e1ad59c6d4df7445a7ef2524} 
+bool starts\+\_\+with (\begin{DoxyParamCaption}\item[{string \texorpdfstring{$\ast$}{*}}]{value}{, }\item[{string const \&}]{starting}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a1ea2bedaa83ba9cd9e1df8d2f4c3491d}\index{util.h@{util.h}!starts\_with@{starts\_with}}
+\index{starts\_with@{starts\_with}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{starts\_with()}{starts\_with()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{util_8h_a1ea2bedaa83ba9cd9e1df8d2f4c3491d} 
+bool starts\+\_\+with (\begin{DoxyParamCaption}\item[{string const \&}]{value}{, }\item[{string const \&}]{starting}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_aa79ff12decf7b10244321877981a1003}\index{util.h@{util.h}!str2lower@{str2lower}}
+\index{str2lower@{str2lower}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{str2lower()}{str2lower()}}
+{\footnotesize\ttfamily \label{util_8h_aa79ff12decf7b10244321877981a1003} 
+void str2lower (\begin{DoxyParamCaption}\item[{string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a9ebd1bf0139dbe0896ef5fc94e490f72}\index{util.h@{util.h}!str2upper@{str2upper}}
+\index{str2upper@{str2upper}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{str2upper()}{str2upper()}}
+{\footnotesize\ttfamily \label{util_8h_a9ebd1bf0139dbe0896ef5fc94e490f72} 
+void str2upper (\begin{DoxyParamCaption}\item[{string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_ad0284669b46ac0ba4224a41bc9a08eb4}\index{util.h@{util.h}!str\_keep\_alpha@{str\_keep\_alpha}}
+\index{str\_keep\_alpha@{str\_keep\_alpha}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{str\_keep\_alpha()}{str\_keep\_alpha()}}
+{\footnotesize\ttfamily \label{util_8h_ad0284669b46ac0ba4224a41bc9a08eb4} 
+string str\+\_\+keep\+\_\+alpha (\begin{DoxyParamCaption}\item[{const string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a418b85315c08d490370eb6909079b869}\index{util.h@{util.h}!str\_keep\_valid\_sequence@{str\_keep\_valid\_sequence}}
+\index{str\_keep\_valid\_sequence@{str\_keep\_valid\_sequence}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{str\_keep\_valid\_sequence()}{str\_keep\_valid\_sequence()}}
+{\footnotesize\ttfamily \label{util_8h_a418b85315c08d490370eb6909079b869} 
+void str\+\_\+keep\+\_\+valid\+\_\+sequence (\begin{DoxyParamCaption}\item[{string \&}]{s}{, }\item[{bool}]{force\+Upper\+Case}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{util_8h_a3101bc0142a49d9d11ad3f8cac766a2d}\index{util.h@{util.h}!trim@{trim}}
+\index{trim@{trim}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily \label{util_8h_a3101bc0142a49d9d11ad3f8cac766a2d} 
+string trim (\begin{DoxyParamCaption}\item[{const string \&}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{util_8h_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{util_8h_afc3396b0d9b1e34b1043a0a586eabddb}\index{util.h@{util.h}!logmtx@{logmtx}}
+\index{logmtx@{logmtx}!util.h@{util.h}}
+\doxysubsubsection{\texorpdfstring{logmtx}{logmtx}}
+{\footnotesize\ttfamily \label{util_8h_afc3396b0d9b1e34b1043a0a586eabddb} 
+mutex logmtx\hspace{0.3cm}{\ttfamily [extern]}}
+

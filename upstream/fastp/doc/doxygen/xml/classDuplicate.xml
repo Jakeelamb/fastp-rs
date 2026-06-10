@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classDuplicate" kind="class" language="C++" prot="public">
+    <compoundname>Duplicate</compoundname>
+    <includes refid="duplicate_8h" local="no">duplicate.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDuplicate_1ac347a39888bf6bb8e5384aa41f542edc" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* Duplicate::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>Duplicate::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="30" column="13" bodyfile="src/duplicate.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicate_1a60159fa0fa1b216f96f2f22190e1c0c2" prot="private" static="no" mutable="no">
+        <type><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref></type>
+        <definition>uint64 Duplicate::mBufLenInBits</definition>
+        <argsstring></argsstring>
+        <name>mBufLenInBits</name>
+        <qualifiedname>Duplicate::mBufLenInBits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="31" column="12" bodyfile="src/duplicate.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" prot="private" static="no" mutable="no">
+        <type><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref></type>
+        <definition>uint64 Duplicate::mBufLenInBytes</definition>
+        <argsstring></argsstring>
+        <name>mBufLenInBytes</name>
+        <qualifiedname>Duplicate::mBufLenInBytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="32" column="12" bodyfile="src/duplicate.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" prot="private" static="no" mutable="no">
+        <type><ref refid="common_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref></type>
+        <definition>uint32 Duplicate::mBufNum</definition>
+        <argsstring></argsstring>
+        <name>mBufNum</name>
+        <qualifiedname>Duplicate::mBufNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="33" column="12" bodyfile="src/duplicate.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicate_1a70160b6d74373828723ae77c99b281d4" prot="private" static="no" mutable="no">
+        <type>atomic_uchar *</type>
+        <definition>atomic_uchar* Duplicate::mDupBuf</definition>
+        <argsstring></argsstring>
+        <name>mDupBuf</name>
+        <qualifiedname>Duplicate::mDupBuf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="34" column="18" bodyfile="src/duplicate.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicate_1a4eb6e1d9c1a25447dd0a5a36785308bb" prot="private" static="no" mutable="no">
+        <type><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref> *</type>
+        <definition>uint64* Duplicate::mPrimeArrays</definition>
+        <argsstring></argsstring>
+        <name>mPrimeArrays</name>
+        <qualifiedname>Duplicate::mPrimeArrays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="35" column="12" bodyfile="src/duplicate.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicate_1a4b02f4b9fdaba956a32500d2123a1fa4" prot="private" static="no" mutable="no">
+        <type>atomic_ulong</type>
+        <definition>atomic_ulong Duplicate::mTotalReads</definition>
+        <argsstring></argsstring>
+        <name>mTotalReads</name>
+        <qualifiedname>Duplicate::mTotalReads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="36" column="18" bodyfile="src/duplicate.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicate_1acf4dcf3341a875179ee25fa2614260c9" prot="private" static="no" mutable="no">
+        <type>atomic_ulong</type>
+        <definition>atomic_ulong Duplicate::mDupReads</definition>
+        <argsstring></argsstring>
+        <name>mDupReads</name>
+        <qualifiedname>Duplicate::mDupReads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="37" column="18" bodyfile="src/duplicate.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicate_1ab16812c9a3e19ed3e379d1b508630546" prot="private" static="no" mutable="no">
+        <type><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref></type>
+        <definition>uint64 Duplicate::mOffsetMask</definition>
+        <argsstring></argsstring>
+        <name>mOffsetMask</name>
+        <qualifiedname>Duplicate::mOffsetMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="38" column="12" bodyfile="src/duplicate.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDuplicate_1a556f1ed55137a2044eedcd62cd442368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Duplicate::Duplicate</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>Duplicate</name>
+        <qualifiedname>Duplicate::Duplicate</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="16" column="5" bodyfile="src/duplicate.cpp" bodystart="9" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classDuplicate_1a34fc56b85205788738da635fcc3245bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Duplicate::~Duplicate</definition>
+        <argsstring>()</argsstring>
+        <name>~Duplicate</name>
+        <qualifiedname>Duplicate::~Duplicate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="17" column="5" bodyfile="src/duplicate.cpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classDuplicate_1a168145b6efe245bc00a6e247241b183c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Duplicate::checkRead</definition>
+        <argsstring>(Read *r1)</argsstring>
+        <name>checkRead</name>
+        <qualifiedname>Duplicate::checkRead</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="19" column="10" bodyfile="src/duplicate.cpp" bodystart="122" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classDuplicate_1ab46011e368c4dabd6a7147f549fde8a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Duplicate::checkPair</definition>
+        <argsstring>(Read *r1, Read *r2)</argsstring>
+        <name>checkPair</name>
+        <qualifiedname>Duplicate::checkPair</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="20" column="10" bodyfile="src/duplicate.cpp" bodystart="136" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classDuplicate_1a237315896ed2c23fcb40d576598fca21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Duplicate::seq2intvector</definition>
+        <argsstring>(const char *data, int len, uint64 *output, int posOffset=0)</argsstring>
+        <name>seq2intvector</name>
+        <qualifiedname>Duplicate::seq2intvector</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref> *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posOffset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="21" column="10" bodyfile="src/duplicate.cpp" bodystart="111" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classDuplicate_1a2764bac72d620f1c296d77eb65b1aefc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Duplicate::getDupRate</definition>
+        <argsstring>()</argsstring>
+        <name>getDupRate</name>
+        <qualifiedname>Duplicate::getDupRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="23" column="12" bodyfile="src/duplicate.cpp" bodystart="165" bodyend="169"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDuplicate_1a8e57060bdc4cfa2813683e4482412014" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Duplicate::initPrimeArrays</definition>
+        <argsstring>()</argsstring>
+        <name>initPrimeArrays</name>
+        <qualifiedname>Duplicate::initPrimeArrays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="26" column="10" bodyfile="src/duplicate.cpp" bodystart="66" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classDuplicate_1a14eaa18367015498b0a0b23b10b237a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Duplicate::applyBloomFilter</definition>
+        <argsstring>(uint64 *positions)</argsstring>
+        <name>applyBloomFilter</name>
+        <qualifiedname>Duplicate::applyBloomFilter</qualifiedname>
+        <param>
+          <type><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref> *</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.h" line="27" column="10" bodyfile="src/duplicate.cpp" bodystart="150" bodyend="163"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="1">
+        <label>Duplicate</label>
+        <link refid="classDuplicate"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/duplicate.h" line="14" column="1" bodyfile="src/duplicate.h" bodystart="14" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classDuplicate_1a14eaa18367015498b0a0b23b10b237a4" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>applyBloomFilter</name></member>
+      <member refid="classDuplicate_1ab46011e368c4dabd6a7147f549fde8a8" prot="public" virt="non-virtual"><scope>Duplicate</scope><name>checkPair</name></member>
+      <member refid="classDuplicate_1a168145b6efe245bc00a6e247241b183c" prot="public" virt="non-virtual"><scope>Duplicate</scope><name>checkRead</name></member>
+      <member refid="classDuplicate_1a556f1ed55137a2044eedcd62cd442368" prot="public" virt="non-virtual"><scope>Duplicate</scope><name>Duplicate</name></member>
+      <member refid="classDuplicate_1a2764bac72d620f1c296d77eb65b1aefc" prot="public" virt="non-virtual"><scope>Duplicate</scope><name>getDupRate</name></member>
+      <member refid="classDuplicate_1a8e57060bdc4cfa2813683e4482412014" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>initPrimeArrays</name></member>
+      <member refid="classDuplicate_1a60159fa0fa1b216f96f2f22190e1c0c2" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mBufLenInBits</name></member>
+      <member refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mBufLenInBytes</name></member>
+      <member refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mBufNum</name></member>
+      <member refid="classDuplicate_1a70160b6d74373828723ae77c99b281d4" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mDupBuf</name></member>
+      <member refid="classDuplicate_1acf4dcf3341a875179ee25fa2614260c9" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mDupReads</name></member>
+      <member refid="classDuplicate_1ab16812c9a3e19ed3e379d1b508630546" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mOffsetMask</name></member>
+      <member refid="classDuplicate_1ac347a39888bf6bb8e5384aa41f542edc" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mOptions</name></member>
+      <member refid="classDuplicate_1a4eb6e1d9c1a25447dd0a5a36785308bb" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mPrimeArrays</name></member>
+      <member refid="classDuplicate_1a4b02f4b9fdaba956a32500d2123a1fa4" prot="private" virt="non-virtual"><scope>Duplicate</scope><name>mTotalReads</name></member>
+      <member refid="classDuplicate_1a237315896ed2c23fcb40d576598fca21" prot="public" virt="non-virtual"><scope>Duplicate</scope><name>seq2intvector</name></member>
+      <member refid="classDuplicate_1a34fc56b85205788738da635fcc3245bb" prot="public" virt="non-virtual"><scope>Duplicate</scope><name>~Duplicate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

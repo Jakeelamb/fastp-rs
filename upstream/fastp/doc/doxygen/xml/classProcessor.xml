@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classProcessor" kind="class" language="C++" prot="public">
+    <compoundname>Processor</compoundname>
+    <includes refid="processor_8h" local="no">processor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classProcessor_1a5bfcc02e2b3405a3ae6bd7c612973f3d" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* Processor::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>Processor::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/processor.h" line="18" column="13" bodyfile="src/processor.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classProcessor_1a28d7440d2342de961f7d2a18cf1407ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Processor::Processor</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>Processor</name>
+        <qualifiedname>Processor::Processor</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/processor.h" line="13" column="5" bodyfile="src/processor.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classProcessor_1acf37952c5b420d4e903a512571678692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Processor::~Processor</definition>
+        <argsstring>()</argsstring>
+        <name>~Processor</name>
+        <qualifiedname>Processor::~Processor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/processor.h" line="14" column="5" bodyfile="src/processor.cpp" bodystart="10" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classProcessor_1a1ffecb072194e88c45ff236c5ed85a81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Processor::process</definition>
+        <argsstring>()</argsstring>
+        <name>process</name>
+        <qualifiedname>Processor::process</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/processor.h" line="15" column="10" bodyfile="src/processor.cpp" bodystart="13" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="1">
+        <label>Processor</label>
+        <link refid="classProcessor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/processor.h" line="11" column="1" bodyfile="src/processor.h" bodystart="11" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classProcessor_1a5bfcc02e2b3405a3ae6bd7c612973f3d" prot="private" virt="non-virtual"><scope>Processor</scope><name>mOptions</name></member>
+      <member refid="classProcessor_1a1ffecb072194e88c45ff236c5ed85a81" prot="public" virt="non-virtual"><scope>Processor</scope><name>process</name></member>
+      <member refid="classProcessor_1a28d7440d2342de961f7d2a18cf1407ea" prot="public" virt="non-virtual"><scope>Processor</scope><name>Processor</name></member>
+      <member refid="classProcessor_1acf37952c5b420d4e903a512571678692" prot="public" virt="non-virtual"><scope>Processor</scope><name>~Processor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

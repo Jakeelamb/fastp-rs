@@ -1,0 +1,97 @@
+\doxysection{Fastq\+Reader\+Pair Class Reference}
+\hypertarget{classFastqReaderPair}{}\label{classFastqReaderPair}\index{FastqReaderPair@{FastqReaderPair}}
+
+
+{\ttfamily \+\#include $<$fastqreader.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classFastqReaderPair_a1979f5188328cd5ad9a10657b035250e}{Fastq\+Reader\+Pair}} (\doxymbox{\hyperlink{classFastqReader}{Fastq\+Reader}} \texorpdfstring{$\ast$}{*}left, \doxymbox{\hyperlink{classFastqReader}{Fastq\+Reader}} \texorpdfstring{$\ast$}{*}right)
+\item 
+\doxymbox{\hyperlink{classFastqReaderPair_a9acda77cb6f39d624cd8281ff5277d0d}{Fastq\+Reader\+Pair}} (string left\+Name, string right\+Name, bool has\+Quality=true, bool phred64=false, bool interleaved=false)
+\item 
+\doxymbox{\hyperlink{classFastqReaderPair_affd4446f74998946e047140946e5507c}{\texorpdfstring{$\sim$}{\string~}\+Fastq\+Reader\+Pair}} ()
+\item 
+void \doxymbox{\hyperlink{classFastqReaderPair_a6378c22973dc9cf84d7d18e1120fea09}{read}} (\doxymbox{\hyperlink{classReadPair}{Read\+Pair}} \texorpdfstring{$\ast$}{*}pair)
+\item 
+bool \doxymbox{\hyperlink{classFastqReaderPair_a83a5006987e4a390c7f7d5096e9484c0}{eof}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classFastqReader}{Fastq\+Reader}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReaderPair_a243985cbdb1e0b4775fb8798aa8cce08}{m\+Left}}
+\item 
+\doxymbox{\hyperlink{classFastqReader}{Fastq\+Reader}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReaderPair_a1defe7cff06f4e06c1fa6cd08601368f}{m\+Right}}
+\item 
+bool \doxymbox{\hyperlink{classFastqReaderPair_aa3b08c940f52691707d7869c3f63c0b5}{m\+Interleaved}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classFastqReaderPair_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFastqReaderPair_a1979f5188328cd5ad9a10657b035250e}\index{FastqReaderPair@{FastqReaderPair}!FastqReaderPair@{FastqReaderPair}}
+\index{FastqReaderPair@{FastqReaderPair}!FastqReaderPair@{FastqReaderPair}}
+\doxysubsubsection{\texorpdfstring{FastqReaderPair()}{FastqReaderPair()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classFastqReaderPair_a1979f5188328cd5ad9a10657b035250e} 
+Fastq\+Reader\+Pair::\+\+Fastq\+Reader\+Pair (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classFastqReader}{Fastq\+Reader}} \texorpdfstring{$\ast$}{*}}]{left}{, }\item[{\doxymbox{\hyperlink{classFastqReader}{Fastq\+Reader}} \texorpdfstring{$\ast$}{*}}]{right}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReaderPair_a9acda77cb6f39d624cd8281ff5277d0d}\index{FastqReaderPair@{FastqReaderPair}!FastqReaderPair@{FastqReaderPair}}
+\index{FastqReaderPair@{FastqReaderPair}!FastqReaderPair@{FastqReaderPair}}
+\doxysubsubsection{\texorpdfstring{FastqReaderPair()}{FastqReaderPair()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classFastqReaderPair_a9acda77cb6f39d624cd8281ff5277d0d} 
+Fastq\+Reader\+Pair::\+\+Fastq\+Reader\+Pair (\begin{DoxyParamCaption}\item[{string}]{left\+Name}{, }\item[{string}]{right\+Name}{, }\item[{bool}]{has\+Quality}{ = {\ttfamily true}, }\item[{bool}]{phred64}{ = {\ttfamily false}, }\item[{bool}]{interleaved}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReaderPair_affd4446f74998946e047140946e5507c}\index{FastqReaderPair@{FastqReaderPair}!````~FastqReaderPair@{\texorpdfstring{$\sim$}{\string~}FastqReaderPair}}
+\index{````~FastqReaderPair@{\texorpdfstring{$\sim$}{\string~}FastqReaderPair}!FastqReaderPair@{FastqReaderPair}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FastqReaderPair()}{\string~FastqReaderPair()}}
+{\footnotesize\ttfamily \label{classFastqReaderPair_affd4446f74998946e047140946e5507c} 
+Fastq\+Reader\+Pair::\+\texorpdfstring{$\sim$}{\string~}\+Fastq\+Reader\+Pair (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classFastqReaderPair_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFastqReaderPair_a83a5006987e4a390c7f7d5096e9484c0}\index{FastqReaderPair@{FastqReaderPair}!eof@{eof}}
+\index{eof@{eof}!FastqReaderPair@{FastqReaderPair}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily \label{classFastqReaderPair_a83a5006987e4a390c7f7d5096e9484c0} 
+bool Fastq\+Reader\+Pair::\+eof (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReaderPair_a6378c22973dc9cf84d7d18e1120fea09}\index{FastqReaderPair@{FastqReaderPair}!read@{read}}
+\index{read@{read}!FastqReaderPair@{FastqReaderPair}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classFastqReaderPair_a6378c22973dc9cf84d7d18e1120fea09} 
+void Fastq\+Reader\+Pair::\+read (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classReadPair}{Read\+Pair}} \texorpdfstring{$\ast$}{*}}]{pair}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classFastqReaderPair_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classFastqReaderPair_aa3b08c940f52691707d7869c3f63c0b5}\index{FastqReaderPair@{FastqReaderPair}!mInterleaved@{mInterleaved}}
+\index{mInterleaved@{mInterleaved}!FastqReaderPair@{FastqReaderPair}}
+\doxysubsubsection{\texorpdfstring{mInterleaved}{mInterleaved}}
+{\footnotesize\ttfamily \label{classFastqReaderPair_aa3b08c940f52691707d7869c3f63c0b5} 
+bool Fastq\+Reader\+Pair::\+m\+Interleaved}
+
+\Hypertarget{classFastqReaderPair_a243985cbdb1e0b4775fb8798aa8cce08}\index{FastqReaderPair@{FastqReaderPair}!mLeft@{mLeft}}
+\index{mLeft@{mLeft}!FastqReaderPair@{FastqReaderPair}}
+\doxysubsubsection{\texorpdfstring{mLeft}{mLeft}}
+{\footnotesize\ttfamily \label{classFastqReaderPair_a243985cbdb1e0b4775fb8798aa8cce08} 
+\doxymbox{\hyperlink{classFastqReader}{Fastq\+Reader}}\texorpdfstring{$\ast$}{*} Fastq\+Reader\+Pair::\+m\+Left}
+
+\Hypertarget{classFastqReaderPair_a1defe7cff06f4e06c1fa6cd08601368f}\index{FastqReaderPair@{FastqReaderPair}!mRight@{mRight}}
+\index{mRight@{mRight}!FastqReaderPair@{FastqReaderPair}}
+\doxysubsubsection{\texorpdfstring{mRight}{mRight}}
+{\footnotesize\ttfamily \label{classFastqReaderPair_a1defe7cff06f4e06c1fa6cd08601368f} 
+\doxymbox{\hyperlink{classFastqReader}{Fastq\+Reader}}\texorpdfstring{$\ast$}{*} Fastq\+Reader\+Pair::\+m\+Right}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{fastqreader_8h}{fastqreader.\+h}}\item 
+src/\+\doxymbox{\hyperlink{fastqreader_8cpp}{fastqreader.\+cpp}}\end{DoxyCompactItemize}

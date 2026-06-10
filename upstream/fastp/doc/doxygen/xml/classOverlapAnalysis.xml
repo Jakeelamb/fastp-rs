@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classOverlapAnalysis" kind="class" language="C++" prot="public">
+    <compoundname>OverlapAnalysis</compoundname>
+    <includes refid="overlapanalysis_8h" local="no">overlapanalysis.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOverlapAnalysis_1a266dbf56120f22cf47917228c9708cb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OverlapAnalysis::OverlapAnalysis</definition>
+        <argsstring>()</argsstring>
+        <name>OverlapAnalysis</name>
+        <qualifiedname>OverlapAnalysis::OverlapAnalysis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="26" column="5" bodyfile="src/overlapanalysis.cpp" bodystart="5" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverlapAnalysis_1a71e3d057d972244d794bc89f43644449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OverlapAnalysis::~OverlapAnalysis</definition>
+        <argsstring>()</argsstring>
+        <name>~OverlapAnalysis</name>
+        <qualifiedname>OverlapAnalysis::~OverlapAnalysis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="27" column="5" bodyfile="src/overlapanalysis.cpp" bodystart="9" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classOverlapAnalysis_1a0e7ca83bab963df0c2fa5fe412556e66" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref></type>
+        <definition>OverlapResult OverlapAnalysis::analyze</definition>
+        <argsstring>(string *r1, string *r2, int diffLimit, int overlapRequire, double diffPercentLimit, bool allowGap=false)</argsstring>
+        <name>analyze</name>
+        <qualifiedname>OverlapAnalysis::analyze</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type>string *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>diffLimit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>overlapRequire</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>diffPercentLimit</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>allowGap</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="29" column="26" bodyfile="src/overlapanalysis.cpp" bodystart="17" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverlapAnalysis_1ae6684b2c48bf00041307393b195fdc5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref></type>
+        <definition>OverlapResult OverlapAnalysis::analyze</definition>
+        <argsstring>(Read *r1, Read *r2, int diffLimit, int overlapRequire, double diffPercentLimit, bool allowGap=false)</argsstring>
+        <name>analyze</name>
+        <qualifiedname>OverlapAnalysis::analyze</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>diffLimit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>overlapRequire</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>diffPercentLimit</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>allowGap</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="30" column="26" bodyfile="src/overlapanalysis.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverlapAnalysis_1adc1adda85d3ec75224d5cb2f13179b07" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+        <definition>Read * OverlapAnalysis::merge</definition>
+        <argsstring>(Read *r1, Read *r2, OverlapResult ov)</argsstring>
+        <name>merge</name>
+        <qualifiedname>OverlapAnalysis::merge</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref></type>
+          <declname>ov</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="31" column="17" bodyfile="src/overlapanalysis.cpp" bodystart="148" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classOverlapAnalysis_1ab295b094006e4f42e56988b93645afa2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool OverlapAnalysis::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>OverlapAnalysis::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="34" column="17" bodyfile="src/overlapanalysis.cpp" bodystart="181" bodyend="210"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/overlapanalysis.h" line="24" column="1" bodyfile="src/overlapanalysis.h" bodystart="24" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classOverlapAnalysis_1a0e7ca83bab963df0c2fa5fe412556e66" prot="public" virt="non-virtual"><scope>OverlapAnalysis</scope><name>analyze</name></member>
+      <member refid="classOverlapAnalysis_1ae6684b2c48bf00041307393b195fdc5b" prot="public" virt="non-virtual"><scope>OverlapAnalysis</scope><name>analyze</name></member>
+      <member refid="classOverlapAnalysis_1adc1adda85d3ec75224d5cb2f13179b07" prot="public" virt="non-virtual"><scope>OverlapAnalysis</scope><name>merge</name></member>
+      <member refid="classOverlapAnalysis_1a266dbf56120f22cf47917228c9708cb0" prot="public" virt="non-virtual"><scope>OverlapAnalysis</scope><name>OverlapAnalysis</name></member>
+      <member refid="classOverlapAnalysis_1ab295b094006e4f42e56988b93645afa2" prot="public" virt="non-virtual"><scope>OverlapAnalysis</scope><name>test</name></member>
+      <member refid="classOverlapAnalysis_1a71e3d057d972244d794bc89f43644449" prot="public" virt="non-virtual"><scope>OverlapAnalysis</scope><name>~OverlapAnalysis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

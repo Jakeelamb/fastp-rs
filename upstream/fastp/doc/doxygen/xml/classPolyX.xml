@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPolyX" kind="class" language="C++" prot="public">
+    <compoundname>PolyX</compoundname>
+    <includes refid="polyx_8h" local="no">polyx.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPolyX_1afb9de7c81297f8d3f5a0150b1bc9df94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PolyX::PolyX</definition>
+        <argsstring>()</argsstring>
+        <name>PolyX</name>
+        <qualifiedname>PolyX::PolyX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/polyx.h" line="15" column="5" bodyfile="src/polyx.cpp" bodystart="4" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classPolyX_1a498d114f01deb45c0ea47cbc7866d95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PolyX::~PolyX</definition>
+        <argsstring>()</argsstring>
+        <name>~PolyX</name>
+        <qualifiedname>PolyX::~PolyX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/polyx.h" line="16" column="5" bodyfile="src/polyx.cpp" bodystart="8" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classPolyX_1a437b5fffe70228992725ed675b54a02f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PolyX::trimPolyG</definition>
+        <argsstring>(Read *r1, Read *r2, FilterResult *fr, int compareReq)</argsstring>
+        <name>trimPolyG</name>
+        <qualifiedname>PolyX::trimPolyG</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compareReq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/polyx.h" line="18" column="17" bodyfile="src/polyx.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classPolyX_1ad43467fb07b4c12a1f71476cd1e07115" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PolyX::trimPolyG</definition>
+        <argsstring>(Read *r1, FilterResult *fr, int compareReq)</argsstring>
+        <name>trimPolyG</name>
+        <qualifiedname>PolyX::trimPolyG</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compareReq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/polyx.h" line="19" column="17" bodyfile="src/polyx.cpp" bodystart="16" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classPolyX_1aeea5e3b34e70160d188f4ead1e27171e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PolyX::trimPolyX</definition>
+        <argsstring>(Read *r1, Read *r2, FilterResult *fr, int compareReq)</argsstring>
+        <name>trimPolyX</name>
+        <qualifiedname>PolyX::trimPolyX</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compareReq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/polyx.h" line="20" column="17" bodyfile="src/polyx.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classPolyX_1aff1bf321abdf542fb591d1ffbdc6864a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PolyX::trimPolyX</definition>
+        <argsstring>(Read *r1, FilterResult *fr, int compareReq)</argsstring>
+        <name>trimPolyX</name>
+        <qualifiedname>PolyX::trimPolyX</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compareReq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/polyx.h" line="21" column="17" bodyfile="src/polyx.cpp" bodystart="49" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classPolyX_1a2b5f55b597189844fe5810cc9dc088be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PolyX::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>PolyX::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/polyx.h" line="22" column="17" bodyfile="src/polyx.cpp" bodystart="118" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/polyx.h" line="13" column="1" bodyfile="src/polyx.h" bodystart="13" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classPolyX_1afb9de7c81297f8d3f5a0150b1bc9df94" prot="public" virt="non-virtual"><scope>PolyX</scope><name>PolyX</name></member>
+      <member refid="classPolyX_1a2b5f55b597189844fe5810cc9dc088be" prot="public" virt="non-virtual"><scope>PolyX</scope><name>test</name></member>
+      <member refid="classPolyX_1a437b5fffe70228992725ed675b54a02f" prot="public" virt="non-virtual"><scope>PolyX</scope><name>trimPolyG</name></member>
+      <member refid="classPolyX_1ad43467fb07b4c12a1f71476cd1e07115" prot="public" virt="non-virtual"><scope>PolyX</scope><name>trimPolyG</name></member>
+      <member refid="classPolyX_1aeea5e3b34e70160d188f4ead1e27171e" prot="public" virt="non-virtual"><scope>PolyX</scope><name>trimPolyX</name></member>
+      <member refid="classPolyX_1aff1bf321abdf542fb591d1ffbdc6864a" prot="public" virt="non-virtual"><scope>PolyX</scope><name>trimPolyX</name></member>
+      <member refid="classPolyX_1a498d114f01deb45c0ea47cbc7866d95c" prot="public" virt="non-virtual"><scope>PolyX</scope><name>~PolyX</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

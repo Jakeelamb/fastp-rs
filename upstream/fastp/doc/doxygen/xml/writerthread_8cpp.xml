@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="writerthread_8cpp" kind="file" language="C++">
+    <compoundname>writerthread.cpp</compoundname>
+    <includes refid="writerthread_8h" local="yes">writerthread.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <includes local="no">memory.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">fcntl.h</includes>
+    <includes local="no">cerrno</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">chrono</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="12">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>singleproducersingleconsumerlist.h</label>
+        <link refid="singleproducersingleconsumerlist_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/writerthread.cpp</label>
+        <link refid="writerthread_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>writerthread.h</label>
+        <link refid="writerthread_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>algorithm</label>
+      </node>
+      <node id="14">
+        <label>atomic</label>
+      </node>
+      <node id="18">
+        <label>cassert</label>
+      </node>
+      <node id="26">
+        <label>cerrno</label>
+      </node>
+      <node id="29">
+        <label>chrono</label>
+      </node>
+      <node id="27">
+        <label>cstring</label>
+      </node>
+      <node id="25">
+        <label>fcntl.h</label>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>libdeflate.h</label>
+      </node>
+      <node id="13">
+        <label>map</label>
+      </node>
+      <node id="17">
+        <label>memory.h</label>
+      </node>
+      <node id="15">
+        <label>mutex</label>
+      </node>
+      <node id="23">
+        <label>regex</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="20">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="28">
+        <label>thread</label>
+      </node>
+      <node id="22">
+        <label>time.h</label>
+      </node>
+      <node id="24">
+        <label>unistd.h</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="writerthread_8h" kindref="compound">writerthread.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cerrno&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="classWriterThread_1ad85722858d6f73e7db995d7c940038eb" kindref="member">WriterThread::WriterThread</ref>(<ref refid="classOptions" kindref="compound">Options</ref>*<sp/>opt,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSTDOUT){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref><sp/>=<sp/>opt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" kindref="member">mWriter1</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" kindref="member">mInputCompleted</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" kindref="member">mFilename</ref><sp/>=<sp/>filename;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref><sp/>=<sp/>!isSTDOUT<sp/>&amp;&amp;<sp/><ref refid="util_8h_1ac2a4e8bb60abae8b64dab7107e114cbb" kindref="member">ends_with</ref>(filename,<sp/></highlight><highlight class="stringliteral">&quot;.gz&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread<sp/>&gt;<sp/>1;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kindref="member">mCompBufSizes</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref><sp/>=<sp/>open(<ref refid="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" kindref="member">mFilename</ref>.c_str(),<sp/>O_WRONLY<sp/>|<sp/>O_CREAT<sp/>|<sp/>O_TRUNC,<sp/>0644);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref><sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="util_8h_1a72cc7f4c6bfdafb18d052826b06723d6" kindref="member">error_exit</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>open<sp/>for<sp/>pwrite:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" kindref="member">mFilename</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>OffsetSlot[<ref refid="writerthread_8h_1ab539b40c685ab3d11cf4aa1d257a97d9" kindref="member">OFFSET_RING_SIZE</ref>];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">[<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>0;<sp/>t<sp/>&lt;<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;<sp/>t++)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref>[t]<sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>libdeflate_compressor*[<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>0;<sp/>t<sp/>&lt;<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;<sp/>t++)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref>[t]<sp/>=<sp/>libdeflate_alloc_compressor(<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;compression);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>initBufSize<sp/>=<sp/><ref refid="common_8h_1a9ed9b00254dbca17327c599227b74634" kindref="member">PACK_SIZE</ref><sp/>*<sp/>500;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*[<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kindref="member">mCompBufSizes</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">[<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>0;<sp/>t<sp/>&lt;<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;<sp/>t++)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>[t]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[initBufSize];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kindref="member">mCompBufSizes</ref>[t]<sp/>=<sp/>initBufSize;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" kindref="member">mWorkingBufferList</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" kindref="member">mBufferLength</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a876dbb8b56ba5660ad370212e31b1b72" kindref="member">initWriter</ref>(filename,<sp/>isSTDOUT);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a8bea61e2a4a63dd11ab55e5284026626" kindref="member">initBufferLists</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" kindref="member">mWorkingBufferList</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" kindref="member">mBufferLength</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><ref refid="classWriterThread_1a1f6800d9e272c0cb2eb7a0c774b14f4e" kindref="member">WriterThread::~WriterThread</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ad5a34ac64a25fed4e1e8b5c63061d579" kindref="member">cleanup</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a79f1d3c1090568800b7613b8a7689468" kindref="member">WriterThread::isCompleted</ref>()</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>writer<sp/>thread<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" kindref="member">mInputCompleted</ref><sp/>&amp;&amp;<sp/>(<ref refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" kindref="member">mBufferLength</ref>==0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a590319d06f1de992b9621624dbbb8fc9" kindref="member">WriterThread::setInputCompleted</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a502ba2307fe879b41e5bfb01a253e675" kindref="member">setInputCompletedPwrite</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" kindref="member">mInputCompleted</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" kindref="member">mInputCompleted</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t=0;<sp/>t&lt;<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;<sp/>t++)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref>[t]-&gt;setProducerFinished();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a502ba2307fe879b41e5bfb01a253e675" kindref="member">WriterThread::setInputCompletedPwrite</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>W<sp/>=<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lastSeq<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>anyProcessed<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>0;<sp/>t<sp/>&lt;<sp/>W;<sp/>t++)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref>[t]<sp/>!=<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">)t)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>workerLastSeq<sp/>=<sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref>[t]<sp/>-<sp/>W;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!anyProcessed<sp/>||<sp/>workerLastSeq<sp/>&gt;<sp/>lastSeq)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lastSeq<sp/>=<sp/>workerLastSeq;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>anyProcessed<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>anyProcessed<sp/>?</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref>[lastSeq<sp/>&amp;<sp/>(<ref refid="writerthread_8h_1ab539b40c685ab3d11cf4aa1d257a97d9" kindref="member">OFFSET_RING_SIZE</ref><sp/>-<sp/>1)].cumulative_offset.load(std::memory_order_relaxed)<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>ftruncate(<ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref>,<sp/>offset);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a213a85cf26e05550566c3779a2b588b1" kindref="member">WriterThread::output</ref>(){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>no-op</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>SingleProducerSingleConsumerList&lt;string*&gt;*<sp/>list<sp/>=<sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref>[<ref refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" kindref="member">mWorkingBufferList</ref>];</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!list-&gt;<ref refid="classSingleProducerSingleConsumerList_1a8b9db1c38f8b683e4f4e693e0c15c6a4" kindref="member">canBeConsumed</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usleep(100);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>str<sp/>=<sp/>list-&gt;<ref refid="classSingleProducerSingleConsumerList_1a449d9b205ae321d78481ae327f39a9d1" kindref="member">consume</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" kindref="member">mWriter1</ref>-&gt;write(str-&gt;data(),<sp/>str-&gt;length());</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>str;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" kindref="member">mBufferLength</ref>--;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" kindref="member">mWorkingBufferList</ref><sp/>=<sp/>(<ref refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" kindref="member">mWorkingBufferList</ref>+1)%<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a9b29200184e58f51fc366e38691c174b" kindref="member">WriterThread::input</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tid,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a0d8d2f35142de5a61d3efdcdd8526dfc" kindref="member">inputPwrite</ref>(tid,<sp/>data);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref>[tid]-&gt;produce(data);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" kindref="member">mBufferLength</ref>++;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a0d8d2f35142de5a61d3efdcdd8526dfc" kindref="member">WriterThread::inputPwrite</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tid,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bound<sp/>=<sp/>libdeflate_gzip_compress_bound(<ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref>[tid],<sp/>data-&gt;size());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Grow<sp/>per-worker<sp/>buffer<sp/>if<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bound<sp/>&gt;<sp/><ref refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kindref="member">mCompBufSizes</ref>[tid])<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>[tid];</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>[tid]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[bound];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kindref="member">mCompBufSizes</ref>[tid]<sp/>=<sp/>bound;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>outsize<sp/>=<sp/>libdeflate_gzip_compress(<ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref>[tid],<sp/>data-&gt;data(),<sp/>data-&gt;size(),</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>[tid],<sp/>bound);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(outsize<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="util_8h_1a72cc7f4c6bfdafb18d052826b06723d6" kindref="member">error_exit</ref>(</highlight><highlight class="stringliteral">&quot;libdeflate<sp/>gzip<sp/>compression<sp/>failed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>writeData<sp/>=<sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>[tid];</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>wsize<sp/>=<sp/>outsize;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>seq<sp/>=<sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref>[tid];</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wait<sp/>for<sp/>previous<sp/>batch&apos;s<sp/>cumulative<sp/>offset.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sleep<sp/>yields<sp/>CPU<sp/>to<sp/>prevent<sp/>livelock<sp/>under<sp/>contention.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(seq<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>prevSlot<sp/>=<sp/>(seq<sp/>-<sp/>1)<sp/>&amp;<sp/>(<ref refid="writerthread_8h_1ab539b40c685ab3d11cf4aa1d257a97d9" kindref="member">OFFSET_RING_SIZE</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref>[prevSlot].published_seq.load(std::memory_order_acquire)<sp/>!=<sp/>seq<sp/>-<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::this_thread::sleep_for(std::chrono::microseconds(1));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>=<sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref>[prevSlot].cumulative_offset.load(std::memory_order_relaxed);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Publish<sp/>offset<sp/>BEFORE<sp/>pwrite<sp/>—<sp/>next<sp/>worker<sp/>starts<sp/>immediately</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>mySlot<sp/>=<sp/>seq<sp/>&amp;<sp/>(<ref refid="writerthread_8h_1ab539b40c685ab3d11cf4aa1d257a97d9" kindref="member">OFFSET_RING_SIZE</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref>[mySlot].cumulative_offset.store(offset<sp/>+<sp/>wsize,<sp/>std::memory_order_relaxed);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref>[mySlot].published_seq.store(seq,<sp/>std::memory_order_release);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pwrite<sp/>(concurrent<sp/>with<sp/>other<sp/>workers<sp/>on<sp/>non-overlapping<sp/>regions)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wsize<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>written<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(written<sp/>&lt;<sp/>wsize)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ssize_t<sp/>ret<sp/>=<sp/>pwrite(<ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref>,<sp/>writeData<sp/>+<sp/>written,<sp/>wsize<sp/>-<sp/>written,<sp/>offset<sp/>+<sp/>written);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(errno<sp/>==<sp/>EINTR)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="util_8h_1a72cc7f4c6bfdafb18d052826b06723d6" kindref="member">error_exit</ref>(</highlight><highlight class="stringliteral">&quot;pwrite<sp/>failed:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(strerror(errno)));</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="util_8h_1a72cc7f4c6bfdafb18d052826b06723d6" kindref="member">error_exit</ref>(</highlight><highlight class="stringliteral">&quot;pwrite<sp/>returned<sp/>0<sp/>(disk<sp/>full?)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>written<sp/>+=<sp/>ret;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref>[tid]<sp/>+=<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1ad5a34ac64a25fed4e1e8b5c63061d579" kindref="member">WriterThread::cleanup</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kindref="member">mPwriteMode</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref><sp/>&gt;=<sp/>0)<sp/>{<sp/>close(<ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref>);<sp/><ref refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kindref="member">mFd</ref><sp/>=<sp/>-1;<sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref>;<sp/><ref refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kindref="member">mOffsetRing</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref>;<sp/><ref refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kindref="member">mNextSeq</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>0;<sp/>t<sp/>&lt;<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;<sp/>t++)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>libdeflate_free_compressor(<ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref>[t]);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref>;<sp/><ref refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kindref="member">mCompressors</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>0;<sp/>t<sp/>&lt;<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;<sp/>t++)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>[t];</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref>;<sp/><ref refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kindref="member">mCompBufs</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kindref="member">mCompBufSizes</ref>;<sp/><ref refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kindref="member">mCompBufSizes</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aec981cb042ef8d7d422c8ae1e92c11b6" kindref="member">deleteWriter</ref>();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t=0;<sp/>t&lt;<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;<sp/>t++)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref>[t];</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1aec981cb042ef8d7d422c8ae1e92c11b6" kindref="member">WriterThread::deleteWriter</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" kindref="member">mWriter1</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" kindref="member">mWriter1</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" kindref="member">mWriter1</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a876dbb8b56ba5660ad370212e31b1b72" kindref="member">WriterThread::initWriter</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename1,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSTDOUT)<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aec981cb042ef8d7d422c8ae1e92c11b6" kindref="member">deleteWriter</ref>();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" kindref="member">mWriter1</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Writer(<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>,<sp/>filename1,<sp/><ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;compression,<sp/>isSTDOUT);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWriterThread_1a8bea61e2a4a63dd11ab55e5284026626" kindref="member">WriterThread::initBufferLists</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SingleProducerSingleConsumerList&lt;string*&gt;*[<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread];</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t=0;<sp/>t&lt;<ref refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kindref="member">mOptions</ref>-&gt;thread;<sp/>t++)<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kindref="member">mBufferLists</ref>[t]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SingleProducerSingleConsumerList&lt;string*&gt;();</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/writerthread.cpp"/>
+  </compounddef>
+</doxygen>

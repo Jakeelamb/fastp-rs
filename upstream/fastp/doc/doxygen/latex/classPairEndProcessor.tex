@@ -1,0 +1,356 @@
+\doxysection{Pair\+End\+Processor Class Reference}
+\hypertarget{classPairEndProcessor}{}\label{classPairEndProcessor}\index{PairEndProcessor@{PairEndProcessor}}
+
+
+{\ttfamily \+\#include $<$peprocessor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classPairEndProcessor_a5c8f0062f8e980e06a07bba4abfb04d9}{Pair\+End\+Processor}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt)
+\item 
+\doxymbox{\hyperlink{classPairEndProcessor_a51025ff3f6fbd889977b071a1336c12a}{\texorpdfstring{$\sim$}{\string~}\+Pair\+End\+Processor}} ()
+\item 
+bool \doxymbox{\hyperlink{classPairEndProcessor_a49f131a3f2c6ae7554e3c143974263ee}{process}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classPairEndProcessor_a28a9e02adbac691bd43c6928e9b9fb18}{process\+Pair\+End}} (\doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*}left\+Pack, \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*}right\+Pack, \doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}config)
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_a1652c055e6febf6340c3bafcaff5b0f0}{reader\+Task}} (bool is\+Left)
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_a6a25f324d2008e6f9e97efef7c66355a}{interleaved\+Reader\+Task}} ()
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_ac28979108069f4202f571446dbe32488}{processor\+Task}} (\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}config)
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_a5e9b5e8ade9d8ff37d91bacd63584f35}{init\+Config}} (\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}config)
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_a4030de52f1242d7ac36a3b819c23d323}{init\+Output}} ()
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_a61f9315b141f7808fa440fde0d8359cc}{close\+Output}} ()
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_a1ed09b1ed350ac890be50f5f69a58fe0}{stat\+Insert\+Size}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r1, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r2, \doxymbox{\hyperlink{classOverlapResult}{Overlap\+Result}} \&ov, int front\+Trimmed1=0, int front\+Trimmed2=0)
+\item 
+int \doxymbox{\hyperlink{classPairEndProcessor_a8bfd34fbf2e72d18f04c1b1678e39180}{get\+Peak\+Insert\+Size}} ()
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_ade953e1dab59cbd4fc658bbcbed953bc}{writer\+Task}} (\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*}config)
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_ac586284e4c745c4c38ade2c6fffd06b9}{recycle\+To\+Pool1}} (int tid, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r)
+\item 
+void \doxymbox{\hyperlink{classPairEndProcessor_ac8547a1681e4f572ab892d3b63bb23c0}{recycle\+To\+Pool2}} (int tid, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+atomic\+\_\+bool \doxymbox{\hyperlink{classPairEndProcessor_a92288ad801f2248de839d1a620c37569}{m\+Left\+Reader\+Finished}}
+\item 
+atomic\+\_\+bool \doxymbox{\hyperlink{classPairEndProcessor_ad619db5cc0740f86213c5ad9a6363785}{m\+Right\+Reader\+Finished}}
+\item 
+atomic\+\_\+int \doxymbox{\hyperlink{classPairEndProcessor_aca493df06ba9f829eabd9f3462b40afa}{m\+Finished\+Threads}}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a3eca167a1dc7a6c56a5f955bcd413a93}{m\+Options}}
+\item 
+\doxymbox{\hyperlink{classFilter}{Filter}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_ace9be7f93e4f28aa537b335fdcf9d692}{m\+Filter}}
+\item 
+\doxymbox{\hyperlink{classUmiProcessor}{Umi\+Processor}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_af2763af2a1066fa2ac529efbe2ba1228}{m\+Umi\+Processor}}
+\item 
+atomic\+\_\+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a388e2a6911b141ae3ac560437f43c325}{m\+Insert\+Size\+Hist}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a698c38feeb4ede125ffd61815599cfe1}{m\+Left\+Writer}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a19a4c96bf685d8d01e89438f2fbcaf66}{m\+Right\+Writer}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_adfe34f92e0f443642a22fb9b953746bb}{m\+Unpaired\+Left\+Writer}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a64990bd5e99bfaf98925b7b03d36c52c}{m\+Unpaired\+Right\+Writer}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a0d28dfdb0f62ebcfbf57101b3d3e51ff}{m\+Merged\+Writer}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_aa911b5334cfcd75ecfec5956626acd35}{m\+Failed\+Writer}}
+\item 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a3f3fe32e3bcb3130d9daee5a93cbd874}{m\+Overlapped\+Writer}}
+\item 
+\doxymbox{\hyperlink{classDuplicate}{Duplicate}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a32318768b37c7252f1e5780af5cef94e}{m\+Duplicate}}
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_abdb66a6b67dc33a5b90296454fa36236}{m\+Left\+Input\+Lists}}
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a11cb9e95cdc58c258920c6cd5a25a553}{m\+Right\+Input\+Lists}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classPairEndProcessor_a421be6fd44051e3bc12a1240e4c870ed}{m\+Left\+Pack\+Read\+Counter}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classPairEndProcessor_a554eedf8169ecb89fc1ac4631c4e51b7}{m\+Right\+Pack\+Read\+Counter}}
+\item 
+atomic\+\_\+long \doxymbox{\hyperlink{classPairEndProcessor_af3a01b94aa0ff99508315c62fbca85cb}{m\+Pack\+Processed\+Counter}}
+\item 
+\doxymbox{\hyperlink{classReadPool}{Read\+Pool}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a1bb8e19c273ece53d93f8e696958fb4a}{m\+Left\+Read\+Pool}}
+\item 
+\doxymbox{\hyperlink{classReadPool}{Read\+Pool}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classPairEndProcessor_a185d1ee9ac28144f533d8e419d14b53a}{m\+Right\+Read\+Pool}}
+\item 
+atomic\+\_\+bool \doxymbox{\hyperlink{classPairEndProcessor_a39bc23e5df6558c15e6b5df802c89a67}{should\+Stop\+Reading}}
+\item 
+std::\+mutex \doxymbox{\hyperlink{classPairEndProcessor_a359bab39dc18e283fc284c74d9298ebb}{m\+Backpressure\+Mtx}}
+\item 
+std::\+condition\+\_\+variable \doxymbox{\hyperlink{classPairEndProcessor_a5325bc1785a2a9f59b42593771a23c67}{m\+Backpressure\+CV}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classPairEndProcessor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPairEndProcessor_a5c8f0062f8e980e06a07bba4abfb04d9}\index{PairEndProcessor@{PairEndProcessor}!PairEndProcessor@{PairEndProcessor}}
+\index{PairEndProcessor@{PairEndProcessor}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{PairEndProcessor()}{PairEndProcessor()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a5c8f0062f8e980e06a07bba4abfb04d9} 
+Pair\+End\+Processor::\+\+Pair\+End\+Processor (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classPairEndProcessor_a51025ff3f6fbd889977b071a1336c12a}\index{PairEndProcessor@{PairEndProcessor}!````~PairEndProcessor@{\texorpdfstring{$\sim$}{\string~}PairEndProcessor}}
+\index{````~PairEndProcessor@{\texorpdfstring{$\sim$}{\string~}PairEndProcessor}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PairEndProcessor()}{\string~PairEndProcessor()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a51025ff3f6fbd889977b071a1336c12a} 
+Pair\+End\+Processor::\+\texorpdfstring{$\sim$}{\string~}\+Pair\+End\+Processor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classPairEndProcessor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPairEndProcessor_a61f9315b141f7808fa440fde0d8359cc}\index{PairEndProcessor@{PairEndProcessor}!closeOutput@{closeOutput}}
+\index{closeOutput@{closeOutput}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{closeOutput()}{closeOutput()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a61f9315b141f7808fa440fde0d8359cc} 
+void Pair\+End\+Processor::\+close\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a8bfd34fbf2e72d18f04c1b1678e39180}\index{PairEndProcessor@{PairEndProcessor}!getPeakInsertSize@{getPeakInsertSize}}
+\index{getPeakInsertSize@{getPeakInsertSize}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{getPeakInsertSize()}{getPeakInsertSize()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a8bfd34fbf2e72d18f04c1b1678e39180} 
+int Pair\+End\+Processor::\+get\+Peak\+Insert\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a5e9b5e8ade9d8ff37d91bacd63584f35}\index{PairEndProcessor@{PairEndProcessor}!initConfig@{initConfig}}
+\index{initConfig@{initConfig}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{initConfig()}{initConfig()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a5e9b5e8ade9d8ff37d91bacd63584f35} 
+void Pair\+End\+Processor::\+init\+Config (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a4030de52f1242d7ac36a3b819c23d323}\index{PairEndProcessor@{PairEndProcessor}!initOutput@{initOutput}}
+\index{initOutput@{initOutput}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{initOutput()}{initOutput()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a4030de52f1242d7ac36a3b819c23d323} 
+void Pair\+End\+Processor::\+init\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a6a25f324d2008e6f9e97efef7c66355a}\index{PairEndProcessor@{PairEndProcessor}!interleavedReaderTask@{interleavedReaderTask}}
+\index{interleavedReaderTask@{interleavedReaderTask}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{interleavedReaderTask()}{interleavedReaderTask()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a6a25f324d2008e6f9e97efef7c66355a} 
+void Pair\+End\+Processor::\+interleaved\+Reader\+Task (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a49f131a3f2c6ae7554e3c143974263ee}\index{PairEndProcessor@{PairEndProcessor}!process@{process}}
+\index{process@{process}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a49f131a3f2c6ae7554e3c143974263ee} 
+bool Pair\+End\+Processor::\+process (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classPairEndProcessor_ac28979108069f4202f571446dbe32488}\index{PairEndProcessor@{PairEndProcessor}!processorTask@{processorTask}}
+\index{processorTask@{processorTask}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{processorTask()}{processorTask()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_ac28979108069f4202f571446dbe32488} 
+void Pair\+End\+Processor::\+processor\+Task (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a28a9e02adbac691bd43c6928e9b9fb18}\index{PairEndProcessor@{PairEndProcessor}!processPairEnd@{processPairEnd}}
+\index{processPairEnd@{processPairEnd}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{processPairEnd()}{processPairEnd()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a28a9e02adbac691bd43c6928e9b9fb18} 
+bool Pair\+End\+Processor::\+process\+Pair\+End (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*}}]{left\+Pack}{, }\item[{\doxymbox{\hyperlink{structReadPack}{Read\+Pack}} \texorpdfstring{$\ast$}{*}}]{right\+Pack}{, }\item[{\doxymbox{\hyperlink{classThreadConfig}{Thread\+Config}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a1652c055e6febf6340c3bafcaff5b0f0}\index{PairEndProcessor@{PairEndProcessor}!readerTask@{readerTask}}
+\index{readerTask@{readerTask}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{readerTask()}{readerTask()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a1652c055e6febf6340c3bafcaff5b0f0} 
+void Pair\+End\+Processor::\+reader\+Task (\begin{DoxyParamCaption}\item[{bool}]{is\+Left}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_ac586284e4c745c4c38ade2c6fffd06b9}\index{PairEndProcessor@{PairEndProcessor}!recycleToPool1@{recycleToPool1}}
+\index{recycleToPool1@{recycleToPool1}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{recycleToPool1()}{recycleToPool1()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_ac586284e4c745c4c38ade2c6fffd06b9} 
+void Pair\+End\+Processor::\+recycle\+To\+Pool1 (\begin{DoxyParamCaption}\item[{int}]{tid}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_ac8547a1681e4f572ab892d3b63bb23c0}\index{PairEndProcessor@{PairEndProcessor}!recycleToPool2@{recycleToPool2}}
+\index{recycleToPool2@{recycleToPool2}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{recycleToPool2()}{recycleToPool2()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_ac8547a1681e4f572ab892d3b63bb23c0} 
+void Pair\+End\+Processor::\+recycle\+To\+Pool2 (\begin{DoxyParamCaption}\item[{int}]{tid}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a1ed09b1ed350ac890be50f5f69a58fe0}\index{PairEndProcessor@{PairEndProcessor}!statInsertSize@{statInsertSize}}
+\index{statInsertSize@{statInsertSize}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{statInsertSize()}{statInsertSize()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a1ed09b1ed350ac890be50f5f69a58fe0} 
+void Pair\+End\+Processor::\+stat\+Insert\+Size (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r1}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r2}{, }\item[{\doxymbox{\hyperlink{classOverlapResult}{Overlap\+Result}} \&}]{ov}{, }\item[{int}]{front\+Trimmed1}{ = {\ttfamily 0}, }\item[{int}]{front\+Trimmed2}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_ade953e1dab59cbd4fc658bbcbed953bc}\index{PairEndProcessor@{PairEndProcessor}!writerTask@{writerTask}}
+\index{writerTask@{writerTask}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{writerTask()}{writerTask()}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_ade953e1dab59cbd4fc658bbcbed953bc} 
+void Pair\+End\+Processor::\+writer\+Task (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}} \texorpdfstring{$\ast$}{*}}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classPairEndProcessor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classPairEndProcessor_a5325bc1785a2a9f59b42593771a23c67}\index{PairEndProcessor@{PairEndProcessor}!mBackpressureCV@{mBackpressureCV}}
+\index{mBackpressureCV@{mBackpressureCV}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mBackpressureCV}{mBackpressureCV}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a5325bc1785a2a9f59b42593771a23c67} 
+std::\+condition\+\_\+variable Pair\+End\+Processor::\+m\+Backpressure\+CV\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a359bab39dc18e283fc284c74d9298ebb}\index{PairEndProcessor@{PairEndProcessor}!mBackpressureMtx@{mBackpressureMtx}}
+\index{mBackpressureMtx@{mBackpressureMtx}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mBackpressureMtx}{mBackpressureMtx}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a359bab39dc18e283fc284c74d9298ebb} 
+std::\+mutex Pair\+End\+Processor::\+m\+Backpressure\+Mtx\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a32318768b37c7252f1e5780af5cef94e}\index{PairEndProcessor@{PairEndProcessor}!mDuplicate@{mDuplicate}}
+\index{mDuplicate@{mDuplicate}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mDuplicate}{mDuplicate}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a32318768b37c7252f1e5780af5cef94e} 
+\doxymbox{\hyperlink{classDuplicate}{Duplicate}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Duplicate\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_aa911b5334cfcd75ecfec5956626acd35}\index{PairEndProcessor@{PairEndProcessor}!mFailedWriter@{mFailedWriter}}
+\index{mFailedWriter@{mFailedWriter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mFailedWriter}{mFailedWriter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_aa911b5334cfcd75ecfec5956626acd35} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Failed\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_ace9be7f93e4f28aa537b335fdcf9d692}\index{PairEndProcessor@{PairEndProcessor}!mFilter@{mFilter}}
+\index{mFilter@{mFilter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mFilter}{mFilter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_ace9be7f93e4f28aa537b335fdcf9d692} 
+\doxymbox{\hyperlink{classFilter}{Filter}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Filter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_aca493df06ba9f829eabd9f3462b40afa}\index{PairEndProcessor@{PairEndProcessor}!mFinishedThreads@{mFinishedThreads}}
+\index{mFinishedThreads@{mFinishedThreads}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mFinishedThreads}{mFinishedThreads}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_aca493df06ba9f829eabd9f3462b40afa} 
+atomic\+\_\+int Pair\+End\+Processor::\+m\+Finished\+Threads\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a388e2a6911b141ae3ac560437f43c325}\index{PairEndProcessor@{PairEndProcessor}!mInsertSizeHist@{mInsertSizeHist}}
+\index{mInsertSizeHist@{mInsertSizeHist}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mInsertSizeHist}{mInsertSizeHist}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a388e2a6911b141ae3ac560437f43c325} 
+atomic\+\_\+long\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Insert\+Size\+Hist\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_abdb66a6b67dc33a5b90296454fa36236}\index{PairEndProcessor@{PairEndProcessor}!mLeftInputLists@{mLeftInputLists}}
+\index{mLeftInputLists@{mLeftInputLists}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mLeftInputLists}{mLeftInputLists}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_abdb66a6b67dc33a5b90296454fa36236} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$\doxymbox{\hyperlink{structReadPack}{Read\+Pack}}\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Left\+Input\+Lists\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a421be6fd44051e3bc12a1240e4c870ed}\index{PairEndProcessor@{PairEndProcessor}!mLeftPackReadCounter@{mLeftPackReadCounter}}
+\index{mLeftPackReadCounter@{mLeftPackReadCounter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mLeftPackReadCounter}{mLeftPackReadCounter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a421be6fd44051e3bc12a1240e4c870ed} 
+size\+\_\+t Pair\+End\+Processor::\+m\+Left\+Pack\+Read\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a92288ad801f2248de839d1a620c37569}\index{PairEndProcessor@{PairEndProcessor}!mLeftReaderFinished@{mLeftReaderFinished}}
+\index{mLeftReaderFinished@{mLeftReaderFinished}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mLeftReaderFinished}{mLeftReaderFinished}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a92288ad801f2248de839d1a620c37569} 
+atomic\+\_\+bool Pair\+End\+Processor::\+m\+Left\+Reader\+Finished\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a1bb8e19c273ece53d93f8e696958fb4a}\index{PairEndProcessor@{PairEndProcessor}!mLeftReadPool@{mLeftReadPool}}
+\index{mLeftReadPool@{mLeftReadPool}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mLeftReadPool}{mLeftReadPool}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a1bb8e19c273ece53d93f8e696958fb4a} 
+\doxymbox{\hyperlink{classReadPool}{Read\+Pool}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Left\+Read\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a698c38feeb4ede125ffd61815599cfe1}\index{PairEndProcessor@{PairEndProcessor}!mLeftWriter@{mLeftWriter}}
+\index{mLeftWriter@{mLeftWriter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mLeftWriter}{mLeftWriter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a698c38feeb4ede125ffd61815599cfe1} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Left\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a0d28dfdb0f62ebcfbf57101b3d3e51ff}\index{PairEndProcessor@{PairEndProcessor}!mMergedWriter@{mMergedWriter}}
+\index{mMergedWriter@{mMergedWriter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mMergedWriter}{mMergedWriter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a0d28dfdb0f62ebcfbf57101b3d3e51ff} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Merged\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a3eca167a1dc7a6c56a5f955bcd413a93}\index{PairEndProcessor@{PairEndProcessor}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a3eca167a1dc7a6c56a5f955bcd413a93} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a3f3fe32e3bcb3130d9daee5a93cbd874}\index{PairEndProcessor@{PairEndProcessor}!mOverlappedWriter@{mOverlappedWriter}}
+\index{mOverlappedWriter@{mOverlappedWriter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mOverlappedWriter}{mOverlappedWriter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a3f3fe32e3bcb3130d9daee5a93cbd874} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Overlapped\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_af3a01b94aa0ff99508315c62fbca85cb}\index{PairEndProcessor@{PairEndProcessor}!mPackProcessedCounter@{mPackProcessedCounter}}
+\index{mPackProcessedCounter@{mPackProcessedCounter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mPackProcessedCounter}{mPackProcessedCounter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_af3a01b94aa0ff99508315c62fbca85cb} 
+atomic\+\_\+long Pair\+End\+Processor::\+m\+Pack\+Processed\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a11cb9e95cdc58c258920c6cd5a25a553}\index{PairEndProcessor@{PairEndProcessor}!mRightInputLists@{mRightInputLists}}
+\index{mRightInputLists@{mRightInputLists}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mRightInputLists}{mRightInputLists}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a11cb9e95cdc58c258920c6cd5a25a553} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$\doxymbox{\hyperlink{structReadPack}{Read\+Pack}}\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Right\+Input\+Lists\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a554eedf8169ecb89fc1ac4631c4e51b7}\index{PairEndProcessor@{PairEndProcessor}!mRightPackReadCounter@{mRightPackReadCounter}}
+\index{mRightPackReadCounter@{mRightPackReadCounter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mRightPackReadCounter}{mRightPackReadCounter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a554eedf8169ecb89fc1ac4631c4e51b7} 
+size\+\_\+t Pair\+End\+Processor::\+m\+Right\+Pack\+Read\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_ad619db5cc0740f86213c5ad9a6363785}\index{PairEndProcessor@{PairEndProcessor}!mRightReaderFinished@{mRightReaderFinished}}
+\index{mRightReaderFinished@{mRightReaderFinished}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mRightReaderFinished}{mRightReaderFinished}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_ad619db5cc0740f86213c5ad9a6363785} 
+atomic\+\_\+bool Pair\+End\+Processor::\+m\+Right\+Reader\+Finished\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a185d1ee9ac28144f533d8e419d14b53a}\index{PairEndProcessor@{PairEndProcessor}!mRightReadPool@{mRightReadPool}}
+\index{mRightReadPool@{mRightReadPool}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mRightReadPool}{mRightReadPool}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a185d1ee9ac28144f533d8e419d14b53a} 
+\doxymbox{\hyperlink{classReadPool}{Read\+Pool}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Right\+Read\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a19a4c96bf685d8d01e89438f2fbcaf66}\index{PairEndProcessor@{PairEndProcessor}!mRightWriter@{mRightWriter}}
+\index{mRightWriter@{mRightWriter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mRightWriter}{mRightWriter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a19a4c96bf685d8d01e89438f2fbcaf66} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Right\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_af2763af2a1066fa2ac529efbe2ba1228}\index{PairEndProcessor@{PairEndProcessor}!mUmiProcessor@{mUmiProcessor}}
+\index{mUmiProcessor@{mUmiProcessor}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mUmiProcessor}{mUmiProcessor}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_af2763af2a1066fa2ac529efbe2ba1228} 
+\doxymbox{\hyperlink{classUmiProcessor}{Umi\+Processor}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Umi\+Processor\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_adfe34f92e0f443642a22fb9b953746bb}\index{PairEndProcessor@{PairEndProcessor}!mUnpairedLeftWriter@{mUnpairedLeftWriter}}
+\index{mUnpairedLeftWriter@{mUnpairedLeftWriter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mUnpairedLeftWriter}{mUnpairedLeftWriter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_adfe34f92e0f443642a22fb9b953746bb} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Unpaired\+Left\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a64990bd5e99bfaf98925b7b03d36c52c}\index{PairEndProcessor@{PairEndProcessor}!mUnpairedRightWriter@{mUnpairedRightWriter}}
+\index{mUnpairedRightWriter@{mUnpairedRightWriter}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{mUnpairedRightWriter}{mUnpairedRightWriter}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a64990bd5e99bfaf98925b7b03d36c52c} 
+\doxymbox{\hyperlink{classWriterThread}{Writer\+Thread}}\texorpdfstring{$\ast$}{*} Pair\+End\+Processor::\+m\+Unpaired\+Right\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classPairEndProcessor_a39bc23e5df6558c15e6b5df802c89a67}\index{PairEndProcessor@{PairEndProcessor}!shouldStopReading@{shouldStopReading}}
+\index{shouldStopReading@{shouldStopReading}!PairEndProcessor@{PairEndProcessor}}
+\doxysubsubsection{\texorpdfstring{shouldStopReading}{shouldStopReading}}
+{\footnotesize\ttfamily \label{classPairEndProcessor_a39bc23e5df6558c15e6b5df802c89a67} 
+atomic\+\_\+bool Pair\+End\+Processor::\+should\+Stop\+Reading\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{peprocessor_8h}{peprocessor.\+h}}\item 
+src/\+\doxymbox{\hyperlink{peprocessor_8cpp}{peprocessor.\+cpp}}\end{DoxyCompactItemize}

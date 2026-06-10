@@ -1,0 +1,66 @@
+\doxysection{src/\+bgzf.h File Reference}
+\hypertarget{bgzf_8h}{}\label{bgzf_8h}\index{src/bgzf.h@{src/bgzf.h}}
+{\ttfamily \+\#include $<$cstdio$>$}\newline
+{\ttfamily \+\#include $<$cstdint$>$}\newline
+{\ttfamily \+\#include $<$cstring$>$}\newline
+{\ttfamily \+\#include $<$atomic$>$}\newline
+{\ttfamily \+\#include $<$thread$>$}\newline
+{\ttfamily \+\#include $<$mutex$>$}\newline
+{\ttfamily \+\#include $<$condition\+\_\+variable$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$isa-\/l/\+igzip\+\_\+lib.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classBgzfMtReader}{Bgzf\+Mt\+Reader}}
+\item 
+struct \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Bgzf\+Mt\+Reader::\+\+Slot}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{bgzf_8h_af4309efc625369d2b284292e1566b98b}{is\+Bgzf}} (FILE \texorpdfstring{$\ast$}{*}fp)
+\item 
+static uint32\+\_\+t \doxymbox{\hyperlink{bgzf_8h_a6aa7eb8ff463738d79f3d00190830a05}{bgzf\+Block\+Size}} (const unsigned char \texorpdfstring{$\ast$}{*}h)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \doxymbox{\hyperlink{bgzf_8h_a484751937758a33287383a64fb34cdb4}{BGZF\+\_\+\+HEADER\+\_\+\+SIZE}} = 18
+\item 
+static const int \doxymbox{\hyperlink{bgzf_8h_a0a414adb7070c8104828e5ce99aec2f1}{BGZF\+\_\+\+MAX\+\_\+\+BLOCK\+\_\+\+SIZE}} = 65536
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{bgzf_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{bgzf_8h_a6aa7eb8ff463738d79f3d00190830a05}\index{bgzf.h@{bgzf.h}!bgzfBlockSize@{bgzfBlockSize}}
+\index{bgzfBlockSize@{bgzfBlockSize}!bgzf.h@{bgzf.h}}
+\doxysubsubsection{\texorpdfstring{bgzfBlockSize()}{bgzfBlockSize()}}
+{\footnotesize\ttfamily \label{bgzf_8h_a6aa7eb8ff463738d79f3d00190830a05} 
+uint32\+\_\+t bgzf\+Block\+Size (\begin{DoxyParamCaption}\item[{const unsigned char \texorpdfstring{$\ast$}{*}}]{h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\Hypertarget{bgzf_8h_af4309efc625369d2b284292e1566b98b}\index{bgzf.h@{bgzf.h}!isBgzf@{isBgzf}}
+\index{isBgzf@{isBgzf}!bgzf.h@{bgzf.h}}
+\doxysubsubsection{\texorpdfstring{isBgzf()}{isBgzf()}}
+{\footnotesize\ttfamily \label{bgzf_8h_af4309efc625369d2b284292e1566b98b} 
+bool is\+Bgzf (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{fp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{bgzf_8h_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{bgzf_8h_a484751937758a33287383a64fb34cdb4}\index{bgzf.h@{bgzf.h}!BGZF\_HEADER\_SIZE@{BGZF\_HEADER\_SIZE}}
+\index{BGZF\_HEADER\_SIZE@{BGZF\_HEADER\_SIZE}!bgzf.h@{bgzf.h}}
+\doxysubsubsection{\texorpdfstring{BGZF\_HEADER\_SIZE}{BGZF\_HEADER\_SIZE}}
+{\footnotesize\ttfamily \label{bgzf_8h_a484751937758a33287383a64fb34cdb4} 
+const int BGZF\+\_\+\+HEADER\+\_\+\+SIZE = 18\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{bgzf_8h_a0a414adb7070c8104828e5ce99aec2f1}\index{bgzf.h@{bgzf.h}!BGZF\_MAX\_BLOCK\_SIZE@{BGZF\_MAX\_BLOCK\_SIZE}}
+\index{BGZF\_MAX\_BLOCK\_SIZE@{BGZF\_MAX\_BLOCK\_SIZE}!bgzf.h@{bgzf.h}}
+\doxysubsubsection{\texorpdfstring{BGZF\_MAX\_BLOCK\_SIZE}{BGZF\_MAX\_BLOCK\_SIZE}}
+{\footnotesize\ttfamily \label{bgzf_8h_a0a414adb7070c8104828e5ce99aec2f1} 
+const int BGZF\+\_\+\+MAX\+\_\+\+BLOCK\+\_\+\+SIZE = 65536\hspace{0.3cm}{\ttfamily [static]}}
+

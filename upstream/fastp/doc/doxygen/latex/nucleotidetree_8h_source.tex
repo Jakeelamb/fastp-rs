@@ -1,0 +1,46 @@
+\doxysection{nucleotidetree.\+h}
+\hypertarget{nucleotidetree_8h_source}{}\label{nucleotidetree_8h_source}\index{src/nucleotidetree.h@{src/nucleotidetree.h}}
+\doxymbox{\hyperlink{nucleotidetree_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NUCLEICTREE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NUCLEICTREE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ (A,T,C,G,N)\ \&\ 0X07\ =\ (1,4,7,6,3)}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classNucleotideNode_ad8679314504792b5549df4ec1b1eeb21}{NucleotideNode}}\{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \doxymbox{\hyperlink{classNucleotideNode_ad8679314504792b5549df4ec1b1eeb21}{NucleotideNode}}();}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{classNucleotideNode_ab54e9ee7abf499a7a88328107a0952f2}{\string~NucleotideNode}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classNucleotideNode_a3d5e621a963cca3c16aeed33d53105b8}{dfs}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classNucleotideNode_a9a91516cafc1bc4a486d8fe3ad813447}{count}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{classNucleotideNode_a9d06c3c2d0e64a1cc8d0262878b80357}{base}};}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{classNucleotideNode_ad8679314504792b5549df4ec1b1eeb21}{NucleotideNode}}*\ \doxymbox{\hyperlink{classNucleotideNode_ab5fed54f4b46ec9da90168a3453bffc7}{children}}[8];}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classNucleotideTree_a01e9e88349d84ec59426bc20de8ade7d}{NucleotideTree}}\{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{classNucleotideTree_a01e9e88349d84ec59426bc20de8ade7d}{NucleotideTree}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt);}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{classNucleotideTree_ad1672fa610fa21f5deab703055d00094}{\string~NucleotideTree}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classNucleotideTree_a4193d9b8cd76a6a09ffe29c0b810bd63}{addSeq}}(\textcolor{keywordtype}{string}\ seq);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classNucleotideTree_a9b2f5fe74bd8873c7442170d8421a80a}{getDominantPath}}(\textcolor{keywordtype}{bool}\&\ reachedLeaf);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classNucleotideTree_ae4dc5bccdecca1b7f3b19d8abda53efa}{test}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classNucleotideTree_a976040ee498341e59ef81aac71c143f2}{mOptions}};}
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{classNucleotideNode}{NucleotideNode}}*\ \doxymbox{\hyperlink{classNucleotideTree_ab333a59c80b16db395c188fbd79b5e14}{mRoot}};}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

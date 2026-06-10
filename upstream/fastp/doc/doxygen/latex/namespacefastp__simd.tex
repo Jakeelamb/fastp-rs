@@ -1,0 +1,63 @@
+\doxysection{fastp\+\_\+simd Namespace Reference}
+\hypertarget{namespacefastp__simd}{}\label{namespacefastp__simd}\index{fastp\_simd@{fastp\_simd}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE}{HWY\+\_\+\+NAMESPACE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{namespacefastp__simd_a0d37fd2176056744aa824515162fe777}{count\+Quality\+Metrics}} (const char \texorpdfstring{$\ast$}{*}qualstr, const char \texorpdfstring{$\ast$}{*}seqstr, int len, char qual\+Threshold, int \&low\+Qual\+Num, int \&n\+Base\+Num, int \&total\+Qual)
+\item 
+void \doxymbox{\hyperlink{namespacefastp__simd_a64bdfe0037ec7400a0fe20f273f4e33b}{reverse\+Complement}} (const char \texorpdfstring{$\ast$}{*}src, char \texorpdfstring{$\ast$}{*}dst, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_a1b83a43952d3a86f96e399a7b6b7fb8a}{count\+Adjacent\+Diffs}} (const char \texorpdfstring{$\ast$}{*}data, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_a044ddcf257373b649d64d5aeea9fc7f6}{count\+Mismatches}} (const char \texorpdfstring{$\ast$}{*}a, const char \texorpdfstring{$\ast$}{*}b, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_a3835a28467a63a5485754e4a48f49a71}{count\+Mismatches\+Bounded}} (const char \texorpdfstring{$\ast$}{*}a, const char \texorpdfstring{$\ast$}{*}b, int len, int limit)
+\item 
+bool \doxymbox{\hyperlink{namespacefastp__simd_a1b89fa328564d427691ee2b3d59fce1a}{test\+Simd}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacefastp__simd_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacefastp__simd_a1b83a43952d3a86f96e399a7b6b7fb8a}\index{fastp\_simd@{fastp\_simd}!countAdjacentDiffs@{countAdjacentDiffs}}
+\index{countAdjacentDiffs@{countAdjacentDiffs}!fastp\_simd@{fastp\_simd}}
+\doxysubsubsection{\texorpdfstring{countAdjacentDiffs()}{countAdjacentDiffs()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_a1b83a43952d3a86f96e399a7b6b7fb8a} 
+int fastp\+\_\+simd::\+count\+Adjacent\+Diffs (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_a044ddcf257373b649d64d5aeea9fc7f6}\index{fastp\_simd@{fastp\_simd}!countMismatches@{countMismatches}}
+\index{countMismatches@{countMismatches}!fastp\_simd@{fastp\_simd}}
+\doxysubsubsection{\texorpdfstring{countMismatches()}{countMismatches()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_a044ddcf257373b649d64d5aeea9fc7f6} 
+int fastp\+\_\+simd::\+count\+Mismatches (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_a3835a28467a63a5485754e4a48f49a71}\index{fastp\_simd@{fastp\_simd}!countMismatchesBounded@{countMismatchesBounded}}
+\index{countMismatchesBounded@{countMismatchesBounded}!fastp\_simd@{fastp\_simd}}
+\doxysubsubsection{\texorpdfstring{countMismatchesBounded()}{countMismatchesBounded()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_a3835a28467a63a5485754e4a48f49a71} 
+int fastp\+\_\+simd::\+count\+Mismatches\+Bounded (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{int}]{len}{, }\item[{int}]{limit}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_a0d37fd2176056744aa824515162fe777}\index{fastp\_simd@{fastp\_simd}!countQualityMetrics@{countQualityMetrics}}
+\index{countQualityMetrics@{countQualityMetrics}!fastp\_simd@{fastp\_simd}}
+\doxysubsubsection{\texorpdfstring{countQualityMetrics()}{countQualityMetrics()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_a0d37fd2176056744aa824515162fe777} 
+void fastp\+\_\+simd::\+count\+Quality\+Metrics (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{qualstr}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{seqstr}{, }\item[{int}]{len}{, }\item[{char}]{qual\+Threshold}{, }\item[{int \&}]{low\+Qual\+Num}{, }\item[{int \&}]{n\+Base\+Num}{, }\item[{int \&}]{total\+Qual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_a64bdfe0037ec7400a0fe20f273f4e33b}\index{fastp\_simd@{fastp\_simd}!reverseComplement@{reverseComplement}}
+\index{reverseComplement@{reverseComplement}!fastp\_simd@{fastp\_simd}}
+\doxysubsubsection{\texorpdfstring{reverseComplement()}{reverseComplement()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_a64bdfe0037ec7400a0fe20f273f4e33b} 
+void fastp\+\_\+simd::\+reverse\+Complement (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{dst}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_a1b89fa328564d427691ee2b3d59fce1a}\index{fastp\_simd@{fastp\_simd}!testSimd@{testSimd}}
+\index{testSimd@{testSimd}!fastp\_simd@{fastp\_simd}}
+\doxysubsubsection{\texorpdfstring{testSimd()}{testSimd()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_a1b89fa328564d427691ee2b3d59fce1a} 
+bool fastp\+\_\+simd::\+test\+Simd (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+

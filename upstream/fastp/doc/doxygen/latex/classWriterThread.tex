@@ -1,0 +1,268 @@
+\doxysection{Writer\+Thread Class Reference}
+\hypertarget{classWriterThread}{}\label{classWriterThread}\index{WriterThread@{WriterThread}}
+
+
+{\ttfamily \+\#include $<$writerthread.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classWriterThread_ad85722858d6f73e7db995d7c940038eb}{Writer\+Thread}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt, string filename, bool is\+STDOUT=false)
+\item 
+\doxymbox{\hyperlink{classWriterThread_a1f6800d9e272c0cb2eb7a0c774b14f4e}{\texorpdfstring{$\sim$}{\string~}\+Writer\+Thread}} ()
+\item 
+void \doxymbox{\hyperlink{classWriterThread_a876dbb8b56ba5660ad370212e31b1b72}{init\+Writer}} (string filename1, bool is\+STDOUT=false)
+\item 
+void \doxymbox{\hyperlink{classWriterThread_a8bea61e2a4a63dd11ab55e5284026626}{init\+Buffer\+Lists}} ()
+\item 
+void \doxymbox{\hyperlink{classWriterThread_ad5a34ac64a25fed4e1e8b5c63061d579}{cleanup}} ()
+\item 
+bool \doxymbox{\hyperlink{classWriterThread_a79f1d3c1090568800b7613b8a7689468}{is\+Completed}} ()
+\item 
+void \doxymbox{\hyperlink{classWriterThread_a213a85cf26e05550566c3779a2b588b1}{output}} ()
+\item 
+void \doxymbox{\hyperlink{classWriterThread_a9b29200184e58f51fc366e38691c174b}{input}} (int tid, string \texorpdfstring{$\ast$}{*}data)
+\item 
+bool \doxymbox{\hyperlink{classWriterThread_a590319d06f1de992b9621624dbbb8fc9}{set\+Input\+Completed}} ()
+\item 
+long \doxymbox{\hyperlink{classWriterThread_a09e82ab15e9a38c213117495c9c9fe58}{buffer\+Length}} ()
+\item 
+string \doxymbox{\hyperlink{classWriterThread_a3d1949e8e7ba391898e67a6034cf61ce}{get\+Filename}} ()
+\item 
+bool \doxymbox{\hyperlink{classWriterThread_a5b9aa1dd1c66c4507414ead32caef0c7}{is\+Pwrite\+Mode}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classWriterThread_aec981cb042ef8d7d422c8ae1e92c11b6}{delete\+Writer}} ()
+\item 
+void \doxymbox{\hyperlink{classWriterThread_a0d8d2f35142de5a61d3efdcdd8526dfc}{input\+Pwrite}} (int tid, string \texorpdfstring{$\ast$}{*}data)
+\item 
+void \doxymbox{\hyperlink{classWriterThread_a502ba2307fe879b41e5bfb01a253e675}{set\+Input\+Completed\+Pwrite}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classWriter}{Writer}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriterThread_ac2c00f8ea2c638b346080b5ed6053f3c}{m\+Writer1}}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriterThread_a3563f37bc0d85dc10d7b3d509cfa5e11}{m\+Options}}
+\item 
+string \doxymbox{\hyperlink{classWriterThread_aa855284d8283446d8010e8a3be0bd75f}{m\+Filename}}
+\item 
+bool \doxymbox{\hyperlink{classWriterThread_a83ba79609c76ae183b246d3c8cee40e6}{m\+Input\+Completed}}
+\item 
+atomic\+\_\+long \doxymbox{\hyperlink{classWriterThread_a6dbeca6d78c74aec366524b49fed0808}{m\+Buffer\+Length}}
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ string \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriterThread_aa134bf1af8bb678a156129fc0556742b}{m\+Buffer\+Lists}}
+\item 
+int \doxymbox{\hyperlink{classWriterThread_ae0c4e96dbcdaebb33d05310fc47bdecb}{m\+Working\+Buffer\+List}}
+\item 
+bool \doxymbox{\hyperlink{classWriterThread_a1fd695053db832d8894bb07eb855327f}{m\+Pwrite\+Mode}}
+\item 
+int \doxymbox{\hyperlink{classWriterThread_a862ae22da6e9e2e6789519bb6aa08d04}{m\+Fd}}
+\item 
+\doxymbox{\hyperlink{structOffsetSlot}{Offset\+Slot}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriterThread_ad3c724af9d80f9a42041246dc77e8cf6}{m\+Offset\+Ring}}
+\item 
+size\+\_\+t \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriterThread_a204861ab743a5446351ca548aca4034a}{m\+Next\+Seq}}
+\item 
+libdeflate\+\_\+compressor \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriterThread_ac22849e47b5312d0385684af7c503828}{m\+Compressors}}
+\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriterThread_a51ecdb4fb3baa26b8f365139dbbcc796}{m\+Comp\+Bufs}}
+\item 
+size\+\_\+t \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriterThread_a3e14b5f84d2414ad8f8c783548b3de7c}{m\+Comp\+Buf\+Sizes}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classWriterThread_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWriterThread_ad85722858d6f73e7db995d7c940038eb}\index{WriterThread@{WriterThread}!WriterThread@{WriterThread}}
+\index{WriterThread@{WriterThread}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{WriterThread()}{WriterThread()}}
+{\footnotesize\ttfamily \label{classWriterThread_ad85722858d6f73e7db995d7c940038eb} 
+Writer\+Thread::\+\+Writer\+Thread (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{, }\item[{string}]{filename}{, }\item[{bool}]{is\+STDOUT}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriterThread_a1f6800d9e272c0cb2eb7a0c774b14f4e}\index{WriterThread@{WriterThread}!````~WriterThread@{\texorpdfstring{$\sim$}{\string~}WriterThread}}
+\index{````~WriterThread@{\texorpdfstring{$\sim$}{\string~}WriterThread}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}WriterThread()}{\string~WriterThread()}}
+{\footnotesize\ttfamily \label{classWriterThread_a1f6800d9e272c0cb2eb7a0c774b14f4e} 
+Writer\+Thread::\+\texorpdfstring{$\sim$}{\string~}\+Writer\+Thread (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classWriterThread_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWriterThread_a09e82ab15e9a38c213117495c9c9fe58}\index{WriterThread@{WriterThread}!bufferLength@{bufferLength}}
+\index{bufferLength@{bufferLength}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{bufferLength()}{bufferLength()}}
+{\footnotesize\ttfamily \label{classWriterThread_a09e82ab15e9a38c213117495c9c9fe58} 
+long Writer\+Thread::\+buffer\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classWriterThread_ad5a34ac64a25fed4e1e8b5c63061d579}\index{WriterThread@{WriterThread}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{classWriterThread_ad5a34ac64a25fed4e1e8b5c63061d579} 
+void Writer\+Thread::\+cleanup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriterThread_aec981cb042ef8d7d422c8ae1e92c11b6}\index{WriterThread@{WriterThread}!deleteWriter@{deleteWriter}}
+\index{deleteWriter@{deleteWriter}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{deleteWriter()}{deleteWriter()}}
+{\footnotesize\ttfamily \label{classWriterThread_aec981cb042ef8d7d422c8ae1e92c11b6} 
+void Writer\+Thread::\+delete\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a3d1949e8e7ba391898e67a6034cf61ce}\index{WriterThread@{WriterThread}!getFilename@{getFilename}}
+\index{getFilename@{getFilename}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{getFilename()}{getFilename()}}
+{\footnotesize\ttfamily \label{classWriterThread_a3d1949e8e7ba391898e67a6034cf61ce} 
+string Writer\+Thread::\+get\+Filename (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classWriterThread_a8bea61e2a4a63dd11ab55e5284026626}\index{WriterThread@{WriterThread}!initBufferLists@{initBufferLists}}
+\index{initBufferLists@{initBufferLists}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{initBufferLists()}{initBufferLists()}}
+{\footnotesize\ttfamily \label{classWriterThread_a8bea61e2a4a63dd11ab55e5284026626} 
+void Writer\+Thread::\+init\+Buffer\+Lists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriterThread_a876dbb8b56ba5660ad370212e31b1b72}\index{WriterThread@{WriterThread}!initWriter@{initWriter}}
+\index{initWriter@{initWriter}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{initWriter()}{initWriter()}}
+{\footnotesize\ttfamily \label{classWriterThread_a876dbb8b56ba5660ad370212e31b1b72} 
+void Writer\+Thread::\+init\+Writer (\begin{DoxyParamCaption}\item[{string}]{filename1}{, }\item[{bool}]{is\+STDOUT}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriterThread_a9b29200184e58f51fc366e38691c174b}\index{WriterThread@{WriterThread}!input@{input}}
+\index{input@{input}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{classWriterThread_a9b29200184e58f51fc366e38691c174b} 
+void Writer\+Thread::\+input (\begin{DoxyParamCaption}\item[{int}]{tid}{, }\item[{string \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriterThread_a0d8d2f35142de5a61d3efdcdd8526dfc}\index{WriterThread@{WriterThread}!inputPwrite@{inputPwrite}}
+\index{inputPwrite@{inputPwrite}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{inputPwrite()}{inputPwrite()}}
+{\footnotesize\ttfamily \label{classWriterThread_a0d8d2f35142de5a61d3efdcdd8526dfc} 
+void Writer\+Thread::\+input\+Pwrite (\begin{DoxyParamCaption}\item[{int}]{tid}{, }\item[{string \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a79f1d3c1090568800b7613b8a7689468}\index{WriterThread@{WriterThread}!isCompleted@{isCompleted}}
+\index{isCompleted@{isCompleted}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{isCompleted()}{isCompleted()}}
+{\footnotesize\ttfamily \label{classWriterThread_a79f1d3c1090568800b7613b8a7689468} 
+bool Writer\+Thread::\+is\+Completed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriterThread_a5b9aa1dd1c66c4507414ead32caef0c7}\index{WriterThread@{WriterThread}!isPwriteMode@{isPwriteMode}}
+\index{isPwriteMode@{isPwriteMode}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{isPwriteMode()}{isPwriteMode()}}
+{\footnotesize\ttfamily \label{classWriterThread_a5b9aa1dd1c66c4507414ead32caef0c7} 
+bool Writer\+Thread::\+is\+Pwrite\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classWriterThread_a213a85cf26e05550566c3779a2b588b1}\index{WriterThread@{WriterThread}!output@{output}}
+\index{output@{output}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \label{classWriterThread_a213a85cf26e05550566c3779a2b588b1} 
+void Writer\+Thread::\+output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriterThread_a590319d06f1de992b9621624dbbb8fc9}\index{WriterThread@{WriterThread}!setInputCompleted@{setInputCompleted}}
+\index{setInputCompleted@{setInputCompleted}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{setInputCompleted()}{setInputCompleted()}}
+{\footnotesize\ttfamily \label{classWriterThread_a590319d06f1de992b9621624dbbb8fc9} 
+bool Writer\+Thread::\+set\+Input\+Completed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriterThread_a502ba2307fe879b41e5bfb01a253e675}\index{WriterThread@{WriterThread}!setInputCompletedPwrite@{setInputCompletedPwrite}}
+\index{setInputCompletedPwrite@{setInputCompletedPwrite}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{setInputCompletedPwrite()}{setInputCompletedPwrite()}}
+{\footnotesize\ttfamily \label{classWriterThread_a502ba2307fe879b41e5bfb01a253e675} 
+void Writer\+Thread::\+set\+Input\+Completed\+Pwrite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classWriterThread_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classWriterThread_a6dbeca6d78c74aec366524b49fed0808}\index{WriterThread@{WriterThread}!mBufferLength@{mBufferLength}}
+\index{mBufferLength@{mBufferLength}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mBufferLength}{mBufferLength}}
+{\footnotesize\ttfamily \label{classWriterThread_a6dbeca6d78c74aec366524b49fed0808} 
+atomic\+\_\+long Writer\+Thread::\+m\+Buffer\+Length\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_aa134bf1af8bb678a156129fc0556742b}\index{WriterThread@{WriterThread}!mBufferLists@{mBufferLists}}
+\index{mBufferLists@{mBufferLists}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mBufferLists}{mBufferLists}}
+{\footnotesize\ttfamily \label{classWriterThread_aa134bf1af8bb678a156129fc0556742b} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$string\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Writer\+Thread::\+m\+Buffer\+Lists\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a51ecdb4fb3baa26b8f365139dbbcc796}\index{WriterThread@{WriterThread}!mCompBufs@{mCompBufs}}
+\index{mCompBufs@{mCompBufs}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mCompBufs}{mCompBufs}}
+{\footnotesize\ttfamily \label{classWriterThread_a51ecdb4fb3baa26b8f365139dbbcc796} 
+char\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Writer\+Thread::\+m\+Comp\+Bufs\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a3e14b5f84d2414ad8f8c783548b3de7c}\index{WriterThread@{WriterThread}!mCompBufSizes@{mCompBufSizes}}
+\index{mCompBufSizes@{mCompBufSizes}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mCompBufSizes}{mCompBufSizes}}
+{\footnotesize\ttfamily \label{classWriterThread_a3e14b5f84d2414ad8f8c783548b3de7c} 
+size\+\_\+t\texorpdfstring{$\ast$}{*} Writer\+Thread::\+m\+Comp\+Buf\+Sizes\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_ac22849e47b5312d0385684af7c503828}\index{WriterThread@{WriterThread}!mCompressors@{mCompressors}}
+\index{mCompressors@{mCompressors}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mCompressors}{mCompressors}}
+{\footnotesize\ttfamily \label{classWriterThread_ac22849e47b5312d0385684af7c503828} 
+libdeflate\+\_\+compressor\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Writer\+Thread::\+m\+Compressors\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a862ae22da6e9e2e6789519bb6aa08d04}\index{WriterThread@{WriterThread}!mFd@{mFd}}
+\index{mFd@{mFd}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mFd}{mFd}}
+{\footnotesize\ttfamily \label{classWriterThread_a862ae22da6e9e2e6789519bb6aa08d04} 
+int Writer\+Thread::\+m\+Fd\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_aa855284d8283446d8010e8a3be0bd75f}\index{WriterThread@{WriterThread}!mFilename@{mFilename}}
+\index{mFilename@{mFilename}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mFilename}{mFilename}}
+{\footnotesize\ttfamily \label{classWriterThread_aa855284d8283446d8010e8a3be0bd75f} 
+string Writer\+Thread::\+m\+Filename\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a83ba79609c76ae183b246d3c8cee40e6}\index{WriterThread@{WriterThread}!mInputCompleted@{mInputCompleted}}
+\index{mInputCompleted@{mInputCompleted}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mInputCompleted}{mInputCompleted}}
+{\footnotesize\ttfamily \label{classWriterThread_a83ba79609c76ae183b246d3c8cee40e6} 
+bool Writer\+Thread::\+m\+Input\+Completed\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a204861ab743a5446351ca548aca4034a}\index{WriterThread@{WriterThread}!mNextSeq@{mNextSeq}}
+\index{mNextSeq@{mNextSeq}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mNextSeq}{mNextSeq}}
+{\footnotesize\ttfamily \label{classWriterThread_a204861ab743a5446351ca548aca4034a} 
+size\+\_\+t\texorpdfstring{$\ast$}{*} Writer\+Thread::\+m\+Next\+Seq\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_ad3c724af9d80f9a42041246dc77e8cf6}\index{WriterThread@{WriterThread}!mOffsetRing@{mOffsetRing}}
+\index{mOffsetRing@{mOffsetRing}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mOffsetRing}{mOffsetRing}}
+{\footnotesize\ttfamily \label{classWriterThread_ad3c724af9d80f9a42041246dc77e8cf6} 
+\doxymbox{\hyperlink{structOffsetSlot}{Offset\+Slot}}\texorpdfstring{$\ast$}{*} Writer\+Thread::\+m\+Offset\+Ring\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a3563f37bc0d85dc10d7b3d509cfa5e11}\index{WriterThread@{WriterThread}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classWriterThread_a3563f37bc0d85dc10d7b3d509cfa5e11} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Writer\+Thread::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_a1fd695053db832d8894bb07eb855327f}\index{WriterThread@{WriterThread}!mPwriteMode@{mPwriteMode}}
+\index{mPwriteMode@{mPwriteMode}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mPwriteMode}{mPwriteMode}}
+{\footnotesize\ttfamily \label{classWriterThread_a1fd695053db832d8894bb07eb855327f} 
+bool Writer\+Thread::\+m\+Pwrite\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_ae0c4e96dbcdaebb33d05310fc47bdecb}\index{WriterThread@{WriterThread}!mWorkingBufferList@{mWorkingBufferList}}
+\index{mWorkingBufferList@{mWorkingBufferList}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mWorkingBufferList}{mWorkingBufferList}}
+{\footnotesize\ttfamily \label{classWriterThread_ae0c4e96dbcdaebb33d05310fc47bdecb} 
+int Writer\+Thread::\+m\+Working\+Buffer\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriterThread_ac2c00f8ea2c638b346080b5ed6053f3c}\index{WriterThread@{WriterThread}!mWriter1@{mWriter1}}
+\index{mWriter1@{mWriter1}!WriterThread@{WriterThread}}
+\doxysubsubsection{\texorpdfstring{mWriter1}{mWriter1}}
+{\footnotesize\ttfamily \label{classWriterThread_ac2c00f8ea2c638b346080b5ed6053f3c} 
+\doxymbox{\hyperlink{classWriter}{Writer}}\texorpdfstring{$\ast$}{*} Writer\+Thread::\+m\+Writer1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{writerthread_8h}{writerthread.\+h}}\item 
+src/\+\doxymbox{\hyperlink{writerthread_8cpp}{writerthread.\+cpp}}\end{DoxyCompactItemize}

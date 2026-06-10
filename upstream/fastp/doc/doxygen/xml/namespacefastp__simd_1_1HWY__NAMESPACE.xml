@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacefastp__simd_1_1HWY__NAMESPACE" kind="namespace" language="C++">
+    <compoundname>fastp_simd::HWY_NAMESPACE</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacefastp__simd_1_1HWY__NAMESPACE_1aef705a7ba2f9f133efb7e17f9c5f82fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class V</type>
+          </param>
+        </templateparamlist>
+        <type>HWY_API hn::VFromD&lt; hn::Repartition&lt; hwy::MakeWide&lt; hn::TFromV&lt; V &gt; &gt;, hn::DFromV&lt; V &gt; &gt; &gt;</type>
+        <definition>HWY_API hn::VFromD&lt; hn::Repartition&lt; hwy::MakeWide&lt; hn::TFromV&lt; V &gt; &gt;, hn::DFromV&lt; V &gt; &gt; &gt; fastp_simd::HWY_NAMESPACE::SumsOf2Fallback</definition>
+        <argsstring>(V v)</argsstring>
+        <name>SumsOf2Fallback</name>
+        <qualifiedname>fastp_simd::HWY_NAMESPACE::SumsOf2Fallback</qualifiedname>
+        <param>
+          <type>V</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.cpp" line="20" column="1" bodyfile="src/simd.cpp" bodystart="20" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1_1HWY__NAMESPACE_1a677225f8f5e1bcde5f130f27b2cc11ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class D</type>
+          </param>
+          <param>
+            <type>class V</type>
+          </param>
+        </templateparamlist>
+        <type>HWY_API hn::TFromD&lt; D &gt;</type>
+        <definition>HWY_API hn::TFromD&lt; D &gt; fastp_simd::HWY_NAMESPACE::ReduceSumFallback</definition>
+        <argsstring>(D d, V v)</argsstring>
+        <name>ReduceSumFallback</name>
+        <qualifiedname>fastp_simd::HWY_NAMESPACE::ReduceSumFallback</qualifiedname>
+        <param>
+          <type>D</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>V</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.cpp" line="45" column="20" bodyfile="src/simd.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1_1HWY__NAMESPACE_1a5c960f1170202588ec765b028f190a1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fastp_simd::HWY_NAMESPACE::CountQualityMetricsImpl</definition>
+        <argsstring>(const char *qualstr, const char *seqstr, int len, char qualThreshold, int &amp;lowQualNum, int &amp;nBaseNum, int &amp;totalQual)</argsstring>
+        <name>CountQualityMetricsImpl</name>
+        <qualifiedname>fastp_simd::HWY_NAMESPACE::CountQualityMetricsImpl</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>qualstr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>seqstr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>qualThreshold</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>lowQualNum</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nBaseNum</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>totalQual</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.cpp" line="54" column="6" bodyfile="src/simd.cpp" bodystart="54" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1_1HWY__NAMESPACE_1ab658718e65b312ca79c04bf710c6cf41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fastp_simd::HWY_NAMESPACE::ReverseComplementImpl</definition>
+        <argsstring>(const char *src, char *dst, int len)</argsstring>
+        <name>ReverseComplementImpl</name>
+        <qualifiedname>fastp_simd::HWY_NAMESPACE::ReverseComplementImpl</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.cpp" line="121" column="6" bodyfile="src/simd.cpp" bodystart="121" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1_1HWY__NAMESPACE_1ab85158aedc52380a94f8d08daf1cbe58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fastp_simd::HWY_NAMESPACE::CountAdjacentDiffsImpl</definition>
+        <argsstring>(const char *data, int len)</argsstring>
+        <name>CountAdjacentDiffsImpl</name>
+        <qualifiedname>fastp_simd::HWY_NAMESPACE::CountAdjacentDiffsImpl</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.cpp" line="162" column="5" bodyfile="src/simd.cpp" bodystart="162" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1_1HWY__NAMESPACE_1ad35ef719bbe6e11bf8f9b061a3650873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fastp_simd::HWY_NAMESPACE::CountMismatchesImpl</definition>
+        <argsstring>(const char *a, const char *b, int len)</argsstring>
+        <name>CountMismatchesImpl</name>
+        <qualifiedname>fastp_simd::HWY_NAMESPACE::CountMismatchesImpl</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.cpp" line="187" column="5" bodyfile="src/simd.cpp" bodystart="187" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefastp__simd_1_1HWY__NAMESPACE_1ab3d1d0c81bc94b9c94e83436a70bb9b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fastp_simd::HWY_NAMESPACE::CountMismatchesBoundedImpl</definition>
+        <argsstring>(const char *a, const char *b, int len, int limit)</argsstring>
+        <name>CountMismatchesBoundedImpl</name>
+        <qualifiedname>fastp_simd::HWY_NAMESPACE::CountMismatchesBoundedImpl</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/simd.cpp" line="209" column="5" bodyfile="src/simd.cpp" bodystart="209" bodyend="233"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/simd.cpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

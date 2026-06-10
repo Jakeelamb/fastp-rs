@@ -1,0 +1,112 @@
+\doxysection{fastqreader.\+h}
+\hypertarget{fastqreader_8h_source}{}\label{fastqreader_8h_source}\index{src/fastqreader.h@{src/fastqreader.h}}
+\doxymbox{\hyperlink{fastqreader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{MIT\ License}}
+\DoxyCodeLine{00003\ \textcolor{comment}{}}
+\DoxyCodeLine{00004\ \textcolor{comment}{Copyright\ (c)\ 2021\ Shifu\ Chen\ <chen@haplox.com>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{}}
+\DoxyCodeLine{00006\ \textcolor{comment}{Permission\ is\ hereby\ granted,\ free\ of\ charge,\ to\ any\ person\ obtaining\ a\ copy}}
+\DoxyCodeLine{00007\ \textcolor{comment}{of\ this\ software\ and\ associated\ documentation\ files\ (the\ "{}Software"{}),\ to\ deal}}
+\DoxyCodeLine{00008\ \textcolor{comment}{in\ the\ Software\ without\ restriction,\ including\ without\ limitation\ the\ rights}}
+\DoxyCodeLine{00009\ \textcolor{comment}{to\ use,\ copy,\ modify,\ merge,\ publish,\ distribute,\ sublicense,\ and/or\ sell}}
+\DoxyCodeLine{00010\ \textcolor{comment}{copies\ of\ the\ Software,\ and\ to\ permit\ persons\ to\ whom\ the\ Software\ is}}
+\DoxyCodeLine{00011\ \textcolor{comment}{furnished\ to\ do\ so,\ subject\ to\ the\ following\ conditions:}}
+\DoxyCodeLine{00012\ \textcolor{comment}{}}
+\DoxyCodeLine{00013\ \textcolor{comment}{The\ above\ copyright\ notice\ and\ this\ permission\ notice\ shall\ be\ included\ in\ all}}
+\DoxyCodeLine{00014\ \textcolor{comment}{copies\ or\ substantial\ portions\ of\ the\ Software.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{}}
+\DoxyCodeLine{00016\ \textcolor{comment}{THE\ SOFTWARE\ IS\ PROVIDED\ "{}AS\ IS"{},\ WITHOUT\ WARRANTY\ OF\ ANY\ KIND,\ EXPRESS\ OR}}
+\DoxyCodeLine{00017\ \textcolor{comment}{IMPLIED,\ INCLUDING\ BUT\ NOT\ LIMITED\ TO\ THE\ WARRANTIES\ OF\ MERCHANTABILITY,}}
+\DoxyCodeLine{00018\ \textcolor{comment}{FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE\ AND\ NONINFRINGEMENT.\ IN\ NO\ EVENT\ SHALL\ THE}}
+\DoxyCodeLine{00019\ \textcolor{comment}{AUTHORS\ OR\ COPYRIGHT\ HOLDERS\ BE\ LIABLE\ FOR\ ANY\ CLAIM,\ DAMAGES\ OR\ OTHER}}
+\DoxyCodeLine{00020\ \textcolor{comment}{LIABILITY,\ WHETHER\ IN\ AN\ ACTION\ OF\ CONTRACT,\ TORT\ OR\ OTHERWISE,\ ARISING\ FROM,}}
+\DoxyCodeLine{00021\ \textcolor{comment}{OUT\ OF\ OR\ IN\ CONNECTION\ WITH\ THE\ SOFTWARE\ OR\ THE\ USE\ OR\ OTHER\ DEALINGS\ IN\ THE}}
+\DoxyCodeLine{00022\ \textcolor{comment}{SOFTWARE.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#ifndef\ FASTQ\_READER\_H}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ FASTQ\_READER\_H}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{read_8h}{read.h}}"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{common_8h}{common.h}}"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ <isa-\/l/igzip\_lib.h>}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{readpool_8h}{readpool.h}}"{}}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classBgzfMtReader}{BgzfMtReader}};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classFastqReader_ad66dd751b21fb620edf740ebe7630030}{FastqReader}}\{}
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{classFastqReader_ad66dd751b21fb620edf740ebe7630030}{FastqReader}}(\textcolor{keywordtype}{string}\ filename,\ \textcolor{keywordtype}{bool}\ hasQuality\ =\ \textcolor{keyword}{true},\ \textcolor{keywordtype}{bool}\ phred64=\textcolor{keyword}{false},\ \textcolor{keywordtype}{int}\ bgzfThreadBudget=0);}
+\DoxyCodeLine{00042\ \ \ \ \ \doxymbox{\hyperlink{classFastqReader_a03b456c40b1d3812a0ba33b4aebca742}{\string~FastqReader}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_acedea5984b2f935a4f8761c52fe22cb4}{isZipped}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReader_a29389d766ea9469b6c4b218ebfaa69ef}{getBytes}}(\textcolor{keywordtype}{size\_t}\&\ bytesRead,\ \textcolor{keywordtype}{size\_t}\&\ bytesTotal);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//this\ function\ is\ not\ thread-\/safe}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//do\ not\ call\ read()\ of\ a\ same\ FastqReader\ object\ from\ different\ threads\ concurrently}}
+\DoxyCodeLine{00049\ \ \ \ \ \doxymbox{\hyperlink{classRead}{Read}}*\ \doxymbox{\hyperlink{classFastqReader_aa1f6ab000136c41ccc2742cf868c63ea}{read}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_a98b833419659676aa7b7879064f02298}{eof}}();}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_a9ec4409d4650914355211ffdfd2743ab}{hasNoLineBreakAtEnd}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReader_ac54ab418871f43fcf1ee6e9df3b379b4}{setReadPool}}(\doxymbox{\hyperlink{classReadPool}{ReadPool}}*\ rp);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_aa12eacb47c5f8c33d5f9ec15c6f388a1}{isZipFastq}}(\textcolor{keywordtype}{string}\ filename);}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_a72f7ab27aa46c790511a678e1e7edb9e}{isFastq}}(\textcolor{keywordtype}{string}\ filename);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_a4cc85ccb0051670299b7d8159c280c44}{test}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReader_aa85324f220cf65b609c1663463eee8c3}{init}}();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReader_ab63f52842ba18259f00042e18436b1f9}{close}}();}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReader_ada9a13204386a15dc886eae857dd4738}{getLine}}(\textcolor{keywordtype}{string}*\ line);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReader_a0d4409aaed2981bab34d8888102c2426}{clearLineBreaks}}(\textcolor{keywordtype}{char}*\ line);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReader_a0c029e28dd3a62e49717fa2d6a05bcae}{readToBuf}}();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReader_a9df0941ba8f95d1578d7874cce7598d4}{readToBufIgzip}}();}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_aeec9c64e4e7bc9af6a60f407d069451b}{bufferFinished}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classFastqReader_af8656352f2c2d144abaf4cb099846e71}{mFilename}};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{struct\ }isal\_gzip\_header\ \doxymbox{\hyperlink{classFastqReader_a4e6ecc9cc21aa161e6716a20813b28b9}{mGzipHeader}};}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{struct\ }inflate\_state\ \doxymbox{\hyperlink{classFastqReader_a491970fddf50538bf7be541c1fb08dd6}{mGzipState}};}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *\doxymbox{\hyperlink{classFastqReader_a24936a036db4f79debdb3ce8b9552254}{mGzipInputBuffer}};}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *\doxymbox{\hyperlink{classFastqReader_a2081bb86b38f4db8bb89ee4acacf80a1}{mGzipOutputBuffer}};}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classFastqReader_ab3f44f41efe72408aec395c6c74a71f6}{mGzipInputBufferSize}};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classFastqReader_a322526ec8d29259b52127f5ece4ed210}{mGzipOutputBufferSize}};}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classFastqReader_a799bfdc81c1a0a6eeee31af6cdeafaa0}{mGzipInputUsedBytes}};}
+\DoxyCodeLine{00077\ \ \ \ \ FILE*\ \doxymbox{\hyperlink{classFastqReader_acd50c082a58bb3baad2404b5e11aae62}{mFile}};}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_ab0d9c71ad69be6c4001edc72ec92adb4}{mZipped}};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classFastqReader_a96330d7f066c5d43c9e82d5949c0b25e}{mFastqBuf}};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classFastqReader_abe7211fec5453dc692eccda129632090}{mBufDataLen}};}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classFastqReader_a1a3c0ed8cb9aded521ab2669323968fa}{mBufUsedLen}};}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_aa327b1c88c0af352611095b33b691934}{mStdinMode}};}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_a13bd156a89835d095ca7a65d4b00c74c}{mHasNoLineBreakAtEnd}};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFastqReader_ad7c5c05c32d381d1d2eb8f85810a53cd}{mCounter}};}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_a2bff55a0d3ba7813bd4351a61460139a}{mHasQuality}};}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReader_afeb44e4b170e17667c2ea85e7e0bbf65}{mPhred64}};}
+\DoxyCodeLine{00087\ \ \ \ \ \doxymbox{\hyperlink{classReadPool}{ReadPool}}*\ \doxymbox{\hyperlink{classFastqReader_ab28f2aafd4425e9281471ae2b009819a}{mReadPool}};}
+\DoxyCodeLine{00088\ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader}{BgzfMtReader}}*\ \doxymbox{\hyperlink{classFastqReader_a107cf2d91b4790f85f3ee20d91331814}{mBgzfReader}};}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classFastqReader_ab6196eb35e7ed144d91504ca86828f5c}{mBgzfThreadBudget}};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classFastqReaderPair_a1979f5188328cd5ad9a10657b035250e}{FastqReaderPair}}\{}
+\DoxyCodeLine{00094\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \ \ \doxymbox{\hyperlink{classFastqReaderPair_a1979f5188328cd5ad9a10657b035250e}{FastqReaderPair}}(\doxymbox{\hyperlink{classFastqReader}{FastqReader}}*\ left,\ \doxymbox{\hyperlink{classFastqReader}{FastqReader}}*\ right);}
+\DoxyCodeLine{00096\ \ \ \ \ \doxymbox{\hyperlink{classFastqReaderPair_a1979f5188328cd5ad9a10657b035250e}{FastqReaderPair}}(\textcolor{keywordtype}{string}\ leftName,\ \textcolor{keywordtype}{string}\ rightName,\ \textcolor{keywordtype}{bool}\ hasQuality\ =\ \textcolor{keyword}{true},\ \textcolor{keywordtype}{bool}\ phred64\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ interleaved\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00097\ \ \ \ \ \doxymbox{\hyperlink{classFastqReaderPair_affd4446f74998946e047140946e5507c}{\string~FastqReaderPair}}();}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFastqReaderPair_a6378c22973dc9cf84d7d18e1120fea09}{read}}(\doxymbox{\hyperlink{classReadPair}{ReadPair}}*\ pair);}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReaderPair_a83a5006987e4a390c7f7d5096e9484c0}{eof}}();}
+\DoxyCodeLine{00100\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00101\ \ \ \ \ \doxymbox{\hyperlink{classFastqReader}{FastqReader}}*\ \doxymbox{\hyperlink{classFastqReaderPair_a243985cbdb1e0b4775fb8798aa8cce08}{mLeft}};}
+\DoxyCodeLine{00102\ \ \ \ \ \doxymbox{\hyperlink{classFastqReader}{FastqReader}}*\ \doxymbox{\hyperlink{classFastqReaderPair_a1defe7cff06f4e06c1fa6cd08601368f}{mRight}};}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFastqReaderPair_aa3b08c940f52691707d7869c3f63c0b5}{mInterleaved}};}
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

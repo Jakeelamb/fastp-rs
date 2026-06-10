@@ -1,0 +1,184 @@
+\doxysection{singleproducersingleconsumerlist.\+h}
+\hypertarget{singleproducersingleconsumerlist_8h_source}{}\label{singleproducersingleconsumerlist_8h_source}\index{src/singleproducersingleconsumerlist.h@{src/singleproducersingleconsumerlist.h}}
+\doxymbox{\hyperlink{singleproducersingleconsumerlist_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{MIT\ License}}
+\DoxyCodeLine{00003\ \textcolor{comment}{}}
+\DoxyCodeLine{00004\ \textcolor{comment}{Copyright\ (c)\ 2021\ Shifu\ Chen\ <chen@haplox.com>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{}}
+\DoxyCodeLine{00006\ \textcolor{comment}{Permission\ is\ hereby\ granted,\ free\ of\ charge,\ to\ any\ person\ obtaining\ a\ copy}}
+\DoxyCodeLine{00007\ \textcolor{comment}{of\ this\ software\ and\ associated\ documentation\ files\ (the\ "{}Software"{}),\ to\ deal}}
+\DoxyCodeLine{00008\ \textcolor{comment}{in\ the\ Software\ without\ restriction,\ including\ without\ limitation\ the\ rights}}
+\DoxyCodeLine{00009\ \textcolor{comment}{to\ use,\ copy,\ modify,\ merge,\ publish,\ distribute,\ sublicense,\ and/or\ sell}}
+\DoxyCodeLine{00010\ \textcolor{comment}{copies\ of\ the\ Software,\ and\ to\ permit\ persons\ to\ whom\ the\ Software\ is}}
+\DoxyCodeLine{00011\ \textcolor{comment}{furnished\ to\ do\ so,\ subject\ to\ the\ following\ conditions:}}
+\DoxyCodeLine{00012\ \textcolor{comment}{}}
+\DoxyCodeLine{00013\ \textcolor{comment}{The\ above\ copyright\ notice\ and\ this\ permission\ notice\ shall\ be\ included\ in\ all}}
+\DoxyCodeLine{00014\ \textcolor{comment}{copies\ or\ substantial\ portions\ of\ the\ Software.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{}}
+\DoxyCodeLine{00016\ \textcolor{comment}{THE\ SOFTWARE\ IS\ PROVIDED\ "{}AS\ IS"{},\ WITHOUT\ WARRANTY\ OF\ ANY\ KIND,\ EXPRESS\ OR}}
+\DoxyCodeLine{00017\ \textcolor{comment}{IMPLIED,\ INCLUDING\ BUT\ NOT\ LIMITED\ TO\ THE\ WARRANTIES\ OF\ MERCHANTABILITY,}}
+\DoxyCodeLine{00018\ \textcolor{comment}{FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE\ AND\ NONINFRINGEMENT.\ IN\ NO\ EVENT\ SHALL\ THE}}
+\DoxyCodeLine{00019\ \textcolor{comment}{AUTHORS\ OR\ COPYRIGHT\ HOLDERS\ BE\ LIABLE\ FOR\ ANY\ CLAIM,\ DAMAGES\ OR\ OTHER}}
+\DoxyCodeLine{00020\ \textcolor{comment}{LIABILITY,\ WHETHER\ IN\ AN\ ACTION\ OF\ CONTRACT,\ TORT\ OR\ OTHERWISE,\ ARISING\ FROM,}}
+\DoxyCodeLine{00021\ \textcolor{comment}{OUT\ OF\ OR\ IN\ CONNECTION\ WITH\ THE\ SOFTWARE\ OR\ THE\ USE\ OR\ OTHER\ DEALINGS\ IN\ THE}}
+\DoxyCodeLine{00022\ \textcolor{comment}{SOFTWARE.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ A\ ultra-\/fast\ lock-\/free\ linked\ list\ for\ single-\/producer,\ single-\/consumer\ threading}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Memory\ usage\ overhead:\ 3M\ bytes\ per\ list,\ if\ you\ want\ to\ save\ memory,\ please\ use\ smaller\ block\ and\ smaller\ ring\ buffer}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ The\ type\ T\ is\ usually\ a\ pointer,\ a\ internal\ type\ (such\ as\ int,\ long),\ or\ a\ class\ supports\ assignment\ T\ a\ =\ b;}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{/*\ WARNING:\ only\ supports\ up\ to\ 1G\ unconsumed\ elements\ in\ list,\ }}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ which\ means:\ produced\ -\/\ consumed\ must\ <\ 1G,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ this\ is\ usually\ much\ more\ than\ enough,}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ but\ if\ you\ want\ to\ support\ even\ more\ unconsumed\ elements,\ }}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ please\ modify\ the\ value\ of\ blocksRingBufferSize\ as\ you\ want.}}
+\DoxyCodeLine{00034\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#ifndef\ SINGLE\_PRODUCER\_SINGLE\_CONSUMER\_LIST\_H}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ SINGLE\_PRODUCER\_SINGLE\_CONSUMER\_LIST\_H}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ <atomic>}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#include\ <memory.h>}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#include\ <cassert>}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00046\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structLockFreeListItem_a2fb4565cc71cdc83c9876dd5efb0fd96}{LockFreeListItem}}\ \{}
+\DoxyCodeLine{00047\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structLockFreeListItem_a2fb4565cc71cdc83c9876dd5efb0fd96}{LockFreeListItem}}(T\ val)\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem_a7d7f4bc4a6537dcb579aebb4c6891db3}{value}}\ =\ val;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem_ad267fb237e6c2fb59d8d66782e4d2272}{nextItemReady}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem_ac501170d4b280882114bd15c395d9235}{nextItem}}\ =\ NULL;}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structLockFreeListItem_a90d054f397b745ce1da35cd8c1db31c6}{LockFreeListItem}}()\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem_ac501170d4b280882114bd15c395d9235}{nextItem}}\ =\ NULL;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem_ad267fb237e6c2fb59d8d66782e4d2272}{nextItemReady}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00056\ \ \ \ \ \}}
+\DoxyCodeLine{00057\ \ \ \ \ T\ \doxymbox{\hyperlink{structLockFreeListItem_a7d7f4bc4a6537dcb579aebb4c6891db3}{value}};}
+\DoxyCodeLine{00058\ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem_a2fb4565cc71cdc83c9876dd5efb0fd96}{LockFreeListItem<T>}}*\ \doxymbox{\hyperlink{structLockFreeListItem_ac501170d4b280882114bd15c395d9235}{nextItem}};}
+\DoxyCodeLine{00059\ \ \ \ \ std::atomic\_bool\ \doxymbox{\hyperlink{structLockFreeListItem_ad267fb237e6c2fb59d8d66782e4d2272}{nextItemReady}};}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00063\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a3701e2e62894834a7ec95dea492f68d7}{SingleProducerSingleConsumerList}}\ \{}
+\DoxyCodeLine{00064\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a3701e2e62894834a7ec95dea492f68d7}{SingleProducerSingleConsumerList}}()\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}\ =\ NULL;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}{tail}}\ =\ NULL;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7c8ac0a454151e09c283645805d9842f}{producerFinished}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a62837f1a73066b0132855b2ac2a2149d}{consumerFinished}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04}{produced}}\ =\ 0;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225}{consumed}}\ =\ 0;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}\ =\ 0;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a1fbb4cbdcc40e26b41ad5aad8566eb44}{blocksRingBufferSize}}\ =\ 0x1L\ <<\ 18;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocksRingBufferSizeMask}}\ =\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a1fbb4cbdcc40e26b41ad5aad8566eb44}{blocksRingBufferSize}}\ -\/\ 1;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af}{blocksNum}}\ =\ 0;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 2M\ memory}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}*[\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a1fbb4cbdcc40e26b41ad5aad8566eb44}{blocksRingBufferSize}}];}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ memset(\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}},\ 0,\ \textcolor{keyword}{sizeof}(\doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}*)\ *\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a1fbb4cbdcc40e26b41ad5aad8566eb44}{blocksRingBufferSize}});}
+\DoxyCodeLine{00079\ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a2cf48c29f5f285f0ed2529a045d501a9}{\string~SingleProducerSingleConsumerList}}()\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}\ <\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af}{blocksNum}})\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}[\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}\ \&\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocksRingBufferSizeMask}}];}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}[\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}\ \&\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocksRingBufferSizeMask}}]\ =\ NULL;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}++;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}};}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}\ =\ NULL;}
+\DoxyCodeLine{00088\ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4796538560a708ef982c435ad33534f1}{size}}()\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04}{produced}}\ -\/\ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225}{consumed}};}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_aff6b4bfbb70cfa0cfbcc6308ca066177}{isEmpty}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}\ ==\ NULL;}
+\DoxyCodeLine{00094\ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a8b9db1c38f8b683e4f4e693e0c15c6a4}{canBeConsumed}}()\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}\ ==\ NULL)}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \`{}nextItemReady`\ is\ a\ publication\ barrier\ for\ \`{}nextItem`.}}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ The\ last\ node\ has\ no\ successor,\ so\ \`{}nextItemReady`\ may\ remain\ false;}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ it\ must\ still\ be\ consumable\ to\ avoid\ writer\ stalls\ when\ many\ queues\ exist.}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}-\/>nextItemReady.load(std::memory\_order\_acquire)\ ||\ (\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}\ ==\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}{tail}})\ ||\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7c8ac0a454151e09c283645805d9842f}{producerFinished}}.load(std::memory\_order\_acquire);}
+\DoxyCodeLine{00102\ \ \ \ \ \}}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a9bb0bcf74d3d05605e431b35aaf12b2d}{produce}}(T\ val)\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}*\ item\ =\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a61544df8ed82b3f134247bba184d1487}{makeItem}}(val);}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}==NULL)\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}\ =\ item;}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}{tail}}\ =\ item;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Signal\ the\ first\ item\ is\ consumable\ (no\ predecessor\ to\ set\ this)}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}-\/>nextItemReady.store(\textcolor{keyword}{true},\ std::memory\_order\_release);}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}{tail}}-\/>nextItem\ =\ item;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}{tail}}-\/>nextItemReady.store(\textcolor{keyword}{true},\ std::memory\_order\_release);}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}{tail}}\ =\ item;}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04}{produced}}++;}
+\DoxyCodeLine{00116\ \ \ \ \ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{inline}\ T\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a449d9b205ae321d78481ae327f39a9d1}{consume}}()\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ assert(\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}\ !=\ NULL);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ T\ val\ =\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}-\/>value;}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}\ =\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}-\/>nextItem;}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225}{consumed}}++;}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}((\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225}{consumed}}\ \&\ 0xFFF)\ ==\ 0)}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a873a1c4093b39dcdd86be519ee7f601b}{recycle}}();}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ val;}
+\DoxyCodeLine{00125\ \ \ \ \ \}}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_acc12cb331640608fa9b4a862929e6da5}{isProducerFinished}}()\ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7c8ac0a454151e09c283645805d9842f}{producerFinished}}.load(std::memory\_order\_acquire);}
+\DoxyCodeLine{00128\ \ \ \ \ \}}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ad05fcc09a2df58465a82087175546926}{isConsumerFinished}}()\ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a62837f1a73066b0132855b2ac2a2149d}{consumerFinished}}.load(std::memory\_order\_acquire);}
+\DoxyCodeLine{00131\ \ \ \ \ \}}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af14e48ee772cbf3b913cd0bf3d43db80}{setProducerFinished}}()\ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7c8ac0a454151e09c283645805d9842f}{producerFinished}}.store(\textcolor{keyword}{true},\ std::memory\_order\_release);}
+\DoxyCodeLine{00134\ \ \ \ \ \}}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae2e877fc589fe814c0ae2e5dd3f1ca7c}{setConsumerFinished}}()\ \{}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a62837f1a73066b0132855b2ac2a2149d}{consumerFinished}}.store(\textcolor{keyword}{true},\ std::memory\_order\_release);}
+\DoxyCodeLine{00137\ \ \ \ \ \}}
+\DoxyCodeLine{00138\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{comment}{//\ blockized\ list}}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}*\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a61544df8ed82b3f134247bba184d1487}{makeItem}}(T\ val)\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ blk\ =\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04}{produced}}\ >>\ 12;}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ idx\ =\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04}{produced}}\ \&\ 0xFFF;}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4796538560a708ef982c435ad33534f1}{size}}\ =\ 0x01<<12;}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af}{blocksNum}}\ <=\ blk)\ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}*\ buffer\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}[\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4796538560a708ef982c435ad33534f1}{size}}];}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ memset(buffer,\ 0,\ \textcolor{keyword}{sizeof}(\doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}})\ *\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4796538560a708ef982c435ad33534f1}{size}});}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}[\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af}{blocksNum}}\ \&\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocksRingBufferSizeMask}}]\ =\ buffer;}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af}{blocksNum}}++;}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}*\ item\ =\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}[blk\ \&\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocksRingBufferSizeMask}}]+idx;}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ item-\/>\doxymbox{\hyperlink{structLockFreeListItem_a7d7f4bc4a6537dcb579aebb4c6891db3}{value}}\ =\ val;}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ item;}
+\DoxyCodeLine{00153\ \ \ \ \ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a873a1c4093b39dcdd86be519ee7f601b}{recycle}}()\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ blk\ =\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225}{consumed}}\ >>\ 12;}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}((\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}+1)\ <\ blk)\ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}[\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}\ \&\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocksRingBufferSizeMask}}];}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}[\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}\ \&\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocksRingBufferSizeMask}}]\ =\ NULL;}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}++;}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00165\ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}*\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}};}
+\DoxyCodeLine{00166\ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}*\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}{tail}};}
+\DoxyCodeLine{00167\ \ \ \ \ \doxymbox{\hyperlink{structLockFreeListItem}{LockFreeListItem<T>}}**\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}};}
+\DoxyCodeLine{00168\ \ \ \ \ std::atomic\_bool\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7c8ac0a454151e09c283645805d9842f}{producerFinished}};}
+\DoxyCodeLine{00169\ \ \ \ \ std::atomic\_bool\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a62837f1a73066b0132855b2ac2a2149d}{consumerFinished}};}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04}{produced}};}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225}{consumed}};}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}};}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a1fbb4cbdcc40e26b41ad5aad8566eb44}{blocksRingBufferSize}};}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocksRingBufferSizeMask}};}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af}{blocksNum}};}
+\DoxyCodeLine{00176\ \};}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

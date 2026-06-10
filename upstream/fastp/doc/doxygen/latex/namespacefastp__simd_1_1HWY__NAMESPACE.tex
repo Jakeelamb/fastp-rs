@@ -1,0 +1,68 @@
+\doxysection{fastp\+\_\+simd::\+HWY\+\_\+\+NAMESPACE Namespace Reference}
+\hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE}{}\label{namespacefastp__simd_1_1HWY__NAMESPACE}\index{fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class V$>$ }\\HWY\+\_\+\+API hn::\+\+VFromD$<$ hn::\+\+Repartition$<$ hwy::\+\+Make\+Wide$<$ hn::\+\+TFromV$<$ V $>$ $>$, hn::\+\+DFromV$<$ V $>$ $>$ $>$ \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_aef705a7ba2f9f133efb7e17f9c5f82fa}{Sums\+Of2\+Fallback}} (V v)
+\item 
+{\footnotesize template$<$class D, class V$>$ }\\HWY\+\_\+\+API hn::\+\+TFromD$<$ D $>$ \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_a677225f8f5e1bcde5f130f27b2cc11ec}{Reduce\+Sum\+Fallback}} (D d, V v)
+\item 
+void \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_a5c960f1170202588ec765b028f190a1c}{Count\+Quality\+Metrics\+Impl}} (const char \texorpdfstring{$\ast$}{*}qualstr, const char \texorpdfstring{$\ast$}{*}seqstr, int len, char qual\+Threshold, int \&low\+Qual\+Num, int \&n\+Base\+Num, int \&total\+Qual)
+\item 
+void \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_ab658718e65b312ca79c04bf710c6cf41}{Reverse\+Complement\+Impl}} (const char \texorpdfstring{$\ast$}{*}src, char \texorpdfstring{$\ast$}{*}dst, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_ab85158aedc52380a94f8d08daf1cbe58}{Count\+Adjacent\+Diffs\+Impl}} (const char \texorpdfstring{$\ast$}{*}data, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_ad35ef719bbe6e11bf8f9b061a3650873}{Count\+Mismatches\+Impl}} (const char \texorpdfstring{$\ast$}{*}a, const char \texorpdfstring{$\ast$}{*}b, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_ab3d1d0c81bc94b9c94e83436a70bb9b2}{Count\+Mismatches\+Bounded\+Impl}} (const char \texorpdfstring{$\ast$}{*}a, const char \texorpdfstring{$\ast$}{*}b, int len, int limit)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE_ab85158aedc52380a94f8d08daf1cbe58}\index{fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}!CountAdjacentDiffsImpl@{CountAdjacentDiffsImpl}}
+\index{CountAdjacentDiffsImpl@{CountAdjacentDiffsImpl}!fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}}
+\doxysubsubsection{\texorpdfstring{CountAdjacentDiffsImpl()}{CountAdjacentDiffsImpl()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_1_1HWY__NAMESPACE_ab85158aedc52380a94f8d08daf1cbe58} 
+int fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Count\+Adjacent\+Diffs\+Impl (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE_ab3d1d0c81bc94b9c94e83436a70bb9b2}\index{fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}!CountMismatchesBoundedImpl@{CountMismatchesBoundedImpl}}
+\index{CountMismatchesBoundedImpl@{CountMismatchesBoundedImpl}!fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}}
+\doxysubsubsection{\texorpdfstring{CountMismatchesBoundedImpl()}{CountMismatchesBoundedImpl()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_1_1HWY__NAMESPACE_ab3d1d0c81bc94b9c94e83436a70bb9b2} 
+int fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Count\+Mismatches\+Bounded\+Impl (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{int}]{len}{, }\item[{int}]{limit}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE_ad35ef719bbe6e11bf8f9b061a3650873}\index{fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}!CountMismatchesImpl@{CountMismatchesImpl}}
+\index{CountMismatchesImpl@{CountMismatchesImpl}!fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}}
+\doxysubsubsection{\texorpdfstring{CountMismatchesImpl()}{CountMismatchesImpl()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_1_1HWY__NAMESPACE_ad35ef719bbe6e11bf8f9b061a3650873} 
+int fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Count\+Mismatches\+Impl (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE_a5c960f1170202588ec765b028f190a1c}\index{fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}!CountQualityMetricsImpl@{CountQualityMetricsImpl}}
+\index{CountQualityMetricsImpl@{CountQualityMetricsImpl}!fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}}
+\doxysubsubsection{\texorpdfstring{CountQualityMetricsImpl()}{CountQualityMetricsImpl()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_1_1HWY__NAMESPACE_a5c960f1170202588ec765b028f190a1c} 
+void fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Count\+Quality\+Metrics\+Impl (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{qualstr}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{seqstr}{, }\item[{int}]{len}{, }\item[{char}]{qual\+Threshold}{, }\item[{int \&}]{low\+Qual\+Num}{, }\item[{int \&}]{n\+Base\+Num}{, }\item[{int \&}]{total\+Qual}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE_a677225f8f5e1bcde5f130f27b2cc11ec}\index{fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}!ReduceSumFallback@{ReduceSumFallback}}
+\index{ReduceSumFallback@{ReduceSumFallback}!fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}}
+\doxysubsubsection{\texorpdfstring{ReduceSumFallback()}{ReduceSumFallback()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_1_1HWY__NAMESPACE_a677225f8f5e1bcde5f130f27b2cc11ec} 
+template$<$class D, class V$>$ \\
+HWY\+\_\+\+API hn::\+\+TFromD$<$ D $>$ fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Reduce\+Sum\+Fallback (\begin{DoxyParamCaption}\item[{D}]{d}{, }\item[{V}]{v}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE_ab658718e65b312ca79c04bf710c6cf41}\index{fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}!ReverseComplementImpl@{ReverseComplementImpl}}
+\index{ReverseComplementImpl@{ReverseComplementImpl}!fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}}
+\doxysubsubsection{\texorpdfstring{ReverseComplementImpl()}{ReverseComplementImpl()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_1_1HWY__NAMESPACE_ab658718e65b312ca79c04bf710c6cf41} 
+void fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Reverse\+Complement\+Impl (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{dst}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacefastp__simd_1_1HWY__NAMESPACE_aef705a7ba2f9f133efb7e17f9c5f82fa}\index{fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}!SumsOf2Fallback@{SumsOf2Fallback}}
+\index{SumsOf2Fallback@{SumsOf2Fallback}!fastp\_simd::HWY\_NAMESPACE@{fastp\_simd::HWY\_NAMESPACE}}
+\doxysubsubsection{\texorpdfstring{SumsOf2Fallback()}{SumsOf2Fallback()}}
+{\footnotesize\ttfamily \label{namespacefastp__simd_1_1HWY__NAMESPACE_aef705a7ba2f9f133efb7e17f9c5f82fa} 
+template$<$class V$>$ \\
+HWY\+\_\+\+API hn::\+\+VFromD$<$ hn::\+\+Repartition$<$ hwy::\+\+Make\+Wide$<$ hn::\+\+TFromV$<$ V $>$ $>$, hn::\+\+DFromV$<$ V $>$ $>$ $>$ fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Sums\+Of2\+Fallback (\begin{DoxyParamCaption}\item[{V}]{v}{}\end{DoxyParamCaption})}
+

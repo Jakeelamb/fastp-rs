@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="sequence_8h" kind="file" language="C++">
+    <compoundname>sequence.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="read_8h" local="yes">src/read.h</includedby>
+    <includedby refid="sequence_8cpp" local="yes">src/sequence.cpp</includedby>
+    <includedby refid="unittest_8cpp" local="yes">src/unittest.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="20">
+        <label>src/adaptertrimmer.cpp</label>
+        <link refid="adaptertrimmer_8cpp"/>
+      </node>
+      <node id="19">
+        <label>src/adaptertrimmer.h</label>
+        <link refid="adaptertrimmer_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/basecorrector.cpp</label>
+        <link refid="basecorrector_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/basecorrector.h</label>
+        <link refid="basecorrector_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/duplicate.cpp</label>
+        <link refid="duplicate_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/duplicate.h</label>
+        <link refid="duplicate_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/evaluator.cpp</label>
+        <link refid="evaluator_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/evaluator.h</label>
+        <link refid="evaluator_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/fastqreader.cpp</label>
+        <link refid="fastqreader_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/fastqreader.h</label>
+        <link refid="fastqreader_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/filter.h</label>
+        <link refid="filter_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/filterresult.cpp</label>
+        <link refid="filterresult_8cpp"/>
+      </node>
+      <node id="32">
+        <label>src/htmlreporter.cpp</label>
+        <link refid="htmlreporter_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/htmlreporter.h</label>
+        <link refid="htmlreporter_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/jsonreporter.cpp</label>
+        <link refid="jsonreporter_8cpp"/>
+      </node>
+      <node id="33">
+        <label>src/jsonreporter.h</label>
+        <link refid="jsonreporter_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/overlapanalysis.cpp</label>
+        <link refid="overlapanalysis_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/overlapanalysis.h</label>
+        <link refid="overlapanalysis_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/peprocessor.h</label>
+        <link refid="peprocessor_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/polyx.cpp</label>
+        <link refid="polyx_8cpp"/>
+      </node>
+      <node id="24">
+        <label>src/polyx.h</label>
+        <link refid="polyx_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/processor.cpp</label>
+        <link refid="processor_8cpp"/>
+      </node>
+      <node id="26">
+        <label>src/read.cpp</label>
+        <link refid="read_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/readpool.cpp</label>
+        <link refid="readpool_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/readpool.h</label>
+        <link refid="readpool_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/seprocessor.h</label>
+        <link refid="seprocessor_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>src/sequence.cpp</label>
+        <link refid="sequence_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/stats.cpp</label>
+        <link refid="stats_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/stats.h</label>
+        <link refid="stats_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/threadconfig.cpp</label>
+        <link refid="threadconfig_8cpp"/>
+      </node>
+      <node id="36">
+        <label>src/threadconfig.h</label>
+        <link refid="threadconfig_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>src/umiprocessor.cpp</label>
+        <link refid="umiprocessor_8cpp"/>
+      </node>
+      <node id="38">
+        <label>src/umiprocessor.h</label>
+        <link refid="umiprocessor_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/unittest.cpp</label>
+        <link refid="unittest_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSequence" prot="public">Sequence</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SEQUENCE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEQUENCE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classSequence" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSequence_1a532b7e8df6ff6b2f990c14ae97859ca2" kindref="member">Sequence</ref>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequence_1a532b7e8df6ff6b2f990c14ae97859ca2" kindref="member">Sequence</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequence_1a532b7e8df6ff6b2f990c14ae97859ca2" kindref="member">Sequence</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/><sp/>seq);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequence_1aee09a7d70c3ab523fed85da94ea1366f" kindref="member">~Sequence</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSequence_1ae2eb4b3b44c4228c70372ba5cda3caa9" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSequence_1af60c28c88a665246648c52e69d6bbe8a" kindref="member">length</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequence_1a532b7e8df6ff6b2f990c14ae97859ca2" kindref="member">Sequence</ref><sp/><ref refid="classSequence_1a34ec54c222835581371e4b62e3f673f3" kindref="member">reverseComplement</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequence_1a532b7e8df6ff6b2f990c14ae97859ca2" kindref="member">Sequence</ref><sp/><ref refid="classSequence_1a213790aea5fca0490b5108c2b99234a6" kindref="member">operator~</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSequence_1a96a8d5cebf940fca7c5193ab80273c82" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classSequence_1a34ec54c222835581371e4b62e3f673f3" kindref="member">reverseComplement</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>origin);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classSequence_1a1c568ccf91d1675946f7f907399f78d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/><sp/><ref refid="classSequence_1a1c568ccf91d1675946f7f907399f78d4" kindref="member">mStr</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/sequence.h"/>
+  </compounddef>
+</doxygen>

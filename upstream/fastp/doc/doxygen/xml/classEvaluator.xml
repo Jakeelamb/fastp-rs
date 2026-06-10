@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classEvaluator" kind="class" language="C++" prot="public">
+    <compoundname>Evaluator</compoundname>
+    <includes refid="evaluator_8h" local="no">evaluator.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEvaluator_1a8325f81d7b58adc3fc97c34c401c1c97" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* Evaluator::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>Evaluator::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="29" column="13" bodyfile="src/evaluator.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEvaluator_1a99f02b81667c1bc9c754e2de5c33498f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Evaluator::Evaluator</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>Evaluator</name>
+        <qualifiedname>Evaluator::Evaluator</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="15" column="5" bodyfile="src/evaluator.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1ac10971f54d227b1ef9aa5b28872b0272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Evaluator::~Evaluator</definition>
+        <argsstring>()</argsstring>
+        <name>~Evaluator</name>
+        <qualifiedname>Evaluator::~Evaluator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="16" column="5" bodyfile="src/evaluator.cpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1ab31c3e615d38f6bfdaa8bed37d297350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Evaluator::evaluateReadNum</definition>
+        <argsstring>(long &amp;readNum)</argsstring>
+        <name>evaluateReadNum</name>
+        <qualifiedname>Evaluator::evaluateReadNum</qualifiedname>
+        <param>
+          <type>long &amp;</type>
+          <declname>readNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="18" column="10" bodyfile="src/evaluator.cpp" bodystart="178" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1a930db2bafc648189a32a421c0776ee7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Evaluator::evalAdapterAndReadNum</definition>
+        <argsstring>(long &amp;readNum, bool isR2)</argsstring>
+        <name>evalAdapterAndReadNum</name>
+        <qualifiedname>Evaluator::evalAdapterAndReadNum</qualifiedname>
+        <param>
+          <type>long &amp;</type>
+          <declname>readNum</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isR2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="19" column="12" bodyfile="src/evaluator.cpp" bodystart="308" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1a071b1726a2e9b58f3de3ea94b025fe1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Evaluator::isTwoColorSystem</definition>
+        <argsstring>()</argsstring>
+        <name>isTwoColorSystem</name>
+        <qualifiedname>Evaluator::isTwoColorSystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="20" column="10" bodyfile="src/evaluator.cpp" bodystart="16" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1a0d181f664f38cd47ab49c96b465b9dcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Evaluator::evaluateSeqLen</definition>
+        <argsstring>()</argsstring>
+        <name>evaluateSeqLen</name>
+        <qualifiedname>Evaluator::evaluateSeqLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="21" column="10" bodyfile="src/evaluator.cpp" bodystart="47" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1a5aa5201ed700024521d84d460ca13495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Evaluator::evaluateOverRepSeqs</definition>
+        <argsstring>()</argsstring>
+        <name>evaluateOverRepSeqs</name>
+        <qualifiedname>Evaluator::evaluateOverRepSeqs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="22" column="10" bodyfile="src/evaluator.cpp" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1adb79e02e37741970f53e59b59fdf8e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Evaluator::computeOverRepSeq</definition>
+        <argsstring>(string filename, map&lt; string, long &gt; &amp;hotseqs, int seqLen)</argsstring>
+        <name>computeOverRepSeq</name>
+        <qualifiedname>Evaluator::computeOverRepSeq</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>map&lt; string, long &gt; &amp;</type>
+          <declname>hotseqs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seqLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="23" column="10" bodyfile="src/evaluator.cpp" bodystart="78" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1ab0bf2a3ed26f3001dcfcc4d4be7daa53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Evaluator::computeSeqLen</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>computeSeqLen</name>
+        <qualifiedname>Evaluator::computeSeqLen</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="24" column="9" bodyfile="src/evaluator.cpp" bodystart="54" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classEvaluator_1ac5558831b3087e03d2265c7f01d4aaf0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Evaluator::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>Evaluator::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="26" column="17" bodyfile="src/evaluator.cpp" bodystart="628" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1af05f70776b0de52c1a39c8cf034c31ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Evaluator::matchKnownAdapter</definition>
+        <argsstring>(string seq)</argsstring>
+        <name>matchKnownAdapter</name>
+        <qualifiedname>Evaluator::matchKnownAdapter</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>seq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="27" column="19" bodyfile="src/evaluator.cpp" bodystart="541" bodyend="559"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classEvaluator_1abc0d42dc20ea6a9f553b5f59357809a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Evaluator::int2seq</definition>
+        <argsstring>(unsigned int val, int seqlen)</argsstring>
+        <name>int2seq</name>
+        <qualifiedname>Evaluator::int2seq</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seqlen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="30" column="12" bodyfile="src/evaluator.cpp" bodystart="561" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1af389732998af66a9014b18a3894f31f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Evaluator::seq2int</definition>
+        <argsstring>(string *seq, int pos, int seqlen, int lastVal=-1)</argsstring>
+        <name>seq2int</name>
+        <qualifiedname>Evaluator::seq2int</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seqlen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lastVal</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="31" column="9" bodyfile="src/evaluator.cpp" bodystart="573" bodyend="575"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1aa66149538f57e3ca8926fda28dc477d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Evaluator::seq2int</definition>
+        <argsstring>(string &amp;seq, int pos, int seqlen, int lastVal=-1)</argsstring>
+        <name>seq2int</name>
+        <qualifiedname>Evaluator::seq2int</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>seqlen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lastVal</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="32" column="9" bodyfile="src/evaluator.cpp" bodystart="577" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1ab1932014e966d527f45ef5d86bd8aac4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Evaluator::getAdapterWithSeed</definition>
+        <argsstring>(int seed, Read **loadedReads, long records, int keylen)</argsstring>
+        <name>getAdapterWithSeed</name>
+        <qualifiedname>Evaluator::getAdapterWithSeed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> **</type>
+          <declname>loadedReads</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>records</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>keylen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="33" column="12" bodyfile="src/evaluator.cpp" bodystart="485" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaluator_1a7bc3f95447e2db86882fec6272e10409" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Evaluator::checkKnownAdapters</definition>
+        <argsstring>(Read **reads, long num)</argsstring>
+        <name>checkKnownAdapters</name>
+        <qualifiedname>Evaluator::checkKnownAdapters</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> **</type>
+          <declname>reads</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/evaluator.h" line="34" column="12" bodyfile="src/evaluator.cpp" bodystart="220" bodyend="306"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="1">
+        <label>Evaluator</label>
+        <link refid="classEvaluator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/evaluator.h" line="13" column="1" bodyfile="src/evaluator.h" bodystart="13" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classEvaluator_1a7bc3f95447e2db86882fec6272e10409" prot="private" virt="non-virtual"><scope>Evaluator</scope><name>checkKnownAdapters</name></member>
+      <member refid="classEvaluator_1adb79e02e37741970f53e59b59fdf8e12" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>computeOverRepSeq</name></member>
+      <member refid="classEvaluator_1ab0bf2a3ed26f3001dcfcc4d4be7daa53" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>computeSeqLen</name></member>
+      <member refid="classEvaluator_1a930db2bafc648189a32a421c0776ee7d" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>evalAdapterAndReadNum</name></member>
+      <member refid="classEvaluator_1a5aa5201ed700024521d84d460ca13495" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>evaluateOverRepSeqs</name></member>
+      <member refid="classEvaluator_1ab31c3e615d38f6bfdaa8bed37d297350" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>evaluateReadNum</name></member>
+      <member refid="classEvaluator_1a0d181f664f38cd47ab49c96b465b9dcb" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>evaluateSeqLen</name></member>
+      <member refid="classEvaluator_1a99f02b81667c1bc9c754e2de5c33498f" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>Evaluator</name></member>
+      <member refid="classEvaluator_1ab1932014e966d527f45ef5d86bd8aac4" prot="private" virt="non-virtual"><scope>Evaluator</scope><name>getAdapterWithSeed</name></member>
+      <member refid="classEvaluator_1abc0d42dc20ea6a9f553b5f59357809a3" prot="private" virt="non-virtual"><scope>Evaluator</scope><name>int2seq</name></member>
+      <member refid="classEvaluator_1a071b1726a2e9b58f3de3ea94b025fe1f" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>isTwoColorSystem</name></member>
+      <member refid="classEvaluator_1af05f70776b0de52c1a39c8cf034c31ab" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>matchKnownAdapter</name></member>
+      <member refid="classEvaluator_1a8325f81d7b58adc3fc97c34c401c1c97" prot="private" virt="non-virtual"><scope>Evaluator</scope><name>mOptions</name></member>
+      <member refid="classEvaluator_1af389732998af66a9014b18a3894f31f0" prot="private" virt="non-virtual"><scope>Evaluator</scope><name>seq2int</name></member>
+      <member refid="classEvaluator_1aa66149538f57e3ca8926fda28dc477d8" prot="private" virt="non-virtual"><scope>Evaluator</scope><name>seq2int</name></member>
+      <member refid="classEvaluator_1ac5558831b3087e03d2265c7f01d4aaf0" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>test</name></member>
+      <member refid="classEvaluator_1ac10971f54d227b1ef9aa5b28872b0272" prot="public" virt="non-virtual"><scope>Evaluator</scope><name>~Evaluator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

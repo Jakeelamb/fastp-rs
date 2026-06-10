@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structBgzfMtReader_1_1Slot" kind="struct" language="C++" prot="private">
+    <compoundname>BgzfMtReader::Slot</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structBgzfMtReader_1_1Slot_1afecc555ced9dbfe9425ec6a6aaa96a72" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char BgzfMtReader::Slot::comp[BGZF_MAX_BLOCK_SIZE]</definition>
+        <argsstring>[BGZF_MAX_BLOCK_SIZE]</argsstring>
+        <name>comp</name>
+        <qualifiedname>BgzfMtReader::Slot::comp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="40" column="23" bodyfile="src/bgzf.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBgzfMtReader_1_1Slot_1aecc5380919a45b2d77bc44af8d110b32" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char BgzfMtReader::Slot::decomp[BGZF_MAX_BLOCK_SIZE]</definition>
+        <argsstring>[BGZF_MAX_BLOCK_SIZE]</argsstring>
+        <name>decomp</name>
+        <qualifiedname>BgzfMtReader::Slot::decomp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="41" column="23" bodyfile="src/bgzf.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBgzfMtReader_1_1Slot_1aa2faa3d0c64793e5014dd9f711324e6d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BgzfMtReader::Slot::compLen</definition>
+        <argsstring></argsstring>
+        <name>compLen</name>
+        <qualifiedname>BgzfMtReader::Slot::compLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="42" column="13" bodyfile="src/bgzf.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBgzfMtReader_1_1Slot_1acd187ac0e553e026182c3a4fc8bd620e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BgzfMtReader::Slot::decompLen</definition>
+        <argsstring></argsstring>
+        <name>decompLen</name>
+        <qualifiedname>BgzfMtReader::Slot::decompLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="43" column="13" bodyfile="src/bgzf.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structBgzfMtReader_1_1Slot_1af841f5d249976a57f03a171e1193adb3" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; <ref refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693" kindref="member">SlotState</ref> &gt;</type>
+        <definition>std::atomic&lt;SlotState&gt; BgzfMtReader::Slot::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>BgzfMtReader::Slot::state</qualifiedname>
+        <initializer>{<ref refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22" kindref="member">FREE</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="44" column="21" bodyfile="src/bgzf.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/bgzf.h" line="39" column="5" bodyfile="src/bgzf.h" bodystart="39" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structBgzfMtReader_1_1Slot_1afecc555ced9dbfe9425ec6a6aaa96a72" prot="public" virt="non-virtual"><scope>BgzfMtReader::Slot</scope><name>comp</name></member>
+      <member refid="structBgzfMtReader_1_1Slot_1aa2faa3d0c64793e5014dd9f711324e6d" prot="public" virt="non-virtual"><scope>BgzfMtReader::Slot</scope><name>compLen</name></member>
+      <member refid="structBgzfMtReader_1_1Slot_1aecc5380919a45b2d77bc44af8d110b32" prot="public" virt="non-virtual"><scope>BgzfMtReader::Slot</scope><name>decomp</name></member>
+      <member refid="structBgzfMtReader_1_1Slot_1acd187ac0e553e026182c3a4fc8bd620e" prot="public" virt="non-virtual"><scope>BgzfMtReader::Slot</scope><name>decompLen</name></member>
+      <member refid="structBgzfMtReader_1_1Slot_1af841f5d249976a57f03a171e1193adb3" prot="public" virt="non-virtual"><scope>BgzfMtReader::Slot</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

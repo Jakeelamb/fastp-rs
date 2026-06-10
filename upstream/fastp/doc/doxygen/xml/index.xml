@@ -1,0 +1,1222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.16.1" xml:lang="en-US">
+  <compound refid="classAdapterOptions" kind="class"><name>AdapterOptions</name>
+    <member refid="classAdapterOptions_1a326f1a31b6fa1c76d6febdc2381111f1" kind="variable"><name>enabled</name></member>
+    <member refid="classAdapterOptions_1a3ce8c7bbd2b0ac79fa2ca3bb4d016edf" kind="variable"><name>sequence</name></member>
+    <member refid="classAdapterOptions_1a3b4a31de85a321badbe26fa9df9f7b74" kind="variable"><name>sequenceR2</name></member>
+    <member refid="classAdapterOptions_1ad76917459b918255450ddff759ff9447" kind="variable"><name>detectedAdapter1</name></member>
+    <member refid="classAdapterOptions_1a3c4beba388a93fc7ffb00dfade290621" kind="variable"><name>detectedAdapter2</name></member>
+    <member refid="classAdapterOptions_1acbd14b0deff1cb025c43d994ea71eccd" kind="variable"><name>seqsInFasta</name></member>
+    <member refid="classAdapterOptions_1a03a967ea397016c78b59bbc0a8ee18a6" kind="variable"><name>fastaFile</name></member>
+    <member refid="classAdapterOptions_1ac234fd86b829e48491a0ff0d1beb6432" kind="variable"><name>hasSeqR1</name></member>
+    <member refid="classAdapterOptions_1a395b652790a5f610ebe13faa4c176fb6" kind="variable"><name>hasSeqR2</name></member>
+    <member refid="classAdapterOptions_1a05093be444ed1b00fc8891dcf856c2bc" kind="variable"><name>hasFasta</name></member>
+    <member refid="classAdapterOptions_1a2f22495ce41a1d0167e045fb63fe26dd" kind="variable"><name>detectAdapterForPE</name></member>
+    <member refid="classAdapterOptions_1a91deb52735032c19c0299a2eae8c8d94" kind="variable"><name>allowGapOverlapTrimming</name></member>
+    <member refid="classAdapterOptions_1ac5caeb28d124e9d4f7fe4f7078970b88" kind="variable"><name>dimerMaxLen</name></member>
+    <member refid="classAdapterOptions_1a8677b41dc47cbd315a1ebb04ef2c96d4" kind="function"><name>AdapterOptions</name></member>
+  </compound>
+  <compound refid="classAdapterTrimmer" kind="class"><name>AdapterTrimmer</name>
+    <member refid="classAdapterTrimmer_1ab3d901e9e802b027f8f3db80d7305808" kind="function"><name>AdapterTrimmer</name></member>
+    <member refid="classAdapterTrimmer_1a504d451be959998f6a5b368d910dcb8a" kind="function"><name>~AdapterTrimmer</name></member>
+    <member refid="classAdapterTrimmer_1aff4fe6cd45e0641d5590922d7d008c14" kind="function"><name>trimByOverlapAnalysis</name></member>
+    <member refid="classAdapterTrimmer_1ac6cae026f71af02a3e0467e092714e04" kind="function"><name>trimByOverlapAnalysis</name></member>
+    <member refid="classAdapterTrimmer_1a12d23e7ec408b7ff7327969e2492aa40" kind="function"><name>trimBySequence</name></member>
+    <member refid="classAdapterTrimmer_1aaa48744b28fd12fb282bb2e5104efd73" kind="function"><name>trimByMultiSequences</name></member>
+    <member refid="classAdapterTrimmer_1afffbea20b02ccb66c13ebab06c4f0ae0" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="classBaseCorrector" kind="class"><name>BaseCorrector</name>
+    <member refid="classBaseCorrector_1ac7ddef93e2de377bd105d0917ae138cb" kind="function"><name>BaseCorrector</name></member>
+    <member refid="classBaseCorrector_1af1878c2c060d31650aa83c898250ef74" kind="function"><name>~BaseCorrector</name></member>
+    <member refid="classBaseCorrector_1a81e5298c612a3c49e5419af330e6cdcb" kind="function"><name>correctByOverlapAnalysis</name></member>
+    <member refid="classBaseCorrector_1a4a17bac2915451281885e150b8c57bee" kind="function"><name>correctByOverlapAnalysis</name></member>
+    <member refid="classBaseCorrector_1aa564e7b5d88ef43e64f5b8bf73880dd2" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="classBgzfMtReader" kind="class"><name>BgzfMtReader</name>
+    <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693" kind="enum"><name>SlotState</name></member>
+    <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22" kind="enumvalue"><name>FREE</name></member>
+    <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2" kind="enumvalue"><name>COMPRESSED</name></member>
+    <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a00089ae9def2cc2ecf08ce1ffd0256bd" kind="enumvalue"><name>DECOMPRESSING</name></member>
+    <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228" kind="enumvalue"><name>READY</name></member>
+    <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1" kind="enumvalue"><name>DONE</name></member>
+    <member refid="classBgzfMtReader_1a9ef9a5cd59156ddd64b3de39e8e87fb2" kind="variable"><name>mFp</name></member>
+    <member refid="classBgzfMtReader_1aa37c9b5176467547760099e6b9cd2246" kind="variable"><name>mSlots</name></member>
+    <member refid="classBgzfMtReader_1ab166feef864ea34db3745a791abc30c8" kind="variable"><name>mRingSize</name></member>
+    <member refid="classBgzfMtReader_1a2562478e5080c81552a82c50142e9100" kind="variable"><name>mConsumeIdx</name></member>
+    <member refid="classBgzfMtReader_1a07264db665f9a0720fb3da8e41e8f767" kind="variable"><name>mConsumeOffset</name></member>
+    <member refid="classBgzfMtReader_1ad9fe79c25105be430e2f64229bf333e8" kind="variable"><name>mProduceIdx</name></member>
+    <member refid="classBgzfMtReader_1a7063733b17ed8a7bdbc5fdf08879af81" kind="variable"><name>mMaxPool</name></member>
+    <member refid="classBgzfMtReader_1a318dbd8fd1106cb591859a07c78113b7" kind="variable"><name>mStop</name></member>
+    <member refid="classBgzfMtReader_1a60f12801d6f3a632fc01c0fd63e27a6f" kind="variable"><name>mReaderThread</name></member>
+    <member refid="classBgzfMtReader_1a1ec53f83c42eac0ded6e591867d50191" kind="variable"><name>mPool</name></member>
+    <member refid="classBgzfMtReader_1ab2e951f140ecaedc0d1111e4e65899e1" kind="variable"><name>mConsumeMtx</name></member>
+    <member refid="classBgzfMtReader_1af4c9b162a77e2119ec1878cbdd602d42" kind="variable"><name>mProduceMtx</name></member>
+    <member refid="classBgzfMtReader_1ab53aa58d024aadb0ea5c3887b513acc7" kind="variable"><name>mDecompMtx</name></member>
+    <member refid="classBgzfMtReader_1aabb14dbaa99b86ff493f61f66ad81c2c" kind="variable"><name>mConsumeCv</name></member>
+    <member refid="classBgzfMtReader_1ad4fac5895b050216e9352aeb97adf5ce" kind="variable"><name>mProduceCv</name></member>
+    <member refid="classBgzfMtReader_1a2f1aa5f2807c4985211afb97022db2f2" kind="variable"><name>mDecompCv</name></member>
+    <member refid="classBgzfMtReader_1a35b61e054961e9804bcb8d6485e9073c" kind="function"><name>BgzfMtReader</name></member>
+    <member refid="classBgzfMtReader_1aff2fa38aa587c5817a2fe287d9954f91" kind="function"><name>~BgzfMtReader</name></member>
+    <member refid="classBgzfMtReader_1a24d228983d8bf1f3bcf952d915edcfa3" kind="function"><name>read</name></member>
+    <member refid="classBgzfMtReader_1a4bb241d72e8decbe65b44d0d6324c6c1" kind="function"><name>readerLoop</name></member>
+    <member refid="classBgzfMtReader_1a55cfa7330d2503ff958eef2bf2d038cf" kind="function"><name>decompWorker</name></member>
+    <member refid="classBgzfMtReader_1a2179d5e54e5ebfdde86a007aacf78817" kind="function"><name>claimSlot</name></member>
+    <member refid="classBgzfMtReader_1a41024dc0fb9f432b51920dd09671b74c" kind="function"><name>markDone</name></member>
+  </compound>
+  <compound refid="structclasscomp" kind="struct"><name>classcomp</name>
+    <member refid="structclasscomp_1a0de325e95f0ccb06d697e0725a8a0b26" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1cmdline__error" kind="class"><name>cmdline::cmdline_error</name>
+    <member refid="classcmdline_1_1cmdline__error_1a46964bd9b018c935fe498a91703183fc" kind="variable"><name>msg</name></member>
+    <member refid="classcmdline_1_1cmdline__error_1a56748242954e40048c3197a24bdfa036" kind="function"><name>cmdline_error</name></member>
+    <member refid="classcmdline_1_1cmdline__error_1a4fb14d65b75bf0dd97a84e76f571a8be" kind="function"><name>~cmdline_error</name></member>
+    <member refid="classcmdline_1_1cmdline__error_1a5550993ae6f2676fbabb1d7ef3466e50" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="classCorrectionOptions" kind="class"><name>CorrectionOptions</name>
+    <member refid="classCorrectionOptions_1a2ca3a0d12493f37e74ab6bc04548bf48" kind="variable"><name>enabled</name></member>
+    <member refid="classCorrectionOptions_1a74029fa3f80876864d1b2d5d6e0999a3" kind="function"><name>CorrectionOptions</name></member>
+  </compound>
+  <compound refid="structcmdline_1_1default__reader" kind="struct"><name>cmdline::default_reader</name>
+    <member refid="structcmdline_1_1default__reader_1a71f97c64added8d907fb95c0e5fe1f6f" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classDuplicate" kind="class"><name>Duplicate</name>
+    <member refid="classDuplicate_1ac347a39888bf6bb8e5384aa41f542edc" kind="variable"><name>mOptions</name></member>
+    <member refid="classDuplicate_1a60159fa0fa1b216f96f2f22190e1c0c2" kind="variable"><name>mBufLenInBits</name></member>
+    <member refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kind="variable"><name>mBufLenInBytes</name></member>
+    <member refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kind="variable"><name>mBufNum</name></member>
+    <member refid="classDuplicate_1a70160b6d74373828723ae77c99b281d4" kind="variable"><name>mDupBuf</name></member>
+    <member refid="classDuplicate_1a4eb6e1d9c1a25447dd0a5a36785308bb" kind="variable"><name>mPrimeArrays</name></member>
+    <member refid="classDuplicate_1a4b02f4b9fdaba956a32500d2123a1fa4" kind="variable"><name>mTotalReads</name></member>
+    <member refid="classDuplicate_1acf4dcf3341a875179ee25fa2614260c9" kind="variable"><name>mDupReads</name></member>
+    <member refid="classDuplicate_1ab16812c9a3e19ed3e379d1b508630546" kind="variable"><name>mOffsetMask</name></member>
+    <member refid="classDuplicate_1a556f1ed55137a2044eedcd62cd442368" kind="function"><name>Duplicate</name></member>
+    <member refid="classDuplicate_1a34fc56b85205788738da635fcc3245bb" kind="function"><name>~Duplicate</name></member>
+    <member refid="classDuplicate_1a168145b6efe245bc00a6e247241b183c" kind="function"><name>checkRead</name></member>
+    <member refid="classDuplicate_1ab46011e368c4dabd6a7147f549fde8a8" kind="function"><name>checkPair</name></member>
+    <member refid="classDuplicate_1a237315896ed2c23fcb40d576598fca21" kind="function"><name>seq2intvector</name></member>
+    <member refid="classDuplicate_1a2764bac72d620f1c296d77eb65b1aefc" kind="function"><name>getDupRate</name></member>
+    <member refid="classDuplicate_1a8e57060bdc4cfa2813683e4482412014" kind="function"><name>initPrimeArrays</name></member>
+    <member refid="classDuplicate_1a14eaa18367015498b0a0b23b10b237a4" kind="function"><name>applyBloomFilter</name></member>
+  </compound>
+  <compound refid="classDuplicationOptions" kind="class"><name>DuplicationOptions</name>
+    <member refid="classDuplicationOptions_1aafe19f3cc86719ae9ae267908637cc08" kind="variable"><name>enabled</name></member>
+    <member refid="classDuplicationOptions_1a9a0ae87d7b8e5ed5d48ca2abed267e77" kind="variable"><name>histSize</name></member>
+    <member refid="classDuplicationOptions_1acf272ee46f315a28a49f2a7f1976fae6" kind="variable"><name>dedup</name></member>
+    <member refid="classDuplicationOptions_1a2bd6b5b11c80ab3d1322ffe84d5fa30a" kind="variable"><name>accuracyLevel</name></member>
+    <member refid="classDuplicationOptions_1a6bfa8f555d2c10932607db71906257a9" kind="function"><name>DuplicationOptions</name></member>
+  </compound>
+  <compound refid="classEvaluator" kind="class"><name>Evaluator</name>
+    <member refid="classEvaluator_1a8325f81d7b58adc3fc97c34c401c1c97" kind="variable"><name>mOptions</name></member>
+    <member refid="classEvaluator_1a99f02b81667c1bc9c754e2de5c33498f" kind="function"><name>Evaluator</name></member>
+    <member refid="classEvaluator_1ac10971f54d227b1ef9aa5b28872b0272" kind="function"><name>~Evaluator</name></member>
+    <member refid="classEvaluator_1ab31c3e615d38f6bfdaa8bed37d297350" kind="function"><name>evaluateReadNum</name></member>
+    <member refid="classEvaluator_1a930db2bafc648189a32a421c0776ee7d" kind="function"><name>evalAdapterAndReadNum</name></member>
+    <member refid="classEvaluator_1a071b1726a2e9b58f3de3ea94b025fe1f" kind="function"><name>isTwoColorSystem</name></member>
+    <member refid="classEvaluator_1a0d181f664f38cd47ab49c96b465b9dcb" kind="function"><name>evaluateSeqLen</name></member>
+    <member refid="classEvaluator_1a5aa5201ed700024521d84d460ca13495" kind="function"><name>evaluateOverRepSeqs</name></member>
+    <member refid="classEvaluator_1adb79e02e37741970f53e59b59fdf8e12" kind="function"><name>computeOverRepSeq</name></member>
+    <member refid="classEvaluator_1ab0bf2a3ed26f3001dcfcc4d4be7daa53" kind="function"><name>computeSeqLen</name></member>
+    <member refid="classEvaluator_1ac5558831b3087e03d2265c7f01d4aaf0" kind="function"><name>test</name></member>
+    <member refid="classEvaluator_1af05f70776b0de52c1a39c8cf034c31ab" kind="function"><name>matchKnownAdapter</name></member>
+    <member refid="classEvaluator_1abc0d42dc20ea6a9f553b5f59357809a3" kind="function"><name>int2seq</name></member>
+    <member refid="classEvaluator_1af389732998af66a9014b18a3894f31f0" kind="function"><name>seq2int</name></member>
+    <member refid="classEvaluator_1aa66149538f57e3ca8926fda28dc477d8" kind="function"><name>seq2int</name></member>
+    <member refid="classEvaluator_1ab1932014e966d527f45ef5d86bd8aac4" kind="function"><name>getAdapterWithSeed</name></member>
+    <member refid="classEvaluator_1a7bc3f95447e2db86882fec6272e10409" kind="function"><name>checkKnownAdapters</name></member>
+  </compound>
+  <compound refid="classFastaReader" kind="class"><name>FastaReader</name>
+    <member refid="classFastaReader_1a1eedba2fd6c9d5969f29c8f1dab89f2f" kind="variable"><name>mCurrentSequence</name></member>
+    <member refid="classFastaReader_1a676f69f9b3650f3d5437e7ba2dc56144" kind="variable"><name>mCurrentID</name></member>
+    <member refid="classFastaReader_1ab10489fd4121c16989d6515ae895c28e" kind="variable"><name>mCurrentDescription</name></member>
+    <member refid="classFastaReader_1aabc53d8d9dc0b945df182efc17e5dce2" kind="variable"><name>mAllContigs</name></member>
+    <member refid="classFastaReader_1a7c7008d257b656684430dab2d1b91da1" kind="variable"><name>mFastaFile</name></member>
+    <member refid="classFastaReader_1aa173b7ba95e64fe4db82f1a3820fadad" kind="variable"><name>mFastaFileStream</name></member>
+    <member refid="classFastaReader_1ae81d16a01f7dcff8bb4569329e37868f" kind="variable"><name>mForceUpperCase</name></member>
+    <member refid="classFastaReader_1a48a263b02899ebb8aab3104e1e408cf0" kind="function"><name>FastaReader</name></member>
+    <member refid="classFastaReader_1a3a9b0ceccecb2166f435cec2156e7ca9" kind="function"><name>~FastaReader</name></member>
+    <member refid="classFastaReader_1ab8c9b6c280186f7ef9a0ccf7421be88a" kind="function"><name>hasNext</name></member>
+    <member refid="classFastaReader_1aaa0236f26b118fcab4c2657dfe75cd09" kind="function"><name>readNext</name></member>
+    <member refid="classFastaReader_1ad8160b754d9cf1633d8564a2f7274b5d" kind="function"><name>readAll</name></member>
+    <member refid="classFastaReader_1afc5323ead9b9e33bec4e4b2a1f65512c" kind="function"><name>currentID</name></member>
+    <member refid="classFastaReader_1a200d27dabac02489c306e0a5fdd5715c" kind="function"><name>currentDescription</name></member>
+    <member refid="classFastaReader_1a47ace3df2b08bcfe8bc8b094c50763dc" kind="function"><name>currentSequence</name></member>
+    <member refid="classFastaReader_1a8bab5351912b538d8ec2e9cf749518c1" kind="function"><name>contigs</name></member>
+    <member refid="classFastaReader_1a98f1b983167352d50e446f2a8336cc57" kind="function"><name>test</name></member>
+    <member refid="classFastaReader_1a342d3cc5ae11a943a363b7acb1c5c430" kind="function"><name>readLine</name></member>
+    <member refid="classFastaReader_1a173bec12477e187f16c85e2c12ac1c5d" kind="function"><name>endOfLine</name></member>
+    <member refid="classFastaReader_1a9491ffaa778516d7e94c1412442ce708" kind="function"><name>setFastaSequenceIdDescription</name></member>
+  </compound>
+  <compound refid="classFastqReader" kind="class"><name>FastqReader</name>
+    <member refid="classFastqReader_1af8656352f2c2d144abaf4cb099846e71" kind="variable"><name>mFilename</name></member>
+    <member refid="classFastqReader_1a4e6ecc9cc21aa161e6716a20813b28b9" kind="variable"><name>mGzipHeader</name></member>
+    <member refid="classFastqReader_1a491970fddf50538bf7be541c1fb08dd6" kind="variable"><name>mGzipState</name></member>
+    <member refid="classFastqReader_1a24936a036db4f79debdb3ce8b9552254" kind="variable"><name>mGzipInputBuffer</name></member>
+    <member refid="classFastqReader_1a2081bb86b38f4db8bb89ee4acacf80a1" kind="variable"><name>mGzipOutputBuffer</name></member>
+    <member refid="classFastqReader_1ab3f44f41efe72408aec395c6c74a71f6" kind="variable"><name>mGzipInputBufferSize</name></member>
+    <member refid="classFastqReader_1a322526ec8d29259b52127f5ece4ed210" kind="variable"><name>mGzipOutputBufferSize</name></member>
+    <member refid="classFastqReader_1a799bfdc81c1a0a6eeee31af6cdeafaa0" kind="variable"><name>mGzipInputUsedBytes</name></member>
+    <member refid="classFastqReader_1acd50c082a58bb3baad2404b5e11aae62" kind="variable"><name>mFile</name></member>
+    <member refid="classFastqReader_1ab0d9c71ad69be6c4001edc72ec92adb4" kind="variable"><name>mZipped</name></member>
+    <member refid="classFastqReader_1a96330d7f066c5d43c9e82d5949c0b25e" kind="variable"><name>mFastqBuf</name></member>
+    <member refid="classFastqReader_1abe7211fec5453dc692eccda129632090" kind="variable"><name>mBufDataLen</name></member>
+    <member refid="classFastqReader_1a1a3c0ed8cb9aded521ab2669323968fa" kind="variable"><name>mBufUsedLen</name></member>
+    <member refid="classFastqReader_1aa327b1c88c0af352611095b33b691934" kind="variable"><name>mStdinMode</name></member>
+    <member refid="classFastqReader_1a13bd156a89835d095ca7a65d4b00c74c" kind="variable"><name>mHasNoLineBreakAtEnd</name></member>
+    <member refid="classFastqReader_1ad7c5c05c32d381d1d2eb8f85810a53cd" kind="variable"><name>mCounter</name></member>
+    <member refid="classFastqReader_1a2bff55a0d3ba7813bd4351a61460139a" kind="variable"><name>mHasQuality</name></member>
+    <member refid="classFastqReader_1afeb44e4b170e17667c2ea85e7e0bbf65" kind="variable"><name>mPhred64</name></member>
+    <member refid="classFastqReader_1ab28f2aafd4425e9281471ae2b009819a" kind="variable"><name>mReadPool</name></member>
+    <member refid="classFastqReader_1a107cf2d91b4790f85f3ee20d91331814" kind="variable"><name>mBgzfReader</name></member>
+    <member refid="classFastqReader_1ab6196eb35e7ed144d91504ca86828f5c" kind="variable"><name>mBgzfThreadBudget</name></member>
+    <member refid="classFastqReader_1ad66dd751b21fb620edf740ebe7630030" kind="function"><name>FastqReader</name></member>
+    <member refid="classFastqReader_1a03b456c40b1d3812a0ba33b4aebca742" kind="function"><name>~FastqReader</name></member>
+    <member refid="classFastqReader_1acedea5984b2f935a4f8761c52fe22cb4" kind="function"><name>isZipped</name></member>
+    <member refid="classFastqReader_1a29389d766ea9469b6c4b218ebfaa69ef" kind="function"><name>getBytes</name></member>
+    <member refid="classFastqReader_1aa1f6ab000136c41ccc2742cf868c63ea" kind="function"><name>read</name></member>
+    <member refid="classFastqReader_1a98b833419659676aa7b7879064f02298" kind="function"><name>eof</name></member>
+    <member refid="classFastqReader_1a9ec4409d4650914355211ffdfd2743ab" kind="function"><name>hasNoLineBreakAtEnd</name></member>
+    <member refid="classFastqReader_1ac54ab418871f43fcf1ee6e9df3b379b4" kind="function"><name>setReadPool</name></member>
+    <member refid="classFastqReader_1aa12eacb47c5f8c33d5f9ec15c6f388a1" kind="function"><name>isZipFastq</name></member>
+    <member refid="classFastqReader_1a72f7ab27aa46c790511a678e1e7edb9e" kind="function"><name>isFastq</name></member>
+    <member refid="classFastqReader_1a4cc85ccb0051670299b7d8159c280c44" kind="function"><name>test</name></member>
+    <member refid="classFastqReader_1aa85324f220cf65b609c1663463eee8c3" kind="function"><name>init</name></member>
+    <member refid="classFastqReader_1ab63f52842ba18259f00042e18436b1f9" kind="function"><name>close</name></member>
+    <member refid="classFastqReader_1ada9a13204386a15dc886eae857dd4738" kind="function"><name>getLine</name></member>
+    <member refid="classFastqReader_1a0d4409aaed2981bab34d8888102c2426" kind="function"><name>clearLineBreaks</name></member>
+    <member refid="classFastqReader_1a0c029e28dd3a62e49717fa2d6a05bcae" kind="function"><name>readToBuf</name></member>
+    <member refid="classFastqReader_1a9df0941ba8f95d1578d7874cce7598d4" kind="function"><name>readToBufIgzip</name></member>
+    <member refid="classFastqReader_1aeec9c64e4e7bc9af6a60f407d069451b" kind="function"><name>bufferFinished</name></member>
+  </compound>
+  <compound refid="classFastqReaderPair" kind="class"><name>FastqReaderPair</name>
+    <member refid="classFastqReaderPair_1a243985cbdb1e0b4775fb8798aa8cce08" kind="variable"><name>mLeft</name></member>
+    <member refid="classFastqReaderPair_1a1defe7cff06f4e06c1fa6cd08601368f" kind="variable"><name>mRight</name></member>
+    <member refid="classFastqReaderPair_1aa3b08c940f52691707d7869c3f63c0b5" kind="variable"><name>mInterleaved</name></member>
+    <member refid="classFastqReaderPair_1a1979f5188328cd5ad9a10657b035250e" kind="function"><name>FastqReaderPair</name></member>
+    <member refid="classFastqReaderPair_1a9acda77cb6f39d624cd8281ff5277d0d" kind="function"><name>FastqReaderPair</name></member>
+    <member refid="classFastqReaderPair_1affd4446f74998946e047140946e5507c" kind="function"><name>~FastqReaderPair</name></member>
+    <member refid="classFastqReaderPair_1a6378c22973dc9cf84d7d18e1120fea09" kind="function"><name>read</name></member>
+    <member refid="classFastqReaderPair_1a83a5006987e4a390c7f7d5096e9484c0" kind="function"><name>eof</name></member>
+  </compound>
+  <compound refid="classFilter" kind="class"><name>Filter</name>
+    <member refid="classFilter_1af59e53198737709d138fbe29a5332655" kind="variable"><name>mOptions</name></member>
+    <member refid="classFilter_1a92fa6d109e4b8a798e1f3a1b3bc0d651" kind="function"><name>Filter</name></member>
+    <member refid="classFilter_1a502ee334d42eac3edbaf32b599f9c35e" kind="function"><name>~Filter</name></member>
+    <member refid="classFilter_1ad0ed0d10583bb939f9451052f9cce930" kind="function"><name>passFilter</name></member>
+    <member refid="classFilter_1ad621657b7da9b0387447c4694e1db157" kind="function"><name>passLowComplexityFilter</name></member>
+    <member refid="classFilter_1a2eee564e8d970850c1f87d06e3e5b55c" kind="function"><name>trimAndCut</name></member>
+    <member refid="classFilter_1af529fbec75e362270bc1db6f483847b0" kind="function"><name>filterByIndex</name></member>
+    <member refid="classFilter_1a90f5e73b9d694de6b5af3cc626780d54" kind="function"><name>filterByIndex</name></member>
+    <member refid="classFilter_1a6bd65071e3f2f8f715f79968dc7148b2" kind="function"><name>test</name></member>
+    <member refid="classFilter_1a67f3a45429fbef9f6ce8bcb9dd04f91e" kind="function"><name>match</name></member>
+  </compound>
+  <compound refid="classFilterResult" kind="class"><name>FilterResult</name>
+    <member refid="classFilterResult_1a53e26f678366a58e63bf1c6a26233a5b" kind="variable"><name>mOptions</name></member>
+    <member refid="classFilterResult_1a836e46d016ce976bb1cd176ad1c801cc" kind="variable"><name>mPaired</name></member>
+    <member refid="classFilterResult_1aac97834fb2c1aafeb21f892308d1f1cd" kind="variable"><name>mCorrectedReads</name></member>
+    <member refid="classFilterResult_1a20367cc8aeb8d9277c27b8042a769efe" kind="variable"><name>mMergedPairs</name></member>
+    <member refid="classFilterResult_1abc7eac664d2db4344f0f43780ae83dfc" kind="variable"><name>mFilterReadStats</name></member>
+    <member refid="classFilterResult_1acb87da988a13347fede28b4f6e8a6631" kind="variable"><name>mTrimmedAdapterRead</name></member>
+    <member refid="classFilterResult_1a1c4654907465bf9556468c9d4173a9ad" kind="variable"><name>mTrimmedAdapterBases</name></member>
+    <member refid="classFilterResult_1a90a3c443823ed77502aae2c66cbfd981" kind="variable"><name>mTrimmedPolyXReads</name></member>
+    <member refid="classFilterResult_1aac7bb94eb2fd45898d7076763cc1dc29" kind="variable"><name>mTrimmedPolyXBases</name></member>
+    <member refid="classFilterResult_1a24bb048d16563b26f7ddfc9f1b66c07a" kind="variable"><name>mAdapter1</name></member>
+    <member refid="classFilterResult_1ab55e7674ffe335b5eb1474824bc784fe" kind="variable"><name>mAdapter2</name></member>
+    <member refid="classFilterResult_1afa868fd1ec214658e632b4710acf751c" kind="variable"><name>mCorrectionMatrix</name></member>
+    <member refid="classFilterResult_1a92d995409da24d975aad26920359b75e" kind="function"><name>FilterResult</name></member>
+    <member refid="classFilterResult_1a221e6a4a14fc08f26739afae4c90c704" kind="function"><name>~FilterResult</name></member>
+    <member refid="classFilterResult_1a2903b8e2195ce50c32af8f71b4b96ad6" kind="function"><name>getFilterReadStats</name></member>
+    <member refid="classFilterResult_1a87e955596f77005d6391e8ff8c369728" kind="function"><name>addFilterResult</name></member>
+    <member refid="classFilterResult_1abf426bfeef2d6492806b7f0f3a7af361" kind="function"><name>print</name></member>
+    <member refid="classFilterResult_1a1ce9566d7f147c39bed2b41855d08a0d" kind="function"><name>addAdapterTrimmed</name></member>
+    <member refid="classFilterResult_1a9bdc24a5674eeb2a4b510f4e6c437df5" kind="function"><name>addAdapterTrimmed</name></member>
+    <member refid="classFilterResult_1af565125bb743001aca21b2e7ba5db33e" kind="function"><name>incTrimmedAdapterRead</name></member>
+    <member refid="classFilterResult_1a9d38f6b1f8bcd73936d394e5f40b41b9" kind="function"><name>addPolyXTrimmed</name></member>
+    <member refid="classFilterResult_1a44d2e2fcb2b3b466cb7d84ce8869f320" kind="function"><name>getTotalPolyXTrimmedReads</name></member>
+    <member refid="classFilterResult_1a9a5f3c8ba9c5016fc0e2d35ed7428367" kind="function"><name>getTotalPolyXTrimmedBases</name></member>
+    <member refid="classFilterResult_1aae598e4ec5ec03ab47a9cbff09a514ee" kind="function"><name>reportJson</name></member>
+    <member refid="classFilterResult_1ae60e6572d088ab0d7c51139ee043e975" kind="function"><name>reportAdapterJson</name></member>
+    <member refid="classFilterResult_1aca6caa036703490eba4339563efdc3ec" kind="function"><name>reportPolyXTrimJson</name></member>
+    <member refid="classFilterResult_1ad91b0434cbf8a6b172234b2857310c01" kind="function"><name>reportHtml</name></member>
+    <member refid="classFilterResult_1ac2bbd2ce4d497f825502e10f307ec508" kind="function"><name>reportAdapterHtml</name></member>
+    <member refid="classFilterResult_1a87538fd823083a53f21a340361926b0e" kind="function"><name>outputAdaptersJson</name></member>
+    <member refid="classFilterResult_1a932889edff76dd1b462abe039aa92ec0" kind="function"><name>outputAdaptersHtml</name></member>
+    <member refid="classFilterResult_1a5bdbb58bbd5e80bf4d4c13f10e232e6e" kind="function"><name>getAdapterReportCount</name></member>
+    <member refid="classFilterResult_1a68cbaba8bf040f6e95ff142a891eefd3" kind="function"><name>getCorrectionMatrix</name></member>
+    <member refid="classFilterResult_1a96240aa94f778be5075eaa528909fa7e" kind="function"><name>getTotalCorrectedBases</name></member>
+    <member refid="classFilterResult_1a8a8a1dbd29265cbb665b712251776cbd" kind="function"><name>addCorrection</name></member>
+    <member refid="classFilterResult_1a2242b4ebcbf313d520731f0bae18cf1a" kind="function"><name>getCorrectionNum</name></member>
+    <member refid="classFilterResult_1a70f898331df6ee78053be71285036282" kind="function"><name>incCorrectedReads</name></member>
+    <member refid="classFilterResult_1af32e0889edf3fd337c18d8d1536dfbb7" kind="function"><name>addMergedPairs</name></member>
+    <member refid="classFilterResult_1a4da19ff8d0e242da3b8a2b7630735576" kind="function"><name>isLowComplexity</name></member>
+    <member refid="classFilterResult_1a2c096ae0fad4bc780bce2270c4234033" kind="function"><name>merge</name></member>
+  </compound>
+  <compound refid="classHtmlReporter" kind="class"><name>HtmlReporter</name>
+    <member refid="classHtmlReporter_1a02a03e600e134616d914c31ba9bd7709" kind="variable"><name>mOptions</name></member>
+    <member refid="classHtmlReporter_1a30b8b92b014e7909ba6705645840716a" kind="variable"><name>mDupHist</name></member>
+    <member refid="classHtmlReporter_1aa6486b56a07991ec71c014223b08c265" kind="variable"><name>mDupMeanGC</name></member>
+    <member refid="classHtmlReporter_1aa30220483c6d52e8c4b3f7c496daf8a9" kind="variable"><name>mDupRate</name></member>
+    <member refid="classHtmlReporter_1a7e71ef856868fadcaa3893383f9108f9" kind="variable"><name>mInsertHist</name></member>
+    <member refid="classHtmlReporter_1aa253bec109843dada32d836b992ba9b8" kind="variable"><name>mInsertSizePeak</name></member>
+    <member refid="classHtmlReporter_1a57d4ea37391de464edfd84400d4df8b2" kind="function"><name>HtmlReporter</name></member>
+    <member refid="classHtmlReporter_1ae6aead7e4be2257112927c2e6c5558e4" kind="function"><name>~HtmlReporter</name></member>
+    <member refid="classHtmlReporter_1aba94153c525b376d24d8c566ee78987c" kind="function"><name>setDup</name></member>
+    <member refid="classHtmlReporter_1ab701792be1a8136fc183d34ddb72adb8" kind="function"><name>setInsertHist</name></member>
+    <member refid="classHtmlReporter_1a7e9dd62e51134082034b1abab94bce9e" kind="function"><name>report</name></member>
+    <member refid="classHtmlReporter_1af80e6ea00c88f32d19d5f67c32d50b46" kind="function"><name>outputRow</name></member>
+    <member refid="classHtmlReporter_1ac7470714e953cf8ddfd379e82a7a5464" kind="function"><name>outputRow</name></member>
+    <member refid="classHtmlReporter_1a2cd13f5289655ae1bced187322c40c79" kind="function"><name>formatNumber</name></member>
+    <member refid="classHtmlReporter_1a5e9ab720eadb666289f9403ae4fa9fcc" kind="function"><name>getPercents</name></member>
+    <member refid="classHtmlReporter_1ac328ed94fa6ed8622755429f7b9016e1" kind="function"><name>getCurrentSystemTime</name></member>
+    <member refid="classHtmlReporter_1a897a18270fd125322990bf49bc4ae0ee" kind="function"><name>printHeader</name></member>
+    <member refid="classHtmlReporter_1a63274acaa3bcb377c0140d7b5dd60e5b" kind="function"><name>printCSS</name></member>
+    <member refid="classHtmlReporter_1ad31b0eb65e18147d8788fb853add2409" kind="function"><name>printJS</name></member>
+    <member refid="classHtmlReporter_1ae5fce1d959353ffddaefeff01751bd1a" kind="function"><name>printFooter</name></member>
+    <member refid="classHtmlReporter_1aeb55b5e9a089e6ab1ef6a7f6488147db" kind="function"><name>reportQualHistogram</name></member>
+    <member refid="classHtmlReporter_1a371bf6a3d0ac443e1f1120491951f18a" kind="function"><name>reportDuplication</name></member>
+    <member refid="classHtmlReporter_1a015fdca35ef887499d3901599f03e539" kind="function"><name>reportInsertSize</name></member>
+    <member refid="classHtmlReporter_1a0e6af5d904e0c998d1c2afd912305bd7" kind="function"><name>printSummary</name></member>
+  </compound>
+  <compound refid="classIndexFilterOptions" kind="class"><name>IndexFilterOptions</name>
+    <member refid="classIndexFilterOptions_1ae35b6f2704c88e70e511e57c8666f98b" kind="variable"><name>blacklist1</name></member>
+    <member refid="classIndexFilterOptions_1aa80f659267e4386537dc4879e71d60b4" kind="variable"><name>blacklist2</name></member>
+    <member refid="classIndexFilterOptions_1a40ea1b4ebfb784b75f428b9dfe390793" kind="variable"><name>enabled</name></member>
+    <member refid="classIndexFilterOptions_1ac142d33ed03b8066c83f403f784760fe" kind="variable"><name>threshold</name></member>
+    <member refid="classIndexFilterOptions_1a1106fb2f37ca24d2512200a82dad8c7b" kind="function"><name>IndexFilterOptions</name></member>
+  </compound>
+  <compound refid="structcmdline_1_1detail_1_1is__same" kind="struct"><name>cmdline::detail::is_same</name>
+    <member refid="structcmdline_1_1detail_1_1is__same_1aee0ed17263370d2446766f79c85c0f43" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="structcmdline_1_1detail_1_1is__same_3_01T_00_01T_01_4" kind="struct"><name>cmdline::detail::is_same&lt; T, T &gt;</name>
+    <member refid="structcmdline_1_1detail_1_1is__same_3_01T_00_01T_01_4_1a5640f6fc005b679b1e051f7e050205e5" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="classJsonReporter" kind="class"><name>JsonReporter</name>
+    <member refid="classJsonReporter_1a6473ee41a0ba145229a27628599df14a" kind="variable"><name>mOptions</name></member>
+    <member refid="classJsonReporter_1a66f87dd8e019ad639d1586802123dff7" kind="variable"><name>mDupHist</name></member>
+    <member refid="classJsonReporter_1a4415cd88768813b895bff5207be4febc" kind="variable"><name>mDupMeanGC</name></member>
+    <member refid="classJsonReporter_1a8be645fd72da0fbd1bd2b8cc06aaffe6" kind="variable"><name>mDupRate</name></member>
+    <member refid="classJsonReporter_1a028ac82bb4de4799ddcab9b2c30c73b5" kind="variable"><name>mInsertHist</name></member>
+    <member refid="classJsonReporter_1ad9dc11be17484a6888172b230c6f578d" kind="variable"><name>mInsertSizePeak</name></member>
+    <member refid="classJsonReporter_1ae877aa6bf26178f524195e405d0d9f44" kind="function"><name>JsonReporter</name></member>
+    <member refid="classJsonReporter_1aeece0a033d6136609217ac08a363d86e" kind="function"><name>~JsonReporter</name></member>
+    <member refid="classJsonReporter_1add77bc5f100396720aa6d0237851a545" kind="function"><name>setDup</name></member>
+    <member refid="classJsonReporter_1a1fe157defef88e9851f8ed46d573bae6" kind="function"><name>setInsertHist</name></member>
+    <member refid="classJsonReporter_1aa86bc03360bb79f2f33c0e652da61207" kind="function"><name>report</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1detail_1_1lexical__cast__t" kind="class"><name>cmdline::detail::lexical_cast_t</name>
+    <member refid="classcmdline_1_1detail_1_1lexical__cast__t_1a533dd7d81255f684abba07d6c1545b1b" kind="function"><name>cast</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01std_1_1string_00_01Source_00_01false_01_4" kind="class"><name>cmdline::detail::lexical_cast_t&lt; std::string, Source, false &gt;</name>
+    <member refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01std_1_1string_00_01Source_00_01false_01_4_1af57126abfc4a633919bb63f1425fd69d" kind="function"><name>cast</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01Source_00_01true_01_4" kind="class"><name>cmdline::detail::lexical_cast_t&lt; Target, Source, true &gt;</name>
+    <member refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01Source_00_01true_01_4_1a424e3e47b97dde835cdcc3d290618fc5" kind="function"><name>cast</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01std_1_1string_00_01false_01_4" kind="class"><name>cmdline::detail::lexical_cast_t&lt; Target, std::string, false &gt;</name>
+    <member refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01std_1_1string_00_01false_01_4_1a8612edb07ba3ba15be8615dcacbf58e3" kind="function"><name>cast</name></member>
+  </compound>
+  <compound refid="structLockFreeListItem" kind="struct"><name>LockFreeListItem</name>
+    <member refid="structLockFreeListItem_1a7d7f4bc4a6537dcb579aebb4c6891db3" kind="variable"><name>value</name></member>
+    <member refid="structLockFreeListItem_1ac501170d4b280882114bd15c395d9235" kind="variable"><name>nextItem</name></member>
+    <member refid="structLockFreeListItem_1ad267fb237e6c2fb59d8d66782e4d2272" kind="variable"><name>nextItemReady</name></member>
+    <member refid="structLockFreeListItem_1a2fb4565cc71cdc83c9876dd5efb0fd96" kind="function"><name>LockFreeListItem</name></member>
+    <member refid="structLockFreeListItem_1a90d054f397b745ce1da35cd8c1db31c6" kind="function"><name>LockFreeListItem</name></member>
+  </compound>
+  <compound refid="classLowComplexityFilterOptions" kind="class"><name>LowComplexityFilterOptions</name>
+    <member refid="classLowComplexityFilterOptions_1a74a6689faace1ed12fecbad6bf1b8ae3" kind="variable"><name>enabled</name></member>
+    <member refid="classLowComplexityFilterOptions_1add553a613ca28b66753b88a40820d02f" kind="variable"><name>threshold</name></member>
+    <member refid="classLowComplexityFilterOptions_1ac06e3e3a876e3bf18b0c2d492cb4a601" kind="function"><name>LowComplexityFilterOptions</name></member>
+  </compound>
+  <compound refid="classMatcher" kind="class"><name>Matcher</name>
+    <member refid="classMatcher_1afe819df374b49c50e0c82c88d7bda929" kind="function"><name>Matcher</name></member>
+    <member refid="classMatcher_1adb99ad379498c429f93a8ae851ad75c3" kind="function"><name>~Matcher</name></member>
+    <member refid="classMatcher_1acd38938c2641c1fc6a784c993577d934" kind="function"><name>matchWithOneInsertion</name></member>
+    <member refid="classMatcher_1a82755eafc71a20723ed8904ee5ce24af" kind="function"><name>diffWithOneInsertion</name></member>
+  </compound>
+  <compound refid="classMergeOptions" kind="class"><name>MergeOptions</name>
+    <member refid="classMergeOptions_1a3d47b82ca26cec8cb66819a220f6bae5" kind="variable"><name>enabled</name></member>
+    <member refid="classMergeOptions_1a9a843b221a422d753ae70ab37ef25e9c" kind="variable"><name>includeUnmerged</name></member>
+    <member refid="classMergeOptions_1aeb833b5a92a65dd45b977772dae48eb5" kind="variable"><name>out</name></member>
+    <member refid="classMergeOptions_1ada9bd67bd9f9d9c3ecb6426b488cdf2b" kind="function"><name>MergeOptions</name></member>
+  </compound>
+  <compound refid="classNucleotideNode" kind="class"><name>NucleotideNode</name>
+    <member refid="classNucleotideNode_1a9a91516cafc1bc4a486d8fe3ad813447" kind="variable"><name>count</name></member>
+    <member refid="classNucleotideNode_1a9d06c3c2d0e64a1cc8d0262878b80357" kind="variable"><name>base</name></member>
+    <member refid="classNucleotideNode_1ab5fed54f4b46ec9da90168a3453bffc7" kind="variable"><name>children</name></member>
+    <member refid="classNucleotideNode_1ad8679314504792b5549df4ec1b1eeb21" kind="function"><name>NucleotideNode</name></member>
+    <member refid="classNucleotideNode_1ab54e9ee7abf499a7a88328107a0952f2" kind="function"><name>~NucleotideNode</name></member>
+    <member refid="classNucleotideNode_1a3d5e621a963cca3c16aeed33d53105b8" kind="function"><name>dfs</name></member>
+  </compound>
+  <compound refid="classNucleotideTree" kind="class"><name>NucleotideTree</name>
+    <member refid="classNucleotideTree_1a976040ee498341e59ef81aac71c143f2" kind="variable"><name>mOptions</name></member>
+    <member refid="classNucleotideTree_1ab333a59c80b16db395c188fbd79b5e14" kind="variable"><name>mRoot</name></member>
+    <member refid="classNucleotideTree_1a01e9e88349d84ec59426bc20de8ade7d" kind="function"><name>NucleotideTree</name></member>
+    <member refid="classNucleotideTree_1ad1672fa610fa21f5deab703055d00094" kind="function"><name>~NucleotideTree</name></member>
+    <member refid="classNucleotideTree_1a4193d9b8cd76a6a09ffe29c0b810bd63" kind="function"><name>addSeq</name></member>
+    <member refid="classNucleotideTree_1a9b2f5fe74bd8873c7442170d8421a80a" kind="function"><name>getDominantPath</name></member>
+    <member refid="classNucleotideTree_1ae4dc5bccdecca1b7f3b19d8abda53efa" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structOffsetSlot" kind="struct"><name>OffsetSlot</name>
+    <member refid="structOffsetSlot_1af3e846bee8ff1861427c7b945eb0d004" kind="variable"><name>cumulative_offset</name></member>
+    <member refid="structOffsetSlot_1a4de0c6d01bcf34ce33692ac17a8de4c6" kind="variable"><name>published_seq</name></member>
+  </compound>
+  <compound refid="structcmdline_1_1oneof__reader" kind="struct"><name>cmdline::oneof_reader</name>
+    <member refid="structcmdline_1_1oneof__reader_1a78106c3bc54537d6ae591d0b04eab7a5" kind="variable"><name>alt</name></member>
+    <member refid="structcmdline_1_1oneof__reader_1a08342ad57fe7eae76ccdbe6af6cc572f" kind="function"><name>operator()</name></member>
+    <member refid="structcmdline_1_1oneof__reader_1af1101d86b057fae4f0dbc5bef1fb7d8c" kind="function"><name>add</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1parser_1_1option__base" kind="class"><name>cmdline::parser::option_base</name>
+    <member refid="classcmdline_1_1parser_1_1option__base_1acf2cd8b8f08c20a16691228e3592b05b" kind="function"><name>~option_base</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1a6617c8ff8b2864e8cf3182ca76f7e7ac" kind="function"><name>has_value</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1a6729965a4221ba0112ca04f8550fce5c" kind="function"><name>set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1a60444de6a257a3cca44a7a687a1d16fd" kind="function"><name>set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1aa948d89b57f4cd901bc20075ec277a04" kind="function"><name>has_set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1ae0f802a846608195166bc5ad925462e2" kind="function"><name>valid</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1aa12b58243643ca229983f5dcd5b0b82e" kind="function"><name>must</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1a340b487f3286815b11a4ee83b2364b82" kind="function"><name>name</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1aeea790198b8097ccb98a5a9063d3c81f" kind="function"><name>short_name</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1a854ab06973f9b7041aeb70fd2b7c42c5" kind="function"><name>description</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__base_1a091cab2d9f8e85a8e5e1a1a11e274aff" kind="function"><name>short_description</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1parser_1_1option__with__value" kind="class"><name>cmdline::parser::option_with_value</name>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1ac8003069cfb2662b8dd230dbfac9bd99" kind="variable"><name>nam</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a176bf293810fe0a9846585da1bef7ae5" kind="variable"><name>snam</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1adb73da6126c1ea28a2375c5b94ece4c6" kind="variable"><name>need</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1aab2cea1b63e3d310e10d00810d91ddb0" kind="variable"><name>desc</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1ac36040a12a258dfebd9240b3061ec157" kind="variable"><name>has</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a0d856f6886e383f0fe2407a95c5f590b" kind="variable"><name>def</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a0508f4b6088b0c14d256a2ec2bc4bdb8" kind="variable"><name>actual</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a5cfab4623041433b5a5a7f211eee23c9" kind="function"><name>option_with_value</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a58b664530840bd743fc559cf84b93b9d" kind="function"><name>~option_with_value</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a1bd8008e9387f9bbdc66a6cd210d3836" kind="function"><name>get</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a4bf8da186590bb770ea1d29cff75ec19" kind="function"><name>has_value</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a6bdd4adfe3afff3fe0d0c57d2259a969" kind="function"><name>set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a295815e19351f027fdbdcf00d46187d1" kind="function"><name>set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1aafe60a7f6f3e8a6928517382689e4867" kind="function"><name>has_set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1aae5ed5d511506ab324d203d31abb4a28" kind="function"><name>valid</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a3dd668a7784eaa1fdeac77367c81f489" kind="function"><name>must</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1ae9a81df3627b5a14bd8e79a07c06909b" kind="function"><name>name</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a2ebacba0864e4473cefc8a4a967f4ab1" kind="function"><name>short_name</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1aa1583b2767412a44e2ec4b2217abdbdf" kind="function"><name>description</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1a7ea043466b20ee712439276b8ba888f3" kind="function"><name>short_description</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1aa7dd340235afd5dd99b5d70692d8346c" kind="function"><name>full_description</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value_1acb922af893f383b1e00d355d7f3b6b75" kind="function"><name>read</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1parser_1_1option__with__value__with__reader" kind="class"><name>cmdline::parser::option_with_value_with_reader</name>
+    <member refid="classcmdline_1_1parser_1_1option__with__value__with__reader_1a1d06ee0129f99751c6461b7fe3dc844b" kind="variable"><name>reader</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value__with__reader_1a408c571b8600e58520f8600f84070527" kind="function"><name>option_with_value_with_reader</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__with__value__with__reader_1a47db1ae274bc54b14d8f4e414ce3549a" kind="function"><name>read</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1parser_1_1option__without__value" kind="class"><name>cmdline::parser::option_without_value</name>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a98a6a5be850373dd91562996916486f1" kind="variable"><name>nam</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a1827b8166d6d02fd052e8823ffe1a08d" kind="variable"><name>snam</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1aef631becaab8312bd32051815f63275b" kind="variable"><name>desc</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1aedd977f6d5a8b7bf092128a12682f6f6" kind="variable"><name>has</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a3a750fc5d29bd692fdefd6f41b5ce341" kind="function"><name>option_without_value</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a61b419f94d8f49212eea2c86bb2520e7" kind="function"><name>~option_without_value</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1abf481f9d4f936c8ab27fed99a747164f" kind="function"><name>has_value</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a14d3ef6f444aefebda41669d21b24008" kind="function"><name>set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1ad8e93b69a9adb63f65a793d2c8099aae" kind="function"><name>set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1aa56f159aff4c9cd7bde01294077724e8" kind="function"><name>has_set</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1ad1dd50b3fd7c7020d817d1e173240ba3" kind="function"><name>valid</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a57b95fab703aba31c702697ab25c9316" kind="function"><name>must</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a5c1c05ff75f4a5551f29152a0f5de604" kind="function"><name>name</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a6a4f9070fc44c46584515ad0a72a75af" kind="function"><name>short_name</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1adfdb7e1cc34ce9caa148f1fa11100973" kind="function"><name>description</name></member>
+    <member refid="classcmdline_1_1parser_1_1option__without__value_1a094839df784a0f6a5044ec42d682f845" kind="function"><name>short_description</name></member>
+  </compound>
+  <compound refid="classOptions" kind="class"><name>Options</name>
+    <member refid="classOptions_1a867153943d87550b22de1708a20283f4" kind="variable"><name>in1</name></member>
+    <member refid="classOptions_1a2663a57894fb248dbad36d06f843bd3f" kind="variable"><name>in2</name></member>
+    <member refid="classOptions_1a9c791494d7e9b5dc239bf270bca6773c" kind="variable"><name>out1</name></member>
+    <member refid="classOptions_1a4b8a79bb8da7fd1a7701b2a0f3f11bb2" kind="variable"><name>out2</name></member>
+    <member refid="classOptions_1addbd3e5b3ee85340af93e210c5a67119" kind="variable"><name>unpaired1</name></member>
+    <member refid="classOptions_1a6c05e96f20473f11f105fdddbc748c9e" kind="variable"><name>unpaired2</name></member>
+    <member refid="classOptions_1a2d6303a7fca31c581b777cd6764bc113" kind="variable"><name>failedOut</name></member>
+    <member refid="classOptions_1abf91da4425a1516d1feac2e7f05cf3eb" kind="variable"><name>overlappedOut</name></member>
+    <member refid="classOptions_1a56ff625b05f95289ea1267c64bc1d10c" kind="variable"><name>jsonFile</name></member>
+    <member refid="classOptions_1ae18cc08006898e9f836b5a6c5352a2f6" kind="variable"><name>htmlFile</name></member>
+    <member refid="classOptions_1a33eb0827641e09a164e40e2dbc221de2" kind="variable"><name>reportTitle</name></member>
+    <member refid="classOptions_1a1aed9ab748113ac3b4f8e4a37d12d56d" kind="variable"><name>compression</name></member>
+    <member refid="classOptions_1ac45b72d19f458d16919fe63be8c9c8c2" kind="variable"><name>phred64</name></member>
+    <member refid="classOptions_1a30e4e9592ecb76499dd68fb66b872561" kind="variable"><name>dontOverwrite</name></member>
+    <member refid="classOptions_1aafe6b1439eaa776263ac8568c2cc8e2c" kind="variable"><name>inputFromSTDIN</name></member>
+    <member refid="classOptions_1a6dd223e9b98ca2760d6b89fb4c30af42" kind="variable"><name>outputToSTDOUT</name></member>
+    <member refid="classOptions_1aea3b69af761016c407a0c69623a5c4b7" kind="variable"><name>interleavedInput</name></member>
+    <member refid="classOptions_1aa632a4f70ac7aa1d2694d8aedb236fd4" kind="variable"><name>readsToProcess</name></member>
+    <member refid="classOptions_1add32d97f9897d4ecee65c8d71fe66d8a" kind="variable"><name>fixMGI</name></member>
+    <member refid="classOptions_1a17ed7d97ffc6c85ec7d1a4279d7f79a3" kind="variable"><name>thread</name></member>
+    <member refid="classOptions_1a9a36c385d3551208d57f9cece88b2e22" kind="variable"><name>trim</name></member>
+    <member refid="classOptions_1a9c549e5b7b31497e356ef740de44a3b9" kind="variable"><name>qualfilter</name></member>
+    <member refid="classOptions_1a24e6a0097f4e22f0efbf60749a39ad21" kind="variable"><name>lengthFilter</name></member>
+    <member refid="classOptions_1af08ef7491aea7025205eb593c00093fd" kind="variable"><name>adapter</name></member>
+    <member refid="classOptions_1ade71d85bc107c67e8e6c3e4c1032e12a" kind="variable"><name>split</name></member>
+    <member refid="classOptions_1aee9b2785fa43d178a4a600c05d108bca" kind="variable"><name>qualityCut</name></member>
+    <member refid="classOptions_1a2a224dbab4c8d8a508a7c1dc3b111b3f" kind="variable"><name>correction</name></member>
+    <member refid="classOptions_1aca57a9fc44e26fc73c1f98e87b515818" kind="variable"><name>umi</name></member>
+    <member refid="classOptions_1a70a604ae8c23c944eccdc4ae8c723563" kind="variable"><name>polyGTrim</name></member>
+    <member refid="classOptions_1a73af0c454838a42eb903289fc1862478" kind="variable"><name>polyXTrim</name></member>
+    <member refid="classOptions_1ab921d7a7d4f79284f02c09828dea20d8" kind="variable"><name>overRepAnalysis</name></member>
+    <member refid="classOptions_1ac5c3bf17db780c4d53ae4dee622572fb" kind="variable"><name>overRepSeqs1</name></member>
+    <member refid="classOptions_1a4d07f14084acd69dc3c934f4357ee98f" kind="variable"><name>overRepSeqs2</name></member>
+    <member refid="classOptions_1aa9eb3c81561f72107a83ea0916134f3b" kind="variable"><name>seqLen1</name></member>
+    <member refid="classOptions_1a9db285ebd621e0f10d0ac4c96c87f9ee" kind="variable"><name>seqLen2</name></member>
+    <member refid="classOptions_1afcfa6c7f8ce55e09a31fdf332e31239c" kind="variable"><name>complexityFilter</name></member>
+    <member refid="classOptions_1aee7b084d86aad106f69fad176e993d85" kind="variable"><name>indexFilter</name></member>
+    <member refid="classOptions_1a7c560dfc5ad0c0ef0a72be3bde0bdf57" kind="variable"><name>duplicate</name></member>
+    <member refid="classOptions_1ac3d553b690e7c29c4124d42cf1f2dfff" kind="variable"><name>insertSizeMax</name></member>
+    <member refid="classOptions_1adb967c5e73e2884a1e1d5c142a6be75a" kind="variable"><name>overlapRequire</name></member>
+    <member refid="classOptions_1adcae7e271b99c64a5371019e54a2d1ef" kind="variable"><name>overlapDiffLimit</name></member>
+    <member refid="classOptions_1a22a205937d87423b3d051e988c2efafb" kind="variable"><name>overlapDiffPercentLimit</name></member>
+    <member refid="classOptions_1abaa084df3c7ed900634b4d187aa58ea0" kind="variable"><name>verbose</name></member>
+    <member refid="classOptions_1a7be5bed96d23e92d9154cd9dbd9b2036" kind="variable"><name>merge</name></member>
+    <member refid="classOptions_1a5913dc2fd969d6128b09ca7f1aafd86f" kind="variable"><name>writerBufferSize</name></member>
+    <member refid="classOptions_1ab72fb640172a6109e34c8a5366563753" kind="function"><name>Options</name></member>
+    <member refid="classOptions_1ae4b17f909414d89c505db817a39608db" kind="function"><name>init</name></member>
+    <member refid="classOptions_1ac12e9cc14732d8f545170ce92f76d4a4" kind="function"><name>isPaired</name></member>
+    <member refid="classOptions_1a6871fc2c01fb3d11b605149e71962f33" kind="function"><name>validate</name></member>
+    <member refid="classOptions_1ab257f1a699b3631813f2c4df6dfe54fe" kind="function"><name>adapterCuttingEnabled</name></member>
+    <member refid="classOptions_1ac3ce80db1b153984ab7f40b5584715e5" kind="function"><name>polyXTrimmingEnabled</name></member>
+    <member refid="classOptions_1a9b1b48038f8a323d2f821f96c4593e7b" kind="function"><name>getAdapter1</name></member>
+    <member refid="classOptions_1a4de05c86b46d2d7ce2a88f149fefa7b3" kind="function"><name>getAdapter2</name></member>
+    <member refid="classOptions_1ac4278f42d3ab2db76bb5adef237c1ff5" kind="function"><name>initIndexFiltering</name></member>
+    <member refid="classOptions_1aa27446a132792738f4c1e4d16964309a" kind="function"><name>makeListFromFileByLine</name></member>
+    <member refid="classOptions_1a5dbbf87d408711f24deecd3e786d4273" kind="function"><name>shallDetectAdapter</name></member>
+    <member refid="classOptions_1ac109dc037a08b45c3b4dc964ebbd97c2" kind="function"><name>loadFastaAdapters</name></member>
+  </compound>
+  <compound refid="classOverlapAnalysis" kind="class"><name>OverlapAnalysis</name>
+    <member refid="classOverlapAnalysis_1a266dbf56120f22cf47917228c9708cb0" kind="function"><name>OverlapAnalysis</name></member>
+    <member refid="classOverlapAnalysis_1a71e3d057d972244d794bc89f43644449" kind="function"><name>~OverlapAnalysis</name></member>
+    <member refid="classOverlapAnalysis_1a0e7ca83bab963df0c2fa5fe412556e66" kind="function"><name>analyze</name></member>
+    <member refid="classOverlapAnalysis_1ae6684b2c48bf00041307393b195fdc5b" kind="function"><name>analyze</name></member>
+    <member refid="classOverlapAnalysis_1adc1adda85d3ec75224d5cb2f13179b07" kind="function"><name>merge</name></member>
+    <member refid="classOverlapAnalysis_1ab295b094006e4f42e56988b93645afa2" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="classOverlapResult" kind="class"><name>OverlapResult</name>
+    <member refid="classOverlapResult_1a0d0f672ba3de27b761455ecab4775e7d" kind="variable"><name>overlapped</name></member>
+    <member refid="classOverlapResult_1a620e9b344e2e20f87bad0b223f1f8f28" kind="variable"><name>offset</name></member>
+    <member refid="classOverlapResult_1ac387d549618c2b40902fcc3d32c971d5" kind="variable"><name>overlap_len</name></member>
+    <member refid="classOverlapResult_1a66087523a68e044fa3ece5248d7d6f46" kind="variable"><name>diff</name></member>
+    <member refid="classOverlapResult_1a28e727f83b748a386c1df79b49fea10d" kind="variable"><name>hasGap</name></member>
+  </compound>
+  <compound refid="classOverrepresentedSequenceAnasysOptions" kind="class"><name>OverrepresentedSequenceAnasysOptions</name>
+    <member refid="classOverrepresentedSequenceAnasysOptions_1afca60512bf9a402355cb56d6fb382200" kind="variable"><name>enabled</name></member>
+    <member refid="classOverrepresentedSequenceAnasysOptions_1a3c357eb931d4a1b8bae0b695461b2e3f" kind="variable"><name>sampling</name></member>
+    <member refid="classOverrepresentedSequenceAnasysOptions_1aa15c1166e77e9c03ead53aea94e4443b" kind="function"><name>OverrepresentedSequenceAnasysOptions</name></member>
+  </compound>
+  <compound refid="classPairEndProcessor" kind="class"><name>PairEndProcessor</name>
+    <member refid="classPairEndProcessor_1a92288ad801f2248de839d1a620c37569" kind="variable"><name>mLeftReaderFinished</name></member>
+    <member refid="classPairEndProcessor_1ad619db5cc0740f86213c5ad9a6363785" kind="variable"><name>mRightReaderFinished</name></member>
+    <member refid="classPairEndProcessor_1aca493df06ba9f829eabd9f3462b40afa" kind="variable"><name>mFinishedThreads</name></member>
+    <member refid="classPairEndProcessor_1a3eca167a1dc7a6c56a5f955bcd413a93" kind="variable"><name>mOptions</name></member>
+    <member refid="classPairEndProcessor_1ace9be7f93e4f28aa537b335fdcf9d692" kind="variable"><name>mFilter</name></member>
+    <member refid="classPairEndProcessor_1af2763af2a1066fa2ac529efbe2ba1228" kind="variable"><name>mUmiProcessor</name></member>
+    <member refid="classPairEndProcessor_1a388e2a6911b141ae3ac560437f43c325" kind="variable"><name>mInsertSizeHist</name></member>
+    <member refid="classPairEndProcessor_1a698c38feeb4ede125ffd61815599cfe1" kind="variable"><name>mLeftWriter</name></member>
+    <member refid="classPairEndProcessor_1a19a4c96bf685d8d01e89438f2fbcaf66" kind="variable"><name>mRightWriter</name></member>
+    <member refid="classPairEndProcessor_1adfe34f92e0f443642a22fb9b953746bb" kind="variable"><name>mUnpairedLeftWriter</name></member>
+    <member refid="classPairEndProcessor_1a64990bd5e99bfaf98925b7b03d36c52c" kind="variable"><name>mUnpairedRightWriter</name></member>
+    <member refid="classPairEndProcessor_1a0d28dfdb0f62ebcfbf57101b3d3e51ff" kind="variable"><name>mMergedWriter</name></member>
+    <member refid="classPairEndProcessor_1aa911b5334cfcd75ecfec5956626acd35" kind="variable"><name>mFailedWriter</name></member>
+    <member refid="classPairEndProcessor_1a3f3fe32e3bcb3130d9daee5a93cbd874" kind="variable"><name>mOverlappedWriter</name></member>
+    <member refid="classPairEndProcessor_1a32318768b37c7252f1e5780af5cef94e" kind="variable"><name>mDuplicate</name></member>
+    <member refid="classPairEndProcessor_1abdb66a6b67dc33a5b90296454fa36236" kind="variable"><name>mLeftInputLists</name></member>
+    <member refid="classPairEndProcessor_1a11cb9e95cdc58c258920c6cd5a25a553" kind="variable"><name>mRightInputLists</name></member>
+    <member refid="classPairEndProcessor_1a421be6fd44051e3bc12a1240e4c870ed" kind="variable"><name>mLeftPackReadCounter</name></member>
+    <member refid="classPairEndProcessor_1a554eedf8169ecb89fc1ac4631c4e51b7" kind="variable"><name>mRightPackReadCounter</name></member>
+    <member refid="classPairEndProcessor_1af3a01b94aa0ff99508315c62fbca85cb" kind="variable"><name>mPackProcessedCounter</name></member>
+    <member refid="classPairEndProcessor_1a1bb8e19c273ece53d93f8e696958fb4a" kind="variable"><name>mLeftReadPool</name></member>
+    <member refid="classPairEndProcessor_1a185d1ee9ac28144f533d8e419d14b53a" kind="variable"><name>mRightReadPool</name></member>
+    <member refid="classPairEndProcessor_1a39bc23e5df6558c15e6b5df802c89a67" kind="variable"><name>shouldStopReading</name></member>
+    <member refid="classPairEndProcessor_1a359bab39dc18e283fc284c74d9298ebb" kind="variable"><name>mBackpressureMtx</name></member>
+    <member refid="classPairEndProcessor_1a5325bc1785a2a9f59b42593771a23c67" kind="variable"><name>mBackpressureCV</name></member>
+    <member refid="classPairEndProcessor_1a5c8f0062f8e980e06a07bba4abfb04d9" kind="function"><name>PairEndProcessor</name></member>
+    <member refid="classPairEndProcessor_1a51025ff3f6fbd889977b071a1336c12a" kind="function"><name>~PairEndProcessor</name></member>
+    <member refid="classPairEndProcessor_1a49f131a3f2c6ae7554e3c143974263ee" kind="function"><name>process</name></member>
+    <member refid="classPairEndProcessor_1a28a9e02adbac691bd43c6928e9b9fb18" kind="function"><name>processPairEnd</name></member>
+    <member refid="classPairEndProcessor_1a1652c055e6febf6340c3bafcaff5b0f0" kind="function"><name>readerTask</name></member>
+    <member refid="classPairEndProcessor_1a6a25f324d2008e6f9e97efef7c66355a" kind="function"><name>interleavedReaderTask</name></member>
+    <member refid="classPairEndProcessor_1ac28979108069f4202f571446dbe32488" kind="function"><name>processorTask</name></member>
+    <member refid="classPairEndProcessor_1a5e9b5e8ade9d8ff37d91bacd63584f35" kind="function"><name>initConfig</name></member>
+    <member refid="classPairEndProcessor_1a4030de52f1242d7ac36a3b819c23d323" kind="function"><name>initOutput</name></member>
+    <member refid="classPairEndProcessor_1a61f9315b141f7808fa440fde0d8359cc" kind="function"><name>closeOutput</name></member>
+    <member refid="classPairEndProcessor_1a1ed09b1ed350ac890be50f5f69a58fe0" kind="function"><name>statInsertSize</name></member>
+    <member refid="classPairEndProcessor_1a8bfd34fbf2e72d18f04c1b1678e39180" kind="function"><name>getPeakInsertSize</name></member>
+    <member refid="classPairEndProcessor_1ade953e1dab59cbd4fc658bbcbed953bc" kind="function"><name>writerTask</name></member>
+    <member refid="classPairEndProcessor_1ac586284e4c745c4c38ade2c6fffd06b9" kind="function"><name>recycleToPool1</name></member>
+    <member refid="classPairEndProcessor_1ac8547a1681e4f572ab892d3b63bb23c0" kind="function"><name>recycleToPool2</name></member>
+  </compound>
+  <compound refid="classcmdline_1_1parser" kind="class"><name>cmdline::parser</name>
+    <member refid="classcmdline_1_1parser_1a4205b1e938b5190672298c3c4a8e6de5" kind="variable"><name>options</name></member>
+    <member refid="classcmdline_1_1parser_1a84bdf2ea140a970f1acdcb51e12bec2c" kind="variable"><name>ordered</name></member>
+    <member refid="classcmdline_1_1parser_1a260075b8d293161c7357f50b7cf71e88" kind="variable"><name>ftr</name></member>
+    <member refid="classcmdline_1_1parser_1aacbd60921933dfc5606d22dbe1e30625" kind="variable"><name>prog_name</name></member>
+    <member refid="classcmdline_1_1parser_1aee5711cafc2f46c238fadf593e08e599" kind="variable"><name>others</name></member>
+    <member refid="classcmdline_1_1parser_1a2818ba785f310ba0f88359d1ba9833cc" kind="variable"><name>errors</name></member>
+    <member refid="classcmdline_1_1parser_1a436c7cba6efd596729d18d58f1016cad" kind="function"><name>parser</name></member>
+    <member refid="classcmdline_1_1parser_1ad656d8b9b4a38ce85cd2b630c4fc9a6d" kind="function"><name>~parser</name></member>
+    <member refid="classcmdline_1_1parser_1a122aab1fb389f16170397971be1e75b6" kind="function"><name>add</name></member>
+    <member refid="classcmdline_1_1parser_1af97ab18f409599df07146da819c96bae" kind="function"><name>add</name></member>
+    <member refid="classcmdline_1_1parser_1aa6d002a3ef165c240d65c1e87f61a77c" kind="function"><name>add</name></member>
+    <member refid="classcmdline_1_1parser_1a00f22e1d9ac1b8d73dfc990b4f87a598" kind="function"><name>footer</name></member>
+    <member refid="classcmdline_1_1parser_1afdf4cb8deaead2d735c7803ede5b6b6a" kind="function"><name>set_program_name</name></member>
+    <member refid="classcmdline_1_1parser_1abe6c9ad7c3991062076917de0514376c" kind="function"><name>exist</name></member>
+    <member refid="classcmdline_1_1parser_1a5a28fa4f122ee70230c291187196edac" kind="function"><name>get</name></member>
+    <member refid="classcmdline_1_1parser_1a75193000dd4842d7bf249e4f99a5d52e" kind="function"><name>rest</name></member>
+    <member refid="classcmdline_1_1parser_1ab8ca75cca3abf36b9474edcf0ce21ca6" kind="function"><name>parse</name></member>
+    <member refid="classcmdline_1_1parser_1a745c9519abe50562987487b6bf794fd7" kind="function"><name>parse</name></member>
+    <member refid="classcmdline_1_1parser_1a83175f24d7d9e29256b855fb249f427b" kind="function"><name>parse</name></member>
+    <member refid="classcmdline_1_1parser_1af22be174b0ab09f03462c02e9afa03c9" kind="function"><name>parse_check</name></member>
+    <member refid="classcmdline_1_1parser_1a0829039262c93910a9fee8c80f3edb64" kind="function"><name>parse_check</name></member>
+    <member refid="classcmdline_1_1parser_1a9c1aebc54c4bc0387c884888185b4941" kind="function"><name>parse_check</name></member>
+    <member refid="classcmdline_1_1parser_1a9bcaaea243a949bf30a40d938480d303" kind="function"><name>error</name></member>
+    <member refid="classcmdline_1_1parser_1a0267b636f34a788f57d5eeffcc5daf44" kind="function"><name>error_full</name></member>
+    <member refid="classcmdline_1_1parser_1a50b57c8179fe1b0dd8f5d2b8e8f3261b" kind="function"><name>usage</name></member>
+    <member refid="classcmdline_1_1parser_1aff0a9fa22a3263996f9dff90b16dd661" kind="function"><name>check</name></member>
+    <member refid="classcmdline_1_1parser_1a98e10dc469505563b643ea5166ac1d59" kind="function"><name>set_option</name></member>
+    <member refid="classcmdline_1_1parser_1ab43ce046c972a052c89cd9caaabd4327" kind="function"><name>set_option</name></member>
+  </compound>
+  <compound refid="classPolyGTrimmerOptions" kind="class"><name>PolyGTrimmerOptions</name>
+    <member refid="classPolyGTrimmerOptions_1a77674bfc862c07ee667afad1a36780ad" kind="variable"><name>enabled</name></member>
+    <member refid="classPolyGTrimmerOptions_1ab42ab7f2345a43f402aaefda8e692efe" kind="variable"><name>minLen</name></member>
+    <member refid="classPolyGTrimmerOptions_1a8dd7c16744b76acc50a3d49e77a829e8" kind="function"><name>PolyGTrimmerOptions</name></member>
+  </compound>
+  <compound refid="classPolyX" kind="class"><name>PolyX</name>
+    <member refid="classPolyX_1afb9de7c81297f8d3f5a0150b1bc9df94" kind="function"><name>PolyX</name></member>
+    <member refid="classPolyX_1a498d114f01deb45c0ea47cbc7866d95c" kind="function"><name>~PolyX</name></member>
+    <member refid="classPolyX_1a437b5fffe70228992725ed675b54a02f" kind="function"><name>trimPolyG</name></member>
+    <member refid="classPolyX_1ad43467fb07b4c12a1f71476cd1e07115" kind="function"><name>trimPolyG</name></member>
+    <member refid="classPolyX_1aeea5e3b34e70160d188f4ead1e27171e" kind="function"><name>trimPolyX</name></member>
+    <member refid="classPolyX_1aff1bf321abdf542fb591d1ffbdc6864a" kind="function"><name>trimPolyX</name></member>
+    <member refid="classPolyX_1a2b5f55b597189844fe5810cc9dc088be" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="classPolyXTrimmerOptions" kind="class"><name>PolyXTrimmerOptions</name>
+    <member refid="classPolyXTrimmerOptions_1ad0d3f0b56df99447f20bb13503ebab71" kind="variable"><name>enabled</name></member>
+    <member refid="classPolyXTrimmerOptions_1a9c37df68dc84f35a50f703599e12ae3c" kind="variable"><name>minLen</name></member>
+    <member refid="classPolyXTrimmerOptions_1af0cfdb1648c5d2f1d2500cba2fd5b833" kind="function"><name>PolyXTrimmerOptions</name></member>
+  </compound>
+  <compound refid="classProcessor" kind="class"><name>Processor</name>
+    <member refid="classProcessor_1a5bfcc02e2b3405a3ae6bd7c612973f3d" kind="variable"><name>mOptions</name></member>
+    <member refid="classProcessor_1a28d7440d2342de961f7d2a18cf1407ea" kind="function"><name>Processor</name></member>
+    <member refid="classProcessor_1acf37952c5b420d4e903a512571678692" kind="function"><name>~Processor</name></member>
+    <member refid="classProcessor_1a1ffecb072194e88c45ff236c5ed85a81" kind="function"><name>process</name></member>
+  </compound>
+  <compound refid="classQualityCutOptions" kind="class"><name>QualityCutOptions</name>
+    <member refid="classQualityCutOptions_1a4f5910cea11e4dc2871a15d349ca917d" kind="variable"><name>enabledFront</name></member>
+    <member refid="classQualityCutOptions_1af20afe9df0a78bb9a5826b8f6df3c6cb" kind="variable"><name>enabledTail</name></member>
+    <member refid="classQualityCutOptions_1a267fad1128ce9da0b8e324d98ffb98d5" kind="variable"><name>enabledRight</name></member>
+    <member refid="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" kind="variable"><name>windowSizeShared</name></member>
+    <member refid="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" kind="variable"><name>qualityShared</name></member>
+    <member refid="classQualityCutOptions_1a13a2206b42006dec1fb9d51041071322" kind="variable"><name>windowSizeFront</name></member>
+    <member refid="classQualityCutOptions_1a3344ddbd8f314e2e9e6eda3072e04b49" kind="variable"><name>qualityFront</name></member>
+    <member refid="classQualityCutOptions_1aa1d24968edde023c42f6b92921a15f4f" kind="variable"><name>windowSizeTail</name></member>
+    <member refid="classQualityCutOptions_1a2185fb830e5a537bfd6a328005819952" kind="variable"><name>qualityTail</name></member>
+    <member refid="classQualityCutOptions_1aad3c713c7a6baf90f178fcf6371da7ca" kind="variable"><name>windowSizeRight</name></member>
+    <member refid="classQualityCutOptions_1a86cc0d06bc8235a11cd74c3d60038bd5" kind="variable"><name>qualityRight</name></member>
+    <member refid="classQualityCutOptions_1a80bb792c47b21fadd409dd690d747120" kind="function"><name>QualityCutOptions</name></member>
+  </compound>
+  <compound refid="classQualityFilteringOptions" kind="class"><name>QualityFilteringOptions</name>
+    <member refid="classQualityFilteringOptions_1a960065ab1d164c7da6645254aa3d0389" kind="variable"><name>enabled</name></member>
+    <member refid="classQualityFilteringOptions_1ac114a0855a376facbd302079514e89f5" kind="variable"><name>qualifiedQual</name></member>
+    <member refid="classQualityFilteringOptions_1a595a8d5eea688533159b482537a82f1a" kind="variable"><name>unqualifiedPercentLimit</name></member>
+    <member refid="classQualityFilteringOptions_1a1f06938c9ffcaaaef649d79422d132b7" kind="variable"><name>nBaseLimit</name></member>
+    <member refid="classQualityFilteringOptions_1a06d6b1fa8736e1c17eed13c259058e91" kind="variable"><name>avgQualReq</name></member>
+    <member refid="classQualityFilteringOptions_1a8bbb687f51ff0f5f5b05803eaacf099a" kind="function"><name>QualityFilteringOptions</name></member>
+  </compound>
+  <compound refid="structcmdline_1_1range__reader" kind="struct"><name>cmdline::range_reader</name>
+    <member refid="structcmdline_1_1range__reader_1a60c345e84d2a96dcd2de47a66eca8104" kind="variable"><name>low</name></member>
+    <member refid="structcmdline_1_1range__reader_1ad1ef134b223c59257fff990b99c54ee4" kind="variable"><name>high</name></member>
+    <member refid="structcmdline_1_1range__reader_1a7b31d754293d2f2f3df49b40a6e95a5a" kind="function"><name>range_reader</name></member>
+    <member refid="structcmdline_1_1range__reader_1a81dfb7277756d5b23f816481db121a20" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classRead" kind="class"><name>Read</name>
+    <member refid="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" kind="variable"><name>mName</name></member>
+    <member refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kind="variable"><name>mSeq</name></member>
+    <member refid="classRead_1a35a15be184b2456bb012eb3e938ccea8" kind="variable"><name>mStrand</name></member>
+    <member refid="classRead_1aab4ffbb6b9ca25898cbab51923526092" kind="variable"><name>mQuality</name></member>
+    <member refid="classRead_1a72c9e2290cf8c794558a3e7d0507ca4a" kind="function"><name>Read</name></member>
+    <member refid="classRead_1a3f2637bd14bd268c7e66dc84e925f8f4" kind="function"><name>Read</name></member>
+    <member refid="classRead_1a08d6c302dc2478f6a479c9ebc4350828" kind="function"><name>~Read</name></member>
+    <member refid="classRead_1aa4abac4521d71824a4306dc3d0277b20" kind="function"><name>print</name></member>
+    <member refid="classRead_1afb48f45ec769f5415cc131d2c7897d69" kind="function"><name>printFile</name></member>
+    <member refid="classRead_1ab174708c21a3423e34a84fe82fe589c3" kind="function"><name>reverseComplement</name></member>
+    <member refid="classRead_1a7f89589fb5b4218377f16d1fec89fb5d" kind="function"><name>firstIndex</name></member>
+    <member refid="classRead_1a258e5420bb4a2d598d83dcfe37daf9d0" kind="function"><name>lastIndex</name></member>
+    <member refid="classRead_1a97b44c2731a781029981ab558f0a3a3b" kind="function"><name>lowQualCount</name></member>
+    <member refid="classRead_1ace429c91f54e941be218efa5ea4df299" kind="function"><name>length</name></member>
+    <member refid="classRead_1a7c58e168bdacb8a14d99624334e769ff" kind="function"><name>toString</name></member>
+    <member refid="classRead_1a74196dd9084f16947fa92f6b0eb00e8c" kind="function"><name>toStringWithTag</name></member>
+    <member refid="classRead_1a07052c7a404ae9d8f233fe0dde4260f5" kind="function"><name>appendToString</name></member>
+    <member refid="classRead_1ac7c4ebfdb66573e20c493eba6835ddd4" kind="function"><name>appendToStringWithTag</name></member>
+    <member refid="classRead_1a6ad42dd210ed4766e5eb5cf6e53f5562" kind="function"><name>resize</name></member>
+    <member refid="classRead_1a27854545a1385a16bdab760dfcc9ae17" kind="function"><name>convertPhred64To33</name></member>
+    <member refid="classRead_1ada3719d937b1c4c0920371a8089364c4" kind="function"><name>trimFront</name></member>
+    <member refid="classRead_1a28c440362f78c2971ee6586a9ca48a0d" kind="function"><name>fixMGI</name></member>
+    <member refid="classRead_1a9280b4341e197bf54c75ef9a0ba83f24" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="classReadLengthFilteringOptions" kind="class"><name>ReadLengthFilteringOptions</name>
+    <member refid="classReadLengthFilteringOptions_1a9d5983b4aab445ab6746e300cc40b9c6" kind="variable"><name>enabled</name></member>
+    <member refid="classReadLengthFilteringOptions_1af2af82f1835af877e2837aee40bd9753" kind="variable"><name>requiredLength</name></member>
+    <member refid="classReadLengthFilteringOptions_1a59218c1e035c857cbd8ee8e82d73468e" kind="variable"><name>maxLength</name></member>
+    <member refid="classReadLengthFilteringOptions_1a90e5ecad9e3be9b824e732a1b39ff056" kind="function"><name>ReadLengthFilteringOptions</name></member>
+  </compound>
+  <compound refid="structReadPack" kind="struct"><name>ReadPack</name>
+    <member refid="structReadPack_1aaf934266511e976590a5cf251f514400" kind="variable"><name>data</name></member>
+    <member refid="structReadPack_1a8e60d572d5922f78ca9d8a2a2c604c42" kind="variable"><name>count</name></member>
+  </compound>
+  <compound refid="classReadPair" kind="class"><name>ReadPair</name>
+    <member refid="classReadPair_1afc7223bfd8146ffefa812c636dc46cfc" kind="variable"><name>mLeft</name></member>
+    <member refid="classReadPair_1a2c8801e4cbbaca4c503d5d771f50ebc3" kind="variable"><name>mRight</name></member>
+    <member refid="classReadPair_1ab5f81f0389b6f14665fed2ac6f93c2ce" kind="function"><name>ReadPair</name></member>
+    <member refid="classReadPair_1af93f0edc036beb79c428e2eb069f98a8" kind="function"><name>~ReadPair</name></member>
+    <member refid="classReadPair_1a96b9dc3317b483df952bab74de890809" kind="function"><name>setPair</name></member>
+    <member refid="classReadPair_1ad1d3ff813ebb28111e645a19ed012046" kind="function"><name>eof</name></member>
+    <member refid="classReadPair_1a6463c5ed13cd48aed6485ad8c5d80f54" kind="function"><name>fastMerge</name></member>
+    <member refid="classReadPair_1a9233aecc6c48fe8e485da0358c148737" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="classReadPool" kind="class"><name>ReadPool</name>
+    <member refid="classReadPool_1a3c9368db6a2c159ecd7413273649b9db" kind="variable"><name>mOptions</name></member>
+    <member refid="classReadPool_1a111f8ebf35d25500709fe93d2b51381f" kind="variable"><name>mBufferLists</name></member>
+    <member refid="classReadPool_1aae1704c64552b788533e2811dbaa8edf" kind="variable"><name>mProduced</name></member>
+    <member refid="classReadPool_1a1cd1bb4013436d075e115e180073cedb" kind="variable"><name>mConsumed</name></member>
+    <member refid="classReadPool_1a6e366610d7da83db5aba13ccafdf1e56" kind="variable"><name>mLimit</name></member>
+    <member refid="classReadPool_1a1466ad7e924bd613a382797334befb73" kind="variable"><name>mIsFull</name></member>
+    <member refid="classReadPool_1a825e4a1cd2b8445e1fe0d06b1f4eb432" kind="function"><name>ReadPool</name></member>
+    <member refid="classReadPool_1a649907fc0ebf67cb25cf807719345a90" kind="function"><name>~ReadPool</name></member>
+    <member refid="classReadPool_1a84def75bf8adf5aa647d177526422cb5" kind="function"><name>input</name></member>
+    <member refid="classReadPool_1ae6f0349e3cc99f3127f84e4a4fe16907" kind="function"><name>getOne</name></member>
+    <member refid="classReadPool_1a51b4843262445cbe3655d1d4519a1fae" kind="function"><name>initBufferLists</name></member>
+    <member refid="classReadPool_1ab64601b8e4cbd985ceb07f5c193eb189" kind="function"><name>cleanup</name></member>
+    <member refid="classReadPool_1ae265b7030e0718d847858b17d88829a9" kind="function"><name>size</name></member>
+    <member refid="classReadPool_1aaff28dd30958fae192e4a6fc4edbd4c0" kind="function"><name>updateFullStatus</name></member>
+  </compound>
+  <compound refid="classSequence" kind="class"><name>Sequence</name>
+    <member refid="classSequence_1a1c568ccf91d1675946f7f907399f78d4" kind="variable"><name>mStr</name></member>
+    <member refid="classSequence_1a532b7e8df6ff6b2f990c14ae97859ca2" kind="function"><name>Sequence</name></member>
+    <member refid="classSequence_1ab8a49ff2126c53c3598ebf30812f59e7" kind="function"><name>Sequence</name></member>
+    <member refid="classSequence_1aee09a7d70c3ab523fed85da94ea1366f" kind="function"><name>~Sequence</name></member>
+    <member refid="classSequence_1ae2eb4b3b44c4228c70372ba5cda3caa9" kind="function"><name>print</name></member>
+    <member refid="classSequence_1af60c28c88a665246648c52e69d6bbe8a" kind="function"><name>length</name></member>
+    <member refid="classSequence_1a34ec54c222835581371e4b62e3f673f3" kind="function"><name>reverseComplement</name></member>
+    <member refid="classSequence_1a213790aea5fca0490b5108c2b99234a6" kind="function"><name>operator~</name></member>
+    <member refid="classSequence_1a96a8d5cebf940fca7c5193ab80273c82" kind="function"><name>test</name></member>
+    <member refid="classSequence_1ac447cc53268abf442518d40a8523beeb" kind="function"><name>reverseComplement</name></member>
+  </compound>
+  <compound refid="classSingleEndProcessor" kind="class"><name>SingleEndProcessor</name>
+    <member refid="classSingleEndProcessor_1a6059329cf8ba803109dc3e2d36761e0a" kind="variable"><name>mOptions</name></member>
+    <member refid="classSingleEndProcessor_1a890cdf4098c90cb744c8570e16179137" kind="variable"><name>mReaderFinished</name></member>
+    <member refid="classSingleEndProcessor_1a1402e30a474628f53eec6d9856e69aa4" kind="variable"><name>mFinishedThreads</name></member>
+    <member refid="classSingleEndProcessor_1ad912dbe7a716206d219acda8b7fc8353" kind="variable"><name>mFilter</name></member>
+    <member refid="classSingleEndProcessor_1a65df518c3160d8f3044e4c7a2c8290a7" kind="variable"><name>mUmiProcessor</name></member>
+    <member refid="classSingleEndProcessor_1a1fad72710625479ad4d40ac6446abe2a" kind="variable"><name>mLeftWriter</name></member>
+    <member refid="classSingleEndProcessor_1a0f60e8f7f2f61ac138acd6623616bf4d" kind="variable"><name>mFailedWriter</name></member>
+    <member refid="classSingleEndProcessor_1ae0bb52b08011d7ed9b550c1764f4befc" kind="variable"><name>mDuplicate</name></member>
+    <member refid="classSingleEndProcessor_1a830dac4b4a410f01f30c412b0c54cfa5" kind="variable"><name>mInputLists</name></member>
+    <member refid="classSingleEndProcessor_1a73ae44ab8a034d023e5aaade84eeda36" kind="variable"><name>mPackReadCounter</name></member>
+    <member refid="classSingleEndProcessor_1a7d3c968d3c4cd97f1492562ed07b7bed" kind="variable"><name>mPackProcessedCounter</name></member>
+    <member refid="classSingleEndProcessor_1a069271c1e226a4a70af4dfe7af524d01" kind="variable"><name>mReadPool</name></member>
+    <member refid="classSingleEndProcessor_1a6a3b727418f1d61c222f469fda5b5ad2" kind="variable"><name>mBackpressureMtx</name></member>
+    <member refid="classSingleEndProcessor_1a7510e45c48aa401028e5a6db13173b9d" kind="variable"><name>mBackpressureCV</name></member>
+    <member refid="classSingleEndProcessor_1a23517a53bf114797efd701582dee0bd6" kind="function"><name>SingleEndProcessor</name></member>
+    <member refid="classSingleEndProcessor_1a200e744048328418b3f4c5e4cfe1e9db" kind="function"><name>~SingleEndProcessor</name></member>
+    <member refid="classSingleEndProcessor_1a0a884b7985b3b5eca45bf371fbfed1b7" kind="function"><name>process</name></member>
+    <member refid="classSingleEndProcessor_1aec4c12b0c0136eb961a5134a645b8714" kind="function"><name>processSingleEnd</name></member>
+    <member refid="classSingleEndProcessor_1aa705b2b4e1bc9f4b321e835bcc3425b0" kind="function"><name>readerTask</name></member>
+    <member refid="classSingleEndProcessor_1af9bb82a7162e6a3ba59d52013262a5ac" kind="function"><name>processorTask</name></member>
+    <member refid="classSingleEndProcessor_1a4ba145f919e7d68855a436c31b6c8468" kind="function"><name>initConfig</name></member>
+    <member refid="classSingleEndProcessor_1a0d0fdb7d4c150cd3e2f8e98df15e8062" kind="function"><name>initOutput</name></member>
+    <member refid="classSingleEndProcessor_1ae602db756c00dbab997e5f9e41ce1ff2" kind="function"><name>closeOutput</name></member>
+    <member refid="classSingleEndProcessor_1aab7f54169933a17185add9ac7118aeb3" kind="function"><name>writerTask</name></member>
+    <member refid="classSingleEndProcessor_1a7a56680ab84e4dd860fa1eebe4d5512c" kind="function"><name>recycleToPool</name></member>
+  </compound>
+  <compound refid="classSingleProducerSingleConsumerList" kind="class"><name>SingleProducerSingleConsumerList</name>
+    <member refid="classSingleProducerSingleConsumerList_1a6c87befc1b420fedaa69502696647719" kind="variable"><name>head</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1ae4ebcc4426cbd3536e316069eb70b472" kind="variable"><name>tail</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a4c080c6fb829eca3be473747cd46b50d" kind="variable"><name>blocks</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a7c8ac0a454151e09c283645805d9842f" kind="variable"><name>producerFinished</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a62837f1a73066b0132855b2ac2a2149d" kind="variable"><name>consumerFinished</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a7f5d9bf6050e46aa65bf74c0e95e8e04" kind="variable"><name>produced</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a90b54cf3f28edd0ba719057a1ef87225" kind="variable"><name>consumed</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1af229bcdbabca28c205c00a2c36f6cd3a" kind="variable"><name>recycled</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a1fbb4cbdcc40e26b41ad5aad8566eb44" kind="variable"><name>blocksRingBufferSize</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a6d3179ea11e46c422eae8ec9477300e1" kind="variable"><name>blocksRingBufferSizeMask</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1ace268dce9b3da1cc5dedc4a1fc7ec9af" kind="variable"><name>blocksNum</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a3701e2e62894834a7ec95dea492f68d7" kind="function"><name>SingleProducerSingleConsumerList</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a2cf48c29f5f285f0ed2529a045d501a9" kind="function"><name>~SingleProducerSingleConsumerList</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a4796538560a708ef982c435ad33534f1" kind="function"><name>size</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1aff6b4bfbb70cfa0cfbcc6308ca066177" kind="function"><name>isEmpty</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a8b9db1c38f8b683e4f4e693e0c15c6a4" kind="function"><name>canBeConsumed</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a9bb0bcf74d3d05605e431b35aaf12b2d" kind="function"><name>produce</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a449d9b205ae321d78481ae327f39a9d1" kind="function"><name>consume</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1acc12cb331640608fa9b4a862929e6da5" kind="function"><name>isProducerFinished</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1ad05fcc09a2df58465a82087175546926" kind="function"><name>isConsumerFinished</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1af14e48ee772cbf3b913cd0bf3d43db80" kind="function"><name>setProducerFinished</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1ae2e877fc589fe814c0ae2e5dd3f1ca7c" kind="function"><name>setConsumerFinished</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a61544df8ed82b3f134247bba184d1487" kind="function"><name>makeItem</name></member>
+    <member refid="classSingleProducerSingleConsumerList_1a873a1c4093b39dcdd86be519ee7f601b" kind="function"><name>recycle</name></member>
+  </compound>
+  <compound refid="structBgzfMtReader_1_1Slot" kind="struct"><name>BgzfMtReader::Slot</name>
+    <member refid="structBgzfMtReader_1_1Slot_1afecc555ced9dbfe9425ec6a6aaa96a72" kind="variable"><name>comp</name></member>
+    <member refid="structBgzfMtReader_1_1Slot_1aecc5380919a45b2d77bc44af8d110b32" kind="variable"><name>decomp</name></member>
+    <member refid="structBgzfMtReader_1_1Slot_1aa2faa3d0c64793e5014dd9f711324e6d" kind="variable"><name>compLen</name></member>
+    <member refid="structBgzfMtReader_1_1Slot_1acd187ac0e553e026182c3a4fc8bd620e" kind="variable"><name>decompLen</name></member>
+    <member refid="structBgzfMtReader_1_1Slot_1af841f5d249976a57f03a171e1193adb3" kind="variable"><name>state</name></member>
+  </compound>
+  <compound refid="classSplitOptions" kind="class"><name>SplitOptions</name>
+    <member refid="classSplitOptions_1ae7970d026df03f83e27242fb1e9bd071" kind="variable"><name>enabled</name></member>
+    <member refid="classSplitOptions_1a5bef99e1bb21004399da546bd5ab1bff" kind="variable"><name>number</name></member>
+    <member refid="classSplitOptions_1aea91f721c5ca28e8f3c5ff7fd2647e66" kind="variable"><name>size</name></member>
+    <member refid="classSplitOptions_1a7f56326730c02303fcdf53d8ebdd6d1c" kind="variable"><name>digits</name></member>
+    <member refid="classSplitOptions_1a48acb176bdf3a4d1779553269cd5d346" kind="variable"><name>needEvaluation</name></member>
+    <member refid="classSplitOptions_1a7fe3d5b9c889fe049d9233aff62cebf7" kind="variable"><name>byFileNumber</name></member>
+    <member refid="classSplitOptions_1a95502f9eb5f8da1ef60a953195cc8ee6" kind="variable"><name>byFileLines</name></member>
+    <member refid="classSplitOptions_1a9e5054c56fc1d83cdc599b90c67fe0af" kind="function"><name>SplitOptions</name></member>
+  </compound>
+  <compound refid="classStats" kind="class"><name>Stats</name>
+    <member refid="classStats_1a2abee1f8faf6ce20b7321a87a570e4ca" kind="variable"><name>CYCLE_ARRAY_COUNT</name></member>
+    <member refid="classStats_1a729fa232954d3b81b313d6ef157d638a" kind="variable"><name>mOptions</name></member>
+    <member refid="classStats_1a55c2da3cf8d2b79079321a77bce26d85" kind="variable"><name>mIsRead2</name></member>
+    <member refid="classStats_1a42a1223914bd31299e6862f3002989a1" kind="variable"><name>mReads</name></member>
+    <member refid="classStats_1a340f27e72128dbdb1ce2473cbe6867f2" kind="variable"><name>mEvaluatedSeqLen</name></member>
+    <member refid="classStats_1a42ffa7d563c7ceb562b72f220b408c9c" kind="variable"><name>mCycleBuffer</name></member>
+    <member refid="classStats_1ae1b4f836cc62feea4e5c280d9a4e6cdb" kind="variable"><name>mCycleQ30Bases</name></member>
+    <member refid="classStats_1adcf84dc3013fca1e5b7a4d51d936f016" kind="variable"><name>mCycleQ20Bases</name></member>
+    <member refid="classStats_1a955290ac8221b197d08d3e0b5ffca5be" kind="variable"><name>mCycleBaseContents</name></member>
+    <member refid="classStats_1a0de4fa9b5b47f256ea7014a4e1079f27" kind="variable"><name>mCycleBaseQual</name></member>
+    <member refid="classStats_1ac403adaae64caf6c329f7fb05087a2e7" kind="variable"><name>mCycleTotalBase</name></member>
+    <member refid="classStats_1a6a737d8bb248fcfc31c5d26766bc5635" kind="variable"><name>mCycleTotalQual</name></member>
+    <member refid="classStats_1a7f5ec473f40a93e14d61105f7f211993" kind="variable"><name>mKmer</name></member>
+    <member refid="classStats_1aec9d0fc7cbef3b0ebffec74d719de7b3" kind="variable"><name>mBaseQualHistogram</name></member>
+    <member refid="classStats_1aa5d888afc7b8c82c8172ec9c5c7f5ee4" kind="variable"><name>mQualityCurves</name></member>
+    <member refid="classStats_1ace10d1fecc73060fa407d53c26608a19" kind="variable"><name>mContentCurves</name></member>
+    <member refid="classStats_1afdd3d694e0482b4103618819a6823f0c" kind="variable"><name>mOverRepSeq</name></member>
+    <member refid="classStats_1a6e749a56e715318d44ee8fbe810cd6b3" kind="variable"><name>mOverRepSeqDist</name></member>
+    <member refid="classStats_1a63af9a5ef51bb52c0e95a73b016b0a52" kind="variable"><name>mCycles</name></member>
+    <member refid="classStats_1a3cc90afb06772b59244b874c71896234" kind="variable"><name>mBufLen</name></member>
+    <member refid="classStats_1af6d612c26123d3b5ebd44e11c83969b0" kind="variable"><name>mBases</name></member>
+    <member refid="classStats_1abd64631b60b9b537a34da6b1bd28312e" kind="variable"><name>mQ20Bases</name></member>
+    <member refid="classStats_1aebd5413d37e0d9949a2d3569e36a5404" kind="variable"><name>mQ30Bases</name></member>
+    <member refid="classStats_1a0b624a121f5d7f168308eccba73bcf06" kind="variable"><name>mBaseContents</name></member>
+    <member refid="classStats_1a07de69d6992ee6953b6f9594d08f5e05" kind="variable"><name>mQ20Total</name></member>
+    <member refid="classStats_1aff18db23c2804c59d49c21daa57db8bb" kind="variable"><name>mQ30Total</name></member>
+    <member refid="classStats_1a5cec2391d31ca4404e41ce2e8694c075" kind="variable"><name>mQ40Total</name></member>
+    <member refid="classStats_1ae91a6239373fe425550cb7aca45ca936" kind="variable"><name>summarized</name></member>
+    <member refid="classStats_1a974eeef30ea0dbc6eb0c44bdf1495907" kind="variable"><name>mKmerMax</name></member>
+    <member refid="classStats_1ab4c39e3a5939e03c2b4acd3b7f466d51" kind="variable"><name>mKmerMin</name></member>
+    <member refid="classStats_1ad46678dfd11da821f8a87c8f60894770" kind="variable"><name>mKmerBufLen</name></member>
+    <member refid="classStats_1a43d87fe98f7187c89d1babcee0765894" kind="variable"><name>mLengthSum</name></member>
+    <member refid="classStats_1a6e3e014bddbda62dc0cc9012fe4a0707" kind="function"><name>Stats</name></member>
+    <member refid="classStats_1ad32aee12c7d460325f8d7a31159e8acc" kind="function"><name>~Stats</name></member>
+    <member refid="classStats_1a9f9530fbf16f39e5c9b953ebf8bbc664" kind="function"><name>getCycles</name></member>
+    <member refid="classStats_1a08a6adf2200fb1d8dc458534c70fb070" kind="function"><name>getReads</name></member>
+    <member refid="classStats_1a381dca93848aaea14f1dad4d66643fcf" kind="function"><name>getBases</name></member>
+    <member refid="classStats_1afb9f2e93a29dd795f46c358640197214" kind="function"><name>getQ20</name></member>
+    <member refid="classStats_1a4036a0f6b3446e01bfbceaa6adddf689" kind="function"><name>getQ30</name></member>
+    <member refid="classStats_1ab67ce987a6ccca4b9eae43c3aae361b1" kind="function"><name>getQ40</name></member>
+    <member refid="classStats_1a6633bfc51f694e857ee1e9b824a5950d" kind="function"><name>getGCNumber</name></member>
+    <member refid="classStats_1a70c754f2f14822eafe3d7d46c3262156" kind="function"><name>getQualHist</name></member>
+    <member refid="classStats_1ae5c55a5d6f03198bc81eb832c17920c2" kind="function"><name>statRead</name></member>
+    <member refid="classStats_1a41e2b6247986a16a7cb5c00991015dc5" kind="function"><name>print</name></member>
+    <member refid="classStats_1adf4a74229128be698bb70ed5ececc963" kind="function"><name>summarize</name></member>
+    <member refid="classStats_1ac36a9cefec78d7dbad9dcc1f47ce9436" kind="function"><name>reportJson</name></member>
+    <member refid="classStats_1a80e3c45404999760838a79950e4b6004" kind="function"><name>reportHtml</name></member>
+    <member refid="classStats_1afd31fd47c1ac3444ee2a4e464dcd575a" kind="function"><name>reportHtmlQuality</name></member>
+    <member refid="classStats_1a1f6e99391d63f7e136c285fca4476458" kind="function"><name>reportHtmlContents</name></member>
+    <member refid="classStats_1a8fc916cb284a1f4178b3344371bbf345" kind="function"><name>reportHtmlKMER</name></member>
+    <member refid="classStats_1ad9103301c8b696b9a8ae4f548cdb0d3b" kind="function"><name>reportHtmlORA</name></member>
+    <member refid="classStats_1af7f087cd6cba9ab9fb5ac376db003b8f" kind="function"><name>isLongRead</name></member>
+    <member refid="classStats_1a3a1fa583073ce88dd0e34b13c5d52ddc" kind="function"><name>initOverRepSeq</name></member>
+    <member refid="classStats_1ac77e59d6ea9b2cafae2a07a4a63f4ef3" kind="function"><name>getMeanLength</name></member>
+    <member refid="classStats_1ac12ba352b19e6eccb1c4d59dfbd18723" kind="function"><name>merge</name></member>
+    <member refid="classStats_1a56733cef7c54fa5391671d998e628909" kind="function"><name>list2string</name></member>
+    <member refid="classStats_1a56af54a3908e3ef6344ee987b24b3956" kind="function"><name>list2string</name></member>
+    <member refid="classStats_1affc70e7fbe6a0d31541df5c5334350e9" kind="function"><name>list2string</name></member>
+    <member refid="classStats_1a1e760301f6f24951e8efe7b401af9fd8" kind="function"><name>base2val</name></member>
+    <member refid="classStats_1a0243bd6cf86e5d677bd219b808e8fd30" kind="function"><name>setCyclePointers</name></member>
+    <member refid="classStats_1ace442825706816d32c7000f4a4b2e5fb" kind="function"><name>extendBuffer</name></member>
+    <member refid="classStats_1a56453c4010c52c746cbcc07e6f5c3c1b" kind="function"><name>makeKmerTD</name></member>
+    <member refid="classStats_1ad233d5194fe5599d059e8efa851ea55f" kind="function"><name>kmer3</name></member>
+    <member refid="classStats_1a621f64c87df8a297981957ed915eb02a" kind="function"><name>kmer2</name></member>
+    <member refid="classStats_1a52350f683294594f35fe4fc7db3f5d82" kind="function"><name>deleteOverRepSeqDist</name></member>
+    <member refid="classStats_1a05f70b43f9b1237cb13312f129402fcf" kind="function"><name>overRepPassed</name></member>
+  </compound>
+  <compound refid="classThreadConfig" kind="class"><name>ThreadConfig</name>
+    <member refid="classThreadConfig_1a9db36257d603fb77176fa3280608377f" kind="variable"><name>mPreStats1</name></member>
+    <member refid="classThreadConfig_1a5ff6eea599e61373ba516ebecd234063" kind="variable"><name>mPostStats1</name></member>
+    <member refid="classThreadConfig_1ab46090ab5acbe9c15bfe7604631ac227" kind="variable"><name>mPreStats2</name></member>
+    <member refid="classThreadConfig_1abc1ea19456912250eec66e4e4466282c" kind="variable"><name>mPostStats2</name></member>
+    <member refid="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" kind="variable"><name>mWriter1</name></member>
+    <member refid="classThreadConfig_1a3ed6719d273c54ec3cf5e6d9b5ccc4c5" kind="variable"><name>mWriter2</name></member>
+    <member refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" kind="variable"><name>mOptions</name></member>
+    <member refid="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" kind="variable"><name>mFilterResult</name></member>
+    <member refid="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" kind="variable"><name>mLeftInputList</name></member>
+    <member refid="classThreadConfig_1ab434aaa6e058e872a9f09fdf3ba8cf39" kind="variable"><name>mRightInputList</name></member>
+    <member refid="classThreadConfig_1a7fcfaf57ee37e3719081816e66fe7c74" kind="variable"><name>mThreadId</name></member>
+    <member refid="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" kind="variable"><name>mWorkingSplit</name></member>
+    <member refid="classThreadConfig_1aa466b1c938a46b1f8a94a0581e8394ed" kind="variable"><name>mCurrentSplitReads</name></member>
+    <member refid="classThreadConfig_1a1404e1172d98e0d5285ced698393dee9" kind="variable"><name>mCanBeStopped</name></member>
+    <member refid="classThreadConfig_1a3c2e705cc20fe6334be383494943f76c" kind="function"><name>ThreadConfig</name></member>
+    <member refid="classThreadConfig_1ac11109f3f8d98f2821ad647640213b98" kind="function"><name>~ThreadConfig</name></member>
+    <member refid="classThreadConfig_1a23233d659251c0f5d16a3f1ee78746cb" kind="function"><name>getPreStats1</name></member>
+    <member refid="classThreadConfig_1af572e6e0652ebdc44807b5204f8a18c0" kind="function"><name>getPostStats1</name></member>
+    <member refid="classThreadConfig_1a9797bd498b4d392bfab23aa2ec0a933d" kind="function"><name>getPreStats2</name></member>
+    <member refid="classThreadConfig_1acc217e60e637f3e58a6cd98592e665eb" kind="function"><name>getPostStats2</name></member>
+    <member refid="classThreadConfig_1a296efaa78d4b5d5f1c6e7dd2aa49ce71" kind="function"><name>getWriter1</name></member>
+    <member refid="classThreadConfig_1af5a6eddd34b67d96c9c72f6d39decde0" kind="function"><name>getWriter2</name></member>
+    <member refid="classThreadConfig_1aadbf8a20156fc0367fd256b5c65643c5" kind="function"><name>getFilterResult</name></member>
+    <member refid="classThreadConfig_1a7328638acc46a45009833bda2774b5e7" kind="function"><name>initWriter</name></member>
+    <member refid="classThreadConfig_1afe46c4614a4e303d46589615f6a841d9" kind="function"><name>initWriter</name></member>
+    <member refid="classThreadConfig_1a6c55c466123792c864e8189af9364bc6" kind="function"><name>addFilterResult</name></member>
+    <member refid="classThreadConfig_1a496f939454adbb2f7ccd90c46e14739a" kind="function"><name>addMergedPairs</name></member>
+    <member refid="classThreadConfig_1a16755b525b2e0cb5b321706a9cc7b0d6" kind="function"><name>getThreadId</name></member>
+    <member refid="classThreadConfig_1af5ca1fe7b47c617332176f2f0b0b7026" kind="function"><name>markProcessed</name></member>
+    <member refid="classThreadConfig_1a1c894eafd8e4bb0bd665297e8c15c0dc" kind="function"><name>initWriterForSplit</name></member>
+    <member refid="classThreadConfig_1a064f8bf41ae77bb519bc5b756a41af38" kind="function"><name>canBeStopped</name></member>
+    <member refid="classThreadConfig_1a83b1b2aefa819cfb3f91f9a5b816ca00" kind="function"><name>cleanup</name></member>
+    <member refid="classThreadConfig_1ae7fce490836eac6a84cb84d45cfa33bd" kind="function"><name>setInputList</name></member>
+    <member refid="classThreadConfig_1a8f01d23de95158db4a81533016ae634a" kind="function"><name>setInputListPair</name></member>
+    <member refid="classThreadConfig_1a92b24277bcd99f5caa4827f131b37536" kind="function"><name>getLeftInput</name></member>
+    <member refid="classThreadConfig_1aafa5bd8c77bea841ddef64aeb63c6f38" kind="function"><name>getRightInput</name></member>
+    <member refid="classThreadConfig_1a1d9d35713d7afba5c22b47b4df1c025f" kind="function"><name>deleteWriter</name></member>
+    <member refid="classThreadConfig_1a58a1212ae209519a6aaa2643cd2213dd" kind="function"><name>writeEmptyFilesForSplitting</name></member>
+  </compound>
+  <compound refid="classTrimmingOptions" kind="class"><name>TrimmingOptions</name>
+    <member refid="classTrimmingOptions_1a79a55f3bdd8e036c701e81985d74a063" kind="variable"><name>front1</name></member>
+    <member refid="classTrimmingOptions_1a5e739d4562aa43144cc55230bfe17f2a" kind="variable"><name>tail1</name></member>
+    <member refid="classTrimmingOptions_1a3e5e76adb90ef72b70ac37a39079e93a" kind="variable"><name>front2</name></member>
+    <member refid="classTrimmingOptions_1ad4ebcc05efb88d43826446e867d5685d" kind="variable"><name>tail2</name></member>
+    <member refid="classTrimmingOptions_1ae5596fb8dcd2f3da378edf46cb6bb9f2" kind="variable"><name>maxLen1</name></member>
+    <member refid="classTrimmingOptions_1a2bdfe7d2e789f3f3d6e795497e13ce9a" kind="variable"><name>maxLen2</name></member>
+    <member refid="classTrimmingOptions_1a778b5a15f7c665d0ce9a603a8c8d3f7d" kind="function"><name>TrimmingOptions</name></member>
+  </compound>
+  <compound refid="classUMIOptions" kind="class"><name>UMIOptions</name>
+    <member refid="classUMIOptions_1afe51e2ca09bc468fdfa6b4550f1f8647" kind="variable"><name>enabled</name></member>
+    <member refid="classUMIOptions_1afd3f5d26a76730b0b3aadff907efd7a9" kind="variable"><name>location</name></member>
+    <member refid="classUMIOptions_1acfd5ea79dcafa9108c7b5b2ba753dd0b" kind="variable"><name>length</name></member>
+    <member refid="classUMIOptions_1a7c463475fa8acc3a283c2e08de89234f" kind="variable"><name>skip</name></member>
+    <member refid="classUMIOptions_1a04629451686a5b4a5e43a761de6a6e6e" kind="variable"><name>prefix</name></member>
+    <member refid="classUMIOptions_1aa52875362e8ea1ab8a7436be3070eddd" kind="variable"><name>separator</name></member>
+    <member refid="classUMIOptions_1a752d0fda7963b9875b2bf179a4170da4" kind="variable"><name>delimiter</name></member>
+    <member refid="classUMIOptions_1a2ed315ff07cf2d6de053c588593468ca" kind="function"><name>UMIOptions</name></member>
+  </compound>
+  <compound refid="classUmiProcessor" kind="class"><name>UmiProcessor</name>
+    <member refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kind="variable"><name>mOptions</name></member>
+    <member refid="classUmiProcessor_1aba53b09204bd4d30b31744304a1b754d" kind="function"><name>UmiProcessor</name></member>
+    <member refid="classUmiProcessor_1a1d9b9454b85ce2fe1724d24ed71219b5" kind="function"><name>~UmiProcessor</name></member>
+    <member refid="classUmiProcessor_1a1627f37ca86d10388f9152c776958b34" kind="function"><name>process</name></member>
+    <member refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" kind="function"><name>addUmiToName</name></member>
+    <member refid="classUmiProcessor_1a80e70afd80861284027547c03f9b8a6a" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="classUnitTest" kind="class"><name>UnitTest</name>
+    <member refid="classUnitTest_1a67ddaff817b55a624741d32550052f4b" kind="function"><name>UnitTest</name></member>
+    <member refid="classUnitTest_1ab007b0ca0f5cf3f165305e71d67b20c0" kind="function"><name>run</name></member>
+    <member refid="classUnitTest_1a5a0b0db9bbd54d879f429954753b8e15" kind="function"><name>report</name></member>
+  </compound>
+  <compound refid="classWriter" kind="class"><name>Writer</name>
+    <member refid="classWriter_1a9aabedc94e657100c37da5a8075e743c" kind="variable"><name>mFilename</name></member>
+    <member refid="classWriter_1a6e804f6274352e8a9ee3e818c777ce5f" kind="variable"><name>mCompressor</name></member>
+    <member refid="classWriter_1a8c8f56c5634c3fb2c54d0f9079ef563d" kind="variable"><name>mFP</name></member>
+    <member refid="classWriter_1ac50ed9fcea702bd305af0134c1241653" kind="variable"><name>mZipped</name></member>
+    <member refid="classWriter_1ab34675ab54a10f7e543d634cad1cabe1" kind="variable"><name>mCompression</name></member>
+    <member refid="classWriter_1af562afdb17e25b94319e2bf9b582d581" kind="variable"><name>haveToClose</name></member>
+    <member refid="classWriter_1af4bdccd0fdf49f886fcf89b85dd9fbbf" kind="variable"><name>mBuffer</name></member>
+    <member refid="classWriter_1a2f8b44c1d8f2ad7c9c41bea19641ee49" kind="variable"><name>mBufDataLen</name></member>
+    <member refid="classWriter_1a47cd419ed1791c68cd1678366e58eeaf" kind="variable"><name>mBufSize</name></member>
+    <member refid="classWriter_1a411c52572201d85247bacc7e38cacc6e" kind="variable"><name>mOptions</name></member>
+    <member refid="classWriter_1aea187c1e3ed4f57924dca2944912c45c" kind="variable"><name>mSTDOUT</name></member>
+    <member refid="classWriter_1a164ddf3e7d126f8139d8194fe9cb2095" kind="function"><name>Writer</name></member>
+    <member refid="classWriter_1a6f57399b94731301d267ce10a2f52ea3" kind="function"><name>~Writer</name></member>
+    <member refid="classWriter_1aa249dd7afcaf68cb4be413d4902d0056" kind="function"><name>isZipped</name></member>
+    <member refid="classWriter_1ae709c4e7ef43a4059f2553b7cb206c41" kind="function"><name>writeString</name></member>
+    <member refid="classWriter_1aaff84ae022ac5097db2ed748c54b9c1c" kind="function"><name>writeString</name></member>
+    <member refid="classWriter_1ac43d0bd4db3024ada19e004ba0db11cd" kind="function"><name>write</name></member>
+    <member refid="classWriter_1a85853ea21997297930329fd009718c05" kind="function"><name>flush</name></member>
+    <member refid="classWriter_1ad74f455485d331512e5cc005963c30e8" kind="function"><name>filename</name></member>
+    <member refid="classWriter_1a142d2601b0565c29c1ae7a5cd8a72184" kind="function"><name>test</name></member>
+    <member refid="classWriter_1a3c06b4a50402dfcbe88507805978f9fa" kind="function"><name>init</name></member>
+    <member refid="classWriter_1ac26d0fb8f037786294e5669c3fb68fe4" kind="function"><name>close</name></member>
+    <member refid="classWriter_1a2fb2cf39ab547db41dc695d7a8027a7e" kind="function"><name>writeInternal</name></member>
+  </compound>
+  <compound refid="classWriterThread" kind="class"><name>WriterThread</name>
+    <member refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" kind="variable"><name>mWriter1</name></member>
+    <member refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" kind="variable"><name>mOptions</name></member>
+    <member refid="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" kind="variable"><name>mFilename</name></member>
+    <member refid="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" kind="variable"><name>mInputCompleted</name></member>
+    <member refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" kind="variable"><name>mBufferLength</name></member>
+    <member refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" kind="variable"><name>mBufferLists</name></member>
+    <member refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" kind="variable"><name>mWorkingBufferList</name></member>
+    <member refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" kind="variable"><name>mPwriteMode</name></member>
+    <member refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" kind="variable"><name>mFd</name></member>
+    <member refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" kind="variable"><name>mOffsetRing</name></member>
+    <member refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" kind="variable"><name>mNextSeq</name></member>
+    <member refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" kind="variable"><name>mCompressors</name></member>
+    <member refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" kind="variable"><name>mCompBufs</name></member>
+    <member refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" kind="variable"><name>mCompBufSizes</name></member>
+    <member refid="classWriterThread_1ad85722858d6f73e7db995d7c940038eb" kind="function"><name>WriterThread</name></member>
+    <member refid="classWriterThread_1a1f6800d9e272c0cb2eb7a0c774b14f4e" kind="function"><name>~WriterThread</name></member>
+    <member refid="classWriterThread_1a876dbb8b56ba5660ad370212e31b1b72" kind="function"><name>initWriter</name></member>
+    <member refid="classWriterThread_1a8bea61e2a4a63dd11ab55e5284026626" kind="function"><name>initBufferLists</name></member>
+    <member refid="classWriterThread_1ad5a34ac64a25fed4e1e8b5c63061d579" kind="function"><name>cleanup</name></member>
+    <member refid="classWriterThread_1a79f1d3c1090568800b7613b8a7689468" kind="function"><name>isCompleted</name></member>
+    <member refid="classWriterThread_1a213a85cf26e05550566c3779a2b588b1" kind="function"><name>output</name></member>
+    <member refid="classWriterThread_1a9b29200184e58f51fc366e38691c174b" kind="function"><name>input</name></member>
+    <member refid="classWriterThread_1a590319d06f1de992b9621624dbbb8fc9" kind="function"><name>setInputCompleted</name></member>
+    <member refid="classWriterThread_1a09e82ab15e9a38c213117495c9c9fe58" kind="function"><name>bufferLength</name></member>
+    <member refid="classWriterThread_1a3d1949e8e7ba391898e67a6034cf61ce" kind="function"><name>getFilename</name></member>
+    <member refid="classWriterThread_1a5b9aa1dd1c66c4507414ead32caef0c7" kind="function"><name>isPwriteMode</name></member>
+    <member refid="classWriterThread_1aec981cb042ef8d7d422c8ae1e92c11b6" kind="function"><name>deleteWriter</name></member>
+    <member refid="classWriterThread_1a0d8d2f35142de5a61d3efdcdd8526dfc" kind="function"><name>inputPwrite</name></member>
+    <member refid="classWriterThread_1a502ba2307fe879b41e5bfb01a253e675" kind="function"><name>setInputCompletedPwrite</name></member>
+  </compound>
+  <compound refid="namespacecmdline" kind="namespace"><name>cmdline</name>
+    <member refid="namespacecmdline_1a6fd6153b623203e42c7c0fb47c358234" kind="function"><name>range</name></member>
+    <member refid="namespacecmdline_1a326fc81130d3a280ae88475f6706d1ca" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1aa651a6ceddee117802182e4f04efc951" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1ada0d91b62ce12fca8619a4efaa8334fb" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1af31e23b2539a009c1e945a497fb4faac" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1ab05ffe2f4e217e74daf5168512458e25" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1a4981e4f94c22bda32268e6db4405598e" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1a1e096231722fd892c918143485fe774d" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1a96f5454341387fb12497e7df8d2fde54" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1a56618aa1f6af9039b2c25540138f8307" kind="function"><name>oneof</name></member>
+    <member refid="namespacecmdline_1a509696b594fc0091d58d5f0c363296e6" kind="function"><name>oneof</name></member>
+  </compound>
+  <compound refid="namespacecmdline_1_1detail" kind="namespace"><name>cmdline::detail</name>
+    <member refid="namespacecmdline_1_1detail_1a5cd4d0bedba599ae78fc3b477d5b89fa" kind="function"><name>lexical_cast</name></member>
+    <member refid="namespacecmdline_1_1detail_1a531047ed8f52b62caae26ab166520987" kind="function"><name>demangle</name></member>
+    <member refid="namespacecmdline_1_1detail_1a9e3c4f02792dba7836cb5d933bf8665f" kind="function"><name>readable_typename</name></member>
+    <member refid="namespacecmdline_1_1detail_1a0d8a8c2598d920091d2c1055516f8005" kind="function"><name>default_value</name></member>
+    <member refid="namespacecmdline_1_1detail_1aeaaa18e134cb1066b14d447a43c6386e" kind="function"><name>readable_typename&lt; std::string &gt;</name></member>
+  </compound>
+  <compound refid="namespacefastp__simd" kind="namespace"><name>fastp_simd</name>
+    <member refid="namespacefastp__simd_1a0d37fd2176056744aa824515162fe777" kind="function"><name>countQualityMetrics</name></member>
+    <member refid="namespacefastp__simd_1a64bdfe0037ec7400a0fe20f273f4e33b" kind="function"><name>reverseComplement</name></member>
+    <member refid="namespacefastp__simd_1a1b83a43952d3a86f96e399a7b6b7fb8a" kind="function"><name>countAdjacentDiffs</name></member>
+    <member refid="namespacefastp__simd_1a044ddcf257373b649d64d5aeea9fc7f6" kind="function"><name>countMismatches</name></member>
+    <member refid="namespacefastp__simd_1a3835a28467a63a5485754e4a48f49a71" kind="function"><name>countMismatchesBounded</name></member>
+    <member refid="namespacefastp__simd_1a1b89fa328564d427691ee2b3d59fce1a" kind="function"><name>testSimd</name></member>
+  </compound>
+  <compound refid="namespacefastp__simd_1_1HWY__NAMESPACE" kind="namespace"><name>fastp_simd::HWY_NAMESPACE</name>
+    <member refid="namespacefastp__simd_1_1HWY__NAMESPACE_1aef705a7ba2f9f133efb7e17f9c5f82fa" kind="function"><name>SumsOf2Fallback</name></member>
+    <member refid="namespacefastp__simd_1_1HWY__NAMESPACE_1a677225f8f5e1bcde5f130f27b2cc11ec" kind="function"><name>ReduceSumFallback</name></member>
+    <member refid="namespacefastp__simd_1_1HWY__NAMESPACE_1a5c960f1170202588ec765b028f190a1c" kind="function"><name>CountQualityMetricsImpl</name></member>
+    <member refid="namespacefastp__simd_1_1HWY__NAMESPACE_1ab658718e65b312ca79c04bf710c6cf41" kind="function"><name>ReverseComplementImpl</name></member>
+    <member refid="namespacefastp__simd_1_1HWY__NAMESPACE_1ab85158aedc52380a94f8d08daf1cbe58" kind="function"><name>CountAdjacentDiffsImpl</name></member>
+    <member refid="namespacefastp__simd_1_1HWY__NAMESPACE_1ad35ef719bbe6e11bf8f9b061a3650873" kind="function"><name>CountMismatchesImpl</name></member>
+    <member refid="namespacefastp__simd_1_1HWY__NAMESPACE_1ab3d1d0c81bc94b9c94e83436a70bb9b2" kind="function"><name>CountMismatchesBoundedImpl</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="adaptertrimmer_8cpp" kind="file"><name>adaptertrimmer.cpp</name>
+  </compound>
+  <compound refid="adaptertrimmer_8h" kind="file"><name>adaptertrimmer.h</name>
+  </compound>
+  <compound refid="basecorrector_8cpp" kind="file"><name>basecorrector.cpp</name>
+  </compound>
+  <compound refid="basecorrector_8h" kind="file"><name>basecorrector.h</name>
+  </compound>
+  <compound refid="bgzf_8h" kind="file"><name>bgzf.h</name>
+    <member refid="bgzf_8h_1a484751937758a33287383a64fb34cdb4" kind="variable"><name>BGZF_HEADER_SIZE</name></member>
+    <member refid="bgzf_8h_1a0a414adb7070c8104828e5ce99aec2f1" kind="variable"><name>BGZF_MAX_BLOCK_SIZE</name></member>
+    <member refid="bgzf_8h_1af4309efc625369d2b284292e1566b98b" kind="function"><name>isBgzf</name></member>
+    <member refid="bgzf_8h_1a6aa7eb8ff463738d79f3d00190830a05" kind="function"><name>bgzfBlockSize</name></member>
+  </compound>
+  <compound refid="cmdline_8h" kind="file"><name>cmdline.h</name>
+  </compound>
+  <compound refid="common_8h" kind="file"><name>common.h</name>
+    <member refid="common_8h_1a87c86243c299a1db8d0e5038d438ac9a" kind="define"><name>FASTP_VER</name></member>
+    <member refid="common_8h_1a152fc5203b90b1cff03b7b78579b8f52" kind="define"><name>_DEBUG</name></member>
+    <member refid="common_8h_1a565242d561045a1020e03cb560dcf774" kind="typedef"><name>int64</name></member>
+    <member refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kind="typedef"><name>uint64</name></member>
+    <member refid="common_8h_1a56f1a81c92849566ae864511088eb7e8" kind="typedef"><name>int32</name></member>
+    <member refid="common_8h_1a1134b580f8da4de94ca6b1de4d37975e" kind="typedef"><name>uint32</name></member>
+    <member refid="common_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kind="typedef"><name>int16</name></member>
+    <member refid="common_8h_1a05f6b0ae8f6a6e135b0e290c25fe0e4e" kind="typedef"><name>uint16</name></member>
+    <member refid="common_8h_1ae47c588f3ab8c61121c1c7ab7edc47cd" kind="typedef"><name>int8</name></member>
+    <member refid="common_8h_1adde6aaee8457bee49c2a92621fe22b79" kind="typedef"><name>uint8</name></member>
+    <member refid="common_8h_1afd407574c55077093bccf61ea2df9f33" kind="variable"><name>ATCG_BASES</name></member>
+    <member refid="common_8h_1a9ed9b00254dbca17327c599227b74634" kind="variable"><name>PACK_SIZE</name></member>
+    <member refid="common_8h_1a3acefed9a72457805a26119394fa612e" kind="variable"><name>PACK_IN_MEM_LIMIT</name></member>
+    <member refid="common_8h_1a5fc9c45769af403dc3f7e650652da277" kind="variable"><name>PASS_FILTER</name></member>
+    <member refid="common_8h_1ab58b4f24b1b469a3ca88dcfaa64be1ec" kind="variable"><name>FAIL_POLY_X</name></member>
+    <member refid="common_8h_1a516da73383244c14769e19e4a7d9225f" kind="variable"><name>FAIL_OVERLAP</name></member>
+    <member refid="common_8h_1a180425a3a63300cdfcd8dcdc2c76101e" kind="variable"><name>FAIL_N_BASE</name></member>
+    <member refid="common_8h_1a8f231abf36def208f31f59426009d874" kind="variable"><name>FAIL_LENGTH</name></member>
+    <member refid="common_8h_1ab23168d51983d2f29062168cdf3514e8" kind="variable"><name>FAIL_TOO_LONG</name></member>
+    <member refid="common_8h_1a00c2e23c2b29b775c2f1a79d5420badb" kind="variable"><name>FAIL_QUALITY</name></member>
+    <member refid="common_8h_1ade3d51417c3d348c98e0eab75effd5e6" kind="variable"><name>FAIL_COMPLEXITY</name></member>
+    <member refid="common_8h_1a5ce8461e9a1e188c3e5c844b821abb86" kind="variable"><name>FAIL_ADAPTER_DIMER</name></member>
+    <member refid="common_8h_1a8c5a7ac041084fa41637b7a74e177763" kind="variable"><name>FILTER_RESULT_TYPES</name></member>
+    <member refid="common_8h_1ace09a16677423cf8d67aa596f688ffa0" kind="variable"><name>FAILED_TYPES</name></member>
+  </compound>
+  <compound refid="duplicate_8cpp" kind="file"><name>duplicate.cpp</name>
+    <member refid="duplicate_8cpp_1a1f57318f7d28e77ec1b8927eb4e158bf" kind="variable"><name>PRIME_ARRAY_LEN</name></member>
+    <member refid="duplicate_8cpp_1a0ed0ed935027605d17e14352161dbf3c" kind="variable"><name>SEQ_HASH_VAL</name></member>
+  </compound>
+  <compound refid="duplicate_8h" kind="file"><name>duplicate.h</name>
+  </compound>
+  <compound refid="evaluator_8cpp" kind="file"><name>evaluator.cpp</name>
+  </compound>
+  <compound refid="evaluator_8h" kind="file"><name>evaluator.h</name>
+  </compound>
+  <compound refid="fastareader_8cpp" kind="file"><name>fastareader.cpp</name>
+  </compound>
+  <compound refid="fastareader_8h" kind="file"><name>fastareader.h</name>
+  </compound>
+  <compound refid="fastqreader_8cpp" kind="file"><name>fastqreader.cpp</name>
+    <member refid="fastqreader_8cpp_1aae8da8d1c2d5228f065b169a54ce9bae" kind="define"><name>FQ_BUF_SIZE</name></member>
+    <member refid="fastqreader_8cpp_1af91026fea8271e534ec7ecc7c8454826" kind="define"><name>IGZIP_IN_BUF_SIZE</name></member>
+    <member refid="fastqreader_8cpp_1a1f2ee1734e5accdf79a62c31d6a13337" kind="define"><name>GZIP_HEADER_BYTES_REQ</name></member>
+  </compound>
+  <compound refid="fastqreader_8h" kind="file"><name>fastqreader.h</name>
+  </compound>
+  <compound refid="filter_8cpp" kind="file"><name>filter.cpp</name>
+  </compound>
+  <compound refid="filter_8h" kind="file"><name>filter.h</name>
+  </compound>
+  <compound refid="filterresult_8cpp" kind="file"><name>filterresult.cpp</name>
+    <member refid="filterresult_8cpp_1adbb6eaf358b17972c6c910c6180059b4" kind="define"><name>MAX_ADAPTER_REC</name></member>
+    <member refid="filterresult_8cpp_1af31666c259c83be3953a33f39a7c383d" kind="define"><name>LOW_COMPLEXITY_SKIP</name></member>
+    <member refid="filterresult_8cpp_1a58819f28b4094a7d760371ce6cab3aed" kind="function"><name>writeBaseCountsJson</name></member>
+  </compound>
+  <compound refid="filterresult_8h" kind="file"><name>filterresult.h</name>
+  </compound>
+  <compound refid="htmlreporter_8cpp" kind="file"><name>htmlreporter.cpp</name>
+    <member refid="htmlreporter_8cpp_1a4c9ef422180cc13bda2c623c7b9d43e5" kind="variable"><name>command</name></member>
+  </compound>
+  <compound refid="htmlreporter_8h" kind="file"><name>htmlreporter.h</name>
+  </compound>
+  <compound refid="jsonreporter_8cpp" kind="file"><name>jsonreporter.cpp</name>
+    <member refid="jsonreporter_8cpp_1a4c9ef422180cc13bda2c623c7b9d43e5" kind="variable"><name>command</name></member>
+  </compound>
+  <compound refid="jsonreporter_8h" kind="file"><name>jsonreporter.h</name>
+  </compound>
+  <compound refid="knownadapters_8h" kind="file"><name>knownadapters.h</name>
+    <member refid="knownadapters_8h_1a498269476eb0dddf2c448545d87c533e" kind="function"><name>getKnownAdapter</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a4c9ef422180cc13bda2c623c7b9d43e5" kind="variable"><name>command</name></member>
+    <member refid="main_8cpp_1afc3396b0d9b1e34b1043a0a586eabddb" kind="variable"><name>logmtx</name></member>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="matcher_8cpp" kind="file"><name>matcher.cpp</name>
+  </compound>
+  <compound refid="matcher_8h" kind="file"><name>matcher.h</name>
+  </compound>
+  <compound refid="nucleotidetree_8cpp" kind="file"><name>nucleotidetree.cpp</name>
+  </compound>
+  <compound refid="nucleotidetree_8h" kind="file"><name>nucleotidetree.h</name>
+  </compound>
+  <compound refid="options_8cpp" kind="file"><name>options.cpp</name>
+  </compound>
+  <compound refid="options_8h" kind="file"><name>options.h</name>
+    <member refid="options_8h_1adfaeb64fa9964f7883cc83df0c4a837b" kind="define"><name>UMI_LOC_NONE</name></member>
+    <member refid="options_8h_1a7f21eb844e334922fe953a98534c1e3f" kind="define"><name>UMI_LOC_INDEX1</name></member>
+    <member refid="options_8h_1a191ce48412c4baeab455ccfd4e56d8bb" kind="define"><name>UMI_LOC_INDEX2</name></member>
+    <member refid="options_8h_1a47c65cefbd05003c253b1ce56867993d" kind="define"><name>UMI_LOC_READ1</name></member>
+    <member refid="options_8h_1a8023d8803b58cbca4838b63fdf65eb03" kind="define"><name>UMI_LOC_READ2</name></member>
+    <member refid="options_8h_1a8949a3db0997bcee09260efb4b46c46e" kind="define"><name>UMI_LOC_PER_INDEX</name></member>
+    <member refid="options_8h_1a3cb6ab26c4387d164cfce0eff0f3ab42" kind="define"><name>UMI_LOC_PER_READ</name></member>
+  </compound>
+  <compound refid="overlapanalysis_8cpp" kind="file"><name>overlapanalysis.cpp</name>
+  </compound>
+  <compound refid="overlapanalysis_8h" kind="file"><name>overlapanalysis.h</name>
+  </compound>
+  <compound refid="peprocessor_8cpp" kind="file"><name>peprocessor.cpp</name>
+  </compound>
+  <compound refid="peprocessor_8h" kind="file"><name>peprocessor.h</name>
+    <member refid="peprocessor_8h_1a6a7384e5e73948fad999e8d95378dcca" kind="typedef"><name>ReadPairRepository</name></member>
+  </compound>
+  <compound refid="polyx_8cpp" kind="file"><name>polyx.cpp</name>
+  </compound>
+  <compound refid="polyx_8h" kind="file"><name>polyx.h</name>
+  </compound>
+  <compound refid="processor_8cpp" kind="file"><name>processor.cpp</name>
+  </compound>
+  <compound refid="processor_8h" kind="file"><name>processor.h</name>
+  </compound>
+  <compound refid="read_8cpp" kind="file"><name>read.cpp</name>
+  </compound>
+  <compound refid="read_8h" kind="file"><name>read.h</name>
+    <member refid="read_8h_1a0dff06fa3c2bdba60020ba7b4c62f9e4" kind="typedef"><name>ReadPack</name></member>
+  </compound>
+  <compound refid="readpool_8cpp" kind="file"><name>readpool.cpp</name>
+  </compound>
+  <compound refid="readpool_8h" kind="file"><name>readpool.h</name>
+  </compound>
+  <compound refid="seprocessor_8cpp" kind="file"><name>seprocessor.cpp</name>
+  </compound>
+  <compound refid="seprocessor_8h" kind="file"><name>seprocessor.h</name>
+    <member refid="seprocessor_8h_1a8c9151c1e412cdb02288e77d0c3e4d5d" kind="typedef"><name>ReadRepository</name></member>
+  </compound>
+  <compound refid="sequence_8cpp" kind="file"><name>sequence.cpp</name>
+  </compound>
+  <compound refid="sequence_8h" kind="file"><name>sequence.h</name>
+  </compound>
+  <compound refid="simd_8cpp" kind="file"><name>simd.cpp</name>
+    <member refid="simd_8cpp_1a1929b8491aa4123269baabf05fa21d8e" kind="define"><name>HWY_TARGET_INCLUDE</name></member>
+    <member refid="simd_8cpp_1a0d3a0ead32b2878b46a273796cb3e1d7" kind="define"><name>SumsOf2</name></member>
+    <member refid="simd_8cpp_1a0e904131e2029f73ac76983db7b584ca" kind="define"><name>ReduceSum</name></member>
+    <member refid="simd_8cpp_1ab935189e360ae18263e088a01e8f11ab" kind="function"><name>HWY_BEFORE_NAMESPACE</name></member>
+    <member refid="simd_8cpp_1a0799c8dd775b86bf3ab6df8d154ad456" kind="function"><name>HWY_AFTER_NAMESPACE</name></member>
+  </compound>
+  <compound refid="simd_8h" kind="file"><name>simd.h</name>
+  </compound>
+  <compound refid="singleproducersingleconsumerlist_8h" kind="file"><name>singleproducersingleconsumerlist.h</name>
+  </compound>
+  <compound refid="stats_8cpp" kind="file"><name>stats.cpp</name>
+    <member refid="stats_8cpp_1a53c139d8ab18ed3e13ff65f63067fcac" kind="define"><name>KMER_LEN</name></member>
+    <member refid="stats_8cpp_1afccb6a513cdaff988996aee95f4c4d08" kind="variable"><name>BASE2VAL</name></member>
+  </compound>
+  <compound refid="stats_8h" kind="file"><name>stats.h</name>
+  </compound>
+  <compound refid="threadconfig_8cpp" kind="file"><name>threadconfig.cpp</name>
+  </compound>
+  <compound refid="threadconfig_8h" kind="file"><name>threadconfig.h</name>
+  </compound>
+  <compound refid="umiprocessor_8cpp" kind="file"><name>umiprocessor.cpp</name>
+  </compound>
+  <compound refid="umiprocessor_8h" kind="file"><name>umiprocessor.h</name>
+  </compound>
+  <compound refid="unittest_8cpp" kind="file"><name>unittest.cpp</name>
+  </compound>
+  <compound refid="unittest_8h" kind="file"><name>unittest.h</name>
+  </compound>
+  <compound refid="util_8h" kind="file"><name>util.h</name>
+    <member refid="util_8h_1afc3396b0d9b1e34b1043a0a586eabddb" kind="variable"><name>logmtx</name></member>
+    <member refid="util_8h_1aca609a0aa2078b7464de53a2efb58398" kind="function"><name>complement</name></member>
+    <member refid="util_8h_1a1ea2bedaa83ba9cd9e1df8d2f4c3491d" kind="function"><name>starts_with</name></member>
+    <member refid="util_8h_1a93891416e1ad59c6d4df7445a7ef2524" kind="function"><name>starts_with</name></member>
+    <member refid="util_8h_1ac2a4e8bb60abae8b64dab7107e114cbb" kind="function"><name>ends_with</name></member>
+    <member refid="util_8h_1a3101bc0142a49d9d11ad3f8cac766a2d" kind="function"><name>trim</name></member>
+    <member refid="util_8h_1a02d36220606e7d11fc876a9ddee0b330" kind="function"><name>split</name></member>
+    <member refid="util_8h_1a06e4bfc654793aba950d37afb6cc1f21" kind="function"><name>replace</name></member>
+    <member refid="util_8h_1a04982192b779b50ab1d45dc3109a8795" kind="function"><name>reverse</name></member>
+    <member refid="util_8h_1a7657042f76bf50bcbabd087b2573a86b" kind="function"><name>basename</name></member>
+    <member refid="util_8h_1a547fc92f1098254e78a7067eed578358" kind="function"><name>dirname</name></member>
+    <member refid="util_8h_1a5c4817483f5adf9cbad21804fa64ae1f" kind="function"><name>joinpath</name></member>
+    <member refid="util_8h_1a073d984a68d92e2e1d39c69a384e71f6" kind="function"><name>file_exists</name></member>
+    <member refid="util_8h_1acee6930819622fb8b8d6c34e14d1970c" kind="function"><name>is_directory</name></member>
+    <member refid="util_8h_1ae8a320da8f44d767b65c5b1e14e0fbc8" kind="function"><name>check_file_valid</name></member>
+    <member refid="util_8h_1a9f9902b2f45276fb9a76f3417131bd0f" kind="function"><name>check_filename_valid</name></member>
+    <member refid="util_8h_1a88bf9c00f9ead979e48971460683a8f3" kind="function"><name>check_file_writable</name></member>
+    <member refid="util_8h_1ad0284669b46ac0ba4224a41bc9a08eb4" kind="function"><name>str_keep_alpha</name></member>
+    <member refid="util_8h_1a418b85315c08d490370eb6909079b869" kind="function"><name>str_keep_valid_sequence</name></member>
+    <member refid="util_8h_1a24aedeca4efb117878d684045bf9bece" kind="function"><name>find_with_right_pos</name></member>
+    <member refid="util_8h_1a9ebd1bf0139dbe0896ef5fc94e490f72" kind="function"><name>str2upper</name></member>
+    <member refid="util_8h_1aa79ff12decf7b10244321877981a1003" kind="function"><name>str2lower</name></member>
+    <member refid="util_8h_1a36d185a90fd1da8f9bb53d738425ec15" kind="function"><name>num2qual</name></member>
+    <member refid="util_8h_1a72cc7f4c6bfdafb18d052826b06723d6" kind="function"><name>error_exit</name></member>
+    <member refid="util_8h_1ad169d39591982ee923eab31de7c8179b" kind="function"><name>loginfo</name></member>
+  </compound>
+  <compound refid="writer_8cpp" kind="file"><name>writer.cpp</name>
+  </compound>
+  <compound refid="writer_8h" kind="file"><name>writer.h</name>
+  </compound>
+  <compound refid="writerthread_8cpp" kind="file"><name>writerthread.cpp</name>
+  </compound>
+  <compound refid="writerthread_8h" kind="file"><name>writerthread.h</name>
+    <member refid="writerthread_8h_1ab539b40c685ab3d11cf4aa1d257a97d9" kind="variable"><name>OFFSET_RING_SIZE</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

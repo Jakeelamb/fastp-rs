@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classAdapterTrimmer" kind="class" language="C++" prot="public">
+    <compoundname>AdapterTrimmer</compoundname>
+    <includes refid="adaptertrimmer_8h" local="no">adaptertrimmer.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAdapterTrimmer_1ab3d901e9e802b027f8f3db80d7305808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AdapterTrimmer::AdapterTrimmer</definition>
+        <argsstring>()</argsstring>
+        <name>AdapterTrimmer</name>
+        <qualifiedname>AdapterTrimmer::AdapterTrimmer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/adaptertrimmer.h" line="15" column="5" bodyfile="src/adaptertrimmer.cpp" bodystart="5" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdapterTrimmer_1a504d451be959998f6a5b368d910dcb8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AdapterTrimmer::~AdapterTrimmer</definition>
+        <argsstring>()</argsstring>
+        <name>~AdapterTrimmer</name>
+        <qualifiedname>AdapterTrimmer::~AdapterTrimmer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/adaptertrimmer.h" line="16" column="5" bodyfile="src/adaptertrimmer.cpp" bodystart="9" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classAdapterTrimmer_1aff4fe6cd45e0641d5590922d7d008c14" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdapterTrimmer::trimByOverlapAnalysis</definition>
+        <argsstring>(Read *r1, Read *r2, FilterResult *fr, int diffLimit, int overlapRequire, double diffPercentLimit)</argsstring>
+        <name>trimByOverlapAnalysis</name>
+        <qualifiedname>AdapterTrimmer::trimByOverlapAnalysis</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>diffLimit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>overlapRequire</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>diffPercentLimit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/adaptertrimmer.h" line="18" column="17" bodyfile="src/adaptertrimmer.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdapterTrimmer_1ac6cae026f71af02a3e0467e092714e04" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdapterTrimmer::trimByOverlapAnalysis</definition>
+        <argsstring>(Read *r1, Read *r2, FilterResult *fr, OverlapResult ov, int frontTrimmed1=0, int frontTrimmed2=0)</argsstring>
+        <name>trimByOverlapAnalysis</name>
+        <qualifiedname>AdapterTrimmer::trimByOverlapAnalysis</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref></type>
+          <declname>ov</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frontTrimmed1</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frontTrimmed2</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/adaptertrimmer.h" line="19" column="17" bodyfile="src/adaptertrimmer.cpp" bodystart="17" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdapterTrimmer_1a12d23e7ec408b7ff7327969e2492aa40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdapterTrimmer::trimBySequence</definition>
+        <argsstring>(Read *r1, FilterResult *fr, string &amp;adapter, bool isR2=false, int matchReq=4)</argsstring>
+        <name>trimBySequence</name>
+        <qualifiedname>AdapterTrimmer::trimBySequence</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isR2</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>matchReq</declname>
+          <defval>4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/adaptertrimmer.h" line="20" column="17" bodyfile="src/adaptertrimmer.cpp" bodystart="64" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdapterTrimmer_1aaa48744b28fd12fb282bb2e5104efd73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdapterTrimmer::trimByMultiSequences</definition>
+        <argsstring>(Read *r1, FilterResult *fr, vector&lt; string &gt; &amp;adapterList, bool isR2=false)</argsstring>
+        <name>trimByMultiSequences</name>
+        <qualifiedname>AdapterTrimmer::trimByMultiSequences</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>vector&lt; string &gt; &amp;</type>
+          <declname>adapterList</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isR2</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/adaptertrimmer.h" line="21" column="17" bodyfile="src/adaptertrimmer.cpp" bodystart="48" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdapterTrimmer_1afffbea20b02ccb66c13ebab06c4f0ae0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdapterTrimmer::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>AdapterTrimmer::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/adaptertrimmer.h" line="22" column="17" bodyfile="src/adaptertrimmer.cpp" bodystart="159" bodyend="185"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/adaptertrimmer.h" line="13" column="1" bodyfile="src/adaptertrimmer.h" bodystart="13" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classAdapterTrimmer_1ab3d901e9e802b027f8f3db80d7305808" prot="public" virt="non-virtual"><scope>AdapterTrimmer</scope><name>AdapterTrimmer</name></member>
+      <member refid="classAdapterTrimmer_1afffbea20b02ccb66c13ebab06c4f0ae0" prot="public" virt="non-virtual"><scope>AdapterTrimmer</scope><name>test</name></member>
+      <member refid="classAdapterTrimmer_1aaa48744b28fd12fb282bb2e5104efd73" prot="public" virt="non-virtual"><scope>AdapterTrimmer</scope><name>trimByMultiSequences</name></member>
+      <member refid="classAdapterTrimmer_1aff4fe6cd45e0641d5590922d7d008c14" prot="public" virt="non-virtual"><scope>AdapterTrimmer</scope><name>trimByOverlapAnalysis</name></member>
+      <member refid="classAdapterTrimmer_1ac6cae026f71af02a3e0467e092714e04" prot="public" virt="non-virtual"><scope>AdapterTrimmer</scope><name>trimByOverlapAnalysis</name></member>
+      <member refid="classAdapterTrimmer_1a12d23e7ec408b7ff7327969e2492aa40" prot="public" virt="non-virtual"><scope>AdapterTrimmer</scope><name>trimBySequence</name></member>
+      <member refid="classAdapterTrimmer_1a504d451be959998f6a5b368d910dcb8a" prot="public" virt="non-virtual"><scope>AdapterTrimmer</scope><name>~AdapterTrimmer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

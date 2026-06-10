@@ -1,0 +1,121 @@
+\doxysection{Json\+Reporter Class Reference}
+\hypertarget{classJsonReporter}{}\label{classJsonReporter}\index{JsonReporter@{JsonReporter}}
+
+
+{\ttfamily \+\#include $<$jsonreporter.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classJsonReporter_ae877aa6bf26178f524195e405d0d9f44}{Json\+Reporter}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt)
+\item 
+\doxymbox{\hyperlink{classJsonReporter_aeece0a033d6136609217ac08a363d86e}{\texorpdfstring{$\sim$}{\string~}\+Json\+Reporter}} ()
+\item 
+void \doxymbox{\hyperlink{classJsonReporter_add77bc5f100396720aa6d0237851a545}{set\+Dup}} (double dup\+Rate)
+\item 
+void \doxymbox{\hyperlink{classJsonReporter_a1fe157defef88e9851f8ed46d573bae6}{set\+Insert\+Hist}} (atomic\+\_\+long \texorpdfstring{$\ast$}{*}insert\+Hist, int insert\+Size\+Peak)
+\item 
+void \doxymbox{\hyperlink{classJsonReporter_aa86bc03360bb79f2f33c0e652da61207}{report}} (\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}result, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}pre\+Stats1, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}post\+Stats1, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}pre\+Stats2=NULL, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}post\+Stats2=NULL)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classJsonReporter_a6473ee41a0ba145229a27628599df14a}{m\+Options}}
+\item 
+int \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classJsonReporter_a66f87dd8e019ad639d1586802123dff7}{m\+Dup\+Hist}}
+\item 
+double \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classJsonReporter_a4415cd88768813b895bff5207be4febc}{m\+Dup\+Mean\+GC}}
+\item 
+double \doxymbox{\hyperlink{classJsonReporter_a8be645fd72da0fbd1bd2b8cc06aaffe6}{m\+Dup\+Rate}}
+\item 
+atomic\+\_\+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classJsonReporter_a028ac82bb4de4799ddcab9b2c30c73b5}{m\+Insert\+Hist}}
+\item 
+int \doxymbox{\hyperlink{classJsonReporter_ad9dc11be17484a6888172b230c6f578d}{m\+Insert\+Size\+Peak}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classJsonReporter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classJsonReporter_ae877aa6bf26178f524195e405d0d9f44}\index{JsonReporter@{JsonReporter}!JsonReporter@{JsonReporter}}
+\index{JsonReporter@{JsonReporter}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{JsonReporter()}{JsonReporter()}}
+{\footnotesize\ttfamily \label{classJsonReporter_ae877aa6bf26178f524195e405d0d9f44} 
+Json\+Reporter::\+\+Json\+Reporter (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classJsonReporter_aeece0a033d6136609217ac08a363d86e}\index{JsonReporter@{JsonReporter}!````~JsonReporter@{\texorpdfstring{$\sim$}{\string~}JsonReporter}}
+\index{````~JsonReporter@{\texorpdfstring{$\sim$}{\string~}JsonReporter}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}JsonReporter()}{\string~JsonReporter()}}
+{\footnotesize\ttfamily \label{classJsonReporter_aeece0a033d6136609217ac08a363d86e} 
+Json\+Reporter::\+\texorpdfstring{$\sim$}{\string~}\+Json\+Reporter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classJsonReporter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classJsonReporter_aa86bc03360bb79f2f33c0e652da61207}\index{JsonReporter@{JsonReporter}!report@{report}}
+\index{report@{report}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{report()}{report()}}
+{\footnotesize\ttfamily \label{classJsonReporter_aa86bc03360bb79f2f33c0e652da61207} 
+void Json\+Reporter::\+report (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}}]{result}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{pre\+Stats1}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{post\+Stats1}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{pre\+Stats2}{ = {\ttfamily NULL}, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{post\+Stats2}{ = {\ttfamily NULL}}\end{DoxyParamCaption})}
+
+\Hypertarget{classJsonReporter_add77bc5f100396720aa6d0237851a545}\index{JsonReporter@{JsonReporter}!setDup@{setDup}}
+\index{setDup@{setDup}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{setDup()}{setDup()}}
+{\footnotesize\ttfamily \label{classJsonReporter_add77bc5f100396720aa6d0237851a545} 
+void Json\+Reporter::\+set\+Dup (\begin{DoxyParamCaption}\item[{double}]{dup\+Rate}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classJsonReporter_a1fe157defef88e9851f8ed46d573bae6}\index{JsonReporter@{JsonReporter}!setInsertHist@{setInsertHist}}
+\index{setInsertHist@{setInsertHist}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{setInsertHist()}{setInsertHist()}}
+{\footnotesize\ttfamily \label{classJsonReporter_a1fe157defef88e9851f8ed46d573bae6} 
+void Json\+Reporter::\+set\+Insert\+Hist (\begin{DoxyParamCaption}\item[{atomic\+\_\+long \texorpdfstring{$\ast$}{*}}]{insert\+Hist}{, }\item[{int}]{insert\+Size\+Peak}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classJsonReporter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classJsonReporter_a66f87dd8e019ad639d1586802123dff7}\index{JsonReporter@{JsonReporter}!mDupHist@{mDupHist}}
+\index{mDupHist@{mDupHist}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{mDupHist}{mDupHist}}
+{\footnotesize\ttfamily \label{classJsonReporter_a66f87dd8e019ad639d1586802123dff7} 
+int\texorpdfstring{$\ast$}{*} Json\+Reporter::\+m\+Dup\+Hist\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classJsonReporter_a4415cd88768813b895bff5207be4febc}\index{JsonReporter@{JsonReporter}!mDupMeanGC@{mDupMeanGC}}
+\index{mDupMeanGC@{mDupMeanGC}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{mDupMeanGC}{mDupMeanGC}}
+{\footnotesize\ttfamily \label{classJsonReporter_a4415cd88768813b895bff5207be4febc} 
+double\texorpdfstring{$\ast$}{*} Json\+Reporter::\+m\+Dup\+Mean\+GC\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classJsonReporter_a8be645fd72da0fbd1bd2b8cc06aaffe6}\index{JsonReporter@{JsonReporter}!mDupRate@{mDupRate}}
+\index{mDupRate@{mDupRate}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{mDupRate}{mDupRate}}
+{\footnotesize\ttfamily \label{classJsonReporter_a8be645fd72da0fbd1bd2b8cc06aaffe6} 
+double Json\+Reporter::\+m\+Dup\+Rate\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classJsonReporter_a028ac82bb4de4799ddcab9b2c30c73b5}\index{JsonReporter@{JsonReporter}!mInsertHist@{mInsertHist}}
+\index{mInsertHist@{mInsertHist}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{mInsertHist}{mInsertHist}}
+{\footnotesize\ttfamily \label{classJsonReporter_a028ac82bb4de4799ddcab9b2c30c73b5} 
+atomic\+\_\+long\texorpdfstring{$\ast$}{*} Json\+Reporter::\+m\+Insert\+Hist\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classJsonReporter_ad9dc11be17484a6888172b230c6f578d}\index{JsonReporter@{JsonReporter}!mInsertSizePeak@{mInsertSizePeak}}
+\index{mInsertSizePeak@{mInsertSizePeak}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{mInsertSizePeak}{mInsertSizePeak}}
+{\footnotesize\ttfamily \label{classJsonReporter_ad9dc11be17484a6888172b230c6f578d} 
+int Json\+Reporter::\+m\+Insert\+Size\+Peak\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classJsonReporter_a6473ee41a0ba145229a27628599df14a}\index{JsonReporter@{JsonReporter}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!JsonReporter@{JsonReporter}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classJsonReporter_a6473ee41a0ba145229a27628599df14a} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Json\+Reporter::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{jsonreporter_8h}{jsonreporter.\+h}}\item 
+src/\+\doxymbox{\hyperlink{jsonreporter_8cpp}{jsonreporter.\+cpp}}\end{DoxyCompactItemize}

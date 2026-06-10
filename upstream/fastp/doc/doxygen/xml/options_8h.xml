@@ -1,0 +1,947 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="options_8h" kind="file" language="C++">
+    <compoundname>options.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">map</includes>
+    <includedby refid="adaptertrimmer_8h" local="yes">src/adaptertrimmer.h</includedby>
+    <includedby refid="basecorrector_8h" local="yes">src/basecorrector.h</includedby>
+    <includedby refid="duplicate_8h" local="yes">src/duplicate.h</includedby>
+    <includedby refid="evaluator_8h" local="yes">src/evaluator.h</includedby>
+    <includedby refid="filter_8h" local="yes">src/filter.h</includedby>
+    <includedby refid="filterresult_8h" local="yes">src/filterresult.h</includedby>
+    <includedby refid="htmlreporter_8h" local="yes">src/htmlreporter.h</includedby>
+    <includedby refid="jsonreporter_8h" local="yes">src/jsonreporter.h</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <includedby refid="nucleotidetree_8h" local="yes">src/nucleotidetree.h</includedby>
+    <includedby refid="options_8cpp" local="yes">src/options.cpp</includedby>
+    <includedby refid="overlapanalysis_8h" local="yes">src/overlapanalysis.h</includedby>
+    <includedby refid="peprocessor_8h" local="yes">src/peprocessor.h</includedby>
+    <includedby refid="polyx_8h" local="yes">src/polyx.h</includedby>
+    <includedby refid="processor_8h" local="yes">src/processor.h</includedby>
+    <includedby refid="readpool_8h" local="yes">src/readpool.h</includedby>
+    <includedby refid="seprocessor_8h" local="yes">src/seprocessor.h</includedby>
+    <includedby refid="stats_8h" local="yes">src/stats.h</includedby>
+    <includedby refid="threadconfig_8h" local="yes">src/threadconfig.h</includedby>
+    <includedby refid="umiprocessor_8h" local="yes">src/umiprocessor.h</includedby>
+    <includedby refid="writer_8h" local="yes">src/writer.h</includedby>
+    <includedby refid="writerthread_8h" local="yes">src/writerthread.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/adaptertrimmer.cpp</label>
+        <link refid="adaptertrimmer_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/adaptertrimmer.h</label>
+        <link refid="adaptertrimmer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/basecorrector.cpp</label>
+        <link refid="basecorrector_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/basecorrector.h</label>
+        <link refid="basecorrector_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/duplicate.cpp</label>
+        <link refid="duplicate_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/duplicate.h</label>
+        <link refid="duplicate_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/evaluator.cpp</label>
+        <link refid="evaluator_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/evaluator.h</label>
+        <link refid="evaluator_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/fastqreader.cpp</label>
+        <link refid="fastqreader_8cpp"/>
+      </node>
+      <node id="36">
+        <label>src/fastqreader.h</label>
+        <link refid="fastqreader_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/filter.h</label>
+        <link refid="filter_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>src/filterresult.cpp</label>
+        <link refid="filterresult_8cpp"/>
+      </node>
+      <node id="19">
+        <label>src/filterresult.h</label>
+        <link refid="filterresult_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/htmlreporter.cpp</label>
+        <link refid="htmlreporter_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/htmlreporter.h</label>
+        <link refid="htmlreporter_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/jsonreporter.cpp</label>
+        <link refid="jsonreporter_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/jsonreporter.h</label>
+        <link refid="jsonreporter_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/nucleotidetree.cpp</label>
+        <link refid="nucleotidetree_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/nucleotidetree.h</label>
+        <link refid="nucleotidetree_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>src/options.cpp</label>
+        <link refid="options_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/overlapanalysis.cpp</label>
+        <link refid="overlapanalysis_8cpp"/>
+      </node>
+      <node id="32">
+        <label>src/overlapanalysis.h</label>
+        <link refid="overlapanalysis_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/peprocessor.h</label>
+        <link refid="peprocessor_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/polyx.cpp</label>
+        <link refid="polyx_8cpp"/>
+      </node>
+      <node id="25">
+        <label>src/polyx.h</label>
+        <link refid="polyx_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/processor.cpp</label>
+        <link refid="processor_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/processor.h</label>
+        <link refid="processor_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>src/readpool.cpp</label>
+        <link refid="readpool_8cpp"/>
+      </node>
+      <node id="35">
+        <label>src/readpool.h</label>
+        <link refid="readpool_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/seprocessor.h</label>
+        <link refid="seprocessor_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>src/stats.cpp</label>
+        <link refid="stats_8cpp"/>
+      </node>
+      <node id="39">
+        <label>src/stats.h</label>
+        <link refid="stats_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/threadconfig.cpp</label>
+        <link refid="threadconfig_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/threadconfig.h</label>
+        <link refid="threadconfig_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>src/umiprocessor.cpp</label>
+        <link refid="umiprocessor_8cpp"/>
+      </node>
+      <node id="41">
+        <label>src/umiprocessor.h</label>
+        <link refid="umiprocessor_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/unittest.cpp</label>
+        <link refid="unittest_8cpp"/>
+      </node>
+      <node id="44">
+        <label>src/writer.cpp</label>
+        <link refid="writer_8cpp"/>
+      </node>
+      <node id="43">
+        <label>src/writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>src/writerthread.cpp</label>
+        <link refid="writerthread_8cpp"/>
+      </node>
+      <node id="45">
+        <label>src/writerthread.h</label>
+        <link refid="writerthread_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMergeOptions" prot="public">MergeOptions</innerclass>
+    <innerclass refid="classDuplicationOptions" prot="public">DuplicationOptions</innerclass>
+    <innerclass refid="classIndexFilterOptions" prot="public">IndexFilterOptions</innerclass>
+    <innerclass refid="classLowComplexityFilterOptions" prot="public">LowComplexityFilterOptions</innerclass>
+    <innerclass refid="classOverrepresentedSequenceAnasysOptions" prot="public">OverrepresentedSequenceAnasysOptions</innerclass>
+    <innerclass refid="classPolyGTrimmerOptions" prot="public">PolyGTrimmerOptions</innerclass>
+    <innerclass refid="classPolyXTrimmerOptions" prot="public">PolyXTrimmerOptions</innerclass>
+    <innerclass refid="classUMIOptions" prot="public">UMIOptions</innerclass>
+    <innerclass refid="classCorrectionOptions" prot="public">CorrectionOptions</innerclass>
+    <innerclass refid="classQualityCutOptions" prot="public">QualityCutOptions</innerclass>
+    <innerclass refid="classSplitOptions" prot="public">SplitOptions</innerclass>
+    <innerclass refid="classAdapterOptions" prot="public">AdapterOptions</innerclass>
+    <innerclass refid="classTrimmingOptions" prot="public">TrimmingOptions</innerclass>
+    <innerclass refid="classQualityFilteringOptions" prot="public">QualityFilteringOptions</innerclass>
+    <innerclass refid="classReadLengthFilteringOptions" prot="public">ReadLengthFilteringOptions</innerclass>
+    <innerclass refid="classOptions" prot="public">Options</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="options_8h_1adfaeb64fa9964f7883cc83df0c4a837b" prot="public" static="no">
+        <name>UMI_LOC_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="12" column="9" bodyfile="src/options.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="options_8h_1a7f21eb844e334922fe953a98534c1e3f" prot="public" static="no">
+        <name>UMI_LOC_INDEX1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="13" column="9" bodyfile="src/options.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="options_8h_1a191ce48412c4baeab455ccfd4e56d8bb" prot="public" static="no">
+        <name>UMI_LOC_INDEX2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="14" column="9" bodyfile="src/options.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="options_8h_1a47c65cefbd05003c253b1ce56867993d" prot="public" static="no">
+        <name>UMI_LOC_READ1</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="15" column="9" bodyfile="src/options.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="options_8h_1a8023d8803b58cbca4838b63fdf65eb03" prot="public" static="no">
+        <name>UMI_LOC_READ2</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="16" column="9" bodyfile="src/options.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="options_8h_1a8949a3db0997bcee09260efb4b46c46e" prot="public" static="no">
+        <name>UMI_LOC_PER_INDEX</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="17" column="9" bodyfile="src/options.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="options_8h_1a3cb6ab26c4387d164cfce0eff0f3ab42" prot="public" static="no">
+        <name>UMI_LOC_PER_READ</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="18" column="9" bodyfile="src/options.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="options_8h_1adfaeb64fa9964f7883cc83df0c4a837b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UMI_LOC_NONE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="options_8h_1a7f21eb844e334922fe953a98534c1e3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UMI_LOC_INDEX1<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="options_8h_1a191ce48412c4baeab455ccfd4e56d8bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UMI_LOC_INDEX2<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="options_8h_1a47c65cefbd05003c253b1ce56867993d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UMI_LOC_READ1<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="options_8h_1a8023d8803b58cbca4838b63fdf65eb03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UMI_LOC_READ2<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="options_8h_1a8949a3db0997bcee09260efb4b46c46e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UMI_LOC_PER_INDEX<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="options_8h_1a3cb6ab26c4387d164cfce0eff0f3ab42" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UMI_LOC_PER_READ<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classMergeOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMergeOptions_1ada9bd67bd9f9d9c3ecb6426b488cdf2b" kindref="member">MergeOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classMergeOptions_1ada9bd67bd9f9d9c3ecb6426b488cdf2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMergeOptions_1ada9bd67bd9f9d9c3ecb6426b488cdf2b" kindref="member">MergeOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMergeOptions_1a3d47b82ca26cec8cb66819a220f6bae5" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMergeOptions_1a9a843b221a422d753ae70ab37ef25e9c" kindref="member">includeUnmerged</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classMergeOptions_1a3d47b82ca26cec8cb66819a220f6bae5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMergeOptions_1a3d47b82ca26cec8cb66819a220f6bae5" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="28" refid="classMergeOptions_1a9a843b221a422d753ae70ab37ef25e9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMergeOptions_1a9a843b221a422d753ae70ab37ef25e9c" kindref="member">includeUnmerged</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classMergeOptions_1aeb833b5a92a65dd45b977772dae48eb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classMergeOptions_1aeb833b5a92a65dd45b977772dae48eb5" kindref="member">out</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classDuplicationOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDuplicationOptions_1a6bfa8f555d2c10932607db71906257a9" kindref="member">DuplicationOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34" refid="classDuplicationOptions_1a6bfa8f555d2c10932607db71906257a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicationOptions_1a6bfa8f555d2c10932607db71906257a9" kindref="member">DuplicationOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicationOptions_1aafe19f3cc86719ae9ae267908637cc08" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicationOptions_1a9a0ae87d7b8e5ed5d48ca2abed267e77" kindref="member">histSize</ref><sp/>=<sp/>32;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicationOptions_1acf272ee46f315a28a49f2a7f1976fae6" kindref="member">dedup</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicationOptions_1a2bd6b5b11c80ab3d1322ffe84d5fa30a" kindref="member">accuracyLevel</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classDuplicationOptions_1aafe19f3cc86719ae9ae267908637cc08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDuplicationOptions_1aafe19f3cc86719ae9ae267908637cc08" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classDuplicationOptions_1a9a0ae87d7b8e5ed5d48ca2abed267e77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDuplicationOptions_1a9a0ae87d7b8e5ed5d48ca2abed267e77" kindref="member">histSize</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classDuplicationOptions_1acf272ee46f315a28a49f2a7f1976fae6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDuplicationOptions_1acf272ee46f315a28a49f2a7f1976fae6" kindref="member">dedup</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classDuplicationOptions_1a2bd6b5b11c80ab3d1322ffe84d5fa30a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDuplicationOptions_1a2bd6b5b11c80ab3d1322ffe84d5fa30a" kindref="member">accuracyLevel</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classIndexFilterOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classIndexFilterOptions_1a1106fb2f37ca24d2512200a82dad8c7b" kindref="member">IndexFilterOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="classIndexFilterOptions_1a1106fb2f37ca24d2512200a82dad8c7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIndexFilterOptions_1a1106fb2f37ca24d2512200a82dad8c7b" kindref="member">IndexFilterOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classIndexFilterOptions_1a40ea1b4ebfb784b75f428b9dfe390793" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classIndexFilterOptions_1ac142d33ed03b8066c83f403f784760fe" kindref="member">threshold</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54" refid="classIndexFilterOptions_1ae35b6f2704c88e70e511e57c8666f98b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="classIndexFilterOptions_1ae35b6f2704c88e70e511e57c8666f98b" kindref="member">blacklist1</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classIndexFilterOptions_1aa80f659267e4386537dc4879e71d60b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="classIndexFilterOptions_1aa80f659267e4386537dc4879e71d60b4" kindref="member">blacklist2</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classIndexFilterOptions_1a40ea1b4ebfb784b75f428b9dfe390793" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classIndexFilterOptions_1a40ea1b4ebfb784b75f428b9dfe390793" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classIndexFilterOptions_1ac142d33ed03b8066c83f403f784760fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classIndexFilterOptions_1ac142d33ed03b8066c83f403f784760fe" kindref="member">threshold</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classLowComplexityFilterOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLowComplexityFilterOptions_1ac06e3e3a876e3bf18b0c2d492cb4a601" kindref="member">LowComplexityFilterOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="classLowComplexityFilterOptions_1ac06e3e3a876e3bf18b0c2d492cb4a601" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLowComplexityFilterOptions_1ac06e3e3a876e3bf18b0c2d492cb4a601" kindref="member">LowComplexityFilterOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLowComplexityFilterOptions_1a74a6689faace1ed12fecbad6bf1b8ae3" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLowComplexityFilterOptions_1add553a613ca28b66753b88a40820d02f" kindref="member">threshold</ref><sp/>=<sp/>0.3;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67" refid="classLowComplexityFilterOptions_1a74a6689faace1ed12fecbad6bf1b8ae3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLowComplexityFilterOptions_1a74a6689faace1ed12fecbad6bf1b8ae3" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classLowComplexityFilterOptions_1add553a613ca28b66753b88a40820d02f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classLowComplexityFilterOptions_1add553a613ca28b66753b88a40820d02f" kindref="member">threshold</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classOverrepresentedSequenceAnasysOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOverrepresentedSequenceAnasysOptions_1aa15c1166e77e9c03ead53aea94e4443b" kindref="member">OverrepresentedSequenceAnasysOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73" refid="classOverrepresentedSequenceAnasysOptions_1aa15c1166e77e9c03ead53aea94e4443b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOverrepresentedSequenceAnasysOptions_1aa15c1166e77e9c03ead53aea94e4443b" kindref="member">OverrepresentedSequenceAnasysOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOverrepresentedSequenceAnasysOptions_1afca60512bf9a402355cb56d6fb382200" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classOverrepresentedSequenceAnasysOptions_1a3c357eb931d4a1b8bae0b695461b2e3f" kindref="member">sampling</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78" refid="classOverrepresentedSequenceAnasysOptions_1afca60512bf9a402355cb56d6fb382200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOverrepresentedSequenceAnasysOptions_1afca60512bf9a402355cb56d6fb382200" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="79" refid="classOverrepresentedSequenceAnasysOptions_1a3c357eb931d4a1b8bae0b695461b2e3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOverrepresentedSequenceAnasysOptions_1a3c357eb931d4a1b8bae0b695461b2e3f" kindref="member">sampling</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classPolyGTrimmerOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPolyGTrimmerOptions_1a8dd7c16744b76acc50a3d49e77a829e8" kindref="member">PolyGTrimmerOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84" refid="classPolyGTrimmerOptions_1a8dd7c16744b76acc50a3d49e77a829e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPolyGTrimmerOptions_1a8dd7c16744b76acc50a3d49e77a829e8" kindref="member">PolyGTrimmerOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPolyGTrimmerOptions_1a77674bfc862c07ee667afad1a36780ad" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPolyGTrimmerOptions_1ab42ab7f2345a43f402aaefda8e692efe" kindref="member">minLen</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89" refid="classPolyGTrimmerOptions_1a77674bfc862c07ee667afad1a36780ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPolyGTrimmerOptions_1a77674bfc862c07ee667afad1a36780ad" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="90" refid="classPolyGTrimmerOptions_1ab42ab7f2345a43f402aaefda8e692efe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPolyGTrimmerOptions_1ab42ab7f2345a43f402aaefda8e692efe" kindref="member">minLen</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classPolyXTrimmerOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPolyXTrimmerOptions_1af0cfdb1648c5d2f1d2500cba2fd5b833" kindref="member">PolyXTrimmerOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95" refid="classPolyXTrimmerOptions_1af0cfdb1648c5d2f1d2500cba2fd5b833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPolyXTrimmerOptions_1af0cfdb1648c5d2f1d2500cba2fd5b833" kindref="member">PolyXTrimmerOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPolyXTrimmerOptions_1ad0d3f0b56df99447f20bb13503ebab71" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classPolyXTrimmerOptions_1a9c37df68dc84f35a50f703599e12ae3c" kindref="member">minLen</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100" refid="classPolyXTrimmerOptions_1ad0d3f0b56df99447f20bb13503ebab71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPolyXTrimmerOptions_1ad0d3f0b56df99447f20bb13503ebab71" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="101" refid="classPolyXTrimmerOptions_1a9c37df68dc84f35a50f703599e12ae3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPolyXTrimmerOptions_1a9c37df68dc84f35a50f703599e12ae3c" kindref="member">minLen</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classUMIOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUMIOptions_1a2ed315ff07cf2d6de053c588593468ca" kindref="member">UMIOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106" refid="classUMIOptions_1a2ed315ff07cf2d6de053c588593468ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUMIOptions_1a2ed315ff07cf2d6de053c588593468ca" kindref="member">UMIOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUMIOptions_1afe51e2ca09bc468fdfa6b4550f1f8647" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUMIOptions_1afd3f5d26a76730b0b3aadff907efd7a9" kindref="member">location</ref><sp/>=<sp/><ref refid="options_8h_1adfaeb64fa9964f7883cc83df0c4a837b" kindref="member">UMI_LOC_NONE</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUMIOptions_1acfd5ea79dcafa9108c7b5b2ba753dd0b" kindref="member">length</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUMIOptions_1a7c463475fa8acc3a283c2e08de89234f" kindref="member">skip</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUMIOptions_1a752d0fda7963b9875b2bf179a4170da4" kindref="member">delimiter</ref>=<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114" refid="classUMIOptions_1afe51e2ca09bc468fdfa6b4550f1f8647" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUMIOptions_1afe51e2ca09bc468fdfa6b4550f1f8647" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="115" refid="classUMIOptions_1afd3f5d26a76730b0b3aadff907efd7a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUMIOptions_1afd3f5d26a76730b0b3aadff907efd7a9" kindref="member">location</ref>;</highlight></codeline>
+<codeline lineno="116" refid="classUMIOptions_1acfd5ea79dcafa9108c7b5b2ba753dd0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUMIOptions_1acfd5ea79dcafa9108c7b5b2ba753dd0b" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="117" refid="classUMIOptions_1a7c463475fa8acc3a283c2e08de89234f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUMIOptions_1a7c463475fa8acc3a283c2e08de89234f" kindref="member">skip</ref>;</highlight></codeline>
+<codeline lineno="118" refid="classUMIOptions_1a04629451686a5b4a5e43a761de6a6e6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classUMIOptions_1a04629451686a5b4a5e43a761de6a6e6e" kindref="member">prefix</ref>;</highlight></codeline>
+<codeline lineno="119" refid="classUMIOptions_1aa52875362e8ea1ab8a7436be3070eddd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classUMIOptions_1aa52875362e8ea1ab8a7436be3070eddd" kindref="member">separator</ref>;</highlight></codeline>
+<codeline lineno="120" refid="classUMIOptions_1a752d0fda7963b9875b2bf179a4170da4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classUMIOptions_1a752d0fda7963b9875b2bf179a4170da4" kindref="member">delimiter</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classCorrectionOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCorrectionOptions_1a74029fa3f80876864d1b2d5d6e0999a3" kindref="member">CorrectionOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="125" refid="classCorrectionOptions_1a74029fa3f80876864d1b2d5d6e0999a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCorrectionOptions_1a74029fa3f80876864d1b2d5d6e0999a3" kindref="member">CorrectionOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCorrectionOptions_1a2ca3a0d12493f37e74ab6bc04548bf48" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="129" refid="classCorrectionOptions_1a2ca3a0d12493f37e74ab6bc04548bf48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCorrectionOptions_1a2ca3a0d12493f37e74ab6bc04548bf48" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classQualityCutOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQualityCutOptions_1a80bb792c47b21fadd409dd690d747120" kindref="member">QualityCutOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="134" refid="classQualityCutOptions_1a80bb792c47b21fadd409dd690d747120" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a80bb792c47b21fadd409dd690d747120" kindref="member">QualityCutOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a4f5910cea11e4dc2871a15d349ca917d" kindref="member">enabledFront</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1af20afe9df0a78bb9a5826b8f6df3c6cb" kindref="member">enabledTail</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a267fad1128ce9da0b8e324d98ffb98d5" kindref="member">enabledRight</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" kindref="member">windowSizeShared</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" kindref="member">qualityShared</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a13a2206b42006dec1fb9d51041071322" kindref="member">windowSizeFront</ref><sp/>=<sp/><ref refid="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" kindref="member">windowSizeShared</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a3344ddbd8f314e2e9e6eda3072e04b49" kindref="member">qualityFront</ref><sp/>=<sp/><ref refid="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" kindref="member">qualityShared</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1aa1d24968edde023c42f6b92921a15f4f" kindref="member">windowSizeTail</ref><sp/>=<sp/><ref refid="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" kindref="member">windowSizeShared</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a2185fb830e5a537bfd6a328005819952" kindref="member">qualityTail</ref><sp/>=<sp/><ref refid="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" kindref="member">qualityShared</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1aad3c713c7a6baf90f178fcf6371da7ca" kindref="member">windowSizeRight</ref><sp/>=<sp/><ref refid="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" kindref="member">windowSizeShared</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions_1a86cc0d06bc8235a11cd74c3d60038bd5" kindref="member">qualityRight</ref><sp/>=<sp/><ref refid="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" kindref="member">qualityShared</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>5&apos;<sp/>cutting<sp/>by<sp/>quality</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classQualityCutOptions_1a4f5910cea11e4dc2871a15d349ca917d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1a4f5910cea11e4dc2871a15d349ca917d" kindref="member">enabledFront</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>3&apos;<sp/>cutting<sp/>by<sp/>quality</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="classQualityCutOptions_1af20afe9df0a78bb9a5826b8f6df3c6cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1af20afe9df0a78bb9a5826b8f6df3c6cb" kindref="member">enabledTail</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>agressive<sp/>cutting<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classQualityCutOptions_1a267fad1128ce9da0b8e324d98ffb98d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1a267fad1128ce9da0b8e324d98ffb98d5" kindref="member">enabledRight</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>sliding<sp/>window<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" kindref="member">windowSizeShared</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>mean<sp/>quality<sp/>requirement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" kindref="member">qualityShared</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>sliding<sp/>window<sp/>size<sp/>for<sp/>cutting<sp/>by<sp/>quality<sp/>in<sp/>5&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="classQualityCutOptions_1a13a2206b42006dec1fb9d51041071322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1a13a2206b42006dec1fb9d51041071322" kindref="member">windowSizeFront</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>mean<sp/>quality<sp/>requirement<sp/>for<sp/>cutting<sp/>by<sp/>quality<sp/>in<sp/>5&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="classQualityCutOptions_1a3344ddbd8f314e2e9e6eda3072e04b49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1a3344ddbd8f314e2e9e6eda3072e04b49" kindref="member">qualityFront</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>sliding<sp/>window<sp/>size<sp/>for<sp/>cutting<sp/>by<sp/>quality<sp/>in<sp/>3&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classQualityCutOptions_1aa1d24968edde023c42f6b92921a15f4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1aa1d24968edde023c42f6b92921a15f4f" kindref="member">windowSizeTail</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>mean<sp/>quality<sp/>requirement<sp/>for<sp/>cutting<sp/>by<sp/>quality<sp/>in<sp/>3&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="classQualityCutOptions_1a2185fb830e5a537bfd6a328005819952" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1a2185fb830e5a537bfd6a328005819952" kindref="member">qualityTail</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>sliding<sp/>window<sp/>size<sp/>for<sp/>cutting<sp/>by<sp/>quality<sp/>in<sp/>aggressive<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="classQualityCutOptions_1aad3c713c7a6baf90f178fcf6371da7ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1aad3c713c7a6baf90f178fcf6371da7ca" kindref="member">windowSizeRight</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>mean<sp/>quality<sp/>requirement<sp/>for<sp/>cutting<sp/>by<sp/>quality<sp/>in<sp/>aggressive<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classQualityCutOptions_1a86cc0d06bc8235a11cd74c3d60038bd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityCutOptions_1a86cc0d06bc8235a11cd74c3d60038bd5" kindref="member">qualityRight</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="classSplitOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSplitOptions_1a9e5054c56fc1d83cdc599b90c67fe0af" kindref="member">SplitOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="174" refid="classSplitOptions_1a9e5054c56fc1d83cdc599b90c67fe0af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSplitOptions_1a9e5054c56fc1d83cdc599b90c67fe0af" kindref="member">SplitOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSplitOptions_1ae7970d026df03f83e27242fb1e9bd071" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSplitOptions_1a48acb176bdf3a4d1779553269cd5d346" kindref="member">needEvaluation</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSplitOptions_1a5bef99e1bb21004399da546bd5ab1bff" kindref="member">number</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSplitOptions_1aea91f721c5ca28e8f3c5ff7fd2647e66" kindref="member">size</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSplitOptions_1a7f56326730c02303fcdf53d8ebdd6d1c" kindref="member">digits</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSplitOptions_1a7fe3d5b9c889fe049d9233aff62cebf7" kindref="member">byFileNumber</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSplitOptions_1a95502f9eb5f8da1ef60a953195cc8ee6" kindref="member">byFileLines</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="184" refid="classSplitOptions_1ae7970d026df03f83e27242fb1e9bd071" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSplitOptions_1ae7970d026df03f83e27242fb1e9bd071" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>files</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="classSplitOptions_1a5bef99e1bb21004399da546bd5ab1bff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSplitOptions_1a5bef99e1bb21004399da546bd5ab1bff" kindref="member">number</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>lines<sp/>of<sp/>each<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="classSplitOptions_1aea91f721c5ca28e8f3c5ff7fd2647e66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classSplitOptions_1aea91f721c5ca28e8f3c5ff7fd2647e66" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>digits<sp/>number<sp/>of<sp/>file<sp/>name<sp/>prefix,<sp/>for<sp/>example<sp/>0001<sp/>means<sp/>4<sp/>digits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="classSplitOptions_1a7f56326730c02303fcdf53d8ebdd6d1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSplitOptions_1a7f56326730c02303fcdf53d8ebdd6d1c" kindref="member">digits</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>evaluation?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classSplitOptions_1a48acb176bdf3a4d1779553269cd5d346" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSplitOptions_1a48acb176bdf3a4d1779553269cd5d346" kindref="member">needEvaluation</ref>;</highlight></codeline>
+<codeline lineno="193" refid="classSplitOptions_1a7fe3d5b9c889fe049d9233aff62cebf7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSplitOptions_1a7fe3d5b9c889fe049d9233aff62cebf7" kindref="member">byFileNumber</ref>;</highlight></codeline>
+<codeline lineno="194" refid="classSplitOptions_1a95502f9eb5f8da1ef60a953195cc8ee6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSplitOptions_1a95502f9eb5f8da1ef60a953195cc8ee6" kindref="member">byFileLines</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="classAdapterOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAdapterOptions_1a8677b41dc47cbd315a1ebb04ef2c96d4" kindref="member">AdapterOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="199" refid="classAdapterOptions_1a8677b41dc47cbd315a1ebb04ef2c96d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAdapterOptions_1a8677b41dc47cbd315a1ebb04ef2c96d4" kindref="member">AdapterOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAdapterOptions_1a326f1a31b6fa1c76d6febdc2381111f1" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAdapterOptions_1ac234fd86b829e48491a0ff0d1beb6432" kindref="member">hasSeqR1</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAdapterOptions_1a395b652790a5f610ebe13faa4c176fb6" kindref="member">hasSeqR2</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAdapterOptions_1a2f22495ce41a1d0167e045fb63fe26dd" kindref="member">detectAdapterForPE</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAdapterOptions_1a91deb52735032c19c0299a2eae8c8d94" kindref="member">allowGapOverlapTrimming</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classAdapterOptions_1ac5caeb28d124e9d4f7fe4f7078970b88" kindref="member">dimerMaxLen</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="208" refid="classAdapterOptions_1a326f1a31b6fa1c76d6febdc2381111f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a326f1a31b6fa1c76d6febdc2381111f1" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="209" refid="classAdapterOptions_1a3ce8c7bbd2b0ac79fa2ca3bb4d016edf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a3ce8c7bbd2b0ac79fa2ca3bb4d016edf" kindref="member">sequence</ref>;</highlight></codeline>
+<codeline lineno="210" refid="classAdapterOptions_1a3b4a31de85a321badbe26fa9df9f7b74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a3b4a31de85a321badbe26fa9df9f7b74" kindref="member">sequenceR2</ref>;</highlight></codeline>
+<codeline lineno="211" refid="classAdapterOptions_1ad76917459b918255450ddff759ff9447" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1ad76917459b918255450ddff759ff9447" kindref="member">detectedAdapter1</ref>;</highlight></codeline>
+<codeline lineno="212" refid="classAdapterOptions_1a3c4beba388a93fc7ffb00dfade290621" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a3c4beba388a93fc7ffb00dfade290621" kindref="member">detectedAdapter2</ref>;</highlight></codeline>
+<codeline lineno="213" refid="classAdapterOptions_1acbd14b0deff1cb025c43d994ea71eccd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="classAdapterOptions_1acbd14b0deff1cb025c43d994ea71eccd" kindref="member">seqsInFasta</ref>;</highlight></codeline>
+<codeline lineno="214" refid="classAdapterOptions_1a03a967ea397016c78b59bbc0a8ee18a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a03a967ea397016c78b59bbc0a8ee18a6" kindref="member">fastaFile</ref>;</highlight></codeline>
+<codeline lineno="215" refid="classAdapterOptions_1ac234fd86b829e48491a0ff0d1beb6432" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1ac234fd86b829e48491a0ff0d1beb6432" kindref="member">hasSeqR1</ref>;</highlight></codeline>
+<codeline lineno="216" refid="classAdapterOptions_1a395b652790a5f610ebe13faa4c176fb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a395b652790a5f610ebe13faa4c176fb6" kindref="member">hasSeqR2</ref>;</highlight></codeline>
+<codeline lineno="217" refid="classAdapterOptions_1a05093be444ed1b00fc8891dcf856c2bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a05093be444ed1b00fc8891dcf856c2bc" kindref="member">hasFasta</ref>;</highlight></codeline>
+<codeline lineno="218" refid="classAdapterOptions_1a2f22495ce41a1d0167e045fb63fe26dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a2f22495ce41a1d0167e045fb63fe26dd" kindref="member">detectAdapterForPE</ref>;</highlight></codeline>
+<codeline lineno="219" refid="classAdapterOptions_1a91deb52735032c19c0299a2eae8c8d94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1a91deb52735032c19c0299a2eae8c8d94" kindref="member">allowGapOverlapTrimming</ref>;</highlight></codeline>
+<codeline lineno="220" refid="classAdapterOptions_1ac5caeb28d124e9d4f7fe4f7078970b88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classAdapterOptions_1ac5caeb28d124e9d4f7fe4f7078970b88" kindref="member">dimerMaxLen</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="classTrimmingOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTrimmingOptions_1a778b5a15f7c665d0ce9a603a8c8d3f7d" kindref="member">TrimmingOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="225" refid="classTrimmingOptions_1a778b5a15f7c665d0ce9a603a8c8d3f7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTrimmingOptions_1a778b5a15f7c665d0ce9a603a8c8d3f7d" kindref="member">TrimmingOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTrimmingOptions_1a79a55f3bdd8e036c701e81985d74a063" kindref="member">front1</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTrimmingOptions_1a5e739d4562aa43144cc55230bfe17f2a" kindref="member">tail1</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTrimmingOptions_1a3e5e76adb90ef72b70ac37a39079e93a" kindref="member">front2</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTrimmingOptions_1ad4ebcc05efb88d43826446e867d5685d" kindref="member">tail2</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTrimmingOptions_1ae5596fb8dcd2f3da378edf46cb6bb9f2" kindref="member">maxLen1</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTrimmingOptions_1a2bdfe7d2e789f3f3d6e795497e13ce9a" kindref="member">maxLen2</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>trimming<sp/>first<sp/>cycles<sp/>for<sp/>read1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235" refid="classTrimmingOptions_1a79a55f3bdd8e036c701e81985d74a063" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTrimmingOptions_1a79a55f3bdd8e036c701e81985d74a063" kindref="member">front1</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>trimming<sp/>last<sp/>cycles<sp/>for<sp/>read1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="classTrimmingOptions_1a5e739d4562aa43144cc55230bfe17f2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTrimmingOptions_1a5e739d4562aa43144cc55230bfe17f2a" kindref="member">tail1</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>trimming<sp/>first<sp/>cycles<sp/>for<sp/>read2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="classTrimmingOptions_1a3e5e76adb90ef72b70ac37a39079e93a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTrimmingOptions_1a3e5e76adb90ef72b70ac37a39079e93a" kindref="member">front2</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>trimming<sp/>last<sp/>cycles<sp/>for<sp/>read2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="classTrimmingOptions_1ad4ebcc05efb88d43826446e867d5685d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTrimmingOptions_1ad4ebcc05efb88d43826446e867d5685d" kindref="member">tail2</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>length<sp/>of<sp/>read1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="classTrimmingOptions_1ae5596fb8dcd2f3da378edf46cb6bb9f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTrimmingOptions_1ae5596fb8dcd2f3da378edf46cb6bb9f2" kindref="member">maxLen1</ref>;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>length<sp/>of<sp/>read2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="classTrimmingOptions_1a2bdfe7d2e789f3f3d6e795497e13ce9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classTrimmingOptions_1a2bdfe7d2e789f3f3d6e795497e13ce9a" kindref="member">maxLen2</ref>;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="classQualityFilteringOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQualityFilteringOptions_1a8bbb687f51ff0f5f5b05803eaacf099a" kindref="member">QualityFilteringOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="250" refid="classQualityFilteringOptions_1a8bbb687f51ff0f5f5b05803eaacf099a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQualityFilteringOptions_1a8bbb687f51ff0f5f5b05803eaacf099a" kindref="member">QualityFilteringOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityFilteringOptions_1a960065ab1d164c7da6645254aa3d0389" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&apos;0&apos;<sp/>=<sp/>Q15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityFilteringOptions_1ac114a0855a376facbd302079514e89f5" kindref="member">qualifiedQual</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityFilteringOptions_1a595a8d5eea688533159b482537a82f1a" kindref="member">unqualifiedPercentLimit</ref><sp/>=<sp/>40;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classQualityFilteringOptions_1a1f06938c9ffcaaaef649d79422d132b7" kindref="member">nBaseLimit</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>quality<sp/>filter<sp/>enabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="classQualityFilteringOptions_1a960065ab1d164c7da6645254aa3d0389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classQualityFilteringOptions_1a960065ab1d164c7da6645254aa3d0389" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>a<sp/>base&apos;s<sp/>quality<sp/>phred<sp/>score<sp/>&lt;<sp/>qualifiedPhred,<sp/>then<sp/>it&apos;s<sp/>considered<sp/>as<sp/>a<sp/>low_qual_base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="classQualityFilteringOptions_1ac114a0855a376facbd302079514e89f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classQualityFilteringOptions_1ac114a0855a376facbd302079514e89f5" kindref="member">qualifiedQual</ref>;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>low_qual_base_num<sp/>&gt;<sp/>lowQualLimit,<sp/>then<sp/>discard<sp/>this<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="classQualityFilteringOptions_1a595a8d5eea688533159b482537a82f1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityFilteringOptions_1a595a8d5eea688533159b482537a82f1a" kindref="member">unqualifiedPercentLimit</ref>;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>n_base_number<sp/>&gt;<sp/>nBaseLimit,<sp/>then<sp/>discard<sp/>this<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="classQualityFilteringOptions_1a1f06938c9ffcaaaef649d79422d132b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityFilteringOptions_1a1f06938c9ffcaaaef649d79422d132b7" kindref="member">nBaseLimit</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>average<sp/>qual<sp/>score<sp/>&lt;<sp/>avgQualReq,<sp/>then<sp/>discard<sp/>this<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="classQualityFilteringOptions_1a06d6b1fa8736e1c17eed13c259058e91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classQualityFilteringOptions_1a06d6b1fa8736e1c17eed13c259058e91" kindref="member">avgQualReq</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="classReadLengthFilteringOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classReadLengthFilteringOptions_1a90e5ecad9e3be9b824e732a1b39ff056" kindref="member">ReadLengthFilteringOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="272" refid="classReadLengthFilteringOptions_1a90e5ecad9e3be9b824e732a1b39ff056" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReadLengthFilteringOptions_1a90e5ecad9e3be9b824e732a1b39ff056" kindref="member">ReadLengthFilteringOptions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classReadLengthFilteringOptions_1a9d5983b4aab445ab6746e300cc40b9c6" kindref="member">enabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classReadLengthFilteringOptions_1af2af82f1835af877e2837aee40bd9753" kindref="member">requiredLength</ref><sp/>=<sp/>15;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classReadLengthFilteringOptions_1a59218c1e035c857cbd8ee8e82d73468e" kindref="member">maxLength</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>length<sp/>filter<sp/>enabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="classReadLengthFilteringOptions_1a9d5983b4aab445ab6746e300cc40b9c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classReadLengthFilteringOptions_1a9d5983b4aab445ab6746e300cc40b9c6" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>read_length<sp/>&lt;<sp/>requiredLength,<sp/>then<sp/>this<sp/>read<sp/>is<sp/>discard</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="classReadLengthFilteringOptions_1af2af82f1835af877e2837aee40bd9753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classReadLengthFilteringOptions_1af2af82f1835af877e2837aee40bd9753" kindref="member">requiredLength</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>length<sp/>limit,<sp/>0<sp/>for<sp/>no<sp/>limitation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="classReadLengthFilteringOptions_1a59218c1e035c857cbd8ee8e82d73468e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classReadLengthFilteringOptions_1a59218c1e035c857cbd8ee8e82d73468e" kindref="member">maxLength</ref>;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="classOptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classOptions_1ab72fb640172a6109e34c8a5366563753" kindref="member">Options</ref>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOptions_1ab72fb640172a6109e34c8a5366563753" kindref="member">Options</ref>();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ae4b17f909414d89c505db817a39608db" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ac12e9cc14732d8f545170ce92f76d4a4" kindref="member">isPaired</ref>();</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a6871fc2c01fb3d11b605149e71962f33" kindref="member">validate</ref>();</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ab257f1a699b3631813f2c4df6dfe54fe" kindref="member">adapterCuttingEnabled</ref>();</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ac3ce80db1b153984ab7f40b5584715e5" kindref="member">polyXTrimmingEnabled</ref>();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a9b1b48038f8a323d2f821f96c4593e7b" kindref="member">getAdapter1</ref>();</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a4de05c86b46d2d7ce2a88f149fefa7b3" kindref="member">getAdapter2</ref>();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ac4278f42d3ab2db76bb5adef237c1ff5" kindref="member">initIndexFiltering</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>blacklistFile1,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>blacklistFile2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>threshold<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="classOptions_1aa27446a132792738f4c1e4d16964309a" kindref="member">makeListFromFileByLine</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a5dbbf87d408711f24deecd3e786d4273" kindref="member">shallDetectAdapter</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isR2<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ac109dc037a08b45c3b4dc964ebbd97c2" kindref="member">loadFastaAdapters</ref>();</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>file<sp/>name<sp/>of<sp/>read1<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="classOptions_1a867153943d87550b22de1708a20283f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a867153943d87550b22de1708a20283f4" kindref="member">in1</ref>;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>file<sp/>name<sp/>of<sp/>read2<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="classOptions_1a2663a57894fb248dbad36d06f843bd3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a2663a57894fb248dbad36d06f843bd3f" kindref="member">in2</ref>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>file<sp/>name<sp/>of<sp/>read1<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="classOptions_1a9c791494d7e9b5dc239bf270bca6773c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a9c791494d7e9b5dc239bf270bca6773c" kindref="member">out1</ref>;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>file<sp/>name<sp/>of<sp/>read2<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="classOptions_1a4b8a79bb8da7fd1a7701b2a0f3f11bb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a4b8a79bb8da7fd1a7701b2a0f3f11bb2" kindref="member">out2</ref>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>file<sp/>name<sp/>of<sp/>unpaired<sp/>read1<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="classOptions_1addbd3e5b3ee85340af93e210c5a67119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1addbd3e5b3ee85340af93e210c5a67119" kindref="member">unpaired1</ref>;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>file<sp/>name<sp/>of<sp/>unpaired<sp/>read2<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="classOptions_1a6c05e96f20473f11f105fdddbc748c9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a6c05e96f20473f11f105fdddbc748c9e" kindref="member">unpaired2</ref>;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>file<sp/>name<sp/>of<sp/>failed<sp/>reads<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="classOptions_1a2d6303a7fca31c581b777cd6764bc113" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a2d6303a7fca31c581b777cd6764bc113" kindref="member">failedOut</ref>;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>json<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="classOptions_1abf91da4425a1516d1feac2e7f05cf3eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1abf91da4425a1516d1feac2e7f05cf3eb" kindref="member">overlappedOut</ref>;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>json<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="classOptions_1a56ff625b05f95289ea1267c64bc1d10c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a56ff625b05f95289ea1267c64bc1d10c" kindref="member">jsonFile</ref>;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>html<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="classOptions_1ae18cc08006898e9f836b5a6c5352a2f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ae18cc08006898e9f836b5a6c5352a2f6" kindref="member">htmlFile</ref>;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>html<sp/>report<sp/>title</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="classOptions_1a33eb0827641e09a164e40e2dbc221de2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a33eb0827641e09a164e40e2dbc221de2" kindref="member">reportTitle</ref>;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>compression<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="classOptions_1a1aed9ab748113ac3b4f8e4a37d12d56d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a1aed9ab748113ac3b4f8e4a37d12d56d" kindref="member">compression</ref>;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>input<sp/>file<sp/>is<sp/>using<sp/>phred64<sp/>quality<sp/>scoring</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327" refid="classOptions_1ac45b72d19f458d16919fe63be8c9c8c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ac45b72d19f458d16919fe63be8c9c8c2" kindref="member">phred64</ref>;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>not<sp/>rewrite<sp/>existing<sp/>files</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="classOptions_1a30e4e9592ecb76499dd68fb66b872561" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a30e4e9592ecb76499dd68fb66b872561" kindref="member">dontOverwrite</ref>;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read<sp/>STDIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="classOptions_1aafe6b1439eaa776263ac8568c2cc8e2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1aafe6b1439eaa776263ac8568c2cc8e2c" kindref="member">inputFromSTDIN</ref>;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>write<sp/>STDOUT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333" refid="classOptions_1a6dd223e9b98ca2760d6b89fb4c30af42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a6dd223e9b98ca2760d6b89fb4c30af42" kindref="member">outputToSTDOUT</ref>;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>input<sp/>R1<sp/>file<sp/>is<sp/>interleaved</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="classOptions_1aea3b69af761016c407a0c69623a5c4b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1aea3b69af761016c407a0c69623a5c4b7" kindref="member">interleavedInput</ref>;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>only<sp/>process<sp/>first<sp/>N<sp/>reads</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="classOptions_1aa632a4f70ac7aa1d2694d8aedb236fd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1aa632a4f70ac7aa1d2694d8aedb236fd4" kindref="member">readsToProcess</ref>;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fix<sp/>the<sp/>MGI<sp/>ID<sp/>tailing<sp/>issue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="classOptions_1add32d97f9897d4ecee65c8d71fe66d8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1add32d97f9897d4ecee65c8d71fe66d8a" kindref="member">fixMGI</ref>;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>worker<sp/>thread<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="classOptions_1a17ed7d97ffc6c85ec7d1a4279d7f79a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a17ed7d97ffc6c85ec7d1a4279d7f79a3" kindref="member">thread</ref>;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>trimming<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="classOptions_1a9a36c385d3551208d57f9cece88b2e22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTrimmingOptions" kindref="compound">TrimmingOptions</ref><sp/><ref refid="classOptions_1a9a36c385d3551208d57f9cece88b2e22" kindref="member">trim</ref>;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>quality<sp/>filtering<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="classOptions_1a9c549e5b7b31497e356ef740de44a3b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQualityFilteringOptions" kindref="compound">QualityFilteringOptions</ref><sp/><ref refid="classOptions_1a9c549e5b7b31497e356ef740de44a3b9" kindref="member">qualfilter</ref>;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>length<sp/>filtering<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="classOptions_1a24e6a0097f4e22f0efbf60749a39ad21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReadLengthFilteringOptions" kindref="compound">ReadLengthFilteringOptions</ref><sp/><ref refid="classOptions_1a24e6a0097f4e22f0efbf60749a39ad21" kindref="member">lengthFilter</ref>;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>adapter<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="classOptions_1af08ef7491aea7025205eb593c00093fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAdapterOptions" kindref="compound">AdapterOptions</ref><sp/><ref refid="classOptions_1af08ef7491aea7025205eb593c00093fd" kindref="member">adapter</ref>;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>multiple<sp/>file<sp/>splitting<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351" refid="classOptions_1ade71d85bc107c67e8e6c3e4c1032e12a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSplitOptions" kindref="compound">SplitOptions</ref><sp/><ref refid="classOptions_1ade71d85bc107c67e8e6c3e4c1032e12a" kindref="member">split</ref>;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>options<sp/>for<sp/>quality<sp/>cutting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="classOptions_1aee9b2785fa43d178a4a600c05d108bca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQualityCutOptions" kindref="compound">QualityCutOptions</ref><sp/><ref refid="classOptions_1aee9b2785fa43d178a4a600c05d108bca" kindref="member">qualityCut</ref>;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>options<sp/>for<sp/>base<sp/>correction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355" refid="classOptions_1a2a224dbab4c8d8a508a7c1dc3b111b3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCorrectionOptions" kindref="compound">CorrectionOptions</ref><sp/><ref refid="classOptions_1a2a224dbab4c8d8a508a7c1dc3b111b3f" kindref="member">correction</ref>;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>options<sp/>for<sp/>UMI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="classOptions_1aca57a9fc44e26fc73c1f98e87b515818" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUMIOptions" kindref="compound">UMIOptions</ref><sp/><ref refid="classOptions_1aca57a9fc44e26fc73c1f98e87b515818" kindref="member">umi</ref>;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3&apos;<sp/>end<sp/>polyG<sp/>trimming,<sp/>default<sp/>for<sp/>Illumina<sp/>NextSeq/NovaSeq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="classOptions_1a70a604ae8c23c944eccdc4ae8c723563" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPolyGTrimmerOptions" kindref="compound">PolyGTrimmerOptions</ref><sp/><ref refid="classOptions_1a70a604ae8c23c944eccdc4ae8c723563" kindref="member">polyGTrim</ref>;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3&apos;<sp/>end<sp/>polyX<sp/>trimming</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="classOptions_1a73af0c454838a42eb903289fc1862478" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPolyXTrimmerOptions" kindref="compound">PolyXTrimmerOptions</ref><sp/><ref refid="classOptions_1a73af0c454838a42eb903289fc1862478" kindref="member">polyXTrim</ref>;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>overrepresentation<sp/>analysis</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363" refid="classOptions_1ab921d7a7d4f79284f02c09828dea20d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOverrepresentedSequenceAnasysOptions" kindref="compound">OverrepresentedSequenceAnasysOptions</ref><sp/><ref refid="classOptions_1ab921d7a7d4f79284f02c09828dea20d8" kindref="member">overRepAnalysis</ref>;</highlight></codeline>
+<codeline lineno="364" refid="classOptions_1ac5c3bf17db780c4d53ae4dee622572fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string,<sp/>long&gt;<sp/><ref refid="classOptions_1ac5c3bf17db780c4d53ae4dee622572fb" kindref="member">overRepSeqs1</ref>;</highlight></codeline>
+<codeline lineno="365" refid="classOptions_1a4d07f14084acd69dc3c934f4357ee98f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string,<sp/>long&gt;<sp/><ref refid="classOptions_1a4d07f14084acd69dc3c934f4357ee98f" kindref="member">overRepSeqs2</ref>;</highlight></codeline>
+<codeline lineno="366" refid="classOptions_1aa9eb3c81561f72107a83ea0916134f3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1aa9eb3c81561f72107a83ea0916134f3b" kindref="member">seqLen1</ref>;</highlight></codeline>
+<codeline lineno="367" refid="classOptions_1a9db285ebd621e0f10d0ac4c96c87f9ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a9db285ebd621e0f10d0ac4c96c87f9ee" kindref="member">seqLen2</ref>;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>low<sp/>complexity<sp/>filtering</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="classOptions_1afcfa6c7f8ce55e09a31fdf332e31239c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLowComplexityFilterOptions" kindref="compound">LowComplexityFilterOptions</ref><sp/><ref refid="classOptions_1afcfa6c7f8ce55e09a31fdf332e31239c" kindref="member">complexityFilter</ref>;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>black<sp/>lists<sp/>for<sp/>filtering<sp/>by<sp/>index</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371" refid="classOptions_1aee7b084d86aad106f69fad176e993d85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIndexFilterOptions" kindref="compound">IndexFilterOptions</ref><sp/><ref refid="classOptions_1aee7b084d86aad106f69fad176e993d85" kindref="member">indexFilter</ref>;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>options<sp/>for<sp/>duplication<sp/>profiling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373" refid="classOptions_1a7c560dfc5ad0c0ef0a72be3bde0bdf57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicationOptions" kindref="compound">DuplicationOptions</ref><sp/><ref refid="classOptions_1a7c560dfc5ad0c0ef0a72be3bde0bdf57" kindref="member">duplicate</ref>;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>value<sp/>of<sp/>insert<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375" refid="classOptions_1ac3d553b690e7c29c4124d42cf1f2dfff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1ac3d553b690e7c29c4124d42cf1f2dfff" kindref="member">insertSizeMax</ref>;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>overlap<sp/>analysis<sp/>threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="classOptions_1adb967c5e73e2884a1e1d5c142a6be75a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1adb967c5e73e2884a1e1d5c142a6be75a" kindref="member">overlapRequire</ref>;</highlight></codeline>
+<codeline lineno="378" refid="classOptions_1adcae7e271b99c64a5371019e54a2d1ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1adcae7e271b99c64a5371019e54a2d1ef" kindref="member">overlapDiffLimit</ref>;</highlight></codeline>
+<codeline lineno="379" refid="classOptions_1a22a205937d87423b3d051e988c2efafb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a22a205937d87423b3d051e988c2efafb" kindref="member">overlapDiffPercentLimit</ref>;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>output<sp/>debug<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381" refid="classOptions_1abaa084df3c7ed900634b4d187aa58ea0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classOptions_1abaa084df3c7ed900634b4d187aa58ea0" kindref="member">verbose</ref>;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>merge<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383" refid="classOptions_1a7be5bed96d23e92d9154cd9dbd9b2036" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMergeOptions" kindref="compound">MergeOptions</ref><sp/><ref refid="classOptions_1a7be5bed96d23e92d9154cd9dbd9b2036" kindref="member">merge</ref>;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>buffer<sp/>size<sp/>for<sp/>writer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="classOptions_1a5913dc2fd969d6128b09ca7f1aafd86f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classOptions_1a5913dc2fd969d6128b09ca7f1aafd86f" kindref="member">writerBufferSize</ref>;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/options.h"/>
+  </compounddef>
+</doxygen>

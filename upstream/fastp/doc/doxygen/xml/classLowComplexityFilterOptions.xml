@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classLowComplexityFilterOptions" kind="class" language="C++" prot="public">
+    <compoundname>LowComplexityFilterOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classLowComplexityFilterOptions_1a74a6689faace1ed12fecbad6bf1b8ae3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LowComplexityFilterOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>LowComplexityFilterOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="67" column="10" bodyfile="src/options.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLowComplexityFilterOptions_1add553a613ca28b66753b88a40820d02f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double LowComplexityFilterOptions::threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <qualifiedname>LowComplexityFilterOptions::threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="68" column="12" bodyfile="src/options.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLowComplexityFilterOptions_1ac06e3e3a876e3bf18b0c2d492cb4a601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LowComplexityFilterOptions::LowComplexityFilterOptions</definition>
+        <argsstring>()</argsstring>
+        <name>LowComplexityFilterOptions</name>
+        <qualifiedname>LowComplexityFilterOptions::LowComplexityFilterOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="62" column="5" bodyfile="src/options.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="60" column="1" bodyfile="src/options.h" bodystart="60" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classLowComplexityFilterOptions_1a74a6689faace1ed12fecbad6bf1b8ae3" prot="public" virt="non-virtual"><scope>LowComplexityFilterOptions</scope><name>enabled</name></member>
+      <member refid="classLowComplexityFilterOptions_1ac06e3e3a876e3bf18b0c2d492cb4a601" prot="public" virt="non-virtual"><scope>LowComplexityFilterOptions</scope><name>LowComplexityFilterOptions</name></member>
+      <member refid="classLowComplexityFilterOptions_1add553a613ca28b66753b88a40820d02f" prot="public" virt="non-virtual"><scope>LowComplexityFilterOptions</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

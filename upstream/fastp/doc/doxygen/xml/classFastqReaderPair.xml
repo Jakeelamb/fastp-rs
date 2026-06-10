@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFastqReaderPair" kind="class" language="C++" prot="public">
+    <compoundname>FastqReaderPair</compoundname>
+    <includes refid="fastqreader_8h" local="no">fastqreader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFastqReaderPair_1a243985cbdb1e0b4775fb8798aa8cce08" prot="public" static="no" mutable="no">
+        <type><ref refid="classFastqReader" kindref="compound">FastqReader</ref> *</type>
+        <definition>FastqReader* FastqReaderPair::mLeft</definition>
+        <argsstring></argsstring>
+        <name>mLeft</name>
+        <qualifiedname>FastqReaderPair::mLeft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="101" column="13" bodyfile="src/fastqreader.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReaderPair_1a1defe7cff06f4e06c1fa6cd08601368f" prot="public" static="no" mutable="no">
+        <type><ref refid="classFastqReader" kindref="compound">FastqReader</ref> *</type>
+        <definition>FastqReader* FastqReaderPair::mRight</definition>
+        <argsstring></argsstring>
+        <name>mRight</name>
+        <qualifiedname>FastqReaderPair::mRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="102" column="13" bodyfile="src/fastqreader.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReaderPair_1aa3b08c940f52691707d7869c3f63c0b5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FastqReaderPair::mInterleaved</definition>
+        <argsstring></argsstring>
+        <name>mInterleaved</name>
+        <qualifiedname>FastqReaderPair::mInterleaved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="103" column="6" bodyfile="src/fastqreader.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFastqReaderPair_1a1979f5188328cd5ad9a10657b035250e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FastqReaderPair::FastqReaderPair</definition>
+        <argsstring>(FastqReader *left, FastqReader *right)</argsstring>
+        <name>FastqReaderPair</name>
+        <qualifiedname>FastqReaderPair::FastqReaderPair</qualifiedname>
+        <param>
+          <type><ref refid="classFastqReader" kindref="compound">FastqReader</ref> *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type><ref refid="classFastqReader" kindref="compound">FastqReader</ref> *</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="95" column="1" bodyfile="src/fastqreader.cpp" bodystart="427" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReaderPair_1a9acda77cb6f39d624cd8281ff5277d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FastqReaderPair::FastqReaderPair</definition>
+        <argsstring>(string leftName, string rightName, bool hasQuality=true, bool phred64=false, bool interleaved=false)</argsstring>
+        <name>FastqReaderPair</name>
+        <qualifiedname>FastqReaderPair::FastqReaderPair</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>leftName</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>rightName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hasQuality</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>phred64</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>interleaved</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="96" column="1" bodyfile="src/fastqreader.cpp" bodystart="432" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReaderPair_1affd4446f74998946e047140946e5507c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FastqReaderPair::~FastqReaderPair</definition>
+        <argsstring>()</argsstring>
+        <name>~FastqReaderPair</name>
+        <qualifiedname>FastqReaderPair::~FastqReaderPair</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="97" column="1" bodyfile="src/fastqreader.cpp" bodystart="441" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReaderPair_1a6378c22973dc9cf84d7d18e1120fea09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReaderPair::read</definition>
+        <argsstring>(ReadPair *pair)</argsstring>
+        <name>read</name>
+        <qualifiedname>FastqReaderPair::read</qualifiedname>
+        <param>
+          <type><ref refid="classReadPair" kindref="compound">ReadPair</ref> *</type>
+          <declname>pair</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="98" column="6" bodyfile="src/fastqreader.cpp" bodystart="452" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReaderPair_1a83a5006987e4a390c7f7d5096e9484c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastqReaderPair::eof</definition>
+        <argsstring>()</argsstring>
+        <name>eof</name>
+        <qualifiedname>FastqReaderPair::eof</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="99" column="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="23">
+        <label>BgzfMtReader</label>
+        <link refid="classBgzfMtReader"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mSlots</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>BgzfMtReader::Slot</label>
+        <link refid="structBgzfMtReader_1_1Slot"/>
+      </node>
+      <node id="11">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="18">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="2">
+        <label>FastqReader</label>
+        <link refid="classFastqReader"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mReadPool</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>mBgzfReader</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>FastqReaderPair</label>
+        <link refid="classFastqReaderPair"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mLeft</edgelabel>
+          <edgelabel>mRight</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="21">
+        <label>LockFreeListItem&lt; Read * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="19">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="4">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="13">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="14">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="10">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="6">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="22">
+        <label>Read</label>
+        <link refid="classRead"/>
+      </node>
+      <node id="7">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="3">
+        <label>ReadPool</label>
+        <link refid="classReadPool"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mBufferLists</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>SingleProducerSingleConsumerList&lt; Read * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="5">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="12">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/fastqreader.h" line="93" column="1" bodyfile="src/fastqreader.h" bodystart="93" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classFastqReaderPair_1a83a5006987e4a390c7f7d5096e9484c0" prot="public" virt="non-virtual"><scope>FastqReaderPair</scope><name>eof</name></member>
+      <member refid="classFastqReaderPair_1a1979f5188328cd5ad9a10657b035250e" prot="public" virt="non-virtual"><scope>FastqReaderPair</scope><name>FastqReaderPair</name></member>
+      <member refid="classFastqReaderPair_1a9acda77cb6f39d624cd8281ff5277d0d" prot="public" virt="non-virtual"><scope>FastqReaderPair</scope><name>FastqReaderPair</name></member>
+      <member refid="classFastqReaderPair_1aa3b08c940f52691707d7869c3f63c0b5" prot="public" virt="non-virtual"><scope>FastqReaderPair</scope><name>mInterleaved</name></member>
+      <member refid="classFastqReaderPair_1a243985cbdb1e0b4775fb8798aa8cce08" prot="public" virt="non-virtual"><scope>FastqReaderPair</scope><name>mLeft</name></member>
+      <member refid="classFastqReaderPair_1a1defe7cff06f4e06c1fa6cd08601368f" prot="public" virt="non-virtual"><scope>FastqReaderPair</scope><name>mRight</name></member>
+      <member refid="classFastqReaderPair_1a6378c22973dc9cf84d7d18e1120fea09" prot="public" virt="non-virtual"><scope>FastqReaderPair</scope><name>read</name></member>
+      <member refid="classFastqReaderPair_1affd4446f74998946e047140946e5507c" prot="public" virt="non-virtual"><scope>FastqReaderPair</scope><name>~FastqReaderPair</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,957 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPairEndProcessor" kind="class" language="C++" prot="public">
+    <compoundname>PairEndProcessor</compoundname>
+    <includes refid="peprocessor_8h" local="no">peprocessor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPairEndProcessor_1a92288ad801f2248de839d1a620c37569" prot="private" static="no" mutable="no">
+        <type>atomic_bool</type>
+        <definition>atomic_bool PairEndProcessor::mLeftReaderFinished</definition>
+        <argsstring></argsstring>
+        <name>mLeftReaderFinished</name>
+        <qualifiedname>PairEndProcessor::mLeftReaderFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="47" column="17" bodyfile="src/peprocessor.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1ad619db5cc0740f86213c5ad9a6363785" prot="private" static="no" mutable="no">
+        <type>atomic_bool</type>
+        <definition>atomic_bool PairEndProcessor::mRightReaderFinished</definition>
+        <argsstring></argsstring>
+        <name>mRightReaderFinished</name>
+        <qualifiedname>PairEndProcessor::mRightReaderFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="48" column="17" bodyfile="src/peprocessor.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1aca493df06ba9f829eabd9f3462b40afa" prot="private" static="no" mutable="no">
+        <type>atomic_int</type>
+        <definition>atomic_int PairEndProcessor::mFinishedThreads</definition>
+        <argsstring></argsstring>
+        <name>mFinishedThreads</name>
+        <qualifiedname>PairEndProcessor::mFinishedThreads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="49" column="24" bodyfile="src/peprocessor.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a3eca167a1dc7a6c56a5f955bcd413a93" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* PairEndProcessor::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>PairEndProcessor::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="50" column="13" bodyfile="src/peprocessor.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1ace9be7f93e4f28aa537b335fdcf9d692" prot="private" static="no" mutable="no">
+        <type><ref refid="classFilter" kindref="compound">Filter</ref> *</type>
+        <definition>Filter* PairEndProcessor::mFilter</definition>
+        <argsstring></argsstring>
+        <name>mFilter</name>
+        <qualifiedname>PairEndProcessor::mFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="51" column="12" bodyfile="src/peprocessor.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1af2763af2a1066fa2ac529efbe2ba1228" prot="private" static="no" mutable="no">
+        <type><ref refid="classUmiProcessor" kindref="compound">UmiProcessor</ref> *</type>
+        <definition>UmiProcessor* PairEndProcessor::mUmiProcessor</definition>
+        <argsstring></argsstring>
+        <name>mUmiProcessor</name>
+        <qualifiedname>PairEndProcessor::mUmiProcessor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="52" column="18" bodyfile="src/peprocessor.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a388e2a6911b141ae3ac560437f43c325" prot="private" static="no" mutable="no">
+        <type>atomic_long *</type>
+        <definition>atomic_long* PairEndProcessor::mInsertSizeHist</definition>
+        <argsstring></argsstring>
+        <name>mInsertSizeHist</name>
+        <qualifiedname>PairEndProcessor::mInsertSizeHist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="53" column="17" bodyfile="src/peprocessor.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a698c38feeb4ede125ffd61815599cfe1" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* PairEndProcessor::mLeftWriter</definition>
+        <argsstring></argsstring>
+        <name>mLeftWriter</name>
+        <qualifiedname>PairEndProcessor::mLeftWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="54" column="18" bodyfile="src/peprocessor.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a19a4c96bf685d8d01e89438f2fbcaf66" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* PairEndProcessor::mRightWriter</definition>
+        <argsstring></argsstring>
+        <name>mRightWriter</name>
+        <qualifiedname>PairEndProcessor::mRightWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="55" column="18" bodyfile="src/peprocessor.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1adfe34f92e0f443642a22fb9b953746bb" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* PairEndProcessor::mUnpairedLeftWriter</definition>
+        <argsstring></argsstring>
+        <name>mUnpairedLeftWriter</name>
+        <qualifiedname>PairEndProcessor::mUnpairedLeftWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="56" column="18" bodyfile="src/peprocessor.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a64990bd5e99bfaf98925b7b03d36c52c" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* PairEndProcessor::mUnpairedRightWriter</definition>
+        <argsstring></argsstring>
+        <name>mUnpairedRightWriter</name>
+        <qualifiedname>PairEndProcessor::mUnpairedRightWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="57" column="18" bodyfile="src/peprocessor.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a0d28dfdb0f62ebcfbf57101b3d3e51ff" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* PairEndProcessor::mMergedWriter</definition>
+        <argsstring></argsstring>
+        <name>mMergedWriter</name>
+        <qualifiedname>PairEndProcessor::mMergedWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="58" column="18" bodyfile="src/peprocessor.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1aa911b5334cfcd75ecfec5956626acd35" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* PairEndProcessor::mFailedWriter</definition>
+        <argsstring></argsstring>
+        <name>mFailedWriter</name>
+        <qualifiedname>PairEndProcessor::mFailedWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="59" column="18" bodyfile="src/peprocessor.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a3f3fe32e3bcb3130d9daee5a93cbd874" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* PairEndProcessor::mOverlappedWriter</definition>
+        <argsstring></argsstring>
+        <name>mOverlappedWriter</name>
+        <qualifiedname>PairEndProcessor::mOverlappedWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="60" column="18" bodyfile="src/peprocessor.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a32318768b37c7252f1e5780af5cef94e" prot="private" static="no" mutable="no">
+        <type><ref refid="classDuplicate" kindref="compound">Duplicate</ref> *</type>
+        <definition>Duplicate* PairEndProcessor::mDuplicate</definition>
+        <argsstring></argsstring>
+        <name>mDuplicate</name>
+        <qualifiedname>PairEndProcessor::mDuplicate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="61" column="15" bodyfile="src/peprocessor.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1abdb66a6b67dc33a5b90296454fa36236" prot="private" static="no" mutable="no">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; **</type>
+        <definition>SingleProducerSingleConsumerList&lt;ReadPack*&gt;** PairEndProcessor::mLeftInputLists</definition>
+        <argsstring></argsstring>
+        <name>mLeftInputLists</name>
+        <qualifiedname>PairEndProcessor::mLeftInputLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="62" column="38" bodyfile="src/peprocessor.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a11cb9e95cdc58c258920c6cd5a25a553" prot="private" static="no" mutable="no">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; **</type>
+        <definition>SingleProducerSingleConsumerList&lt;ReadPack*&gt;** PairEndProcessor::mRightInputLists</definition>
+        <argsstring></argsstring>
+        <name>mRightInputLists</name>
+        <qualifiedname>PairEndProcessor::mRightInputLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="63" column="38" bodyfile="src/peprocessor.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a421be6fd44051e3bc12a1240e4c870ed" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t PairEndProcessor::mLeftPackReadCounter</definition>
+        <argsstring></argsstring>
+        <name>mLeftPackReadCounter</name>
+        <qualifiedname>PairEndProcessor::mLeftPackReadCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="64" column="12" bodyfile="src/peprocessor.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a554eedf8169ecb89fc1ac4631c4e51b7" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t PairEndProcessor::mRightPackReadCounter</definition>
+        <argsstring></argsstring>
+        <name>mRightPackReadCounter</name>
+        <qualifiedname>PairEndProcessor::mRightPackReadCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="65" column="12" bodyfile="src/peprocessor.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1af3a01b94aa0ff99508315c62fbca85cb" prot="private" static="no" mutable="no">
+        <type>atomic_long</type>
+        <definition>atomic_long PairEndProcessor::mPackProcessedCounter</definition>
+        <argsstring></argsstring>
+        <name>mPackProcessedCounter</name>
+        <qualifiedname>PairEndProcessor::mPackProcessedCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="66" column="25" bodyfile="src/peprocessor.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a1bb8e19c273ece53d93f8e696958fb4a" prot="private" static="no" mutable="no">
+        <type><ref refid="classReadPool" kindref="compound">ReadPool</ref> *</type>
+        <definition>ReadPool* PairEndProcessor::mLeftReadPool</definition>
+        <argsstring></argsstring>
+        <name>mLeftReadPool</name>
+        <qualifiedname>PairEndProcessor::mLeftReadPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="67" column="14" bodyfile="src/peprocessor.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a185d1ee9ac28144f533d8e419d14b53a" prot="private" static="no" mutable="no">
+        <type><ref refid="classReadPool" kindref="compound">ReadPool</ref> *</type>
+        <definition>ReadPool* PairEndProcessor::mRightReadPool</definition>
+        <argsstring></argsstring>
+        <name>mRightReadPool</name>
+        <qualifiedname>PairEndProcessor::mRightReadPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="68" column="14" bodyfile="src/peprocessor.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a39bc23e5df6558c15e6b5df802c89a67" prot="private" static="no" mutable="no">
+        <type>atomic_bool</type>
+        <definition>atomic_bool PairEndProcessor::shouldStopReading</definition>
+        <argsstring></argsstring>
+        <name>shouldStopReading</name>
+        <qualifiedname>PairEndProcessor::shouldStopReading</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="69" column="17" bodyfile="src/peprocessor.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a359bab39dc18e283fc284c74d9298ebb" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex PairEndProcessor::mBackpressureMtx</definition>
+        <argsstring></argsstring>
+        <name>mBackpressureMtx</name>
+        <qualifiedname>PairEndProcessor::mBackpressureMtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="70" column="16" bodyfile="src/peprocessor.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPairEndProcessor_1a5325bc1785a2a9f59b42593771a23c67" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable PairEndProcessor::mBackpressureCV</definition>
+        <argsstring></argsstring>
+        <name>mBackpressureCV</name>
+        <qualifiedname>PairEndProcessor::mBackpressureCV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="71" column="29" bodyfile="src/peprocessor.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPairEndProcessor_1a5c8f0062f8e980e06a07bba4abfb04d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PairEndProcessor::PairEndProcessor</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>PairEndProcessor</name>
+        <qualifiedname>PairEndProcessor::PairEndProcessor</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="28" column="5" bodyfile="src/peprocessor.cpp" bodystart="16" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a51025ff3f6fbd889977b071a1336c12a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PairEndProcessor::~PairEndProcessor</definition>
+        <argsstring>()</argsstring>
+        <name>~PairEndProcessor</name>
+        <qualifiedname>PairEndProcessor::~PairEndProcessor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="29" column="5" bodyfile="src/peprocessor.cpp" bodystart="49" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a49f131a3f2c6ae7554e3c143974263ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PairEndProcessor::process</definition>
+        <argsstring>()</argsstring>
+        <name>process</name>
+        <qualifiedname>PairEndProcessor::process</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="30" column="10" bodyfile="src/peprocessor.cpp" bodystart="133" bodyend="336"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPairEndProcessor_1a28a9e02adbac691bd43c6928e9b9fb18" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PairEndProcessor::processPairEnd</definition>
+        <argsstring>(ReadPack *leftPack, ReadPack *rightPack, ThreadConfig *config)</argsstring>
+        <name>processPairEnd</name>
+        <qualifiedname>PairEndProcessor::processPairEnd</qualifiedname>
+        <param>
+          <type><ref refid="structReadPack" kindref="compound">ReadPack</ref> *</type>
+          <declname>leftPack</declname>
+        </param>
+        <param>
+          <type><ref refid="structReadPack" kindref="compound">ReadPack</ref> *</type>
+          <declname>rightPack</declname>
+        </param>
+        <param>
+          <type><ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="33" column="10" bodyfile="src/peprocessor.cpp" bodystart="362" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a1652c055e6febf6340c3bafcaff5b0f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::readerTask</definition>
+        <argsstring>(bool isLeft)</argsstring>
+        <name>readerTask</name>
+        <qualifiedname>PairEndProcessor::readerTask</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>isLeft</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="34" column="10" bodyfile="src/peprocessor.cpp" bodystart="725" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a6a25f324d2008e6f9e97efef7c66355a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::interleavedReaderTask</definition>
+        <argsstring>()</argsstring>
+        <name>interleavedReaderTask</name>
+        <qualifiedname>PairEndProcessor::interleavedReaderTask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="35" column="10" bodyfile="src/peprocessor.cpp" bodystart="890" bodyend="1019"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1ac28979108069f4202f571446dbe32488" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::processorTask</definition>
+        <argsstring>(ThreadConfig *config)</argsstring>
+        <name>processorTask</name>
+        <qualifiedname>PairEndProcessor::processorTask</qualifiedname>
+        <param>
+          <type><ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="36" column="10" bodyfile="src/peprocessor.cpp" bodystart="1021" bodyend="1073"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a5e9b5e8ade9d8ff37d91bacd63584f35" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::initConfig</definition>
+        <argsstring>(ThreadConfig *config)</argsstring>
+        <name>initConfig</name>
+        <qualifiedname>PairEndProcessor::initConfig</qualifiedname>
+        <param>
+          <type><ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="37" column="10" bodyfile="src/peprocessor.cpp" bodystart="124" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a4030de52f1242d7ac36a3b819c23d323" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::initOutput</definition>
+        <argsstring>()</argsstring>
+        <name>initOutput</name>
+        <qualifiedname>PairEndProcessor::initOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="38" column="10" bodyfile="src/peprocessor.cpp" bodystart="67" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a61f9315b141f7808fa440fde0d8359cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::closeOutput</definition>
+        <argsstring>()</argsstring>
+        <name>closeOutput</name>
+        <qualifiedname>PairEndProcessor::closeOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="39" column="10" bodyfile="src/peprocessor.cpp" bodystart="93" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a1ed09b1ed350ac890be50f5f69a58fe0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::statInsertSize</definition>
+        <argsstring>(Read *r1, Read *r2, OverlapResult &amp;ov, int frontTrimmed1=0, int frontTrimmed2=0)</argsstring>
+        <name>statInsertSize</name>
+        <qualifiedname>PairEndProcessor::statInsertSize</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref> &amp;</type>
+          <declname>ov</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frontTrimmed1</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frontTrimmed2</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="40" column="10" bodyfile="src/peprocessor.cpp" bodystart="710" bodyend="723"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1a8bfd34fbf2e72d18f04c1b1678e39180" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PairEndProcessor::getPeakInsertSize</definition>
+        <argsstring>()</argsstring>
+        <name>getPeakInsertSize</name>
+        <qualifiedname>PairEndProcessor::getPeakInsertSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="41" column="9" bodyfile="src/peprocessor.cpp" bodystart="338" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1ade953e1dab59cbd4fc658bbcbed953bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::writerTask</definition>
+        <argsstring>(WriterThread *config)</argsstring>
+        <name>writerTask</name>
+        <qualifiedname>PairEndProcessor::writerTask</qualifiedname>
+        <param>
+          <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="42" column="10" bodyfile="src/peprocessor.cpp" bodystart="1075" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1ac586284e4c745c4c38ade2c6fffd06b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::recycleToPool1</definition>
+        <argsstring>(int tid, Read *r)</argsstring>
+        <name>recycleToPool1</name>
+        <qualifiedname>PairEndProcessor::recycleToPool1</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="43" column="10" bodyfile="src/peprocessor.cpp" bodystart="350" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classPairEndProcessor_1ac8547a1681e4f572ab892d3b63bb23c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PairEndProcessor::recycleToPool2</definition>
+        <argsstring>(int tid, Read *r)</argsstring>
+        <name>recycleToPool2</name>
+        <qualifiedname>PairEndProcessor::recycleToPool2</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="44" column="10" bodyfile="src/peprocessor.cpp" bodystart="356" bodyend="360"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="25">
+        <label>Duplicate</label>
+        <link refid="classDuplicate"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="18">
+        <label>Filter</label>
+        <link refid="classFilter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="32">
+        <label>LockFreeListItem&lt; Read * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>LockFreeListItem&lt; ReadPack * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>LockFreeListItem&lt; string * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="24">
+        <label>OffsetSlot</label>
+        <link refid="structOffsetSlot"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="1">
+        <label>PairEndProcessor</label>
+        <link refid="classPairEndProcessor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mFilter</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mUmiProcessor</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mFailedWriter</edgelabel>
+          <edgelabel>mLeftWriter</edgelabel>
+          <edgelabel>mMergedWriter</edgelabel>
+          <edgelabel>mOverlappedWriter</edgelabel>
+          <edgelabel>mRightWriter</edgelabel>
+          <edgelabel>mUnpairedLeftWriter</edgelabel>
+          <edgelabel>mUnpairedRightWriter</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mDuplicate</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mLeftInputLists</edgelabel>
+          <edgelabel>mRightInputLists</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mLeftReadPool</edgelabel>
+          <edgelabel>mRightReadPool</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="29">
+        <label>Read</label>
+        <link refid="classRead"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="28">
+        <label>ReadPack</label>
+        <link refid="structReadPack"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ReadPool</label>
+        <link refid="classReadPool"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>mBufferLists</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>SingleProducerSingleConsumerList&lt; Read * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>SingleProducerSingleConsumerList&lt; ReadPack * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SingleProducerSingleConsumerList&lt; string * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+      <node id="19">
+        <label>UmiProcessor</label>
+        <link refid="classUmiProcessor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Writer</label>
+        <link refid="classWriter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>WriterThread</label>
+        <link refid="classWriterThread"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mWriter1</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mBufferLists</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mOffsetRing</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/peprocessor.h" line="26" column="1" bodyfile="src/peprocessor.h" bodystart="26" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classPairEndProcessor_1a61f9315b141f7808fa440fde0d8359cc" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>closeOutput</name></member>
+      <member refid="classPairEndProcessor_1a8bfd34fbf2e72d18f04c1b1678e39180" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>getPeakInsertSize</name></member>
+      <member refid="classPairEndProcessor_1a5e9b5e8ade9d8ff37d91bacd63584f35" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>initConfig</name></member>
+      <member refid="classPairEndProcessor_1a4030de52f1242d7ac36a3b819c23d323" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>initOutput</name></member>
+      <member refid="classPairEndProcessor_1a6a25f324d2008e6f9e97efef7c66355a" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>interleavedReaderTask</name></member>
+      <member refid="classPairEndProcessor_1a5325bc1785a2a9f59b42593771a23c67" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mBackpressureCV</name></member>
+      <member refid="classPairEndProcessor_1a359bab39dc18e283fc284c74d9298ebb" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mBackpressureMtx</name></member>
+      <member refid="classPairEndProcessor_1a32318768b37c7252f1e5780af5cef94e" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mDuplicate</name></member>
+      <member refid="classPairEndProcessor_1aa911b5334cfcd75ecfec5956626acd35" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mFailedWriter</name></member>
+      <member refid="classPairEndProcessor_1ace9be7f93e4f28aa537b335fdcf9d692" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mFilter</name></member>
+      <member refid="classPairEndProcessor_1aca493df06ba9f829eabd9f3462b40afa" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mFinishedThreads</name></member>
+      <member refid="classPairEndProcessor_1a388e2a6911b141ae3ac560437f43c325" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mInsertSizeHist</name></member>
+      <member refid="classPairEndProcessor_1abdb66a6b67dc33a5b90296454fa36236" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mLeftInputLists</name></member>
+      <member refid="classPairEndProcessor_1a421be6fd44051e3bc12a1240e4c870ed" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mLeftPackReadCounter</name></member>
+      <member refid="classPairEndProcessor_1a92288ad801f2248de839d1a620c37569" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mLeftReaderFinished</name></member>
+      <member refid="classPairEndProcessor_1a1bb8e19c273ece53d93f8e696958fb4a" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mLeftReadPool</name></member>
+      <member refid="classPairEndProcessor_1a698c38feeb4ede125ffd61815599cfe1" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mLeftWriter</name></member>
+      <member refid="classPairEndProcessor_1a0d28dfdb0f62ebcfbf57101b3d3e51ff" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mMergedWriter</name></member>
+      <member refid="classPairEndProcessor_1a3eca167a1dc7a6c56a5f955bcd413a93" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mOptions</name></member>
+      <member refid="classPairEndProcessor_1a3f3fe32e3bcb3130d9daee5a93cbd874" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mOverlappedWriter</name></member>
+      <member refid="classPairEndProcessor_1af3a01b94aa0ff99508315c62fbca85cb" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mPackProcessedCounter</name></member>
+      <member refid="classPairEndProcessor_1a11cb9e95cdc58c258920c6cd5a25a553" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mRightInputLists</name></member>
+      <member refid="classPairEndProcessor_1a554eedf8169ecb89fc1ac4631c4e51b7" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mRightPackReadCounter</name></member>
+      <member refid="classPairEndProcessor_1ad619db5cc0740f86213c5ad9a6363785" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mRightReaderFinished</name></member>
+      <member refid="classPairEndProcessor_1a185d1ee9ac28144f533d8e419d14b53a" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mRightReadPool</name></member>
+      <member refid="classPairEndProcessor_1a19a4c96bf685d8d01e89438f2fbcaf66" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mRightWriter</name></member>
+      <member refid="classPairEndProcessor_1af2763af2a1066fa2ac529efbe2ba1228" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mUmiProcessor</name></member>
+      <member refid="classPairEndProcessor_1adfe34f92e0f443642a22fb9b953746bb" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mUnpairedLeftWriter</name></member>
+      <member refid="classPairEndProcessor_1a64990bd5e99bfaf98925b7b03d36c52c" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>mUnpairedRightWriter</name></member>
+      <member refid="classPairEndProcessor_1a5c8f0062f8e980e06a07bba4abfb04d9" prot="public" virt="non-virtual"><scope>PairEndProcessor</scope><name>PairEndProcessor</name></member>
+      <member refid="classPairEndProcessor_1a49f131a3f2c6ae7554e3c143974263ee" prot="public" virt="non-virtual"><scope>PairEndProcessor</scope><name>process</name></member>
+      <member refid="classPairEndProcessor_1ac28979108069f4202f571446dbe32488" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>processorTask</name></member>
+      <member refid="classPairEndProcessor_1a28a9e02adbac691bd43c6928e9b9fb18" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>processPairEnd</name></member>
+      <member refid="classPairEndProcessor_1a1652c055e6febf6340c3bafcaff5b0f0" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>readerTask</name></member>
+      <member refid="classPairEndProcessor_1ac586284e4c745c4c38ade2c6fffd06b9" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>recycleToPool1</name></member>
+      <member refid="classPairEndProcessor_1ac8547a1681e4f572ab892d3b63bb23c0" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>recycleToPool2</name></member>
+      <member refid="classPairEndProcessor_1a39bc23e5df6558c15e6b5df802c89a67" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>shouldStopReading</name></member>
+      <member refid="classPairEndProcessor_1a1ed09b1ed350ac890be50f5f69a58fe0" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>statInsertSize</name></member>
+      <member refid="classPairEndProcessor_1ade953e1dab59cbd4fc658bbcbed953bc" prot="private" virt="non-virtual"><scope>PairEndProcessor</scope><name>writerTask</name></member>
+      <member refid="classPairEndProcessor_1a51025ff3f6fbd889977b071a1336c12a" prot="public" virt="non-virtual"><scope>PairEndProcessor</scope><name>~PairEndProcessor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

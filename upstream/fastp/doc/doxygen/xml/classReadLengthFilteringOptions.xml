@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classReadLengthFilteringOptions" kind="class" language="C++" prot="public">
+    <compoundname>ReadLengthFilteringOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classReadLengthFilteringOptions_1a9d5983b4aab445ab6746e300cc40b9c6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ReadLengthFilteringOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>ReadLengthFilteringOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="279" column="10" bodyfile="src/options.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classReadLengthFilteringOptions_1af2af82f1835af877e2837aee40bd9753" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ReadLengthFilteringOptions::requiredLength</definition>
+        <argsstring></argsstring>
+        <name>requiredLength</name>
+        <qualifiedname>ReadLengthFilteringOptions::requiredLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="281" column="9" bodyfile="src/options.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classReadLengthFilteringOptions_1a59218c1e035c857cbd8ee8e82d73468e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ReadLengthFilteringOptions::maxLength</definition>
+        <argsstring></argsstring>
+        <name>maxLength</name>
+        <qualifiedname>ReadLengthFilteringOptions::maxLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="283" column="9" bodyfile="src/options.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classReadLengthFilteringOptions_1a90e5ecad9e3be9b824e732a1b39ff056" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ReadLengthFilteringOptions::ReadLengthFilteringOptions</definition>
+        <argsstring>()</argsstring>
+        <name>ReadLengthFilteringOptions</name>
+        <qualifiedname>ReadLengthFilteringOptions::ReadLengthFilteringOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="272" column="5" bodyfile="src/options.h" bodystart="272" bodyend="276"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="270" column="1" bodyfile="src/options.h" bodystart="270" bodyend="284"/>
+    <listofallmembers>
+      <member refid="classReadLengthFilteringOptions_1a9d5983b4aab445ab6746e300cc40b9c6" prot="public" virt="non-virtual"><scope>ReadLengthFilteringOptions</scope><name>enabled</name></member>
+      <member refid="classReadLengthFilteringOptions_1a59218c1e035c857cbd8ee8e82d73468e" prot="public" virt="non-virtual"><scope>ReadLengthFilteringOptions</scope><name>maxLength</name></member>
+      <member refid="classReadLengthFilteringOptions_1a90e5ecad9e3be9b824e732a1b39ff056" prot="public" virt="non-virtual"><scope>ReadLengthFilteringOptions</scope><name>ReadLengthFilteringOptions</name></member>
+      <member refid="classReadLengthFilteringOptions_1af2af82f1835af877e2837aee40bd9753" prot="public" virt="non-virtual"><scope>ReadLengthFilteringOptions</scope><name>requiredLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

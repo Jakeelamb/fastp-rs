@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01Source_00_01true_01_4" kind="class" language="C++" prot="public">
+    <compoundname>cmdline::detail::lexical_cast_t&lt; Target, Source, true &gt;</compoundname>
+    <includes refid="cmdline_8h" local="no">cmdline.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Target</type>
+      </param>
+      <param>
+        <type>typename Source</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01Source_00_01true_01_4_1a424e3e47b97dde835cdcc3d290618fc5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Target</type>
+        <definition>static Target cmdline::detail::lexical_cast_t&lt; Target, Source, true &gt;::cast</definition>
+        <argsstring>(const Source &amp;arg)</argsstring>
+        <name>cast</name>
+        <qualifiedname>cmdline::detail::lexical_cast_t&lt; Target, Source, true &gt;::cast</qualifiedname>
+        <param>
+          <type>const Source &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="62" column="17" bodyfile="src/cmdline.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cmdline.h" line="60" column="1" bodyfile="src/cmdline.h" bodystart="60" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01Source_00_01true_01_4_1a424e3e47b97dde835cdcc3d290618fc5" prot="public" virt="non-virtual"><scope>cmdline::detail::lexical_cast_t&lt; Target, Source, true &gt;</scope><name>cast</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

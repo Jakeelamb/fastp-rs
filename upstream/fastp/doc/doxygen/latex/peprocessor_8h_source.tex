@@ -1,0 +1,81 @@
+\doxysection{peprocessor.\+h}
+\hypertarget{peprocessor_8h_source}{}\label{peprocessor_8h_source}\index{src/peprocessor.h@{src/peprocessor.h}}
+\doxymbox{\hyperlink{peprocessor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PE\_PROCESSOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PE\_PROCESSOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{read_8h}{read.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <condition\_variable>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{threadconfig_8h}{threadconfig.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{filter_8h}{filter.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{umiprocessor_8h}{umiprocessor.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{overlapanalysis_8h}{overlapanalysis.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{writerthread_8h}{writerthread.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{duplicate_8h}{duplicate.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{readpool_8h}{readpool.h}}"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{peprocessor_8h_a6a7384e5e73948fad999e8d95378dcca}{ReadPairRepository}}\ \doxymbox{\hyperlink{peprocessor_8h_a6a7384e5e73948fad999e8d95378dcca}{ReadPairRepository}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classPairEndProcessor_a5c8f0062f8e980e06a07bba4abfb04d9}{PairEndProcessor}}\{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{classPairEndProcessor_a5c8f0062f8e980e06a07bba4abfb04d9}{PairEndProcessor}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt);}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{classPairEndProcessor_a51025ff3f6fbd889977b071a1336c12a}{\string~PairEndProcessor}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classPairEndProcessor_a49f131a3f2c6ae7554e3c143974263ee}{process}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classPairEndProcessor_a28a9e02adbac691bd43c6928e9b9fb18}{processPairEnd}}(\doxymbox{\hyperlink{structReadPack}{ReadPack}}*\ leftPack,\ \doxymbox{\hyperlink{structReadPack}{ReadPack}}*\ rightPack,\ \doxymbox{\hyperlink{classThreadConfig}{ThreadConfig}}*\ config);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_a1652c055e6febf6340c3bafcaff5b0f0}{readerTask}}(\textcolor{keywordtype}{bool}\ isLeft);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_a6a25f324d2008e6f9e97efef7c66355a}{interleavedReaderTask}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_ac28979108069f4202f571446dbe32488}{processorTask}}(\doxymbox{\hyperlink{classThreadConfig}{ThreadConfig}}*\ config);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_a5e9b5e8ade9d8ff37d91bacd63584f35}{initConfig}}(\doxymbox{\hyperlink{classThreadConfig}{ThreadConfig}}*\ config);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_a4030de52f1242d7ac36a3b819c23d323}{initOutput}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_a61f9315b141f7808fa440fde0d8359cc}{closeOutput}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_a1ed09b1ed350ac890be50f5f69a58fe0}{statInsertSize}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r2,\ \doxymbox{\hyperlink{classOverlapResult}{OverlapResult}}\&\ ov,\ \textcolor{keywordtype}{int}\ frontTrimmed1\ =\ 0,\ \textcolor{keywordtype}{int}\ frontTrimmed2\ =\ 0);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classPairEndProcessor_a8bfd34fbf2e72d18f04c1b1678e39180}{getPeakInsertSize}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_ade953e1dab59cbd4fc658bbcbed953bc}{writerTask}}(\doxymbox{\hyperlink{classWriterThread}{WriterThread}}*\ config);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_ac586284e4c745c4c38ade2c6fffd06b9}{recycleToPool1}}(\textcolor{keywordtype}{int}\ tid,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classPairEndProcessor_ac8547a1681e4f572ab892d3b63bb23c0}{recycleToPool2}}(\textcolor{keywordtype}{int}\ tid,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \ \ \ \ atomic\_bool\ \doxymbox{\hyperlink{classPairEndProcessor_a92288ad801f2248de839d1a620c37569}{mLeftReaderFinished}};}
+\DoxyCodeLine{00048\ \ \ \ \ atomic\_bool\ \doxymbox{\hyperlink{classPairEndProcessor_ad619db5cc0740f86213c5ad9a6363785}{mRightReaderFinished}};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{alignas}(128)\ atomic\_int\ \doxymbox{\hyperlink{classPairEndProcessor_aca493df06ba9f829eabd9f3462b40afa}{mFinishedThreads}};}
+\DoxyCodeLine{00050\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a3eca167a1dc7a6c56a5f955bcd413a93}{mOptions}};}
+\DoxyCodeLine{00051\ \ \ \ \ \doxymbox{\hyperlink{classFilter}{Filter}}*\ \doxymbox{\hyperlink{classPairEndProcessor_ace9be7f93e4f28aa537b335fdcf9d692}{mFilter}};}
+\DoxyCodeLine{00052\ \ \ \ \ \doxymbox{\hyperlink{classUmiProcessor}{UmiProcessor}}*\ \doxymbox{\hyperlink{classPairEndProcessor_af2763af2a1066fa2ac529efbe2ba1228}{mUmiProcessor}};}
+\DoxyCodeLine{00053\ \ \ \ \ atomic\_long*\ \doxymbox{\hyperlink{classPairEndProcessor_a388e2a6911b141ae3ac560437f43c325}{mInsertSizeHist}};}
+\DoxyCodeLine{00054\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread}{WriterThread}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a698c38feeb4ede125ffd61815599cfe1}{mLeftWriter}};}
+\DoxyCodeLine{00055\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread}{WriterThread}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a19a4c96bf685d8d01e89438f2fbcaf66}{mRightWriter}};}
+\DoxyCodeLine{00056\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread}{WriterThread}}*\ \doxymbox{\hyperlink{classPairEndProcessor_adfe34f92e0f443642a22fb9b953746bb}{mUnpairedLeftWriter}};}
+\DoxyCodeLine{00057\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread}{WriterThread}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a64990bd5e99bfaf98925b7b03d36c52c}{mUnpairedRightWriter}};}
+\DoxyCodeLine{00058\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread}{WriterThread}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a0d28dfdb0f62ebcfbf57101b3d3e51ff}{mMergedWriter}};}
+\DoxyCodeLine{00059\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread}{WriterThread}}*\ \doxymbox{\hyperlink{classPairEndProcessor_aa911b5334cfcd75ecfec5956626acd35}{mFailedWriter}};}
+\DoxyCodeLine{00060\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread}{WriterThread}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a3f3fe32e3bcb3130d9daee5a93cbd874}{mOverlappedWriter}};}
+\DoxyCodeLine{00061\ \ \ \ \ \doxymbox{\hyperlink{classDuplicate}{Duplicate}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a32318768b37c7252f1e5780af5cef94e}{mDuplicate}};}
+\DoxyCodeLine{00062\ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}**\ \doxymbox{\hyperlink{classPairEndProcessor_abdb66a6b67dc33a5b90296454fa36236}{mLeftInputLists}};}
+\DoxyCodeLine{00063\ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<ReadPack*>}}**\ \doxymbox{\hyperlink{classPairEndProcessor_a11cb9e95cdc58c258920c6cd5a25a553}{mRightInputLists}};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classPairEndProcessor_a421be6fd44051e3bc12a1240e4c870ed}{mLeftPackReadCounter}};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classPairEndProcessor_a554eedf8169ecb89fc1ac4631c4e51b7}{mRightPackReadCounter}};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{alignas}(128)\ atomic\_long\ \doxymbox{\hyperlink{classPairEndProcessor_af3a01b94aa0ff99508315c62fbca85cb}{mPackProcessedCounter}};}
+\DoxyCodeLine{00067\ \ \ \ \ \doxymbox{\hyperlink{classReadPool}{ReadPool}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a1bb8e19c273ece53d93f8e696958fb4a}{mLeftReadPool}};}
+\DoxyCodeLine{00068\ \ \ \ \ \doxymbox{\hyperlink{classReadPool}{ReadPool}}*\ \doxymbox{\hyperlink{classPairEndProcessor_a185d1ee9ac28144f533d8e419d14b53a}{mRightReadPool}};}
+\DoxyCodeLine{00069\ \ \ \ \ atomic\_bool\ \doxymbox{\hyperlink{classPairEndProcessor_a39bc23e5df6558c15e6b5df802c89a67}{shouldStopReading}};}
+\DoxyCodeLine{00070\ \ \ \ \ std::mutex\ \doxymbox{\hyperlink{classPairEndProcessor_a359bab39dc18e283fc284c74d9298ebb}{mBackpressureMtx}};}
+\DoxyCodeLine{00071\ \ \ \ \ std::condition\_variable\ \doxymbox{\hyperlink{classPairEndProcessor_a5325bc1785a2a9f59b42593771a23c67}{mBackpressureCV}};}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

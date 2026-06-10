@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['base_0',['base',['../classNucleotideNode.html#a9d06c3c2d0e64a1cc8d0262878b80357',1,'NucleotideNode']]],
+  ['base2val_1',['BASE2VAL',['../stats_8cpp.html#afccb6a513cdaff988996aee95f4c4d08',1,'stats.cpp']]],
+  ['base2val_2',['base2val',['../classStats.html#a1e760301f6f24951e8efe7b401af9fd8',1,'Stats']]],
+  ['basecorrector_3',['BaseCorrector',['../classBaseCorrector.html',1,'BaseCorrector'],['../classBaseCorrector.html#ac7ddef93e2de377bd105d0917ae138cb',1,'BaseCorrector::BaseCorrector()']]],
+  ['basecorrector_2ecpp_4',['basecorrector.cpp',['../basecorrector_8cpp.html',1,'']]],
+  ['basecorrector_2eh_5',['basecorrector.h',['../basecorrector_8h.html',1,'']]],
+  ['basename_6',['basename',['../util_8h.html#a7657042f76bf50bcbabd087b2573a86b',1,'util.h']]],
+  ['bgzf_2eh_7',['bgzf.h',['../bgzf_8h.html',1,'']]],
+  ['bgzf_5fheader_5fsize_8',['BGZF_HEADER_SIZE',['../bgzf_8h.html#a484751937758a33287383a64fb34cdb4',1,'bgzf.h']]],
+  ['bgzf_5fmax_5fblock_5fsize_9',['BGZF_MAX_BLOCK_SIZE',['../bgzf_8h.html#a0a414adb7070c8104828e5ce99aec2f1',1,'bgzf.h']]],
+  ['bgzfblocksize_10',['bgzfBlockSize',['../bgzf_8h.html#a6aa7eb8ff463738d79f3d00190830a05',1,'bgzf.h']]],
+  ['bgzfmtreader_11',['BgzfMtReader',['../classBgzfMtReader.html',1,'BgzfMtReader'],['../classBgzfMtReader.html#a35b61e054961e9804bcb8d6485e9073c',1,'BgzfMtReader::BgzfMtReader()']]],
+  ['blacklist1_12',['blacklist1',['../classIndexFilterOptions.html#ae35b6f2704c88e70e511e57c8666f98b',1,'IndexFilterOptions']]],
+  ['blacklist2_13',['blacklist2',['../classIndexFilterOptions.html#aa80f659267e4386537dc4879e71d60b4',1,'IndexFilterOptions']]],
+  ['blocks_14',['blocks',['../classSingleProducerSingleConsumerList.html#a4c080c6fb829eca3be473747cd46b50d',1,'SingleProducerSingleConsumerList']]],
+  ['blocksnum_15',['blocksNum',['../classSingleProducerSingleConsumerList.html#ace268dce9b3da1cc5dedc4a1fc7ec9af',1,'SingleProducerSingleConsumerList']]],
+  ['blocksringbuffersize_16',['blocksRingBufferSize',['../classSingleProducerSingleConsumerList.html#a1fbb4cbdcc40e26b41ad5aad8566eb44',1,'SingleProducerSingleConsumerList']]],
+  ['blocksringbuffersizemask_17',['blocksRingBufferSizeMask',['../classSingleProducerSingleConsumerList.html#a6d3179ea11e46c422eae8ec9477300e1',1,'SingleProducerSingleConsumerList']]],
+  ['bufferfinished_18',['bufferFinished',['../classFastqReader.html#aeec9c64e4e7bc9af6a60f407d069451b',1,'FastqReader']]],
+  ['bufferlength_19',['bufferLength',['../classWriterThread.html#a09e82ab15e9a38c213117495c9c9fe58',1,'WriterThread']]],
+  ['byfilelines_20',['byFileLines',['../classSplitOptions.html#a95502f9eb5f8da1ef60a953195cc8ee6',1,'SplitOptions']]],
+  ['byfilenumber_21',['byFileNumber',['../classSplitOptions.html#a7fe3d5b9c889fe049d9233aff62cebf7',1,'SplitOptions']]]
+];

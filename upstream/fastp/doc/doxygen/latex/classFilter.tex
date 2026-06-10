@@ -1,0 +1,119 @@
+\doxysection{Filter Class Reference}
+\hypertarget{classFilter}{}\label{classFilter}\index{Filter@{Filter}}
+
+
+{\ttfamily \+\#include $<$filter.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classFilter_a92fa6d109e4b8a798e1f3a1b3bc0d651}{Filter}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt)
+\item 
+\doxymbox{\hyperlink{classFilter_a502ee334d42eac3edbaf32b599f9c35e}{\texorpdfstring{$\sim$}{\string~}\+Filter}} ()
+\item 
+int \doxymbox{\hyperlink{classFilter_ad0ed0d10583bb939f9451052f9cce930}{pass\+Filter}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r)
+\item 
+bool \doxymbox{\hyperlink{classFilter_ad621657b7da9b0387447c4694e1db157}{pass\+Low\+Complexity\+Filter}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r)
+\item 
+\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFilter_a2eee564e8d970850c1f87d06e3e5b55c}{trim\+And\+Cut}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r, int front, int tail, int \&front\+Trimmed)
+\item 
+bool \doxymbox{\hyperlink{classFilter_af529fbec75e362270bc1db6f483847b0}{filter\+By\+Index}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r)
+\item 
+bool \doxymbox{\hyperlink{classFilter_a90f5e73b9d694de6b5af3cc626780d54}{filter\+By\+Index}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r1, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{classFilter_a6bd65071e3f2f8f715f79968dc7148b2}{test}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classFilter_a67f3a45429fbef9f6ce8bcb9dd04f91e}{match}} (vector$<$ string $>$ \&list, string target, int threshold)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFilter_af59e53198737709d138fbe29a5332655}{m\+Options}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classFilter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFilter_a92fa6d109e4b8a798e1f3a1b3bc0d651}\index{Filter@{Filter}!Filter@{Filter}}
+\index{Filter@{Filter}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{Filter()}{Filter()}}
+{\footnotesize\ttfamily \label{classFilter_a92fa6d109e4b8a798e1f3a1b3bc0d651} 
+Filter::\+\+Filter (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFilter_a502ee334d42eac3edbaf32b599f9c35e}\index{Filter@{Filter}!````~Filter@{\texorpdfstring{$\sim$}{\string~}Filter}}
+\index{````~Filter@{\texorpdfstring{$\sim$}{\string~}Filter}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Filter()}{\string~Filter()}}
+{\footnotesize\ttfamily \label{classFilter_a502ee334d42eac3edbaf32b599f9c35e} 
+Filter::\+\texorpdfstring{$\sim$}{\string~}\+Filter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classFilter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFilter_af529fbec75e362270bc1db6f483847b0}\index{Filter@{Filter}!filterByIndex@{filterByIndex}}
+\index{filterByIndex@{filterByIndex}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{filterByIndex()}{filterByIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classFilter_af529fbec75e362270bc1db6f483847b0} 
+bool Filter::\+filter\+By\+Index (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFilter_a90f5e73b9d694de6b5af3cc626780d54}\index{Filter@{Filter}!filterByIndex@{filterByIndex}}
+\index{filterByIndex@{filterByIndex}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{filterByIndex()}{filterByIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classFilter_a90f5e73b9d694de6b5af3cc626780d54} 
+bool Filter::\+filter\+By\+Index (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r1}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFilter_a67f3a45429fbef9f6ce8bcb9dd04f91e}\index{Filter@{Filter}!match@{match}}
+\index{match@{match}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{classFilter_a67f3a45429fbef9f6ce8bcb9dd04f91e} 
+bool Filter::\+match (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{list}{, }\item[{string}]{target}{, }\item[{int}]{threshold}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFilter_ad0ed0d10583bb939f9451052f9cce930}\index{Filter@{Filter}!passFilter@{passFilter}}
+\index{passFilter@{passFilter}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{passFilter()}{passFilter()}}
+{\footnotesize\ttfamily \label{classFilter_ad0ed0d10583bb939f9451052f9cce930} 
+int Filter::\+pass\+Filter (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFilter_ad621657b7da9b0387447c4694e1db157}\index{Filter@{Filter}!passLowComplexityFilter@{passLowComplexityFilter}}
+\index{passLowComplexityFilter@{passLowComplexityFilter}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{passLowComplexityFilter()}{passLowComplexityFilter()}}
+{\footnotesize\ttfamily \label{classFilter_ad621657b7da9b0387447c4694e1db157} 
+bool Filter::\+pass\+Low\+Complexity\+Filter (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFilter_a6bd65071e3f2f8f715f79968dc7148b2}\index{Filter@{Filter}!test@{test}}
+\index{test@{test}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classFilter_a6bd65071e3f2f8f715f79968dc7148b2} 
+bool Filter::\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classFilter_a2eee564e8d970850c1f87d06e3e5b55c}\index{Filter@{Filter}!trimAndCut@{trimAndCut}}
+\index{trimAndCut@{trimAndCut}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{trimAndCut()}{trimAndCut()}}
+{\footnotesize\ttfamily \label{classFilter_a2eee564e8d970850c1f87d06e3e5b55c} 
+\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} Filter::\+trim\+And\+Cut (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{, }\item[{int}]{front}{, }\item[{int}]{tail}{, }\item[{int \&}]{front\+Trimmed}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classFilter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classFilter_af59e53198737709d138fbe29a5332655}\index{Filter@{Filter}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classFilter_af59e53198737709d138fbe29a5332655} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Filter::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{filter_8h}{filter.\+h}}\item 
+src/\+\doxymbox{\hyperlink{filter_8cpp}{filter.\+cpp}}\end{DoxyCompactItemize}

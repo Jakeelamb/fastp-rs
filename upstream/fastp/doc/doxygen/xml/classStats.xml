@@ -1,0 +1,1297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classStats" kind="class" language="C++" prot="public">
+    <compoundname>Stats</compoundname>
+    <includes refid="stats_8h" local="no">stats.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classStats_1a2abee1f8faf6ce20b7321a87a570e4ca" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Stats::CYCLE_ARRAY_COUNT</definition>
+        <argsstring></argsstring>
+        <name>CYCLE_ARRAY_COUNT</name>
+        <qualifiedname>Stats::CYCLE_ARRAY_COUNT</qualifiedname>
+        <initializer>= 34</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="52" column="22" bodyfile="src/stats.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classStats_1a729fa232954d3b81b313d6ef157d638a" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* Stats::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>Stats::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="62" column="13" bodyfile="src/stats.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a55c2da3cf8d2b79079321a77bce26d85" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Stats::mIsRead2</definition>
+        <argsstring></argsstring>
+        <name>mIsRead2</name>
+        <qualifiedname>Stats::mIsRead2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="63" column="10" bodyfile="src/stats.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a42a1223914bd31299e6862f3002989a1" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mReads</definition>
+        <argsstring></argsstring>
+        <name>mReads</name>
+        <qualifiedname>Stats::mReads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="64" column="10" bodyfile="src/stats.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a340f27e72128dbdb1ce2473cbe6867f2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Stats::mEvaluatedSeqLen</definition>
+        <argsstring></argsstring>
+        <name>mEvaluatedSeqLen</name>
+        <qualifiedname>Stats::mEvaluatedSeqLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="65" column="9" bodyfile="src/stats.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a42ffa7d563c7ceb562b72f220b408c9c" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* Stats::mCycleBuffer</definition>
+        <argsstring></argsstring>
+        <name>mCycleBuffer</name>
+        <qualifiedname>Stats::mCycleBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="77" column="10" bodyfile="src/stats.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1ae1b4f836cc62feea4e5c280d9a4e6cdb" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* Stats::mCycleQ30Bases[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>mCycleQ30Bases</name>
+        <qualifiedname>Stats::mCycleQ30Bases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="78" column="10" bodyfile="src/stats.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1adcf84dc3013fca1e5b7a4d51d936f016" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* Stats::mCycleQ20Bases[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>mCycleQ20Bases</name>
+        <qualifiedname>Stats::mCycleQ20Bases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="79" column="10" bodyfile="src/stats.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a955290ac8221b197d08d3e0b5ffca5be" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* Stats::mCycleBaseContents[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>mCycleBaseContents</name>
+        <qualifiedname>Stats::mCycleBaseContents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="80" column="10" bodyfile="src/stats.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a0de4fa9b5b47f256ea7014a4e1079f27" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* Stats::mCycleBaseQual[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>mCycleBaseQual</name>
+        <qualifiedname>Stats::mCycleBaseQual</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="81" column="10" bodyfile="src/stats.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1ac403adaae64caf6c329f7fb05087a2e7" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* Stats::mCycleTotalBase</definition>
+        <argsstring></argsstring>
+        <name>mCycleTotalBase</name>
+        <qualifiedname>Stats::mCycleTotalBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="82" column="10" bodyfile="src/stats.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a6a737d8bb248fcfc31c5d26766bc5635" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* Stats::mCycleTotalQual</definition>
+        <argsstring></argsstring>
+        <name>mCycleTotalQual</name>
+        <qualifiedname>Stats::mCycleTotalQual</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="83" column="10" bodyfile="src/stats.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a7f5ec473f40a93e14d61105f7f211993" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* Stats::mKmer</definition>
+        <argsstring></argsstring>
+        <name>mKmer</name>
+        <qualifiedname>Stats::mKmer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="84" column="10" bodyfile="src/stats.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1aec9d0fc7cbef3b0ebffec74d719de7b3" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mBaseQualHistogram[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>mBaseQualHistogram</name>
+        <qualifiedname>Stats::mBaseQualHistogram</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="85" column="10" bodyfile="src/stats.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1aa5d888afc7b8c82c8172ec9c5c7f5ee4" prot="private" static="no" mutable="no">
+        <type>map&lt; string, double * &gt;</type>
+        <definition>map&lt;string, double*&gt; Stats::mQualityCurves</definition>
+        <argsstring></argsstring>
+        <name>mQualityCurves</name>
+        <qualifiedname>Stats::mQualityCurves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="87" column="9" bodyfile="src/stats.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1ace10d1fecc73060fa407d53c26608a19" prot="private" static="no" mutable="no">
+        <type>map&lt; string, double * &gt;</type>
+        <definition>map&lt;string, double*&gt; Stats::mContentCurves</definition>
+        <argsstring></argsstring>
+        <name>mContentCurves</name>
+        <qualifiedname>Stats::mContentCurves</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="88" column="9" bodyfile="src/stats.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1afdd3d694e0482b4103618819a6823f0c" prot="private" static="no" mutable="no">
+        <type>map&lt; string, long &gt;</type>
+        <definition>map&lt;string, long&gt; Stats::mOverRepSeq</definition>
+        <argsstring></argsstring>
+        <name>mOverRepSeq</name>
+        <qualifiedname>Stats::mOverRepSeq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="89" column="9" bodyfile="src/stats.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a6e749a56e715318d44ee8fbe810cd6b3" prot="private" static="no" mutable="no">
+        <type>map&lt; string, long * &gt;</type>
+        <definition>map&lt;string, long*&gt; Stats::mOverRepSeqDist</definition>
+        <argsstring></argsstring>
+        <name>mOverRepSeqDist</name>
+        <qualifiedname>Stats::mOverRepSeqDist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="90" column="9" bodyfile="src/stats.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a63af9a5ef51bb52c0e95a73b016b0a52" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Stats::mCycles</definition>
+        <argsstring></argsstring>
+        <name>mCycles</name>
+        <qualifiedname>Stats::mCycles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="93" column="9" bodyfile="src/stats.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a3cc90afb06772b59244b874c71896234" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Stats::mBufLen</definition>
+        <argsstring></argsstring>
+        <name>mBufLen</name>
+        <qualifiedname>Stats::mBufLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="94" column="9" bodyfile="src/stats.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1af6d612c26123d3b5ebd44e11c83969b0" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mBases</definition>
+        <argsstring></argsstring>
+        <name>mBases</name>
+        <qualifiedname>Stats::mBases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="95" column="10" bodyfile="src/stats.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1abd64631b60b9b537a34da6b1bd28312e" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mQ20Bases[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>mQ20Bases</name>
+        <qualifiedname>Stats::mQ20Bases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="96" column="10" bodyfile="src/stats.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1aebd5413d37e0d9949a2d3569e36a5404" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mQ30Bases[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>mQ30Bases</name>
+        <qualifiedname>Stats::mQ30Bases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="97" column="10" bodyfile="src/stats.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a0b624a121f5d7f168308eccba73bcf06" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mBaseContents[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>mBaseContents</name>
+        <qualifiedname>Stats::mBaseContents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="98" column="10" bodyfile="src/stats.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a07de69d6992ee6953b6f9594d08f5e05" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mQ20Total</definition>
+        <argsstring></argsstring>
+        <name>mQ20Total</name>
+        <qualifiedname>Stats::mQ20Total</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="99" column="10" bodyfile="src/stats.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1aff18db23c2804c59d49c21daa57db8bb" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mQ30Total</definition>
+        <argsstring></argsstring>
+        <name>mQ30Total</name>
+        <qualifiedname>Stats::mQ30Total</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="100" column="10" bodyfile="src/stats.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a5cec2391d31ca4404e41ce2e8694c075" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mQ40Total</definition>
+        <argsstring></argsstring>
+        <name>mQ40Total</name>
+        <qualifiedname>Stats::mQ40Total</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="101" column="10" bodyfile="src/stats.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1ae91a6239373fe425550cb7aca45ca936" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Stats::summarized</definition>
+        <argsstring></argsstring>
+        <name>summarized</name>
+        <qualifiedname>Stats::summarized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="102" column="10" bodyfile="src/stats.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a974eeef30ea0dbc6eb0c44bdf1495907" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mKmerMax</definition>
+        <argsstring></argsstring>
+        <name>mKmerMax</name>
+        <qualifiedname>Stats::mKmerMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="103" column="10" bodyfile="src/stats.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1ab4c39e3a5939e03c2b4acd3b7f466d51" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mKmerMin</definition>
+        <argsstring></argsstring>
+        <name>mKmerMin</name>
+        <qualifiedname>Stats::mKmerMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="104" column="10" bodyfile="src/stats.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1ad46678dfd11da821f8a87c8f60894770" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Stats::mKmerBufLen</definition>
+        <argsstring></argsstring>
+        <name>mKmerBufLen</name>
+        <qualifiedname>Stats::mKmerBufLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="105" column="9" bodyfile="src/stats.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStats_1a43d87fe98f7187c89d1babcee0765894" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Stats::mLengthSum</definition>
+        <argsstring></argsstring>
+        <name>mLengthSum</name>
+        <qualifiedname>Stats::mLengthSum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="106" column="10" bodyfile="src/stats.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStats_1a6e3e014bddbda62dc0cc9012fe4a0707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Stats::Stats</definition>
+        <argsstring>(Options *opt, bool isRead2=false, int guessedCycles=0, int bufferMargin=1024)</argsstring>
+        <name>Stats</name>
+        <qualifiedname>Stats::Stats</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isRead2</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>guessedCycles</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferMargin</declname>
+          <defval>1024</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="17" column="5" bodyfile="src/stats.cpp" bodystart="8" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1ad32aee12c7d460325f8d7a31159e8acc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Stats::~Stats</definition>
+        <argsstring>()</argsstring>
+        <name>~Stats</name>
+        <qualifiedname>Stats::~Stats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="18" column="5" bodyfile="src/stats.cpp" bodystart="85" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a9f9530fbf16f39e5c9b953ebf8bbc664" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Stats::getCycles</definition>
+        <argsstring>()</argsstring>
+        <name>getCycles</name>
+        <qualifiedname>Stats::getCycles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="19" column="9" bodyfile="src/stats.cpp" bodystart="317" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a08a6adf2200fb1d8dc458534c70fb070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Stats::getReads</definition>
+        <argsstring>()</argsstring>
+        <name>getReads</name>
+        <qualifiedname>Stats::getReads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="20" column="10" bodyfile="src/stats.cpp" bodystart="323" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a381dca93848aaea14f1dad4d66643fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Stats::getBases</definition>
+        <argsstring>()</argsstring>
+        <name>getBases</name>
+        <qualifiedname>Stats::getBases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="21" column="10" bodyfile="src/stats.cpp" bodystart="329" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1afb9f2e93a29dd795f46c358640197214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Stats::getQ20</definition>
+        <argsstring>()</argsstring>
+        <name>getQ20</name>
+        <qualifiedname>Stats::getQ20</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="22" column="10" bodyfile="src/stats.cpp" bodystart="335" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a4036a0f6b3446e01bfbceaa6adddf689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Stats::getQ30</definition>
+        <argsstring>()</argsstring>
+        <name>getQ30</name>
+        <qualifiedname>Stats::getQ30</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="23" column="10" bodyfile="src/stats.cpp" bodystart="341" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1ab67ce987a6ccca4b9eae43c3aae361b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Stats::getQ40</definition>
+        <argsstring>()</argsstring>
+        <name>getQ40</name>
+        <qualifiedname>Stats::getQ40</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="24" column="10" bodyfile="src/stats.cpp" bodystart="347" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a6633bfc51f694e857ee1e9b824a5950d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long Stats::getGCNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getGCNumber</name>
+        <qualifiedname>Stats::getGCNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="25" column="10" bodyfile="src/stats.cpp" bodystart="357" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a70c754f2f14822eafe3d7d46c3262156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long *</type>
+        <definition>long * Stats::getQualHist</definition>
+        <argsstring>()</argsstring>
+        <name>getQualHist</name>
+        <qualifiedname>Stats::getQualHist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="26" column="10" bodyfile="src/stats.cpp" bodystart="353" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1ae5c55a5d6f03198bc81eb832c17920c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::statRead</definition>
+        <argsstring>(Read *r)</argsstring>
+        <name>statRead</name>
+        <qualifiedname>Stats::statRead</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="28" column="10" bodyfile="src/stats.cpp" bodystart="191" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a41e2b6247986a16a7cb5c00991015dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>Stats::print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="31" column="10" bodyfile="src/stats.cpp" bodystart="363" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1adf4a74229128be698bb70ed5ececc963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::summarize</definition>
+        <argsstring>(bool forced=false)</argsstring>
+        <name>summarize</name>
+        <qualifiedname>Stats::summarize</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>forced</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="32" column="10" bodyfile="src/stats.cpp" bodystart="102" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1ac36a9cefec78d7dbad9dcc1f47ce9436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::reportJson</definition>
+        <argsstring>(ofstream &amp;ofs, string padding)</argsstring>
+        <name>reportJson</name>
+        <qualifiedname>Stats::reportJson</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>padding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="34" column="10" bodyfile="src/stats.cpp" bodystart="374" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a80e3c45404999760838a79950e4b6004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::reportHtml</definition>
+        <argsstring>(ofstream &amp;ofs, string filteringType, string readName)</argsstring>
+        <name>reportHtml</name>
+        <qualifiedname>Stats::reportHtml</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filteringType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>readName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="36" column="10" bodyfile="src/stats.cpp" bodystart="510" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1afd31fd47c1ac3444ee2a4e464dcd575a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::reportHtmlQuality</definition>
+        <argsstring>(ofstream &amp;ofs, string filteringType, string readName)</argsstring>
+        <name>reportHtmlQuality</name>
+        <qualifiedname>Stats::reportHtmlQuality</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filteringType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>readName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="37" column="10" bodyfile="src/stats.cpp" bodystart="708" bodyend="781"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a1f6e99391d63f7e136c285fca4476458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::reportHtmlContents</definition>
+        <argsstring>(ofstream &amp;ofs, string filteringType, string readName)</argsstring>
+        <name>reportHtmlContents</name>
+        <qualifiedname>Stats::reportHtmlContents</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filteringType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>readName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="38" column="10" bodyfile="src/stats.cpp" bodystart="783" bodyend="875"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a8fc916cb284a1f4178b3344371bbf345" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::reportHtmlKMER</definition>
+        <argsstring>(ofstream &amp;ofs, string filteringType, string readName)</argsstring>
+        <name>reportHtmlKMER</name>
+        <qualifiedname>Stats::reportHtmlKMER</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filteringType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>readName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="39" column="10" bodyfile="src/stats.cpp" bodystart="624" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1ad9103301c8b696b9a8ae4f548cdb0d3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::reportHtmlORA</definition>
+        <argsstring>(ofstream &amp;ofs, string filteringType, string readName)</argsstring>
+        <name>reportHtmlORA</name>
+        <qualifiedname>Stats::reportHtmlORA</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filteringType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>readName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="40" column="10" bodyfile="src/stats.cpp" bodystart="535" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1af7f087cd6cba9ab9fb5ac376db003b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Stats::isLongRead</definition>
+        <argsstring>()</argsstring>
+        <name>isLongRead</name>
+        <qualifiedname>Stats::isLongRead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="41" column="10" bodyfile="src/stats.cpp" bodystart="620" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a3a1fa583073ce88dd0e34b13c5d52ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::initOverRepSeq</definition>
+        <argsstring>()</argsstring>
+        <name>initOverRepSeq</name>
+        <qualifiedname>Stats::initOverRepSeq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="42" column="10" bodyfile="src/stats.cpp" bodystart="957" bodyend="972"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1ac77e59d6ea9b2cafae2a07a4a63f4ef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Stats::getMeanLength</definition>
+        <argsstring>()</argsstring>
+        <name>getMeanLength</name>
+        <qualifiedname>Stats::getMeanLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="43" column="9" bodyfile="src/stats.cpp" bodystart="184" bodyend="189"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classStats_1ac12ba352b19e6eccb1c4d59dfbd18723" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats * Stats::merge</definition>
+        <argsstring>(vector&lt; Stats * &gt; &amp;list)</argsstring>
+        <name>merge</name>
+        <qualifiedname>Stats::merge</qualifiedname>
+        <param>
+          <type>vector&lt; <ref refid="classStats" kindref="compound">Stats</ref> * &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="30" column="18" bodyfile="src/stats.cpp" bodystart="877" bodyend="955"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a56733cef7c54fa5391671d998e628909" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Stats::list2string</definition>
+        <argsstring>(double *list, int size)</argsstring>
+        <name>list2string</name>
+        <qualifiedname>Stats::list2string</qualifiedname>
+        <param>
+          <type>double *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="46" column="19" bodyfile="src/stats.cpp" bodystart="465" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a56af54a3908e3ef6344ee987b24b3956" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Stats::list2string</definition>
+        <argsstring>(double *list, int size, long *coords)</argsstring>
+        <name>list2string</name>
+        <qualifiedname>Stats::list2string</qualifiedname>
+        <param>
+          <type>double *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>long *</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="47" column="19" bodyfile="src/stats.cpp" bodystart="475" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1affc70e7fbe6a0d31541df5c5334350e9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Stats::list2string</definition>
+        <argsstring>(long *list, int size)</argsstring>
+        <name>list2string</name>
+        <qualifiedname>Stats::list2string</qualifiedname>
+        <param>
+          <type>long *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="48" column="19" bodyfile="src/stats.cpp" bodystart="500" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a1e760301f6f24951e8efe7b401af9fd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Stats::base2val</definition>
+        <argsstring>(char base)</argsstring>
+        <name>base2val</name>
+        <qualifiedname>Stats::base2val</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="49" column="16" bodyfile="src/stats.cpp" bodystart="313" bodyend="315"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classStats_1a0243bd6cf86e5d677bd219b808e8fd30" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::setCyclePointers</definition>
+        <argsstring>(int bufLen)</argsstring>
+        <name>setCyclePointers</name>
+        <qualifiedname>Stats::setCyclePointers</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bufLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="53" column="10" bodyfile="src/stats.cpp" bodystart="54" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1ace442825706816d32c7000f4a4b2e5fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::extendBuffer</definition>
+        <argsstring>(int newBufLen)</argsstring>
+        <name>extendBuffer</name>
+        <qualifiedname>Stats::extendBuffer</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>newBufLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="54" column="10" bodyfile="src/stats.cpp" bodystart="65" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a56453c4010c52c746cbcc07e6f5c3c1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Stats::makeKmerTD</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>makeKmerTD</name>
+        <qualifiedname>Stats::makeKmerTD</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="55" column="12" bodyfile="src/stats.cpp" bodystart="656" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1ad233d5194fe5599d059e8efa851ea55f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Stats::kmer3</definition>
+        <argsstring>(int val)</argsstring>
+        <name>kmer3</name>
+        <qualifiedname>Stats::kmer3</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="56" column="12" bodyfile="src/stats.cpp" bodystart="691" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a621f64c87df8a297981957ed915eb02a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Stats::kmer2</definition>
+        <argsstring>(int val)</argsstring>
+        <name>kmer2</name>
+        <qualifiedname>Stats::kmer2</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="57" column="12" bodyfile="src/stats.cpp" bodystart="700" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a52350f683294594f35fe4fc7db3f5d82" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stats::deleteOverRepSeqDist</definition>
+        <argsstring>()</argsstring>
+        <name>deleteOverRepSeqDist</name>
+        <qualifiedname>Stats::deleteOverRepSeqDist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="58" column="10" bodyfile="src/stats.cpp" bodystart="974" bodyend="981"/>
+      </memberdef>
+      <memberdef kind="function" id="classStats_1a05f70b43f9b1237cb13312f129402fcf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Stats::overRepPassed</definition>
+        <argsstring>(string &amp;seq, long count)</argsstring>
+        <name>overRepPassed</name>
+        <qualifiedname>Stats::overRepPassed</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/stats.h" line="59" column="10" bodyfile="src/stats.cpp" bodystart="519" bodyend="533"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="1">
+        <label>Stats</label>
+        <link refid="classStats"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/stats.h" line="14" column="1" bodyfile="src/stats.h" bodystart="14" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classStats_1a1e760301f6f24951e8efe7b401af9fd8" prot="public" virt="non-virtual"><scope>Stats</scope><name>base2val</name></member>
+      <member refid="classStats_1a2abee1f8faf6ce20b7321a87a570e4ca" prot="private" virt="non-virtual"><scope>Stats</scope><name>CYCLE_ARRAY_COUNT</name></member>
+      <member refid="classStats_1a52350f683294594f35fe4fc7db3f5d82" prot="private" virt="non-virtual"><scope>Stats</scope><name>deleteOverRepSeqDist</name></member>
+      <member refid="classStats_1ace442825706816d32c7000f4a4b2e5fb" prot="private" virt="non-virtual"><scope>Stats</scope><name>extendBuffer</name></member>
+      <member refid="classStats_1a381dca93848aaea14f1dad4d66643fcf" prot="public" virt="non-virtual"><scope>Stats</scope><name>getBases</name></member>
+      <member refid="classStats_1a9f9530fbf16f39e5c9b953ebf8bbc664" prot="public" virt="non-virtual"><scope>Stats</scope><name>getCycles</name></member>
+      <member refid="classStats_1a6633bfc51f694e857ee1e9b824a5950d" prot="public" virt="non-virtual"><scope>Stats</scope><name>getGCNumber</name></member>
+      <member refid="classStats_1ac77e59d6ea9b2cafae2a07a4a63f4ef3" prot="public" virt="non-virtual"><scope>Stats</scope><name>getMeanLength</name></member>
+      <member refid="classStats_1afb9f2e93a29dd795f46c358640197214" prot="public" virt="non-virtual"><scope>Stats</scope><name>getQ20</name></member>
+      <member refid="classStats_1a4036a0f6b3446e01bfbceaa6adddf689" prot="public" virt="non-virtual"><scope>Stats</scope><name>getQ30</name></member>
+      <member refid="classStats_1ab67ce987a6ccca4b9eae43c3aae361b1" prot="public" virt="non-virtual"><scope>Stats</scope><name>getQ40</name></member>
+      <member refid="classStats_1a70c754f2f14822eafe3d7d46c3262156" prot="public" virt="non-virtual"><scope>Stats</scope><name>getQualHist</name></member>
+      <member refid="classStats_1a08a6adf2200fb1d8dc458534c70fb070" prot="public" virt="non-virtual"><scope>Stats</scope><name>getReads</name></member>
+      <member refid="classStats_1a3a1fa583073ce88dd0e34b13c5d52ddc" prot="public" virt="non-virtual"><scope>Stats</scope><name>initOverRepSeq</name></member>
+      <member refid="classStats_1af7f087cd6cba9ab9fb5ac376db003b8f" prot="public" virt="non-virtual"><scope>Stats</scope><name>isLongRead</name></member>
+      <member refid="classStats_1a621f64c87df8a297981957ed915eb02a" prot="private" virt="non-virtual"><scope>Stats</scope><name>kmer2</name></member>
+      <member refid="classStats_1ad233d5194fe5599d059e8efa851ea55f" prot="private" virt="non-virtual"><scope>Stats</scope><name>kmer3</name></member>
+      <member refid="classStats_1a56733cef7c54fa5391671d998e628909" prot="public" virt="non-virtual"><scope>Stats</scope><name>list2string</name></member>
+      <member refid="classStats_1a56af54a3908e3ef6344ee987b24b3956" prot="public" virt="non-virtual"><scope>Stats</scope><name>list2string</name></member>
+      <member refid="classStats_1affc70e7fbe6a0d31541df5c5334350e9" prot="public" virt="non-virtual"><scope>Stats</scope><name>list2string</name></member>
+      <member refid="classStats_1a56453c4010c52c746cbcc07e6f5c3c1b" prot="private" virt="non-virtual"><scope>Stats</scope><name>makeKmerTD</name></member>
+      <member refid="classStats_1a0b624a121f5d7f168308eccba73bcf06" prot="private" virt="non-virtual"><scope>Stats</scope><name>mBaseContents</name></member>
+      <member refid="classStats_1aec9d0fc7cbef3b0ebffec74d719de7b3" prot="private" virt="non-virtual"><scope>Stats</scope><name>mBaseQualHistogram</name></member>
+      <member refid="classStats_1af6d612c26123d3b5ebd44e11c83969b0" prot="private" virt="non-virtual"><scope>Stats</scope><name>mBases</name></member>
+      <member refid="classStats_1a3cc90afb06772b59244b874c71896234" prot="private" virt="non-virtual"><scope>Stats</scope><name>mBufLen</name></member>
+      <member refid="classStats_1ace10d1fecc73060fa407d53c26608a19" prot="private" virt="non-virtual"><scope>Stats</scope><name>mContentCurves</name></member>
+      <member refid="classStats_1a955290ac8221b197d08d3e0b5ffca5be" prot="private" virt="non-virtual"><scope>Stats</scope><name>mCycleBaseContents</name></member>
+      <member refid="classStats_1a0de4fa9b5b47f256ea7014a4e1079f27" prot="private" virt="non-virtual"><scope>Stats</scope><name>mCycleBaseQual</name></member>
+      <member refid="classStats_1a42ffa7d563c7ceb562b72f220b408c9c" prot="private" virt="non-virtual"><scope>Stats</scope><name>mCycleBuffer</name></member>
+      <member refid="classStats_1adcf84dc3013fca1e5b7a4d51d936f016" prot="private" virt="non-virtual"><scope>Stats</scope><name>mCycleQ20Bases</name></member>
+      <member refid="classStats_1ae1b4f836cc62feea4e5c280d9a4e6cdb" prot="private" virt="non-virtual"><scope>Stats</scope><name>mCycleQ30Bases</name></member>
+      <member refid="classStats_1a63af9a5ef51bb52c0e95a73b016b0a52" prot="private" virt="non-virtual"><scope>Stats</scope><name>mCycles</name></member>
+      <member refid="classStats_1ac403adaae64caf6c329f7fb05087a2e7" prot="private" virt="non-virtual"><scope>Stats</scope><name>mCycleTotalBase</name></member>
+      <member refid="classStats_1a6a737d8bb248fcfc31c5d26766bc5635" prot="private" virt="non-virtual"><scope>Stats</scope><name>mCycleTotalQual</name></member>
+      <member refid="classStats_1ac12ba352b19e6eccb1c4d59dfbd18723" prot="public" virt="non-virtual"><scope>Stats</scope><name>merge</name></member>
+      <member refid="classStats_1a340f27e72128dbdb1ce2473cbe6867f2" prot="private" virt="non-virtual"><scope>Stats</scope><name>mEvaluatedSeqLen</name></member>
+      <member refid="classStats_1a55c2da3cf8d2b79079321a77bce26d85" prot="private" virt="non-virtual"><scope>Stats</scope><name>mIsRead2</name></member>
+      <member refid="classStats_1a7f5ec473f40a93e14d61105f7f211993" prot="private" virt="non-virtual"><scope>Stats</scope><name>mKmer</name></member>
+      <member refid="classStats_1ad46678dfd11da821f8a87c8f60894770" prot="private" virt="non-virtual"><scope>Stats</scope><name>mKmerBufLen</name></member>
+      <member refid="classStats_1a974eeef30ea0dbc6eb0c44bdf1495907" prot="private" virt="non-virtual"><scope>Stats</scope><name>mKmerMax</name></member>
+      <member refid="classStats_1ab4c39e3a5939e03c2b4acd3b7f466d51" prot="private" virt="non-virtual"><scope>Stats</scope><name>mKmerMin</name></member>
+      <member refid="classStats_1a43d87fe98f7187c89d1babcee0765894" prot="private" virt="non-virtual"><scope>Stats</scope><name>mLengthSum</name></member>
+      <member refid="classStats_1a729fa232954d3b81b313d6ef157d638a" prot="private" virt="non-virtual"><scope>Stats</scope><name>mOptions</name></member>
+      <member refid="classStats_1afdd3d694e0482b4103618819a6823f0c" prot="private" virt="non-virtual"><scope>Stats</scope><name>mOverRepSeq</name></member>
+      <member refid="classStats_1a6e749a56e715318d44ee8fbe810cd6b3" prot="private" virt="non-virtual"><scope>Stats</scope><name>mOverRepSeqDist</name></member>
+      <member refid="classStats_1abd64631b60b9b537a34da6b1bd28312e" prot="private" virt="non-virtual"><scope>Stats</scope><name>mQ20Bases</name></member>
+      <member refid="classStats_1a07de69d6992ee6953b6f9594d08f5e05" prot="private" virt="non-virtual"><scope>Stats</scope><name>mQ20Total</name></member>
+      <member refid="classStats_1aebd5413d37e0d9949a2d3569e36a5404" prot="private" virt="non-virtual"><scope>Stats</scope><name>mQ30Bases</name></member>
+      <member refid="classStats_1aff18db23c2804c59d49c21daa57db8bb" prot="private" virt="non-virtual"><scope>Stats</scope><name>mQ30Total</name></member>
+      <member refid="classStats_1a5cec2391d31ca4404e41ce2e8694c075" prot="private" virt="non-virtual"><scope>Stats</scope><name>mQ40Total</name></member>
+      <member refid="classStats_1aa5d888afc7b8c82c8172ec9c5c7f5ee4" prot="private" virt="non-virtual"><scope>Stats</scope><name>mQualityCurves</name></member>
+      <member refid="classStats_1a42a1223914bd31299e6862f3002989a1" prot="private" virt="non-virtual"><scope>Stats</scope><name>mReads</name></member>
+      <member refid="classStats_1a05f70b43f9b1237cb13312f129402fcf" prot="private" virt="non-virtual"><scope>Stats</scope><name>overRepPassed</name></member>
+      <member refid="classStats_1a41e2b6247986a16a7cb5c00991015dc5" prot="public" virt="non-virtual"><scope>Stats</scope><name>print</name></member>
+      <member refid="classStats_1a80e3c45404999760838a79950e4b6004" prot="public" virt="non-virtual"><scope>Stats</scope><name>reportHtml</name></member>
+      <member refid="classStats_1a1f6e99391d63f7e136c285fca4476458" prot="public" virt="non-virtual"><scope>Stats</scope><name>reportHtmlContents</name></member>
+      <member refid="classStats_1a8fc916cb284a1f4178b3344371bbf345" prot="public" virt="non-virtual"><scope>Stats</scope><name>reportHtmlKMER</name></member>
+      <member refid="classStats_1ad9103301c8b696b9a8ae4f548cdb0d3b" prot="public" virt="non-virtual"><scope>Stats</scope><name>reportHtmlORA</name></member>
+      <member refid="classStats_1afd31fd47c1ac3444ee2a4e464dcd575a" prot="public" virt="non-virtual"><scope>Stats</scope><name>reportHtmlQuality</name></member>
+      <member refid="classStats_1ac36a9cefec78d7dbad9dcc1f47ce9436" prot="public" virt="non-virtual"><scope>Stats</scope><name>reportJson</name></member>
+      <member refid="classStats_1a0243bd6cf86e5d677bd219b808e8fd30" prot="private" virt="non-virtual"><scope>Stats</scope><name>setCyclePointers</name></member>
+      <member refid="classStats_1ae5c55a5d6f03198bc81eb832c17920c2" prot="public" virt="non-virtual"><scope>Stats</scope><name>statRead</name></member>
+      <member refid="classStats_1a6e3e014bddbda62dc0cc9012fe4a0707" prot="public" virt="non-virtual"><scope>Stats</scope><name>Stats</name></member>
+      <member refid="classStats_1adf4a74229128be698bb70ed5ececc963" prot="public" virt="non-virtual"><scope>Stats</scope><name>summarize</name></member>
+      <member refid="classStats_1ae91a6239373fe425550cb7aca45ca936" prot="private" virt="non-virtual"><scope>Stats</scope><name>summarized</name></member>
+      <member refid="classStats_1ad32aee12c7d460325f8d7a31159e8acc" prot="public" virt="non-virtual"><scope>Stats</scope><name>~Stats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

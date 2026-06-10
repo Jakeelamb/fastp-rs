@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classMatcher" kind="class" language="C++" prot="public">
+    <compoundname>Matcher</compoundname>
+    <includes refid="matcher_8h" local="no">matcher.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMatcher_1afe819df374b49c50e0c82c88d7bda929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matcher::Matcher</definition>
+        <argsstring>()</argsstring>
+        <name>Matcher</name>
+        <qualifiedname>Matcher::Matcher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matcher.h" line="12" column="5" bodyfile="src/matcher.cpp" bodystart="3" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatcher_1adb99ad379498c429f93a8ae851ad75c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matcher::~Matcher</definition>
+        <argsstring>()</argsstring>
+        <name>~Matcher</name>
+        <qualifiedname>Matcher::~Matcher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matcher.h" line="13" column="5" bodyfile="src/matcher.cpp" bodystart="7" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMatcher_1acd38938c2641c1fc6a784c993577d934" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matcher::matchWithOneInsertion</definition>
+        <argsstring>(const char *insData, const char *normalData, int cmplen, int diffLimit)</argsstring>
+        <name>matchWithOneInsertion</name>
+        <qualifiedname>Matcher::matchWithOneInsertion</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>insData</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>normalData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmplen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>diffLimit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matcher.h" line="15" column="17" bodyfile="src/matcher.cpp" bodystart="10" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatcher_1a82755eafc71a20723ed8904ee5ce24af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Matcher::diffWithOneInsertion</definition>
+        <argsstring>(const char *insData, const char *normalData, int cmplen, int diffLimit)</argsstring>
+        <name>diffWithOneInsertion</name>
+        <qualifiedname>Matcher::diffWithOneInsertion</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>insData</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>normalData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmplen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>diffLimit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matcher.h" line="16" column="16" bodyfile="src/matcher.cpp" bodystart="56" bodyend="101"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/matcher.h" line="10" column="1" bodyfile="src/matcher.h" bodystart="10" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classMatcher_1a82755eafc71a20723ed8904ee5ce24af" prot="public" virt="non-virtual"><scope>Matcher</scope><name>diffWithOneInsertion</name></member>
+      <member refid="classMatcher_1afe819df374b49c50e0c82c88d7bda929" prot="public" virt="non-virtual"><scope>Matcher</scope><name>Matcher</name></member>
+      <member refid="classMatcher_1acd38938c2641c1fc6a784c993577d934" prot="public" virt="non-virtual"><scope>Matcher</scope><name>matchWithOneInsertion</name></member>
+      <member refid="classMatcher_1adb99ad379498c429f93a8ae851ad75c3" prot="public" virt="non-virtual"><scope>Matcher</scope><name>~Matcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

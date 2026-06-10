@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="read_8h" kind="file" language="C++">
+    <compoundname>read.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="sequence_8h" local="yes">sequence.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="duplicate_8h" local="yes">src/duplicate.h</includedby>
+    <includedby refid="evaluator_8h" local="yes">src/evaluator.h</includedby>
+    <includedby refid="fastqreader_8h" local="yes">src/fastqreader.h</includedby>
+    <includedby refid="filter_8h" local="yes">src/filter.h</includedby>
+    <includedby refid="overlapanalysis_8h" local="yes">src/overlapanalysis.h</includedby>
+    <includedby refid="peprocessor_8h" local="yes">src/peprocessor.h</includedby>
+    <includedby refid="read_8cpp" local="yes">src/read.cpp</includedby>
+    <includedby refid="readpool_8h" local="yes">src/readpool.h</includedby>
+    <includedby refid="seprocessor_8h" local="yes">src/seprocessor.h</includedby>
+    <includedby refid="stats_8h" local="yes">src/stats.h</includedby>
+    <includedby refid="umiprocessor_8h" local="yes">src/umiprocessor.h</includedby>
+    <includedby refid="unittest_8cpp" local="yes">src/unittest.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19">
+        <label>src/adaptertrimmer.cpp</label>
+        <link refid="adaptertrimmer_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/adaptertrimmer.h</label>
+        <link refid="adaptertrimmer_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/basecorrector.cpp</label>
+        <link refid="basecorrector_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/basecorrector.h</label>
+        <link refid="basecorrector_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/duplicate.cpp</label>
+        <link refid="duplicate_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/duplicate.h</label>
+        <link refid="duplicate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/evaluator.cpp</label>
+        <link refid="evaluator_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/evaluator.h</label>
+        <link refid="evaluator_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/fastqreader.cpp</label>
+        <link refid="fastqreader_8cpp"/>
+      </node>
+      <node id="14">
+        <label>src/fastqreader.h</label>
+        <link refid="fastqreader_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/filter.h</label>
+        <link refid="filter_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/filterresult.cpp</label>
+        <link refid="filterresult_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/htmlreporter.cpp</label>
+        <link refid="htmlreporter_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/htmlreporter.h</label>
+        <link refid="htmlreporter_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/jsonreporter.cpp</label>
+        <link refid="jsonreporter_8cpp"/>
+      </node>
+      <node id="32">
+        <label>src/jsonreporter.h</label>
+        <link refid="jsonreporter_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/overlapanalysis.cpp</label>
+        <link refid="overlapanalysis_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/overlapanalysis.h</label>
+        <link refid="overlapanalysis_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/peprocessor.h</label>
+        <link refid="peprocessor_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/polyx.cpp</label>
+        <link refid="polyx_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/polyx.h</label>
+        <link refid="polyx_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/processor.cpp</label>
+        <link refid="processor_8cpp"/>
+      </node>
+      <node id="25">
+        <label>src/read.cpp</label>
+        <link refid="read_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/readpool.cpp</label>
+        <link refid="readpool_8cpp"/>
+      </node>
+      <node id="26">
+        <label>src/readpool.h</label>
+        <link refid="readpool_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/seprocessor.h</label>
+        <link refid="seprocessor_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/stats.cpp</label>
+        <link refid="stats_8cpp"/>
+      </node>
+      <node id="28">
+        <label>src/stats.h</label>
+        <link refid="stats_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>src/threadconfig.cpp</label>
+        <link refid="threadconfig_8cpp"/>
+      </node>
+      <node id="35">
+        <label>src/threadconfig.h</label>
+        <link refid="threadconfig_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>src/umiprocessor.cpp</label>
+        <link refid="umiprocessor_8cpp"/>
+      </node>
+      <node id="37">
+        <label>src/umiprocessor.h</label>
+        <link refid="umiprocessor_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/unittest.cpp</label>
+        <link refid="unittest_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classRead" prot="public">Read</innerclass>
+    <innerclass refid="classReadPair" prot="public">ReadPair</innerclass>
+    <innerclass refid="structReadPack" prot="public">ReadPack</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="read_8h_1a0dff06fa3c2bdba60020ba7b4c62f9e4" prot="public" static="no">
+        <type>struct ReadPack</type>
+        <definition>typedef struct ReadPack ReadPack</definition>
+        <argsstring></argsstring>
+        <name>ReadPack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="71" column="23" bodyfile="src/read.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>READ_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>READ_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sequence_8h" kindref="compound">sequence.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classRead" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classRead_1a72c9e2290cf8c794558a3e7d0507ca4a" kindref="member">Read</ref>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead_1a72c9e2290cf8c794558a3e7d0507ca4a" kindref="member">Read</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>seq,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>strand,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>quality,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>phred64=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead_1a72c9e2290cf8c794558a3e7d0507ca4a" kindref="member">Read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>seq,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>strand,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>quality,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>phred64=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead_1a08d6c302dc2478f6a479c9ebc4350828" kindref="member">~Read</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRead_1aa4abac4521d71824a4306dc3d0277b20" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRead_1afb48f45ec769f5415cc131d2c7897d69" kindref="member">printFile</ref>(ofstream&amp;<sp/>file);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead_1a72c9e2290cf8c794558a3e7d0507ca4a" kindref="member">Read</ref>*<sp/><ref refid="classRead_1ab174708c21a3423e34a84fe82fe589c3" kindref="member">reverseComplement</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classRead_1a7f89589fb5b4218377f16d1fec89fb5d" kindref="member">firstIndex</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classRead_1a258e5420bb4a2d598d83dcfe37daf9d0" kindref="member">lastIndex</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>is<sp/>Q20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classRead_1a97b44c2731a781029981ab558f0a3a3b" kindref="member">lowQualCount</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>qual=20);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classRead_1a7c58e168bdacb8a14d99624334e769ff" kindref="member">toString</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classRead_1a74196dd9084f16947fa92f6b0eb00e8c" kindref="member">toStringWithTag</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>tag);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRead_1a07052c7a404ae9d8f233fe0dde4260f5" kindref="member">appendToString</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>target);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRead_1ac7c4ebfdb66573e20c493eba6835ddd4" kindref="member">appendToStringWithTag</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>target,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>tag);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRead_1a6ad42dd210ed4766e5eb5cf6e53f5562" kindref="member">resize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRead_1a27854545a1385a16bdab760dfcc9ae17" kindref="member">convertPhred64To33</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classRead_1ada3719d937b1c4c0920371a8089364c4" kindref="member">trimFront</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRead_1a28c440362f78c2971ee6586a9ca48a0d" kindref="member">fixMGI</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classRead_1a9280b4341e197bf54c75ef9a0ba83f24" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43" refid="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/><ref refid="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" kindref="member">mName</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/><ref refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kindref="member">mSeq</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classRead_1a35a15be184b2456bb012eb3e938ccea8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/><ref refid="classRead_1a35a15be184b2456bb012eb3e938ccea8" kindref="member">mStrand</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classRead_1aab4ffbb6b9ca25898cbab51923526092" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/><ref refid="classRead_1aab4ffbb6b9ca25898cbab51923526092" kindref="member">mQuality</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classReadPair" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classReadPair_1ab5f81f0389b6f14665fed2ac6f93c2ce" kindref="member">ReadPair</ref>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReadPair_1ab5f81f0389b6f14665fed2ac6f93c2ce" kindref="member">ReadPair</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReadPair_1af93f0edc036beb79c428e2eb069f98a8" kindref="member">~ReadPair</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classReadPair_1a96b9dc3317b483df952bab74de890809" kindref="member">setPair</ref>(<ref refid="classRead" kindref="compound">Read</ref>*<sp/>left,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>right);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classReadPair_1ad1d3ff813ebb28111e645a19ed012046" kindref="member">eof</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>merge<sp/>a<sp/>pair,<sp/>without<sp/>consideration<sp/>of<sp/>seq<sp/>error<sp/>caused<sp/>false<sp/>INDEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/><ref refid="classReadPair_1a6463c5ed13cd48aed6485ad8c5d80f54" kindref="member">fastMerge</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59" refid="classReadPair_1afc7223bfd8146ffefa812c636dc46cfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/><ref refid="classReadPair_1afc7223bfd8146ffefa812c636dc46cfc" kindref="member">mLeft</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classReadPair_1a2c8801e4cbbaca4c503d5d771f50ebc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/><ref refid="classReadPair_1a2c8801e4cbbaca4c503d5d771f50ebc3" kindref="member">mRight</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classReadPair_1a9233aecc6c48fe8e485da0358c148737" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structReadPack" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structReadPack" kindref="compound">ReadPack</ref><sp/>{</highlight></codeline>
+<codeline lineno="67" refid="structReadPack_1aaf934266511e976590a5cf251f514400" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead" kindref="compound">Read</ref>**<sp/><ref refid="structReadPack_1aaf934266511e976590a5cf251f514400" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="68" refid="structReadPack_1a8e60d572d5922f78ca9d8a2a2c604c42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structReadPack_1a8e60d572d5922f78ca9d8a2a2c604c42" kindref="member">count</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="read_8h_1a0dff06fa3c2bdba60020ba7b4c62f9e4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structReadPack" kindref="compound">ReadPack</ref><sp/><ref refid="structReadPack" kindref="compound">ReadPack</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/read.h"/>
+  </compounddef>
+</doxygen>

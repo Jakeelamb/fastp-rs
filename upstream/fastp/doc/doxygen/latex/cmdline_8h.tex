@@ -1,0 +1,88 @@
+\doxysection{src/\+cmdline.h File Reference}
+\hypertarget{cmdline_8h}{}\label{cmdline_8h}\index{src/cmdline.h@{src/cmdline.h}}
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$sstream$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$map$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$stdexcept$>$}\newline
+{\ttfamily \+\#include $<$typeinfo$>$}\newline
+{\ttfamily \+\#include $<$cstring$>$}\newline
+{\ttfamily \+\#include $<$algorithm$>$}\newline
+{\ttfamily \+\#include $<$cxxabi.\+h$>$}\newline
+{\ttfamily \+\#include $<$cstdlib$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1detail_1_1lexical__cast__t}{cmdline::\+detail::\+lexical\+\_\+cast\+\_\+t$<$ Target, Source, Same $>$}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01Source_00_01true_01_4}{cmdline::\+detail::\+lexical\+\_\+cast\+\_\+t$<$ Target, Source, true $>$}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1detail_1_1lexical__cast__t_3_01std_1_1string_00_01Source_00_01false_01_4}{cmdline::\+detail::\+lexical\+\_\+cast\+\_\+t$<$ std::\+string, Source, false $>$}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01std_1_1string_00_01false_01_4}{cmdline::\+detail::\+lexical\+\_\+cast\+\_\+t$<$ Target, std::\+string, false $>$}}
+\item 
+struct \doxymbox{\hyperlink{structcmdline_1_1detail_1_1is__same}{cmdline::\+detail::\+is\+\_\+same$<$ T1, T2 $>$}}
+\item 
+struct \doxymbox{\hyperlink{structcmdline_1_1detail_1_1is__same_3_01T_00_01T_01_4}{cmdline::\+detail::\+is\+\_\+same$<$ T, T $>$}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1cmdline__error}{cmdline::\+cmdline\+\_\+error}}
+\item 
+struct \doxymbox{\hyperlink{structcmdline_1_1default__reader}{cmdline::\+default\+\_\+reader$<$ T $>$}}
+\item 
+struct \doxymbox{\hyperlink{structcmdline_1_1range__reader}{cmdline::\+range\+\_\+reader$<$ T $>$}}
+\item 
+struct \doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{cmdline::\+oneof\+\_\+reader$<$ T $>$}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1parser}{cmdline::\+parser}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1parser_1_1option__base}{cmdline::\+parser::\+option\+\_\+base}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1parser_1_1option__without__value}{cmdline::\+parser::\+option\+\_\+without\+\_\+value}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1parser_1_1option__with__value}{cmdline::\+parser::\+option\+\_\+with\+\_\+value$<$ T $>$}}
+\item 
+class \doxymbox{\hyperlink{classcmdline_1_1parser_1_1option__with__value__with__reader}{cmdline::\+parser::\+option\+\_\+with\+\_\+value\+\_\+with\+\_\+reader$<$ T, F $>$}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacecmdline}{cmdline}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecmdline_1_1detail}{cmdline::\+detail}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Target, typename Source$>$ }\\Target \doxymbox{\hyperlink{namespacecmdline_1_1detail_a5cd4d0bedba599ae78fc3b477d5b89fa}{cmdline::\+detail::\+lexical\+\_\+cast}} (const Source \&arg)
+\item 
+static std::\+string \doxymbox{\hyperlink{namespacecmdline_1_1detail_a531047ed8f52b62caae26ab166520987}{cmdline::\+detail::\+demangle}} (const std::\+string \&name)
+\item 
+{\footnotesize template$<$class T$>$ }\\std::\+string \doxymbox{\hyperlink{namespacecmdline_1_1detail_a9e3c4f02792dba7836cb5d933bf8665f}{cmdline::\+detail::\+readable\+\_\+typename}} ()
+\item 
+{\footnotesize template$<$class T$>$ }\\std::\+string \doxymbox{\hyperlink{namespacecmdline_1_1detail_a0d8a8c2598d920091d2c1055516f8005}{cmdline::\+detail::\+default\+\_\+value}} (T def)
+\item 
+template$<$$>$ std::\+string \doxymbox{\hyperlink{namespacecmdline_1_1detail_aeaaa18e134cb1066b14d447a43c6386e}{cmdline::\+detail::\+readable\+\_\+typename$<$ std::\+string $>$}} ()
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1range__reader}{range\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_a6fd6153b623203e42c7c0fb47c358234}{cmdline::\+range}} (const T \&low, const T \&high)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_a326fc81130d3a280ae88475f6706d1ca}{cmdline::\+oneof}} (T a1)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_aa651a6ceddee117802182e4f04efc951}{cmdline::\+oneof}} (T a1, T a2)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_ada0d91b62ce12fca8619a4efaa8334fb}{cmdline::\+oneof}} (T a1, T a2, T a3)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_af31e23b2539a009c1e945a497fb4faac}{cmdline::\+oneof}} (T a1, T a2, T a3, T a4)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_ab05ffe2f4e217e74daf5168512458e25}{cmdline::\+oneof}} (T a1, T a2, T a3, T a4, T a5)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_a4981e4f94c22bda32268e6db4405598e}{cmdline::\+oneof}} (T a1, T a2, T a3, T a4, T a5, T a6)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_a1e096231722fd892c918143485fe774d}{cmdline::\+oneof}} (T a1, T a2, T a3, T a4, T a5, T a6, T a7)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_a96f5454341387fb12497e7df8d2fde54}{cmdline::\+oneof}} (T a1, T a2, T a3, T a4, T a5, T a6, T a7, T a8)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_a56618aa1f6af9039b2c25540138f8307}{cmdline::\+oneof}} (T a1, T a2, T a3, T a4, T a5, T a6, T a7, T a8, T a9)
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{structcmdline_1_1oneof__reader}{oneof\+\_\+reader}}$<$ T $>$ \doxymbox{\hyperlink{namespacecmdline_a509696b594fc0091d58d5f0c363296e6}{cmdline::\+oneof}} (T a1, T a2, T a3, T a4, T a5, T a6, T a7, T a8, T a9, T a10)
+\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\doxysection{simd.\+h}
+\hypertarget{simd_8h_source}{}\label{simd_8h_source}\index{src/simd.h@{src/simd.h}}
+\doxymbox{\hyperlink{simd_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FASTP\_SIMD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FASTP\_SIMD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\doxymbox{\hyperlink{namespacefastp__simd}{fastp\_simd}}\ \{}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Count\ quality\ metrics\ for\ a\ read\ in\ one\ pass.}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ qualstr/seqstr:\ quality\ and\ sequence\ strings\ of\ length\ len.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ qualThreshold:\ phred+33\ encoded\ quality\ threshold\ for\ "{}low\ quality"{}.}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ Outputs:\ lowQualNum,\ nBaseNum,\ totalQual\ (sum\ of\ qual-\/33\ values).}}
+\DoxyCodeLine{00012\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespacefastp__simd_a0d37fd2176056744aa824515162fe777}{countQualityMetrics}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ qualstr,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ seqstr,\ \textcolor{keywordtype}{int}\ len,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ qualThreshold,\ \textcolor{keywordtype}{int}\&\ lowQualNum,\ \textcolor{keywordtype}{int}\&\ nBaseNum,}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\&\ totalQual);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ Reverse\ complement\ a\ DNA\ sequence.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ src:\ input\ sequence\ of\ length\ len.}}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ dst:\ output\ buffer\ of\ at\ least\ len\ bytes\ (must\ NOT\ alias\ src).}}
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{namespacefastp__simd_a64bdfe0037ec7400a0fe20f273f4e33b}{reverseComplement}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ src,\ \textcolor{keywordtype}{char}*\ dst,\ \textcolor{keywordtype}{int}\ len);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ Count\ adjacent-\/base\ differences\ for\ low\ complexity\ filter.}}
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ Returns\ the\ number\ of\ positions\ where\ data[i]\ !=\ data[i+1].}}
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{namespacefastp__simd_a1b83a43952d3a86f96e399a7b6b7fb8a}{countAdjacentDiffs}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ data,\ \textcolor{keywordtype}{int}\ len);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ Count\ mismatches\ between\ two\ byte\ strings.}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Returns\ the\ number\ of\ positions\ where\ a[i]\ !=\ b[i],\ up\ to\ len\ bytes.}}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{namespacefastp__simd_a044ddcf257373b649d64d5aeea9fc7f6}{countMismatches}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ b,\ \textcolor{keywordtype}{int}\ len);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ Count\ mismatches\ with\ early\ exit.}}
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ Returns\ mismatch\ count\ if\ <=\ limit,\ or\ a\ value\ >\ limit\ if\ exceeded.}}
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{namespacefastp__simd_a3835a28467a63a5485754e4a48f49a71}{countMismatchesBounded}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ a,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ b,\ \textcolor{keywordtype}{int}\ len,\ \textcolor{keywordtype}{int}\ limit);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ Run\ all\ SIMD\ unit\ tests.\ Returns\ true\ if\ all\ pass.}}
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{namespacefastp__simd_a1b89fa328564d427691ee2b3d59fce1a}{testSimd}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \}\ \ \textcolor{comment}{//\ namespace\ fastp\_simd}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ FASTP\_SIMD\_H}}
+
+\end{DoxyCode}

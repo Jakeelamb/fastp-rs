@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classNucleotideNode" kind="class" language="C++" prot="public">
+    <compoundname>NucleotideNode</compoundname>
+    <includes refid="nucleotidetree_8h" local="no">nucleotidetree.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNucleotideNode_1a9a91516cafc1bc4a486d8fe3ad813447" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NucleotideNode::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>NucleotideNode::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="20" column="9" bodyfile="src/nucleotidetree.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNucleotideNode_1a9d06c3c2d0e64a1cc8d0262878b80357" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char NucleotideNode::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <qualifiedname>NucleotideNode::base</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="21" column="10" bodyfile="src/nucleotidetree.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNucleotideNode_1ab5fed54f4b46ec9da90168a3453bffc7" prot="public" static="no" mutable="no">
+        <type><ref refid="classNucleotideNode" kindref="compound">NucleotideNode</ref> *</type>
+        <definition>NucleotideNode* NucleotideNode::children[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>children</name>
+        <qualifiedname>NucleotideNode::children</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="22" column="20" bodyfile="src/nucleotidetree.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNucleotideNode_1ad8679314504792b5549df4ec1b1eeb21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NucleotideNode::NucleotideNode</definition>
+        <argsstring>()</argsstring>
+        <name>NucleotideNode</name>
+        <qualifiedname>NucleotideNode::NucleotideNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="15" column="5" bodyfile="src/nucleotidetree.cpp" bodystart="4" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classNucleotideNode_1ab54e9ee7abf499a7a88328107a0952f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NucleotideNode::~NucleotideNode</definition>
+        <argsstring>()</argsstring>
+        <name>~NucleotideNode</name>
+        <qualifiedname>NucleotideNode::~NucleotideNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="16" column="5" bodyfile="src/nucleotidetree.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classNucleotideNode_1a3d5e621a963cca3c16aeed33d53105b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NucleotideNode::dfs</definition>
+        <argsstring>()</argsstring>
+        <name>dfs</name>
+        <qualifiedname>NucleotideNode::dfs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/nucleotidetree.h" line="17" column="10" bodyfile="src/nucleotidetree.cpp" bodystart="15" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>NucleotideNode</label>
+        <link refid="classNucleotideNode"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>children</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/nucleotidetree.h" line="13" column="1" bodyfile="src/nucleotidetree.h" bodystart="13" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classNucleotideNode_1a9d06c3c2d0e64a1cc8d0262878b80357" prot="public" virt="non-virtual"><scope>NucleotideNode</scope><name>base</name></member>
+      <member refid="classNucleotideNode_1ab5fed54f4b46ec9da90168a3453bffc7" prot="public" virt="non-virtual"><scope>NucleotideNode</scope><name>children</name></member>
+      <member refid="classNucleotideNode_1a9a91516cafc1bc4a486d8fe3ad813447" prot="public" virt="non-virtual"><scope>NucleotideNode</scope><name>count</name></member>
+      <member refid="classNucleotideNode_1a3d5e621a963cca3c16aeed33d53105b8" prot="public" virt="non-virtual"><scope>NucleotideNode</scope><name>dfs</name></member>
+      <member refid="classNucleotideNode_1ad8679314504792b5549df4ec1b1eeb21" prot="public" virt="non-virtual"><scope>NucleotideNode</scope><name>NucleotideNode</name></member>
+      <member refid="classNucleotideNode_1ab54e9ee7abf499a7a88328107a0952f2" prot="public" virt="non-virtual"><scope>NucleotideNode</scope><name>~NucleotideNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

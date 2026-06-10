@@ -1,0 +1,54 @@
+name: Bench
+
+on:
+  workflow_dispatch:
+  schedule:
+    # ~07:17 UTC nightly (arbitrary offset; see CONTEXT.md CI gates)
+    - cron: "17 7 * * *"
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+
+concurrency:
+  group: bench-${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  FASTP_VERSION: "1.3.3"
+  FASTP_SHA256: "2000e64fa36c5d185d476d3ff701d1cdbf700aae0deb32d723561071b5efe97a"
+  FASTP_URL: "https://opengene.org/fastp/fastp.1.3.3"
+
+jobs:
+  compare:
+    name: Upstream vs fastp-rs (smoke)
+    runs-on: ubuntu-latest
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'schedule' ||
+      (github.event_name == 'pull_request' &&
+       github.event.pull_request.head.repo.full_name == github.repository &&
+       contains(format(',{0},', join(github.event.pull_request.labels.*.name, ',')), ',bench,'))
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install GNU time
+        run: sudo apt-get update && sudo apt-get install -y time
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Build fastp-rs (release)
+        run: cargo build --locked --release
+
+      - name: Fetch upstream fastp (pinned)
+        run: |
+          set -euo pipefail
+          curl -fsSL -o fastp-upstream "$FASTP_URL"
+          echo "$FASTP_SHA256  fastp-upstream" | sha256sum -c -
+          chmod +x fastp-upstream
+          ./fastp-upstream --version | head -n 1
+
+      - name: Bench compare (fixture A)
+        run: bash scripts/ci/bench_compare.sh "$PWD/fastp-upstream" "$PWD/target/release/fastp-rs"

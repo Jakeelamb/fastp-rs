@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPolyXTrimmerOptions" kind="class" language="C++" prot="public">
+    <compoundname>PolyXTrimmerOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classPolyXTrimmerOptions_1ad0d3f0b56df99447f20bb13503ebab71" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PolyXTrimmerOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>PolyXTrimmerOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="100" column="10" bodyfile="src/options.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPolyXTrimmerOptions_1a9c37df68dc84f35a50f703599e12ae3c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PolyXTrimmerOptions::minLen</definition>
+        <argsstring></argsstring>
+        <name>minLen</name>
+        <qualifiedname>PolyXTrimmerOptions::minLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="101" column="9" bodyfile="src/options.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPolyXTrimmerOptions_1af0cfdb1648c5d2f1d2500cba2fd5b833" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PolyXTrimmerOptions::PolyXTrimmerOptions</definition>
+        <argsstring>()</argsstring>
+        <name>PolyXTrimmerOptions</name>
+        <qualifiedname>PolyXTrimmerOptions::PolyXTrimmerOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="95" column="5" bodyfile="src/options.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="93" column="1" bodyfile="src/options.h" bodystart="93" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classPolyXTrimmerOptions_1ad0d3f0b56df99447f20bb13503ebab71" prot="public" virt="non-virtual"><scope>PolyXTrimmerOptions</scope><name>enabled</name></member>
+      <member refid="classPolyXTrimmerOptions_1a9c37df68dc84f35a50f703599e12ae3c" prot="public" virt="non-virtual"><scope>PolyXTrimmerOptions</scope><name>minLen</name></member>
+      <member refid="classPolyXTrimmerOptions_1af0cfdb1648c5d2f1d2500cba2fd5b833" prot="public" virt="non-virtual"><scope>PolyXTrimmerOptions</scope><name>PolyXTrimmerOptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

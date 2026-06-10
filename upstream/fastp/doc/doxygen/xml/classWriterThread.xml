@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classWriterThread" kind="class" language="C++" prot="public">
+    <compoundname>WriterThread</compoundname>
+    <includes refid="writerthread_8h" local="no">writerthread.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriter" kindref="compound">Writer</ref> *</type>
+        <definition>Writer* WriterThread::mWriter1</definition>
+        <argsstring></argsstring>
+        <name>mWriter1</name>
+        <qualifiedname>WriterThread::mWriter1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="49" column="12" bodyfile="src/writerthread.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* WriterThread::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>WriterThread::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="50" column="13" bodyfile="src/writerthread.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string WriterThread::mFilename</definition>
+        <argsstring></argsstring>
+        <name>mFilename</name>
+        <qualifiedname>WriterThread::mFilename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="51" column="12" bodyfile="src/writerthread.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool WriterThread::mInputCompleted</definition>
+        <argsstring></argsstring>
+        <name>mInputCompleted</name>
+        <qualifiedname>WriterThread::mInputCompleted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="53" column="10" bodyfile="src/writerthread.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" prot="private" static="no" mutable="no">
+        <type>atomic_long</type>
+        <definition>atomic_long WriterThread::mBufferLength</definition>
+        <argsstring></argsstring>
+        <name>mBufferLength</name>
+        <qualifiedname>WriterThread::mBufferLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="54" column="17" bodyfile="src/writerthread.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" prot="private" static="no" mutable="no">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; string * &gt; **</type>
+        <definition>SingleProducerSingleConsumerList&lt;string*&gt;** WriterThread::mBufferLists</definition>
+        <argsstring></argsstring>
+        <name>mBufferLists</name>
+        <qualifiedname>WriterThread::mBufferLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="55" column="38" bodyfile="src/writerthread.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WriterThread::mWorkingBufferList</definition>
+        <argsstring></argsstring>
+        <name>mWorkingBufferList</name>
+        <qualifiedname>WriterThread::mWorkingBufferList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="56" column="9" bodyfile="src/writerthread.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1a1fd695053db832d8894bb07eb855327f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool WriterThread::mPwriteMode</definition>
+        <argsstring></argsstring>
+        <name>mPwriteMode</name>
+        <qualifiedname>WriterThread::mPwriteMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="59" column="10" bodyfile="src/writerthread.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WriterThread::mFd</definition>
+        <argsstring></argsstring>
+        <name>mFd</name>
+        <qualifiedname>WriterThread::mFd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="60" column="9" bodyfile="src/writerthread.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" prot="private" static="no" mutable="no">
+        <type><ref refid="structOffsetSlot" kindref="compound">OffsetSlot</ref> *</type>
+        <definition>OffsetSlot* WriterThread::mOffsetRing</definition>
+        <argsstring></argsstring>
+        <name>mOffsetRing</name>
+        <qualifiedname>WriterThread::mOffsetRing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="61" column="16" bodyfile="src/writerthread.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1a204861ab743a5446351ca548aca4034a" prot="private" static="no" mutable="no">
+        <type>size_t *</type>
+        <definition>size_t* WriterThread::mNextSeq</definition>
+        <argsstring></argsstring>
+        <name>mNextSeq</name>
+        <qualifiedname>WriterThread::mNextSeq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="62" column="12" bodyfile="src/writerthread.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1ac22849e47b5312d0385684af7c503828" prot="private" static="no" mutable="no">
+        <type>libdeflate_compressor **</type>
+        <definition>libdeflate_compressor** WriterThread::mCompressors</definition>
+        <argsstring></argsstring>
+        <name>mCompressors</name>
+        <qualifiedname>WriterThread::mCompressors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="63" column="27" bodyfile="src/writerthread.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" prot="private" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** WriterThread::mCompBufs</definition>
+        <argsstring></argsstring>
+        <name>mCompBufs</name>
+        <qualifiedname>WriterThread::mCompBufs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="64" column="10" bodyfile="src/writerthread.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" prot="private" static="no" mutable="no">
+        <type>size_t *</type>
+        <definition>size_t* WriterThread::mCompBufSizes</definition>
+        <argsstring></argsstring>
+        <name>mCompBufSizes</name>
+        <qualifiedname>WriterThread::mCompBufSizes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="65" column="12" bodyfile="src/writerthread.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWriterThread_1ad85722858d6f73e7db995d7c940038eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WriterThread::WriterThread</definition>
+        <argsstring>(Options *opt, string filename, bool isSTDOUT=false)</argsstring>
+        <name>WriterThread</name>
+        <qualifiedname>WriterThread::WriterThread</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isSTDOUT</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="26" column="5" bodyfile="src/writerthread.cpp" bodystart="11" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a1f6800d9e272c0cb2eb7a0c774b14f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WriterThread::~WriterThread</definition>
+        <argsstring>()</argsstring>
+        <name>~WriterThread</name>
+        <qualifiedname>WriterThread::~WriterThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="27" column="5" bodyfile="src/writerthread.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a876dbb8b56ba5660ad370212e31b1b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterThread::initWriter</definition>
+        <argsstring>(string filename1, bool isSTDOUT=false)</argsstring>
+        <name>initWriter</name>
+        <qualifiedname>WriterThread::initWriter</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename1</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isSTDOUT</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="29" column="10" bodyfile="src/writerthread.cpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a8bea61e2a4a63dd11ab55e5284026626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterThread::initBufferLists</definition>
+        <argsstring>()</argsstring>
+        <name>initBufferLists</name>
+        <qualifiedname>WriterThread::initBufferLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="30" column="10" bodyfile="src/writerthread.cpp" bodystart="209" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1ad5a34ac64a25fed4e1e8b5c63061d579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterThread::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <qualifiedname>WriterThread::cleanup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="32" column="10" bodyfile="src/writerthread.cpp" bodystart="170" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a79f1d3c1090568800b7613b8a7689468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WriterThread::isCompleted</definition>
+        <argsstring>()</argsstring>
+        <name>isCompleted</name>
+        <qualifiedname>WriterThread::isCompleted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="34" column="10" bodyfile="src/writerthread.cpp" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a213a85cf26e05550566c3779a2b588b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterThread::output</definition>
+        <argsstring>()</argsstring>
+        <name>output</name>
+        <qualifiedname>WriterThread::output</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="35" column="10" bodyfile="src/writerthread.cpp" bodystart="95" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a9b29200184e58f51fc366e38691c174b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterThread::input</definition>
+        <argsstring>(int tid, string *data)</argsstring>
+        <name>input</name>
+        <qualifiedname>WriterThread::input</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type>string *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="36" column="10" bodyfile="src/writerthread.cpp" bodystart="109" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a590319d06f1de992b9621624dbbb8fc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WriterThread::setInputCompleted</definition>
+        <argsstring>()</argsstring>
+        <name>setInputCompleted</name>
+        <qualifiedname>WriterThread::setInputCompleted</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="37" column="10" bodyfile="src/writerthread.cpp" bodystart="64" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a09e82ab15e9a38c213117495c9c9fe58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long WriterThread::bufferLength</definition>
+        <argsstring>()</argsstring>
+        <name>bufferLength</name>
+        <qualifiedname>WriterThread::bufferLength</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="39" column="10" bodyfile="src/writerthread.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a3d1949e8e7ba391898e67a6034cf61ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string WriterThread::getFilename</definition>
+        <argsstring>()</argsstring>
+        <name>getFilename</name>
+        <qualifiedname>WriterThread::getFilename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="40" column="12" bodyfile="src/writerthread.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a5b9aa1dd1c66c4507414ead32caef0c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WriterThread::isPwriteMode</definition>
+        <argsstring>()</argsstring>
+        <name>isPwriteMode</name>
+        <qualifiedname>WriterThread::isPwriteMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="41" column="10" bodyfile="src/writerthread.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classWriterThread_1aec981cb042ef8d7d422c8ae1e92c11b6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterThread::deleteWriter</definition>
+        <argsstring>()</argsstring>
+        <name>deleteWriter</name>
+        <qualifiedname>WriterThread::deleteWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="44" column="10" bodyfile="src/writerthread.cpp" bodystart="197" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a0d8d2f35142de5a61d3efdcdd8526dfc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterThread::inputPwrite</definition>
+        <argsstring>(int tid, string *data)</argsstring>
+        <name>inputPwrite</name>
+        <qualifiedname>WriterThread::inputPwrite</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type>string *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="45" column="10" bodyfile="src/writerthread.cpp" bodystart="118" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriterThread_1a502ba2307fe879b41e5bfb01a253e675" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WriterThread::setInputCompletedPwrite</definition>
+        <argsstring>()</argsstring>
+        <name>setInputCompletedPwrite</name>
+        <qualifiedname>WriterThread::setInputCompletedPwrite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writerthread.h" line="46" column="10" bodyfile="src/writerthread.cpp" bodystart="77" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="10">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="17">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="16">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="20">
+        <label>LockFreeListItem&lt; string * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="18">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="21">
+        <label>OffsetSlot</label>
+        <link refid="structOffsetSlot"/>
+      </node>
+      <node id="3">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="13">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="9">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="5">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="6">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="19">
+        <label>SingleProducerSingleConsumerList&lt; string * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="4">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="11">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+      <node id="2">
+        <label>Writer</label>
+        <link refid="classWriter"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>WriterThread</label>
+        <link refid="classWriterThread"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mWriter1</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mBufferLists</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mOffsetRing</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/writerthread.h" line="24" column="1" bodyfile="src/writerthread.h" bodystart="24" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classWriterThread_1a09e82ab15e9a38c213117495c9c9fe58" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>bufferLength</name></member>
+      <member refid="classWriterThread_1ad5a34ac64a25fed4e1e8b5c63061d579" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>cleanup</name></member>
+      <member refid="classWriterThread_1aec981cb042ef8d7d422c8ae1e92c11b6" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>deleteWriter</name></member>
+      <member refid="classWriterThread_1a3d1949e8e7ba391898e67a6034cf61ce" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>getFilename</name></member>
+      <member refid="classWriterThread_1a8bea61e2a4a63dd11ab55e5284026626" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>initBufferLists</name></member>
+      <member refid="classWriterThread_1a876dbb8b56ba5660ad370212e31b1b72" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>initWriter</name></member>
+      <member refid="classWriterThread_1a9b29200184e58f51fc366e38691c174b" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>input</name></member>
+      <member refid="classWriterThread_1a0d8d2f35142de5a61d3efdcdd8526dfc" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>inputPwrite</name></member>
+      <member refid="classWriterThread_1a79f1d3c1090568800b7613b8a7689468" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>isCompleted</name></member>
+      <member refid="classWriterThread_1a5b9aa1dd1c66c4507414ead32caef0c7" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>isPwriteMode</name></member>
+      <member refid="classWriterThread_1a6dbeca6d78c74aec366524b49fed0808" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mBufferLength</name></member>
+      <member refid="classWriterThread_1aa134bf1af8bb678a156129fc0556742b" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mBufferLists</name></member>
+      <member refid="classWriterThread_1a51ecdb4fb3baa26b8f365139dbbcc796" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mCompBufs</name></member>
+      <member refid="classWriterThread_1a3e14b5f84d2414ad8f8c783548b3de7c" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mCompBufSizes</name></member>
+      <member refid="classWriterThread_1ac22849e47b5312d0385684af7c503828" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mCompressors</name></member>
+      <member refid="classWriterThread_1a862ae22da6e9e2e6789519bb6aa08d04" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mFd</name></member>
+      <member refid="classWriterThread_1aa855284d8283446d8010e8a3be0bd75f" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mFilename</name></member>
+      <member refid="classWriterThread_1a83ba79609c76ae183b246d3c8cee40e6" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mInputCompleted</name></member>
+      <member refid="classWriterThread_1a204861ab743a5446351ca548aca4034a" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mNextSeq</name></member>
+      <member refid="classWriterThread_1ad3c724af9d80f9a42041246dc77e8cf6" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mOffsetRing</name></member>
+      <member refid="classWriterThread_1a3563f37bc0d85dc10d7b3d509cfa5e11" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mOptions</name></member>
+      <member refid="classWriterThread_1a1fd695053db832d8894bb07eb855327f" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mPwriteMode</name></member>
+      <member refid="classWriterThread_1ae0c4e96dbcdaebb33d05310fc47bdecb" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mWorkingBufferList</name></member>
+      <member refid="classWriterThread_1ac2c00f8ea2c638b346080b5ed6053f3c" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>mWriter1</name></member>
+      <member refid="classWriterThread_1a213a85cf26e05550566c3779a2b588b1" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>output</name></member>
+      <member refid="classWriterThread_1a590319d06f1de992b9621624dbbb8fc9" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>setInputCompleted</name></member>
+      <member refid="classWriterThread_1a502ba2307fe879b41e5bfb01a253e675" prot="private" virt="non-virtual"><scope>WriterThread</scope><name>setInputCompletedPwrite</name></member>
+      <member refid="classWriterThread_1ad85722858d6f73e7db995d7c940038eb" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>WriterThread</name></member>
+      <member refid="classWriterThread_1a1f6800d9e272c0cb2eb7a0c774b14f4e" prot="public" virt="non-virtual"><scope>WriterThread</scope><name>~WriterThread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

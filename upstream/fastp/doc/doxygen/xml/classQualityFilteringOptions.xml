@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classQualityFilteringOptions" kind="class" language="C++" prot="public">
+    <compoundname>QualityFilteringOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classQualityFilteringOptions_1a960065ab1d164c7da6645254aa3d0389" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QualityFilteringOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>QualityFilteringOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="259" column="10" bodyfile="src/options.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityFilteringOptions_1ac114a0855a376facbd302079514e89f5" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char QualityFilteringOptions::qualifiedQual</definition>
+        <argsstring></argsstring>
+        <name>qualifiedQual</name>
+        <qualifiedname>QualityFilteringOptions::qualifiedQual</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="261" column="10" bodyfile="src/options.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityFilteringOptions_1a595a8d5eea688533159b482537a82f1a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityFilteringOptions::unqualifiedPercentLimit</definition>
+        <argsstring></argsstring>
+        <name>unqualifiedPercentLimit</name>
+        <qualifiedname>QualityFilteringOptions::unqualifiedPercentLimit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="263" column="9" bodyfile="src/options.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityFilteringOptions_1a1f06938c9ffcaaaef649d79422d132b7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityFilteringOptions::nBaseLimit</definition>
+        <argsstring></argsstring>
+        <name>nBaseLimit</name>
+        <qualifiedname>QualityFilteringOptions::nBaseLimit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="265" column="9" bodyfile="src/options.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityFilteringOptions_1a06d6b1fa8736e1c17eed13c259058e91" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityFilteringOptions::avgQualReq</definition>
+        <argsstring></argsstring>
+        <name>avgQualReq</name>
+        <qualifiedname>QualityFilteringOptions::avgQualReq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="267" column="9" bodyfile="src/options.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQualityFilteringOptions_1a8bbb687f51ff0f5f5b05803eaacf099a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QualityFilteringOptions::QualityFilteringOptions</definition>
+        <argsstring>()</argsstring>
+        <name>QualityFilteringOptions</name>
+        <qualifiedname>QualityFilteringOptions::QualityFilteringOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="250" column="5" bodyfile="src/options.h" bodystart="250" bodyend="256"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="248" column="1" bodyfile="src/options.h" bodystart="248" bodyend="268"/>
+    <listofallmembers>
+      <member refid="classQualityFilteringOptions_1a06d6b1fa8736e1c17eed13c259058e91" prot="public" virt="non-virtual"><scope>QualityFilteringOptions</scope><name>avgQualReq</name></member>
+      <member refid="classQualityFilteringOptions_1a960065ab1d164c7da6645254aa3d0389" prot="public" virt="non-virtual"><scope>QualityFilteringOptions</scope><name>enabled</name></member>
+      <member refid="classQualityFilteringOptions_1a1f06938c9ffcaaaef649d79422d132b7" prot="public" virt="non-virtual"><scope>QualityFilteringOptions</scope><name>nBaseLimit</name></member>
+      <member refid="classQualityFilteringOptions_1ac114a0855a376facbd302079514e89f5" prot="public" virt="non-virtual"><scope>QualityFilteringOptions</scope><name>qualifiedQual</name></member>
+      <member refid="classQualityFilteringOptions_1a8bbb687f51ff0f5f5b05803eaacf099a" prot="public" virt="non-virtual"><scope>QualityFilteringOptions</scope><name>QualityFilteringOptions</name></member>
+      <member refid="classQualityFilteringOptions_1a595a8d5eea688533159b482537a82f1a" prot="public" virt="non-virtual"><scope>QualityFilteringOptions</scope><name>unqualifiedPercentLimit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

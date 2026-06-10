@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="umiprocessor_8cpp" kind="file" language="C++">
+    <compoundname>umiprocessor.cpp</compoundname>
+    <includes refid="umiprocessor_8h" local="yes">umiprocessor.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/umiprocessor.cpp</label>
+        <link refid="umiprocessor_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>umiprocessor.h</label>
+        <link refid="umiprocessor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="umiprocessor_8h" kindref="compound">umiprocessor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="classUmiProcessor_1aba53b09204bd4d30b31744304a1b754d" kindref="member">UmiProcessor::UmiProcessor</ref>(<ref refid="classOptions" kindref="compound">Options</ref>*<sp/>opt){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref><sp/>=<sp/>opt;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="classUmiProcessor_1a1d9b9454b85ce2fe1724d24ed71219b5" kindref="member">UmiProcessor::~UmiProcessor</ref>(){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUmiProcessor_1a1627f37ca86d10388f9152c776958b34" kindref="member">UmiProcessor::process</ref>(<ref refid="classRead" kindref="compound">Read</ref>*<sp/>r1,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>r2)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.enabled)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>umi;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.location<sp/>==<sp/><ref refid="options_8h_1a7f21eb844e334922fe953a98534c1e3f" kindref="member">UMI_LOC_INDEX1</ref>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>umi<sp/>=<sp/>r1-&gt;<ref refid="classRead_1a7f89589fb5b4218377f16d1fec89fb5d" kindref="member">firstIndex</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.location<sp/>==<sp/><ref refid="options_8h_1a191ce48412c4baeab455ccfd4e56d8bb" kindref="member">UMI_LOC_INDEX2</ref><sp/>&amp;&amp;<sp/>r2)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>umi<sp/>=<sp/>r2-&gt;<ref refid="classRead_1a258e5420bb4a2d598d83dcfe37daf9d0" kindref="member">lastIndex</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.location<sp/>==<sp/><ref refid="options_8h_1a47c65cefbd05003c253b1ce56867993d" kindref="member">UMI_LOC_READ1</ref>){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>umi<sp/>=<sp/>r1-&gt;<ref refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kindref="member">mSeq</ref>-&gt;substr(0,<sp/>min(r1-&gt;<ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>(),<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.length));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r1-&gt;<ref refid="classRead_1ada3719d937b1c4c0920371a8089364c4" kindref="member">trimFront</ref>(umi.length()<sp/>+<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.skip);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.location<sp/>==<sp/><ref refid="options_8h_1a8023d8803b58cbca4838b63fdf65eb03" kindref="member">UMI_LOC_READ2</ref><sp/>&amp;&amp;<sp/>r2){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>umi<sp/>=<sp/>r2-&gt;<ref refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kindref="member">mSeq</ref>-&gt;substr(0,<sp/>min(r2-&gt;<ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>(),<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.length));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r2-&gt;<ref refid="classRead_1ada3719d937b1c4c0920371a8089364c4" kindref="member">trimFront</ref>(umi.length()<sp/>+<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.skip);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.location<sp/>==<sp/><ref refid="options_8h_1a8949a3db0997bcee09260efb4b46c46e" kindref="member">UMI_LOC_PER_INDEX</ref>){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>umiMerged<sp/>=<sp/>r1-&gt;<ref refid="classRead_1a7f89589fb5b4218377f16d1fec89fb5d" kindref="member">firstIndex</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r2)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>umiMerged<sp/>=<sp/>umiMerged<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>r2-&gt;<ref refid="classRead_1a258e5420bb4a2d598d83dcfe37daf9d0" kindref="member">lastIndex</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" kindref="member">addUmiToName</ref>(r1,<sp/>umiMerged);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r2)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" kindref="member">addUmiToName</ref>(r2,<sp/>umiMerged);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.location<sp/>==<sp/><ref refid="options_8h_1a3cb6ab26c4387d164cfce0eff0f3ab42" kindref="member">UMI_LOC_PER_READ</ref>){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>umi1<sp/>=<sp/>r1-&gt;<ref refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kindref="member">mSeq</ref>-&gt;substr(0,<sp/>min(r1-&gt;<ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>(),<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.length));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>umiMerged<sp/>=<sp/>umi1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r1-&gt;<ref refid="classRead_1ada3719d937b1c4c0920371a8089364c4" kindref="member">trimFront</ref>(umi1.length()<sp/>+<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.skip);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r2){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>umi2<sp/>=<sp/>r2-&gt;<ref refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kindref="member">mSeq</ref>-&gt;substr(0,<sp/>min(r2-&gt;<ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>(),<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.length));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>umiMerged<sp/>=<sp/>umiMerged<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>umi2;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r2-&gt;<ref refid="classRead_1ada3719d937b1c4c0920371a8089364c4" kindref="member">trimFront</ref>(umi2.length()<sp/>+<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.skip);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" kindref="member">addUmiToName</ref>(r1,<sp/>umiMerged);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r2){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" kindref="member">addUmiToName</ref>(r2,<sp/>umiMerged);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.location<sp/>!=<sp/><ref refid="options_8h_1a8949a3db0997bcee09260efb4b46c46e" kindref="member">UMI_LOC_PER_INDEX</ref><sp/>&amp;&amp;<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.location<sp/>!=<sp/><ref refid="options_8h_1a3cb6ab26c4387d164cfce0eff0f3ab42" kindref="member">UMI_LOC_PER_READ</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r1<sp/>&amp;&amp;<sp/>!umi.empty())<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" kindref="member">addUmiToName</ref>(r1,<sp/>umi);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r2<sp/>&amp;&amp;<sp/>!umi.empty())</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" kindref="member">addUmiToName</ref>(r2,<sp/>umi);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" kindref="member">UmiProcessor::addUmiToName</ref>(<ref refid="classRead" kindref="compound">Read</ref>*<sp/>r,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>umi){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>tag;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>delimiter<sp/>=<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.delimiter;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.prefix.empty())</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tag<sp/>=<sp/>delimiter<sp/>+<sp/>umi;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tag<sp/>=<sp/>delimiter<sp/>+<sp/><ref refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" kindref="member">mOptions</ref>-&gt;umi.prefix<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal"><sp/>+<sp/>umi;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spacePos<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;r-&gt;<ref refid="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" kindref="member">mName</ref>-&gt;length();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r-&gt;<ref refid="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" kindref="member">mName</ref>-&gt;at(i)<sp/>==<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spacePos<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(spacePos<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r-&gt;<ref refid="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" kindref="member">mName</ref>-&gt;append(tag);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r-&gt;<ref refid="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" kindref="member">mName</ref>-&gt;insert(spacePos,<sp/>tag);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUmiProcessor_1a80e70afd80861284027547c03f9b8a6a" kindref="member">UmiProcessor::test</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/umiprocessor.cpp"/>
+  </compounddef>
+</doxygen>

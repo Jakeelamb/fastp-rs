@@ -1,0 +1,44 @@
+\doxysection{overlapanalysis.\+h}
+\hypertarget{overlapanalysis_8h_source}{}\label{overlapanalysis_8h_source}\index{src/overlapanalysis.h@{src/overlapanalysis.h}}
+\doxymbox{\hyperlink{overlapanalysis_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ OVERLAP\_ANALYSIS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ OVERLAP\_ANALYSIS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{common_8h}{common.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{read_8h}{read.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classOverlapResult}{OverlapResult}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classOverlapResult_a0d0f672ba3de27b761455ecab4775e7d}{overlapped}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classOverlapResult_a620e9b344e2e20f87bad0b223f1f8f28}{offset}};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classOverlapResult_ac387d549618c2b40902fcc3d32c971d5}{overlap\_len}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classOverlapResult_a66087523a68e044fa3ece5248d7d6f46}{diff}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classOverlapResult_a28e727f83b748a386c1df79b49fea10d}{hasGap}};}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classOverlapAnalysis_a266dbf56120f22cf47917228c9708cb0}{OverlapAnalysis}}\{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{classOverlapAnalysis_a266dbf56120f22cf47917228c9708cb0}{OverlapAnalysis}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{classOverlapAnalysis_a71e3d057d972244d794bc89f43644449}{\string~OverlapAnalysis}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classOverlapResult}{OverlapResult}}\ \doxymbox{\hyperlink{classOverlapAnalysis_a0e7ca83bab963df0c2fa5fe412556e66}{analyze}}(\textcolor{keywordtype}{string}*\ \ r1,\ \textcolor{keywordtype}{string}*\ \ r2,\ \textcolor{keywordtype}{int}\ diffLimit,\ \textcolor{keywordtype}{int}\ overlapRequire,\ \textcolor{keywordtype}{double}\ diffPercentLimit,\ \textcolor{keywordtype}{bool}\ allowGap\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classOverlapResult}{OverlapResult}}\ \doxymbox{\hyperlink{classOverlapAnalysis_a0e7ca83bab963df0c2fa5fe412556e66}{analyze}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r2,\ \textcolor{keywordtype}{int}\ diffLimit,\ \textcolor{keywordtype}{int}\ overlapRequire,\ \textcolor{keywordtype}{double}\ diffPercentLimit,\ \textcolor{keywordtype}{bool}\ allowGap\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classRead}{Read}}*\ \doxymbox{\hyperlink{classOverlapAnalysis_adc1adda85d3ec75224d5cb2f13179b07}{merge}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r2,\ \doxymbox{\hyperlink{classOverlapResult}{OverlapResult}}\ ov);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classOverlapAnalysis_ab295b094006e4f42e56988b93645afa2}{test}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="fastqreader_8h" kind="file" language="C++">
+    <compoundname>fastqreader.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="read_8h" local="yes">read.h</includes>
+    <includes refid="common_8h" local="yes">common.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">isa-l/igzip_lib.h</includes>
+    <includes refid="readpool_8h" local="yes">readpool.h</includes>
+    <includedby refid="evaluator_8cpp" local="yes">src/evaluator.cpp</includedby>
+    <includedby refid="fastqreader_8cpp" local="yes">src/fastqreader.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <includedby refid="peprocessor_8cpp" local="yes">src/peprocessor.cpp</includedby>
+    <includedby refid="seprocessor_8cpp" local="yes">src/seprocessor.cpp</includedby>
+    <includedby refid="unittest_8cpp" local="yes">src/unittest.cpp</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="1">
+        <label>src/fastqreader.h</label>
+        <link refid="fastqreader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>readpool.h</label>
+        <link refid="readpool_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>singleproducersingleconsumerlist.h</label>
+        <link refid="singleproducersingleconsumerlist_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>atomic</label>
+      </node>
+      <node id="18">
+        <label>cassert</label>
+      </node>
+      <node id="7">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>isa-l/igzip_lib.h</label>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="17">
+        <label>memory.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/evaluator.cpp</label>
+        <link refid="evaluator_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/fastqreader.cpp</label>
+        <link refid="fastqreader_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/fastqreader.h</label>
+        <link refid="fastqreader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/unittest.cpp</label>
+        <link refid="unittest_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFastqReader" prot="public">FastqReader</innerclass>
+    <innerclass refid="classFastqReaderPair" prot="public">FastqReaderPair</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Copyright<sp/>(c)<sp/>2021<sp/>Shifu<sp/>Chen<sp/>&lt;chen@haplox.com&gt;</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">SOFTWARE.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FASTQ_READER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FASTQ_READER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="read_8h" kindref="compound">read.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="common_8h" kindref="compound">common.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;isa-l/igzip_lib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="readpool_8h" kindref="compound">readpool.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBgzfMtReader" kindref="compound">BgzfMtReader</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classFastqReader" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFastqReader_1ad66dd751b21fb620edf740ebe7630030" kindref="member">FastqReader</ref>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFastqReader_1ad66dd751b21fb620edf740ebe7630030" kindref="member">FastqReader</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasQuality<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>phred64=</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bgzfThreadBudget=0);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFastqReader_1a03b456c40b1d3812a0ba33b4aebca742" kindref="member">~FastqReader</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1acedea5984b2f935a4f8761c52fe22cb4" kindref="member">isZipped</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a29389d766ea9469b6c4b218ebfaa69ef" kindref="member">getBytes</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&amp;<sp/>bytesRead,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&amp;<sp/>bytesTotal);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>function<sp/>is<sp/>not<sp/>thread-safe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//do<sp/>not<sp/>call<sp/>read()<sp/>of<sp/>a<sp/>same<sp/>FastqReader<sp/>object<sp/>from<sp/>different<sp/>threads<sp/>concurrently</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/><ref refid="classFastqReader_1aa1f6ab000136c41ccc2742cf868c63ea" kindref="member">read</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a98b833419659676aa7b7879064f02298" kindref="member">eof</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a9ec4409d4650914355211ffdfd2743ab" kindref="member">hasNoLineBreakAtEnd</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1ac54ab418871f43fcf1ee6e9df3b379b4" kindref="member">setReadPool</ref>(<ref refid="classReadPool" kindref="compound">ReadPool</ref>*<sp/>rp);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1aa12eacb47c5f8c33d5f9ec15c6f388a1" kindref="member">isZipFastq</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a72f7ab27aa46c790511a678e1e7edb9e" kindref="member">isFastq</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a4cc85ccb0051670299b7d8159c280c44" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1aa85324f220cf65b609c1663463eee8c3" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1ab63f52842ba18259f00042e18436b1f9" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1ada9a13204386a15dc886eae857dd4738" kindref="member">getLine</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">*<sp/>line);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a0d4409aaed2981bab34d8888102c2426" kindref="member">clearLineBreaks</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>line);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a0c029e28dd3a62e49717fa2d6a05bcae" kindref="member">readToBuf</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a9df0941ba8f95d1578d7874cce7598d4" kindref="member">readToBufIgzip</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1aeec9c64e4e7bc9af6a60f407d069451b" kindref="member">bufferFinished</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69" refid="classFastqReader_1af8656352f2c2d144abaf4cb099846e71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1af8656352f2c2d144abaf4cb099846e71" kindref="member">mFilename</ref>;</highlight></codeline>
+<codeline lineno="70" refid="classFastqReader_1a4e6ecc9cc21aa161e6716a20813b28b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">isal_gzip_header<sp/><ref refid="classFastqReader_1a4e6ecc9cc21aa161e6716a20813b28b9" kindref="member">mGzipHeader</ref>;</highlight></codeline>
+<codeline lineno="71" refid="classFastqReader_1a491970fddf50538bf7be541c1fb08dd6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">inflate_state<sp/><ref refid="classFastqReader_1a491970fddf50538bf7be541c1fb08dd6" kindref="member">mGzipState</ref>;</highlight></codeline>
+<codeline lineno="72" refid="classFastqReader_1a24936a036db4f79debdb3ce8b9552254" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classFastqReader_1a24936a036db4f79debdb3ce8b9552254" kindref="member">mGzipInputBuffer</ref>;</highlight></codeline>
+<codeline lineno="73" refid="classFastqReader_1a2081bb86b38f4db8bb89ee4acacf80a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classFastqReader_1a2081bb86b38f4db8bb89ee4acacf80a1" kindref="member">mGzipOutputBuffer</ref>;</highlight></codeline>
+<codeline lineno="74" refid="classFastqReader_1ab3f44f41efe72408aec395c6c74a71f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1ab3f44f41efe72408aec395c6c74a71f6" kindref="member">mGzipInputBufferSize</ref>;</highlight></codeline>
+<codeline lineno="75" refid="classFastqReader_1a322526ec8d29259b52127f5ece4ed210" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a322526ec8d29259b52127f5ece4ed210" kindref="member">mGzipOutputBufferSize</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classFastqReader_1a799bfdc81c1a0a6eeee31af6cdeafaa0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a799bfdc81c1a0a6eeee31af6cdeafaa0" kindref="member">mGzipInputUsedBytes</ref>;</highlight></codeline>
+<codeline lineno="77" refid="classFastqReader_1acd50c082a58bb3baad2404b5e11aae62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE*<sp/><ref refid="classFastqReader_1acd50c082a58bb3baad2404b5e11aae62" kindref="member">mFile</ref>;</highlight></codeline>
+<codeline lineno="78" refid="classFastqReader_1ab0d9c71ad69be6c4001edc72ec92adb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1ab0d9c71ad69be6c4001edc72ec92adb4" kindref="member">mZipped</ref>;</highlight></codeline>
+<codeline lineno="79" refid="classFastqReader_1a96330d7f066c5d43c9e82d5949c0b25e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classFastqReader_1a96330d7f066c5d43c9e82d5949c0b25e" kindref="member">mFastqBuf</ref>;</highlight></codeline>
+<codeline lineno="80" refid="classFastqReader_1abe7211fec5453dc692eccda129632090" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1abe7211fec5453dc692eccda129632090" kindref="member">mBufDataLen</ref>;</highlight></codeline>
+<codeline lineno="81" refid="classFastqReader_1a1a3c0ed8cb9aded521ab2669323968fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a1a3c0ed8cb9aded521ab2669323968fa" kindref="member">mBufUsedLen</ref>;</highlight></codeline>
+<codeline lineno="82" refid="classFastqReader_1aa327b1c88c0af352611095b33b691934" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1aa327b1c88c0af352611095b33b691934" kindref="member">mStdinMode</ref>;</highlight></codeline>
+<codeline lineno="83" refid="classFastqReader_1a13bd156a89835d095ca7a65d4b00c74c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a13bd156a89835d095ca7a65d4b00c74c" kindref="member">mHasNoLineBreakAtEnd</ref>;</highlight></codeline>
+<codeline lineno="84" refid="classFastqReader_1ad7c5c05c32d381d1d2eb8f85810a53cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1ad7c5c05c32d381d1d2eb8f85810a53cd" kindref="member">mCounter</ref>;</highlight></codeline>
+<codeline lineno="85" refid="classFastqReader_1a2bff55a0d3ba7813bd4351a61460139a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1a2bff55a0d3ba7813bd4351a61460139a" kindref="member">mHasQuality</ref>;</highlight></codeline>
+<codeline lineno="86" refid="classFastqReader_1afeb44e4b170e17667c2ea85e7e0bbf65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1afeb44e4b170e17667c2ea85e7e0bbf65" kindref="member">mPhred64</ref>;</highlight></codeline>
+<codeline lineno="87" refid="classFastqReader_1ab28f2aafd4425e9281471ae2b009819a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReadPool" kindref="compound">ReadPool</ref>*<sp/><ref refid="classFastqReader_1ab28f2aafd4425e9281471ae2b009819a" kindref="member">mReadPool</ref>;</highlight></codeline>
+<codeline lineno="88" refid="classFastqReader_1a107cf2d91b4790f85f3ee20d91331814" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBgzfMtReader" kindref="compound">BgzfMtReader</ref>*<sp/><ref refid="classFastqReader_1a107cf2d91b4790f85f3ee20d91331814" kindref="member">mBgzfReader</ref>;</highlight></codeline>
+<codeline lineno="89" refid="classFastqReader_1ab6196eb35e7ed144d91504ca86828f5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classFastqReader_1ab6196eb35e7ed144d91504ca86828f5c" kindref="member">mBgzfThreadBudget</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classFastqReaderPair" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFastqReaderPair_1a1979f5188328cd5ad9a10657b035250e" kindref="member">FastqReaderPair</ref>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFastqReaderPair_1a1979f5188328cd5ad9a10657b035250e" kindref="member">FastqReaderPair</ref>(<ref refid="classFastqReader" kindref="compound">FastqReader</ref>*<sp/>left,<sp/><ref refid="classFastqReader" kindref="compound">FastqReader</ref>*<sp/>right);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFastqReaderPair_1a1979f5188328cd5ad9a10657b035250e" kindref="member">FastqReaderPair</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>leftName,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>rightName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasQuality<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>phred64<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>interleaved<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFastqReaderPair_1affd4446f74998946e047140946e5507c" kindref="member">~FastqReaderPair</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFastqReaderPair_1a6378c22973dc9cf84d7d18e1120fea09" kindref="member">read</ref>(<ref refid="classReadPair" kindref="compound">ReadPair</ref>*<sp/>pair);</highlight></codeline>
+<codeline lineno="99" refid="classFastqReaderPair_1a83a5006987e4a390c7f7d5096e9484c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReaderPair_1a83a5006987e4a390c7f7d5096e9484c0" kindref="member">eof</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101" refid="classFastqReaderPair_1a243985cbdb1e0b4775fb8798aa8cce08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFastqReader" kindref="compound">FastqReader</ref>*<sp/><ref refid="classFastqReaderPair_1a243985cbdb1e0b4775fb8798aa8cce08" kindref="member">mLeft</ref>;</highlight></codeline>
+<codeline lineno="102" refid="classFastqReaderPair_1a1defe7cff06f4e06c1fa6cd08601368f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFastqReader" kindref="compound">FastqReader</ref>*<sp/><ref refid="classFastqReaderPair_1a1defe7cff06f4e06c1fa6cd08601368f" kindref="member">mRight</ref>;</highlight></codeline>
+<codeline lineno="103" refid="classFastqReaderPair_1aa3b08c940f52691707d7869c3f63c0b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classFastqReaderPair_1aa3b08c940f52691707d7869c3f63c0b5" kindref="member">mInterleaved</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/fastqreader.h"/>
+  </compounddef>
+</doxygen>

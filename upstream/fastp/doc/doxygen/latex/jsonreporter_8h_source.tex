@@ -1,0 +1,43 @@
+\doxysection{jsonreporter.\+h}
+\hypertarget{jsonreporter_8h_source}{}\label{jsonreporter_8h_source}\index{src/jsonreporter.h@{src/jsonreporter.h}}
+\doxymbox{\hyperlink{jsonreporter_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ JSON\_REPORTER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ JSON\_REPORTER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{stats_8h}{stats.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{filterresult_8h}{filterresult.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <atomic>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{common_8h}{common.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{util_8h}{util.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classJsonReporter_ae877aa6bf26178f524195e405d0d9f44}{JsonReporter}}\{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \doxymbox{\hyperlink{classJsonReporter_ae877aa6bf26178f524195e405d0d9f44}{JsonReporter}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt);}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{classJsonReporter_aeece0a033d6136609217ac08a363d86e}{\string~JsonReporter}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classJsonReporter_add77bc5f100396720aa6d0237851a545}{setDup}}(\textcolor{keywordtype}{double}\ dupRate);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classJsonReporter_a1fe157defef88e9851f8ed46d573bae6}{setInsertHist}}(atomic\_long*\ insertHist,\ \textcolor{keywordtype}{int}\ insertSizePeak);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classJsonReporter_aa86bc03360bb79f2f33c0e652da61207}{report}}(\doxymbox{\hyperlink{classFilterResult}{FilterResult}}*\ result,\ \doxymbox{\hyperlink{classStats}{Stats}}*\ preStats1,\ \doxymbox{\hyperlink{classStats}{Stats}}*\ postStats1,\ \doxymbox{\hyperlink{classStats}{Stats}}*\ preStats2\ =\ NULL,\ \doxymbox{\hyperlink{classStats}{Stats}}*\ postStats2\ =\ NULL);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classJsonReporter_a6473ee41a0ba145229a27628599df14a}{mOptions}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}*\ \doxymbox{\hyperlink{classJsonReporter_a66f87dd8e019ad639d1586802123dff7}{mDupHist}};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}*\ \doxymbox{\hyperlink{classJsonReporter_a4415cd88768813b895bff5207be4febc}{mDupMeanGC}};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classJsonReporter_a8be645fd72da0fbd1bd2b8cc06aaffe6}{mDupRate}};}
+\DoxyCodeLine{00032\ \ \ \ \ atomic\_long*\ \doxymbox{\hyperlink{classJsonReporter_a028ac82bb4de4799ddcab9b2c30c73b5}{mInsertHist}};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classJsonReporter_ad9dc11be17484a6888172b230c6f578d}{mInsertSizePeak}};}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

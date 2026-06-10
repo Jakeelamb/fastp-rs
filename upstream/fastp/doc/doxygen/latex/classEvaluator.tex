@@ -1,0 +1,175 @@
+\doxysection{Evaluator Class Reference}
+\hypertarget{classEvaluator}{}\label{classEvaluator}\index{Evaluator@{Evaluator}}
+
+
+{\ttfamily \+\#include $<$evaluator.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classEvaluator_a99f02b81667c1bc9c754e2de5c33498f}{Evaluator}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt)
+\item 
+\doxymbox{\hyperlink{classEvaluator_ac10971f54d227b1ef9aa5b28872b0272}{\texorpdfstring{$\sim$}{\string~}\+Evaluator}} ()
+\item 
+void \doxymbox{\hyperlink{classEvaluator_ab31c3e615d38f6bfdaa8bed37d297350}{evaluate\+Read\+Num}} (long \&read\+Num)
+\item 
+string \doxymbox{\hyperlink{classEvaluator_a930db2bafc648189a32a421c0776ee7d}{eval\+Adapter\+And\+Read\+Num}} (long \&read\+Num, bool is\+R2)
+\item 
+bool \doxymbox{\hyperlink{classEvaluator_a071b1726a2e9b58f3de3ea94b025fe1f}{is\+Two\+Color\+System}} ()
+\item 
+void \doxymbox{\hyperlink{classEvaluator_a0d181f664f38cd47ab49c96b465b9dcb}{evaluate\+Seq\+Len}} ()
+\item 
+void \doxymbox{\hyperlink{classEvaluator_a5aa5201ed700024521d84d460ca13495}{evaluate\+Over\+Rep\+Seqs}} ()
+\item 
+void \doxymbox{\hyperlink{classEvaluator_adb79e02e37741970f53e59b59fdf8e12}{compute\+Over\+Rep\+Seq}} (string filename, map$<$ string, long $>$ \&hotseqs, int seq\+Len)
+\item 
+int \doxymbox{\hyperlink{classEvaluator_ab0bf2a3ed26f3001dcfcc4d4be7daa53}{compute\+Seq\+Len}} (string filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{classEvaluator_ac5558831b3087e03d2265c7f01d4aaf0}{test}} ()
+\item 
+static string \doxymbox{\hyperlink{classEvaluator_af05f70776b0de52c1a39c8cf034c31ab}{match\+Known\+Adapter}} (string seq)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{classEvaluator_abc0d42dc20ea6a9f553b5f59357809a3}{int2seq}} (unsigned int val, int seqlen)
+\item 
+int \doxymbox{\hyperlink{classEvaluator_af389732998af66a9014b18a3894f31f0}{seq2int}} (string \texorpdfstring{$\ast$}{*}seq, int pos, int seqlen, int last\+Val=-\/1)
+\item 
+int \doxymbox{\hyperlink{classEvaluator_aa66149538f57e3ca8926fda28dc477d8}{seq2int}} (string \&seq, int pos, int seqlen, int last\+Val=-\/1)
+\item 
+string \doxymbox{\hyperlink{classEvaluator_ab1932014e966d527f45ef5d86bd8aac4}{get\+Adapter\+With\+Seed}} (int seed, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}loaded\+Reads, long records, int keylen)
+\item 
+string \doxymbox{\hyperlink{classEvaluator_a7bc3f95447e2db86882fec6272e10409}{check\+Known\+Adapters}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}reads, long num)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classEvaluator_a8325f81d7b58adc3fc97c34c401c1c97}{m\+Options}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classEvaluator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEvaluator_a99f02b81667c1bc9c754e2de5c33498f}\index{Evaluator@{Evaluator}!Evaluator@{Evaluator}}
+\index{Evaluator@{Evaluator}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{Evaluator()}{Evaluator()}}
+{\footnotesize\ttfamily \label{classEvaluator_a99f02b81667c1bc9c754e2de5c33498f} 
+Evaluator::\+\+Evaluator (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEvaluator_ac10971f54d227b1ef9aa5b28872b0272}\index{Evaluator@{Evaluator}!````~Evaluator@{\texorpdfstring{$\sim$}{\string~}Evaluator}}
+\index{````~Evaluator@{\texorpdfstring{$\sim$}{\string~}Evaluator}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Evaluator()}{\string~Evaluator()}}
+{\footnotesize\ttfamily \label{classEvaluator_ac10971f54d227b1ef9aa5b28872b0272} 
+Evaluator::\+\texorpdfstring{$\sim$}{\string~}\+Evaluator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classEvaluator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEvaluator_a7bc3f95447e2db86882fec6272e10409}\index{Evaluator@{Evaluator}!checkKnownAdapters@{checkKnownAdapters}}
+\index{checkKnownAdapters@{checkKnownAdapters}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{checkKnownAdapters()}{checkKnownAdapters()}}
+{\footnotesize\ttfamily \label{classEvaluator_a7bc3f95447e2db86882fec6272e10409} 
+string Evaluator::\+check\+Known\+Adapters (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{reads}{, }\item[{long}]{num}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEvaluator_adb79e02e37741970f53e59b59fdf8e12}\index{Evaluator@{Evaluator}!computeOverRepSeq@{computeOverRepSeq}}
+\index{computeOverRepSeq@{computeOverRepSeq}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{computeOverRepSeq()}{computeOverRepSeq()}}
+{\footnotesize\ttfamily \label{classEvaluator_adb79e02e37741970f53e59b59fdf8e12} 
+void Evaluator::\+compute\+Over\+Rep\+Seq (\begin{DoxyParamCaption}\item[{string}]{filename}{, }\item[{map$<$ string, long $>$ \&}]{hotseqs}{, }\item[{int}]{seq\+Len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEvaluator_ab0bf2a3ed26f3001dcfcc4d4be7daa53}\index{Evaluator@{Evaluator}!computeSeqLen@{computeSeqLen}}
+\index{computeSeqLen@{computeSeqLen}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{computeSeqLen()}{computeSeqLen()}}
+{\footnotesize\ttfamily \label{classEvaluator_ab0bf2a3ed26f3001dcfcc4d4be7daa53} 
+int Evaluator::\+compute\+Seq\+Len (\begin{DoxyParamCaption}\item[{string}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEvaluator_a930db2bafc648189a32a421c0776ee7d}\index{Evaluator@{Evaluator}!evalAdapterAndReadNum@{evalAdapterAndReadNum}}
+\index{evalAdapterAndReadNum@{evalAdapterAndReadNum}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{evalAdapterAndReadNum()}{evalAdapterAndReadNum()}}
+{\footnotesize\ttfamily \label{classEvaluator_a930db2bafc648189a32a421c0776ee7d} 
+string Evaluator::\+eval\+Adapter\+And\+Read\+Num (\begin{DoxyParamCaption}\item[{long \&}]{read\+Num}{, }\item[{bool}]{is\+R2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEvaluator_a5aa5201ed700024521d84d460ca13495}\index{Evaluator@{Evaluator}!evaluateOverRepSeqs@{evaluateOverRepSeqs}}
+\index{evaluateOverRepSeqs@{evaluateOverRepSeqs}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateOverRepSeqs()}{evaluateOverRepSeqs()}}
+{\footnotesize\ttfamily \label{classEvaluator_a5aa5201ed700024521d84d460ca13495} 
+void Evaluator::\+evaluate\+Over\+Rep\+Seqs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEvaluator_ab31c3e615d38f6bfdaa8bed37d297350}\index{Evaluator@{Evaluator}!evaluateReadNum@{evaluateReadNum}}
+\index{evaluateReadNum@{evaluateReadNum}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateReadNum()}{evaluateReadNum()}}
+{\footnotesize\ttfamily \label{classEvaluator_ab31c3e615d38f6bfdaa8bed37d297350} 
+void Evaluator::\+evaluate\+Read\+Num (\begin{DoxyParamCaption}\item[{long \&}]{read\+Num}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEvaluator_a0d181f664f38cd47ab49c96b465b9dcb}\index{Evaluator@{Evaluator}!evaluateSeqLen@{evaluateSeqLen}}
+\index{evaluateSeqLen@{evaluateSeqLen}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateSeqLen()}{evaluateSeqLen()}}
+{\footnotesize\ttfamily \label{classEvaluator_a0d181f664f38cd47ab49c96b465b9dcb} 
+void Evaluator::\+evaluate\+Seq\+Len (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEvaluator_ab1932014e966d527f45ef5d86bd8aac4}\index{Evaluator@{Evaluator}!getAdapterWithSeed@{getAdapterWithSeed}}
+\index{getAdapterWithSeed@{getAdapterWithSeed}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{getAdapterWithSeed()}{getAdapterWithSeed()}}
+{\footnotesize\ttfamily \label{classEvaluator_ab1932014e966d527f45ef5d86bd8aac4} 
+string Evaluator::\+get\+Adapter\+With\+Seed (\begin{DoxyParamCaption}\item[{int}]{seed}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{loaded\+Reads}{, }\item[{long}]{records}{, }\item[{int}]{keylen}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEvaluator_abc0d42dc20ea6a9f553b5f59357809a3}\index{Evaluator@{Evaluator}!int2seq@{int2seq}}
+\index{int2seq@{int2seq}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{int2seq()}{int2seq()}}
+{\footnotesize\ttfamily \label{classEvaluator_abc0d42dc20ea6a9f553b5f59357809a3} 
+string Evaluator::\+int2seq (\begin{DoxyParamCaption}\item[{unsigned int}]{val}{, }\item[{int}]{seqlen}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEvaluator_a071b1726a2e9b58f3de3ea94b025fe1f}\index{Evaluator@{Evaluator}!isTwoColorSystem@{isTwoColorSystem}}
+\index{isTwoColorSystem@{isTwoColorSystem}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{isTwoColorSystem()}{isTwoColorSystem()}}
+{\footnotesize\ttfamily \label{classEvaluator_a071b1726a2e9b58f3de3ea94b025fe1f} 
+bool Evaluator::\+is\+Two\+Color\+System (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classEvaluator_af05f70776b0de52c1a39c8cf034c31ab}\index{Evaluator@{Evaluator}!matchKnownAdapter@{matchKnownAdapter}}
+\index{matchKnownAdapter@{matchKnownAdapter}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{matchKnownAdapter()}{matchKnownAdapter()}}
+{\footnotesize\ttfamily \label{classEvaluator_af05f70776b0de52c1a39c8cf034c31ab} 
+string Evaluator::\+match\+Known\+Adapter (\begin{DoxyParamCaption}\item[{string}]{seq}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classEvaluator_aa66149538f57e3ca8926fda28dc477d8}\index{Evaluator@{Evaluator}!seq2int@{seq2int}}
+\index{seq2int@{seq2int}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{seq2int()}{seq2int()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classEvaluator_aa66149538f57e3ca8926fda28dc477d8} 
+int Evaluator::\+seq2int (\begin{DoxyParamCaption}\item[{string \&}]{seq}{, }\item[{int}]{pos}{, }\item[{int}]{seqlen}{, }\item[{int}]{last\+Val}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEvaluator_af389732998af66a9014b18a3894f31f0}\index{Evaluator@{Evaluator}!seq2int@{seq2int}}
+\index{seq2int@{seq2int}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{seq2int()}{seq2int()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classEvaluator_af389732998af66a9014b18a3894f31f0} 
+int Evaluator::\+seq2int (\begin{DoxyParamCaption}\item[{string \texorpdfstring{$\ast$}{*}}]{seq}{, }\item[{int}]{pos}{, }\item[{int}]{seqlen}{, }\item[{int}]{last\+Val}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classEvaluator_ac5558831b3087e03d2265c7f01d4aaf0}\index{Evaluator@{Evaluator}!test@{test}}
+\index{test@{test}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classEvaluator_ac5558831b3087e03d2265c7f01d4aaf0} 
+bool Evaluator::\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classEvaluator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classEvaluator_a8325f81d7b58adc3fc97c34c401c1c97}\index{Evaluator@{Evaluator}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!Evaluator@{Evaluator}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classEvaluator_a8325f81d7b58adc3fc97c34c401c1c97} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Evaluator::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{evaluator_8h}{evaluator.\+h}}\item 
+src/\+\doxymbox{\hyperlink{evaluator_8cpp}{evaluator.\+cpp}}\end{DoxyCompactItemize}

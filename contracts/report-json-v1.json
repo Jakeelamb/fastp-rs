@@ -1,0 +1,6 @@
+{
+  "contract_version": 1,
+  "report_kind": "fastp-style-qc-json",
+  "description": "Allowlisted JSON Pointer paths with per-path comparison rules (see CONTEXT.md). Paths and rules are filled in as the report schema stabilizes.",
+  "paths": []
+}

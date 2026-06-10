@@ -1,0 +1,220 @@
+\doxysection{Read Class Reference}
+\hypertarget{classRead}{}\label{classRead}\index{Read@{Read}}
+
+
+{\ttfamily \+\#include $<$read.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classRead_a72c9e2290cf8c794558a3e7d0507ca4a}{Read}} (string \texorpdfstring{$\ast$}{*}name, string \texorpdfstring{$\ast$}{*}seq, string \texorpdfstring{$\ast$}{*}strand, string \texorpdfstring{$\ast$}{*}quality, bool phred64=false)
+\item 
+\doxymbox{\hyperlink{classRead_a3f2637bd14bd268c7e66dc84e925f8f4}{Read}} (const char \texorpdfstring{$\ast$}{*}name, const char \texorpdfstring{$\ast$}{*}seq, const char \texorpdfstring{$\ast$}{*}strand, const char \texorpdfstring{$\ast$}{*}quality, bool phred64=false)
+\item 
+\doxymbox{\hyperlink{classRead_a08d6c302dc2478f6a479c9ebc4350828}{\texorpdfstring{$\sim$}{\string~}\+Read}} ()
+\item 
+void \doxymbox{\hyperlink{classRead_aa4abac4521d71824a4306dc3d0277b20}{print}} ()
+\item 
+void \doxymbox{\hyperlink{classRead_afb48f45ec769f5415cc131d2c7897d69}{print\+File}} (ofstream \&file)
+\item 
+\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classRead_ab174708c21a3423e34a84fe82fe589c3}{reverse\+Complement}} ()
+\item 
+string \doxymbox{\hyperlink{classRead_a7f89589fb5b4218377f16d1fec89fb5d}{first\+Index}} ()
+\item 
+string \doxymbox{\hyperlink{classRead_a258e5420bb4a2d598d83dcfe37daf9d0}{last\+Index}} ()
+\item 
+int \doxymbox{\hyperlink{classRead_a97b44c2731a781029981ab558f0a3a3b}{low\+Qual\+Count}} (int qual=20)
+\item 
+int \doxymbox{\hyperlink{classRead_ace429c91f54e941be218efa5ea4df299}{length}} ()
+\item 
+string \doxymbox{\hyperlink{classRead_a7c58e168bdacb8a14d99624334e769ff}{to\+String}} ()
+\item 
+string \doxymbox{\hyperlink{classRead_a74196dd9084f16947fa92f6b0eb00e8c}{to\+String\+With\+Tag}} (const char \texorpdfstring{$\ast$}{*}tag)
+\item 
+void \doxymbox{\hyperlink{classRead_a07052c7a404ae9d8f233fe0dde4260f5}{append\+To\+String}} (string \texorpdfstring{$\ast$}{*}target)
+\item 
+void \doxymbox{\hyperlink{classRead_ac7c4ebfdb66573e20c493eba6835ddd4}{append\+To\+String\+With\+Tag}} (string \texorpdfstring{$\ast$}{*}target, const char \texorpdfstring{$\ast$}{*}tag)
+\item 
+void \doxymbox{\hyperlink{classRead_a6ad42dd210ed4766e5eb5cf6e53f5562}{resize}} (int len)
+\item 
+void \doxymbox{\hyperlink{classRead_a27854545a1385a16bdab760dfcc9ae17}{convert\+Phred64\+To33}} ()
+\item 
+void \doxymbox{\hyperlink{classRead_ada3719d937b1c4c0920371a8089364c4}{trim\+Front}} (int len)
+\item 
+bool \doxymbox{\hyperlink{classRead_a28c440362f78c2971ee6586a9ca48a0d}{fix\+MGI}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{classRead_a9280b4341e197bf54c75ef9a0ba83f24}{test}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classRead_a39b956c50ccdaf3b1bd75775b6fa49f0}{m\+Name}}
+\item 
+string \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classRead_a6b78edd02cfdac07156691f13a7aa481}{m\+Seq}}
+\item 
+string \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classRead_a35a15be184b2456bb012eb3e938ccea8}{m\+Strand}}
+\item 
+string \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classRead_aab4ffbb6b9ca25898cbab51923526092}{m\+Quality}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classRead_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classRead_a72c9e2290cf8c794558a3e7d0507ca4a}\index{Read@{Read}!Read@{Read}}
+\index{Read@{Read}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classRead_a72c9e2290cf8c794558a3e7d0507ca4a} 
+Read::\+\+Read (\begin{DoxyParamCaption}\item[{string \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{string \texorpdfstring{$\ast$}{*}}]{seq}{, }\item[{string \texorpdfstring{$\ast$}{*}}]{strand}{, }\item[{string \texorpdfstring{$\ast$}{*}}]{quality}{, }\item[{bool}]{phred64}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a3f2637bd14bd268c7e66dc84e925f8f4}\index{Read@{Read}!Read@{Read}}
+\index{Read@{Read}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classRead_a3f2637bd14bd268c7e66dc84e925f8f4} 
+Read::\+\+Read (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{seq}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{strand}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{quality}{, }\item[{bool}]{phred64}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a08d6c302dc2478f6a479c9ebc4350828}\index{Read@{Read}!````~Read@{\texorpdfstring{$\sim$}{\string~}Read}}
+\index{````~Read@{\texorpdfstring{$\sim$}{\string~}Read}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Read()}{\string~Read()}}
+{\footnotesize\ttfamily \label{classRead_a08d6c302dc2478f6a479c9ebc4350828} 
+Read::\+\texorpdfstring{$\sim$}{\string~}\+Read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classRead_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classRead_a07052c7a404ae9d8f233fe0dde4260f5}\index{Read@{Read}!appendToString@{appendToString}}
+\index{appendToString@{appendToString}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{appendToString()}{appendToString()}}
+{\footnotesize\ttfamily \label{classRead_a07052c7a404ae9d8f233fe0dde4260f5} 
+void Read::\+append\+To\+String (\begin{DoxyParamCaption}\item[{string \texorpdfstring{$\ast$}{*}}]{target}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_ac7c4ebfdb66573e20c493eba6835ddd4}\index{Read@{Read}!appendToStringWithTag@{appendToStringWithTag}}
+\index{appendToStringWithTag@{appendToStringWithTag}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{appendToStringWithTag()}{appendToStringWithTag()}}
+{\footnotesize\ttfamily \label{classRead_ac7c4ebfdb66573e20c493eba6835ddd4} 
+void Read::\+append\+To\+String\+With\+Tag (\begin{DoxyParamCaption}\item[{string \texorpdfstring{$\ast$}{*}}]{target}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a27854545a1385a16bdab760dfcc9ae17}\index{Read@{Read}!convertPhred64To33@{convertPhred64To33}}
+\index{convertPhred64To33@{convertPhred64To33}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{convertPhred64To33()}{convertPhred64To33()}}
+{\footnotesize\ttfamily \label{classRead_a27854545a1385a16bdab760dfcc9ae17} 
+void Read::\+convert\+Phred64\+To33 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a7f89589fb5b4218377f16d1fec89fb5d}\index{Read@{Read}!firstIndex@{firstIndex}}
+\index{firstIndex@{firstIndex}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{firstIndex()}{firstIndex()}}
+{\footnotesize\ttfamily \label{classRead_a7f89589fb5b4218377f16d1fec89fb5d} 
+string Read::\+first\+Index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a28c440362f78c2971ee6586a9ca48a0d}\index{Read@{Read}!fixMGI@{fixMGI}}
+\index{fixMGI@{fixMGI}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{fixMGI()}{fixMGI()}}
+{\footnotesize\ttfamily \label{classRead_a28c440362f78c2971ee6586a9ca48a0d} 
+bool Read::\+fix\+MGI (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a258e5420bb4a2d598d83dcfe37daf9d0}\index{Read@{Read}!lastIndex@{lastIndex}}
+\index{lastIndex@{lastIndex}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{lastIndex()}{lastIndex()}}
+{\footnotesize\ttfamily \label{classRead_a258e5420bb4a2d598d83dcfe37daf9d0} 
+string Read::\+last\+Index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_ace429c91f54e941be218efa5ea4df299}\index{Read@{Read}!length@{length}}
+\index{length@{length}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily \label{classRead_ace429c91f54e941be218efa5ea4df299} 
+int Read::\+length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a97b44c2731a781029981ab558f0a3a3b}\index{Read@{Read}!lowQualCount@{lowQualCount}}
+\index{lowQualCount@{lowQualCount}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{lowQualCount()}{lowQualCount()}}
+{\footnotesize\ttfamily \label{classRead_a97b44c2731a781029981ab558f0a3a3b} 
+int Read::\+low\+Qual\+Count (\begin{DoxyParamCaption}\item[{int}]{qual}{ = {\ttfamily 20}}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_aa4abac4521d71824a4306dc3d0277b20}\index{Read@{Read}!print@{print}}
+\index{print@{print}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{classRead_aa4abac4521d71824a4306dc3d0277b20} 
+void Read::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_afb48f45ec769f5415cc131d2c7897d69}\index{Read@{Read}!printFile@{printFile}}
+\index{printFile@{printFile}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{printFile()}{printFile()}}
+{\footnotesize\ttfamily \label{classRead_afb48f45ec769f5415cc131d2c7897d69} 
+void Read::\+print\+File (\begin{DoxyParamCaption}\item[{ofstream \&}]{file}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a6ad42dd210ed4766e5eb5cf6e53f5562}\index{Read@{Read}!resize@{resize}}
+\index{resize@{resize}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{classRead_a6ad42dd210ed4766e5eb5cf6e53f5562} 
+void Read::\+resize (\begin{DoxyParamCaption}\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_ab174708c21a3423e34a84fe82fe589c3}\index{Read@{Read}!reverseComplement@{reverseComplement}}
+\index{reverseComplement@{reverseComplement}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{reverseComplement()}{reverseComplement()}}
+{\footnotesize\ttfamily \label{classRead_ab174708c21a3423e34a84fe82fe589c3} 
+\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} Read::\+reverse\+Complement (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a9280b4341e197bf54c75ef9a0ba83f24}\index{Read@{Read}!test@{test}}
+\index{test@{test}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classRead_a9280b4341e197bf54c75ef9a0ba83f24} 
+bool Read::\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classRead_a7c58e168bdacb8a14d99624334e769ff}\index{Read@{Read}!toString@{toString}}
+\index{toString@{toString}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{classRead_a7c58e168bdacb8a14d99624334e769ff} 
+string Read::\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_a74196dd9084f16947fa92f6b0eb00e8c}\index{Read@{Read}!toStringWithTag@{toStringWithTag}}
+\index{toStringWithTag@{toStringWithTag}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{toStringWithTag()}{toStringWithTag()}}
+{\footnotesize\ttfamily \label{classRead_a74196dd9084f16947fa92f6b0eb00e8c} 
+string Read::\+to\+String\+With\+Tag (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classRead_ada3719d937b1c4c0920371a8089364c4}\index{Read@{Read}!trimFront@{trimFront}}
+\index{trimFront@{trimFront}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{trimFront()}{trimFront()}}
+{\footnotesize\ttfamily \label{classRead_ada3719d937b1c4c0920371a8089364c4} 
+void Read::\+trim\+Front (\begin{DoxyParamCaption}\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classRead_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classRead_a39b956c50ccdaf3b1bd75775b6fa49f0}\index{Read@{Read}!mName@{mName}}
+\index{mName@{mName}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{mName}{mName}}
+{\footnotesize\ttfamily \label{classRead_a39b956c50ccdaf3b1bd75775b6fa49f0} 
+string\texorpdfstring{$\ast$}{*} Read::\+m\+Name}
+
+\Hypertarget{classRead_aab4ffbb6b9ca25898cbab51923526092}\index{Read@{Read}!mQuality@{mQuality}}
+\index{mQuality@{mQuality}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{mQuality}{mQuality}}
+{\footnotesize\ttfamily \label{classRead_aab4ffbb6b9ca25898cbab51923526092} 
+string\texorpdfstring{$\ast$}{*} Read::\+m\+Quality}
+
+\Hypertarget{classRead_a6b78edd02cfdac07156691f13a7aa481}\index{Read@{Read}!mSeq@{mSeq}}
+\index{mSeq@{mSeq}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{mSeq}{mSeq}}
+{\footnotesize\ttfamily \label{classRead_a6b78edd02cfdac07156691f13a7aa481} 
+string\texorpdfstring{$\ast$}{*} Read::\+m\+Seq}
+
+\Hypertarget{classRead_a35a15be184b2456bb012eb3e938ccea8}\index{Read@{Read}!mStrand@{mStrand}}
+\index{mStrand@{mStrand}!Read@{Read}}
+\doxysubsubsection{\texorpdfstring{mStrand}{mStrand}}
+{\footnotesize\ttfamily \label{classRead_a35a15be184b2456bb012eb3e938ccea8} 
+string\texorpdfstring{$\ast$}{*} Read::\+m\+Strand}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{read_8h}{read.\+h}}\item 
+src/\+\doxymbox{\hyperlink{read_8cpp}{read.\+cpp}}\end{DoxyCompactItemize}

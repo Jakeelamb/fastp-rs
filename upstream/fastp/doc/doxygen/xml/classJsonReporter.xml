@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classJsonReporter" kind="class" language="C++" prot="public">
+    <compoundname>JsonReporter</compoundname>
+    <includes refid="jsonreporter_8h" local="no">jsonreporter.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classJsonReporter_1a6473ee41a0ba145229a27628599df14a" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* JsonReporter::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>JsonReporter::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="28" column="13" bodyfile="src/jsonreporter.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJsonReporter_1a66f87dd8e019ad639d1586802123dff7" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* JsonReporter::mDupHist</definition>
+        <argsstring></argsstring>
+        <name>mDupHist</name>
+        <qualifiedname>JsonReporter::mDupHist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="29" column="9" bodyfile="src/jsonreporter.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJsonReporter_1a4415cd88768813b895bff5207be4febc" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* JsonReporter::mDupMeanGC</definition>
+        <argsstring></argsstring>
+        <name>mDupMeanGC</name>
+        <qualifiedname>JsonReporter::mDupMeanGC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="30" column="12" bodyfile="src/jsonreporter.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJsonReporter_1a8be645fd72da0fbd1bd2b8cc06aaffe6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double JsonReporter::mDupRate</definition>
+        <argsstring></argsstring>
+        <name>mDupRate</name>
+        <qualifiedname>JsonReporter::mDupRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="31" column="12" bodyfile="src/jsonreporter.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJsonReporter_1a028ac82bb4de4799ddcab9b2c30c73b5" prot="private" static="no" mutable="no">
+        <type>atomic_long *</type>
+        <definition>atomic_long* JsonReporter::mInsertHist</definition>
+        <argsstring></argsstring>
+        <name>mInsertHist</name>
+        <qualifiedname>JsonReporter::mInsertHist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="32" column="17" bodyfile="src/jsonreporter.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJsonReporter_1ad9dc11be17484a6888172b230c6f578d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int JsonReporter::mInsertSizePeak</definition>
+        <argsstring></argsstring>
+        <name>mInsertSizePeak</name>
+        <qualifiedname>JsonReporter::mInsertSizePeak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="33" column="9" bodyfile="src/jsonreporter.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJsonReporter_1ae877aa6bf26178f524195e405d0d9f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonReporter::JsonReporter</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>JsonReporter</name>
+        <qualifiedname>JsonReporter::JsonReporter</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="20" column="5" bodyfile="src/jsonreporter.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classJsonReporter_1aeece0a033d6136609217ac08a363d86e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JsonReporter::~JsonReporter</definition>
+        <argsstring>()</argsstring>
+        <name>~JsonReporter</name>
+        <qualifiedname>JsonReporter::~JsonReporter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="21" column="5" bodyfile="src/jsonreporter.cpp" bodystart="9" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classJsonReporter_1add77bc5f100396720aa6d0237851a545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonReporter::setDup</definition>
+        <argsstring>(double dupRate)</argsstring>
+        <name>setDup</name>
+        <qualifiedname>JsonReporter::setDup</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>dupRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="23" column="10" bodyfile="src/jsonreporter.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classJsonReporter_1a1fe157defef88e9851f8ed46d573bae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonReporter::setInsertHist</definition>
+        <argsstring>(atomic_long *insertHist, int insertSizePeak)</argsstring>
+        <name>setInsertHist</name>
+        <qualifiedname>JsonReporter::setInsertHist</qualifiedname>
+        <param>
+          <type>atomic_long *</type>
+          <declname>insertHist</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>insertSizePeak</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="24" column="10" bodyfile="src/jsonreporter.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classJsonReporter_1aa86bc03360bb79f2f33c0e652da61207" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonReporter::report</definition>
+        <argsstring>(FilterResult *result, Stats *preStats1, Stats *postStats1, Stats *preStats2=NULL, Stats *postStats2=NULL)</argsstring>
+        <name>report</name>
+        <qualifiedname>JsonReporter::report</qualifiedname>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>preStats1</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>postStats1</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>preStats2</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>postStats2</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/jsonreporter.h" line="25" column="10" bodyfile="src/jsonreporter.cpp" bodystart="22" bodyend="172"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="1">
+        <label>JsonReporter</label>
+        <link refid="classJsonReporter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/jsonreporter.h" line="18" column="1" bodyfile="src/jsonreporter.h" bodystart="18" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classJsonReporter_1ae877aa6bf26178f524195e405d0d9f44" prot="public" virt="non-virtual"><scope>JsonReporter</scope><name>JsonReporter</name></member>
+      <member refid="classJsonReporter_1a66f87dd8e019ad639d1586802123dff7" prot="private" virt="non-virtual"><scope>JsonReporter</scope><name>mDupHist</name></member>
+      <member refid="classJsonReporter_1a4415cd88768813b895bff5207be4febc" prot="private" virt="non-virtual"><scope>JsonReporter</scope><name>mDupMeanGC</name></member>
+      <member refid="classJsonReporter_1a8be645fd72da0fbd1bd2b8cc06aaffe6" prot="private" virt="non-virtual"><scope>JsonReporter</scope><name>mDupRate</name></member>
+      <member refid="classJsonReporter_1a028ac82bb4de4799ddcab9b2c30c73b5" prot="private" virt="non-virtual"><scope>JsonReporter</scope><name>mInsertHist</name></member>
+      <member refid="classJsonReporter_1ad9dc11be17484a6888172b230c6f578d" prot="private" virt="non-virtual"><scope>JsonReporter</scope><name>mInsertSizePeak</name></member>
+      <member refid="classJsonReporter_1a6473ee41a0ba145229a27628599df14a" prot="private" virt="non-virtual"><scope>JsonReporter</scope><name>mOptions</name></member>
+      <member refid="classJsonReporter_1aa86bc03360bb79f2f33c0e652da61207" prot="public" virt="non-virtual"><scope>JsonReporter</scope><name>report</name></member>
+      <member refid="classJsonReporter_1add77bc5f100396720aa6d0237851a545" prot="public" virt="non-virtual"><scope>JsonReporter</scope><name>setDup</name></member>
+      <member refid="classJsonReporter_1a1fe157defef88e9851f8ed46d573bae6" prot="public" virt="non-virtual"><scope>JsonReporter</scope><name>setInsertHist</name></member>
+      <member refid="classJsonReporter_1aeece0a033d6136609217ac08a363d86e" prot="public" virt="non-virtual"><scope>JsonReporter</scope><name>~JsonReporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

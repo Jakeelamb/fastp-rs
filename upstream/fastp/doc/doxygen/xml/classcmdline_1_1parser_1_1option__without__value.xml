@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcmdline_1_1parser_1_1option__without__value" kind="class" language="C++" prot="private">
+    <compoundname>cmdline::parser::option_without_value</compoundname>
+    <basecompoundref refid="classcmdline_1_1parser_1_1option__base" prot="public" virt="non-virtual">cmdline::parser::option_base</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcmdline_1_1parser_1_1option__without__value_1a98a6a5be850373dd91562996916486f1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cmdline::parser::option_without_value::nam</definition>
+        <argsstring></argsstring>
+        <name>nam</name>
+        <qualifiedname>cmdline::parser::option_without_value::nam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="689" column="17" bodyfile="src/cmdline.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcmdline_1_1parser_1_1option__without__value_1a1827b8166d6d02fd052e8823ffe1a08d" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char cmdline::parser::option_without_value::snam</definition>
+        <argsstring></argsstring>
+        <name>snam</name>
+        <qualifiedname>cmdline::parser::option_without_value::snam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="690" column="10" bodyfile="src/cmdline.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcmdline_1_1parser_1_1option__without__value_1aef631becaab8312bd32051815f63275b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cmdline::parser::option_without_value::desc</definition>
+        <argsstring></argsstring>
+        <name>desc</name>
+        <qualifiedname>cmdline::parser::option_without_value::desc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="691" column="17" bodyfile="src/cmdline.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcmdline_1_1parser_1_1option__without__value_1aedd977f6d5a8b7bf092128a12682f6f6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cmdline::parser::option_without_value::has</definition>
+        <argsstring></argsstring>
+        <name>has</name>
+        <qualifiedname>cmdline::parser::option_without_value::has</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="692" column="10" bodyfile="src/cmdline.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1a3a750fc5d29bd692fdefd6f41b5ce341" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cmdline::parser::option_without_value::option_without_value</definition>
+        <argsstring>(const std::string &amp;name, char short_name, const std::string &amp;desc)</argsstring>
+        <name>option_without_value</name>
+        <qualifiedname>cmdline::parser::option_without_value::option_without_value</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>short_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="642" column="5" bodyfile="src/cmdline.h" bodystart="642" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1a61b419f94d8f49212eea2c86bb2520e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cmdline::parser::option_without_value::~option_without_value</definition>
+        <argsstring>()</argsstring>
+        <name>~option_without_value</name>
+        <qualifiedname>cmdline::parser::option_without_value::~option_without_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="647" column="5" bodyfile="src/cmdline.h" bodystart="647" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1abf481f9d4f936c8ab27fed99a747164f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::option_without_value::has_value</definition>
+        <argsstring>() const</argsstring>
+        <name>has_value</name>
+        <qualifiedname>cmdline::parser::option_without_value::has_value</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1a6617c8ff8b2864e8cf3182ca76f7e7ac">has_value</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="649" column="10" bodyfile="src/cmdline.h" bodystart="649" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1a14d3ef6f444aefebda41669d21b24008" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::option_without_value::set</definition>
+        <argsstring>()</argsstring>
+        <name>set</name>
+        <qualifiedname>cmdline::parser::option_without_value::set</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1a6729965a4221ba0112ca04f8550fce5c">set</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="651" column="10" bodyfile="src/cmdline.h" bodystart="651" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1ad8e93b69a9adb63f65a793d2c8099aae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::option_without_value::set</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>set</name>
+        <qualifiedname>cmdline::parser::option_without_value::set</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1a60444de6a257a3cca44a7a687a1d16fd">set</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="656" column="10" bodyfile="src/cmdline.h" bodystart="656" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1aa56f159aff4c9cd7bde01294077724e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::option_without_value::has_set</definition>
+        <argsstring>() const</argsstring>
+        <name>has_set</name>
+        <qualifiedname>cmdline::parser::option_without_value::has_set</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1aa948d89b57f4cd901bc20075ec277a04">has_set</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="660" column="10" bodyfile="src/cmdline.h" bodystart="660" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1ad1dd50b3fd7c7020d817d1e173240ba3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::option_without_value::valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <qualifiedname>cmdline::parser::option_without_value::valid</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1ae0f802a846608195166bc5ad925462e2">valid</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="664" column="10" bodyfile="src/cmdline.h" bodystart="664" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1a57b95fab703aba31c702697ab25c9316" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool cmdline::parser::option_without_value::must</definition>
+        <argsstring>() const</argsstring>
+        <name>must</name>
+        <qualifiedname>cmdline::parser::option_without_value::must</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1aa12b58243643ca229983f5dcd5b0b82e">must</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="668" column="10" bodyfile="src/cmdline.h" bodystart="668" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1a5c1c05ff75f4a5551f29152a0f5de604" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; cmdline::parser::option_without_value::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <qualifiedname>cmdline::parser::option_without_value::name</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1a340b487f3286815b11a4ee83b2364b82">name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="672" column="23" bodyfile="src/cmdline.h" bodystart="672" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1a6a4f9070fc44c46584515ad0a72a75af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>char</type>
+        <definition>char cmdline::parser::option_without_value::short_name</definition>
+        <argsstring>() const</argsstring>
+        <name>short_name</name>
+        <qualifiedname>cmdline::parser::option_without_value::short_name</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1aeea790198b8097ccb98a5a9063d3c81f">short_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="676" column="10" bodyfile="src/cmdline.h" bodystart="676" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1adfdb7e1cc34ce9caa148f1fa11100973" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; cmdline::parser::option_without_value::description</definition>
+        <argsstring>() const</argsstring>
+        <name>description</name>
+        <qualifiedname>cmdline::parser::option_without_value::description</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1a854ab06973f9b7041aeb70fd2b7c42c5">description</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="680" column="23" bodyfile="src/cmdline.h" bodystart="680" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classcmdline_1_1parser_1_1option__without__value_1a094839df784a0f6a5044ec42d682f845" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string cmdline::parser::option_without_value::short_description</definition>
+        <argsstring>() const</argsstring>
+        <name>short_description</name>
+        <qualifiedname>cmdline::parser::option_without_value::short_description</qualifiedname>
+        <reimplements refid="classcmdline_1_1parser_1_1option__base_1a091cab2d9f8e85a8e5e1a1a11e274aff">short_description</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="684" column="17" bodyfile="src/cmdline.h" bodystart="684" bodyend="686"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>cmdline::parser::option_base</label>
+        <link refid="classcmdline_1_1parser_1_1option__base"/>
+      </node>
+      <node id="1">
+        <label>cmdline::parser::option_without_value</label>
+        <link refid="classcmdline_1_1parser_1_1option__without__value"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>cmdline::parser::option_base</label>
+        <link refid="classcmdline_1_1parser_1_1option__base"/>
+      </node>
+      <node id="1">
+        <label>cmdline::parser::option_without_value</label>
+        <link refid="classcmdline_1_1parser_1_1option__without__value"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/cmdline.h" line="640" column="3" bodyfile="src/cmdline.h" bodystart="640" bodyend="693"/>
+    <listofallmembers>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1aef631becaab8312bd32051815f63275b" prot="private" virt="non-virtual"><scope>cmdline::parser::option_without_value</scope><name>desc</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1adfdb7e1cc34ce9caa148f1fa11100973" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>description</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1aedd977f6d5a8b7bf092128a12682f6f6" prot="private" virt="non-virtual"><scope>cmdline::parser::option_without_value</scope><name>has</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1aa56f159aff4c9cd7bde01294077724e8" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>has_set</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1abf481f9d4f936c8ab27fed99a747164f" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>has_value</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a57b95fab703aba31c702697ab25c9316" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>must</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a98a6a5be850373dd91562996916486f1" prot="private" virt="non-virtual"><scope>cmdline::parser::option_without_value</scope><name>nam</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a5c1c05ff75f4a5551f29152a0f5de604" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>name</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a3a750fc5d29bd692fdefd6f41b5ce341" prot="public" virt="non-virtual"><scope>cmdline::parser::option_without_value</scope><name>option_without_value</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a14d3ef6f444aefebda41669d21b24008" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>set</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1ad8e93b69a9adb63f65a793d2c8099aae" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>set</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a094839df784a0f6a5044ec42d682f845" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>short_description</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a6a4f9070fc44c46584515ad0a72a75af" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>short_name</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a1827b8166d6d02fd052e8823ffe1a08d" prot="private" virt="non-virtual"><scope>cmdline::parser::option_without_value</scope><name>snam</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1ad1dd50b3fd7c7020d817d1e173240ba3" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>valid</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__base_1acf2cd8b8f08c20a16691228e3592b05b" prot="public" virt="virtual"><scope>cmdline::parser::option_without_value</scope><name>~option_base</name></member>
+      <member refid="classcmdline_1_1parser_1_1option__without__value_1a61b419f94d8f49212eea2c86bb2520e7" prot="public" virt="non-virtual"><scope>cmdline::parser::option_without_value</scope><name>~option_without_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,202 @@
+\doxysection{Fasta\+Reader Class Reference}
+\hypertarget{classFastaReader}{}\label{classFastaReader}\index{FastaReader@{FastaReader}}
+
+
+{\ttfamily \+\#include $<$fastareader.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classFastaReader_a48a263b02899ebb8aab3104e1e408cf0}{Fasta\+Reader}} (string fasta\+File, bool force\+Upper\+Case=true)
+\item 
+\doxymbox{\hyperlink{classFastaReader_a3a9b0ceccecb2166f435cec2156e7ca9}{\texorpdfstring{$\sim$}{\string~}\+Fasta\+Reader}} ()
+\item 
+bool \doxymbox{\hyperlink{classFastaReader_ab8c9b6c280186f7ef9a0ccf7421be88a}{has\+Next}} ()
+\item 
+void \doxymbox{\hyperlink{classFastaReader_aaa0236f26b118fcab4c2657dfe75cd09}{read\+Next}} ()
+\item 
+void \doxymbox{\hyperlink{classFastaReader_ad8160b754d9cf1633d8564a2f7274b5d}{read\+All}} ()
+\item 
+string \doxymbox{\hyperlink{classFastaReader_afc5323ead9b9e33bec4e4b2a1f65512c}{current\+ID}} ()
+\item 
+string \doxymbox{\hyperlink{classFastaReader_a200d27dabac02489c306e0a5fdd5715c}{current\+Description}} ()
+\item 
+string \doxymbox{\hyperlink{classFastaReader_a47ace3df2b08bcfe8bc8b094c50763dc}{current\+Sequence}} ()
+\item 
+map$<$ string, string $>$ \& \doxymbox{\hyperlink{classFastaReader_a8bab5351912b538d8ec2e9cf749518c1}{contigs}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{classFastaReader_a98f1b983167352d50e446f2a8336cc57}{test}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{classFastaReader_a1eedba2fd6c9d5969f29c8f1dab89f2f}{m\+Current\+Sequence}}
+\item 
+string \doxymbox{\hyperlink{classFastaReader_a676f69f9b3650f3d5437e7ba2dc56144}{m\+Current\+ID}}
+\item 
+string \doxymbox{\hyperlink{classFastaReader_ab10489fd4121c16989d6515ae895c28e}{m\+Current\+Description}}
+\item 
+map$<$ string, string $>$ \doxymbox{\hyperlink{classFastaReader_aabc53d8d9dc0b945df182efc17e5dce2}{m\+All\+Contigs}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classFastaReader_a342d3cc5ae11a943a363b7acb1c5c430}{read\+Line}} ()
+\item 
+bool \doxymbox{\hyperlink{classFastaReader_a173bec12477e187f16c85e2c12ac1c5d}{end\+Of\+Line}} (char c)
+\item 
+void \doxymbox{\hyperlink{classFastaReader_a9491ffaa778516d7e94c1412442ce708}{set\+Fasta\+Sequence\+Id\+Description}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{classFastaReader_a7c7008d257b656684430dab2d1b91da1}{m\+Fasta\+File}}
+\item 
+ifstream \doxymbox{\hyperlink{classFastaReader_aa173b7ba95e64fe4db82f1a3820fadad}{m\+Fasta\+File\+Stream}}
+\item 
+bool \doxymbox{\hyperlink{classFastaReader_ae81d16a01f7dcff8bb4569329e37868f}{m\+Force\+Upper\+Case}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classFastaReader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFastaReader_a48a263b02899ebb8aab3104e1e408cf0}\index{FastaReader@{FastaReader}!FastaReader@{FastaReader}}
+\index{FastaReader@{FastaReader}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{FastaReader()}{FastaReader()}}
+{\footnotesize\ttfamily \label{classFastaReader_a48a263b02899ebb8aab3104e1e408cf0} 
+Fasta\+Reader::\+\+Fasta\+Reader (\begin{DoxyParamCaption}\item[{string}]{fasta\+File}{, }\item[{bool}]{force\+Upper\+Case}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastaReader_a3a9b0ceccecb2166f435cec2156e7ca9}\index{FastaReader@{FastaReader}!````~FastaReader@{\texorpdfstring{$\sim$}{\string~}FastaReader}}
+\index{````~FastaReader@{\texorpdfstring{$\sim$}{\string~}FastaReader}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FastaReader()}{\string~FastaReader()}}
+{\footnotesize\ttfamily \label{classFastaReader_a3a9b0ceccecb2166f435cec2156e7ca9} 
+Fasta\+Reader::\+\texorpdfstring{$\sim$}{\string~}\+Fasta\+Reader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classFastaReader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFastaReader_a8bab5351912b538d8ec2e9cf749518c1}\index{FastaReader@{FastaReader}!contigs@{contigs}}
+\index{contigs@{contigs}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{contigs()}{contigs()}}
+{\footnotesize\ttfamily \label{classFastaReader_a8bab5351912b538d8ec2e9cf749518c1} 
+map$<$ string, string $>$ \& Fasta\+Reader::\+contigs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classFastaReader_a200d27dabac02489c306e0a5fdd5715c}\index{FastaReader@{FastaReader}!currentDescription@{currentDescription}}
+\index{currentDescription@{currentDescription}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{currentDescription()}{currentDescription()}}
+{\footnotesize\ttfamily \label{classFastaReader_a200d27dabac02489c306e0a5fdd5715c} 
+string Fasta\+Reader::\+current\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classFastaReader_afc5323ead9b9e33bec4e4b2a1f65512c}\index{FastaReader@{FastaReader}!currentID@{currentID}}
+\index{currentID@{currentID}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{currentID()}{currentID()}}
+{\footnotesize\ttfamily \label{classFastaReader_afc5323ead9b9e33bec4e4b2a1f65512c} 
+string Fasta\+Reader::\+current\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classFastaReader_a47ace3df2b08bcfe8bc8b094c50763dc}\index{FastaReader@{FastaReader}!currentSequence@{currentSequence}}
+\index{currentSequence@{currentSequence}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{currentSequence()}{currentSequence()}}
+{\footnotesize\ttfamily \label{classFastaReader_a47ace3df2b08bcfe8bc8b094c50763dc} 
+string Fasta\+Reader::\+current\+Sequence (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classFastaReader_a173bec12477e187f16c85e2c12ac1c5d}\index{FastaReader@{FastaReader}!endOfLine@{endOfLine}}
+\index{endOfLine@{endOfLine}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{endOfLine()}{endOfLine()}}
+{\footnotesize\ttfamily \label{classFastaReader_a173bec12477e187f16c85e2c12ac1c5d} 
+bool Fasta\+Reader::\+end\+Of\+Line (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastaReader_ab8c9b6c280186f7ef9a0ccf7421be88a}\index{FastaReader@{FastaReader}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily \label{classFastaReader_ab8c9b6c280186f7ef9a0ccf7421be88a} 
+bool Fasta\+Reader::\+has\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastaReader_ad8160b754d9cf1633d8564a2f7274b5d}\index{FastaReader@{FastaReader}!readAll@{readAll}}
+\index{readAll@{readAll}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{readAll()}{readAll()}}
+{\footnotesize\ttfamily \label{classFastaReader_ad8160b754d9cf1633d8564a2f7274b5d} 
+void Fasta\+Reader::\+read\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastaReader_a342d3cc5ae11a943a363b7acb1c5c430}\index{FastaReader@{FastaReader}!readLine@{readLine}}
+\index{readLine@{readLine}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily \label{classFastaReader_a342d3cc5ae11a943a363b7acb1c5c430} 
+bool Fasta\+Reader::\+read\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastaReader_aaa0236f26b118fcab4c2657dfe75cd09}\index{FastaReader@{FastaReader}!readNext@{readNext}}
+\index{readNext@{readNext}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{readNext()}{readNext()}}
+{\footnotesize\ttfamily \label{classFastaReader_aaa0236f26b118fcab4c2657dfe75cd09} 
+void Fasta\+Reader::\+read\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastaReader_a9491ffaa778516d7e94c1412442ce708}\index{FastaReader@{FastaReader}!setFastaSequenceIdDescription@{setFastaSequenceIdDescription}}
+\index{setFastaSequenceIdDescription@{setFastaSequenceIdDescription}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{setFastaSequenceIdDescription()}{setFastaSequenceIdDescription()}}
+{\footnotesize\ttfamily \label{classFastaReader_a9491ffaa778516d7e94c1412442ce708} 
+void Fasta\+Reader::\+set\+Fasta\+Sequence\+Id\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastaReader_a98f1b983167352d50e446f2a8336cc57}\index{FastaReader@{FastaReader}!test@{test}}
+\index{test@{test}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classFastaReader_a98f1b983167352d50e446f2a8336cc57} 
+bool Fasta\+Reader::\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classFastaReader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classFastaReader_aabc53d8d9dc0b945df182efc17e5dce2}\index{FastaReader@{FastaReader}!mAllContigs@{mAllContigs}}
+\index{mAllContigs@{mAllContigs}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{mAllContigs}{mAllContigs}}
+{\footnotesize\ttfamily \label{classFastaReader_aabc53d8d9dc0b945df182efc17e5dce2} 
+map$<$string, string$>$ Fasta\+Reader::\+m\+All\+Contigs}
+
+\Hypertarget{classFastaReader_ab10489fd4121c16989d6515ae895c28e}\index{FastaReader@{FastaReader}!mCurrentDescription@{mCurrentDescription}}
+\index{mCurrentDescription@{mCurrentDescription}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{mCurrentDescription}{mCurrentDescription}}
+{\footnotesize\ttfamily \label{classFastaReader_ab10489fd4121c16989d6515ae895c28e} 
+string Fasta\+Reader::\+m\+Current\+Description}
+
+\Hypertarget{classFastaReader_a676f69f9b3650f3d5437e7ba2dc56144}\index{FastaReader@{FastaReader}!mCurrentID@{mCurrentID}}
+\index{mCurrentID@{mCurrentID}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{mCurrentID}{mCurrentID}}
+{\footnotesize\ttfamily \label{classFastaReader_a676f69f9b3650f3d5437e7ba2dc56144} 
+string Fasta\+Reader::\+m\+Current\+ID}
+
+\Hypertarget{classFastaReader_a1eedba2fd6c9d5969f29c8f1dab89f2f}\index{FastaReader@{FastaReader}!mCurrentSequence@{mCurrentSequence}}
+\index{mCurrentSequence@{mCurrentSequence}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{mCurrentSequence}{mCurrentSequence}}
+{\footnotesize\ttfamily \label{classFastaReader_a1eedba2fd6c9d5969f29c8f1dab89f2f} 
+string Fasta\+Reader::\+m\+Current\+Sequence}
+
+\Hypertarget{classFastaReader_a7c7008d257b656684430dab2d1b91da1}\index{FastaReader@{FastaReader}!mFastaFile@{mFastaFile}}
+\index{mFastaFile@{mFastaFile}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{mFastaFile}{mFastaFile}}
+{\footnotesize\ttfamily \label{classFastaReader_a7c7008d257b656684430dab2d1b91da1} 
+string Fasta\+Reader::\+m\+Fasta\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastaReader_aa173b7ba95e64fe4db82f1a3820fadad}\index{FastaReader@{FastaReader}!mFastaFileStream@{mFastaFileStream}}
+\index{mFastaFileStream@{mFastaFileStream}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{mFastaFileStream}{mFastaFileStream}}
+{\footnotesize\ttfamily \label{classFastaReader_aa173b7ba95e64fe4db82f1a3820fadad} 
+ifstream Fasta\+Reader::\+m\+Fasta\+File\+Stream\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastaReader_ae81d16a01f7dcff8bb4569329e37868f}\index{FastaReader@{FastaReader}!mForceUpperCase@{mForceUpperCase}}
+\index{mForceUpperCase@{mForceUpperCase}!FastaReader@{FastaReader}}
+\doxysubsubsection{\texorpdfstring{mForceUpperCase}{mForceUpperCase}}
+{\footnotesize\ttfamily \label{classFastaReader_ae81d16a01f7dcff8bb4569329e37868f} 
+bool Fasta\+Reader::\+m\+Force\+Upper\+Case\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{fastareader_8h}{fastareader.\+h}}\item 
+src/\+\doxymbox{\hyperlink{fastareader_8cpp}{fastareader.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classUMIOptions" kind="class" language="C++" prot="public">
+    <compoundname>UMIOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUMIOptions_1afe51e2ca09bc468fdfa6b4550f1f8647" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UMIOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>UMIOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="114" column="10" bodyfile="src/options.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUMIOptions_1afd3f5d26a76730b0b3aadff907efd7a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UMIOptions::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <qualifiedname>UMIOptions::location</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="115" column="9" bodyfile="src/options.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUMIOptions_1acfd5ea79dcafa9108c7b5b2ba753dd0b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UMIOptions::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>UMIOptions::length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="116" column="9" bodyfile="src/options.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUMIOptions_1a7c463475fa8acc3a283c2e08de89234f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UMIOptions::skip</definition>
+        <argsstring></argsstring>
+        <name>skip</name>
+        <qualifiedname>UMIOptions::skip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="117" column="9" bodyfile="src/options.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUMIOptions_1a04629451686a5b4a5e43a761de6a6e6e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UMIOptions::prefix</definition>
+        <argsstring></argsstring>
+        <name>prefix</name>
+        <qualifiedname>UMIOptions::prefix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="118" column="12" bodyfile="src/options.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUMIOptions_1aa52875362e8ea1ab8a7436be3070eddd" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UMIOptions::separator</definition>
+        <argsstring></argsstring>
+        <name>separator</name>
+        <qualifiedname>UMIOptions::separator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="119" column="12" bodyfile="src/options.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUMIOptions_1a752d0fda7963b9875b2bf179a4170da4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string UMIOptions::delimiter</definition>
+        <argsstring></argsstring>
+        <name>delimiter</name>
+        <qualifiedname>UMIOptions::delimiter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="120" column="12" bodyfile="src/options.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUMIOptions_1a2ed315ff07cf2d6de053c588593468ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UMIOptions::UMIOptions</definition>
+        <argsstring>()</argsstring>
+        <name>UMIOptions</name>
+        <qualifiedname>UMIOptions::UMIOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="106" column="5" bodyfile="src/options.h" bodystart="106" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="104" column="1" bodyfile="src/options.h" bodystart="104" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classUMIOptions_1a752d0fda7963b9875b2bf179a4170da4" prot="public" virt="non-virtual"><scope>UMIOptions</scope><name>delimiter</name></member>
+      <member refid="classUMIOptions_1afe51e2ca09bc468fdfa6b4550f1f8647" prot="public" virt="non-virtual"><scope>UMIOptions</scope><name>enabled</name></member>
+      <member refid="classUMIOptions_1acfd5ea79dcafa9108c7b5b2ba753dd0b" prot="public" virt="non-virtual"><scope>UMIOptions</scope><name>length</name></member>
+      <member refid="classUMIOptions_1afd3f5d26a76730b0b3aadff907efd7a9" prot="public" virt="non-virtual"><scope>UMIOptions</scope><name>location</name></member>
+      <member refid="classUMIOptions_1a04629451686a5b4a5e43a761de6a6e6e" prot="public" virt="non-virtual"><scope>UMIOptions</scope><name>prefix</name></member>
+      <member refid="classUMIOptions_1aa52875362e8ea1ab8a7436be3070eddd" prot="public" virt="non-virtual"><scope>UMIOptions</scope><name>separator</name></member>
+      <member refid="classUMIOptions_1a7c463475fa8acc3a283c2e08de89234f" prot="public" virt="non-virtual"><scope>UMIOptions</scope><name>skip</name></member>
+      <member refid="classUMIOptions_1a2ed315ff07cf2d6de053c588593468ca" prot="public" virt="non-virtual"><scope>UMIOptions</scope><name>UMIOptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

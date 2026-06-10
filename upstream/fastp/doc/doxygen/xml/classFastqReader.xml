@@ -1,0 +1,819 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFastqReader" kind="class" language="C++" prot="public">
+    <compoundname>FastqReader</compoundname>
+    <includes refid="fastqreader_8h" local="no">fastqreader.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFastqReader_1af8656352f2c2d144abaf4cb099846e71" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string FastqReader::mFilename</definition>
+        <argsstring></argsstring>
+        <name>mFilename</name>
+        <qualifiedname>FastqReader::mFilename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="69" column="8" bodyfile="src/fastqreader.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a4e6ecc9cc21aa161e6716a20813b28b9" prot="private" static="no" mutable="no">
+        <type>struct isal_gzip_header</type>
+        <definition>struct isal_gzip_header FastqReader::mGzipHeader</definition>
+        <argsstring></argsstring>
+        <name>mGzipHeader</name>
+        <qualifiedname>FastqReader::mGzipHeader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="70" column="23" bodyfile="src/fastqreader.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a491970fddf50538bf7be541c1fb08dd6" prot="private" static="no" mutable="no">
+        <type>struct inflate_state</type>
+        <definition>struct inflate_state FastqReader::mGzipState</definition>
+        <argsstring></argsstring>
+        <name>mGzipState</name>
+        <qualifiedname>FastqReader::mGzipState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="71" column="20" bodyfile="src/fastqreader.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a24936a036db4f79debdb3ce8b9552254" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* FastqReader::mGzipInputBuffer</definition>
+        <argsstring></argsstring>
+        <name>mGzipInputBuffer</name>
+        <qualifiedname>FastqReader::mGzipInputBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="72" column="15" bodyfile="src/fastqreader.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a2081bb86b38f4db8bb89ee4acacf80a1" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* FastqReader::mGzipOutputBuffer</definition>
+        <argsstring></argsstring>
+        <name>mGzipOutputBuffer</name>
+        <qualifiedname>FastqReader::mGzipOutputBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="73" column="15" bodyfile="src/fastqreader.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1ab3f44f41efe72408aec395c6c74a71f6" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t FastqReader::mGzipInputBufferSize</definition>
+        <argsstring></argsstring>
+        <name>mGzipInputBufferSize</name>
+        <qualifiedname>FastqReader::mGzipInputBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="74" column="8" bodyfile="src/fastqreader.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a322526ec8d29259b52127f5ece4ed210" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t FastqReader::mGzipOutputBufferSize</definition>
+        <argsstring></argsstring>
+        <name>mGzipOutputBufferSize</name>
+        <qualifiedname>FastqReader::mGzipOutputBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="75" column="8" bodyfile="src/fastqreader.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a799bfdc81c1a0a6eeee31af6cdeafaa0" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t FastqReader::mGzipInputUsedBytes</definition>
+        <argsstring></argsstring>
+        <name>mGzipInputUsedBytes</name>
+        <qualifiedname>FastqReader::mGzipInputUsedBytes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="76" column="8" bodyfile="src/fastqreader.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1acd50c082a58bb3baad2404b5e11aae62" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* FastqReader::mFile</definition>
+        <argsstring></argsstring>
+        <name>mFile</name>
+        <qualifiedname>FastqReader::mFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="77" column="6" bodyfile="src/fastqreader.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1ab0d9c71ad69be6c4001edc72ec92adb4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FastqReader::mZipped</definition>
+        <argsstring></argsstring>
+        <name>mZipped</name>
+        <qualifiedname>FastqReader::mZipped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="78" column="6" bodyfile="src/fastqreader.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a96330d7f066c5d43c9e82d5949c0b25e" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* FastqReader::mFastqBuf</definition>
+        <argsstring></argsstring>
+        <name>mFastqBuf</name>
+        <qualifiedname>FastqReader::mFastqBuf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="79" column="6" bodyfile="src/fastqreader.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1abe7211fec5453dc692eccda129632090" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FastqReader::mBufDataLen</definition>
+        <argsstring></argsstring>
+        <name>mBufDataLen</name>
+        <qualifiedname>FastqReader::mBufDataLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="80" column="5" bodyfile="src/fastqreader.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a1a3c0ed8cb9aded521ab2669323968fa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FastqReader::mBufUsedLen</definition>
+        <argsstring></argsstring>
+        <name>mBufUsedLen</name>
+        <qualifiedname>FastqReader::mBufUsedLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="81" column="5" bodyfile="src/fastqreader.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1aa327b1c88c0af352611095b33b691934" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FastqReader::mStdinMode</definition>
+        <argsstring></argsstring>
+        <name>mStdinMode</name>
+        <qualifiedname>FastqReader::mStdinMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="82" column="6" bodyfile="src/fastqreader.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a13bd156a89835d095ca7a65d4b00c74c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FastqReader::mHasNoLineBreakAtEnd</definition>
+        <argsstring></argsstring>
+        <name>mHasNoLineBreakAtEnd</name>
+        <qualifiedname>FastqReader::mHasNoLineBreakAtEnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="83" column="6" bodyfile="src/fastqreader.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1ad7c5c05c32d381d1d2eb8f85810a53cd" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FastqReader::mCounter</definition>
+        <argsstring></argsstring>
+        <name>mCounter</name>
+        <qualifiedname>FastqReader::mCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="84" column="6" bodyfile="src/fastqreader.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a2bff55a0d3ba7813bd4351a61460139a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FastqReader::mHasQuality</definition>
+        <argsstring></argsstring>
+        <name>mHasQuality</name>
+        <qualifiedname>FastqReader::mHasQuality</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="85" column="6" bodyfile="src/fastqreader.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1afeb44e4b170e17667c2ea85e7e0bbf65" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FastqReader::mPhred64</definition>
+        <argsstring></argsstring>
+        <name>mPhred64</name>
+        <qualifiedname>FastqReader::mPhred64</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="86" column="6" bodyfile="src/fastqreader.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1ab28f2aafd4425e9281471ae2b009819a" prot="private" static="no" mutable="no">
+        <type><ref refid="classReadPool" kindref="compound">ReadPool</ref> *</type>
+        <definition>ReadPool* FastqReader::mReadPool</definition>
+        <argsstring></argsstring>
+        <name>mReadPool</name>
+        <qualifiedname>FastqReader::mReadPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="87" column="14" bodyfile="src/fastqreader.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1a107cf2d91b4790f85f3ee20d91331814" prot="private" static="no" mutable="no">
+        <type><ref refid="classBgzfMtReader" kindref="compound">BgzfMtReader</ref> *</type>
+        <definition>BgzfMtReader* FastqReader::mBgzfReader</definition>
+        <argsstring></argsstring>
+        <name>mBgzfReader</name>
+        <qualifiedname>FastqReader::mBgzfReader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="88" column="18" bodyfile="src/fastqreader.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastqReader_1ab6196eb35e7ed144d91504ca86828f5c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FastqReader::mBgzfThreadBudget</definition>
+        <argsstring></argsstring>
+        <name>mBgzfThreadBudget</name>
+        <qualifiedname>FastqReader::mBgzfThreadBudget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="89" column="9" bodyfile="src/fastqreader.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFastqReader_1ad66dd751b21fb620edf740ebe7630030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FastqReader::FastqReader</definition>
+        <argsstring>(string filename, bool hasQuality=true, bool phred64=false, int bgzfThreadBudget=0)</argsstring>
+        <name>FastqReader</name>
+        <qualifiedname>FastqReader::FastqReader</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hasQuality</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>phred64</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bgzfThreadBudget</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="41" column="1" bodyfile="src/fastqreader.cpp" bodystart="35" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a03b456c40b1d3812a0ba33b4aebca742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FastqReader::~FastqReader</definition>
+        <argsstring>()</argsstring>
+        <name>~FastqReader</name>
+        <qualifiedname>FastqReader::~FastqReader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="42" column="1" bodyfile="src/fastqreader.cpp" bodystart="59" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1acedea5984b2f935a4f8761c52fe22cb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastqReader::isZipped</definition>
+        <argsstring>()</argsstring>
+        <name>isZipped</name>
+        <qualifiedname>FastqReader::isZipped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="43" column="6" bodyfile="src/fastqreader.cpp" bodystart="403" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a29389d766ea9469b6c4b218ebfaa69ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReader::getBytes</definition>
+        <argsstring>(size_t &amp;bytesRead, size_t &amp;bytesTotal)</argsstring>
+        <name>getBytes</name>
+        <qualifiedname>FastqReader::getBytes</qualifiedname>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>bytesRead</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>bytesTotal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="45" column="6" bodyfile="src/fastqreader.cpp" bodystart="211" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1aa1f6ab000136c41ccc2742cf868c63ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+        <definition>Read * FastqReader::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <qualifiedname>FastqReader::read</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="49" column="6" bodyfile="src/fastqreader.cpp" bodystart="309" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a98b833419659676aa7b7879064f02298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastqReader::eof</definition>
+        <argsstring>()</argsstring>
+        <name>eof</name>
+        <qualifiedname>FastqReader::eof</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="50" column="6" bodyfile="src/fastqreader.cpp" bodystart="236" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a9ec4409d4650914355211ffdfd2743ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastqReader::hasNoLineBreakAtEnd</definition>
+        <argsstring>()</argsstring>
+        <name>hasNoLineBreakAtEnd</name>
+        <qualifiedname>FastqReader::hasNoLineBreakAtEnd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="51" column="6" bodyfile="src/fastqreader.cpp" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1ac54ab418871f43fcf1ee6e9df3b379b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReader::setReadPool</definition>
+        <argsstring>(ReadPool *rp)</argsstring>
+        <name>setReadPool</name>
+        <qualifiedname>FastqReader::setReadPool</qualifiedname>
+        <param>
+          <type><ref refid="classReadPool" kindref="compound">ReadPool</ref> *</type>
+          <declname>rp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="52" column="6" bodyfile="src/fastqreader.cpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFastqReader_1aa12eacb47c5f8c33d5f9ec15c6f388a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastqReader::isZipFastq</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>isZipFastq</name>
+        <qualifiedname>FastqReader::isZipFastq</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="55" column="13" bodyfile="src/fastqreader.cpp" bodystart="377" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a72f7ab27aa46c790511a678e1e7edb9e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastqReader::isFastq</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>isFastq</name>
+        <qualifiedname>FastqReader::isFastq</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="56" column="13" bodyfile="src/fastqreader.cpp" bodystart="390" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a4cc85ccb0051670299b7d8159c280c44" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastqReader::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>FastqReader::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="57" column="13" bodyfile="src/fastqreader.cpp" bodystart="407" bodyend="425"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFastqReader_1aa85324f220cf65b609c1663463eee8c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReader::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>FastqReader::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="60" column="6" bodyfile="src/fastqreader.cpp" bodystart="169" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1ab63f52842ba18259f00042e18436b1f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReader::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>FastqReader::close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="61" column="6" bodyfile="src/fastqreader.cpp" bodystart="370" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1ada9a13204386a15dc886eae857dd4738" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReader::getLine</definition>
+        <argsstring>(string *line)</argsstring>
+        <name>getLine</name>
+        <qualifiedname>FastqReader::getLine</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="62" column="6" bodyfile="src/fastqreader.cpp" bodystart="240" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a0d4409aaed2981bab34d8888102c2426" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReader::clearLineBreaks</definition>
+        <argsstring>(char *line)</argsstring>
+        <name>clearLineBreaks</name>
+        <qualifiedname>FastqReader::clearLineBreaks</qualifiedname>
+        <param>
+          <type>char *</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="63" column="6" bodyfile="src/fastqreader.cpp" bodystart="223" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a0c029e28dd3a62e49717fa2d6a05bcae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReader::readToBuf</definition>
+        <argsstring>()</argsstring>
+        <name>readToBuf</name>
+        <qualifiedname>FastqReader::readToBuf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="64" column="6" bodyfile="src/fastqreader.cpp" bodystart="151" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1a9df0941ba8f95d1578d7874cce7598d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastqReader::readToBufIgzip</definition>
+        <argsstring>()</argsstring>
+        <name>readToBufIgzip</name>
+        <qualifiedname>FastqReader::readToBufIgzip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="65" column="6" bodyfile="src/fastqreader.cpp" bodystart="88" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastqReader_1aeec9c64e4e7bc9af6a60f407d069451b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastqReader::bufferFinished</definition>
+        <argsstring>()</argsstring>
+        <name>bufferFinished</name>
+        <qualifiedname>FastqReader::bufferFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastqreader.h" line="66" column="6" bodyfile="src/fastqreader.cpp" bodystart="78" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="22">
+        <label>BgzfMtReader</label>
+        <link refid="classBgzfMtReader"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>mSlots</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>BgzfMtReader::Slot</label>
+        <link refid="structBgzfMtReader_1_1Slot"/>
+      </node>
+      <node id="10">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="17">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="1">
+        <label>FastqReader</label>
+        <link refid="classFastqReader"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mReadPool</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mBgzfReader</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="20">
+        <label>LockFreeListItem&lt; Read * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="18">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="3">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="13">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="9">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="5">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="21">
+        <label>Read</label>
+        <link refid="classRead"/>
+      </node>
+      <node id="6">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="2">
+        <label>ReadPool</label>
+        <link refid="classReadPool"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mBufferLists</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>SingleProducerSingleConsumerList&lt; Read * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="4">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="11">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/fastqreader.h" line="39" column="1" bodyfile="src/fastqreader.h" bodystart="39" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classFastqReader_1aeec9c64e4e7bc9af6a60f407d069451b" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>bufferFinished</name></member>
+      <member refid="classFastqReader_1a0d4409aaed2981bab34d8888102c2426" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>clearLineBreaks</name></member>
+      <member refid="classFastqReader_1ab63f52842ba18259f00042e18436b1f9" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>close</name></member>
+      <member refid="classFastqReader_1a98b833419659676aa7b7879064f02298" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>eof</name></member>
+      <member refid="classFastqReader_1ad66dd751b21fb620edf740ebe7630030" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>FastqReader</name></member>
+      <member refid="classFastqReader_1a29389d766ea9469b6c4b218ebfaa69ef" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>getBytes</name></member>
+      <member refid="classFastqReader_1ada9a13204386a15dc886eae857dd4738" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>getLine</name></member>
+      <member refid="classFastqReader_1a9ec4409d4650914355211ffdfd2743ab" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>hasNoLineBreakAtEnd</name></member>
+      <member refid="classFastqReader_1aa85324f220cf65b609c1663463eee8c3" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>init</name></member>
+      <member refid="classFastqReader_1a72f7ab27aa46c790511a678e1e7edb9e" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>isFastq</name></member>
+      <member refid="classFastqReader_1aa12eacb47c5f8c33d5f9ec15c6f388a1" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>isZipFastq</name></member>
+      <member refid="classFastqReader_1acedea5984b2f935a4f8761c52fe22cb4" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>isZipped</name></member>
+      <member refid="classFastqReader_1a107cf2d91b4790f85f3ee20d91331814" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mBgzfReader</name></member>
+      <member refid="classFastqReader_1ab6196eb35e7ed144d91504ca86828f5c" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mBgzfThreadBudget</name></member>
+      <member refid="classFastqReader_1abe7211fec5453dc692eccda129632090" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mBufDataLen</name></member>
+      <member refid="classFastqReader_1a1a3c0ed8cb9aded521ab2669323968fa" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mBufUsedLen</name></member>
+      <member refid="classFastqReader_1ad7c5c05c32d381d1d2eb8f85810a53cd" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mCounter</name></member>
+      <member refid="classFastqReader_1a96330d7f066c5d43c9e82d5949c0b25e" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mFastqBuf</name></member>
+      <member refid="classFastqReader_1acd50c082a58bb3baad2404b5e11aae62" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mFile</name></member>
+      <member refid="classFastqReader_1af8656352f2c2d144abaf4cb099846e71" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mFilename</name></member>
+      <member refid="classFastqReader_1a4e6ecc9cc21aa161e6716a20813b28b9" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mGzipHeader</name></member>
+      <member refid="classFastqReader_1a24936a036db4f79debdb3ce8b9552254" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mGzipInputBuffer</name></member>
+      <member refid="classFastqReader_1ab3f44f41efe72408aec395c6c74a71f6" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mGzipInputBufferSize</name></member>
+      <member refid="classFastqReader_1a799bfdc81c1a0a6eeee31af6cdeafaa0" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mGzipInputUsedBytes</name></member>
+      <member refid="classFastqReader_1a2081bb86b38f4db8bb89ee4acacf80a1" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mGzipOutputBuffer</name></member>
+      <member refid="classFastqReader_1a322526ec8d29259b52127f5ece4ed210" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mGzipOutputBufferSize</name></member>
+      <member refid="classFastqReader_1a491970fddf50538bf7be541c1fb08dd6" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mGzipState</name></member>
+      <member refid="classFastqReader_1a13bd156a89835d095ca7a65d4b00c74c" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mHasNoLineBreakAtEnd</name></member>
+      <member refid="classFastqReader_1a2bff55a0d3ba7813bd4351a61460139a" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mHasQuality</name></member>
+      <member refid="classFastqReader_1afeb44e4b170e17667c2ea85e7e0bbf65" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mPhred64</name></member>
+      <member refid="classFastqReader_1ab28f2aafd4425e9281471ae2b009819a" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mReadPool</name></member>
+      <member refid="classFastqReader_1aa327b1c88c0af352611095b33b691934" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mStdinMode</name></member>
+      <member refid="classFastqReader_1ab0d9c71ad69be6c4001edc72ec92adb4" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>mZipped</name></member>
+      <member refid="classFastqReader_1aa1f6ab000136c41ccc2742cf868c63ea" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>read</name></member>
+      <member refid="classFastqReader_1a0c029e28dd3a62e49717fa2d6a05bcae" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>readToBuf</name></member>
+      <member refid="classFastqReader_1a9df0941ba8f95d1578d7874cce7598d4" prot="private" virt="non-virtual"><scope>FastqReader</scope><name>readToBufIgzip</name></member>
+      <member refid="classFastqReader_1ac54ab418871f43fcf1ee6e9df3b379b4" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>setReadPool</name></member>
+      <member refid="classFastqReader_1a4cc85ccb0051670299b7d8159c280c44" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>test</name></member>
+      <member refid="classFastqReader_1a03b456c40b1d3812a0ba33b4aebca742" prot="public" virt="non-virtual"><scope>FastqReader</scope><name>~FastqReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

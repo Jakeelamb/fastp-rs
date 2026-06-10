@@ -1,0 +1,880 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFilterResult" kind="class" language="C++" prot="public">
+    <compoundname>FilterResult</compoundname>
+    <includes refid="filterresult_8h" local="no">filterresult.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFilterResult_1a53e26f678366a58e63bf1c6a26233a5b" prot="public" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* FilterResult::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>FilterResult::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="67" column="13" bodyfile="src/filterresult.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1a836e46d016ce976bb1cd176ad1c801cc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FilterResult::mPaired</definition>
+        <argsstring></argsstring>
+        <name>mPaired</name>
+        <qualifiedname>FilterResult::mPaired</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="68" column="10" bodyfile="src/filterresult.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1aac97834fb2c1aafeb21f892308d1f1cd" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterResult::mCorrectedReads</definition>
+        <argsstring></argsstring>
+        <name>mCorrectedReads</name>
+        <qualifiedname>FilterResult::mCorrectedReads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="69" column="10" bodyfile="src/filterresult.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1a20367cc8aeb8d9277c27b8042a769efe" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterResult::mMergedPairs</definition>
+        <argsstring></argsstring>
+        <name>mMergedPairs</name>
+        <qualifiedname>FilterResult::mMergedPairs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="70" column="10" bodyfile="src/filterresult.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFilterResult_1abc7eac664d2db4344f0f43780ae83dfc" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterResult::mFilterReadStats[FILTER_RESULT_TYPES]</definition>
+        <argsstring>[FILTER_RESULT_TYPES]</argsstring>
+        <name>mFilterReadStats</name>
+        <qualifiedname>FilterResult::mFilterReadStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="72" column="10" bodyfile="src/filterresult.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1acb87da988a13347fede28b4f6e8a6631" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterResult::mTrimmedAdapterRead</definition>
+        <argsstring></argsstring>
+        <name>mTrimmedAdapterRead</name>
+        <qualifiedname>FilterResult::mTrimmedAdapterRead</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="73" column="10" bodyfile="src/filterresult.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1a1c4654907465bf9556468c9d4173a9ad" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterResult::mTrimmedAdapterBases</definition>
+        <argsstring></argsstring>
+        <name>mTrimmedAdapterBases</name>
+        <qualifiedname>FilterResult::mTrimmedAdapterBases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="74" column="10" bodyfile="src/filterresult.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1a90a3c443823ed77502aae2c66cbfd981" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterResult::mTrimmedPolyXReads[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>mTrimmedPolyXReads</name>
+        <qualifiedname>FilterResult::mTrimmedPolyXReads</qualifiedname>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="75" column="10" bodyfile="src/filterresult.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1aac7bb94eb2fd45898d7076763cc1dc29" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterResult::mTrimmedPolyXBases[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>mTrimmedPolyXBases</name>
+        <qualifiedname>FilterResult::mTrimmedPolyXBases</qualifiedname>
+        <initializer>= {0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="76" column="10" bodyfile="src/filterresult.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1a24bb048d16563b26f7ddfc9f1b66c07a" prot="private" static="no" mutable="no">
+        <type>map&lt; string, long, <ref refid="structclasscomp" kindref="compound">classcomp</ref> &gt;</type>
+        <definition>map&lt;string, long, classcomp&gt; FilterResult::mAdapter1</definition>
+        <argsstring></argsstring>
+        <name>mAdapter1</name>
+        <qualifiedname>FilterResult::mAdapter1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="77" column="9" bodyfile="src/filterresult.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1ab55e7674ffe335b5eb1474824bc784fe" prot="private" static="no" mutable="no">
+        <type>map&lt; string, long, <ref refid="structclasscomp" kindref="compound">classcomp</ref> &gt;</type>
+        <definition>map&lt;string, long, classcomp&gt; FilterResult::mAdapter2</definition>
+        <argsstring></argsstring>
+        <name>mAdapter2</name>
+        <qualifiedname>FilterResult::mAdapter2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="78" column="9" bodyfile="src/filterresult.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFilterResult_1afa868fd1ec214658e632b4710acf751c" prot="private" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* FilterResult::mCorrectionMatrix</definition>
+        <argsstring></argsstring>
+        <name>mCorrectionMatrix</name>
+        <qualifiedname>FilterResult::mCorrectionMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="79" column="10" bodyfile="src/filterresult.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFilterResult_1a92d995409da24d975aad26920359b75e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterResult::FilterResult</definition>
+        <argsstring>(Options *opt, bool paired=false)</argsstring>
+        <name>FilterResult</name>
+        <qualifiedname>FilterResult::FilterResult</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>paired</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="29" column="5" bodyfile="src/filterresult.cpp" bodystart="10" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a221e6a4a14fc08f26739afae4c90c704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterResult::~FilterResult</definition>
+        <argsstring>()</argsstring>
+        <name>~FilterResult</name>
+        <qualifiedname>FilterResult::~FilterResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="30" column="5" bodyfile="src/filterresult.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a2903b8e2195ce50c32af8f71b4b96ad6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long *</type>
+        <definition>long * FilterResult::getFilterReadStats</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterReadStats</name>
+        <qualifiedname>FilterResult::getFilterReadStats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="31" column="17" bodyfile="src/filterresult.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a87e955596f77005d6391e8ff8c369728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::addFilterResult</definition>
+        <argsstring>(int result, int readNum=1)</argsstring>
+        <name>addFilterResult</name>
+        <qualifiedname>FilterResult::addFilterResult</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>readNum</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="32" column="10" bodyfile="src/filterresult.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1abf426bfeef2d6492806b7f0f3a7af361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>FilterResult::print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="34" column="10" bodyfile="src/filterresult.cpp" bodystart="208" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a1ce9566d7f147c39bed2b41855d08a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::addAdapterTrimmed</definition>
+        <argsstring>(string adapter, bool isR2=false)</argsstring>
+        <name>addAdapterTrimmed</name>
+        <qualifiedname>FilterResult::addAdapterTrimmed</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isR2</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="36" column="10" bodyfile="src/filterresult.cpp" bodystart="124" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a9bdc24a5674eeb2a4b510f4e6c437df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::addAdapterTrimmed</definition>
+        <argsstring>(string adapter1, string adapter2)</argsstring>
+        <name>addAdapterTrimmed</name>
+        <qualifiedname>FilterResult::addAdapterTrimmed</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>adapter1</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>adapter2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="38" column="10" bodyfile="src/filterresult.cpp" bodystart="153" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1af565125bb743001aca21b2e7ba5db33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::incTrimmedAdapterRead</definition>
+        <argsstring>(int count=1)</argsstring>
+        <name>incTrimmedAdapterRead</name>
+        <qualifiedname>FilterResult::incTrimmedAdapterRead</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="39" column="10" bodyfile="src/filterresult.cpp" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a9d38f6b1f8bcd73936d394e5f40b41b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::addPolyXTrimmed</definition>
+        <argsstring>(int base, int length)</argsstring>
+        <name>addPolyXTrimmed</name>
+        <qualifiedname>FilterResult::addPolyXTrimmed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="40" column="10" bodyfile="src/filterresult.cpp" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a44d2e2fcb2b3b466cb7d84ce8869f320" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long FilterResult::getTotalPolyXTrimmedReads</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalPolyXTrimmedReads</name>
+        <qualifiedname>FilterResult::getTotalPolyXTrimmedReads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="41" column="10" bodyfile="src/filterresult.cpp" bodystart="191" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a9a5f3c8ba9c5016fc0e2d35ed7428367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long FilterResult::getTotalPolyXTrimmedBases</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalPolyXTrimmedBases</name>
+        <qualifiedname>FilterResult::getTotalPolyXTrimmedBases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="42" column="10" bodyfile="src/filterresult.cpp" bodystart="198" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1aae598e4ec5ec03ab47a9cbff09a514ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::reportJson</definition>
+        <argsstring>(ofstream &amp;ofs, string padding)</argsstring>
+        <name>reportJson</name>
+        <qualifiedname>FilterResult::reportJson</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>padding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="44" column="10" bodyfile="src/filterresult.cpp" bodystart="235" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1ae60e6572d088ab0d7c51139ee043e975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::reportAdapterJson</definition>
+        <argsstring>(ofstream &amp;ofs, string padding)</argsstring>
+        <name>reportAdapterJson</name>
+        <qualifiedname>FilterResult::reportAdapterJson</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>padding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="46" column="10" bodyfile="src/filterresult.cpp" bodystart="292" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1aca6caa036703490eba4339563efdc3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::reportPolyXTrimJson</definition>
+        <argsstring>(ofstream &amp;ofs, string padding)</argsstring>
+        <name>reportPolyXTrimJson</name>
+        <qualifiedname>FilterResult::reportPolyXTrimJson</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>padding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="48" column="10" bodyfile="src/filterresult.cpp" bodystart="329" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1ad91b0434cbf8a6b172234b2857310c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::reportHtml</definition>
+        <argsstring>(ofstream &amp;ofs, long totalReads, long totalBases)</argsstring>
+        <name>reportHtml</name>
+        <qualifiedname>FilterResult::reportHtml</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>totalReads</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>totalBases</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="50" column="10" bodyfile="src/filterresult.cpp" bodystart="358" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1ac2bbd2ce4d497f825502e10f307ec508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::reportAdapterHtml</definition>
+        <argsstring>(ofstream &amp;ofs, long totalBases)</argsstring>
+        <name>reportAdapterHtml</name>
+        <qualifiedname>FilterResult::reportAdapterHtml</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>totalBases</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="52" column="10" bodyfile="src/filterresult.cpp" bodystart="380" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a87538fd823083a53f21a340361926b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::outputAdaptersJson</definition>
+        <argsstring>(ofstream &amp;ofs, map&lt; string, long, classcomp &gt; &amp;adapterCounts)</argsstring>
+        <name>outputAdaptersJson</name>
+        <qualifiedname>FilterResult::outputAdaptersJson</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>map&lt; string, long, <ref refid="structclasscomp" kindref="compound">classcomp</ref> &gt; &amp;</type>
+          <declname>adapterCounts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="53" column="10" bodyfile="src/filterresult.cpp" bodystart="255" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a932889edff76dd1b462abe039aa92ec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FilterResult::outputAdaptersHtml</definition>
+        <argsstring>(ofstream &amp;ofs, map&lt; string, long, classcomp &gt; &amp;adapterCounts, long totalBases, int limitCount=0)</argsstring>
+        <name>outputAdaptersHtml</name>
+        <qualifiedname>FilterResult::outputAdaptersHtml</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>map&lt; string, long, <ref refid="structclasscomp" kindref="compound">classcomp</ref> &gt; &amp;</type>
+          <declname>adapterCounts</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>totalBases</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limitCount</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="54" column="9" bodyfile="src/filterresult.cpp" bodystart="423" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a5bdbb58bbd5e80bf4d4c13f10e232e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FilterResult::getAdapterReportCount</definition>
+        <argsstring>(map&lt; string, long, classcomp &gt; &amp;adapterCounts)</argsstring>
+        <name>getAdapterReportCount</name>
+        <qualifiedname>FilterResult::getAdapterReportCount</qualifiedname>
+        <param>
+          <type>map&lt; string, long, <ref refid="structclasscomp" kindref="compound">classcomp</ref> &gt; &amp;</type>
+          <declname>adapterCounts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="55" column="9" bodyfile="src/filterresult.cpp" bodystart="402" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a68cbaba8bf040f6e95ff142a891eefd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long *</type>
+        <definition>long * FilterResult::getCorrectionMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getCorrectionMatrix</name>
+        <qualifiedname>FilterResult::getCorrectionMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="57" column="10" bodyfile="src/filterresult.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a96240aa94f778be5075eaa528909fa7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long FilterResult::getTotalCorrectedBases</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalCorrectedBases</name>
+        <qualifiedname>FilterResult::getTotalCorrectedBases</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="58" column="10" bodyfile="src/filterresult.cpp" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a8a8a1dbd29265cbb665b712251776cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::addCorrection</definition>
+        <argsstring>(char from, char to)</argsstring>
+        <name>addCorrection</name>
+        <qualifiedname>FilterResult::addCorrection</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="59" column="10" bodyfile="src/filterresult.cpp" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a2242b4ebcbf313d520731f0bae18cf1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long FilterResult::getCorrectionNum</definition>
+        <argsstring>(char from, char to)</argsstring>
+        <name>getCorrectionNum</name>
+        <qualifiedname>FilterResult::getCorrectionNum</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="60" column="10" bodyfile="src/filterresult.cpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a70f898331df6ee78053be71285036282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::incCorrectedReads</definition>
+        <argsstring>(int count)</argsstring>
+        <name>incCorrectedReads</name>
+        <qualifiedname>FilterResult::incCorrectedReads</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="61" column="10" bodyfile="src/filterresult.cpp" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1af32e0889edf3fd337c18d8d1536dfbb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterResult::addMergedPairs</definition>
+        <argsstring>(int pairs)</argsstring>
+        <name>addMergedPairs</name>
+        <qualifiedname>FilterResult::addMergedPairs</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>pairs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="62" column="10" bodyfile="src/filterresult.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classFilterResult_1a4da19ff8d0e242da3b8a2b7630735576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FilterResult::isLowComplexity</definition>
+        <argsstring>(string &amp;adapter)</argsstring>
+        <name>isLowComplexity</name>
+        <qualifiedname>FilterResult::isLowComplexity</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>adapter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="63" column="10" bodyfile="src/filterresult.cpp" bodystart="115" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFilterResult_1a2c096ae0fad4bc780bce2270c4234033" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+        <definition>FilterResult * FilterResult::merge</definition>
+        <argsstring>(vector&lt; FilterResult * &gt; &amp;list)</argsstring>
+        <name>merge</name>
+        <qualifiedname>FilterResult::merge</qualifiedname>
+        <param>
+          <type>vector&lt; <ref refid="classFilterResult" kindref="compound">FilterResult</ref> * &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/filterresult.h" line="33" column="25" bodyfile="src/filterresult.cpp" bodystart="38" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="1">
+        <label>FilterResult</label>
+        <link refid="classFilterResult"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/filterresult.h" line="27" column="1" bodyfile="src/filterresult.h" bodystart="27" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classFilterResult_1a1ce9566d7f147c39bed2b41855d08a0d" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>addAdapterTrimmed</name></member>
+      <member refid="classFilterResult_1a9bdc24a5674eeb2a4b510f4e6c437df5" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>addAdapterTrimmed</name></member>
+      <member refid="classFilterResult_1a8a8a1dbd29265cbb665b712251776cbd" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>addCorrection</name></member>
+      <member refid="classFilterResult_1a87e955596f77005d6391e8ff8c369728" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>addFilterResult</name></member>
+      <member refid="classFilterResult_1af32e0889edf3fd337c18d8d1536dfbb7" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>addMergedPairs</name></member>
+      <member refid="classFilterResult_1a9d38f6b1f8bcd73936d394e5f40b41b9" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>addPolyXTrimmed</name></member>
+      <member refid="classFilterResult_1a92d995409da24d975aad26920359b75e" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>FilterResult</name></member>
+      <member refid="classFilterResult_1a5bdbb58bbd5e80bf4d4c13f10e232e6e" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>getAdapterReportCount</name></member>
+      <member refid="classFilterResult_1a68cbaba8bf040f6e95ff142a891eefd3" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>getCorrectionMatrix</name></member>
+      <member refid="classFilterResult_1a2242b4ebcbf313d520731f0bae18cf1a" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>getCorrectionNum</name></member>
+      <member refid="classFilterResult_1a2903b8e2195ce50c32af8f71b4b96ad6" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>getFilterReadStats</name></member>
+      <member refid="classFilterResult_1a96240aa94f778be5075eaa528909fa7e" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>getTotalCorrectedBases</name></member>
+      <member refid="classFilterResult_1a9a5f3c8ba9c5016fc0e2d35ed7428367" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>getTotalPolyXTrimmedBases</name></member>
+      <member refid="classFilterResult_1a44d2e2fcb2b3b466cb7d84ce8869f320" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>getTotalPolyXTrimmedReads</name></member>
+      <member refid="classFilterResult_1a70f898331df6ee78053be71285036282" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>incCorrectedReads</name></member>
+      <member refid="classFilterResult_1af565125bb743001aca21b2e7ba5db33e" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>incTrimmedAdapterRead</name></member>
+      <member refid="classFilterResult_1a4da19ff8d0e242da3b8a2b7630735576" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>isLowComplexity</name></member>
+      <member refid="classFilterResult_1a24bb048d16563b26f7ddfc9f1b66c07a" prot="private" virt="non-virtual"><scope>FilterResult</scope><name>mAdapter1</name></member>
+      <member refid="classFilterResult_1ab55e7674ffe335b5eb1474824bc784fe" prot="private" virt="non-virtual"><scope>FilterResult</scope><name>mAdapter2</name></member>
+      <member refid="classFilterResult_1aac97834fb2c1aafeb21f892308d1f1cd" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>mCorrectedReads</name></member>
+      <member refid="classFilterResult_1afa868fd1ec214658e632b4710acf751c" prot="private" virt="non-virtual"><scope>FilterResult</scope><name>mCorrectionMatrix</name></member>
+      <member refid="classFilterResult_1a2c096ae0fad4bc780bce2270c4234033" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>merge</name></member>
+      <member refid="classFilterResult_1abc7eac664d2db4344f0f43780ae83dfc" prot="private" virt="non-virtual"><scope>FilterResult</scope><name>mFilterReadStats</name></member>
+      <member refid="classFilterResult_1a20367cc8aeb8d9277c27b8042a769efe" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>mMergedPairs</name></member>
+      <member refid="classFilterResult_1a53e26f678366a58e63bf1c6a26233a5b" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>mOptions</name></member>
+      <member refid="classFilterResult_1a836e46d016ce976bb1cd176ad1c801cc" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>mPaired</name></member>
+      <member refid="classFilterResult_1a1c4654907465bf9556468c9d4173a9ad" prot="private" virt="non-virtual"><scope>FilterResult</scope><name>mTrimmedAdapterBases</name></member>
+      <member refid="classFilterResult_1acb87da988a13347fede28b4f6e8a6631" prot="private" virt="non-virtual"><scope>FilterResult</scope><name>mTrimmedAdapterRead</name></member>
+      <member refid="classFilterResult_1aac7bb94eb2fd45898d7076763cc1dc29" prot="private" virt="non-virtual"><scope>FilterResult</scope><name>mTrimmedPolyXBases</name></member>
+      <member refid="classFilterResult_1a90a3c443823ed77502aae2c66cbfd981" prot="private" virt="non-virtual"><scope>FilterResult</scope><name>mTrimmedPolyXReads</name></member>
+      <member refid="classFilterResult_1a932889edff76dd1b462abe039aa92ec0" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>outputAdaptersHtml</name></member>
+      <member refid="classFilterResult_1a87538fd823083a53f21a340361926b0e" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>outputAdaptersJson</name></member>
+      <member refid="classFilterResult_1abf426bfeef2d6492806b7f0f3a7af361" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>print</name></member>
+      <member refid="classFilterResult_1ac2bbd2ce4d497f825502e10f307ec508" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>reportAdapterHtml</name></member>
+      <member refid="classFilterResult_1ae60e6572d088ab0d7c51139ee043e975" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>reportAdapterJson</name></member>
+      <member refid="classFilterResult_1ad91b0434cbf8a6b172234b2857310c01" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>reportHtml</name></member>
+      <member refid="classFilterResult_1aae598e4ec5ec03ab47a9cbff09a514ee" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>reportJson</name></member>
+      <member refid="classFilterResult_1aca6caa036703490eba4339563efdc3ec" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>reportPolyXTrimJson</name></member>
+      <member refid="classFilterResult_1a221e6a4a14fc08f26739afae4c90c704" prot="public" virt="non-virtual"><scope>FilterResult</scope><name>~FilterResult</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

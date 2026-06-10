@@ -1,0 +1,213 @@
+\doxysection{bgzf.\+h}
+\hypertarget{bgzf_8h_source}{}\label{bgzf_8h_source}\index{src/bgzf.h@{src/bgzf.h}}
+\doxymbox{\hyperlink{bgzf_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FASTP\_BGZF\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FASTP\_BGZF\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstdio>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <atomic>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <condition\_variable>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <isa-\/l/igzip\_lib.h>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{bgzf_8h_a484751937758a33287383a64fb34cdb4}{BGZF\_HEADER\_SIZE}}\ =\ 18;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{bgzf_8h_a0a414adb7070c8104828e5ce99aec2f1}{BGZF\_MAX\_BLOCK\_SIZE}}\ =\ 65536;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{bgzf_8h_af4309efc625369d2b284292e1566b98b}{isBgzf}}(FILE*\ fp)\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ h[18];}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{long}\ pos\ =\ ftell(fp);}
+\DoxyCodeLine{00020\ \ \ \ \ fseek(fp,\ 0,\ SEEK\_SET);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ n\ =\ fread(h,\ 1,\ 18,\ fp);}
+\DoxyCodeLine{00022\ \ \ \ \ fseek(fp,\ pos,\ SEEK\_SET);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{if}\ (n\ <\ 18)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordflow}{return}\ h[0]==0x1f\ \&\&\ h[1]==0x8b\ \&\&\ h[2]==0x08\ \&\&\ (h[3]\&0x04)}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \&\&\ h[12]==0x42\ \&\&\ h[13]==0x43\ \&\&\ (h[14]|(h[15]<<8))==2;}
+\DoxyCodeLine{00026\ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{static}\ \textcolor{keyword}{inline}\ uint32\_t\ \doxymbox{\hyperlink{bgzf_8h_a6aa7eb8ff463738d79f3d00190830a05}{bgzfBlockSize}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*\ h)\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{if}\ (h[0]!=0x1f\ ||\ h[1]!=0x8b)\ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{return}\ (uint32\_t)(h[16]\ |\ (h[17]<<8))\ +\ 1;}
+\DoxyCodeLine{00031\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ Parallel\ BGZF\ decompression\ with\ fixed\ thread\ pool.}}
+\DoxyCodeLine{00034\ \textcolor{comment}{//\ All\ decompress\ threads\ start\ upfront;\ ring\ buffer\ provides\ backpressure.}}
+\DoxyCodeLine{00035\ \textcolor{comment}{//\ Slot\ lifecycle:\ FREE\ →\ COMPRESSED\ →\ DECOMPRESSING\ →\ READY\ →\ FREE}}
+\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classBgzfMtReader_a35b61e054961e9804bcb8d6485e9073c}{BgzfMtReader}}\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{enum}\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693}{SlotState}}\ \{\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22}{FREE}},\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2}{COMPRESSED}},\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a00089ae9def2cc2ecf08ce1ffd0256bd}{DECOMPRESSING}},\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228}{READY}},\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1}{DONE}}\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{struct\ }\textcolor{keyword}{alignas}(64)\ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_afecc555ced9dbfe9425ec6a6aaa96a72}{comp}}[\doxymbox{\hyperlink{bgzf_8h_a0a414adb7070c8104828e5ce99aec2f1}{BGZF\_MAX\_BLOCK\_SIZE}}];}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_aecc5380919a45b2d77bc44af8d110b32}{decomp}}[\doxymbox{\hyperlink{bgzf_8h_a0a414adb7070c8104828e5ce99aec2f1}{BGZF\_MAX\_BLOCK\_SIZE}}];}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_aa2faa3d0c64793e5014dd9f711324e6d}{compLen}};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_acd187ac0e553e026182c3a4fc8bd620e}{decompLen}};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ std::atomic<SlotState>\ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}\{\doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22}{FREE}}\};}
+\DoxyCodeLine{00045\ \ \ \ \ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ threadBudget:\ max\ decompress\ threads\ allowed\ for\ this\ reader.}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//\ 0\ =\ auto\ (use\ half\ of\ available\ CPU\ cores).}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ Caller\ should\ compute:\ (hardware\_concurrency\ -\/\ workers\ -\/\ readers\ -\/\ writers)\ /\ num\_gz\_inputs}}
+\DoxyCodeLine{00051\ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a35b61e054961e9804bcb8d6485e9073c}{BgzfMtReader}}(FILE*\ fp,\ \textcolor{keywordtype}{int}\ threadBudget\ =\ 0)}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{classBgzfMtReader_a9ef9a5cd59156ddd64b3de39e8e87fb2}{mFp}}(fp),\ \doxymbox{\hyperlink{classBgzfMtReader_a2562478e5080c81552a82c50142e9100}{mConsumeIdx}}(0),\ \doxymbox{\hyperlink{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}{mConsumeOffset}}(0),}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_ad9fe79c25105be430e2f64229bf333e8}{mProduceIdx}}(0),\ \doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}}(false)\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cpus\ =\ std::thread::hardware\_concurrency();}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cpus\ <\ 2)\ cpus\ =\ 2;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a7063733b17ed8a7bdbc5fdf08879af81}{mMaxPool}}\ =\ (threadBudget\ >\ 0)\ ?\ threadBudget\ :\ std::max(1,\ cpus\ /\ 2);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}\ =\ \doxymbox{\hyperlink{classBgzfMtReader_a7063733b17ed8a7bdbc5fdf08879af81}{mMaxPool}}\ *\ 4;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}\ <\ 16)\ \doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}\ =\ 16;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}\ >\ 64)\ \doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}\ =\ 64;\ \ \textcolor{comment}{//\ cap\ at\ \string~8MB\ per\ reader}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246}{mSlots}}\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}[\doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}];}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Start\ all\ decompress\ threads\ upfront\ —\ ring\ buffer\ handles\ backpressure}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{classBgzfMtReader_a7063733b17ed8a7bdbc5fdf08879af81}{mMaxPool}};\ i++)}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a1ec53f83c42eac0ded6e591867d50191}{mPool}}.push\_back(\textcolor{keyword}{new}\ std::thread(\&\doxymbox{\hyperlink{classBgzfMtReader_a55cfa7330d2503ff958eef2bf2d038cf}{BgzfMtReader::decompWorker}},\ \textcolor{keyword}{this}));}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a60f12801d6f3a632fc01c0fd63e27a6f}{mReaderThread}}\ =\ \textcolor{keyword}{new}\ std::thread(\&\doxymbox{\hyperlink{classBgzfMtReader_a4bb241d72e8decbe65b44d0d6324c6c1}{BgzfMtReader::readerLoop}},\ \textcolor{keyword}{this});}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_aff2fa38aa587c5817a2fe287d9954f91}{\string~BgzfMtReader}}()\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a2f1aa5f2807c4985211afb97022db2f2}{mDecompCv}}.notify\_all();}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_ad4fac5895b050216e9352aeb97adf5ce}{mProduceCv}}.notify\_all();}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_aabb14dbaa99b86ff493f61f66ad81c2c}{mConsumeCv}}.notify\_all();}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classBgzfMtReader_a60f12801d6f3a632fc01c0fd63e27a6f}{mReaderThread}})\ \{\ \doxymbox{\hyperlink{classBgzfMtReader_a60f12801d6f3a632fc01c0fd63e27a6f}{mReaderThread}}-\/>join();\ \textcolor{keyword}{delete}\ \doxymbox{\hyperlink{classBgzfMtReader_a60f12801d6f3a632fc01c0fd63e27a6f}{mReaderThread}};\ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}*\ t\ :\ \doxymbox{\hyperlink{classBgzfMtReader_a1ec53f83c42eac0ded6e591867d50191}{mPool}})\ \{\ t-\/>join();\ \textcolor{keyword}{delete}\ t;\ \}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}[]\ \doxymbox{\hyperlink{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246}{mSlots}};}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classBgzfMtReader_a24d228983d8bf1f3bcf952d915edcfa3}{read}}(\textcolor{keywordtype}{char}*\ outBuf,\ \textcolor{keywordtype}{int}\ outBufSize)\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ filled\ =\ 0;}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (filled\ <\ outBufSize)\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}\&\ s\ =\ \doxymbox{\hyperlink{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246}{mSlots}}[\doxymbox{\hyperlink{classBgzfMtReader_a2562478e5080c81552a82c50142e9100}{mConsumeIdx}}\ \%\ \doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}];}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_lock<std::mutex>\ lk(\doxymbox{\hyperlink{classBgzfMtReader_ab2e951f140ecaedc0d1111e4e65899e1}{mConsumeMtx}});}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_aabb14dbaa99b86ff493f61f66ad81c2c}{mConsumeCv}}.wait(lk,\ [\&]()\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693}{SlotState}}\ v\ =\ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}.load(std::memory\_order\_acquire);}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ v\ ==\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228}{READY}}\ ||\ v\ ==\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1}{DONE}};}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}.load(std::memory\_order\_acquire)\ ==\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1}{DONE}})\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ avail\ =\ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_acd187ac0e553e026182c3a4fc8bd620e}{decompLen}}\ -\/\ \doxymbox{\hyperlink{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}{mConsumeOffset}};}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ tocopy\ =\ (outBufSize\ -\/\ filled)\ <\ avail\ ?\ (outBufSize\ -\/\ filled)\ :\ avail;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ memcpy(outBuf\ +\ filled,\ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_aecc5380919a45b2d77bc44af8d110b32}{decomp}}\ +\ \doxymbox{\hyperlink{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}{mConsumeOffset}},\ tocopy);}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ filled\ +=\ tocopy;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}{mConsumeOffset}}\ +=\ tocopy;}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}{mConsumeOffset}}\ >=\ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_acd187ac0e553e026182c3a4fc8bd620e}{decompLen}})\ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}.store(\doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22}{FREE}},\ std::memory\_order\_release);}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}{mConsumeOffset}}\ =\ 0;}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a2562478e5080c81552a82c50142e9100}{mConsumeIdx}}++;}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_ad4fac5895b050216e9352aeb97adf5ce}{mProduceCv}}.notify\_one();}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ filled;}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classBgzfMtReader_a4bb241d72e8decbe65b44d0d6324c6c1}{readerLoop}}()\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ header[\doxymbox{\hyperlink{bgzf_8h_a484751937758a33287383a64fb34cdb4}{BGZF\_HEADER\_SIZE}}];}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!\doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}})\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}\&\ s\ =\ \doxymbox{\hyperlink{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246}{mSlots}}[\doxymbox{\hyperlink{classBgzfMtReader_ad9fe79c25105be430e2f64229bf333e8}{mProduceIdx}}\ \%\ \doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}];}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_lock<std::mutex>\ lk(\doxymbox{\hyperlink{classBgzfMtReader_af4c9b162a77e2119ec1878cbdd602d42}{mProduceMtx}});}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_ad4fac5895b050216e9352aeb97adf5ce}{mProduceCv}}.wait(lk,\ [\&]()\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}.load(std::memory\_order\_acquire)\ ==\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22}{FREE}}\ ||\ \doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}};}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}})\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ n\ =\ fread(header,\ 1,\ \doxymbox{\hyperlink{bgzf_8h_a484751937758a33287383a64fb34cdb4}{BGZF\_HEADER\_SIZE}},\ \doxymbox{\hyperlink{classBgzfMtReader_a9ef9a5cd59156ddd64b3de39e8e87fb2}{mFp}});}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (n\ <\ \doxymbox{\hyperlink{bgzf_8h_a484751937758a33287383a64fb34cdb4}{BGZF\_HEADER\_SIZE}})\ \{\ \doxymbox{\hyperlink{classBgzfMtReader_a41024dc0fb9f432b51920dd09671b74c}{markDone}}(s);\ \textcolor{keywordflow}{break};\ \}}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ bsize\ =\ \doxymbox{\hyperlink{bgzf_8h_a6aa7eb8ff463738d79f3d00190830a05}{bgzfBlockSize}}(header);}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (bsize\ ==\ 0\ ||\ bsize\ >\ \doxymbox{\hyperlink{bgzf_8h_a0a414adb7070c8104828e5ce99aec2f1}{BGZF\_MAX\_BLOCK\_SIZE}})\ \{\ \doxymbox{\hyperlink{classBgzfMtReader_a41024dc0fb9f432b51920dd09671b74c}{markDone}}(s);\ \textcolor{keywordflow}{break};\ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ memcpy(s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_afecc555ced9dbfe9425ec6a6aaa96a72}{comp}},\ header,\ \doxymbox{\hyperlink{bgzf_8h_a484751937758a33287383a64fb34cdb4}{BGZF\_HEADER\_SIZE}});}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ rest\ =\ bsize\ -\/\ \doxymbox{\hyperlink{bgzf_8h_a484751937758a33287383a64fb34cdb4}{BGZF\_HEADER\_SIZE}};}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fread(s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_afecc555ced9dbfe9425ec6a6aaa96a72}{comp}}\ +\ \doxymbox{\hyperlink{bgzf_8h_a484751937758a33287383a64fb34cdb4}{BGZF\_HEADER\_SIZE}},\ 1,\ rest,\ \doxymbox{\hyperlink{classBgzfMtReader_a9ef9a5cd59156ddd64b3de39e8e87fb2}{mFp}})\ <\ rest)\ \{\ \doxymbox{\hyperlink{classBgzfMtReader_a41024dc0fb9f432b51920dd09671b74c}{markDone}}(s);\ \textcolor{keywordflow}{break};\ \}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (bsize\ ==\ 28)\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ isize\ =\ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_afecc555ced9dbfe9425ec6a6aaa96a72}{comp}}[24]|(s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_afecc555ced9dbfe9425ec6a6aaa96a72}{comp}}[25]<<8)|(s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_afecc555ced9dbfe9425ec6a6aaa96a72}{comp}}[26]<<16)|(s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_afecc555ced9dbfe9425ec6a6aaa96a72}{comp}}[27]<<24);}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isize\ ==\ 0)\ \{\ \doxymbox{\hyperlink{classBgzfMtReader_a41024dc0fb9f432b51920dd09671b74c}{markDone}}(s);\ \textcolor{keywordflow}{break};\ \}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_aa2faa3d0c64793e5014dd9f711324e6d}{compLen}}\ =\ bsize;}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}.store(\doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2}{COMPRESSED}},\ std::memory\_order\_release);}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_ad9fe79c25105be430e2f64229bf333e8}{mProduceIdx}}++;}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a2f1aa5f2807c4985211afb97022db2f2}{mDecompCv}}.notify\_all();}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00141\ \ \ \ \ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classBgzfMtReader_a55cfa7330d2503ff958eef2bf2d038cf}{decompWorker}}()\ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!\doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}})\ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}*\ target\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_lock<std::mutex>\ lk(\doxymbox{\hyperlink{classBgzfMtReader_ab53aa58d024aadb0ea5c3887b513acc7}{mDecompMtx}});}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a2f1aa5f2807c4985211afb97022db2f2}{mDecompCv}}.wait(lk,\ [\&]()\ \{}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}}.load(std::memory\_order\_relaxed)\ ||\ \doxymbox{\hyperlink{classBgzfMtReader_a2179d5e54e5ebfdde86a007aacf78817}{claimSlot}}(\&target);}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}}\ \&\&\ !target)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!target)\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }inflate\_state\ ist;}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ isal\_inflate\_init(\&ist);}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ ist.crc\_flag\ =\ ISAL\_GZIP;}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ ist.next\_in\ =\ target-\/>\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_afecc555ced9dbfe9425ec6a6aaa96a72}{comp}};}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ ist.avail\_in\ =\ target-\/>\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_aa2faa3d0c64793e5014dd9f711324e6d}{compLen}};}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ ist.next\_out\ =\ target-\/>\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_aecc5380919a45b2d77bc44af8d110b32}{decomp}};}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ ist.avail\_out\ =\ \doxymbox{\hyperlink{bgzf_8h_a0a414adb7070c8104828e5ce99aec2f1}{BGZF\_MAX\_BLOCK\_SIZE}};}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ret\ =\ isal\_inflate\_stateless(\&ist);}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ target-\/>\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_acd187ac0e553e026182c3a4fc8bd620e}{decompLen}}\ =\ (ret\ ==\ ISAL\_DECOMP\_OK)\ ?\ (\textcolor{keywordtype}{int})ist.total\_out\ :\ 0;}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ target-\/>\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}.store(\doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228}{READY}},\ std::memory\_order\_release);}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_aabb14dbaa99b86ff493f61f66ad81c2c}{mConsumeCv}}.notify\_one();}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00168\ \ \ \ \ \}}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classBgzfMtReader_a2179d5e54e5ebfdde86a007aacf78817}{claimSlot}}(\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}**\ out)\ \{}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ head\ =\ \doxymbox{\hyperlink{classBgzfMtReader_a2562478e5080c81552a82c50142e9100}{mConsumeIdx}};}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ tail\ =\ \doxymbox{\hyperlink{classBgzfMtReader_ad9fe79c25105be430e2f64229bf333e8}{mProduceIdx}};}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ head;\ i\ <\ tail;\ i++)\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}\&\ s\ =\ \doxymbox{\hyperlink{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246}{mSlots}}[i\ \%\ \doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}}];}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693}{SlotState}}\ expected\ =\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2}{COMPRESSED}};}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}.compare\_exchange\_strong(expected,\ \doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693a00089ae9def2cc2ecf08ce1ffd0256bd}{DECOMPRESSING}},}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::memory\_order\_acq\_rel))\ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *out\ =\ \&s;}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00183\ \ \ \ \ \}}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classBgzfMtReader_a41024dc0fb9f432b51920dd09671b74c}{markDone}}(\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}\&\ s)\ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ s.\doxymbox{\hyperlink{structBgzfMtReader_1_1Slot_af841f5d249976a57f03a171e1193adb3}{state}}.store(\doxymbox{\hyperlink{classBgzfMtReader_aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1}{DONE}},\ std::memory\_order\_release);}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_aabb14dbaa99b86ff493f61f66ad81c2c}{mConsumeCv}}.notify\_all();}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classBgzfMtReader_a2f1aa5f2807c4985211afb97022db2f2}{mDecompCv}}.notify\_all();}
+\DoxyCodeLine{00189\ \ \ \ \ \}}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \ \ \ \ FILE*\ \doxymbox{\hyperlink{classBgzfMtReader_a9ef9a5cd59156ddd64b3de39e8e87fb2}{mFp}};\ \ \textcolor{comment}{//\ not\ owned\ —\ caller\ must\ keep\ open\ for\ lifetime\ of\ BgzfMtReader}}
+\DoxyCodeLine{00192\ \ \ \ \ \doxymbox{\hyperlink{structBgzfMtReader_1_1Slot}{Slot}}*\ \doxymbox{\hyperlink{classBgzfMtReader_aa37c9b5176467547760099e6b9cd2246}{mSlots}};}
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classBgzfMtReader_ab166feef864ea34db3745a791abc30c8}{mRingSize}};}
+\DoxyCodeLine{00194\ \ \ \ \ std::atomic<int>\ \doxymbox{\hyperlink{classBgzfMtReader_a2562478e5080c81552a82c50142e9100}{mConsumeIdx}};}
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classBgzfMtReader_a07264db665f9a0720fb3da8e41e8f767}{mConsumeOffset}};\ \ \textcolor{comment}{//\ only\ accessed\ by\ consumer\ thread}}
+\DoxyCodeLine{00196\ \ \ \ \ std::atomic<int>\ \doxymbox{\hyperlink{classBgzfMtReader_ad9fe79c25105be430e2f64229bf333e8}{mProduceIdx}};}
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classBgzfMtReader_a7063733b17ed8a7bdbc5fdf08879af81}{mMaxPool}};}
+\DoxyCodeLine{00198\ \ \ \ \ std::atomic<bool>\ \doxymbox{\hyperlink{classBgzfMtReader_a318dbd8fd1106cb591859a07c78113b7}{mStop}};}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \ \ \ \ std::thread*\ \doxymbox{\hyperlink{classBgzfMtReader_a60f12801d6f3a632fc01c0fd63e27a6f}{mReaderThread}};}
+\DoxyCodeLine{00201\ \ \ \ \ std::vector<std::thread*>\ \doxymbox{\hyperlink{classBgzfMtReader_a1ec53f83c42eac0ded6e591867d50191}{mPool}};}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00203\ \ \ \ \ std::mutex\ \doxymbox{\hyperlink{classBgzfMtReader_ab2e951f140ecaedc0d1111e4e65899e1}{mConsumeMtx}},\ \doxymbox{\hyperlink{classBgzfMtReader_af4c9b162a77e2119ec1878cbdd602d42}{mProduceMtx}},\ \doxymbox{\hyperlink{classBgzfMtReader_ab53aa58d024aadb0ea5c3887b513acc7}{mDecompMtx}};}
+\DoxyCodeLine{00204\ \ \ \ \ std::condition\_variable\ \doxymbox{\hyperlink{classBgzfMtReader_aabb14dbaa99b86ff493f61f66ad81c2c}{mConsumeCv}},\ \doxymbox{\hyperlink{classBgzfMtReader_ad4fac5895b050216e9352aeb97adf5ce}{mProduceCv}},\ \doxymbox{\hyperlink{classBgzfMtReader_a2f1aa5f2807c4985211afb97022db2f2}{mDecompCv}};}
+\DoxyCodeLine{00205\ \};}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

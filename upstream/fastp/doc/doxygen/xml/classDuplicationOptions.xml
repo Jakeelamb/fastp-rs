@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classDuplicationOptions" kind="class" language="C++" prot="public">
+    <compoundname>DuplicationOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classDuplicationOptions_1aafe19f3cc86719ae9ae267908637cc08" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DuplicationOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>DuplicationOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="41" column="10" bodyfile="src/options.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicationOptions_1a9a0ae87d7b8e5ed5d48ca2abed267e77" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DuplicationOptions::histSize</definition>
+        <argsstring></argsstring>
+        <name>histSize</name>
+        <qualifiedname>DuplicationOptions::histSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="42" column="9" bodyfile="src/options.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicationOptions_1acf272ee46f315a28a49f2a7f1976fae6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DuplicationOptions::dedup</definition>
+        <argsstring></argsstring>
+        <name>dedup</name>
+        <qualifiedname>DuplicationOptions::dedup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="43" column="10" bodyfile="src/options.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDuplicationOptions_1a2bd6b5b11c80ab3d1322ffe84d5fa30a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DuplicationOptions::accuracyLevel</definition>
+        <argsstring></argsstring>
+        <name>accuracyLevel</name>
+        <qualifiedname>DuplicationOptions::accuracyLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="44" column="9" bodyfile="src/options.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDuplicationOptions_1a6bfa8f555d2c10932607db71906257a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DuplicationOptions::DuplicationOptions</definition>
+        <argsstring>()</argsstring>
+        <name>DuplicationOptions</name>
+        <qualifiedname>DuplicationOptions::DuplicationOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="34" column="5" bodyfile="src/options.h" bodystart="34" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="32" column="1" bodyfile="src/options.h" bodystart="32" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classDuplicationOptions_1a2bd6b5b11c80ab3d1322ffe84d5fa30a" prot="public" virt="non-virtual"><scope>DuplicationOptions</scope><name>accuracyLevel</name></member>
+      <member refid="classDuplicationOptions_1acf272ee46f315a28a49f2a7f1976fae6" prot="public" virt="non-virtual"><scope>DuplicationOptions</scope><name>dedup</name></member>
+      <member refid="classDuplicationOptions_1a6bfa8f555d2c10932607db71906257a9" prot="public" virt="non-virtual"><scope>DuplicationOptions</scope><name>DuplicationOptions</name></member>
+      <member refid="classDuplicationOptions_1aafe19f3cc86719ae9ae267908637cc08" prot="public" virt="non-virtual"><scope>DuplicationOptions</scope><name>enabled</name></member>
+      <member refid="classDuplicationOptions_1a9a0ae87d7b8e5ed5d48ca2abed267e77" prot="public" virt="non-virtual"><scope>DuplicationOptions</scope><name>histSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

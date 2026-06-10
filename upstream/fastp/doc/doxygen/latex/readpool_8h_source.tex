@@ -1,0 +1,44 @@
+\doxysection{readpool.\+h}
+\hypertarget{readpool_8h_source}{}\label{readpool_8h_source}\index{src/readpool.h@{src/readpool.h}}
+\doxymbox{\hyperlink{readpool_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ in-\/memory\ pooled\ Reads\ to\ reduce\ new/delete\ operations}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ for\ each\ thread,\ one\ SISC\ list\ is\ used}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ READ\_POOL\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ READ\_POOL\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{read_8h}{read.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{singleproducersingleconsumerlist_8h}{singleproducersingleconsumerlist.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classReadPool_a825e4a1cd2b8445e1fe0d06b1f4eb432}{ReadPool}}\{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{classReadPool_a825e4a1cd2b8445e1fe0d06b1f4eb432}{ReadPool}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt);}
+\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{classReadPool_a649907fc0ebf67cb25cf807719345a90}{\string~ReadPool}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classReadPool_a84def75bf8adf5aa647d177526422cb5}{input}}(\textcolor{keywordtype}{int}\ tid,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r);}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{classRead}{Read}}*\ \doxymbox{\hyperlink{classReadPool_ae6f0349e3cc99f3127f84e4a4fe16907}{getOne}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classReadPool_a51b4843262445cbe3655d1d4519a1fae}{initBufferLists}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classReadPool_ab64601b8e4cbd985ceb07f5c193eb189}{cleanup}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classReadPool_ae265b7030e0718d847858b17d88829a9}{size}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classReadPool_aaff28dd30958fae192e4a6fc4edbd4c0}{updateFullStatus}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classReadPool_a3c9368db6a2c159ecd7413273649b9db}{mOptions}};}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<Read*>}}**\ \doxymbox{\hyperlink{classReadPool_a111f8ebf35d25500709fe93d2b51381f}{mBufferLists}};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classReadPool_aae1704c64552b788533e2811dbaa8edf}{mProduced}};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classReadPool_a1cd1bb4013436d075e115e180073cedb}{mConsumed}};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classReadPool_a6e366610d7da83db5aba13ccafdf1e56}{mLimit}};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classReadPool_a1466ad7e924bd613a382797334befb73}{mIsFull}};}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

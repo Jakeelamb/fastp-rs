@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classSingleEndProcessor" kind="class" language="C++" prot="public">
+    <compoundname>SingleEndProcessor</compoundname>
+    <includes refid="seprocessor_8h" local="no">seprocessor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSingleEndProcessor_1a6059329cf8ba803109dc3e2d36761e0a" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* SingleEndProcessor::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>SingleEndProcessor::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="42" column="13" bodyfile="src/seprocessor.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a890cdf4098c90cb744c8570e16179137" prot="private" static="no" mutable="no">
+        <type>atomic_bool</type>
+        <definition>atomic_bool SingleEndProcessor::mReaderFinished</definition>
+        <argsstring></argsstring>
+        <name>mReaderFinished</name>
+        <qualifiedname>SingleEndProcessor::mReaderFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="43" column="17" bodyfile="src/seprocessor.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a1402e30a474628f53eec6d9856e69aa4" prot="private" static="no" mutable="no">
+        <type>atomic_int</type>
+        <definition>atomic_int SingleEndProcessor::mFinishedThreads</definition>
+        <argsstring></argsstring>
+        <name>mFinishedThreads</name>
+        <qualifiedname>SingleEndProcessor::mFinishedThreads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="44" column="24" bodyfile="src/seprocessor.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1ad912dbe7a716206d219acda8b7fc8353" prot="private" static="no" mutable="no">
+        <type><ref refid="classFilter" kindref="compound">Filter</ref> *</type>
+        <definition>Filter* SingleEndProcessor::mFilter</definition>
+        <argsstring></argsstring>
+        <name>mFilter</name>
+        <qualifiedname>SingleEndProcessor::mFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="45" column="12" bodyfile="src/seprocessor.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a65df518c3160d8f3044e4c7a2c8290a7" prot="private" static="no" mutable="no">
+        <type><ref refid="classUmiProcessor" kindref="compound">UmiProcessor</ref> *</type>
+        <definition>UmiProcessor* SingleEndProcessor::mUmiProcessor</definition>
+        <argsstring></argsstring>
+        <name>mUmiProcessor</name>
+        <qualifiedname>SingleEndProcessor::mUmiProcessor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="46" column="18" bodyfile="src/seprocessor.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a1fad72710625479ad4d40ac6446abe2a" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* SingleEndProcessor::mLeftWriter</definition>
+        <argsstring></argsstring>
+        <name>mLeftWriter</name>
+        <qualifiedname>SingleEndProcessor::mLeftWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="47" column="18" bodyfile="src/seprocessor.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a0f60e8f7f2f61ac138acd6623616bf4d" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+        <definition>WriterThread* SingleEndProcessor::mFailedWriter</definition>
+        <argsstring></argsstring>
+        <name>mFailedWriter</name>
+        <qualifiedname>SingleEndProcessor::mFailedWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="48" column="18" bodyfile="src/seprocessor.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1ae0bb52b08011d7ed9b550c1764f4befc" prot="private" static="no" mutable="no">
+        <type><ref refid="classDuplicate" kindref="compound">Duplicate</ref> *</type>
+        <definition>Duplicate* SingleEndProcessor::mDuplicate</definition>
+        <argsstring></argsstring>
+        <name>mDuplicate</name>
+        <qualifiedname>SingleEndProcessor::mDuplicate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="49" column="15" bodyfile="src/seprocessor.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a830dac4b4a410f01f30c412b0c54cfa5" prot="private" static="no" mutable="no">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; **</type>
+        <definition>SingleProducerSingleConsumerList&lt;ReadPack*&gt;** SingleEndProcessor::mInputLists</definition>
+        <argsstring></argsstring>
+        <name>mInputLists</name>
+        <qualifiedname>SingleEndProcessor::mInputLists</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="50" column="38" bodyfile="src/seprocessor.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a73ae44ab8a034d023e5aaade84eeda36" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t SingleEndProcessor::mPackReadCounter</definition>
+        <argsstring></argsstring>
+        <name>mPackReadCounter</name>
+        <qualifiedname>SingleEndProcessor::mPackReadCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="51" column="12" bodyfile="src/seprocessor.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a7d3c968d3c4cd97f1492562ed07b7bed" prot="private" static="no" mutable="no">
+        <type>atomic_long</type>
+        <definition>atomic_long SingleEndProcessor::mPackProcessedCounter</definition>
+        <argsstring></argsstring>
+        <name>mPackProcessedCounter</name>
+        <qualifiedname>SingleEndProcessor::mPackProcessedCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="52" column="25" bodyfile="src/seprocessor.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a069271c1e226a4a70af4dfe7af524d01" prot="private" static="no" mutable="no">
+        <type><ref refid="classReadPool" kindref="compound">ReadPool</ref> *</type>
+        <definition>ReadPool* SingleEndProcessor::mReadPool</definition>
+        <argsstring></argsstring>
+        <name>mReadPool</name>
+        <qualifiedname>SingleEndProcessor::mReadPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="53" column="14" bodyfile="src/seprocessor.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a6a3b727418f1d61c222f469fda5b5ad2" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex SingleEndProcessor::mBackpressureMtx</definition>
+        <argsstring></argsstring>
+        <name>mBackpressureMtx</name>
+        <qualifiedname>SingleEndProcessor::mBackpressureMtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="54" column="16" bodyfile="src/seprocessor.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleEndProcessor_1a7510e45c48aa401028e5a6db13173b9d" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable SingleEndProcessor::mBackpressureCV</definition>
+        <argsstring></argsstring>
+        <name>mBackpressureCV</name>
+        <qualifiedname>SingleEndProcessor::mBackpressureCV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="55" column="29" bodyfile="src/seprocessor.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSingleEndProcessor_1a23517a53bf114797efd701582dee0bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SingleEndProcessor::SingleEndProcessor</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>SingleEndProcessor</name>
+        <qualifiedname>SingleEndProcessor::SingleEndProcessor</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="27" column="5" bodyfile="src/seprocessor.cpp" bodystart="15" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1a200e744048328418b3f4c5e4cfe1e9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SingleEndProcessor::~SingleEndProcessor</definition>
+        <argsstring>()</argsstring>
+        <name>~SingleEndProcessor</name>
+        <qualifiedname>SingleEndProcessor::~SingleEndProcessor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="28" column="5" bodyfile="src/seprocessor.cpp" bodystart="35" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1a0a884b7985b3b5eca45bf371fbfed1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SingleEndProcessor::process</definition>
+        <argsstring>()</argsstring>
+        <name>process</name>
+        <qualifiedname>SingleEndProcessor::process</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="29" column="10" bodyfile="src/seprocessor.cpp" bodystart="76" bodyend="189"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classSingleEndProcessor_1aec4c12b0c0136eb961a5134a645b8714" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SingleEndProcessor::processSingleEnd</definition>
+        <argsstring>(ReadPack *pack, ThreadConfig *config)</argsstring>
+        <name>processSingleEnd</name>
+        <qualifiedname>SingleEndProcessor::processSingleEnd</qualifiedname>
+        <param>
+          <type><ref refid="structReadPack" kindref="compound">ReadPack</ref> *</type>
+          <declname>pack</declname>
+        </param>
+        <param>
+          <type><ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="32" column="10" bodyfile="src/seprocessor.cpp" bodystart="197" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1aa705b2b4e1bc9f4b321e835bcc3425b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleEndProcessor::readerTask</definition>
+        <argsstring>()</argsstring>
+        <name>readerTask</name>
+        <qualifiedname>SingleEndProcessor::readerTask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="33" column="10" bodyfile="src/seprocessor.cpp" bodystart="327" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1af9bb82a7162e6a3ba59d52013262a5ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleEndProcessor::processorTask</definition>
+        <argsstring>(ThreadConfig *config)</argsstring>
+        <name>processorTask</name>
+        <qualifiedname>SingleEndProcessor::processorTask</qualifiedname>
+        <param>
+          <type><ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="34" column="10" bodyfile="src/seprocessor.cpp" bodystart="434" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1a4ba145f919e7d68855a436c31b6c8468" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleEndProcessor::initConfig</definition>
+        <argsstring>(ThreadConfig *config)</argsstring>
+        <name>initConfig</name>
+        <qualifiedname>SingleEndProcessor::initConfig</qualifiedname>
+        <param>
+          <type><ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="35" column="10" bodyfile="src/seprocessor.cpp" bodystart="67" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1a0d0fdb7d4c150cd3e2f8e98df15e8062" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleEndProcessor::initOutput</definition>
+        <argsstring>()</argsstring>
+        <name>initOutput</name>
+        <qualifiedname>SingleEndProcessor::initOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="36" column="10" bodyfile="src/seprocessor.cpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1ae602db756c00dbab997e5f9e41ce1ff2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleEndProcessor::closeOutput</definition>
+        <argsstring>()</argsstring>
+        <name>closeOutput</name>
+        <qualifiedname>SingleEndProcessor::closeOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="37" column="10" bodyfile="src/seprocessor.cpp" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1aab7f54169933a17185add9ac7118aeb3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleEndProcessor::writerTask</definition>
+        <argsstring>(WriterThread *config)</argsstring>
+        <name>writerTask</name>
+        <qualifiedname>SingleEndProcessor::writerTask</qualifiedname>
+        <param>
+          <type><ref refid="classWriterThread" kindref="compound">WriterThread</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="38" column="10" bodyfile="src/seprocessor.cpp" bodystart="473" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleEndProcessor_1a7a56680ab84e4dd860fa1eebe4d5512c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleEndProcessor::recycleToPool</definition>
+        <argsstring>(int tid, Read *r)</argsstring>
+        <name>recycleToPool</name>
+        <qualifiedname>SingleEndProcessor::recycleToPool</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="39" column="10" bodyfile="src/seprocessor.cpp" bodystart="191" bodyend="195"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="25">
+        <label>Duplicate</label>
+        <link refid="classDuplicate"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="18">
+        <label>Filter</label>
+        <link refid="classFilter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="32">
+        <label>LockFreeListItem&lt; Read * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>LockFreeListItem&lt; ReadPack * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>LockFreeListItem&lt; string * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="24">
+        <label>OffsetSlot</label>
+        <link refid="structOffsetSlot"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="29">
+        <label>Read</label>
+        <link refid="classRead"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="28">
+        <label>ReadPack</label>
+        <link refid="structReadPack"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>ReadPool</label>
+        <link refid="classReadPool"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>mBufferLists</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SingleEndProcessor</label>
+        <link refid="classSingleEndProcessor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mFilter</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mUmiProcessor</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mFailedWriter</edgelabel>
+          <edgelabel>mLeftWriter</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>mDuplicate</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mInputLists</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mReadPool</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>SingleProducerSingleConsumerList&lt; Read * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>SingleProducerSingleConsumerList&lt; ReadPack * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SingleProducerSingleConsumerList&lt; string * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+      <node id="19">
+        <label>UmiProcessor</label>
+        <link refid="classUmiProcessor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Writer</label>
+        <link refid="classWriter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>WriterThread</label>
+        <link refid="classWriterThread"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mWriter1</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mBufferLists</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>mOffsetRing</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/seprocessor.h" line="25" column="1" bodyfile="src/seprocessor.h" bodystart="25" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classSingleEndProcessor_1ae602db756c00dbab997e5f9e41ce1ff2" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>closeOutput</name></member>
+      <member refid="classSingleEndProcessor_1a4ba145f919e7d68855a436c31b6c8468" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>initConfig</name></member>
+      <member refid="classSingleEndProcessor_1a0d0fdb7d4c150cd3e2f8e98df15e8062" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>initOutput</name></member>
+      <member refid="classSingleEndProcessor_1a7510e45c48aa401028e5a6db13173b9d" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mBackpressureCV</name></member>
+      <member refid="classSingleEndProcessor_1a6a3b727418f1d61c222f469fda5b5ad2" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mBackpressureMtx</name></member>
+      <member refid="classSingleEndProcessor_1ae0bb52b08011d7ed9b550c1764f4befc" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mDuplicate</name></member>
+      <member refid="classSingleEndProcessor_1a0f60e8f7f2f61ac138acd6623616bf4d" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mFailedWriter</name></member>
+      <member refid="classSingleEndProcessor_1ad912dbe7a716206d219acda8b7fc8353" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mFilter</name></member>
+      <member refid="classSingleEndProcessor_1a1402e30a474628f53eec6d9856e69aa4" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mFinishedThreads</name></member>
+      <member refid="classSingleEndProcessor_1a830dac4b4a410f01f30c412b0c54cfa5" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mInputLists</name></member>
+      <member refid="classSingleEndProcessor_1a1fad72710625479ad4d40ac6446abe2a" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mLeftWriter</name></member>
+      <member refid="classSingleEndProcessor_1a6059329cf8ba803109dc3e2d36761e0a" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mOptions</name></member>
+      <member refid="classSingleEndProcessor_1a7d3c968d3c4cd97f1492562ed07b7bed" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mPackProcessedCounter</name></member>
+      <member refid="classSingleEndProcessor_1a73ae44ab8a034d023e5aaade84eeda36" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mPackReadCounter</name></member>
+      <member refid="classSingleEndProcessor_1a890cdf4098c90cb744c8570e16179137" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mReaderFinished</name></member>
+      <member refid="classSingleEndProcessor_1a069271c1e226a4a70af4dfe7af524d01" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mReadPool</name></member>
+      <member refid="classSingleEndProcessor_1a65df518c3160d8f3044e4c7a2c8290a7" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>mUmiProcessor</name></member>
+      <member refid="classSingleEndProcessor_1a0a884b7985b3b5eca45bf371fbfed1b7" prot="public" virt="non-virtual"><scope>SingleEndProcessor</scope><name>process</name></member>
+      <member refid="classSingleEndProcessor_1af9bb82a7162e6a3ba59d52013262a5ac" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>processorTask</name></member>
+      <member refid="classSingleEndProcessor_1aec4c12b0c0136eb961a5134a645b8714" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>processSingleEnd</name></member>
+      <member refid="classSingleEndProcessor_1aa705b2b4e1bc9f4b321e835bcc3425b0" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>readerTask</name></member>
+      <member refid="classSingleEndProcessor_1a7a56680ab84e4dd860fa1eebe4d5512c" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>recycleToPool</name></member>
+      <member refid="classSingleEndProcessor_1a23517a53bf114797efd701582dee0bd6" prot="public" virt="non-virtual"><scope>SingleEndProcessor</scope><name>SingleEndProcessor</name></member>
+      <member refid="classSingleEndProcessor_1aab7f54169933a17185add9ac7118aeb3" prot="private" virt="non-virtual"><scope>SingleEndProcessor</scope><name>writerTask</name></member>
+      <member refid="classSingleEndProcessor_1a200e744048328418b3f4c5e4cfe1e9db" prot="public" virt="non-virtual"><scope>SingleEndProcessor</scope><name>~SingleEndProcessor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

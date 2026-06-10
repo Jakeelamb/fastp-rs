@@ -1,0 +1,829 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classThreadConfig" kind="class" language="C++" prot="public">
+    <compoundname>ThreadConfig</compoundname>
+    <includes refid="threadconfig_8h" local="no">threadconfig.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classThreadConfig_1a9db36257d603fb77176fa3280608377f" prot="private" static="no" mutable="no">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats* ThreadConfig::mPreStats1</definition>
+        <argsstring></argsstring>
+        <name>mPreStats1</name>
+        <qualifiedname>ThreadConfig::mPreStats1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="53" column="11" bodyfile="src/threadconfig.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1a5ff6eea599e61373ba516ebecd234063" prot="private" static="no" mutable="no">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats* ThreadConfig::mPostStats1</definition>
+        <argsstring></argsstring>
+        <name>mPostStats1</name>
+        <qualifiedname>ThreadConfig::mPostStats1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="54" column="11" bodyfile="src/threadconfig.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1ab46090ab5acbe9c15bfe7604631ac227" prot="private" static="no" mutable="no">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats* ThreadConfig::mPreStats2</definition>
+        <argsstring></argsstring>
+        <name>mPreStats2</name>
+        <qualifiedname>ThreadConfig::mPreStats2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="55" column="11" bodyfile="src/threadconfig.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1abc1ea19456912250eec66e4e4466282c" prot="private" static="no" mutable="no">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats* ThreadConfig::mPostStats2</definition>
+        <argsstring></argsstring>
+        <name>mPostStats2</name>
+        <qualifiedname>ThreadConfig::mPostStats2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="56" column="11" bodyfile="src/threadconfig.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriter" kindref="compound">Writer</ref> *</type>
+        <definition>Writer* ThreadConfig::mWriter1</definition>
+        <argsstring></argsstring>
+        <name>mWriter1</name>
+        <qualifiedname>ThreadConfig::mWriter1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="57" column="12" bodyfile="src/threadconfig.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1a3ed6719d273c54ec3cf5e6d9b5ccc4c5" prot="private" static="no" mutable="no">
+        <type><ref refid="classWriter" kindref="compound">Writer</ref> *</type>
+        <definition>Writer* ThreadConfig::mWriter2</definition>
+        <argsstring></argsstring>
+        <name>mWriter2</name>
+        <qualifiedname>ThreadConfig::mWriter2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="58" column="12" bodyfile="src/threadconfig.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* ThreadConfig::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>ThreadConfig::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="59" column="13" bodyfile="src/threadconfig.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" prot="private" static="no" mutable="no">
+        <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+        <definition>FilterResult* ThreadConfig::mFilterResult</definition>
+        <argsstring></argsstring>
+        <name>mFilterResult</name>
+        <qualifiedname>ThreadConfig::mFilterResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="60" column="18" bodyfile="src/threadconfig.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" prot="private" static="no" mutable="no">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; *</type>
+        <definition>SingleProducerSingleConsumerList&lt;ReadPack*&gt;* ThreadConfig::mLeftInputList</definition>
+        <argsstring></argsstring>
+        <name>mLeftInputList</name>
+        <qualifiedname>ThreadConfig::mLeftInputList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="61" column="38" bodyfile="src/threadconfig.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1ab434aaa6e058e872a9f09fdf3ba8cf39" prot="private" static="no" mutable="no">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; *</type>
+        <definition>SingleProducerSingleConsumerList&lt;ReadPack*&gt;* ThreadConfig::mRightInputList</definition>
+        <argsstring></argsstring>
+        <name>mRightInputList</name>
+        <qualifiedname>ThreadConfig::mRightInputList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="62" column="38" bodyfile="src/threadconfig.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1a7fcfaf57ee37e3719081816e66fe7c74" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ThreadConfig::mThreadId</definition>
+        <argsstring></argsstring>
+        <name>mThreadId</name>
+        <qualifiedname>ThreadConfig::mThreadId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="65" column="9" bodyfile="src/threadconfig.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ThreadConfig::mWorkingSplit</definition>
+        <argsstring></argsstring>
+        <name>mWorkingSplit</name>
+        <qualifiedname>ThreadConfig::mWorkingSplit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="66" column="9" bodyfile="src/threadconfig.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1aa466b1c938a46b1f8a94a0581e8394ed" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ThreadConfig::mCurrentSplitReads</definition>
+        <argsstring></argsstring>
+        <name>mCurrentSplitReads</name>
+        <qualifiedname>ThreadConfig::mCurrentSplitReads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="67" column="10" bodyfile="src/threadconfig.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadConfig_1a1404e1172d98e0d5285ced698393dee9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ThreadConfig::mCanBeStopped</definition>
+        <argsstring></argsstring>
+        <name>mCanBeStopped</name>
+        <qualifiedname>ThreadConfig::mCanBeStopped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="68" column="10" bodyfile="src/threadconfig.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classThreadConfig_1a3c2e705cc20fe6334be383494943f76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ThreadConfig::ThreadConfig</definition>
+        <argsstring>(Options *opt, int threadId, bool paired=false)</argsstring>
+        <name>ThreadConfig</name>
+        <qualifiedname>ThreadConfig::ThreadConfig</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>threadId</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>paired</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="18" column="5" bodyfile="src/threadconfig.cpp" bodystart="4" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1ac11109f3f8d98f2821ad647640213b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ThreadConfig::~ThreadConfig</definition>
+        <argsstring>()</argsstring>
+        <name>~ThreadConfig</name>
+        <qualifiedname>ThreadConfig::~ThreadConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="19" column="5" bodyfile="src/threadconfig.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a23233d659251c0f5d16a3f1ee78746cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats * ThreadConfig::getPreStats1</definition>
+        <argsstring>()</argsstring>
+        <name>getPreStats1</name>
+        <qualifiedname>ThreadConfig::getPreStats1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="20" column="18" bodyfile="src/threadconfig.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1af572e6e0652ebdc44807b5204f8a18c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats * ThreadConfig::getPostStats1</definition>
+        <argsstring>()</argsstring>
+        <name>getPostStats1</name>
+        <qualifiedname>ThreadConfig::getPostStats1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="21" column="18" bodyfile="src/threadconfig.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a9797bd498b4d392bfab23aa2ec0a933d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats * ThreadConfig::getPreStats2</definition>
+        <argsstring>()</argsstring>
+        <name>getPreStats2</name>
+        <qualifiedname>ThreadConfig::getPreStats2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="22" column="18" bodyfile="src/threadconfig.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1acc217e60e637f3e58a6cd98592e665eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+        <definition>Stats * ThreadConfig::getPostStats2</definition>
+        <argsstring>()</argsstring>
+        <name>getPostStats2</name>
+        <qualifiedname>ThreadConfig::getPostStats2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="23" column="18" bodyfile="src/threadconfig.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a296efaa78d4b5d5f1c6e7dd2aa49ce71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classWriter" kindref="compound">Writer</ref> *</type>
+        <definition>Writer * ThreadConfig::getWriter1</definition>
+        <argsstring>()</argsstring>
+        <name>getWriter1</name>
+        <qualifiedname>ThreadConfig::getWriter1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="24" column="19" bodyfile="src/threadconfig.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1af5a6eddd34b67d96c9c72f6d39decde0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classWriter" kindref="compound">Writer</ref> *</type>
+        <definition>Writer * ThreadConfig::getWriter2</definition>
+        <argsstring>()</argsstring>
+        <name>getWriter2</name>
+        <qualifiedname>ThreadConfig::getWriter2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="25" column="19" bodyfile="src/threadconfig.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1aadbf8a20156fc0367fd256b5c65643c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+        <definition>FilterResult * ThreadConfig::getFilterResult</definition>
+        <argsstring>()</argsstring>
+        <name>getFilterResult</name>
+        <qualifiedname>ThreadConfig::getFilterResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="26" column="25" bodyfile="src/threadconfig.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a7328638acc46a45009833bda2774b5e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::initWriter</definition>
+        <argsstring>(string filename1)</argsstring>
+        <name>initWriter</name>
+        <qualifiedname>ThreadConfig::initWriter</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="28" column="10" bodyfile="src/threadconfig.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1afe46c4614a4e303d46589615f6a841d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::initWriter</definition>
+        <argsstring>(string filename1, string filename2)</argsstring>
+        <name>initWriter</name>
+        <qualifiedname>ThreadConfig::initWriter</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>filename1</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filename2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="29" column="10" bodyfile="src/threadconfig.cpp" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a6c55c466123792c864e8189af9364bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::addFilterResult</definition>
+        <argsstring>(int result, int readNum)</argsstring>
+        <name>addFilterResult</name>
+        <qualifiedname>ThreadConfig::addFilterResult</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>readNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="31" column="10" bodyfile="src/threadconfig.cpp" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a496f939454adbb2f7ccd90c46e14739a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::addMergedPairs</definition>
+        <argsstring>(int pairs)</argsstring>
+        <name>addMergedPairs</name>
+        <qualifiedname>ThreadConfig::addMergedPairs</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>pairs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="32" column="10" bodyfile="src/threadconfig.cpp" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a16755b525b2e0cb5b321706a9cc7b0d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ThreadConfig::getThreadId</definition>
+        <argsstring>()</argsstring>
+        <name>getThreadId</name>
+        <qualifiedname>ThreadConfig::getThreadId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="34" column="9" bodyfile="src/threadconfig.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1af5ca1fe7b47c617332176f2f0b0b7026" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::markProcessed</definition>
+        <argsstring>(long readNum)</argsstring>
+        <name>markProcessed</name>
+        <qualifiedname>ThreadConfig::markProcessed</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>readNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="37" column="10" bodyfile="src/threadconfig.cpp" bodystart="127" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a1c894eafd8e4bb0bd665297e8c15c0dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::initWriterForSplit</definition>
+        <argsstring>()</argsstring>
+        <name>initWriterForSplit</name>
+        <qualifiedname>ThreadConfig::initWriterForSplit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="38" column="10" bodyfile="src/threadconfig.cpp" bodystart="106" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a064f8bf41ae77bb519bc5b756a41af38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ThreadConfig::canBeStopped</definition>
+        <argsstring>()</argsstring>
+        <name>canBeStopped</name>
+        <qualifiedname>ThreadConfig::canBeStopped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="39" column="10" bodyfile="src/threadconfig.cpp" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a83b1b2aefa819cfb3f91f9a5b816ca00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <qualifiedname>ThreadConfig::cleanup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="40" column="10" bodyfile="src/threadconfig.cpp" bodystart="32" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1ae7fce490836eac6a84cb84d45cfa33bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::setInputList</definition>
+        <argsstring>(SingleProducerSingleConsumerList&lt; ReadPack * &gt; *list)</argsstring>
+        <name>setInputList</name>
+        <qualifiedname>ThreadConfig::setInputList</qualifiedname>
+        <param>
+          <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="43" column="10" bodyfile="src/threadconfig.cpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a8f01d23de95158db4a81533016ae634a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::setInputListPair</definition>
+        <argsstring>(SingleProducerSingleConsumerList&lt; ReadPack * &gt; *left, SingleProducerSingleConsumerList&lt; ReadPack * &gt; *right)</argsstring>
+        <name>setInputListPair</name>
+        <qualifiedname>ThreadConfig::setInputListPair</qualifiedname>
+        <param>
+          <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; *</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="44" column="10" bodyfile="src/threadconfig.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a92b24277bcd99f5caa4827f131b37536" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; *</type>
+        <definition>SingleProducerSingleConsumerList&lt; ReadPack * &gt; * ThreadConfig::getLeftInput</definition>
+        <argsstring>()</argsstring>
+        <name>getLeftInput</name>
+        <qualifiedname>ThreadConfig::getLeftInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="45" column="38" bodyfile="src/threadconfig.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1aafa5bd8c77bea841ddef64aeb63c6f38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList</ref>&lt; <ref refid="structReadPack" kindref="compound">ReadPack</ref> * &gt; *</type>
+        <definition>SingleProducerSingleConsumerList&lt; ReadPack * &gt; * ThreadConfig::getRightInput</definition>
+        <argsstring>()</argsstring>
+        <name>getRightInput</name>
+        <qualifiedname>ThreadConfig::getRightInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="46" column="38" bodyfile="src/threadconfig.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classThreadConfig_1a1d9d35713d7afba5c22b47b4df1c025f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::deleteWriter</definition>
+        <argsstring>()</argsstring>
+        <name>deleteWriter</name>
+        <qualifiedname>ThreadConfig::deleteWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="49" column="10" bodyfile="src/threadconfig.cpp" bodystart="76" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadConfig_1a58a1212ae209519a6aaa2643cd2213dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ThreadConfig::writeEmptyFilesForSplitting</definition>
+        <argsstring>()</argsstring>
+        <name>writeEmptyFilesForSplitting</name>
+        <qualifiedname>ThreadConfig::writeEmptyFilesForSplitting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/threadconfig.h" line="50" column="10" bodyfile="src/threadconfig.cpp" bodystart="151" bodyend="157"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="10">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="17">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="20">
+        <label>FilterResult</label>
+        <link refid="classFilterResult"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="22">
+        <label>LockFreeListItem&lt; ReadPack * &gt;</label>
+        <link refid="structLockFreeListItem"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>nextItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="18">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="3">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="13">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="9">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="5">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="24">
+        <label>Read</label>
+        <link refid="classRead"/>
+      </node>
+      <node id="6">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="23">
+        <label>ReadPack</label>
+        <link refid="structReadPack"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>SingleProducerSingleConsumerList&lt; ReadPack * &gt;</label>
+        <link refid="classSingleProducerSingleConsumerList"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>blocks</edgelabel>
+          <edgelabel>head</edgelabel>
+          <edgelabel>tail</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="2">
+        <label>Stats</label>
+        <link refid="classStats"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ThreadConfig</label>
+        <link refid="classThreadConfig"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mPostStats1</edgelabel>
+          <edgelabel>mPostStats2</edgelabel>
+          <edgelabel>mPreStats1</edgelabel>
+          <edgelabel>mPreStats2</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>mWriter1</edgelabel>
+          <edgelabel>mWriter2</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>mFilterResult</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>mLeftInputList</edgelabel>
+          <edgelabel>mRightInputList</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="11">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+      <node id="19">
+        <label>Writer</label>
+        <link refid="classWriter"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/threadconfig.h" line="16" column="1" bodyfile="src/threadconfig.h" bodystart="16" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classThreadConfig_1a6c55c466123792c864e8189af9364bc6" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>addFilterResult</name></member>
+      <member refid="classThreadConfig_1a496f939454adbb2f7ccd90c46e14739a" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>addMergedPairs</name></member>
+      <member refid="classThreadConfig_1a064f8bf41ae77bb519bc5b756a41af38" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>canBeStopped</name></member>
+      <member refid="classThreadConfig_1a83b1b2aefa819cfb3f91f9a5b816ca00" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>cleanup</name></member>
+      <member refid="classThreadConfig_1a1d9d35713d7afba5c22b47b4df1c025f" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>deleteWriter</name></member>
+      <member refid="classThreadConfig_1aadbf8a20156fc0367fd256b5c65643c5" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getFilterResult</name></member>
+      <member refid="classThreadConfig_1a92b24277bcd99f5caa4827f131b37536" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getLeftInput</name></member>
+      <member refid="classThreadConfig_1af572e6e0652ebdc44807b5204f8a18c0" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getPostStats1</name></member>
+      <member refid="classThreadConfig_1acc217e60e637f3e58a6cd98592e665eb" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getPostStats2</name></member>
+      <member refid="classThreadConfig_1a23233d659251c0f5d16a3f1ee78746cb" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getPreStats1</name></member>
+      <member refid="classThreadConfig_1a9797bd498b4d392bfab23aa2ec0a933d" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getPreStats2</name></member>
+      <member refid="classThreadConfig_1aafa5bd8c77bea841ddef64aeb63c6f38" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getRightInput</name></member>
+      <member refid="classThreadConfig_1a16755b525b2e0cb5b321706a9cc7b0d6" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getThreadId</name></member>
+      <member refid="classThreadConfig_1a296efaa78d4b5d5f1c6e7dd2aa49ce71" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getWriter1</name></member>
+      <member refid="classThreadConfig_1af5a6eddd34b67d96c9c72f6d39decde0" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>getWriter2</name></member>
+      <member refid="classThreadConfig_1a7328638acc46a45009833bda2774b5e7" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>initWriter</name></member>
+      <member refid="classThreadConfig_1afe46c4614a4e303d46589615f6a841d9" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>initWriter</name></member>
+      <member refid="classThreadConfig_1a1c894eafd8e4bb0bd665297e8c15c0dc" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>initWriterForSplit</name></member>
+      <member refid="classThreadConfig_1af5ca1fe7b47c617332176f2f0b0b7026" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>markProcessed</name></member>
+      <member refid="classThreadConfig_1a1404e1172d98e0d5285ced698393dee9" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mCanBeStopped</name></member>
+      <member refid="classThreadConfig_1aa466b1c938a46b1f8a94a0581e8394ed" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mCurrentSplitReads</name></member>
+      <member refid="classThreadConfig_1ab66fc9188a2db2abb1196317ac3f6531" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mFilterResult</name></member>
+      <member refid="classThreadConfig_1ad234e80f886b7bbb703fe573d34136e4" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mLeftInputList</name></member>
+      <member refid="classThreadConfig_1ae9218c686dbeba8ab560b60c113d2c9d" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mOptions</name></member>
+      <member refid="classThreadConfig_1a5ff6eea599e61373ba516ebecd234063" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mPostStats1</name></member>
+      <member refid="classThreadConfig_1abc1ea19456912250eec66e4e4466282c" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mPostStats2</name></member>
+      <member refid="classThreadConfig_1a9db36257d603fb77176fa3280608377f" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mPreStats1</name></member>
+      <member refid="classThreadConfig_1ab46090ab5acbe9c15bfe7604631ac227" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mPreStats2</name></member>
+      <member refid="classThreadConfig_1ab434aaa6e058e872a9f09fdf3ba8cf39" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mRightInputList</name></member>
+      <member refid="classThreadConfig_1a7fcfaf57ee37e3719081816e66fe7c74" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mThreadId</name></member>
+      <member refid="classThreadConfig_1afe39eb02aa3dfc04ff20c52e86b2207d" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mWorkingSplit</name></member>
+      <member refid="classThreadConfig_1a5eb14a688584058bf539743a6c8e1d2b" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mWriter1</name></member>
+      <member refid="classThreadConfig_1a3ed6719d273c54ec3cf5e6d9b5ccc4c5" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>mWriter2</name></member>
+      <member refid="classThreadConfig_1ae7fce490836eac6a84cb84d45cfa33bd" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>setInputList</name></member>
+      <member refid="classThreadConfig_1a8f01d23de95158db4a81533016ae634a" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>setInputListPair</name></member>
+      <member refid="classThreadConfig_1a3c2e705cc20fe6334be383494943f76c" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>ThreadConfig</name></member>
+      <member refid="classThreadConfig_1a58a1212ae209519a6aaa2643cd2213dd" prot="private" virt="non-virtual"><scope>ThreadConfig</scope><name>writeEmptyFilesForSplitting</name></member>
+      <member refid="classThreadConfig_1ac11109f3f8d98f2821ad647640213b98" prot="public" virt="non-virtual"><scope>ThreadConfig</scope><name>~ThreadConfig</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

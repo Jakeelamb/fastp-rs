@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classSingleProducerSingleConsumerList" kind="class" language="C++" prot="public">
+    <compoundname>SingleProducerSingleConsumerList</compoundname>
+    <includes refid="singleproducersingleconsumerlist_8h" local="no">singleproducersingleconsumerlist.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1a6c87befc1b420fedaa69502696647719" prot="private" static="no" mutable="no">
+        <type><ref refid="structLockFreeListItem" kindref="compound">LockFreeListItem</ref>&lt; T &gt; *</type>
+        <definition>LockFreeListItem&lt;T&gt;* SingleProducerSingleConsumerList&lt; T &gt;::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <qualifiedname>SingleProducerSingleConsumerList::head</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="165" column="22" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1ae4ebcc4426cbd3536e316069eb70b472" prot="private" static="no" mutable="no">
+        <type><ref refid="structLockFreeListItem" kindref="compound">LockFreeListItem</ref>&lt; T &gt; *</type>
+        <definition>LockFreeListItem&lt;T&gt;* SingleProducerSingleConsumerList&lt; T &gt;::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <qualifiedname>SingleProducerSingleConsumerList::tail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="166" column="22" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1a4c080c6fb829eca3be473747cd46b50d" prot="private" static="no" mutable="no">
+        <type><ref refid="structLockFreeListItem" kindref="compound">LockFreeListItem</ref>&lt; T &gt; **</type>
+        <definition>LockFreeListItem&lt;T&gt;** SingleProducerSingleConsumerList&lt; T &gt;::blocks</definition>
+        <argsstring></argsstring>
+        <name>blocks</name>
+        <qualifiedname>SingleProducerSingleConsumerList::blocks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="167" column="22" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1a7c8ac0a454151e09c283645805d9842f" prot="private" static="no" mutable="no">
+        <type>std::atomic_bool</type>
+        <definition>std::atomic_bool SingleProducerSingleConsumerList&lt; T &gt;::producerFinished</definition>
+        <argsstring></argsstring>
+        <name>producerFinished</name>
+        <qualifiedname>SingleProducerSingleConsumerList::producerFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="168" column="22" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1a62837f1a73066b0132855b2ac2a2149d" prot="private" static="no" mutable="no">
+        <type>std::atomic_bool</type>
+        <definition>std::atomic_bool SingleProducerSingleConsumerList&lt; T &gt;::consumerFinished</definition>
+        <argsstring></argsstring>
+        <name>consumerFinished</name>
+        <qualifiedname>SingleProducerSingleConsumerList::consumerFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="169" column="22" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1a7f5d9bf6050e46aa65bf74c0e95e8e04" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long SingleProducerSingleConsumerList&lt; T &gt;::produced</definition>
+        <argsstring></argsstring>
+        <name>produced</name>
+        <qualifiedname>SingleProducerSingleConsumerList::produced</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="170" column="19" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1a90b54cf3f28edd0ba719057a1ef87225" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long SingleProducerSingleConsumerList&lt; T &gt;::consumed</definition>
+        <argsstring></argsstring>
+        <name>consumed</name>
+        <qualifiedname>SingleProducerSingleConsumerList::consumed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="171" column="19" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1af229bcdbabca28c205c00a2c36f6cd3a" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long SingleProducerSingleConsumerList&lt; T &gt;::recycled</definition>
+        <argsstring></argsstring>
+        <name>recycled</name>
+        <qualifiedname>SingleProducerSingleConsumerList::recycled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="172" column="19" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1a1fbb4cbdcc40e26b41ad5aad8566eb44" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long SingleProducerSingleConsumerList&lt; T &gt;::blocksRingBufferSize</definition>
+        <argsstring></argsstring>
+        <name>blocksRingBufferSize</name>
+        <qualifiedname>SingleProducerSingleConsumerList::blocksRingBufferSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="173" column="19" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1a6d3179ea11e46c422eae8ec9477300e1" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long SingleProducerSingleConsumerList&lt; T &gt;::blocksRingBufferSizeMask</definition>
+        <argsstring></argsstring>
+        <name>blocksRingBufferSizeMask</name>
+        <qualifiedname>SingleProducerSingleConsumerList::blocksRingBufferSizeMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="174" column="19" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSingleProducerSingleConsumerList_1ace268dce9b3da1cc5dedc4a1fc7ec9af" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long SingleProducerSingleConsumerList&lt; T &gt;::blocksNum</definition>
+        <argsstring></argsstring>
+        <name>blocksNum</name>
+        <qualifiedname>SingleProducerSingleConsumerList::blocksNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="175" column="19" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1a3701e2e62894834a7ec95dea492f68d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SingleProducerSingleConsumerList&lt; T &gt;::SingleProducerSingleConsumerList</definition>
+        <argsstring>()</argsstring>
+        <name>SingleProducerSingleConsumerList</name>
+        <qualifiedname>SingleProducerSingleConsumerList::SingleProducerSingleConsumerList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="65" column="12" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="65" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1a2cf48c29f5f285f0ed2529a045d501a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SingleProducerSingleConsumerList&lt; T &gt;::~SingleProducerSingleConsumerList</definition>
+        <argsstring>()</argsstring>
+        <name>~SingleProducerSingleConsumerList</name>
+        <qualifiedname>SingleProducerSingleConsumerList::~SingleProducerSingleConsumerList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="80" column="12" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="80" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1a4796538560a708ef982c435ad33534f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SingleProducerSingleConsumerList&lt; T &gt;::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <qualifiedname>SingleProducerSingleConsumerList::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="89" column="19" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1aff6b4bfbb70cfa0cfbcc6308ca066177" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SingleProducerSingleConsumerList&lt; T &gt;::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>SingleProducerSingleConsumerList::isEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="92" column="17" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1a8b9db1c38f8b683e4f4e693e0c15c6a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SingleProducerSingleConsumerList&lt; T &gt;::canBeConsumed</definition>
+        <argsstring>()</argsstring>
+        <name>canBeConsumed</name>
+        <qualifiedname>SingleProducerSingleConsumerList::canBeConsumed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="95" column="17" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="95" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1a9bb0bcf74d3d05605e431b35aaf12b2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleProducerSingleConsumerList&lt; T &gt;::produce</definition>
+        <argsstring>(T val)</argsstring>
+        <name>produce</name>
+        <qualifiedname>SingleProducerSingleConsumerList::produce</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="103" column="17" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="103" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1a449d9b205ae321d78481ae327f39a9d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T SingleProducerSingleConsumerList&lt; T &gt;::consume</definition>
+        <argsstring>()</argsstring>
+        <name>consume</name>
+        <qualifiedname>SingleProducerSingleConsumerList::consume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="117" column="14" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="117" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1acc12cb331640608fa9b4a862929e6da5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SingleProducerSingleConsumerList&lt; T &gt;::isProducerFinished</definition>
+        <argsstring>()</argsstring>
+        <name>isProducerFinished</name>
+        <qualifiedname>SingleProducerSingleConsumerList::isProducerFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="126" column="17" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1ad05fcc09a2df58465a82087175546926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SingleProducerSingleConsumerList&lt; T &gt;::isConsumerFinished</definition>
+        <argsstring>()</argsstring>
+        <name>isConsumerFinished</name>
+        <qualifiedname>SingleProducerSingleConsumerList::isConsumerFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="129" column="17" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="129" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1af14e48ee772cbf3b913cd0bf3d43db80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleProducerSingleConsumerList&lt; T &gt;::setProducerFinished</definition>
+        <argsstring>()</argsstring>
+        <name>setProducerFinished</name>
+        <qualifiedname>SingleProducerSingleConsumerList::setProducerFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="132" column="17" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1ae2e877fc589fe814c0ae2e5dd3f1ca7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleProducerSingleConsumerList&lt; T &gt;::setConsumerFinished</definition>
+        <argsstring>()</argsstring>
+        <name>setConsumerFinished</name>
+        <qualifiedname>SingleProducerSingleConsumerList::setConsumerFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="135" column="17" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="135" bodyend="137"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1a61544df8ed82b3f134247bba184d1487" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structLockFreeListItem" kindref="compound">LockFreeListItem</ref>&lt; T &gt; *</type>
+        <definition>LockFreeListItem&lt; T &gt; * SingleProducerSingleConsumerList&lt; T &gt;::makeItem</definition>
+        <argsstring>(T val)</argsstring>
+        <name>makeItem</name>
+        <qualifiedname>SingleProducerSingleConsumerList::makeItem</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="140" column="29" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="140" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classSingleProducerSingleConsumerList_1a873a1c4093b39dcdd86be519ee7f601b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SingleProducerSingleConsumerList&lt; T &gt;::recycle</definition>
+        <argsstring>()</argsstring>
+        <name>recycle</name>
+        <qualifiedname>SingleProducerSingleConsumerList::recycle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/singleproducersingleconsumerlist.h" line="155" column="17" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="155" bodyend="162"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/singleproducersingleconsumerlist.h" line="63" column="1" bodyfile="src/singleproducersingleconsumerlist.h" bodystart="63" bodyend="176"/>
+    <listofallmembers>
+      <member refid="classSingleProducerSingleConsumerList_1a4c080c6fb829eca3be473747cd46b50d" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>blocks</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1ace268dce9b3da1cc5dedc4a1fc7ec9af" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>blocksNum</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a1fbb4cbdcc40e26b41ad5aad8566eb44" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>blocksRingBufferSize</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a6d3179ea11e46c422eae8ec9477300e1" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>blocksRingBufferSizeMask</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a8b9db1c38f8b683e4f4e693e0c15c6a4" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>canBeConsumed</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a449d9b205ae321d78481ae327f39a9d1" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>consume</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a90b54cf3f28edd0ba719057a1ef87225" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>consumed</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a62837f1a73066b0132855b2ac2a2149d" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>consumerFinished</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a6c87befc1b420fedaa69502696647719" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>head</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1ad05fcc09a2df58465a82087175546926" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>isConsumerFinished</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1aff6b4bfbb70cfa0cfbcc6308ca066177" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>isEmpty</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1acc12cb331640608fa9b4a862929e6da5" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>isProducerFinished</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a61544df8ed82b3f134247bba184d1487" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>makeItem</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a9bb0bcf74d3d05605e431b35aaf12b2d" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>produce</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a7f5d9bf6050e46aa65bf74c0e95e8e04" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>produced</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a7c8ac0a454151e09c283645805d9842f" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>producerFinished</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a873a1c4093b39dcdd86be519ee7f601b" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>recycle</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1af229bcdbabca28c205c00a2c36f6cd3a" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>recycled</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1ae2e877fc589fe814c0ae2e5dd3f1ca7c" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>setConsumerFinished</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1af14e48ee772cbf3b913cd0bf3d43db80" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>setProducerFinished</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a3701e2e62894834a7ec95dea492f68d7" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>SingleProducerSingleConsumerList</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a4796538560a708ef982c435ad33534f1" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>size</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1ae4ebcc4426cbd3536e316069eb70b472" prot="private" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>tail</name></member>
+      <member refid="classSingleProducerSingleConsumerList_1a2cf48c29f5f285f0ed2529a045d501a9" prot="public" virt="non-virtual"><scope>SingleProducerSingleConsumerList</scope><name>~SingleProducerSingleConsumerList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

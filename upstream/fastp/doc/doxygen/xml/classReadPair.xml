@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classReadPair" kind="class" language="C++" prot="public">
+    <compoundname>ReadPair</compoundname>
+    <includes refid="read_8h" local="no">read.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classReadPair_1afc7223bfd8146ffefa812c636dc46cfc" prot="public" static="no" mutable="no">
+        <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+        <definition>Read* ReadPair::mLeft</definition>
+        <argsstring></argsstring>
+        <name>mLeft</name>
+        <qualifiedname>ReadPair::mLeft</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="59" column="10" bodyfile="src/read.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classReadPair_1a2c8801e4cbbaca4c503d5d771f50ebc3" prot="public" static="no" mutable="no">
+        <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+        <definition>Read* ReadPair::mRight</definition>
+        <argsstring></argsstring>
+        <name>mRight</name>
+        <qualifiedname>ReadPair::mRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="60" column="10" bodyfile="src/read.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classReadPair_1ab5f81f0389b6f14665fed2ac6f93c2ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReadPair::ReadPair</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPair</name>
+        <qualifiedname>ReadPair::ReadPair</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="51" column="5" bodyfile="src/read.cpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPair_1af93f0edc036beb79c428e2eb069f98a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReadPair::~ReadPair</definition>
+        <argsstring>()</argsstring>
+        <name>~ReadPair</name>
+        <qualifiedname>ReadPair::~ReadPair</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="52" column="5" bodyfile="src/read.cpp" bodystart="187" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPair_1a96b9dc3317b483df952bab74de890809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReadPair::setPair</definition>
+        <argsstring>(Read *left, Read *right)</argsstring>
+        <name>setPair</name>
+        <qualifiedname>ReadPair::setPair</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="53" column="10" bodyfile="src/read.cpp" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPair_1ad1d3ff813ebb28111e645a19ed012046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ReadPair::eof</definition>
+        <argsstring>()</argsstring>
+        <name>eof</name>
+        <qualifiedname>ReadPair::eof</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="54" column="10" bodyfile="src/read.cpp" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classReadPair_1a6463c5ed13cd48aed6485ad8c5d80f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+        <definition>Read * ReadPair::fastMerge</definition>
+        <argsstring>()</argsstring>
+        <name>fastMerge</name>
+        <qualifiedname>ReadPair::fastMerge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="57" column="10" bodyfile="src/read.cpp" bodystart="207" bodyend="279"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classReadPair_1a9233aecc6c48fe8e485da0358c148737" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ReadPair::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>ReadPair::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="63" column="17" bodyfile="src/read.cpp" bodystart="281" bodyend="301"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Read</label>
+        <link refid="classRead"/>
+      </node>
+      <node id="1">
+        <label>ReadPair</label>
+        <link refid="classReadPair"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mLeft</edgelabel>
+          <edgelabel>mRight</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/read.h" line="49" column="1" bodyfile="src/read.h" bodystart="49" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classReadPair_1ad1d3ff813ebb28111e645a19ed012046" prot="public" virt="non-virtual"><scope>ReadPair</scope><name>eof</name></member>
+      <member refid="classReadPair_1a6463c5ed13cd48aed6485ad8c5d80f54" prot="public" virt="non-virtual"><scope>ReadPair</scope><name>fastMerge</name></member>
+      <member refid="classReadPair_1afc7223bfd8146ffefa812c636dc46cfc" prot="public" virt="non-virtual"><scope>ReadPair</scope><name>mLeft</name></member>
+      <member refid="classReadPair_1a2c8801e4cbbaca4c503d5d771f50ebc3" prot="public" virt="non-virtual"><scope>ReadPair</scope><name>mRight</name></member>
+      <member refid="classReadPair_1ab5f81f0389b6f14665fed2ac6f93c2ce" prot="public" virt="non-virtual"><scope>ReadPair</scope><name>ReadPair</name></member>
+      <member refid="classReadPair_1a96b9dc3317b483df952bab74de890809" prot="public" virt="non-virtual"><scope>ReadPair</scope><name>setPair</name></member>
+      <member refid="classReadPair_1a9233aecc6c48fe8e485da0358c148737" prot="public" virt="non-virtual"><scope>ReadPair</scope><name>test</name></member>
+      <member refid="classReadPair_1af93f0edc036beb79c428e2eb069f98a8" prot="public" virt="non-virtual"><scope>ReadPair</scope><name>~ReadPair</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

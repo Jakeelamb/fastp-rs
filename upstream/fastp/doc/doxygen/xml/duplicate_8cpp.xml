@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="duplicate_8cpp" kind="file" language="C++">
+    <compoundname>duplicate.cpp</compoundname>
+    <includes refid="duplicate_8h" local="yes">duplicate.h</includes>
+    <includes refid="overlapanalysis_8h" local="yes">overlapanalysis.h</includes>
+    <includes local="no">memory.h</includes>
+    <includes local="no">math.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="1">
+        <label>src/duplicate.cpp</label>
+        <link refid="duplicate_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>duplicate.h</label>
+        <link refid="duplicate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>overlapanalysis.h</label>
+        <link refid="overlapanalysis_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>algorithm</label>
+      </node>
+      <node id="14">
+        <label>atomic</label>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="17">
+        <label>math.h</label>
+      </node>
+      <node id="16">
+        <label>memory.h</label>
+      </node>
+      <node id="22">
+        <label>mutex</label>
+      </node>
+      <node id="23">
+        <label>regex</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="19">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="21">
+        <label>time.h</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="duplicate_8cpp_1a1f57318f7d28e77ec1b8927eb4e158bf" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int PRIME_ARRAY_LEN</definition>
+        <argsstring></argsstring>
+        <name>PRIME_ARRAY_LEN</name>
+        <initializer>= 1&lt;&lt;9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.cpp" line="7" column="11" bodyfile="src/duplicate.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="duplicate_8cpp_1a0ed0ed935027605d17e14352161dbf3c" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref></type>
+        <definition>const uint64 SEQ_HASH_VAL[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>SEQ_HASH_VAL</name>
+        <initializer>                                 = {
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13, 7,13,74,13,13,13,31,13,13,13,13,13,13,13,13, 
+    13,13,13,13,222,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+    13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13, 
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/duplicate.cpp" line="92" column="21" bodyfile="src/duplicate.cpp" bodystart="92" bodyend="109"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="duplicate_8h" kindref="compound">duplicate.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="overlapanalysis_8h" kindref="compound">overlapanalysis.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="duplicate_8cpp_1a1f57318f7d28e77ec1b8927eb4e158bf" kindref="member">PRIME_ARRAY_LEN</ref><sp/>=<sp/>1&lt;&lt;9;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="classDuplicate_1a556f1ed55137a2044eedcd62cd442368" kindref="member">Duplicate::Duplicate</ref>(<ref refid="classOptions" kindref="compound">Options</ref>*<sp/>opt)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1ac347a39888bf6bb8e5384aa41f542edc" kindref="member">mOptions</ref><sp/>=<sp/>opt;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1G<sp/>mem<sp/>required</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>=<sp/>1L<sp/>&lt;&lt;29;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>memory<sp/>usage<sp/>increases<sp/>as<sp/>the<sp/>accuracy<sp/>level<sp/>increases</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>level<sp/>1:<sp/>1G</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>level<sp/>2:<sp/>2G</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>level<sp/>3:<sp/>4G</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>level<sp/>4:<sp/>8G</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>level<sp/>5:<sp/>16G</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>level<sp/>6:<sp/>32G</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(<ref refid="classDuplicate_1ac347a39888bf6bb8e5384aa41f542edc" kindref="member">mOptions</ref>-&gt;duplicate.accuracyLevel)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>*=<sp/>4;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>*=<sp/>8;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>6:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>*=<sp/>8;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>*=<sp/>4;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1ab16812c9a3e19ed3e379d1b508630546" kindref="member">mOffsetMask</ref><sp/>=<sp/><ref refid="duplicate_8cpp_1a1f57318f7d28e77ec1b8927eb4e158bf" kindref="member">PRIME_ARRAY_LEN</ref><sp/>*<sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a60159fa0fa1b216f96f2f22190e1c0c2" kindref="member">mBufLenInBits</ref><sp/>=<sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>&lt;&lt;<sp/>3;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a70160b6d74373828723ae77c99b281d4" kindref="member">mDupBuf</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>atomic_uchar[<ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>*<sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref>];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classDuplicate_1a70160b6d74373828723ae77c99b281d4" kindref="member">mDupBuf</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="util_8h_1a72cc7f4c6bfdafb18d052826b06723d6" kindref="member">error_exit</ref>(</highlight><highlight class="stringliteral">&quot;Out<sp/>of<sp/>memory,<sp/>failed<sp/>to<sp/>allocate<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(<ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>*<sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>bytes<sp/>buffer<sp/>for<sp/>duplication<sp/>analysis,<sp/>please<sp/>reduce<sp/>the<sp/>dup_accuracy_level<sp/>and<sp/>try<sp/>again.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="classDuplicate_1a70160b6d74373828723ae77c99b281d4" kindref="member">mDupBuf</ref>,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(atomic_uchar)<sp/>*<sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>*<sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a4eb6e1d9c1a25447dd0a5a36785308bb" kindref="member">mPrimeArrays</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref>[<ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>*<sp/><ref refid="duplicate_8cpp_1a1f57318f7d28e77ec1b8927eb4e158bf" kindref="member">PRIME_ARRAY_LEN</ref>];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="classDuplicate_1a4eb6e1d9c1a25447dd0a5a36785308bb" kindref="member">mPrimeArrays</ref>,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref>)<sp/>*<sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>*<sp/><ref refid="duplicate_8cpp_1a1f57318f7d28e77ec1b8927eb4e158bf" kindref="member">PRIME_ARRAY_LEN</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a8e57060bdc4cfa2813683e4482412014" kindref="member">initPrimeArrays</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a4b02f4b9fdaba956a32500d2123a1fa4" kindref="member">mTotalReads</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1acf4dcf3341a875179ee25fa2614260c9" kindref="member">mDupReads</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDuplicate_1a8e57060bdc4cfa2813683e4482412014" kindref="member">Duplicate::initPrimeArrays</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/>number<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(count<sp/>&lt;<sp/><ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>*<sp/><ref refid="duplicate_8cpp_1a1f57318f7d28e77ec1b8927eb4e158bf" kindref="member">PRIME_ARRAY_LEN</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number++;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isPrime<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/>i=2;<sp/>i&lt;=sqrt(number);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(number%i<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isPrime<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isPrime)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a4eb6e1d9c1a25447dd0a5a36785308bb" kindref="member">mPrimeArrays</ref>[count]<sp/>=<sp/>number;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>+=<sp/>10000;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><ref refid="classDuplicate_1a34fc56b85205788738da635fcc3245bb" kindref="member">Duplicate::~Duplicate</ref>(){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classDuplicate_1a70160b6d74373828723ae77c99b281d4" kindref="member">mDupBuf</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/><ref refid="classDuplicate_1a4eb6e1d9c1a25447dd0a5a36785308bb" kindref="member">mPrimeArrays</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Branchless<sp/>base-to-hash-value<sp/>lookup<sp/>(A=7,<sp/>T=222,<sp/>C=74,<sp/>G=31,<sp/>else=13)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/><ref refid="duplicate_8cpp_1a0ed0ed935027605d17e14352161dbf3c" kindref="member">SEQ_HASH_VAL</ref>[256]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x00-0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x10-0x1F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x20-0x2F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x30-0x3F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>13,<sp/>7,13,74,13,13,13,31,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x40-0x4F:<sp/>A=7,<sp/>C=74,<sp/>G=31</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,222,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x50-0x5F:<sp/>T=222</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x60-0x6F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x70-0x7F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x80-0x8F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0x90-0x9F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0xA0-0xAF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0xB0-0xBF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0xC0-0xCF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0xD0-0xDF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0xE0-0xEF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,<sp/></highlight><highlight class="comment">//<sp/>0xF0-0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDuplicate_1a237315896ed2c23fcb40d576598fca21" kindref="member">Duplicate::seq2intvector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref>*<sp/>output,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posOffset)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p=0;<sp/>p&lt;len;<sp/>p++)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/>base<sp/>=<sp/><ref refid="duplicate_8cpp_1a0ed0ed935027605d17e14352161dbf3c" kindref="member">SEQ_HASH_VAL</ref>[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(data[p])];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>(p+posOffset)*<ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref><sp/>+<sp/>i;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>&amp;=<sp/><ref refid="classDuplicate_1ab16812c9a3e19ed3e379d1b508630546" kindref="member">mOffsetMask</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output[i]<sp/>+=<sp/><ref refid="classDuplicate_1a4eb6e1d9c1a25447dd0a5a36785308bb" kindref="member">mPrimeArrays</ref>[offset]<sp/>*<sp/>(base<sp/>+<sp/>(p+posOffset));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDuplicate_1a168145b6efe245bc00a6e247241b183c" kindref="member">Duplicate::checkRead</ref>(<ref refid="classRead" kindref="compound">Read</ref>*<sp/>r)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>mBufNum<sp/>is<sp/>8<sp/>(accuracy<sp/>level<sp/>6),<sp/>stack-allocate<sp/>to<sp/>avoid<sp/>heap<sp/>alloc<sp/>per<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/>positions[8]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>r-&gt;<ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a237315896ed2c23fcb40d576598fca21" kindref="member">seq2intvector</ref>(r-&gt;<ref refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kindref="member">mSeq</ref>-&gt;c_str(),<sp/>len,<sp/>positions);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isDup<sp/>=<sp/><ref refid="classDuplicate_1a14eaa18367015498b0a0b23b10b237a4" kindref="member">applyBloomFilter</ref>(positions);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a4b02f4b9fdaba956a32500d2123a1fa4" kindref="member">mTotalReads</ref>++;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isDup)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1acf4dcf3341a875179ee25fa2614260c9" kindref="member">mDupReads</ref>++;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>isDup;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDuplicate_1ab46011e368c4dabd6a7147f549fde8a8" kindref="member">Duplicate::checkPair</ref>(<ref refid="classRead" kindref="compound">Read</ref>*<sp/>r1,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>r2)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>max<sp/>mBufNum<sp/>is<sp/>8<sp/>(accuracy<sp/>level<sp/>6),<sp/>stack-allocate<sp/>to<sp/>avoid<sp/>heap<sp/>alloc<sp/>per<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/>positions[8]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a237315896ed2c23fcb40d576598fca21" kindref="member">seq2intvector</ref>(r1-&gt;<ref refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kindref="member">mSeq</ref>-&gt;c_str(),<sp/>r1-&gt;<ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>(),<sp/>positions);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a237315896ed2c23fcb40d576598fca21" kindref="member">seq2intvector</ref>(r2-&gt;<ref refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" kindref="member">mSeq</ref>-&gt;c_str(),<sp/>r2-&gt;<ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>(),<sp/>positions,<sp/>r1-&gt;<ref refid="classRead_1ace429c91f54e941be218efa5ea4df299" kindref="member">length</ref>());</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isDup<sp/>=<sp/><ref refid="classDuplicate_1a14eaa18367015498b0a0b23b10b237a4" kindref="member">applyBloomFilter</ref>(positions);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1a4b02f4b9fdaba956a32500d2123a1fa4" kindref="member">mTotalReads</ref>++;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isDup)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDuplicate_1acf4dcf3341a875179ee25fa2614260c9" kindref="member">mDupReads</ref>++;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>isDup;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDuplicate_1a14eaa18367015498b0a0b23b10b237a4" kindref="member">Duplicate::applyBloomFilter</ref>(<ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref>*<sp/>positions)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isDup<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="classDuplicate_1a2578a5d1e5eeeecb23a6dc79db93c433" kindref="member">mBufNum</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/>pos<sp/>=<sp/>positions[i]<sp/>%<sp/><ref refid="classDuplicate_1a60159fa0fa1b216f96f2f22190e1c0c2" kindref="member">mBufLenInBits</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref><sp/>bytePos<sp/>=<sp/>pos<sp/>&gt;&gt;<sp/>3;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="common_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref><sp/>bitOffset<sp/>=<sp/>pos<sp/>&amp;<sp/>0x07;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="common_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>=<sp/>(0x01)<sp/>&lt;&lt;<sp/>bitOffset;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//isDup<sp/>=<sp/>isDup<sp/>&amp;&amp;<sp/>(mDupBuf[i<sp/>*<sp/>mBufLenInBytes<sp/>+<sp/>bytePos]<sp/>&amp;<sp/>byte);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="common_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref><sp/>ret<sp/>=<sp/>atomic_fetch_or(<ref refid="classDuplicate_1a70160b6d74373828723ae77c99b281d4" kindref="member">mDupBuf</ref><sp/>+<sp/>i<sp/>*<sp/><ref refid="classDuplicate_1ab4555b3b9434c951d9b2d57642f8e87b" kindref="member">mBufLenInBytes</ref><sp/>+<sp/>bytePos,<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isDup<sp/>&amp;=<sp/>(ret<sp/>&amp;<sp/>byte)<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>isDup;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classDuplicate_1a2764bac72d620f1c296d77eb65b1aefc" kindref="member">Duplicate::getDupRate</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classDuplicate_1a4b02f4b9fdaba956a32500d2123a1fa4" kindref="member">mTotalReads</ref><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<ref refid="classDuplicate_1acf4dcf3341a875179ee25fa2614260c9" kindref="member">mDupReads</ref>/(double)<ref refid="classDuplicate_1a4b02f4b9fdaba956a32500d2123a1fa4" kindref="member">mTotalReads</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/duplicate.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+\doxysection{duplicate.\+h}
+\hypertarget{duplicate_8h_source}{}\label{duplicate_8h_source}\index{src/duplicate.h@{src/duplicate.h}}
+\doxymbox{\hyperlink{duplicate_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DUPLICATE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DUPLICATE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{read_8h}{read.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{common_8h}{common.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <atomic>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classDuplicate_a556f1ed55137a2044eedcd62cd442368}{Duplicate}}\{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{classDuplicate_a556f1ed55137a2044eedcd62cd442368}{Duplicate}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt);}
+\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{classDuplicate_a34fc56b85205788738da635fcc3245bb}{\string~Duplicate}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classDuplicate_a168145b6efe245bc00a6e247241b183c}{checkRead}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classDuplicate_ab46011e368c4dabd6a7147f549fde8a8}{checkPair}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r2);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classDuplicate_a237315896ed2c23fcb40d576598fca21}{seq2intvector}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ data,\ \textcolor{keywordtype}{int}\ len,\ \doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}}*\ output,\ \textcolor{keywordtype}{int}\ posOffset\ =\ 0);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{classDuplicate_a2764bac72d620f1c296d77eb65b1aefc}{getDupRate}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classDuplicate_a8e57060bdc4cfa2813683e4482412014}{initPrimeArrays}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classDuplicate_a14eaa18367015498b0a0b23b10b237a4}{applyBloomFilter}}(\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}}*\ positions);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classDuplicate_ac347a39888bf6bb8e5384aa41f542edc}{mOptions}};}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}}\ \doxymbox{\hyperlink{classDuplicate_a60159fa0fa1b216f96f2f22190e1c0c2}{mBufLenInBits}};}
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}}\ \doxymbox{\hyperlink{classDuplicate_ab4555b3b9434c951d9b2d57642f8e87b}{mBufLenInBytes}};}
+\DoxyCodeLine{00033\ \ \ \ \ \doxymbox{\hyperlink{common_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}}\ \doxymbox{\hyperlink{classDuplicate_a2578a5d1e5eeeecb23a6dc79db93c433}{mBufNum}};}
+\DoxyCodeLine{00034\ \ \ \ \ atomic\_uchar*\ \doxymbox{\hyperlink{classDuplicate_a70160b6d74373828723ae77c99b281d4}{mDupBuf}};}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}}*\ \doxymbox{\hyperlink{classDuplicate_a4eb6e1d9c1a25447dd0a5a36785308bb}{mPrimeArrays}};}
+\DoxyCodeLine{00036\ \ \ \ \ atomic\_ulong\ \doxymbox{\hyperlink{classDuplicate_a4b02f4b9fdaba956a32500d2123a1fa4}{mTotalReads}};}
+\DoxyCodeLine{00037\ \ \ \ \ atomic\_ulong\ \doxymbox{\hyperlink{classDuplicate_acf4dcf3341a875179ee25fa2614260c9}{mDupReads}};}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}}\ \doxymbox{\hyperlink{classDuplicate_ab16812c9a3e19ed3e379d1b508630546}{mOffsetMask}};}
+\DoxyCodeLine{00039\ \ \ \ \ }
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,148 @@
+\doxysection{Read\+Pool Class Reference}
+\hypertarget{classReadPool}{}\label{classReadPool}\index{ReadPool@{ReadPool}}
+
+
+{\ttfamily \+\#include $<$readpool.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classReadPool_a825e4a1cd2b8445e1fe0d06b1f4eb432}{Read\+Pool}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt)
+\item 
+\doxymbox{\hyperlink{classReadPool_a649907fc0ebf67cb25cf807719345a90}{\texorpdfstring{$\sim$}{\string~}\+Read\+Pool}} ()
+\item 
+bool \doxymbox{\hyperlink{classReadPool_a84def75bf8adf5aa647d177526422cb5}{input}} (int tid, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r)
+\item 
+\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classReadPool_ae6f0349e3cc99f3127f84e4a4fe16907}{get\+One}} ()
+\item 
+void \doxymbox{\hyperlink{classReadPool_a51b4843262445cbe3655d1d4519a1fae}{init\+Buffer\+Lists}} ()
+\item 
+void \doxymbox{\hyperlink{classReadPool_ab64601b8e4cbd985ceb07f5c193eb189}{cleanup}} ()
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classReadPool_ae265b7030e0718d847858b17d88829a9}{size}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classReadPool_aaff28dd30958fae192e4a6fc4edbd4c0}{update\+Full\+Status}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classReadPool_a3c9368db6a2c159ecd7413273649b9db}{m\+Options}}
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classReadPool_a111f8ebf35d25500709fe93d2b51381f}{m\+Buffer\+Lists}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classReadPool_aae1704c64552b788533e2811dbaa8edf}{m\+Produced}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classReadPool_a1cd1bb4013436d075e115e180073cedb}{m\+Consumed}}
+\item 
+unsigned long \doxymbox{\hyperlink{classReadPool_a6e366610d7da83db5aba13ccafdf1e56}{m\+Limit}}
+\item 
+bool \doxymbox{\hyperlink{classReadPool_a1466ad7e924bd613a382797334befb73}{m\+Is\+Full}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classReadPool_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classReadPool_a825e4a1cd2b8445e1fe0d06b1f4eb432}\index{ReadPool@{ReadPool}!ReadPool@{ReadPool}}
+\index{ReadPool@{ReadPool}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{ReadPool()}{ReadPool()}}
+{\footnotesize\ttfamily \label{classReadPool_a825e4a1cd2b8445e1fe0d06b1f4eb432} 
+Read\+Pool::\+\+Read\+Pool (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classReadPool_a649907fc0ebf67cb25cf807719345a90}\index{ReadPool@{ReadPool}!````~ReadPool@{\texorpdfstring{$\sim$}{\string~}ReadPool}}
+\index{````~ReadPool@{\texorpdfstring{$\sim$}{\string~}ReadPool}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ReadPool()}{\string~ReadPool()}}
+{\footnotesize\ttfamily \label{classReadPool_a649907fc0ebf67cb25cf807719345a90} 
+Read\+Pool::\+\texorpdfstring{$\sim$}{\string~}\+Read\+Pool (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classReadPool_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classReadPool_ab64601b8e4cbd985ceb07f5c193eb189}\index{ReadPool@{ReadPool}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{classReadPool_ab64601b8e4cbd985ceb07f5c193eb189} 
+void Read\+Pool::\+cleanup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classReadPool_ae6f0349e3cc99f3127f84e4a4fe16907}\index{ReadPool@{ReadPool}!getOne@{getOne}}
+\index{getOne@{getOne}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{getOne()}{getOne()}}
+{\footnotesize\ttfamily \label{classReadPool_ae6f0349e3cc99f3127f84e4a4fe16907} 
+\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} Read\+Pool::\+get\+One (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classReadPool_a51b4843262445cbe3655d1d4519a1fae}\index{ReadPool@{ReadPool}!initBufferLists@{initBufferLists}}
+\index{initBufferLists@{initBufferLists}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{initBufferLists()}{initBufferLists()}}
+{\footnotesize\ttfamily \label{classReadPool_a51b4843262445cbe3655d1d4519a1fae} 
+void Read\+Pool::\+init\+Buffer\+Lists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classReadPool_a84def75bf8adf5aa647d177526422cb5}\index{ReadPool@{ReadPool}!input@{input}}
+\index{input@{input}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{classReadPool_a84def75bf8adf5aa647d177526422cb5} 
+bool Read\+Pool::\+input (\begin{DoxyParamCaption}\item[{int}]{tid}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classReadPool_ae265b7030e0718d847858b17d88829a9}\index{ReadPool@{ReadPool}!size@{size}}
+\index{size@{size}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classReadPool_ae265b7030e0718d847858b17d88829a9} 
+size\+\_\+t Read\+Pool::\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classReadPool_aaff28dd30958fae192e4a6fc4edbd4c0}\index{ReadPool@{ReadPool}!updateFullStatus@{updateFullStatus}}
+\index{updateFullStatus@{updateFullStatus}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{updateFullStatus()}{updateFullStatus()}}
+{\footnotesize\ttfamily \label{classReadPool_aaff28dd30958fae192e4a6fc4edbd4c0} 
+void Read\+Pool::\+update\+Full\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classReadPool_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classReadPool_a111f8ebf35d25500709fe93d2b51381f}\index{ReadPool@{ReadPool}!mBufferLists@{mBufferLists}}
+\index{mBufferLists@{mBufferLists}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{mBufferLists}{mBufferLists}}
+{\footnotesize\ttfamily \label{classReadPool_a111f8ebf35d25500709fe93d2b51381f} 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$\doxymbox{\hyperlink{classRead}{Read}}\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Read\+Pool::\+m\+Buffer\+Lists\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classReadPool_a1cd1bb4013436d075e115e180073cedb}\index{ReadPool@{ReadPool}!mConsumed@{mConsumed}}
+\index{mConsumed@{mConsumed}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{mConsumed}{mConsumed}}
+{\footnotesize\ttfamily \label{classReadPool_a1cd1bb4013436d075e115e180073cedb} 
+size\+\_\+t Read\+Pool::\+m\+Consumed\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classReadPool_a1466ad7e924bd613a382797334befb73}\index{ReadPool@{ReadPool}!mIsFull@{mIsFull}}
+\index{mIsFull@{mIsFull}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{mIsFull}{mIsFull}}
+{\footnotesize\ttfamily \label{classReadPool_a1466ad7e924bd613a382797334befb73} 
+bool Read\+Pool::\+m\+Is\+Full\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classReadPool_a6e366610d7da83db5aba13ccafdf1e56}\index{ReadPool@{ReadPool}!mLimit@{mLimit}}
+\index{mLimit@{mLimit}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{mLimit}{mLimit}}
+{\footnotesize\ttfamily \label{classReadPool_a6e366610d7da83db5aba13ccafdf1e56} 
+unsigned long Read\+Pool::\+m\+Limit\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classReadPool_a3c9368db6a2c159ecd7413273649b9db}\index{ReadPool@{ReadPool}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classReadPool_a3c9368db6a2c159ecd7413273649b9db} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Read\+Pool::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classReadPool_aae1704c64552b788533e2811dbaa8edf}\index{ReadPool@{ReadPool}!mProduced@{mProduced}}
+\index{mProduced@{mProduced}!ReadPool@{ReadPool}}
+\doxysubsubsection{\texorpdfstring{mProduced}{mProduced}}
+{\footnotesize\ttfamily \label{classReadPool_aae1704c64552b788533e2811dbaa8edf} 
+size\+\_\+t Read\+Pool::\+m\+Produced\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{readpool_8h}{readpool.\+h}}\item 
+src/\+\doxymbox{\hyperlink{readpool_8cpp}{readpool.\+cpp}}\end{DoxyCompactItemize}

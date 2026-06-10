@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="htmlreporter_8h" kind="file" language="C++">
+    <compoundname>htmlreporter.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="options_8h" local="yes">options.h</includes>
+    <includes refid="stats_8h" local="yes">stats.h</includes>
+    <includes refid="filterresult_8h" local="yes">filterresult.h</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">atomic</includes>
+    <includes refid="common_8h" local="yes">common.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <includedby refid="filterresult_8cpp" local="yes">src/filterresult.cpp</includedby>
+    <includedby refid="htmlreporter_8cpp" local="yes">src/htmlreporter.cpp</includedby>
+    <includedby refid="peprocessor_8cpp" local="yes">src/peprocessor.cpp</includedby>
+    <includedby refid="seprocessor_8cpp" local="yes">src/seprocessor.cpp</includedby>
+    <incdepgraph>
+      <node id="14">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="13">
+        <label>filterresult.h</label>
+        <link refid="filterresult_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/htmlreporter.h</label>
+        <link refid="htmlreporter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stats.h</label>
+        <link refid="stats_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>algorithm</label>
+      </node>
+      <node id="15">
+        <label>atomic</label>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="20">
+        <label>mutex</label>
+      </node>
+      <node id="21">
+        <label>regex</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="19">
+        <label>time.h</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/filterresult.cpp</label>
+        <link refid="filterresult_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/htmlreporter.cpp</label>
+        <link refid="htmlreporter_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/htmlreporter.h</label>
+        <link refid="htmlreporter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classHtmlReporter" prot="public">HtmlReporter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>HTML_REPORTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HTML_REPORTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="options_8h" kindref="compound">options.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stats_8h" kindref="compound">stats.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="filterresult_8h" kindref="compound">filterresult.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atomic&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="common_8h" kindref="compound">common.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classHtmlReporter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classHtmlReporter_1a57d4ea37391de464edfd84400d4df8b2" kindref="member">HtmlReporter</ref>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classHtmlReporter_1a57d4ea37391de464edfd84400d4df8b2" kindref="member">HtmlReporter</ref>(<ref refid="classOptions" kindref="compound">Options</ref>*<sp/>opt);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classHtmlReporter_1ae6aead7e4be2257112927c2e6c5558e4" kindref="member">~HtmlReporter</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1aba94153c525b376d24d8c566ee78987c" kindref="member">setDup</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dupRate);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1ab701792be1a8136fc183d34ddb72adb8" kindref="member">setInsertHist</ref>(atomic_long*<sp/>insertHist,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>insertSizePeak);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1a7e9dd62e51134082034b1abab94bce9e" kindref="member">report</ref>(<ref refid="classFilterResult" kindref="compound">FilterResult</ref>*<sp/>result,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>preStats1,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>postStats1,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>preStats2<sp/>=<sp/>NULL,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>postStats2<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1af80e6ea00c88f32d19d5f67c32d50b46" kindref="member">outputRow</ref>(ofstream&amp;<sp/>ofs,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>key,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1af80e6ea00c88f32d19d5f67c32d50b46" kindref="member">outputRow</ref>(ofstream&amp;<sp/>ofs,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>key,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1a2cd13f5289655ae1bced187322c40c79" kindref="member">formatNumber</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>number);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1a5e9ab720eadb666289f9403ae4fa9fcc" kindref="member">getPercents</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>numerator,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>denominator);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1ac328ed94fa6ed8622755429f7b9016e1" kindref="member">getCurrentSystemTime</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1a897a18270fd125322990bf49bc4ae0ee" kindref="member">printHeader</ref>(ofstream&amp;<sp/>ofs);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1a63274acaa3bcb377c0140d7b5dd60e5b" kindref="member">printCSS</ref>(ofstream&amp;<sp/>ofs);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1ad31b0eb65e18147d8788fb853add2409" kindref="member">printJS</ref>(ofstream&amp;<sp/>ofs);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1ae5fce1d959353ffddaefeff01751bd1a" kindref="member">printFooter</ref>(ofstream&amp;<sp/>ofs);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1aeb55b5e9a089e6ab1ef6a7f6488147db" kindref="member">reportQualHistogram</ref>(ofstream&amp;<sp/>ofs,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>caption,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>stats1,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>stats2<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1a371bf6a3d0ac443e1f1120491951f18a" kindref="member">reportDuplication</ref>(ofstream&amp;<sp/>ofs);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1a015fdca35ef887499d3901599f03e539" kindref="member">reportInsertSize</ref>(ofstream&amp;<sp/>ofs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>isizeLimit);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1a0e6af5d904e0c998d1c2afd912305bd7" kindref="member">printSummary</ref>(ofstream&amp;<sp/>ofs,<sp/><ref refid="classFilterResult" kindref="compound">FilterResult</ref>*<sp/>result,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>preStats1,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>postStats1,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>preStats2,<sp/><ref refid="classStats" kindref="compound">Stats</ref>*<sp/>postStats2);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classHtmlReporter_1a02a03e600e134616d914c31ba9bd7709" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOptions" kindref="compound">Options</ref>*<sp/><ref refid="classHtmlReporter_1a02a03e600e134616d914c31ba9bd7709" kindref="member">mOptions</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classHtmlReporter_1a30b8b92b014e7909ba6705645840716a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="classHtmlReporter_1a30b8b92b014e7909ba6705645840716a" kindref="member">mDupHist</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classHtmlReporter_1aa6486b56a07991ec71c014223b08c265" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="classHtmlReporter_1aa6486b56a07991ec71c014223b08c265" kindref="member">mDupMeanGC</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classHtmlReporter_1aa30220483c6d52e8c4b3f7c496daf8a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1aa30220483c6d52e8c4b3f7c496daf8a9" kindref="member">mDupRate</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classHtmlReporter_1a7e71ef856868fadcaa3893383f9108f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>atomic_long*<sp/><ref refid="classHtmlReporter_1a7e71ef856868fadcaa3893383f9108f9" kindref="member">mInsertHist</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classHtmlReporter_1aa253bec109843dada32d836b992ba9b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classHtmlReporter_1aa253bec109843dada32d836b992ba9b8" kindref="member">mInsertSizePeak</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/htmlreporter.h"/>
+  </compounddef>
+</doxygen>

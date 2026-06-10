@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classQualityCutOptions" kind="class" language="C++" prot="public">
+    <compoundname>QualityCutOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classQualityCutOptions_1a4f5910cea11e4dc2871a15d349ca917d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QualityCutOptions::enabledFront</definition>
+        <argsstring></argsstring>
+        <name>enabledFront</name>
+        <qualifiedname>QualityCutOptions::enabledFront</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="149" column="10" bodyfile="src/options.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1af20afe9df0a78bb9a5826b8f6df3c6cb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QualityCutOptions::enabledTail</definition>
+        <argsstring></argsstring>
+        <name>enabledTail</name>
+        <qualifiedname>QualityCutOptions::enabledTail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="151" column="10" bodyfile="src/options.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1a267fad1128ce9da0b8e324d98ffb98d5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QualityCutOptions::enabledRight</definition>
+        <argsstring></argsstring>
+        <name>enabledRight</name>
+        <qualifiedname>QualityCutOptions::enabledRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="153" column="10" bodyfile="src/options.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityCutOptions::windowSizeShared</definition>
+        <argsstring></argsstring>
+        <name>windowSizeShared</name>
+        <qualifiedname>QualityCutOptions::windowSizeShared</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="155" column="9" bodyfile="src/options.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityCutOptions::qualityShared</definition>
+        <argsstring></argsstring>
+        <name>qualityShared</name>
+        <qualifiedname>QualityCutOptions::qualityShared</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="157" column="9" bodyfile="src/options.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1a13a2206b42006dec1fb9d51041071322" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityCutOptions::windowSizeFront</definition>
+        <argsstring></argsstring>
+        <name>windowSizeFront</name>
+        <qualifiedname>QualityCutOptions::windowSizeFront</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="159" column="9" bodyfile="src/options.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1a3344ddbd8f314e2e9e6eda3072e04b49" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityCutOptions::qualityFront</definition>
+        <argsstring></argsstring>
+        <name>qualityFront</name>
+        <qualifiedname>QualityCutOptions::qualityFront</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="161" column="9" bodyfile="src/options.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1aa1d24968edde023c42f6b92921a15f4f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityCutOptions::windowSizeTail</definition>
+        <argsstring></argsstring>
+        <name>windowSizeTail</name>
+        <qualifiedname>QualityCutOptions::windowSizeTail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="163" column="9" bodyfile="src/options.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1a2185fb830e5a537bfd6a328005819952" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityCutOptions::qualityTail</definition>
+        <argsstring></argsstring>
+        <name>qualityTail</name>
+        <qualifiedname>QualityCutOptions::qualityTail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="165" column="9" bodyfile="src/options.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1aad3c713c7a6baf90f178fcf6371da7ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityCutOptions::windowSizeRight</definition>
+        <argsstring></argsstring>
+        <name>windowSizeRight</name>
+        <qualifiedname>QualityCutOptions::windowSizeRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="167" column="9" bodyfile="src/options.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classQualityCutOptions_1a86cc0d06bc8235a11cd74c3d60038bd5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QualityCutOptions::qualityRight</definition>
+        <argsstring></argsstring>
+        <name>qualityRight</name>
+        <qualifiedname>QualityCutOptions::qualityRight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="169" column="9" bodyfile="src/options.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQualityCutOptions_1a80bb792c47b21fadd409dd690d747120" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>QualityCutOptions::QualityCutOptions</definition>
+        <argsstring>()</argsstring>
+        <name>QualityCutOptions</name>
+        <qualifiedname>QualityCutOptions::QualityCutOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="134" column="5" bodyfile="src/options.h" bodystart="134" bodyend="146"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="132" column="1" bodyfile="src/options.h" bodystart="132" bodyend="170"/>
+    <listofallmembers>
+      <member refid="classQualityCutOptions_1a4f5910cea11e4dc2871a15d349ca917d" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>enabledFront</name></member>
+      <member refid="classQualityCutOptions_1a267fad1128ce9da0b8e324d98ffb98d5" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>enabledRight</name></member>
+      <member refid="classQualityCutOptions_1af20afe9df0a78bb9a5826b8f6df3c6cb" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>enabledTail</name></member>
+      <member refid="classQualityCutOptions_1a80bb792c47b21fadd409dd690d747120" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>QualityCutOptions</name></member>
+      <member refid="classQualityCutOptions_1a3344ddbd8f314e2e9e6eda3072e04b49" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>qualityFront</name></member>
+      <member refid="classQualityCutOptions_1a86cc0d06bc8235a11cd74c3d60038bd5" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>qualityRight</name></member>
+      <member refid="classQualityCutOptions_1a485724adb8a5d829391b409f3e678c8b" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>qualityShared</name></member>
+      <member refid="classQualityCutOptions_1a2185fb830e5a537bfd6a328005819952" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>qualityTail</name></member>
+      <member refid="classQualityCutOptions_1a13a2206b42006dec1fb9d51041071322" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>windowSizeFront</name></member>
+      <member refid="classQualityCutOptions_1aad3c713c7a6baf90f178fcf6371da7ca" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>windowSizeRight</name></member>
+      <member refid="classQualityCutOptions_1a8f0328b02de76153335ed9d75862d566" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>windowSizeShared</name></member>
+      <member refid="classQualityCutOptions_1aa1d24968edde023c42f6b92921a15f4f" prot="public" virt="non-virtual"><scope>QualityCutOptions</scope><name>windowSizeTail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

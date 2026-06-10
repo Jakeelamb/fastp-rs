@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classSplitOptions" kind="class" language="C++" prot="public">
+    <compoundname>SplitOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSplitOptions_1ae7970d026df03f83e27242fb1e9bd071" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SplitOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>SplitOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="184" column="10" bodyfile="src/options.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSplitOptions_1a5bef99e1bb21004399da546bd5ab1bff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SplitOptions::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <qualifiedname>SplitOptions::number</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="186" column="9" bodyfile="src/options.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSplitOptions_1aea91f721c5ca28e8f3c5ff7fd2647e66" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long SplitOptions::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>SplitOptions::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="188" column="10" bodyfile="src/options.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSplitOptions_1a7f56326730c02303fcdf53d8ebdd6d1c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SplitOptions::digits</definition>
+        <argsstring></argsstring>
+        <name>digits</name>
+        <qualifiedname>SplitOptions::digits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="190" column="9" bodyfile="src/options.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSplitOptions_1a48acb176bdf3a4d1779553269cd5d346" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SplitOptions::needEvaluation</definition>
+        <argsstring></argsstring>
+        <name>needEvaluation</name>
+        <qualifiedname>SplitOptions::needEvaluation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="192" column="10" bodyfile="src/options.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSplitOptions_1a7fe3d5b9c889fe049d9233aff62cebf7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SplitOptions::byFileNumber</definition>
+        <argsstring></argsstring>
+        <name>byFileNumber</name>
+        <qualifiedname>SplitOptions::byFileNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="193" column="10" bodyfile="src/options.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSplitOptions_1a95502f9eb5f8da1ef60a953195cc8ee6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SplitOptions::byFileLines</definition>
+        <argsstring></argsstring>
+        <name>byFileLines</name>
+        <qualifiedname>SplitOptions::byFileLines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="194" column="10" bodyfile="src/options.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSplitOptions_1a9e5054c56fc1d83cdc599b90c67fe0af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SplitOptions::SplitOptions</definition>
+        <argsstring>()</argsstring>
+        <name>SplitOptions</name>
+        <qualifiedname>SplitOptions::SplitOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="174" column="5" bodyfile="src/options.h" bodystart="174" bodyend="182"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="172" column="1" bodyfile="src/options.h" bodystart="172" bodyend="195"/>
+    <listofallmembers>
+      <member refid="classSplitOptions_1a95502f9eb5f8da1ef60a953195cc8ee6" prot="public" virt="non-virtual"><scope>SplitOptions</scope><name>byFileLines</name></member>
+      <member refid="classSplitOptions_1a7fe3d5b9c889fe049d9233aff62cebf7" prot="public" virt="non-virtual"><scope>SplitOptions</scope><name>byFileNumber</name></member>
+      <member refid="classSplitOptions_1a7f56326730c02303fcdf53d8ebdd6d1c" prot="public" virt="non-virtual"><scope>SplitOptions</scope><name>digits</name></member>
+      <member refid="classSplitOptions_1ae7970d026df03f83e27242fb1e9bd071" prot="public" virt="non-virtual"><scope>SplitOptions</scope><name>enabled</name></member>
+      <member refid="classSplitOptions_1a48acb176bdf3a4d1779553269cd5d346" prot="public" virt="non-virtual"><scope>SplitOptions</scope><name>needEvaluation</name></member>
+      <member refid="classSplitOptions_1a5bef99e1bb21004399da546bd5ab1bff" prot="public" virt="non-virtual"><scope>SplitOptions</scope><name>number</name></member>
+      <member refid="classSplitOptions_1aea91f721c5ca28e8f3c5ff7fd2647e66" prot="public" virt="non-virtual"><scope>SplitOptions</scope><name>size</name></member>
+      <member refid="classSplitOptions_1a9e5054c56fc1d83cdc599b90c67fe0af" prot="public" virt="non-virtual"><scope>SplitOptions</scope><name>SplitOptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

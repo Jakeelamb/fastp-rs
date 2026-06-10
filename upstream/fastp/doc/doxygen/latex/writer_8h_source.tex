@@ -1,0 +1,79 @@
+\doxysection{writer.\+h}
+\hypertarget{writer_8h_source}{}\label{writer_8h_source}\index{src/writer.h@{src/writer.h}}
+\doxymbox{\hyperlink{writer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{MIT\ License}}
+\DoxyCodeLine{00003\ \textcolor{comment}{}}
+\DoxyCodeLine{00004\ \textcolor{comment}{Copyright\ (c)\ 2021\ Shifu\ Chen\ <chen@haplox.com>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{}}
+\DoxyCodeLine{00006\ \textcolor{comment}{Permission\ is\ hereby\ granted,\ free\ of\ charge,\ to\ any\ person\ obtaining\ a\ copy}}
+\DoxyCodeLine{00007\ \textcolor{comment}{of\ this\ software\ and\ associated\ documentation\ files\ (the\ "{}Software"{}),\ to\ deal}}
+\DoxyCodeLine{00008\ \textcolor{comment}{in\ the\ Software\ without\ restriction,\ including\ without\ limitation\ the\ rights}}
+\DoxyCodeLine{00009\ \textcolor{comment}{to\ use,\ copy,\ modify,\ merge,\ publish,\ distribute,\ sublicense,\ and/or\ sell}}
+\DoxyCodeLine{00010\ \textcolor{comment}{copies\ of\ the\ Software,\ and\ to\ permit\ persons\ to\ whom\ the\ Software\ is}}
+\DoxyCodeLine{00011\ \textcolor{comment}{furnished\ to\ do\ so,\ subject\ to\ the\ following\ conditions:}}
+\DoxyCodeLine{00012\ \textcolor{comment}{}}
+\DoxyCodeLine{00013\ \textcolor{comment}{The\ above\ copyright\ notice\ and\ this\ permission\ notice\ shall\ be\ included\ in\ all}}
+\DoxyCodeLine{00014\ \textcolor{comment}{copies\ or\ substantial\ portions\ of\ the\ Software.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{}}
+\DoxyCodeLine{00016\ \textcolor{comment}{THE\ SOFTWARE\ IS\ PROVIDED\ "{}AS\ IS"{},\ WITHOUT\ WARRANTY\ OF\ ANY\ KIND,\ EXPRESS\ OR}}
+\DoxyCodeLine{00017\ \textcolor{comment}{IMPLIED,\ INCLUDING\ BUT\ NOT\ LIMITED\ TO\ THE\ WARRANTIES\ OF\ MERCHANTABILITY,}}
+\DoxyCodeLine{00018\ \textcolor{comment}{FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE\ AND\ NONINFRINGEMENT.\ IN\ NO\ EVENT\ SHALL\ THE}}
+\DoxyCodeLine{00019\ \textcolor{comment}{AUTHORS\ OR\ COPYRIGHT\ HOLDERS\ BE\ LIABLE\ FOR\ ANY\ CLAIM,\ DAMAGES\ OR\ OTHER}}
+\DoxyCodeLine{00020\ \textcolor{comment}{LIABILITY,\ WHETHER\ IN\ AN\ ACTION\ OF\ CONTRACT,\ TORT\ OR\ OTHERWISE,\ ARISING\ FROM,}}
+\DoxyCodeLine{00021\ \textcolor{comment}{OUT\ OF\ OR\ IN\ CONNECTION\ WITH\ THE\ SOFTWARE\ OR\ THE\ USE\ OR\ OTHER\ DEALINGS\ IN\ THE}}
+\DoxyCodeLine{00022\ \textcolor{comment}{SOFTWARE.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#ifndef\ \_WRITER\_H}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ \_WRITER\_H}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{common_8h}{common.h}}"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ <libdeflate.h>}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classWriter_a164ddf3e7d126f8139d8194fe9cb2095}{Writer}}\{}
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{classWriter_a164ddf3e7d126f8139d8194fe9cb2095}{Writer}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt,\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classWriter_ad74f455485d331512e5cc005963c30e8}{filename}},\ \textcolor{keywordtype}{int}\ compression,\ \textcolor{keywordtype}{bool}\ isSTDOUT\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00042\ \ \ \ \ \doxymbox{\hyperlink{classWriter_a6f57399b94731301d267ce10a2f52ea3}{\string~Writer}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_aa249dd7afcaf68cb4be413d4902d0056}{isZipped}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_ae709c4e7ef43a4059f2553b7cb206c41}{writeString}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ str);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_ae709c4e7ef43a4059f2553b7cb206c41}{writeString}}(\textcolor{keywordtype}{string}*\ str);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_ac43d0bd4db3024ada19e004ba0db11cd}{write}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ strdata,\ \textcolor{keywordtype}{size\_t}\ size);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriter_a85853ea21997297930329fd009718c05}{flush}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classWriter_ad74f455485d331512e5cc005963c30e8}{filename}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_a142d2601b0565c29c1ae7a5cd8a72184}{test}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriter_a3c06b4a50402dfcbe88507805978f9fa}{init}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriter_ac26d0fb8f037786294e5669c3fb68fe4}{close}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_a2fb2cf39ab547db41dc695d7a8027a7e}{writeInternal}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ strdata,\ \textcolor{keywordtype}{size\_t}\ size);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classWriter_a9aabedc94e657100c37da5a8075e743c}{mFilename}};}
+\DoxyCodeLine{00060\ \ \ \ \ libdeflate\_compressor*\ \doxymbox{\hyperlink{classWriter_a6e804f6274352e8a9ee3e818c777ce5f}{mCompressor}};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{//ofstream*\ mOutStream;}}
+\DoxyCodeLine{00062\ \ \ \ \ FILE*\ \doxymbox{\hyperlink{classWriter_a8c8f56c5634c3fb2c54d0f9079ef563d}{mFP}};}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_ac50ed9fcea702bd305af0134c1241653}{mZipped}};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classWriter_ab34675ab54a10f7e543d634cad1cabe1}{mCompression}};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_af562afdb17e25b94319e2bf9b582d581}{haveToClose}};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{char}*\ \doxymbox{\hyperlink{classWriter_af4bdccd0fdf49f886fcf89b85dd9fbbf}{mBuffer}};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classWriter_a2f8b44c1d8f2ad7c9c41bea19641ee49}{mBufDataLen}};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \doxymbox{\hyperlink{classWriter_a47cd419ed1791c68cd1678366e58eeaf}{mBufSize}};}
+\DoxyCodeLine{00069\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classWriter_a411c52572201d85247bacc7e38cacc6e}{mOptions}};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriter_aea187c1e3ed4f57924dca2944912c45c}{mSTDOUT}};}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

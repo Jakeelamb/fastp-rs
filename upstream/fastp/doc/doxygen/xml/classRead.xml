@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classRead" kind="class" language="C++" prot="public">
+    <compoundname>Read</compoundname>
+    <includes refid="read_8h" local="no">read.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" prot="public" static="no" mutable="no">
+        <type>string *</type>
+        <definition>string* Read::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <qualifiedname>Read::mName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="43" column="8" bodyfile="src/read.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRead_1a6b78edd02cfdac07156691f13a7aa481" prot="public" static="no" mutable="no">
+        <type>string *</type>
+        <definition>string* Read::mSeq</definition>
+        <argsstring></argsstring>
+        <name>mSeq</name>
+        <qualifiedname>Read::mSeq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="44" column="8" bodyfile="src/read.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRead_1a35a15be184b2456bb012eb3e938ccea8" prot="public" static="no" mutable="no">
+        <type>string *</type>
+        <definition>string* Read::mStrand</definition>
+        <argsstring></argsstring>
+        <name>mStrand</name>
+        <qualifiedname>Read::mStrand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="45" column="8" bodyfile="src/read.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRead_1aab4ffbb6b9ca25898cbab51923526092" prot="public" static="no" mutable="no">
+        <type>string *</type>
+        <definition>string* Read::mQuality</definition>
+        <argsstring></argsstring>
+        <name>mQuality</name>
+        <qualifiedname>Read::mQuality</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="46" column="8" bodyfile="src/read.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRead_1a72c9e2290cf8c794558a3e7d0507ca4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Read::Read</definition>
+        <argsstring>(string *name, string *seq, string *strand, string *quality, bool phred64=false)</argsstring>
+        <name>Read</name>
+        <qualifiedname>Read::Read</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>string *</type>
+          <declname>strand</declname>
+        </param>
+        <param>
+          <type>string *</type>
+          <declname>quality</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>phred64</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="16" column="1" bodyfile="src/read.cpp" bodystart="6" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a3f2637bd14bd268c7e66dc84e925f8f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Read::Read</definition>
+        <argsstring>(const char *name, const char *seq, const char *strand, const char *quality, bool phred64=false)</argsstring>
+        <name>Read</name>
+        <qualifiedname>Read::Read</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>seq</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>strand</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>quality</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>phred64</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="17" column="5" bodyfile="src/read.cpp" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a08d6c302dc2478f6a479c9ebc4350828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Read::~Read</definition>
+        <argsstring>()</argsstring>
+        <name>~Read</name>
+        <qualifiedname>Read::~Read</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="18" column="5" bodyfile="src/read.cpp" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1aa4abac4521d71824a4306dc3d0277b20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Read::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>Read::print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="19" column="6" bodyfile="src/read.cpp" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1afb48f45ec769f5415cc131d2c7897d69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Read::printFile</definition>
+        <argsstring>(ofstream &amp;file)</argsstring>
+        <name>printFile</name>
+        <qualifiedname>Read::printFile</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="20" column="10" bodyfile="src/read.cpp" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1ab174708c21a3423e34a84fe82fe589c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+        <definition>Read * Read::reverseComplement</definition>
+        <argsstring>()</argsstring>
+        <name>reverseComplement</name>
+        <qualifiedname>Read::reverseComplement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="21" column="10" bodyfile="src/read.cpp" bodystart="55" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a7f89589fb5b4218377f16d1fec89fb5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Read::firstIndex</definition>
+        <argsstring>()</argsstring>
+        <name>firstIndex</name>
+        <qualifiedname>Read::firstIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="22" column="12" bodyfile="src/read.cpp" bodystart="87" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a258e5420bb4a2d598d83dcfe37daf9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Read::lastIndex</definition>
+        <argsstring>()</argsstring>
+        <name>lastIndex</name>
+        <qualifiedname>Read::lastIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="23" column="12" bodyfile="src/read.cpp" bodystart="75" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a97b44c2731a781029981ab558f0a3a3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Read::lowQualCount</definition>
+        <argsstring>(int qual=20)</argsstring>
+        <name>lowQualCount</name>
+        <qualifiedname>Read::lowQualCount</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>qual</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="25" column="9" bodyfile="src/read.cpp" bodystart="102" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1ace429c91f54e941be218efa5ea4df299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Read::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <qualifiedname>Read::length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="26" column="9" bodyfile="src/read.cpp" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a7c58e168bdacb8a14d99624334e769ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Read::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>Read::toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="27" column="12" bodyfile="src/read.cpp" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a74196dd9084f16947fa92f6b0eb00e8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Read::toStringWithTag</definition>
+        <argsstring>(const char *tag)</argsstring>
+        <name>toStringWithTag</name>
+        <qualifiedname>Read::toStringWithTag</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="28" column="12" bodyfile="src/read.cpp" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a07052c7a404ae9d8f233fe0dde4260f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Read::appendToString</definition>
+        <argsstring>(string *target)</argsstring>
+        <name>appendToString</name>
+        <qualifiedname>Read::appendToString</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="29" column="10" bodyfile="src/read.cpp" bodystart="119" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1ac7c4ebfdb66573e20c493eba6835ddd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Read::appendToStringWithTag</definition>
+        <argsstring>(string *target, const char *tag)</argsstring>
+        <name>appendToStringWithTag</name>
+        <qualifiedname>Read::appendToStringWithTag</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="30" column="10" bodyfile="src/read.cpp" bodystart="136" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a6ad42dd210ed4766e5eb5cf6e53f5562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Read::resize</definition>
+        <argsstring>(int len)</argsstring>
+        <name>resize</name>
+        <qualifiedname>Read::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="31" column="10" bodyfile="src/read.cpp" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a27854545a1385a16bdab760dfcc9ae17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Read::convertPhred64To33</definition>
+        <argsstring>()</argsstring>
+        <name>convertPhred64To33</name>
+        <qualifiedname>Read::convertPhred64To33</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="32" column="10" bodyfile="src/read.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1ada3719d937b1c4c0920371a8089364c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Read::trimFront</definition>
+        <argsstring>(int len)</argsstring>
+        <name>trimFront</name>
+        <qualifiedname>Read::trimFront</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="33" column="10" bodyfile="src/read.cpp" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classRead_1a28c440362f78c2971ee6586a9ca48a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Read::fixMGI</definition>
+        <argsstring>()</argsstring>
+        <name>fixMGI</name>
+        <qualifiedname>Read::fixMGI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="34" column="10" bodyfile="src/read.cpp" bodystart="160" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classRead_1a9280b4341e197bf54c75ef9a0ba83f24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Read::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>Read::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="37" column="17" bodyfile="src/read.cpp" bodystart="173" bodyend="180"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/read.h" line="14" column="1" bodyfile="src/read.h" bodystart="14" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classRead_1a07052c7a404ae9d8f233fe0dde4260f5" prot="public" virt="non-virtual"><scope>Read</scope><name>appendToString</name></member>
+      <member refid="classRead_1ac7c4ebfdb66573e20c493eba6835ddd4" prot="public" virt="non-virtual"><scope>Read</scope><name>appendToStringWithTag</name></member>
+      <member refid="classRead_1a27854545a1385a16bdab760dfcc9ae17" prot="public" virt="non-virtual"><scope>Read</scope><name>convertPhred64To33</name></member>
+      <member refid="classRead_1a7f89589fb5b4218377f16d1fec89fb5d" prot="public" virt="non-virtual"><scope>Read</scope><name>firstIndex</name></member>
+      <member refid="classRead_1a28c440362f78c2971ee6586a9ca48a0d" prot="public" virt="non-virtual"><scope>Read</scope><name>fixMGI</name></member>
+      <member refid="classRead_1a258e5420bb4a2d598d83dcfe37daf9d0" prot="public" virt="non-virtual"><scope>Read</scope><name>lastIndex</name></member>
+      <member refid="classRead_1ace429c91f54e941be218efa5ea4df299" prot="public" virt="non-virtual"><scope>Read</scope><name>length</name></member>
+      <member refid="classRead_1a97b44c2731a781029981ab558f0a3a3b" prot="public" virt="non-virtual"><scope>Read</scope><name>lowQualCount</name></member>
+      <member refid="classRead_1a39b956c50ccdaf3b1bd75775b6fa49f0" prot="public" virt="non-virtual"><scope>Read</scope><name>mName</name></member>
+      <member refid="classRead_1aab4ffbb6b9ca25898cbab51923526092" prot="public" virt="non-virtual"><scope>Read</scope><name>mQuality</name></member>
+      <member refid="classRead_1a6b78edd02cfdac07156691f13a7aa481" prot="public" virt="non-virtual"><scope>Read</scope><name>mSeq</name></member>
+      <member refid="classRead_1a35a15be184b2456bb012eb3e938ccea8" prot="public" virt="non-virtual"><scope>Read</scope><name>mStrand</name></member>
+      <member refid="classRead_1aa4abac4521d71824a4306dc3d0277b20" prot="public" virt="non-virtual"><scope>Read</scope><name>print</name></member>
+      <member refid="classRead_1afb48f45ec769f5415cc131d2c7897d69" prot="public" virt="non-virtual"><scope>Read</scope><name>printFile</name></member>
+      <member refid="classRead_1a72c9e2290cf8c794558a3e7d0507ca4a" prot="public" virt="non-virtual"><scope>Read</scope><name>Read</name></member>
+      <member refid="classRead_1a3f2637bd14bd268c7e66dc84e925f8f4" prot="public" virt="non-virtual"><scope>Read</scope><name>Read</name></member>
+      <member refid="classRead_1a6ad42dd210ed4766e5eb5cf6e53f5562" prot="public" virt="non-virtual"><scope>Read</scope><name>resize</name></member>
+      <member refid="classRead_1ab174708c21a3423e34a84fe82fe589c3" prot="public" virt="non-virtual"><scope>Read</scope><name>reverseComplement</name></member>
+      <member refid="classRead_1a9280b4341e197bf54c75ef9a0ba83f24" prot="public" virt="non-virtual"><scope>Read</scope><name>test</name></member>
+      <member refid="classRead_1a7c58e168bdacb8a14d99624334e769ff" prot="public" virt="non-virtual"><scope>Read</scope><name>toString</name></member>
+      <member refid="classRead_1a74196dd9084f16947fa92f6b0eb00e8c" prot="public" virt="non-virtual"><scope>Read</scope><name>toStringWithTag</name></member>
+      <member refid="classRead_1ada3719d937b1c4c0920371a8089364c4" prot="public" virt="non-virtual"><scope>Read</scope><name>trimFront</name></member>
+      <member refid="classRead_1a08d6c302dc2478f6a479c9ebc4350828" prot="public" virt="non-virtual"><scope>Read</scope><name>~Read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

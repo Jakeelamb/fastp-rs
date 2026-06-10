@@ -1,0 +1,81 @@
+\doxysection{src/\+simd.cpp File Reference}
+\hypertarget{simd_8cpp}{}\label{simd_8cpp}\index{src/simd.cpp@{src/simd.cpp}}
+{\ttfamily \+\#include $<$hwy/\+foreach\+\_\+target.\+h$>$}\newline
+{\ttfamily \+\#include $<$hwy/\+highway.\+h$>$}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacefastp__simd}{fastp\+\_\+simd}}
+\item 
+namespace \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE}{fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{simd_8cpp_a1929b8491aa4123269baabf05fa21d8e}{HWY\+\_\+\+TARGET\+\_\+\+INCLUDE}}~"{}src/\+simd.\+cpp"{}
+\item 
+\+\#define \doxymbox{\hyperlink{simd_8cpp_a0d3a0ead32b2878b46a273796cb3e1d7}{Sums\+Of2}}~Sums\+Of2\+Fallback
+\item 
+\+\#define \doxymbox{\hyperlink{simd_8cpp_a0e904131e2029f73ac76983db7b584ca}{Reduce\+Sum}}~Reduce\+Sum\+Fallback
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{simd_8cpp_ab935189e360ae18263e088a01e8f11ab}{HWY\+\_\+\+BEFORE\+\_\+\+NAMESPACE}} ()
+\item 
+{\footnotesize template$<$class V$>$ }\\HWY\+\_\+\+API hn::\+\+VFromD$<$ hn::\+\+Repartition$<$ hwy::\+\+Make\+Wide$<$ hn::\+\+TFromV$<$ V $>$ $>$, hn::\+\+DFromV$<$ V $>$ $>$ $>$ \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_aef705a7ba2f9f133efb7e17f9c5f82fa}{fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Sums\+Of2\+Fallback}} (V v)
+\item 
+{\footnotesize template$<$class D, class V$>$ }\\HWY\+\_\+\+API hn::\+\+TFromD$<$ D $>$ \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_a677225f8f5e1bcde5f130f27b2cc11ec}{fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Reduce\+Sum\+Fallback}} (D d, V v)
+\item 
+void \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_a5c960f1170202588ec765b028f190a1c}{fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Count\+Quality\+Metrics\+Impl}} (const char \texorpdfstring{$\ast$}{*}qualstr, const char \texorpdfstring{$\ast$}{*}seqstr, int len, char qual\+Threshold, int \&low\+Qual\+Num, int \&n\+Base\+Num, int \&total\+Qual)
+\item 
+void \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_ab658718e65b312ca79c04bf710c6cf41}{fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Reverse\+Complement\+Impl}} (const char \texorpdfstring{$\ast$}{*}src, char \texorpdfstring{$\ast$}{*}dst, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_ab85158aedc52380a94f8d08daf1cbe58}{fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Count\+Adjacent\+Diffs\+Impl}} (const char \texorpdfstring{$\ast$}{*}data, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_ad35ef719bbe6e11bf8f9b061a3650873}{fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Count\+Mismatches\+Impl}} (const char \texorpdfstring{$\ast$}{*}a, const char \texorpdfstring{$\ast$}{*}b, int len)
+\item 
+int \doxymbox{\hyperlink{namespacefastp__simd_1_1HWY__NAMESPACE_ab3d1d0c81bc94b9c94e83436a70bb9b2}{fastp\+\_\+simd::\+\+HWY\+\_\+\+NAMESPACE::\+\+Count\+Mismatches\+Bounded\+Impl}} (const char \texorpdfstring{$\ast$}{*}a, const char \texorpdfstring{$\ast$}{*}b, int len, int limit)
+\item 
+\doxymbox{\hyperlink{simd_8cpp_a0799c8dd775b86bf3ab6df8d154ad456}{HWY\+\_\+\+AFTER\+\_\+\+NAMESPACE}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{simd_8cpp_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{simd_8cpp_a1929b8491aa4123269baabf05fa21d8e}\index{simd.cpp@{simd.cpp}!HWY\_TARGET\_INCLUDE@{HWY\_TARGET\_INCLUDE}}
+\index{HWY\_TARGET\_INCLUDE@{HWY\_TARGET\_INCLUDE}!simd.cpp@{simd.cpp}}
+\doxysubsubsection{\texorpdfstring{HWY\_TARGET\_INCLUDE}{HWY\_TARGET\_INCLUDE}}
+{\footnotesize\ttfamily \label{simd_8cpp_a1929b8491aa4123269baabf05fa21d8e} 
+\+\#define HWY\+\_\+\+TARGET\+\_\+\+INCLUDE~"{}src/\+simd.\+cpp"{}}
+
+\Hypertarget{simd_8cpp_a0e904131e2029f73ac76983db7b584ca}\index{simd.cpp@{simd.cpp}!ReduceSum@{ReduceSum}}
+\index{ReduceSum@{ReduceSum}!simd.cpp@{simd.cpp}}
+\doxysubsubsection{\texorpdfstring{ReduceSum}{ReduceSum}}
+{\footnotesize\ttfamily \label{simd_8cpp_a0e904131e2029f73ac76983db7b584ca} 
+\+\#define Reduce\+Sum~Reduce\+Sum\+Fallback}
+
+\Hypertarget{simd_8cpp_a0d3a0ead32b2878b46a273796cb3e1d7}\index{simd.cpp@{simd.cpp}!SumsOf2@{SumsOf2}}
+\index{SumsOf2@{SumsOf2}!simd.cpp@{simd.cpp}}
+\doxysubsubsection{\texorpdfstring{SumsOf2}{SumsOf2}}
+{\footnotesize\ttfamily \label{simd_8cpp_a0d3a0ead32b2878b46a273796cb3e1d7} 
+\+\#define Sums\+Of2~Sums\+Of2\+Fallback}
+
+
+
+\label{doc-func-members}
+\Hypertarget{simd_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{simd_8cpp_a0799c8dd775b86bf3ab6df8d154ad456}\index{simd.cpp@{simd.cpp}!HWY\_AFTER\_NAMESPACE@{HWY\_AFTER\_NAMESPACE}}
+\index{HWY\_AFTER\_NAMESPACE@{HWY\_AFTER\_NAMESPACE}!simd.cpp@{simd.cpp}}
+\doxysubsubsection{\texorpdfstring{HWY\_AFTER\_NAMESPACE()}{HWY\_AFTER\_NAMESPACE()}}
+{\footnotesize\ttfamily \label{simd_8cpp_a0799c8dd775b86bf3ab6df8d154ad456} 
+HWY\+\_\+\+AFTER\+\_\+\+NAMESPACE (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{simd_8cpp_ab935189e360ae18263e088a01e8f11ab}\index{simd.cpp@{simd.cpp}!HWY\_BEFORE\_NAMESPACE@{HWY\_BEFORE\_NAMESPACE}}
+\index{HWY\_BEFORE\_NAMESPACE@{HWY\_BEFORE\_NAMESPACE}!simd.cpp@{simd.cpp}}
+\doxysubsubsection{\texorpdfstring{HWY\_BEFORE\_NAMESPACE()}{HWY\_BEFORE\_NAMESPACE()}}
+{\footnotesize\ttfamily \label{simd_8cpp_ab935189e360ae18263e088a01e8f11ab} 
+HWY\+\_\+\+BEFORE\+\_\+\+NAMESPACE (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+

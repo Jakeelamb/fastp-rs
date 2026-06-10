@@ -1,0 +1,44 @@
+\doxysection{evaluator.\+h}
+\hypertarget{evaluator_8h_source}{}\label{evaluator_8h_source}\index{src/evaluator.h@{src/evaluator.h}}
+\doxymbox{\hyperlink{evaluator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EVALUATOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EVALUATOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{util_8h}{util.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{read_8h}{read.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classEvaluator_a99f02b81667c1bc9c754e2de5c33498f}{Evaluator}}\{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \doxymbox{\hyperlink{classEvaluator_a99f02b81667c1bc9c754e2de5c33498f}{Evaluator}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt);}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{classEvaluator_ac10971f54d227b1ef9aa5b28872b0272}{\string~Evaluator}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ evaluate\ how\ many\ reads\ are\ stored\ in\ the\ input\ file}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classEvaluator_ab31c3e615d38f6bfdaa8bed37d297350}{evaluateReadNum}}(\textcolor{keywordtype}{long}\&\ readNum);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classEvaluator_a930db2bafc648189a32a421c0776ee7d}{evalAdapterAndReadNum}}(\textcolor{keywordtype}{long}\&\ readNum,\ \textcolor{keywordtype}{bool}\ isR2);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classEvaluator_a071b1726a2e9b58f3de3ea94b025fe1f}{isTwoColorSystem}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classEvaluator_a0d181f664f38cd47ab49c96b465b9dcb}{evaluateSeqLen}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classEvaluator_a5aa5201ed700024521d84d460ca13495}{evaluateOverRepSeqs}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classEvaluator_adb79e02e37741970f53e59b59fdf8e12}{computeOverRepSeq}}(\textcolor{keywordtype}{string}\ filename,\ map<string,\ long>\&\ hotseqs,\ \textcolor{keywordtype}{int}\ seqLen);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classEvaluator_ab0bf2a3ed26f3001dcfcc4d4be7daa53}{computeSeqLen}}(\textcolor{keywordtype}{string}\ filename);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classEvaluator_ac5558831b3087e03d2265c7f01d4aaf0}{test}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classEvaluator_af05f70776b0de52c1a39c8cf034c31ab}{matchKnownAdapter}}(\textcolor{keywordtype}{string}\ seq);}
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classEvaluator_a8325f81d7b58adc3fc97c34c401c1c97}{mOptions}};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classEvaluator_abc0d42dc20ea6a9f553b5f59357809a3}{int2seq}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ val,\ \textcolor{keywordtype}{int}\ seqlen);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classEvaluator_af389732998af66a9014b18a3894f31f0}{seq2int}}(\textcolor{keywordtype}{string}*\ seq,\ \textcolor{keywordtype}{int}\ pos,\ \textcolor{keywordtype}{int}\ seqlen,\ \textcolor{keywordtype}{int}\ lastVal\ =\ -\/1);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classEvaluator_af389732998af66a9014b18a3894f31f0}{seq2int}}(\textcolor{keywordtype}{string}\&\ seq,\ \textcolor{keywordtype}{int}\ pos,\ \textcolor{keywordtype}{int}\ seqlen,\ \textcolor{keywordtype}{int}\ lastVal\ =\ -\/1);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classEvaluator_ab1932014e966d527f45ef5d86bd8aac4}{getAdapterWithSeed}}(\textcolor{keywordtype}{int}\ seed,\ \doxymbox{\hyperlink{classRead}{Read}}**\ loadedReads,\ \textcolor{keywordtype}{long}\ records,\ \textcolor{keywordtype}{int}\ keylen);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classEvaluator_a7bc3f95447e2db86882fec6272e10409}{checkKnownAdapters}}(\doxymbox{\hyperlink{classRead}{Read}}**\ reads,\ \textcolor{keywordtype}{long}\ num);}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

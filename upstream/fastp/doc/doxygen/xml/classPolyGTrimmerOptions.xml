@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classPolyGTrimmerOptions" kind="class" language="C++" prot="public">
+    <compoundname>PolyGTrimmerOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classPolyGTrimmerOptions_1a77674bfc862c07ee667afad1a36780ad" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PolyGTrimmerOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>PolyGTrimmerOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="89" column="10" bodyfile="src/options.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPolyGTrimmerOptions_1ab42ab7f2345a43f402aaefda8e692efe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PolyGTrimmerOptions::minLen</definition>
+        <argsstring></argsstring>
+        <name>minLen</name>
+        <qualifiedname>PolyGTrimmerOptions::minLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="90" column="9" bodyfile="src/options.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPolyGTrimmerOptions_1a8dd7c16744b76acc50a3d49e77a829e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PolyGTrimmerOptions::PolyGTrimmerOptions</definition>
+        <argsstring>()</argsstring>
+        <name>PolyGTrimmerOptions</name>
+        <qualifiedname>PolyGTrimmerOptions::PolyGTrimmerOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="84" column="5" bodyfile="src/options.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="82" column="1" bodyfile="src/options.h" bodystart="82" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classPolyGTrimmerOptions_1a77674bfc862c07ee667afad1a36780ad" prot="public" virt="non-virtual"><scope>PolyGTrimmerOptions</scope><name>enabled</name></member>
+      <member refid="classPolyGTrimmerOptions_1ab42ab7f2345a43f402aaefda8e692efe" prot="public" virt="non-virtual"><scope>PolyGTrimmerOptions</scope><name>minLen</name></member>
+      <member refid="classPolyGTrimmerOptions_1a8dd7c16744b76acc50a3d49e77a829e8" prot="public" virt="non-virtual"><scope>PolyGTrimmerOptions</scope><name>PolyGTrimmerOptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

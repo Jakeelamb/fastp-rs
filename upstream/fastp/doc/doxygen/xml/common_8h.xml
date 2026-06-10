@@ -1,0 +1,700 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="common_8h" kind="file" language="C++">
+    <compoundname>common.h</compoundname>
+    <includedby refid="duplicate_8h" local="yes">src/duplicate.h</includedby>
+    <includedby refid="fastqreader_8h" local="yes">src/fastqreader.h</includedby>
+    <includedby refid="filterresult_8h" local="yes">src/filterresult.h</includedby>
+    <includedby refid="htmlreporter_8h" local="yes">src/htmlreporter.h</includedby>
+    <includedby refid="jsonreporter_8h" local="yes">src/jsonreporter.h</includedby>
+    <includedby refid="overlapanalysis_8h" local="yes">src/overlapanalysis.h</includedby>
+    <includedby refid="polyx_8cpp" local="yes">src/polyx.cpp</includedby>
+    <includedby refid="readpool_8cpp" local="yes">src/readpool.cpp</includedby>
+    <includedby refid="writer_8h" local="yes">src/writer.h</includedby>
+    <invincdepgraph>
+      <node id="17">
+        <label>src/adaptertrimmer.cpp</label>
+        <link refid="adaptertrimmer_8cpp"/>
+      </node>
+      <node id="16">
+        <label>src/adaptertrimmer.h</label>
+        <link refid="adaptertrimmer_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>src/basecorrector.cpp</label>
+        <link refid="basecorrector_8cpp"/>
+      </node>
+      <node id="18">
+        <label>src/basecorrector.h</label>
+        <link refid="basecorrector_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/common.h</label>
+        <link refid="common_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/duplicate.cpp</label>
+        <link refid="duplicate_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/duplicate.h</label>
+        <link refid="duplicate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/evaluator.cpp</label>
+        <link refid="evaluator_8cpp"/>
+      </node>
+      <node id="12">
+        <label>src/fastqreader.cpp</label>
+        <link refid="fastqreader_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/fastqreader.h</label>
+        <link refid="fastqreader_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="20">
+        <label>src/filterresult.cpp</label>
+        <link refid="filterresult_8cpp"/>
+      </node>
+      <node id="15">
+        <label>src/filterresult.h</label>
+        <link refid="filterresult_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/htmlreporter.cpp</label>
+        <link refid="htmlreporter_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/htmlreporter.h</label>
+        <link refid="htmlreporter_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/jsonreporter.cpp</label>
+        <link refid="jsonreporter_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/jsonreporter.h</label>
+        <link refid="jsonreporter_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/overlapanalysis.cpp</label>
+        <link refid="overlapanalysis_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/overlapanalysis.h</label>
+        <link refid="overlapanalysis_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/peprocessor.h</label>
+        <link refid="peprocessor_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/polyx.cpp</label>
+        <link refid="polyx_8cpp"/>
+      </node>
+      <node id="25">
+        <label>src/polyx.h</label>
+        <link refid="polyx_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/processor.cpp</label>
+        <link refid="processor_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/readpool.cpp</label>
+        <link refid="readpool_8cpp"/>
+      </node>
+      <node id="9">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/seprocessor.h</label>
+        <link refid="seprocessor_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/threadconfig.cpp</label>
+        <link refid="threadconfig_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/threadconfig.h</label>
+        <link refid="threadconfig_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/unittest.cpp</label>
+        <link refid="unittest_8cpp"/>
+      </node>
+      <node id="33">
+        <label>src/writer.cpp</label>
+        <link refid="writer_8cpp"/>
+      </node>
+      <node id="32">
+        <label>src/writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/writerthread.cpp</label>
+        <link refid="writerthread_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/writerthread.h</label>
+        <link refid="writerthread_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="common_8h_1a87c86243c299a1db8d0e5038d438ac9a" prot="public" static="no">
+        <name>FASTP_VER</name>
+        <initializer>&quot;1.3.4&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="4" column="9" bodyfile="src/common.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="common_8h_1a152fc5203b90b1cff03b7b78579b8f52" prot="public" static="no">
+        <name>_DEBUG</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="6" column="9" bodyfile="src/common.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="common_8h_1a565242d561045a1020e03cb560dcf774" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long int64</definition>
+        <argsstring></argsstring>
+        <name>int64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="9" column="14" bodyfile="src/common.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" prot="public" static="no">
+        <type>unsigned long</type>
+        <definition>typedef unsigned long uint64</definition>
+        <argsstring></argsstring>
+        <name>uint64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="10" column="23" bodyfile="src/common.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1a56f1a81c92849566ae864511088eb7e8" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int int32</definition>
+        <argsstring></argsstring>
+        <name>int32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="16" column="13" bodyfile="src/common.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1a1134b580f8da4de94ca6b1de4d37975e" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int uint32</definition>
+        <argsstring></argsstring>
+        <name>uint32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="17" column="22" bodyfile="src/common.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1a4355d16fcf9f644c9ac84293f0b1801f" prot="public" static="no">
+        <type>short</type>
+        <definition>typedef short int16</definition>
+        <argsstring></argsstring>
+        <name>int16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="19" column="15" bodyfile="src/common.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1a05f6b0ae8f6a6e135b0e290c25fe0e4e" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short uint16</definition>
+        <argsstring></argsstring>
+        <name>uint16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="20" column="24" bodyfile="src/common.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1ae47c588f3ab8c61121c1c7ab7edc47cd" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char int8</definition>
+        <argsstring></argsstring>
+        <name>int8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="22" column="14" bodyfile="src/common.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1adde6aaee8457bee49c2a92621fe22b79" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char uint8</definition>
+        <argsstring></argsstring>
+        <name>uint8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="23" column="23" bodyfile="src/common.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="common_8h_1afd407574c55077093bccf61ea2df9f33" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char ATCG_BASES[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ATCG_BASES</name>
+        <initializer>= {&apos;A&apos;, &apos;T&apos;, &apos;C&apos;, &apos;G&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="25" column="12" bodyfile="src/common.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a9ed9b00254dbca17327c599227b74634" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int PACK_SIZE</definition>
+        <argsstring></argsstring>
+        <name>PACK_SIZE</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="30" column="18" bodyfile="src/common.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a3acefed9a72457805a26119394fa612e" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int PACK_IN_MEM_LIMIT</definition>
+        <argsstring></argsstring>
+        <name>PACK_IN_MEM_LIMIT</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="37" column="18" bodyfile="src/common.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a5fc9c45769af403dc3f7e650652da277" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int PASS_FILTER</definition>
+        <argsstring></argsstring>
+        <name>PASS_FILTER</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="43" column="18" bodyfile="src/common.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1ab58b4f24b1b469a3ca88dcfaa64be1ec" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FAIL_POLY_X</definition>
+        <argsstring></argsstring>
+        <name>FAIL_POLY_X</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="44" column="18" bodyfile="src/common.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a516da73383244c14769e19e4a7d9225f" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FAIL_OVERLAP</definition>
+        <argsstring></argsstring>
+        <name>FAIL_OVERLAP</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="45" column="18" bodyfile="src/common.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a180425a3a63300cdfcd8dcdc2c76101e" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FAIL_N_BASE</definition>
+        <argsstring></argsstring>
+        <name>FAIL_N_BASE</name>
+        <initializer>= 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="46" column="18" bodyfile="src/common.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a8f231abf36def208f31f59426009d874" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FAIL_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>FAIL_LENGTH</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="47" column="18" bodyfile="src/common.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1ab23168d51983d2f29062168cdf3514e8" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FAIL_TOO_LONG</definition>
+        <argsstring></argsstring>
+        <name>FAIL_TOO_LONG</name>
+        <initializer>= 17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="48" column="18" bodyfile="src/common.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a00c2e23c2b29b775c2f1a79d5420badb" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FAIL_QUALITY</definition>
+        <argsstring></argsstring>
+        <name>FAIL_QUALITY</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="49" column="18" bodyfile="src/common.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1ade3d51417c3d348c98e0eab75effd5e6" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FAIL_COMPLEXITY</definition>
+        <argsstring></argsstring>
+        <name>FAIL_COMPLEXITY</name>
+        <initializer>= 24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="50" column="18" bodyfile="src/common.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a5ce8461e9a1e188c3e5c844b821abb86" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FAIL_ADAPTER_DIMER</definition>
+        <argsstring></argsstring>
+        <name>FAIL_ADAPTER_DIMER</name>
+        <initializer>= 28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="51" column="18" bodyfile="src/common.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a8c5a7ac041084fa41637b7a74e177763" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int FILTER_RESULT_TYPES</definition>
+        <argsstring></argsstring>
+        <name>FILTER_RESULT_TYPES</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="54" column="18" bodyfile="src/common.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1ace09a16677423cf8d67aa596f688ffa0" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* FAILED_TYPES[FILTER_RESULT_TYPES]</definition>
+        <argsstring>[FILTER_RESULT_TYPES]</argsstring>
+        <name>FAILED_TYPES</name>
+        <initializer>                               = {
+    &quot;passed&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,
+    &quot;failed_polyx_filter&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,
+    &quot;failed_bad_overlap&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,
+    &quot;failed_too_many_n_bases&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,
+    &quot;failed_too_short&quot;, &quot;failed_too_long&quot;, &quot;&quot;, &quot;&quot;,
+    &quot;failed_quality_filter&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,
+    &quot;failed_low_complexity&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;,
+    &quot;failed_adapter_dimer&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/common.h" line="56" column="19" bodyfile="src/common.h" bodystart="56" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="common_8h_1a87c86243c299a1db8d0e5038d438ac9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FASTP_VER<sp/>&quot;1.3.4&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="common_8h_1a152fc5203b90b1cff03b7b78579b8f52" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DEBUG<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="common_8h_1a565242d561045a1020e03cb560dcf774" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a565242d561045a1020e03cb560dcf774" kindref="member">int64</ref>;</highlight></codeline>
+<codeline lineno="10" refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a565242d561045a1020e03cb560dcf774" kindref="member">int64</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a5975ce0896ee5ec5db2f1a411620a51a" kindref="member">uint64</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="common_8h_1a56f1a81c92849566ae864511088eb7e8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a56f1a81c92849566ae864511088eb7e8" kindref="member">int32</ref>;</highlight></codeline>
+<codeline lineno="17" refid="common_8h_1a1134b580f8da4de94ca6b1de4d37975e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a1134b580f8da4de94ca6b1de4d37975e" kindref="member">uint32</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="common_8h_1a4355d16fcf9f644c9ac84293f0b1801f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a4355d16fcf9f644c9ac84293f0b1801f" kindref="member">int16</ref>;</highlight></codeline>
+<codeline lineno="20" refid="common_8h_1a05f6b0ae8f6a6e135b0e290c25fe0e4e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a05f6b0ae8f6a6e135b0e290c25fe0e4e" kindref="member">uint16</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="common_8h_1ae47c588f3ab8c61121c1c7ab7edc47cd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="common_8h_1ae47c588f3ab8c61121c1c7ab7edc47cd" kindref="member">int8</ref>;</highlight></codeline>
+<codeline lineno="23" refid="common_8h_1adde6aaee8457bee49c2a92621fe22b79" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="common_8h_1adde6aaee8457bee49c2a92621fe22b79" kindref="member">uint8</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="common_8h_1afd407574c55077093bccf61ea2df9f33" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="common_8h_1afd407574c55077093bccf61ea2df9f33" kindref="member">ATCG_BASES</ref>[]<sp/>=<sp/>{</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;C&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;G&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>how<sp/>many<sp/>reads<sp/>one<sp/>pack<sp/>has</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>~1000<sp/>reads<sp/>×<sp/>~350<sp/>bytes/read<sp/>≈<sp/>350KB,<sp/>near<sp/>FASTQ<sp/>LZ77<sp/>saturation<sp/>(~256KB),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>so<sp/>each<sp/>pack<sp/>compresses<sp/>efficiently<sp/>as<sp/>a<sp/>single<sp/>gzip<sp/>member.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="common_8h_1a9ed9b00254dbca17327c599227b74634" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a9ed9b00254dbca17327c599227b74634" kindref="member">PACK_SIZE</ref><sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>one<sp/>pack<sp/>is<sp/>produced,<sp/>but<sp/>not<sp/>consumed,<sp/>it<sp/>will<sp/>be<sp/>kept<sp/>in<sp/>the<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>number<sp/>limit<sp/>the<sp/>number<sp/>of<sp/>in<sp/>memory<sp/>packs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>number<sp/>of<sp/>in<sp/>memory<sp/>packs<sp/>is<sp/>full,<sp/>the<sp/>producer<sp/>thread<sp/>should<sp/>sleep</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Scaled<sp/>down<sp/>from<sp/>128<sp/>to<sp/>match<sp/>PACK_SIZE<sp/>increase<sp/>(256→1000)<sp/>and<sp/>maintain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>similar<sp/>peak<sp/>memory:<sp/>32<sp/>×<sp/>1000<sp/>reads<sp/>≈<sp/>32K<sp/>reads<sp/>in<sp/>flight<sp/>≈<sp/>old<sp/>128<sp/>×<sp/>256.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="common_8h_1a3acefed9a72457805a26119394fa612e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a3acefed9a72457805a26119394fa612e" kindref="member">PACK_IN_MEM_LIMIT</ref><sp/>=<sp/>32;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>different<sp/>filtering<sp/>results,<sp/>bigger<sp/>number<sp/>means<sp/>worse</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>r1<sp/>and<sp/>r2<sp/>are<sp/>both<sp/>failed,<sp/>then<sp/>the<sp/>bigger<sp/>one<sp/>of<sp/>the<sp/>two<sp/>results<sp/>will<sp/>be<sp/>recorded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>we<sp/>reserve<sp/>some<sp/>gaps<sp/>for<sp/>future<sp/>types<sp/>to<sp/>be<sp/>added</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="common_8h_1a5fc9c45769af403dc3f7e650652da277" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a5fc9c45769af403dc3f7e650652da277" kindref="member">PASS_FILTER</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44" refid="common_8h_1ab58b4f24b1b469a3ca88dcfaa64be1ec" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1ab58b4f24b1b469a3ca88dcfaa64be1ec" kindref="member">FAIL_POLY_X</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="45" refid="common_8h_1a516da73383244c14769e19e4a7d9225f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a516da73383244c14769e19e4a7d9225f" kindref="member">FAIL_OVERLAP</ref><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="46" refid="common_8h_1a180425a3a63300cdfcd8dcdc2c76101e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a180425a3a63300cdfcd8dcdc2c76101e" kindref="member">FAIL_N_BASE</ref><sp/>=<sp/>12;</highlight></codeline>
+<codeline lineno="47" refid="common_8h_1a8f231abf36def208f31f59426009d874" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a8f231abf36def208f31f59426009d874" kindref="member">FAIL_LENGTH</ref><sp/>=<sp/>16;</highlight></codeline>
+<codeline lineno="48" refid="common_8h_1ab23168d51983d2f29062168cdf3514e8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1ab23168d51983d2f29062168cdf3514e8" kindref="member">FAIL_TOO_LONG</ref><sp/>=<sp/>17;</highlight></codeline>
+<codeline lineno="49" refid="common_8h_1a00c2e23c2b29b775c2f1a79d5420badb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a00c2e23c2b29b775c2f1a79d5420badb" kindref="member">FAIL_QUALITY</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="50" refid="common_8h_1ade3d51417c3d348c98e0eab75effd5e6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1ade3d51417c3d348c98e0eab75effd5e6" kindref="member">FAIL_COMPLEXITY</ref><sp/>=<sp/>24;</highlight></codeline>
+<codeline lineno="51" refid="common_8h_1a5ce8461e9a1e188c3e5c844b821abb86" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a5ce8461e9a1e188c3e5c844b821abb86" kindref="member">FAIL_ADAPTER_DIMER</ref><sp/>=<sp/>28;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>how<sp/>many<sp/>types<sp/>in<sp/>total<sp/>we<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="common_8h_1a8c5a7ac041084fa41637b7a74e177763" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="common_8h_1a8c5a7ac041084fa41637b7a74e177763" kindref="member">FILTER_RESULT_TYPES</ref><sp/>=<sp/>32;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="common_8h_1ace09a16677423cf8d67aa596f688ffa0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="common_8h_1ace09a16677423cf8d67aa596f688ffa0" kindref="member">FAILED_TYPES</ref>[<ref refid="common_8h_1a8c5a7ac041084fa41637b7a74e177763" kindref="member">FILTER_RESULT_TYPES</ref>]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;passed&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;failed_polyx_filter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;failed_bad_overlap&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;failed_too_many_n_bases&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;failed_too_short&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;failed_too_long&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;failed_quality_filter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;failed_low_complexity&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;failed_adapter_dimer&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>COMMON_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="src/common.h"/>
+  </compounddef>
+</doxygen>

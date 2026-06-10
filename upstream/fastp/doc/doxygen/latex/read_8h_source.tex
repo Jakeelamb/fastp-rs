@@ -1,0 +1,79 @@
+\doxysection{read.\+h}
+\hypertarget{read_8h_source}{}\label{read_8h_source}\index{src/read.h@{src/read.h}}
+\doxymbox{\hyperlink{read_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ READ\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ READ\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{sequence_8h}{sequence.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classRead_a72c9e2290cf8c794558a3e7d0507ca4a}{Read}}\{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{classRead_a72c9e2290cf8c794558a3e7d0507ca4a}{Read}}(\textcolor{keywordtype}{string}*\ name,\ \textcolor{keywordtype}{string}*\ seq,\ \textcolor{keywordtype}{string}*\ strand,\ \textcolor{keywordtype}{string}*\ quality,\ \textcolor{keywordtype}{bool}\ phred64=\textcolor{keyword}{false});}
+\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{classRead_a72c9e2290cf8c794558a3e7d0507ca4a}{Read}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ seq,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ strand,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ quality,\ \textcolor{keywordtype}{bool}\ phred64=\textcolor{keyword}{false});}
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{classRead_a08d6c302dc2478f6a479c9ebc4350828}{\string~Read}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classRead_aa4abac4521d71824a4306dc3d0277b20}{print}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classRead_afb48f45ec769f5415cc131d2c7897d69}{printFile}}(ofstream\&\ file);}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{classRead_a72c9e2290cf8c794558a3e7d0507ca4a}{Read}}*\ \doxymbox{\hyperlink{classRead_ab174708c21a3423e34a84fe82fe589c3}{reverseComplement}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classRead_a7f89589fb5b4218377f16d1fec89fb5d}{firstIndex}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classRead_a258e5420bb4a2d598d83dcfe37daf9d0}{lastIndex}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ default\ is\ Q20}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classRead_a97b44c2731a781029981ab558f0a3a3b}{lowQualCount}}(\textcolor{keywordtype}{int}\ qual=20);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classRead_ace429c91f54e941be218efa5ea4df299}{length}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classRead_a7c58e168bdacb8a14d99624334e769ff}{toString}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classRead_a74196dd9084f16947fa92f6b0eb00e8c}{toStringWithTag}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classRead_a07052c7a404ae9d8f233fe0dde4260f5}{appendToString}}(\textcolor{keywordtype}{string}*\ target);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classRead_ac7c4ebfdb66573e20c493eba6835ddd4}{appendToStringWithTag}}(\textcolor{keywordtype}{string}*\ target,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ tag);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classRead_a6ad42dd210ed4766e5eb5cf6e53f5562}{resize}}(\textcolor{keywordtype}{int}\ len);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classRead_a27854545a1385a16bdab760dfcc9ae17}{convertPhred64To33}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classRead_ada3719d937b1c4c0920371a8089364c4}{trimFront}}(\textcolor{keywordtype}{int}\ len);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classRead_a28c440362f78c2971ee6586a9ca48a0d}{fixMGI}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classRead_a9280b4341e197bf54c75ef9a0ba83f24}{test}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{string}*\ \doxymbox{\hyperlink{classRead_a39b956c50ccdaf3b1bd75775b6fa49f0}{mName}};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{string}*\ \doxymbox{\hyperlink{classRead_a6b78edd02cfdac07156691f13a7aa481}{mSeq}};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{string}*\ \doxymbox{\hyperlink{classRead_a35a15be184b2456bb012eb3e938ccea8}{mStrand}};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{string}*\ \doxymbox{\hyperlink{classRead_aab4ffbb6b9ca25898cbab51923526092}{mQuality}};}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classReadPair_ab5f81f0389b6f14665fed2ac6f93c2ce}{ReadPair}}\{}
+\DoxyCodeLine{00050\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00051\ \ \ \ \ \doxymbox{\hyperlink{classReadPair_ab5f81f0389b6f14665fed2ac6f93c2ce}{ReadPair}}();}
+\DoxyCodeLine{00052\ \ \ \ \ \doxymbox{\hyperlink{classReadPair_af93f0edc036beb79c428e2eb069f98a8}{\string~ReadPair}}();}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classReadPair_a96b9dc3317b483df952bab74de890809}{setPair}}(\doxymbox{\hyperlink{classRead}{Read}}*\ left,\ \doxymbox{\hyperlink{classRead}{Read}}*\ right);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classReadPair_ad1d3ff813ebb28111e645a19ed012046}{eof}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ merge\ a\ pair,\ without\ consideration\ of\ seq\ error\ caused\ false\ INDEL}}
+\DoxyCodeLine{00057\ \ \ \ \ \doxymbox{\hyperlink{classRead}{Read}}*\ \doxymbox{\hyperlink{classReadPair_a6463c5ed13cd48aed6485ad8c5d80f54}{fastMerge}}();}
+\DoxyCodeLine{00058\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ \doxymbox{\hyperlink{classRead}{Read}}*\ \doxymbox{\hyperlink{classReadPair_afc7223bfd8146ffefa812c636dc46cfc}{mLeft}};}
+\DoxyCodeLine{00060\ \ \ \ \ \doxymbox{\hyperlink{classRead}{Read}}*\ \doxymbox{\hyperlink{classReadPair_a2c8801e4cbbaca4c503d5d771f50ebc3}{mRight}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classReadPair_a9233aecc6c48fe8e485da0358c148737}{test}}();}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structReadPack}{ReadPack}}\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \doxymbox{\hyperlink{classRead}{Read}}**\ \doxymbox{\hyperlink{structReadPack_aaf934266511e976590a5cf251f514400}{data}};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structReadPack_a8e60d572d5922f78ca9d8a2a2c604c42}{count}};}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structReadPack}{ReadPack}}\ \doxymbox{\hyperlink{structReadPack}{ReadPack}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

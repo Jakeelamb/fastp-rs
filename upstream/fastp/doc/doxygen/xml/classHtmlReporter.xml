@@ -1,0 +1,643 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classHtmlReporter" kind="class" language="C++" prot="public">
+    <compoundname>HtmlReporter</compoundname>
+    <includes refid="htmlreporter_8h" local="no">htmlreporter.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classHtmlReporter_1a02a03e600e134616d914c31ba9bd7709" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* HtmlReporter::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>HtmlReporter::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="42" column="13" bodyfile="src/htmlreporter.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHtmlReporter_1a30b8b92b014e7909ba6705645840716a" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* HtmlReporter::mDupHist</definition>
+        <argsstring></argsstring>
+        <name>mDupHist</name>
+        <qualifiedname>HtmlReporter::mDupHist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="43" column="9" bodyfile="src/htmlreporter.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHtmlReporter_1aa6486b56a07991ec71c014223b08c265" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* HtmlReporter::mDupMeanGC</definition>
+        <argsstring></argsstring>
+        <name>mDupMeanGC</name>
+        <qualifiedname>HtmlReporter::mDupMeanGC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="44" column="12" bodyfile="src/htmlreporter.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHtmlReporter_1aa30220483c6d52e8c4b3f7c496daf8a9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double HtmlReporter::mDupRate</definition>
+        <argsstring></argsstring>
+        <name>mDupRate</name>
+        <qualifiedname>HtmlReporter::mDupRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="45" column="12" bodyfile="src/htmlreporter.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHtmlReporter_1a7e71ef856868fadcaa3893383f9108f9" prot="private" static="no" mutable="no">
+        <type>atomic_long *</type>
+        <definition>atomic_long* HtmlReporter::mInsertHist</definition>
+        <argsstring></argsstring>
+        <name>mInsertHist</name>
+        <qualifiedname>HtmlReporter::mInsertHist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="46" column="17" bodyfile="src/htmlreporter.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHtmlReporter_1aa253bec109843dada32d836b992ba9b8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HtmlReporter::mInsertSizePeak</definition>
+        <argsstring></argsstring>
+        <name>mInsertSizePeak</name>
+        <qualifiedname>HtmlReporter::mInsertSizePeak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="47" column="9" bodyfile="src/htmlreporter.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHtmlReporter_1a57d4ea37391de464edfd84400d4df8b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HtmlReporter::HtmlReporter</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>HtmlReporter</name>
+        <qualifiedname>HtmlReporter::HtmlReporter</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="20" column="5" bodyfile="src/htmlreporter.cpp" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1ae6aead7e4be2257112927c2e6c5558e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HtmlReporter::~HtmlReporter</definition>
+        <argsstring>()</argsstring>
+        <name>~HtmlReporter</name>
+        <qualifiedname>HtmlReporter::~HtmlReporter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="21" column="5" bodyfile="src/htmlreporter.cpp" bodystart="14" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1aba94153c525b376d24d8c566ee78987c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::setDup</definition>
+        <argsstring>(double dupRate)</argsstring>
+        <name>setDup</name>
+        <qualifiedname>HtmlReporter::setDup</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>dupRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="22" column="10" bodyfile="src/htmlreporter.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1ab701792be1a8136fc183d34ddb72adb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::setInsertHist</definition>
+        <argsstring>(atomic_long *insertHist, int insertSizePeak)</argsstring>
+        <name>setInsertHist</name>
+        <qualifiedname>HtmlReporter::setInsertHist</qualifiedname>
+        <param>
+          <type>atomic_long *</type>
+          <declname>insertHist</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>insertSizePeak</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="23" column="10" bodyfile="src/htmlreporter.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1a7e9dd62e51134082034b1abab94bce9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::report</definition>
+        <argsstring>(FilterResult *result, Stats *preStats1, Stats *postStats1, Stats *preStats2=NULL, Stats *postStats2=NULL)</argsstring>
+        <name>report</name>
+        <qualifiedname>HtmlReporter::report</qualifiedname>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>preStats1</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>postStats1</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>preStats2</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>postStats2</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="24" column="10" bodyfile="src/htmlreporter.cpp" bodystart="427" bodyend="557"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classHtmlReporter_1af80e6ea00c88f32d19d5f67c32d50b46" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::outputRow</definition>
+        <argsstring>(ofstream &amp;ofs, string key, long value)</argsstring>
+        <name>outputRow</name>
+        <qualifiedname>HtmlReporter::outputRow</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="26" column="17" bodyfile="src/htmlreporter.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1ac7470714e953cf8ddfd379e82a7a5464" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::outputRow</definition>
+        <argsstring>(ofstream &amp;ofs, string key, string value)</argsstring>
+        <name>outputRow</name>
+        <qualifiedname>HtmlReporter::outputRow</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="27" column="17" bodyfile="src/htmlreporter.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1a2cd13f5289655ae1bced187322c40c79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string HtmlReporter::formatNumber</definition>
+        <argsstring>(long number)</argsstring>
+        <name>formatNumber</name>
+        <qualifiedname>HtmlReporter::formatNumber</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="28" column="19" bodyfile="src/htmlreporter.cpp" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1a5e9ab720eadb666289f9403ae4fa9fcc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string HtmlReporter::getPercents</definition>
+        <argsstring>(long numerator, long denominator)</argsstring>
+        <name>getPercents</name>
+        <qualifiedname>HtmlReporter::getPercents</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>numerator</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>denominator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="29" column="19" bodyfile="src/htmlreporter.cpp" bodystart="49" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classHtmlReporter_1ac328ed94fa6ed8622755429f7b9016e1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const string</type>
+        <definition>const string HtmlReporter::getCurrentSystemTime</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentSystemTime</name>
+        <qualifiedname>HtmlReporter::getCurrentSystemTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="31" column="18" bodyfile="src/htmlreporter.cpp" bodystart="612" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1a897a18270fd125322990bf49bc4ae0ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::printHeader</definition>
+        <argsstring>(ofstream &amp;ofs)</argsstring>
+        <name>printHeader</name>
+        <qualifiedname>HtmlReporter::printHeader</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="32" column="10" bodyfile="src/htmlreporter.cpp" bodystart="559" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1a63274acaa3bcb377c0140d7b5dd60e5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::printCSS</definition>
+        <argsstring>(ofstream &amp;ofs)</argsstring>
+        <name>printCSS</name>
+        <qualifiedname>HtmlReporter::printCSS</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="33" column="10" bodyfile="src/htmlreporter.cpp" bodystart="568" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1ad31b0eb65e18147d8788fb853add2409" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::printJS</definition>
+        <argsstring>(ofstream &amp;ofs)</argsstring>
+        <name>printJS</name>
+        <qualifiedname>HtmlReporter::printJS</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="34" column="10" bodyfile="src/htmlreporter.cpp" bodystart="596" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1ae5fce1d959353ffddaefeff01751bd1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::printFooter</definition>
+        <argsstring>(ofstream &amp;ofs)</argsstring>
+        <name>printFooter</name>
+        <qualifiedname>HtmlReporter::printFooter</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="35" column="10" bodyfile="src/htmlreporter.cpp" bodystart="623" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1aeb55b5e9a089e6ab1ef6a7f6488147db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::reportQualHistogram</definition>
+        <argsstring>(ofstream &amp;ofs, string caption, Stats *stats1, Stats *stats2=NULL)</argsstring>
+        <name>reportQualHistogram</name>
+        <qualifiedname>HtmlReporter::reportQualHistogram</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>caption</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>stats1</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>stats2</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="36" column="10" bodyfile="src/htmlreporter.cpp" bodystart="344" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1a371bf6a3d0ac443e1f1120491951f18a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::reportDuplication</definition>
+        <argsstring>(ofstream &amp;ofs)</argsstring>
+        <name>reportDuplication</name>
+        <qualifiedname>HtmlReporter::reportDuplication</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="37" column="10" bodyfile="src/htmlreporter.cpp" bodystart="283" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1a015fdca35ef887499d3901599f03e539" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::reportInsertSize</definition>
+        <argsstring>(ofstream &amp;ofs, int isizeLimit)</argsstring>
+        <name>reportInsertSize</name>
+        <qualifiedname>HtmlReporter::reportInsertSize</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>isizeLimit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="38" column="10" bodyfile="src/htmlreporter.cpp" bodystart="228" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classHtmlReporter_1a0e6af5d904e0c998d1c2afd912305bd7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HtmlReporter::printSummary</definition>
+        <argsstring>(ofstream &amp;ofs, FilterResult *result, Stats *preStats1, Stats *postStats1, Stats *preStats2, Stats *postStats2)</argsstring>
+        <name>printSummary</name>
+        <qualifiedname>HtmlReporter::printSummary</qualifiedname>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>ofs</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>preStats1</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>postStats1</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>preStats2</declname>
+        </param>
+        <param>
+          <type><ref refid="classStats" kindref="compound">Stats</ref> *</type>
+          <declname>postStats2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/htmlreporter.h" line="39" column="10" bodyfile="src/htmlreporter.cpp" bodystart="56" bodyend="226"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="1">
+        <label>HtmlReporter</label>
+        <link refid="classHtmlReporter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/htmlreporter.h" line="18" column="1" bodyfile="src/htmlreporter.h" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classHtmlReporter_1a2cd13f5289655ae1bced187322c40c79" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>formatNumber</name></member>
+      <member refid="classHtmlReporter_1ac328ed94fa6ed8622755429f7b9016e1" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>getCurrentSystemTime</name></member>
+      <member refid="classHtmlReporter_1a5e9ab720eadb666289f9403ae4fa9fcc" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>getPercents</name></member>
+      <member refid="classHtmlReporter_1a57d4ea37391de464edfd84400d4df8b2" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>HtmlReporter</name></member>
+      <member refid="classHtmlReporter_1a30b8b92b014e7909ba6705645840716a" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>mDupHist</name></member>
+      <member refid="classHtmlReporter_1aa6486b56a07991ec71c014223b08c265" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>mDupMeanGC</name></member>
+      <member refid="classHtmlReporter_1aa30220483c6d52e8c4b3f7c496daf8a9" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>mDupRate</name></member>
+      <member refid="classHtmlReporter_1a7e71ef856868fadcaa3893383f9108f9" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>mInsertHist</name></member>
+      <member refid="classHtmlReporter_1aa253bec109843dada32d836b992ba9b8" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>mInsertSizePeak</name></member>
+      <member refid="classHtmlReporter_1a02a03e600e134616d914c31ba9bd7709" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>mOptions</name></member>
+      <member refid="classHtmlReporter_1af80e6ea00c88f32d19d5f67c32d50b46" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>outputRow</name></member>
+      <member refid="classHtmlReporter_1ac7470714e953cf8ddfd379e82a7a5464" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>outputRow</name></member>
+      <member refid="classHtmlReporter_1a63274acaa3bcb377c0140d7b5dd60e5b" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>printCSS</name></member>
+      <member refid="classHtmlReporter_1ae5fce1d959353ffddaefeff01751bd1a" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>printFooter</name></member>
+      <member refid="classHtmlReporter_1a897a18270fd125322990bf49bc4ae0ee" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>printHeader</name></member>
+      <member refid="classHtmlReporter_1ad31b0eb65e18147d8788fb853add2409" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>printJS</name></member>
+      <member refid="classHtmlReporter_1a0e6af5d904e0c998d1c2afd912305bd7" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>printSummary</name></member>
+      <member refid="classHtmlReporter_1a7e9dd62e51134082034b1abab94bce9e" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>report</name></member>
+      <member refid="classHtmlReporter_1a371bf6a3d0ac443e1f1120491951f18a" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>reportDuplication</name></member>
+      <member refid="classHtmlReporter_1a015fdca35ef887499d3901599f03e539" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>reportInsertSize</name></member>
+      <member refid="classHtmlReporter_1aeb55b5e9a089e6ab1ef6a7f6488147db" prot="private" virt="non-virtual"><scope>HtmlReporter</scope><name>reportQualHistogram</name></member>
+      <member refid="classHtmlReporter_1aba94153c525b376d24d8c566ee78987c" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>setDup</name></member>
+      <member refid="classHtmlReporter_1ab701792be1a8136fc183d34ddb72adb8" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>setInsertHist</name></member>
+      <member refid="classHtmlReporter_1ae6aead7e4be2257112927c2e6c5558e4" prot="public" virt="non-virtual"><scope>HtmlReporter</scope><name>~HtmlReporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

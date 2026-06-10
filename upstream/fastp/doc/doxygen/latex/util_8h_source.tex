@@ -1,0 +1,290 @@
+\doxysection{util.\+h}
+\hypertarget{util_8h_source}{}\label{util_8h_source}\index{src/util.h@{src/util.h}}
+\doxymbox{\hyperlink{util_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ UTIL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ UTIL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <sys/stat.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <time.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <regex>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{util_8h_aca609a0aa2078b7464de53a2efb58398}{complement}}(\textcolor{keywordtype}{char}\ base)\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{switch}(base)\{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'A'}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'a'}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{charliteral}{'T'};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'T'}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'t'}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{charliteral}{'A'};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'C'}:}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'c'}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{charliteral}{'G'};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'G'}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'g'}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{charliteral}{'C'};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{charliteral}{'N'};}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{util_8h_a1ea2bedaa83ba9cd9e1df8d2f4c3491d}{starts\_with}}(\ \textcolor{keywordtype}{string}\ \textcolor{keyword}{const}\ \&\ value,\ \ \textcolor{keywordtype}{string}\ \textcolor{keyword}{const}\ \&\ starting)}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{if}\ (starting.size()\ >\ value.size())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordflow}{return}\ \ equal(starting.begin(),\ starting.end(),\ value.begin());}
+\DoxyCodeLine{00039\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{util_8h_a1ea2bedaa83ba9cd9e1df8d2f4c3491d}{starts\_with}}(\ \textcolor{keywordtype}{string}*\ value,\ \ \textcolor{keywordtype}{string}\ \textcolor{keyword}{const}\ \&\ starting)}
+\DoxyCodeLine{00042\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{util_8h_a1ea2bedaa83ba9cd9e1df8d2f4c3491d}{starts\_with}}(*value,\ starting);}
+\DoxyCodeLine{00044\ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{util_8h_ac2a4e8bb60abae8b64dab7107e114cbb}{ends\_with}}(\ \textcolor{keywordtype}{string}\ \textcolor{keyword}{const}\ \&\ value,\ \ \textcolor{keywordtype}{string}\ \textcolor{keyword}{const}\ \&\ ending)}
+\DoxyCodeLine{00047\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{if}\ (ending.size()\ >\ value.size())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordflow}{return}\ \ equal(ending.rbegin(),\ ending.rend(),\ value.rbegin());}
+\DoxyCodeLine{00050\ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{util_8h_a3101bc0142a49d9d11ad3f8cac766a2d}{trim}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ str)}
+\DoxyCodeLine{00053\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ string::size\_type\ pos\ =\ str.find\_first\_not\_of(\textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordflow}{if}\ (pos\ ==\ string::npos)}
+\DoxyCodeLine{00056\ \ \ \ \ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ string(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ string::size\_type\ pos2\ =\ str.find\_last\_not\_of(\textcolor{charliteral}{'\ '});}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}\ (pos2\ !=\ string::npos)}
+\DoxyCodeLine{00061\ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ str.substr(pos,\ pos2\ -\/\ pos\ +\ 1);}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{return}\ str.substr(pos);}
+\DoxyCodeLine{00065\ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{util_8h_a02d36220606e7d11fc876a9ddee0b330}{split}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ str,\ vector<string>\&\ ret\_,\ \textcolor{keywordtype}{string}\ sep\ =\ \textcolor{stringliteral}{"{},"{}})}
+\DoxyCodeLine{00068\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordflow}{if}\ (str.empty())}
+\DoxyCodeLine{00070\ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00072\ \ \ \ \ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{string}\ tmp;}
+\DoxyCodeLine{00075\ \ \ \ \ string::size\_type\ pos\_begin\ =\ str.find\_first\_not\_of(sep);}
+\DoxyCodeLine{00076\ \ \ \ \ string::size\_type\ comma\_pos\ =\ 0;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{while}\ (pos\_begin\ !=\ string::npos)}
+\DoxyCodeLine{00079\ \ \ \ \ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ comma\_pos\ =\ str.find(sep,\ pos\_begin);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (comma\_pos\ !=\ string::npos)}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ tmp\ =\ str.substr(pos\_begin,\ comma\_pos\ -\/\ pos\_begin);}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ pos\_begin\ =\ comma\_pos\ +\ sep.length();}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ tmp\ =\ str.substr(pos\_begin);}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ pos\_begin\ =\ comma\_pos;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ ret\_.push\_back(tmp);}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ tmp.clear();}
+\DoxyCodeLine{00094\ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00096\ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{util_8h_a06e4bfc654793aba950d37afb6cc1f21}{replace}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ str,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ src,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ dest)}
+\DoxyCodeLine{00099\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{string}\ ret;}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ string::size\_type\ pos\_begin\ =\ 0;}
+\DoxyCodeLine{00103\ \ \ \ \ string::size\_type\ pos\ \ \ \ \ \ \ =\ str.find(src);}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{while}\ (pos\ !=\ string::npos)}
+\DoxyCodeLine{00105\ \ \ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ ret.append(str.data()\ +\ pos\_begin,\ pos\ -\/\ pos\_begin);}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ ret\ +=\ dest;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ pos\_begin\ =\ pos\ +\ 1;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ pos\ \ \ \ \ \ \ =\ str.find(src,\ pos\_begin);}
+\DoxyCodeLine{00110\ \ \ \ \ \}}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{if}\ (pos\_begin\ <\ str.length())}
+\DoxyCodeLine{00112\ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ ret.append(str.begin()\ +\ pos\_begin,\ str.end());}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{00116\ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{util_8h_a04982192b779b50ab1d45dc3109a8795}{reverse}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ str)\ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{string}\ ret(str.length(),\ 0);}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ pos=0;\ pos<str.length();\ pos++)\ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ ret[pos]\ =\ str[str.length()\ -\/\ pos\ -\/\ 1];}
+\DoxyCodeLine{00122\ \ \ \ \ \}}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{00124\ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{util_8h_a7657042f76bf50bcbabd087b2573a86b}{basename}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ filename)\{}
+\DoxyCodeLine{00127\ \ \ \ \ string::size\_type\ pos\ =\ filename.find\_last\_of(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordflow}{if}\ (pos\ ==\ string::npos)}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ filename;}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(pos\ ==\ filename.length()-\/1)}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};\ \textcolor{comment}{//\ a\ bad\ filename}}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ filename.substr(pos+1,\ filename.length()\ -\/\ pos\ -\/\ 1);}
+\DoxyCodeLine{00134\ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ filename)\{}
+\DoxyCodeLine{00137\ \ \ \ \ string::size\_type\ pos\ =\ filename.find\_last\_of(\textcolor{charliteral}{'/'});}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordflow}{if}\ (pos\ ==\ string::npos)\ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}./"{}};}
+\DoxyCodeLine{00140\ \ \ \ \ \}\ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ filename.substr(0,\ pos+1);}
+\DoxyCodeLine{00142\ \}}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{util_8h_a5c4817483f5adf9cbad21804fa64ae1f}{joinpath}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \doxymbox{\hyperlink{util_8h_a7657042f76bf50bcbabd087b2573a86b}{basename}})\{}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}}[\doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}}.length()-\/1]\ ==\ \textcolor{charliteral}{'/'})\{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}}\ +\ \doxymbox{\hyperlink{util_8h_a7657042f76bf50bcbabd087b2573a86b}{basename}};}
+\DoxyCodeLine{00147\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}}\ +\ \textcolor{stringliteral}{"{}/"{}}\ +\ \doxymbox{\hyperlink{util_8h_a7657042f76bf50bcbabd087b2573a86b}{basename}};}
+\DoxyCodeLine{00149\ \ \ \ \ \}}
+\DoxyCodeLine{00150\ \}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \textcolor{comment}{//Check\ if\ a\ string\ is\ a\ file\ or\ directory}}
+\DoxyCodeLine{00153\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{util_8h_a073d984a68d92e2e1d39c69a384e71f6}{file\_exists}}(\textcolor{keyword}{const}\ \ \textcolor{keywordtype}{string}\&\ s)}
+\DoxyCodeLine{00154\ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{bool}\ exists\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{if}(s.length()\ >\ 0)\ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }stat\ status;}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ result\ =\ stat(\ s.c\_str(),\ \&status\ );}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(result\ ==\ 0)\ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ exists\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordflow}{return}\ exists;}
+\DoxyCodeLine{00164\ \}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \textcolor{comment}{//\ check\ if\ a\ string\ is\ a\ directory}}
+\DoxyCodeLine{00168\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{util_8h_acee6930819622fb8b8d6c34e14d1970c}{is\_directory}}(\textcolor{keyword}{const}\ \ \textcolor{keywordtype}{string}\&\ path)}
+\DoxyCodeLine{00169\ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{bool}\ isdir\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keyword}{struct\ }stat\ status;}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{comment}{//\ visual\ studion\ use\ \_S\_IFDIR\ instead\ of\ S\_IFDIR}}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{comment}{//\ http://msdn.microsoft.com/en-\/us/library/14h5k7ff.aspx}}
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\#ifdef\ \_MSC\_VER}}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#define\ S\_IFDIR\ \_S\_IFDIR}}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00177\ \ \ \ \ stat(\ path.c\_str(),\ \&status\ );}
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordflow}{if}\ (\ status.st\_mode\ \&\ \ S\_IFDIR\ \ )\ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ isdir\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00180\ \ \ \ \ \}}
+\DoxyCodeLine{00181\ \textcolor{comment}{//\ \#endif}}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordflow}{return}\ isdir;}
+\DoxyCodeLine{00183\ \}}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{util_8h_ae8a320da8f44d767b65c5b1e14e0fbc8}{check\_file\_valid}}(\textcolor{keyword}{const}\ \ \textcolor{keywordtype}{string}\&\ s)\ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keywordflow}{if}(!\doxymbox{\hyperlink{util_8h_a073d984a68d92e2e1d39c69a384e71f6}{file\_exists}}(s))\{}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR:\ file\ '"{}}\ <<\ s\ <<\ \textcolor{stringliteral}{"{}'\ doesn't\ exist,\ quit\ now"{}}\ <<\ endl;}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ exit(-\/1);}
+\DoxyCodeLine{00189\ \ \ \ \ \}}
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{util_8h_acee6930819622fb8b8d6c34e14d1970c}{is\_directory}}(s))\{}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR:\ '"{}}\ <<\ s\ <<\ \textcolor{stringliteral}{"{}'\ is\ a\ folder,\ not\ a\ file,\ quit\ now"{}}\ <<\ endl;}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ exit(-\/1);}
+\DoxyCodeLine{00193\ \ \ \ \ \}}
+\DoxyCodeLine{00194\ \}}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{util_8h_a9f9902b2f45276fb9a76f3417131bd0f}{check\_filename\_valid}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ s)\{}
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordflow}{return}\ 0\ <\ \doxymbox{\hyperlink{util_8h_a3101bc0142a49d9d11ad3f8cac766a2d}{trim}}(s).length()\ \&\&\ \doxymbox{\hyperlink{util_8h_a3101bc0142a49d9d11ad3f8cac766a2d}{trim}}(s).length()\ <=\ 255\ \&\&\ regex\_match(s,\ regex(\textcolor{stringliteral}{"{}\string^[A-\/Za-\/z0-\/9\_\(\backslash\)\(\backslash\).\(\backslash\)\(\backslash\)-\/]+\$"{}}));}
+\DoxyCodeLine{00198\ \}}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{util_8h_a88bf9c00f9ead979e48971460683a8f3}{check\_file\_writable}}(\textcolor{keyword}{const}\ \ \textcolor{keywordtype}{string}\&\ s)\ \{}
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordtype}{string}\ dir\ =\ \doxymbox{\hyperlink{util_8h_a547fc92f1098254e78a7067eed578358}{dirname}}(s);}
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordflow}{if}(!\doxymbox{\hyperlink{util_8h_a073d984a68d92e2e1d39c69a384e71f6}{file\_exists}}(dir))\ \{}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR:\ '"{}}\ <<\ dir\ <<\ \textcolor{stringliteral}{"{}\ doesn't\ exist.\ Create\ this\ folder\ and\ run\ this\ command\ again."{}}\ <<\ endl;}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ exit(-\/1);}
+\DoxyCodeLine{00205\ \ \ \ \ \}}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordflow}{if}(\doxymbox{\hyperlink{util_8h_acee6930819622fb8b8d6c34e14d1970c}{is\_directory}}(s))\{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR:\ '"{}}\ <<\ s\ <<\ \textcolor{stringliteral}{"{}'\ is\ not\ a\ writable\ file,\ quit\ now"{}}\ <<\ endl;}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ exit(-\/1);}
+\DoxyCodeLine{00209\ \ \ \ \ \}}
+\DoxyCodeLine{00210\ \}}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \textcolor{comment}{//\ Remove\ non\ alphabetic\ characters\ from\ a\ string}}
+\DoxyCodeLine{00213\ \textcolor{keyword}{inline}\ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{util_8h_ad0284669b46ac0ba4224a41bc9a08eb4}{str\_keep\_alpha}}(\textcolor{keyword}{const}\ \ \textcolor{keywordtype}{string}\&\ s)}
+\DoxyCodeLine{00214\ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \ \textcolor{keywordtype}{string}\ new\_str;}
+\DoxyCodeLine{00216\ \ \ \ \ \textcolor{keywordflow}{for}(\ \textcolor{keywordtype}{size\_t}\ it\ =0;\ it\ <\ s.size();\ it++)\ \{}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ \ isalpha(s[it])\ )\ \{}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ new\_str\ +=\ s[it];}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00220\ \ \ \ \ \}}
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordflow}{return}\ new\_str;}
+\DoxyCodeLine{00222\ \}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \textcolor{comment}{//\ Remove\ invalid\ sequence\ characters\ from\ a\ string}}
+\DoxyCodeLine{00226\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{util_8h_a418b85315c08d490370eb6909079b869}{str\_keep\_valid\_sequence}}(\ \ \textcolor{keywordtype}{string}\&\ s,\ \textcolor{keywordtype}{bool}\ forceUpperCase\ =\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00227\ \{}
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ total\ =\ 0;}
+\DoxyCodeLine{00229\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ case\_gap\ =\ \textcolor{charliteral}{'a'}\ -\/\ \textcolor{charliteral}{'A'};}
+\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordflow}{for}(\ \textcolor{keywordtype}{size\_t}\ it\ =0;\ it\ <\ s.size();\ it++)\ \{}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ c\ =\ s[it];}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(forceUpperCase\ \&\&\ c>=\textcolor{charliteral}{'a'}\ \&\&\ c<=\textcolor{charliteral}{'z'})\ \{}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ c\ -\/=\ case\_gap;}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ \ isalpha(c)\ ||\ c\ ==\ \textcolor{charliteral}{'-\/'}\ ||\ c\ ==\ \textcolor{charliteral}{'*'}\ )\ \{}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ s[total]\ =\ c;}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ total\ ++;}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00239\ \ \ \ \ \}}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \ \ \ \ s.resize(total);}
+\DoxyCodeLine{00242\ \}}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{util_8h_a24aedeca4efb117878d684045bf9bece}{find\_with\_right\_pos}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ str,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pattern,\ \textcolor{keywordtype}{int}\ start=0)\ \{}
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{keywordtype}{int}\ pos\ =\ str.find(pattern,\ start);}
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keywordflow}{if}\ (pos\ <\ 0)}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pos\ +\ pattern.length();}
+\DoxyCodeLine{00250\ \}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{util_8h_a9ebd1bf0139dbe0896ef5fc94e490f72}{str2upper}}(\textcolor{keywordtype}{string}\&\ s)\{}
+\DoxyCodeLine{00253\ \ \ \ \ transform(s.begin(),\ s.end(),\ s.begin(),\ (int\ (*)(\textcolor{keywordtype}{int}))toupper);}
+\DoxyCodeLine{00254\ \}}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00256\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{util_8h_aa79ff12decf7b10244321877981a1003}{str2lower}}(\textcolor{keywordtype}{string}\&\ s)\{}
+\DoxyCodeLine{00257\ \ \ \ \ transform(s.begin(),\ s.end(),\ s.begin(),\ (int\ (*)(\textcolor{keywordtype}{int}))tolower);}
+\DoxyCodeLine{00258\ \}}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00260\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{char}\ \doxymbox{\hyperlink{util_8h_a36d185a90fd1da8f9bb53d738425ec15}{num2qual}}(\textcolor{keywordtype}{int}\ num)\ \{}
+\DoxyCodeLine{00261\ \ \ \ \ \textcolor{keywordflow}{if}(num\ >\ 127\ -\/\ 33)}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ num\ =\ 127\ -\/\ 33;}
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordflow}{if}(num\ <\ 0)}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ num\ =\ 0;}
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ \ \ \ \ \textcolor{keywordtype}{char}\ c\ =\ num\ +\ 33;}
+\DoxyCodeLine{00267\ \ \ \ \ \textcolor{keywordflow}{return}\ c;}
+\DoxyCodeLine{00268\ \}}
+\DoxyCodeLine{00269\ }
+\DoxyCodeLine{00270\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{util_8h_a72cc7f4c6bfdafb18d052826b06723d6}{error\_exit}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ msg)\ \{}
+\DoxyCodeLine{00271\ \ \ \ \ cerr\ <<\ \textcolor{stringliteral}{"{}ERROR:\ "{}}\ <<\ msg\ <<\ endl;}
+\DoxyCodeLine{00272\ \ \ \ \ exit(-\/1);}
+\DoxyCodeLine{00273\ \}}
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00275\ \textcolor{keyword}{extern}\ mutex\ \doxymbox{\hyperlink{main_8cpp_afc3396b0d9b1e34b1043a0a586eabddb}{logmtx}};}
+\DoxyCodeLine{00276\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{util_8h_ad169d39591982ee923eab31de7c8179b}{loginfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ s)\{}
+\DoxyCodeLine{00277\ \ \ \ \ \doxymbox{\hyperlink{main_8cpp_afc3396b0d9b1e34b1043a0a586eabddb}{logmtx}}.lock();}
+\DoxyCodeLine{00278\ \ \ \ \ time\_t\ tt\ =\ time(NULL);}
+\DoxyCodeLine{00279\ \ \ \ \ tm*\ t=\ localtime(\&tt);}
+\DoxyCodeLine{00280\ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}[\%02d:\%02d:\%02d]\ \%s\ \(\backslash\)n"{}},\ t-\/>tm\_hour,\ t-\/>tm\_min,\ t-\/>tm\_sec,\ s.c\_str());}
+\DoxyCodeLine{00281\ \ \ \ \ \doxymbox{\hyperlink{main_8cpp_afc3396b0d9b1e34b1043a0a586eabddb}{logmtx}}.unlock();}
+\DoxyCodeLine{00282\ \}}
+\DoxyCodeLine{00283\ }
+\DoxyCodeLine{00284\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ UTIL\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

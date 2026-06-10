@@ -1,0 +1,60 @@
+\doxysection{src/\+stats.cpp File Reference}
+\hypertarget{stats_8cpp}{}\label{stats_8cpp}\index{src/stats.cpp@{src/stats.cpp}}
+{\ttfamily \+\#include "{}stats.\+h"{}}\newline
+{\ttfamily \+\#include $<$memory.\+h$>$}\newline
+{\ttfamily \+\#include $<$sstream$>$}\newline
+{\ttfamily \+\#include "{}util.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{stats_8cpp_a53c139d8ab18ed3e13ff65f63067fcac}{KMER\+\_\+\+LEN}}~5
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \doxymbox{\hyperlink{stats_8cpp_afccb6a513cdaff988996aee95f4c4d08}{BASE2\+VAL}} \+[256]\+
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{stats_8cpp_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{stats_8cpp_a53c139d8ab18ed3e13ff65f63067fcac}\index{stats.cpp@{stats.cpp}!KMER\_LEN@{KMER\_LEN}}
+\index{KMER\_LEN@{KMER\_LEN}!stats.cpp@{stats.cpp}}
+\doxysubsubsection{\texorpdfstring{KMER\_LEN}{KMER\_LEN}}
+{\footnotesize\ttfamily \label{stats_8cpp_a53c139d8ab18ed3e13ff65f63067fcac} 
+\+\#define KMER\+\_\+\+LEN~5}
+
+
+
+\label{doc-var-members}
+\Hypertarget{stats_8cpp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{stats_8cpp_afccb6a513cdaff988996aee95f4c4d08}\index{stats.cpp@{stats.cpp}!BASE2VAL@{BASE2VAL}}
+\index{BASE2VAL@{BASE2VAL}!stats.cpp@{stats.cpp}}
+\doxysubsubsection{\texorpdfstring{BASE2VAL}{BASE2VAL}}
+{\footnotesize\ttfamily \label{stats_8cpp_afccb6a513cdaff988996aee95f4c4d08} 
+const int BASE2\+VAL\+[256]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \{}
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,\ 0,-\/1,\ 2,-\/1,-\/1,-\/1,\ 3,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,\ 1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\ \ \ \ -\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,-\/1,\ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

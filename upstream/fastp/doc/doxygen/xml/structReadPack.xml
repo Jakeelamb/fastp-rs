@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structReadPack" kind="struct" language="C++" prot="public">
+    <compoundname>ReadPack</compoundname>
+    <includes refid="read_8h" local="no">read.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structReadPack_1aaf934266511e976590a5cf251f514400" prot="public" static="no" mutable="no">
+        <type><ref refid="classRead" kindref="compound">Read</ref> **</type>
+        <definition>Read** ReadPack::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>ReadPack::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="67" column="10" bodyfile="src/read.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structReadPack_1a8e60d572d5922f78ca9d8a2a2c604c42" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ReadPack::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>ReadPack::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/read.h" line="68" column="9" bodyfile="src/read.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Read</label>
+        <link refid="classRead"/>
+      </node>
+      <node id="1">
+        <label>ReadPack</label>
+        <link refid="structReadPack"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/read.h" line="66" column="1" bodyfile="src/read.h" bodystart="66" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structReadPack_1a8e60d572d5922f78ca9d8a2a2c604c42" prot="public" virt="non-virtual"><scope>ReadPack</scope><name>count</name></member>
+      <member refid="structReadPack_1aaf934266511e976590a5cf251f514400" prot="public" virt="non-virtual"><scope>ReadPack</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

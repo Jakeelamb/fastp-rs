@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacecmdline" kind="namespace" language="C++">
+    <compoundname>cmdline</compoundname>
+    <innerclass refid="classcmdline_1_1cmdline__error" prot="public">cmdline::cmdline_error</innerclass>
+    <innerclass refid="structcmdline_1_1default__reader" prot="public">cmdline::default_reader</innerclass>
+    <innerclass refid="structcmdline_1_1range__reader" prot="public">cmdline::range_reader</innerclass>
+    <innerclass refid="structcmdline_1_1oneof__reader" prot="public">cmdline::oneof_reader</innerclass>
+    <innerclass refid="classcmdline_1_1parser" prot="public">cmdline::parser</innerclass>
+    <innernamespace refid="namespacecmdline_1_1detail">cmdline::detail</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecmdline_1a6fd6153b623203e42c7c0fb47c358234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1range__reader" kindref="compound">range_reader</ref>&lt; T &gt;</type>
+        <definition>range_reader&lt; T &gt; cmdline::range</definition>
+        <argsstring>(const T &amp;low, const T &amp;high)</argsstring>
+        <name>range</name>
+        <qualifiedname>cmdline::range</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>low</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>high</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="165" column="14" bodyfile="src/cmdline.h" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1a326fc81130d3a280ae88475f6706d1ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="184" column="14" bodyfile="src/cmdline.h" bodystart="184" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1aa651a6ceddee117802182e4f04efc951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="192" column="14" bodyfile="src/cmdline.h" bodystart="192" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1ada0d91b62ce12fca8619a4efaa8334fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2, T a3)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="201" column="14" bodyfile="src/cmdline.h" bodystart="201" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1af31e23b2539a009c1e945a497fb4faac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2, T a3, T a4)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="211" column="14" bodyfile="src/cmdline.h" bodystart="211" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1ab05ffe2f4e217e74daf5168512458e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2, T a3, T a4, T a5)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="222" column="14" bodyfile="src/cmdline.h" bodystart="222" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1a4981e4f94c22bda32268e6db4405598e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2, T a3, T a4, T a5, T a6)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a6</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="234" column="14" bodyfile="src/cmdline.h" bodystart="234" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1a1e096231722fd892c918143485fe774d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2, T a3, T a4, T a5, T a6, T a7)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a7</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="247" column="14" bodyfile="src/cmdline.h" bodystart="247" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1a96f5454341387fb12497e7df8d2fde54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2, T a3, T a4, T a5, T a6, T a7, T a8)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a7</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="261" column="14" bodyfile="src/cmdline.h" bodystart="261" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1a56618aa1f6af9039b2c25540138f8307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2, T a3, T a4, T a5, T a6, T a7, T a8, T a9)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a7</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a9</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="276" column="14" bodyfile="src/cmdline.h" bodystart="276" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1a509696b594fc0091d58d5f0c363296e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structcmdline_1_1oneof__reader" kindref="compound">oneof_reader</ref>&lt; T &gt;</type>
+        <definition>oneof_reader&lt; T &gt; cmdline::oneof</definition>
+        <argsstring>(T a1, T a2, T a3, T a4, T a5, T a6, T a7, T a8, T a9, T a10)</argsstring>
+        <name>oneof</name>
+        <qualifiedname>cmdline::oneof</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a5</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a6</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a7</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a8</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a9</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>a10</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="292" column="14" bodyfile="src/cmdline.h" bodystart="292" bodyend="306"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cmdline.h" line="42" column="1"/>
+  </compounddef>
+</doxygen>

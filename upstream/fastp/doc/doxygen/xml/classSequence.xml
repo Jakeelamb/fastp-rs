@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classSequence" kind="class" language="C++" prot="public">
+    <compoundname>Sequence</compoundname>
+    <includes refid="sequence_8h" local="no">sequence.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSequence_1a1c568ccf91d1675946f7f907399f78d4" prot="public" static="no" mutable="no">
+        <type>string *</type>
+        <definition>string* Sequence::mStr</definition>
+        <argsstring></argsstring>
+        <name>mStr</name>
+        <qualifiedname>Sequence::mStr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="26" column="13" bodyfile="src/sequence.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSequence_1a532b7e8df6ff6b2f990c14ae97859ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sequence::Sequence</definition>
+        <argsstring>()</argsstring>
+        <name>Sequence</name>
+        <qualifiedname>Sequence::Sequence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="13" column="5" bodyfile="src/sequence.cpp" bodystart="4" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classSequence_1ab8a49ff2126c53c3598ebf30812f59e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sequence::Sequence</definition>
+        <argsstring>(string *seq)</argsstring>
+        <name>Sequence</name>
+        <qualifiedname>Sequence::Sequence</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>seq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="14" column="5" bodyfile="src/sequence.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classSequence_1aee09a7d70c3ab523fed85da94ea1366f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Sequence::~Sequence</definition>
+        <argsstring>()</argsstring>
+        <name>~Sequence</name>
+        <qualifiedname>Sequence::~Sequence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="15" column="5" bodyfile="src/sequence.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classSequence_1ae2eb4b3b44c4228c70372ba5cda3caa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sequence::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>Sequence::print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="16" column="10" bodyfile="src/sequence.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classSequence_1af60c28c88a665246648c52e69d6bbe8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Sequence::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <qualifiedname>Sequence::length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="17" column="9" bodyfile="src/sequence.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classSequence_1a34ec54c222835581371e4b62e3f673f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classSequence" kindref="compound">Sequence</ref></type>
+        <definition>Sequence Sequence::reverseComplement</definition>
+        <argsstring>()</argsstring>
+        <name>reverseComplement</name>
+        <qualifiedname>Sequence::reverseComplement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="18" column="14" bodyfile="src/sequence.cpp" bodystart="31" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classSequence_1a213790aea5fca0490b5108c2b99234a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classSequence" kindref="compound">Sequence</ref></type>
+        <definition>Sequence Sequence::operator~</definition>
+        <argsstring>()</argsstring>
+        <name>operator~</name>
+        <qualifiedname>Sequence::operator~</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="20" column="14" bodyfile="src/sequence.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classSequence_1a96a8d5cebf940fca7c5193ab80273c82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Sequence::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>Sequence::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="22" column="17" bodyfile="src/sequence.cpp" bodystart="42" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classSequence_1ac447cc53268abf442518d40a8523beeb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Sequence::reverseComplement</definition>
+        <argsstring>(string *origin)</argsstring>
+        <name>reverseComplement</name>
+        <qualifiedname>Sequence::reverseComplement</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sequence.h" line="23" column="19" bodyfile="src/sequence.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sequence.h" line="11" column="1" bodyfile="src/sequence.h" bodystart="11" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classSequence_1af60c28c88a665246648c52e69d6bbe8a" prot="public" virt="non-virtual"><scope>Sequence</scope><name>length</name></member>
+      <member refid="classSequence_1a1c568ccf91d1675946f7f907399f78d4" prot="public" virt="non-virtual"><scope>Sequence</scope><name>mStr</name></member>
+      <member refid="classSequence_1a213790aea5fca0490b5108c2b99234a6" prot="public" virt="non-virtual"><scope>Sequence</scope><name>operator~</name></member>
+      <member refid="classSequence_1ae2eb4b3b44c4228c70372ba5cda3caa9" prot="public" virt="non-virtual"><scope>Sequence</scope><name>print</name></member>
+      <member refid="classSequence_1a34ec54c222835581371e4b62e3f673f3" prot="public" virt="non-virtual"><scope>Sequence</scope><name>reverseComplement</name></member>
+      <member refid="classSequence_1ac447cc53268abf442518d40a8523beeb" prot="public" virt="non-virtual"><scope>Sequence</scope><name>reverseComplement</name></member>
+      <member refid="classSequence_1a532b7e8df6ff6b2f990c14ae97859ca2" prot="public" virt="non-virtual"><scope>Sequence</scope><name>Sequence</name></member>
+      <member refid="classSequence_1ab8a49ff2126c53c3598ebf30812f59e7" prot="public" virt="non-virtual"><scope>Sequence</scope><name>Sequence</name></member>
+      <member refid="classSequence_1a96a8d5cebf940fca7c5193ab80273c82" prot="public" virt="non-virtual"><scope>Sequence</scope><name>test</name></member>
+      <member refid="classSequence_1aee09a7d70c3ab523fed85da94ea1366f" prot="public" virt="non-virtual"><scope>Sequence</scope><name>~Sequence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

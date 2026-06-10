@@ -1,0 +1,223 @@
+\doxysection{Writer Class Reference}
+\hypertarget{classWriter}{}\label{classWriter}\index{Writer@{Writer}}
+
+
+{\ttfamily \+\#include $<$writer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classWriter_a164ddf3e7d126f8139d8194fe9cb2095}{Writer}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt, string \doxymbox{\hyperlink{classWriter_ad74f455485d331512e5cc005963c30e8}{filename}}, int compression, bool is\+STDOUT=false)
+\item 
+\doxymbox{\hyperlink{classWriter_a6f57399b94731301d267ce10a2f52ea3}{\texorpdfstring{$\sim$}{\string~}\+Writer}} ()
+\item 
+bool \doxymbox{\hyperlink{classWriter_aa249dd7afcaf68cb4be413d4902d0056}{is\+Zipped}} ()
+\item 
+bool \doxymbox{\hyperlink{classWriter_ae709c4e7ef43a4059f2553b7cb206c41}{write\+String}} (const string \&str)
+\item 
+bool \doxymbox{\hyperlink{classWriter_aaff84ae022ac5097db2ed748c54b9c1c}{write\+String}} (string \texorpdfstring{$\ast$}{*}str)
+\item 
+bool \doxymbox{\hyperlink{classWriter_ac43d0bd4db3024ada19e004ba0db11cd}{write}} (const char \texorpdfstring{$\ast$}{*}strdata, size\+\_\+t size)
+\item 
+void \doxymbox{\hyperlink{classWriter_a85853ea21997297930329fd009718c05}{flush}} ()
+\item 
+string \doxymbox{\hyperlink{classWriter_ad74f455485d331512e5cc005963c30e8}{filename}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{classWriter_a142d2601b0565c29c1ae7a5cd8a72184}{test}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classWriter_a3c06b4a50402dfcbe88507805978f9fa}{init}} ()
+\item 
+void \doxymbox{\hyperlink{classWriter_ac26d0fb8f037786294e5669c3fb68fe4}{close}} ()
+\item 
+bool \doxymbox{\hyperlink{classWriter_a2fb2cf39ab547db41dc695d7a8027a7e}{write\+Internal}} (const char \texorpdfstring{$\ast$}{*}strdata, size\+\_\+t size)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{classWriter_a9aabedc94e657100c37da5a8075e743c}{m\+Filename}}
+\item 
+libdeflate\+\_\+compressor \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriter_a6e804f6274352e8a9ee3e818c777ce5f}{m\+Compressor}}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriter_a8c8f56c5634c3fb2c54d0f9079ef563d}{m\+FP}}
+\item 
+bool \doxymbox{\hyperlink{classWriter_ac50ed9fcea702bd305af0134c1241653}{m\+Zipped}}
+\item 
+int \doxymbox{\hyperlink{classWriter_ab34675ab54a10f7e543d634cad1cabe1}{m\+Compression}}
+\item 
+bool \doxymbox{\hyperlink{classWriter_af562afdb17e25b94319e2bf9b582d581}{have\+To\+Close}}
+\item 
+char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriter_af4bdccd0fdf49f886fcf89b85dd9fbbf}{m\+Buffer}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classWriter_a2f8b44c1d8f2ad7c9c41bea19641ee49}{m\+Buf\+Data\+Len}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classWriter_a47cd419ed1791c68cd1678366e58eeaf}{m\+Buf\+Size}}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classWriter_a411c52572201d85247bacc7e38cacc6e}{m\+Options}}
+\item 
+bool \doxymbox{\hyperlink{classWriter_aea187c1e3ed4f57924dca2944912c45c}{m\+STDOUT}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classWriter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWriter_a164ddf3e7d126f8139d8194fe9cb2095}\index{Writer@{Writer}!Writer@{Writer}}
+\index{Writer@{Writer}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{Writer()}{Writer()}}
+{\footnotesize\ttfamily \label{classWriter_a164ddf3e7d126f8139d8194fe9cb2095} 
+Writer::\+\+Writer (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{, }\item[{string}]{filename}{, }\item[{int}]{compression}{, }\item[{bool}]{is\+STDOUT}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriter_a6f57399b94731301d267ce10a2f52ea3}\index{Writer@{Writer}!````~Writer@{\texorpdfstring{$\sim$}{\string~}Writer}}
+\index{````~Writer@{\texorpdfstring{$\sim$}{\string~}Writer}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Writer()}{\string~Writer()}}
+{\footnotesize\ttfamily \label{classWriter_a6f57399b94731301d267ce10a2f52ea3} 
+Writer::\+\texorpdfstring{$\sim$}{\string~}\+Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classWriter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWriter_ac26d0fb8f037786294e5669c3fb68fe4}\index{Writer@{Writer}!close@{close}}
+\index{close@{close}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classWriter_ac26d0fb8f037786294e5669c3fb68fe4} 
+void Writer::\+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_ad74f455485d331512e5cc005963c30e8}\index{Writer@{Writer}!filename@{filename}}
+\index{filename@{filename}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily \label{classWriter_ad74f455485d331512e5cc005963c30e8} 
+string Writer::\+filename (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriter_a85853ea21997297930329fd009718c05}\index{Writer@{Writer}!flush@{flush}}
+\index{flush@{flush}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{classWriter_a85853ea21997297930329fd009718c05} 
+void Writer::\+flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriter_a3c06b4a50402dfcbe88507805978f9fa}\index{Writer@{Writer}!init@{init}}
+\index{init@{init}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classWriter_a3c06b4a50402dfcbe88507805978f9fa} 
+void Writer::\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_aa249dd7afcaf68cb4be413d4902d0056}\index{Writer@{Writer}!isZipped@{isZipped}}
+\index{isZipped@{isZipped}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{isZipped()}{isZipped()}}
+{\footnotesize\ttfamily \label{classWriter_aa249dd7afcaf68cb4be413d4902d0056} 
+bool Writer::\+is\+Zipped (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriter_a142d2601b0565c29c1ae7a5cd8a72184}\index{Writer@{Writer}!test@{test}}
+\index{test@{test}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classWriter_a142d2601b0565c29c1ae7a5cd8a72184} 
+bool Writer::\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classWriter_ac43d0bd4db3024ada19e004ba0db11cd}\index{Writer@{Writer}!write@{write}}
+\index{write@{write}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{classWriter_ac43d0bd4db3024ada19e004ba0db11cd} 
+bool Writer::\+write (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{strdata}{, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriter_a2fb2cf39ab547db41dc695d7a8027a7e}\index{Writer@{Writer}!writeInternal@{writeInternal}}
+\index{writeInternal@{writeInternal}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{writeInternal()}{writeInternal()}}
+{\footnotesize\ttfamily \label{classWriter_a2fb2cf39ab547db41dc695d7a8027a7e} 
+bool Writer::\+write\+Internal (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{strdata}{, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_ae709c4e7ef43a4059f2553b7cb206c41}\index{Writer@{Writer}!writeString@{writeString}}
+\index{writeString@{writeString}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{writeString()}{writeString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classWriter_ae709c4e7ef43a4059f2553b7cb206c41} 
+bool Writer::\+write\+String (\begin{DoxyParamCaption}\item[{const string \&}]{str}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classWriter_aaff84ae022ac5097db2ed748c54b9c1c}\index{Writer@{Writer}!writeString@{writeString}}
+\index{writeString@{writeString}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{writeString()}{writeString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classWriter_aaff84ae022ac5097db2ed748c54b9c1c} 
+bool Writer::\+write\+String (\begin{DoxyParamCaption}\item[{string \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classWriter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classWriter_af562afdb17e25b94319e2bf9b582d581}\index{Writer@{Writer}!haveToClose@{haveToClose}}
+\index{haveToClose@{haveToClose}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{haveToClose}{haveToClose}}
+{\footnotesize\ttfamily \label{classWriter_af562afdb17e25b94319e2bf9b582d581} 
+bool Writer::\+have\+To\+Close\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_a2f8b44c1d8f2ad7c9c41bea19641ee49}\index{Writer@{Writer}!mBufDataLen@{mBufDataLen}}
+\index{mBufDataLen@{mBufDataLen}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mBufDataLen}{mBufDataLen}}
+{\footnotesize\ttfamily \label{classWriter_a2f8b44c1d8f2ad7c9c41bea19641ee49} 
+size\+\_\+t Writer::\+m\+Buf\+Data\+Len\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_af4bdccd0fdf49f886fcf89b85dd9fbbf}\index{Writer@{Writer}!mBuffer@{mBuffer}}
+\index{mBuffer@{mBuffer}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mBuffer}{mBuffer}}
+{\footnotesize\ttfamily \label{classWriter_af4bdccd0fdf49f886fcf89b85dd9fbbf} 
+char\texorpdfstring{$\ast$}{*} Writer::\+m\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_a47cd419ed1791c68cd1678366e58eeaf}\index{Writer@{Writer}!mBufSize@{mBufSize}}
+\index{mBufSize@{mBufSize}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mBufSize}{mBufSize}}
+{\footnotesize\ttfamily \label{classWriter_a47cd419ed1791c68cd1678366e58eeaf} 
+size\+\_\+t Writer::\+m\+Buf\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_ab34675ab54a10f7e543d634cad1cabe1}\index{Writer@{Writer}!mCompression@{mCompression}}
+\index{mCompression@{mCompression}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mCompression}{mCompression}}
+{\footnotesize\ttfamily \label{classWriter_ab34675ab54a10f7e543d634cad1cabe1} 
+int Writer::\+m\+Compression\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_a6e804f6274352e8a9ee3e818c777ce5f}\index{Writer@{Writer}!mCompressor@{mCompressor}}
+\index{mCompressor@{mCompressor}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mCompressor}{mCompressor}}
+{\footnotesize\ttfamily \label{classWriter_a6e804f6274352e8a9ee3e818c777ce5f} 
+libdeflate\+\_\+compressor\texorpdfstring{$\ast$}{*} Writer::\+m\+Compressor\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_a9aabedc94e657100c37da5a8075e743c}\index{Writer@{Writer}!mFilename@{mFilename}}
+\index{mFilename@{mFilename}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mFilename}{mFilename}}
+{\footnotesize\ttfamily \label{classWriter_a9aabedc94e657100c37da5a8075e743c} 
+string Writer::\+m\+Filename\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_a8c8f56c5634c3fb2c54d0f9079ef563d}\index{Writer@{Writer}!mFP@{mFP}}
+\index{mFP@{mFP}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mFP}{mFP}}
+{\footnotesize\ttfamily \label{classWriter_a8c8f56c5634c3fb2c54d0f9079ef563d} 
+FILE\texorpdfstring{$\ast$}{*} Writer::\+m\+FP\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_a411c52572201d85247bacc7e38cacc6e}\index{Writer@{Writer}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classWriter_a411c52572201d85247bacc7e38cacc6e} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Writer::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_aea187c1e3ed4f57924dca2944912c45c}\index{Writer@{Writer}!mSTDOUT@{mSTDOUT}}
+\index{mSTDOUT@{mSTDOUT}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mSTDOUT}{mSTDOUT}}
+{\footnotesize\ttfamily \label{classWriter_aea187c1e3ed4f57924dca2944912c45c} 
+bool Writer::\+m\+STDOUT\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classWriter_ac50ed9fcea702bd305af0134c1241653}\index{Writer@{Writer}!mZipped@{mZipped}}
+\index{mZipped@{mZipped}!Writer@{Writer}}
+\doxysubsubsection{\texorpdfstring{mZipped}{mZipped}}
+{\footnotesize\ttfamily \label{classWriter_ac50ed9fcea702bd305af0134c1241653} 
+bool Writer::\+m\+Zipped\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{writer_8h}{writer.\+h}}\item 
+src/\+\doxymbox{\hyperlink{writer_8cpp}{writer.\+cpp}}\end{DoxyCompactItemize}

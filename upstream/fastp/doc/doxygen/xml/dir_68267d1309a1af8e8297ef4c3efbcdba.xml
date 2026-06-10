@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="adaptertrimmer_8cpp">adaptertrimmer.cpp</innerfile>
+    <innerfile refid="adaptertrimmer_8h">adaptertrimmer.h</innerfile>
+    <innerfile refid="basecorrector_8cpp">basecorrector.cpp</innerfile>
+    <innerfile refid="basecorrector_8h">basecorrector.h</innerfile>
+    <innerfile refid="bgzf_8h">bgzf.h</innerfile>
+    <innerfile refid="cmdline_8h">cmdline.h</innerfile>
+    <innerfile refid="common_8h">common.h</innerfile>
+    <innerfile refid="duplicate_8cpp">duplicate.cpp</innerfile>
+    <innerfile refid="duplicate_8h">duplicate.h</innerfile>
+    <innerfile refid="evaluator_8cpp">evaluator.cpp</innerfile>
+    <innerfile refid="evaluator_8h">evaluator.h</innerfile>
+    <innerfile refid="fastareader_8cpp">fastareader.cpp</innerfile>
+    <innerfile refid="fastareader_8h">fastareader.h</innerfile>
+    <innerfile refid="fastqreader_8cpp">fastqreader.cpp</innerfile>
+    <innerfile refid="fastqreader_8h">fastqreader.h</innerfile>
+    <innerfile refid="filter_8cpp">filter.cpp</innerfile>
+    <innerfile refid="filter_8h">filter.h</innerfile>
+    <innerfile refid="filterresult_8cpp">filterresult.cpp</innerfile>
+    <innerfile refid="filterresult_8h">filterresult.h</innerfile>
+    <innerfile refid="htmlreporter_8cpp">htmlreporter.cpp</innerfile>
+    <innerfile refid="htmlreporter_8h">htmlreporter.h</innerfile>
+    <innerfile refid="jsonreporter_8cpp">jsonreporter.cpp</innerfile>
+    <innerfile refid="jsonreporter_8h">jsonreporter.h</innerfile>
+    <innerfile refid="knownadapters_8h">knownadapters.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="matcher_8cpp">matcher.cpp</innerfile>
+    <innerfile refid="matcher_8h">matcher.h</innerfile>
+    <innerfile refid="nucleotidetree_8cpp">nucleotidetree.cpp</innerfile>
+    <innerfile refid="nucleotidetree_8h">nucleotidetree.h</innerfile>
+    <innerfile refid="options_8cpp">options.cpp</innerfile>
+    <innerfile refid="options_8h">options.h</innerfile>
+    <innerfile refid="overlapanalysis_8cpp">overlapanalysis.cpp</innerfile>
+    <innerfile refid="overlapanalysis_8h">overlapanalysis.h</innerfile>
+    <innerfile refid="peprocessor_8cpp">peprocessor.cpp</innerfile>
+    <innerfile refid="peprocessor_8h">peprocessor.h</innerfile>
+    <innerfile refid="polyx_8cpp">polyx.cpp</innerfile>
+    <innerfile refid="polyx_8h">polyx.h</innerfile>
+    <innerfile refid="processor_8cpp">processor.cpp</innerfile>
+    <innerfile refid="processor_8h">processor.h</innerfile>
+    <innerfile refid="read_8cpp">read.cpp</innerfile>
+    <innerfile refid="read_8h">read.h</innerfile>
+    <innerfile refid="readpool_8cpp">readpool.cpp</innerfile>
+    <innerfile refid="readpool_8h">readpool.h</innerfile>
+    <innerfile refid="seprocessor_8cpp">seprocessor.cpp</innerfile>
+    <innerfile refid="seprocessor_8h">seprocessor.h</innerfile>
+    <innerfile refid="sequence_8cpp">sequence.cpp</innerfile>
+    <innerfile refid="sequence_8h">sequence.h</innerfile>
+    <innerfile refid="simd_8cpp">simd.cpp</innerfile>
+    <innerfile refid="simd_8h">simd.h</innerfile>
+    <innerfile refid="singleproducersingleconsumerlist_8h">singleproducersingleconsumerlist.h</innerfile>
+    <innerfile refid="stats_8cpp">stats.cpp</innerfile>
+    <innerfile refid="stats_8h">stats.h</innerfile>
+    <innerfile refid="threadconfig_8cpp">threadconfig.cpp</innerfile>
+    <innerfile refid="threadconfig_8h">threadconfig.h</innerfile>
+    <innerfile refid="umiprocessor_8cpp">umiprocessor.cpp</innerfile>
+    <innerfile refid="umiprocessor_8h">umiprocessor.h</innerfile>
+    <innerfile refid="unittest_8cpp">unittest.cpp</innerfile>
+    <innerfile refid="unittest_8h">unittest.h</innerfile>
+    <innerfile refid="util_8h">util.h</innerfile>
+    <innerfile refid="writer_8cpp">writer.cpp</innerfile>
+    <innerfile refid="writer_8h">writer.h</innerfile>
+    <innerfile refid="writerthread_8cpp">writerthread.cpp</innerfile>
+    <innerfile refid="writerthread_8h">writerthread.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

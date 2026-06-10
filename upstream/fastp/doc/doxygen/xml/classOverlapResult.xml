@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classOverlapResult" kind="class" language="C++" prot="public">
+    <compoundname>OverlapResult</compoundname>
+    <includes refid="overlapanalysis_8h" local="no">overlapanalysis.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classOverlapResult_1a0d0f672ba3de27b761455ecab4775e7d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OverlapResult::overlapped</definition>
+        <argsstring></argsstring>
+        <name>overlapped</name>
+        <qualifiedname>OverlapResult::overlapped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="17" column="10" bodyfile="src/overlapanalysis.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOverlapResult_1a620e9b344e2e20f87bad0b223f1f8f28" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OverlapResult::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>OverlapResult::offset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="18" column="9" bodyfile="src/overlapanalysis.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOverlapResult_1ac387d549618c2b40902fcc3d32c971d5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OverlapResult::overlap_len</definition>
+        <argsstring></argsstring>
+        <name>overlap_len</name>
+        <qualifiedname>OverlapResult::overlap_len</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="19" column="9" bodyfile="src/overlapanalysis.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOverlapResult_1a66087523a68e044fa3ece5248d7d6f46" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int OverlapResult::diff</definition>
+        <argsstring></argsstring>
+        <name>diff</name>
+        <qualifiedname>OverlapResult::diff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="20" column="9" bodyfile="src/overlapanalysis.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOverlapResult_1a28e727f83b748a386c1df79b49fea10d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OverlapResult::hasGap</definition>
+        <argsstring></argsstring>
+        <name>hasGap</name>
+        <qualifiedname>OverlapResult::hasGap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overlapanalysis.h" line="21" column="10" bodyfile="src/overlapanalysis.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/overlapanalysis.h" line="15" column="1" bodyfile="src/overlapanalysis.h" bodystart="15" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classOverlapResult_1a66087523a68e044fa3ece5248d7d6f46" prot="public" virt="non-virtual"><scope>OverlapResult</scope><name>diff</name></member>
+      <member refid="classOverlapResult_1a28e727f83b748a386c1df79b49fea10d" prot="public" virt="non-virtual"><scope>OverlapResult</scope><name>hasGap</name></member>
+      <member refid="classOverlapResult_1a620e9b344e2e20f87bad0b223f1f8f28" prot="public" virt="non-virtual"><scope>OverlapResult</scope><name>offset</name></member>
+      <member refid="classOverlapResult_1ac387d549618c2b40902fcc3d32c971d5" prot="public" virt="non-virtual"><scope>OverlapResult</scope><name>overlap_len</name></member>
+      <member refid="classOverlapResult_1a0d0f672ba3de27b761455ecab4775e7d" prot="public" virt="non-virtual"><scope>OverlapResult</scope><name>overlapped</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

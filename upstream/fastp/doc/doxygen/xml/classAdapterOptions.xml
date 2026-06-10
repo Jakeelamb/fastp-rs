@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classAdapterOptions" kind="class" language="C++" prot="public">
+    <compoundname>AdapterOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classAdapterOptions_1a326f1a31b6fa1c76d6febdc2381111f1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdapterOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>AdapterOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="208" column="10" bodyfile="src/options.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1a3ce8c7bbd2b0ac79fa2ca3bb4d016edf" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string AdapterOptions::sequence</definition>
+        <argsstring></argsstring>
+        <name>sequence</name>
+        <qualifiedname>AdapterOptions::sequence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="209" column="12" bodyfile="src/options.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1a3b4a31de85a321badbe26fa9df9f7b74" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string AdapterOptions::sequenceR2</definition>
+        <argsstring></argsstring>
+        <name>sequenceR2</name>
+        <qualifiedname>AdapterOptions::sequenceR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="210" column="12" bodyfile="src/options.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1ad76917459b918255450ddff759ff9447" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string AdapterOptions::detectedAdapter1</definition>
+        <argsstring></argsstring>
+        <name>detectedAdapter1</name>
+        <qualifiedname>AdapterOptions::detectedAdapter1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="211" column="12" bodyfile="src/options.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1a3c4beba388a93fc7ffb00dfade290621" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string AdapterOptions::detectedAdapter2</definition>
+        <argsstring></argsstring>
+        <name>detectedAdapter2</name>
+        <qualifiedname>AdapterOptions::detectedAdapter2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="212" column="12" bodyfile="src/options.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1acbd14b0deff1cb025c43d994ea71eccd" prot="public" static="no" mutable="no">
+        <type>vector&lt; string &gt;</type>
+        <definition>vector&lt;string&gt; AdapterOptions::seqsInFasta</definition>
+        <argsstring></argsstring>
+        <name>seqsInFasta</name>
+        <qualifiedname>AdapterOptions::seqsInFasta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="213" column="12" bodyfile="src/options.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1a03a967ea397016c78b59bbc0a8ee18a6" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string AdapterOptions::fastaFile</definition>
+        <argsstring></argsstring>
+        <name>fastaFile</name>
+        <qualifiedname>AdapterOptions::fastaFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="214" column="12" bodyfile="src/options.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1ac234fd86b829e48491a0ff0d1beb6432" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdapterOptions::hasSeqR1</definition>
+        <argsstring></argsstring>
+        <name>hasSeqR1</name>
+        <qualifiedname>AdapterOptions::hasSeqR1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="215" column="10" bodyfile="src/options.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1a395b652790a5f610ebe13faa4c176fb6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdapterOptions::hasSeqR2</definition>
+        <argsstring></argsstring>
+        <name>hasSeqR2</name>
+        <qualifiedname>AdapterOptions::hasSeqR2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="216" column="10" bodyfile="src/options.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1a05093be444ed1b00fc8891dcf856c2bc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdapterOptions::hasFasta</definition>
+        <argsstring></argsstring>
+        <name>hasFasta</name>
+        <qualifiedname>AdapterOptions::hasFasta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="217" column="10" bodyfile="src/options.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1a2f22495ce41a1d0167e045fb63fe26dd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdapterOptions::detectAdapterForPE</definition>
+        <argsstring></argsstring>
+        <name>detectAdapterForPE</name>
+        <qualifiedname>AdapterOptions::detectAdapterForPE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="218" column="10" bodyfile="src/options.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1a91deb52735032c19c0299a2eae8c8d94" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdapterOptions::allowGapOverlapTrimming</definition>
+        <argsstring></argsstring>
+        <name>allowGapOverlapTrimming</name>
+        <qualifiedname>AdapterOptions::allowGapOverlapTrimming</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="219" column="10" bodyfile="src/options.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdapterOptions_1ac5caeb28d124e9d4f7fe4f7078970b88" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdapterOptions::dimerMaxLen</definition>
+        <argsstring></argsstring>
+        <name>dimerMaxLen</name>
+        <qualifiedname>AdapterOptions::dimerMaxLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="220" column="9" bodyfile="src/options.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAdapterOptions_1a8677b41dc47cbd315a1ebb04ef2c96d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AdapterOptions::AdapterOptions</definition>
+        <argsstring>()</argsstring>
+        <name>AdapterOptions</name>
+        <qualifiedname>AdapterOptions::AdapterOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="199" column="5" bodyfile="src/options.h" bodystart="199" bodyend="206"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="197" column="1" bodyfile="src/options.h" bodystart="197" bodyend="221"/>
+    <listofallmembers>
+      <member refid="classAdapterOptions_1a8677b41dc47cbd315a1ebb04ef2c96d4" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>AdapterOptions</name></member>
+      <member refid="classAdapterOptions_1a91deb52735032c19c0299a2eae8c8d94" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>allowGapOverlapTrimming</name></member>
+      <member refid="classAdapterOptions_1a2f22495ce41a1d0167e045fb63fe26dd" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>detectAdapterForPE</name></member>
+      <member refid="classAdapterOptions_1ad76917459b918255450ddff759ff9447" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>detectedAdapter1</name></member>
+      <member refid="classAdapterOptions_1a3c4beba388a93fc7ffb00dfade290621" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>detectedAdapter2</name></member>
+      <member refid="classAdapterOptions_1ac5caeb28d124e9d4f7fe4f7078970b88" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>dimerMaxLen</name></member>
+      <member refid="classAdapterOptions_1a326f1a31b6fa1c76d6febdc2381111f1" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>enabled</name></member>
+      <member refid="classAdapterOptions_1a03a967ea397016c78b59bbc0a8ee18a6" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>fastaFile</name></member>
+      <member refid="classAdapterOptions_1a05093be444ed1b00fc8891dcf856c2bc" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>hasFasta</name></member>
+      <member refid="classAdapterOptions_1ac234fd86b829e48491a0ff0d1beb6432" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>hasSeqR1</name></member>
+      <member refid="classAdapterOptions_1a395b652790a5f610ebe13faa4c176fb6" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>hasSeqR2</name></member>
+      <member refid="classAdapterOptions_1acbd14b0deff1cb025c43d994ea71eccd" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>seqsInFasta</name></member>
+      <member refid="classAdapterOptions_1a3ce8c7bbd2b0ac79fa2ca3bb4d016edf" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>sequence</name></member>
+      <member refid="classAdapterOptions_1a3b4a31de85a321badbe26fa9df9f7b74" prot="public" virt="non-virtual"><scope>AdapterOptions</scope><name>sequenceR2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

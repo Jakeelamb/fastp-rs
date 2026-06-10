@@ -1,0 +1,351 @@
+\doxysection{Fastq\+Reader Class Reference}
+\hypertarget{classFastqReader}{}\label{classFastqReader}\index{FastqReader@{FastqReader}}
+
+
+{\ttfamily \+\#include $<$fastqreader.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classFastqReader_ad66dd751b21fb620edf740ebe7630030}{Fastq\+Reader}} (string filename, bool has\+Quality=true, bool phred64=false, int bgzf\+Thread\+Budget=0)
+\item 
+\doxymbox{\hyperlink{classFastqReader_a03b456c40b1d3812a0ba33b4aebca742}{\texorpdfstring{$\sim$}{\string~}\+Fastq\+Reader}} ()
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_acedea5984b2f935a4f8761c52fe22cb4}{is\+Zipped}} ()
+\item 
+void \doxymbox{\hyperlink{classFastqReader_a29389d766ea9469b6c4b218ebfaa69ef}{get\+Bytes}} (size\+\_\+t \&bytes\+Read, size\+\_\+t \&bytes\+Total)
+\item 
+\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReader_aa1f6ab000136c41ccc2742cf868c63ea}{read}} ()
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_a98b833419659676aa7b7879064f02298}{eof}} ()
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_a9ec4409d4650914355211ffdfd2743ab}{has\+No\+Line\+Break\+At\+End}} ()
+\item 
+void \doxymbox{\hyperlink{classFastqReader_ac54ab418871f43fcf1ee6e9df3b379b4}{set\+Read\+Pool}} (\doxymbox{\hyperlink{classReadPool}{Read\+Pool}} \texorpdfstring{$\ast$}{*}rp)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{classFastqReader_aa12eacb47c5f8c33d5f9ec15c6f388a1}{is\+Zip\+Fastq}} (string filename)
+\item 
+static bool \doxymbox{\hyperlink{classFastqReader_a72f7ab27aa46c790511a678e1e7edb9e}{is\+Fastq}} (string filename)
+\item 
+static bool \doxymbox{\hyperlink{classFastqReader_a4cc85ccb0051670299b7d8159c280c44}{test}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classFastqReader_aa85324f220cf65b609c1663463eee8c3}{init}} ()
+\item 
+void \doxymbox{\hyperlink{classFastqReader_ab63f52842ba18259f00042e18436b1f9}{close}} ()
+\item 
+void \doxymbox{\hyperlink{classFastqReader_ada9a13204386a15dc886eae857dd4738}{get\+Line}} (string \texorpdfstring{$\ast$}{*}line)
+\item 
+void \doxymbox{\hyperlink{classFastqReader_a0d4409aaed2981bab34d8888102c2426}{clear\+Line\+Breaks}} (char \texorpdfstring{$\ast$}{*}line)
+\item 
+void \doxymbox{\hyperlink{classFastqReader_a0c029e28dd3a62e49717fa2d6a05bcae}{read\+To\+Buf}} ()
+\item 
+void \doxymbox{\hyperlink{classFastqReader_a9df0941ba8f95d1578d7874cce7598d4}{read\+To\+Buf\+Igzip}} ()
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_aeec9c64e4e7bc9af6a60f407d069451b}{buffer\+Finished}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{classFastqReader_af8656352f2c2d144abaf4cb099846e71}{m\+Filename}}
+\item 
+struct isal\+\_\+gzip\+\_\+header \doxymbox{\hyperlink{classFastqReader_a4e6ecc9cc21aa161e6716a20813b28b9}{m\+Gzip\+Header}}
+\item 
+struct inflate\+\_\+state \doxymbox{\hyperlink{classFastqReader_a491970fddf50538bf7be541c1fb08dd6}{m\+Gzip\+State}}
+\item 
+unsigned char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReader_a24936a036db4f79debdb3ce8b9552254}{m\+Gzip\+Input\+Buffer}}
+\item 
+unsigned char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReader_a2081bb86b38f4db8bb89ee4acacf80a1}{m\+Gzip\+Output\+Buffer}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classFastqReader_ab3f44f41efe72408aec395c6c74a71f6}{m\+Gzip\+Input\+Buffer\+Size}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classFastqReader_a322526ec8d29259b52127f5ece4ed210}{m\+Gzip\+Output\+Buffer\+Size}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classFastqReader_a799bfdc81c1a0a6eeee31af6cdeafaa0}{m\+Gzip\+Input\+Used\+Bytes}}
+\item 
+FILE \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReader_acd50c082a58bb3baad2404b5e11aae62}{m\+File}}
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_ab0d9c71ad69be6c4001edc72ec92adb4}{m\+Zipped}}
+\item 
+char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReader_a96330d7f066c5d43c9e82d5949c0b25e}{m\+Fastq\+Buf}}
+\item 
+int \doxymbox{\hyperlink{classFastqReader_abe7211fec5453dc692eccda129632090}{m\+Buf\+Data\+Len}}
+\item 
+int \doxymbox{\hyperlink{classFastqReader_a1a3c0ed8cb9aded521ab2669323968fa}{m\+Buf\+Used\+Len}}
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_aa327b1c88c0af352611095b33b691934}{m\+Stdin\+Mode}}
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_a13bd156a89835d095ca7a65d4b00c74c}{m\+Has\+No\+Line\+Break\+At\+End}}
+\item 
+long \doxymbox{\hyperlink{classFastqReader_ad7c5c05c32d381d1d2eb8f85810a53cd}{m\+Counter}}
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_a2bff55a0d3ba7813bd4351a61460139a}{m\+Has\+Quality}}
+\item 
+bool \doxymbox{\hyperlink{classFastqReader_afeb44e4b170e17667c2ea85e7e0bbf65}{m\+Phred64}}
+\item 
+\doxymbox{\hyperlink{classReadPool}{Read\+Pool}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReader_ab28f2aafd4425e9281471ae2b009819a}{m\+Read\+Pool}}
+\item 
+\doxymbox{\hyperlink{classBgzfMtReader}{Bgzf\+Mt\+Reader}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classFastqReader_a107cf2d91b4790f85f3ee20d91331814}{m\+Bgzf\+Reader}}
+\item 
+int \doxymbox{\hyperlink{classFastqReader_ab6196eb35e7ed144d91504ca86828f5c}{m\+Bgzf\+Thread\+Budget}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classFastqReader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFastqReader_ad66dd751b21fb620edf740ebe7630030}\index{FastqReader@{FastqReader}!FastqReader@{FastqReader}}
+\index{FastqReader@{FastqReader}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{FastqReader()}{FastqReader()}}
+{\footnotesize\ttfamily \label{classFastqReader_ad66dd751b21fb620edf740ebe7630030} 
+Fastq\+Reader::\+\+Fastq\+Reader (\begin{DoxyParamCaption}\item[{string}]{filename}{, }\item[{bool}]{has\+Quality}{ = {\ttfamily true}, }\item[{bool}]{phred64}{ = {\ttfamily false}, }\item[{int}]{bgzf\+Thread\+Budget}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReader_a03b456c40b1d3812a0ba33b4aebca742}\index{FastqReader@{FastqReader}!````~FastqReader@{\texorpdfstring{$\sim$}{\string~}FastqReader}}
+\index{````~FastqReader@{\texorpdfstring{$\sim$}{\string~}FastqReader}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FastqReader()}{\string~FastqReader()}}
+{\footnotesize\ttfamily \label{classFastqReader_a03b456c40b1d3812a0ba33b4aebca742} 
+Fastq\+Reader::\+\texorpdfstring{$\sim$}{\string~}\+Fastq\+Reader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classFastqReader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFastqReader_aeec9c64e4e7bc9af6a60f407d069451b}\index{FastqReader@{FastqReader}!bufferFinished@{bufferFinished}}
+\index{bufferFinished@{bufferFinished}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{bufferFinished()}{bufferFinished()}}
+{\footnotesize\ttfamily \label{classFastqReader_aeec9c64e4e7bc9af6a60f407d069451b} 
+bool Fastq\+Reader::\+buffer\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a0d4409aaed2981bab34d8888102c2426}\index{FastqReader@{FastqReader}!clearLineBreaks@{clearLineBreaks}}
+\index{clearLineBreaks@{clearLineBreaks}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{clearLineBreaks()}{clearLineBreaks()}}
+{\footnotesize\ttfamily \label{classFastqReader_a0d4409aaed2981bab34d8888102c2426} 
+void Fastq\+Reader::\+clear\+Line\+Breaks (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_ab63f52842ba18259f00042e18436b1f9}\index{FastqReader@{FastqReader}!close@{close}}
+\index{close@{close}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classFastqReader_ab63f52842ba18259f00042e18436b1f9} 
+void Fastq\+Reader::\+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a98b833419659676aa7b7879064f02298}\index{FastqReader@{FastqReader}!eof@{eof}}
+\index{eof@{eof}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily \label{classFastqReader_a98b833419659676aa7b7879064f02298} 
+bool Fastq\+Reader::\+eof (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReader_a29389d766ea9469b6c4b218ebfaa69ef}\index{FastqReader@{FastqReader}!getBytes@{getBytes}}
+\index{getBytes@{getBytes}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{getBytes()}{getBytes()}}
+{\footnotesize\ttfamily \label{classFastqReader_a29389d766ea9469b6c4b218ebfaa69ef} 
+void Fastq\+Reader::\+get\+Bytes (\begin{DoxyParamCaption}\item[{size\+\_\+t \&}]{bytes\+Read}{, }\item[{size\+\_\+t \&}]{bytes\+Total}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReader_ada9a13204386a15dc886eae857dd4738}\index{FastqReader@{FastqReader}!getLine@{getLine}}
+\index{getLine@{getLine}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{getLine()}{getLine()}}
+{\footnotesize\ttfamily \label{classFastqReader_ada9a13204386a15dc886eae857dd4738} 
+void Fastq\+Reader::\+get\+Line (\begin{DoxyParamCaption}\item[{string \texorpdfstring{$\ast$}{*}}]{line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a9ec4409d4650914355211ffdfd2743ab}\index{FastqReader@{FastqReader}!hasNoLineBreakAtEnd@{hasNoLineBreakAtEnd}}
+\index{hasNoLineBreakAtEnd@{hasNoLineBreakAtEnd}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{hasNoLineBreakAtEnd()}{hasNoLineBreakAtEnd()}}
+{\footnotesize\ttfamily \label{classFastqReader_a9ec4409d4650914355211ffdfd2743ab} 
+bool Fastq\+Reader::\+has\+No\+Line\+Break\+At\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReader_aa85324f220cf65b609c1663463eee8c3}\index{FastqReader@{FastqReader}!init@{init}}
+\index{init@{init}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classFastqReader_aa85324f220cf65b609c1663463eee8c3} 
+void Fastq\+Reader::\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a72f7ab27aa46c790511a678e1e7edb9e}\index{FastqReader@{FastqReader}!isFastq@{isFastq}}
+\index{isFastq@{isFastq}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{isFastq()}{isFastq()}}
+{\footnotesize\ttfamily \label{classFastqReader_a72f7ab27aa46c790511a678e1e7edb9e} 
+bool Fastq\+Reader::\+is\+Fastq (\begin{DoxyParamCaption}\item[{string}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classFastqReader_aa12eacb47c5f8c33d5f9ec15c6f388a1}\index{FastqReader@{FastqReader}!isZipFastq@{isZipFastq}}
+\index{isZipFastq@{isZipFastq}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{isZipFastq()}{isZipFastq()}}
+{\footnotesize\ttfamily \label{classFastqReader_aa12eacb47c5f8c33d5f9ec15c6f388a1} 
+bool Fastq\+Reader::\+is\+Zip\+Fastq (\begin{DoxyParamCaption}\item[{string}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classFastqReader_acedea5984b2f935a4f8761c52fe22cb4}\index{FastqReader@{FastqReader}!isZipped@{isZipped}}
+\index{isZipped@{isZipped}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{isZipped()}{isZipped()}}
+{\footnotesize\ttfamily \label{classFastqReader_acedea5984b2f935a4f8761c52fe22cb4} 
+bool Fastq\+Reader::\+is\+Zipped (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReader_aa1f6ab000136c41ccc2742cf868c63ea}\index{FastqReader@{FastqReader}!read@{read}}
+\index{read@{read}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classFastqReader_aa1f6ab000136c41ccc2742cf868c63ea} 
+\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*} Fastq\+Reader::\+read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReader_a0c029e28dd3a62e49717fa2d6a05bcae}\index{FastqReader@{FastqReader}!readToBuf@{readToBuf}}
+\index{readToBuf@{readToBuf}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{readToBuf()}{readToBuf()}}
+{\footnotesize\ttfamily \label{classFastqReader_a0c029e28dd3a62e49717fa2d6a05bcae} 
+void Fastq\+Reader::\+read\+To\+Buf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a9df0941ba8f95d1578d7874cce7598d4}\index{FastqReader@{FastqReader}!readToBufIgzip@{readToBufIgzip}}
+\index{readToBufIgzip@{readToBufIgzip}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{readToBufIgzip()}{readToBufIgzip()}}
+{\footnotesize\ttfamily \label{classFastqReader_a9df0941ba8f95d1578d7874cce7598d4} 
+void Fastq\+Reader::\+read\+To\+Buf\+Igzip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_ac54ab418871f43fcf1ee6e9df3b379b4}\index{FastqReader@{FastqReader}!setReadPool@{setReadPool}}
+\index{setReadPool@{setReadPool}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{setReadPool()}{setReadPool()}}
+{\footnotesize\ttfamily \label{classFastqReader_ac54ab418871f43fcf1ee6e9df3b379b4} 
+void Fastq\+Reader::\+set\+Read\+Pool (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classReadPool}{Read\+Pool}} \texorpdfstring{$\ast$}{*}}]{rp}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classFastqReader_a4cc85ccb0051670299b7d8159c280c44}\index{FastqReader@{FastqReader}!test@{test}}
+\index{test@{test}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classFastqReader_a4cc85ccb0051670299b7d8159c280c44} 
+bool Fastq\+Reader::\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classFastqReader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classFastqReader_a107cf2d91b4790f85f3ee20d91331814}\index{FastqReader@{FastqReader}!mBgzfReader@{mBgzfReader}}
+\index{mBgzfReader@{mBgzfReader}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mBgzfReader}{mBgzfReader}}
+{\footnotesize\ttfamily \label{classFastqReader_a107cf2d91b4790f85f3ee20d91331814} 
+\doxymbox{\hyperlink{classBgzfMtReader}{Bgzf\+Mt\+Reader}}\texorpdfstring{$\ast$}{*} Fastq\+Reader::\+m\+Bgzf\+Reader\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_ab6196eb35e7ed144d91504ca86828f5c}\index{FastqReader@{FastqReader}!mBgzfThreadBudget@{mBgzfThreadBudget}}
+\index{mBgzfThreadBudget@{mBgzfThreadBudget}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mBgzfThreadBudget}{mBgzfThreadBudget}}
+{\footnotesize\ttfamily \label{classFastqReader_ab6196eb35e7ed144d91504ca86828f5c} 
+int Fastq\+Reader::\+m\+Bgzf\+Thread\+Budget\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_abe7211fec5453dc692eccda129632090}\index{FastqReader@{FastqReader}!mBufDataLen@{mBufDataLen}}
+\index{mBufDataLen@{mBufDataLen}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mBufDataLen}{mBufDataLen}}
+{\footnotesize\ttfamily \label{classFastqReader_abe7211fec5453dc692eccda129632090} 
+int Fastq\+Reader::\+m\+Buf\+Data\+Len\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a1a3c0ed8cb9aded521ab2669323968fa}\index{FastqReader@{FastqReader}!mBufUsedLen@{mBufUsedLen}}
+\index{mBufUsedLen@{mBufUsedLen}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mBufUsedLen}{mBufUsedLen}}
+{\footnotesize\ttfamily \label{classFastqReader_a1a3c0ed8cb9aded521ab2669323968fa} 
+int Fastq\+Reader::\+m\+Buf\+Used\+Len\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_ad7c5c05c32d381d1d2eb8f85810a53cd}\index{FastqReader@{FastqReader}!mCounter@{mCounter}}
+\index{mCounter@{mCounter}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mCounter}{mCounter}}
+{\footnotesize\ttfamily \label{classFastqReader_ad7c5c05c32d381d1d2eb8f85810a53cd} 
+long Fastq\+Reader::\+m\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a96330d7f066c5d43c9e82d5949c0b25e}\index{FastqReader@{FastqReader}!mFastqBuf@{mFastqBuf}}
+\index{mFastqBuf@{mFastqBuf}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mFastqBuf}{mFastqBuf}}
+{\footnotesize\ttfamily \label{classFastqReader_a96330d7f066c5d43c9e82d5949c0b25e} 
+char\texorpdfstring{$\ast$}{*} Fastq\+Reader::\+m\+Fastq\+Buf\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_acd50c082a58bb3baad2404b5e11aae62}\index{FastqReader@{FastqReader}!mFile@{mFile}}
+\index{mFile@{mFile}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mFile}{mFile}}
+{\footnotesize\ttfamily \label{classFastqReader_acd50c082a58bb3baad2404b5e11aae62} 
+FILE\texorpdfstring{$\ast$}{*} Fastq\+Reader::\+m\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_af8656352f2c2d144abaf4cb099846e71}\index{FastqReader@{FastqReader}!mFilename@{mFilename}}
+\index{mFilename@{mFilename}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mFilename}{mFilename}}
+{\footnotesize\ttfamily \label{classFastqReader_af8656352f2c2d144abaf4cb099846e71} 
+string Fastq\+Reader::\+m\+Filename\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a4e6ecc9cc21aa161e6716a20813b28b9}\index{FastqReader@{FastqReader}!mGzipHeader@{mGzipHeader}}
+\index{mGzipHeader@{mGzipHeader}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mGzipHeader}{mGzipHeader}}
+{\footnotesize\ttfamily \label{classFastqReader_a4e6ecc9cc21aa161e6716a20813b28b9} 
+struct isal\+\_\+gzip\+\_\+header Fastq\+Reader::\+m\+Gzip\+Header\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a24936a036db4f79debdb3ce8b9552254}\index{FastqReader@{FastqReader}!mGzipInputBuffer@{mGzipInputBuffer}}
+\index{mGzipInputBuffer@{mGzipInputBuffer}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mGzipInputBuffer}{mGzipInputBuffer}}
+{\footnotesize\ttfamily \label{classFastqReader_a24936a036db4f79debdb3ce8b9552254} 
+unsigned char\texorpdfstring{$\ast$}{*} Fastq\+Reader::\+m\+Gzip\+Input\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_ab3f44f41efe72408aec395c6c74a71f6}\index{FastqReader@{FastqReader}!mGzipInputBufferSize@{mGzipInputBufferSize}}
+\index{mGzipInputBufferSize@{mGzipInputBufferSize}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mGzipInputBufferSize}{mGzipInputBufferSize}}
+{\footnotesize\ttfamily \label{classFastqReader_ab3f44f41efe72408aec395c6c74a71f6} 
+size\+\_\+t Fastq\+Reader::\+m\+Gzip\+Input\+Buffer\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a799bfdc81c1a0a6eeee31af6cdeafaa0}\index{FastqReader@{FastqReader}!mGzipInputUsedBytes@{mGzipInputUsedBytes}}
+\index{mGzipInputUsedBytes@{mGzipInputUsedBytes}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mGzipInputUsedBytes}{mGzipInputUsedBytes}}
+{\footnotesize\ttfamily \label{classFastqReader_a799bfdc81c1a0a6eeee31af6cdeafaa0} 
+size\+\_\+t Fastq\+Reader::\+m\+Gzip\+Input\+Used\+Bytes\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a2081bb86b38f4db8bb89ee4acacf80a1}\index{FastqReader@{FastqReader}!mGzipOutputBuffer@{mGzipOutputBuffer}}
+\index{mGzipOutputBuffer@{mGzipOutputBuffer}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mGzipOutputBuffer}{mGzipOutputBuffer}}
+{\footnotesize\ttfamily \label{classFastqReader_a2081bb86b38f4db8bb89ee4acacf80a1} 
+unsigned char\texorpdfstring{$\ast$}{*} Fastq\+Reader::\+m\+Gzip\+Output\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a322526ec8d29259b52127f5ece4ed210}\index{FastqReader@{FastqReader}!mGzipOutputBufferSize@{mGzipOutputBufferSize}}
+\index{mGzipOutputBufferSize@{mGzipOutputBufferSize}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mGzipOutputBufferSize}{mGzipOutputBufferSize}}
+{\footnotesize\ttfamily \label{classFastqReader_a322526ec8d29259b52127f5ece4ed210} 
+size\+\_\+t Fastq\+Reader::\+m\+Gzip\+Output\+Buffer\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a491970fddf50538bf7be541c1fb08dd6}\index{FastqReader@{FastqReader}!mGzipState@{mGzipState}}
+\index{mGzipState@{mGzipState}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mGzipState}{mGzipState}}
+{\footnotesize\ttfamily \label{classFastqReader_a491970fddf50538bf7be541c1fb08dd6} 
+struct inflate\+\_\+state Fastq\+Reader::\+m\+Gzip\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a13bd156a89835d095ca7a65d4b00c74c}\index{FastqReader@{FastqReader}!mHasNoLineBreakAtEnd@{mHasNoLineBreakAtEnd}}
+\index{mHasNoLineBreakAtEnd@{mHasNoLineBreakAtEnd}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mHasNoLineBreakAtEnd}{mHasNoLineBreakAtEnd}}
+{\footnotesize\ttfamily \label{classFastqReader_a13bd156a89835d095ca7a65d4b00c74c} 
+bool Fastq\+Reader::\+m\+Has\+No\+Line\+Break\+At\+End\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_a2bff55a0d3ba7813bd4351a61460139a}\index{FastqReader@{FastqReader}!mHasQuality@{mHasQuality}}
+\index{mHasQuality@{mHasQuality}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mHasQuality}{mHasQuality}}
+{\footnotesize\ttfamily \label{classFastqReader_a2bff55a0d3ba7813bd4351a61460139a} 
+bool Fastq\+Reader::\+m\+Has\+Quality\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_afeb44e4b170e17667c2ea85e7e0bbf65}\index{FastqReader@{FastqReader}!mPhred64@{mPhred64}}
+\index{mPhred64@{mPhred64}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mPhred64}{mPhred64}}
+{\footnotesize\ttfamily \label{classFastqReader_afeb44e4b170e17667c2ea85e7e0bbf65} 
+bool Fastq\+Reader::\+m\+Phred64\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_ab28f2aafd4425e9281471ae2b009819a}\index{FastqReader@{FastqReader}!mReadPool@{mReadPool}}
+\index{mReadPool@{mReadPool}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mReadPool}{mReadPool}}
+{\footnotesize\ttfamily \label{classFastqReader_ab28f2aafd4425e9281471ae2b009819a} 
+\doxymbox{\hyperlink{classReadPool}{Read\+Pool}}\texorpdfstring{$\ast$}{*} Fastq\+Reader::\+m\+Read\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_aa327b1c88c0af352611095b33b691934}\index{FastqReader@{FastqReader}!mStdinMode@{mStdinMode}}
+\index{mStdinMode@{mStdinMode}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mStdinMode}{mStdinMode}}
+{\footnotesize\ttfamily \label{classFastqReader_aa327b1c88c0af352611095b33b691934} 
+bool Fastq\+Reader::\+m\+Stdin\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classFastqReader_ab0d9c71ad69be6c4001edc72ec92adb4}\index{FastqReader@{FastqReader}!mZipped@{mZipped}}
+\index{mZipped@{mZipped}!FastqReader@{FastqReader}}
+\doxysubsubsection{\texorpdfstring{mZipped}{mZipped}}
+{\footnotesize\ttfamily \label{classFastqReader_ab0d9c71ad69be6c4001edc72ec92adb4} 
+bool Fastq\+Reader::\+m\+Zipped\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{fastqreader_8h}{fastqreader.\+h}}\item 
+src/\+\doxymbox{\hyperlink{fastqreader_8cpp}{fastqreader.\+cpp}}\end{DoxyCompactItemize}

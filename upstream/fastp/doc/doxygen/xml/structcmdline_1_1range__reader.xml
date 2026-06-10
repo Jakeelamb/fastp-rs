@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structcmdline_1_1range__reader" kind="struct" language="C++" prot="public">
+    <compoundname>cmdline::range_reader</compoundname>
+    <includes refid="cmdline_8h" local="no">cmdline.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structcmdline_1_1range__reader_1a60c345e84d2a96dcd2de47a66eca8104" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T cmdline::range_reader&lt; T &gt;::low</definition>
+        <argsstring></argsstring>
+        <name>low</name>
+        <qualifiedname>cmdline::range_reader::low</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="161" column="5" bodyfile="src/cmdline.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcmdline_1_1range__reader_1ad1ef134b223c59257fff990b99c54ee4" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T cmdline::range_reader&lt; T &gt;::high</definition>
+        <argsstring></argsstring>
+        <name>high</name>
+        <qualifiedname>cmdline::range_reader::high</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="161" column="9" bodyfile="src/cmdline.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcmdline_1_1range__reader_1a7b31d754293d2f2f3df49b40a6e95a5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>cmdline::range_reader&lt; T &gt;::range_reader</definition>
+        <argsstring>(const T &amp;low, const T &amp;high)</argsstring>
+        <name>range_reader</name>
+        <qualifiedname>cmdline::range_reader::range_reader</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>low</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>high</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="154" column="3" bodyfile="src/cmdline.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="structcmdline_1_1range__reader_1a81dfb7277756d5b23f816481db121a20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T cmdline::range_reader&lt; T &gt;::operator()</definition>
+        <argsstring>(const std::string &amp;s) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>cmdline::range_reader::operator()</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="155" column="5" bodyfile="src/cmdline.h" bodystart="155" bodyend="159"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cmdline.h" line="153" column="1" bodyfile="src/cmdline.h" bodystart="153" bodyend="162"/>
+    <listofallmembers>
+      <member refid="structcmdline_1_1range__reader_1ad1ef134b223c59257fff990b99c54ee4" prot="private" virt="non-virtual"><scope>cmdline::range_reader</scope><name>high</name></member>
+      <member refid="structcmdline_1_1range__reader_1a60c345e84d2a96dcd2de47a66eca8104" prot="private" virt="non-virtual"><scope>cmdline::range_reader</scope><name>low</name></member>
+      <member refid="structcmdline_1_1range__reader_1a81dfb7277756d5b23f816481db121a20" prot="public" virt="non-virtual"><scope>cmdline::range_reader</scope><name>operator()</name></member>
+      <member refid="structcmdline_1_1range__reader_1a7b31d754293d2f2f3df49b40a6e95a5a" prot="public" virt="non-virtual"><scope>cmdline::range_reader</scope><name>range_reader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

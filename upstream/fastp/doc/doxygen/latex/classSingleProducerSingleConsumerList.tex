@@ -1,0 +1,251 @@
+\doxysection{Single\+Producer\+Single\+Consumer\+List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classSingleProducerSingleConsumerList}{}\label{classSingleProducerSingleConsumerList}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+
+
+{\ttfamily \+\#include $<$singleproducersingleconsumerlist.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a3701e2e62894834a7ec95dea492f68d7}{Single\+Producer\+Single\+Consumer\+List}} ()
+\item 
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a2cf48c29f5f285f0ed2529a045d501a9}{\texorpdfstring{$\sim$}{\string~}\+Single\+Producer\+Single\+Consumer\+List}} ()
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4796538560a708ef982c435ad33534f1}{size}} ()
+\item 
+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_aff6b4bfbb70cfa0cfbcc6308ca066177}{is\+Empty}} () const
+\item 
+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a8b9db1c38f8b683e4f4e693e0c15c6a4}{can\+Be\+Consumed}} ()
+\item 
+void \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a9bb0bcf74d3d05605e431b35aaf12b2d}{produce}} (T val)
+\item 
+T \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a449d9b205ae321d78481ae327f39a9d1}{consume}} ()
+\item 
+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_acc12cb331640608fa9b4a862929e6da5}{is\+Producer\+Finished}} ()
+\item 
+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ad05fcc09a2df58465a82087175546926}{is\+Consumer\+Finished}} ()
+\item 
+void \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af14e48ee772cbf3b913cd0bf3d43db80}{set\+Producer\+Finished}} ()
+\item 
+void \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae2e877fc589fe814c0ae2e5dd3f1ca7c}{set\+Consumer\+Finished}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a61544df8ed82b3f134247bba184d1487}{make\+Item}} (T val)
+\item 
+void \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a873a1c4093b39dcdd86be519ee7f601b}{recycle}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}{head}}
+\item 
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}{tail}}
+\item 
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}{blocks}}
+\item 
+std::\+atomic\+\_\+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7c8ac0a454151e09c283645805d9842f}{producer\+Finished}}
+\item 
+std::\+atomic\+\_\+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a62837f1a73066b0132855b2ac2a2149d}{consumer\+Finished}}
+\item 
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04}{produced}}
+\item 
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225}{consumed}}
+\item 
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}{recycled}}
+\item 
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a1fbb4cbdcc40e26b41ad5aad8566eb44}{blocks\+Ring\+Buffer\+Size}}
+\item 
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}{blocks\+Ring\+Buffer\+Size\+Mask}}
+\item 
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af}{blocks\+Num}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classSingleProducerSingleConsumerList_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSingleProducerSingleConsumerList_a3701e2e62894834a7ec95dea492f68d7}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!SingleProducerSingleConsumerList@{SingleProducerSingleConsumerList}}
+\index{SingleProducerSingleConsumerList@{SingleProducerSingleConsumerList}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SingleProducerSingleConsumerList()}{SingleProducerSingleConsumerList()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a3701e2e62894834a7ec95dea492f68d7} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+\+Single\+Producer\+Single\+Consumer\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a2cf48c29f5f285f0ed2529a045d501a9}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!````~SingleProducerSingleConsumerList@{\texorpdfstring{$\sim$}{\string~}SingleProducerSingleConsumerList}}
+\index{````~SingleProducerSingleConsumerList@{\texorpdfstring{$\sim$}{\string~}SingleProducerSingleConsumerList}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SingleProducerSingleConsumerList()}{\string~SingleProducerSingleConsumerList()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a2cf48c29f5f285f0ed2529a045d501a9} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+\texorpdfstring{$\sim$}{\string~}\doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classSingleProducerSingleConsumerList_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSingleProducerSingleConsumerList_a8b9db1c38f8b683e4f4e693e0c15c6a4}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!canBeConsumed@{canBeConsumed}}
+\index{canBeConsumed@{canBeConsumed}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{canBeConsumed()}{canBeConsumed()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a8b9db1c38f8b683e4f4e693e0c15c6a4} 
+template$<$typename T$>$ \\
+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+can\+Be\+Consumed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a449d9b205ae321d78481ae327f39a9d1}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!consume@{consume}}
+\index{consume@{consume}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a449d9b205ae321d78481ae327f39a9d1} 
+template$<$typename T$>$ \\
+T \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+consume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_ad05fcc09a2df58465a82087175546926}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!isConsumerFinished@{isConsumerFinished}}
+\index{isConsumerFinished@{isConsumerFinished}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isConsumerFinished()}{isConsumerFinished()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_ad05fcc09a2df58465a82087175546926} 
+template$<$typename T$>$ \\
+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+is\+Consumer\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_aff6b4bfbb70cfa0cfbcc6308ca066177}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_aff6b4bfbb70cfa0cfbcc6308ca066177} 
+template$<$typename T$>$ \\
+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_acc12cb331640608fa9b4a862929e6da5}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!isProducerFinished@{isProducerFinished}}
+\index{isProducerFinished@{isProducerFinished}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isProducerFinished()}{isProducerFinished()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_acc12cb331640608fa9b4a862929e6da5} 
+template$<$typename T$>$ \\
+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+is\+Producer\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a61544df8ed82b3f134247bba184d1487}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!makeItem@{makeItem}}
+\index{makeItem@{makeItem}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{makeItem()}{makeItem()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a61544df8ed82b3f134247bba184d1487} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+make\+Item (\begin{DoxyParamCaption}\item[{T}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a9bb0bcf74d3d05605e431b35aaf12b2d}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!produce@{produce}}
+\index{produce@{produce}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{produce()}{produce()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a9bb0bcf74d3d05605e431b35aaf12b2d} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+produce (\begin{DoxyParamCaption}\item[{T}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a873a1c4093b39dcdd86be519ee7f601b}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!recycle@{recycle}}
+\index{recycle@{recycle}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{recycle()}{recycle()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a873a1c4093b39dcdd86be519ee7f601b} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+recycle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_ae2e877fc589fe814c0ae2e5dd3f1ca7c}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!setConsumerFinished@{setConsumerFinished}}
+\index{setConsumerFinished@{setConsumerFinished}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setConsumerFinished()}{setConsumerFinished()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_ae2e877fc589fe814c0ae2e5dd3f1ca7c} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+set\+Consumer\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_af14e48ee772cbf3b913cd0bf3d43db80}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!setProducerFinished@{setProducerFinished}}
+\index{setProducerFinished@{setProducerFinished}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setProducerFinished()}{setProducerFinished()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_af14e48ee772cbf3b913cd0bf3d43db80} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+set\+Producer\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a4796538560a708ef982c435ad33534f1}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!size@{size}}
+\index{size@{size}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a4796538560a708ef982c435ad33534f1} 
+template$<$typename T$>$ \\
+size\+\_\+t \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classSingleProducerSingleConsumerList_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!blocks@{blocks}}
+\index{blocks@{blocks}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{blocks}{blocks}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a4c080c6fb829eca3be473747cd46b50d} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$T$>$\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+blocks\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!blocksNum@{blocksNum}}
+\index{blocksNum@{blocksNum}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{blocksNum}{blocksNum}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_ace268dce9b3da1cc5dedc4a1fc7ec9af} 
+template$<$typename T$>$ \\
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+blocks\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a1fbb4cbdcc40e26b41ad5aad8566eb44}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!blocksRingBufferSize@{blocksRingBufferSize}}
+\index{blocksRingBufferSize@{blocksRingBufferSize}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{blocksRingBufferSize}{blocksRingBufferSize}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a1fbb4cbdcc40e26b41ad5aad8566eb44} 
+template$<$typename T$>$ \\
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+blocks\+Ring\+Buffer\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!blocksRingBufferSizeMask@{blocksRingBufferSizeMask}}
+\index{blocksRingBufferSizeMask@{blocksRingBufferSizeMask}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{blocksRingBufferSizeMask}{blocksRingBufferSizeMask}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a6d3179ea11e46c422eae8ec9477300e1} 
+template$<$typename T$>$ \\
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+blocks\+Ring\+Buffer\+Size\+Mask\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!consumed@{consumed}}
+\index{consumed@{consumed}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{consumed}{consumed}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a90b54cf3f28edd0ba719057a1ef87225} 
+template$<$typename T$>$ \\
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+consumed\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a62837f1a73066b0132855b2ac2a2149d}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!consumerFinished@{consumerFinished}}
+\index{consumerFinished@{consumerFinished}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{consumerFinished}{consumerFinished}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a62837f1a73066b0132855b2ac2a2149d} 
+template$<$typename T$>$ \\
+std::\+atomic\+\_\+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+consumer\+Finished\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!head@{head}}
+\index{head@{head}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a6c87befc1b420fedaa69502696647719} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$T$>$\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+head\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!produced@{produced}}
+\index{produced@{produced}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{produced}{produced}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a7f5d9bf6050e46aa65bf74c0e95e8e04} 
+template$<$typename T$>$ \\
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+produced\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_a7c8ac0a454151e09c283645805d9842f}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!producerFinished@{producerFinished}}
+\index{producerFinished@{producerFinished}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{producerFinished}{producerFinished}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_a7c8ac0a454151e09c283645805d9842f} 
+template$<$typename T$>$ \\
+std::\+atomic\+\_\+bool \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+producer\+Finished\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!recycled@{recycled}}
+\index{recycled@{recycled}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{recycled}{recycled}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_af229bcdbabca28c205c00a2c36f6cd3a} 
+template$<$typename T$>$ \\
+unsigned long \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+recycled\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472}\index{SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}!tail@{tail}}
+\index{tail@{tail}!SingleProducerSingleConsumerList$<$ T $>$@{SingleProducerSingleConsumerList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{tail}{tail}}
+{\footnotesize\ttfamily \label{classSingleProducerSingleConsumerList_ae4ebcc4426cbd3536e316069eb70b472} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$T$>$\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{Single\+Producer\+Single\+Consumer\+List}}$<$ T $>$::\+tail\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{singleproducersingleconsumerlist_8h}{singleproducersingleconsumerlist.\+h}}\end{DoxyCompactItemize}

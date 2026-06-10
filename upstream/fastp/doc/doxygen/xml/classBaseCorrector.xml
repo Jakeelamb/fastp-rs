@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classBaseCorrector" kind="class" language="C++" prot="public">
+    <compoundname>BaseCorrector</compoundname>
+    <includes refid="basecorrector_8h" local="no">basecorrector.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBaseCorrector_1ac7ddef93e2de377bd105d0917ae138cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BaseCorrector::BaseCorrector</definition>
+        <argsstring>()</argsstring>
+        <name>BaseCorrector</name>
+        <qualifiedname>BaseCorrector::BaseCorrector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/basecorrector.h" line="15" column="5" bodyfile="src/basecorrector.cpp" bodystart="4" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classBaseCorrector_1af1878c2c060d31650aa83c898250ef74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BaseCorrector::~BaseCorrector</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseCorrector</name>
+        <qualifiedname>BaseCorrector::~BaseCorrector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/basecorrector.h" line="16" column="5" bodyfile="src/basecorrector.cpp" bodystart="8" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classBaseCorrector_1a81e5298c612a3c49e5419af330e6cdcb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BaseCorrector::correctByOverlapAnalysis</definition>
+        <argsstring>(Read *r1, Read *r2, FilterResult *fr, int diffLimit, int overlapRequire, double diffPercentLimit)</argsstring>
+        <name>correctByOverlapAnalysis</name>
+        <qualifiedname>BaseCorrector::correctByOverlapAnalysis</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>diffLimit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>overlapRequire</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>diffPercentLimit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/basecorrector.h" line="18" column="16" bodyfile="src/basecorrector.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classBaseCorrector_1a4a17bac2915451281885e150b8c57bee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BaseCorrector::correctByOverlapAnalysis</definition>
+        <argsstring>(Read *r1, Read *r2, FilterResult *fr, OverlapResult ov)</argsstring>
+        <name>correctByOverlapAnalysis</name>
+        <qualifiedname>BaseCorrector::correctByOverlapAnalysis</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classFilterResult" kindref="compound">FilterResult</ref> *</type>
+          <declname>fr</declname>
+        </param>
+        <param>
+          <type><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref></type>
+          <declname>ov</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/basecorrector.h" line="19" column="16" bodyfile="src/basecorrector.cpp" bodystart="16" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classBaseCorrector_1aa564e7b5d88ef43e64f5b8bf73880dd2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BaseCorrector::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>BaseCorrector::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/basecorrector.h" line="20" column="17" bodyfile="src/basecorrector.cpp" bodystart="85" bodyend="107"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/basecorrector.h" line="13" column="1" bodyfile="src/basecorrector.h" bodystart="13" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classBaseCorrector_1ac7ddef93e2de377bd105d0917ae138cb" prot="public" virt="non-virtual"><scope>BaseCorrector</scope><name>BaseCorrector</name></member>
+      <member refid="classBaseCorrector_1a81e5298c612a3c49e5419af330e6cdcb" prot="public" virt="non-virtual"><scope>BaseCorrector</scope><name>correctByOverlapAnalysis</name></member>
+      <member refid="classBaseCorrector_1a4a17bac2915451281885e150b8c57bee" prot="public" virt="non-virtual"><scope>BaseCorrector</scope><name>correctByOverlapAnalysis</name></member>
+      <member refid="classBaseCorrector_1aa564e7b5d88ef43e64f5b8bf73880dd2" prot="public" virt="non-virtual"><scope>BaseCorrector</scope><name>test</name></member>
+      <member refid="classBaseCorrector_1af1878c2c060d31650aa83c898250ef74" prot="public" virt="non-virtual"><scope>BaseCorrector</scope><name>~BaseCorrector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

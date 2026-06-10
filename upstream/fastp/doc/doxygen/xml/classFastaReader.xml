@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classFastaReader" kind="class" language="C++" prot="public">
+    <compoundname>FastaReader</compoundname>
+    <includes refid="fastareader_8h" local="no">fastareader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classFastaReader_1a1eedba2fd6c9d5969f29c8f1dab89f2f" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string FastaReader::mCurrentSequence</definition>
+        <argsstring></argsstring>
+        <name>mCurrentSequence</name>
+        <qualifiedname>FastaReader::mCurrentSequence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="48" column="12" bodyfile="src/fastareader.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastaReader_1a676f69f9b3650f3d5437e7ba2dc56144" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string FastaReader::mCurrentID</definition>
+        <argsstring></argsstring>
+        <name>mCurrentID</name>
+        <qualifiedname>FastaReader::mCurrentID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="49" column="12" bodyfile="src/fastareader.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastaReader_1ab10489fd4121c16989d6515ae895c28e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string FastaReader::mCurrentDescription</definition>
+        <argsstring></argsstring>
+        <name>mCurrentDescription</name>
+        <qualifiedname>FastaReader::mCurrentDescription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="50" column="12" bodyfile="src/fastareader.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastaReader_1aabc53d8d9dc0b945df182efc17e5dce2" prot="public" static="no" mutable="no">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt;string, string&gt; FastaReader::mAllContigs</definition>
+        <argsstring></argsstring>
+        <name>mAllContigs</name>
+        <qualifiedname>FastaReader::mAllContigs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="51" column="9" bodyfile="src/fastareader.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFastaReader_1a7c7008d257b656684430dab2d1b91da1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string FastaReader::mFastaFile</definition>
+        <argsstring></argsstring>
+        <name>mFastaFile</name>
+        <qualifiedname>FastaReader::mFastaFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="59" column="12" bodyfile="src/fastareader.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastaReader_1aa173b7ba95e64fe4db82f1a3820fadad" prot="private" static="no" mutable="no">
+        <type>ifstream</type>
+        <definition>ifstream FastaReader::mFastaFileStream</definition>
+        <argsstring></argsstring>
+        <name>mFastaFileStream</name>
+        <qualifiedname>FastaReader::mFastaFileStream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="60" column="14" bodyfile="src/fastareader.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFastaReader_1ae81d16a01f7dcff8bb4569329e37868f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FastaReader::mForceUpperCase</definition>
+        <argsstring></argsstring>
+        <name>mForceUpperCase</name>
+        <qualifiedname>FastaReader::mForceUpperCase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="61" column="10" bodyfile="src/fastareader.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFastaReader_1a48a263b02899ebb8aab3104e1e408cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FastaReader::FastaReader</definition>
+        <argsstring>(string fastaFile, bool forceUpperCase=true)</argsstring>
+        <name>FastaReader</name>
+        <qualifiedname>FastaReader::FastaReader</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fastaFile</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceUpperCase</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="19" column="5" bodyfile="src/fastareader.cpp" bodystart="6" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1a3a9b0ceccecb2166f435cec2156e7ca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FastaReader::~FastaReader</definition>
+        <argsstring>()</argsstring>
+        <name>~FastaReader</name>
+        <qualifiedname>FastaReader::~FastaReader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="20" column="5" bodyfile="src/fastareader.cpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1ab8c9b6c280186f7ef9a0ccf7421be88a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastaReader::hasNext</definition>
+        <argsstring>()</argsstring>
+        <name>hasNext</name>
+        <qualifiedname>FastaReader::hasNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="21" column="10" bodyfile="src/fastareader.cpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1aaa0236f26b118fcab4c2657dfe75cd09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastaReader::readNext</definition>
+        <argsstring>()</argsstring>
+        <name>readNext</name>
+        <qualifiedname>FastaReader::readNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="22" column="10" bodyfile="src/fastareader.cpp" bodystart="47" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1ad8160b754d9cf1633d8564a2f7274b5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastaReader::readAll</definition>
+        <argsstring>()</argsstring>
+        <name>readAll</name>
+        <qualifiedname>FastaReader::readAll</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="23" column="10" bodyfile="src/fastareader.cpp" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1afc5323ead9b9e33bec4e4b2a1f65512c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string FastaReader::currentID</definition>
+        <argsstring>()</argsstring>
+        <name>currentID</name>
+        <qualifiedname>FastaReader::currentID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="25" column="19" bodyfile="src/fastareader.h" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1a200d27dabac02489c306e0a5fdd5715c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string FastaReader::currentDescription</definition>
+        <argsstring>()</argsstring>
+        <name>currentDescription</name>
+        <qualifiedname>FastaReader::currentDescription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="30" column="19" bodyfile="src/fastareader.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1a47ace3df2b08bcfe8bc8b094c50763dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string FastaReader::currentSequence</definition>
+        <argsstring>()</argsstring>
+        <name>currentSequence</name>
+        <qualifiedname>FastaReader::currentSequence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="35" column="19" bodyfile="src/fastareader.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1a8bab5351912b538d8ec2e9cf749518c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>map&lt; string, string &gt; &amp;</type>
+        <definition>map&lt; string, string &gt; &amp; FastaReader::contigs</definition>
+        <argsstring>()</argsstring>
+        <name>contigs</name>
+        <qualifiedname>FastaReader::contigs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="40" column="16" bodyfile="src/fastareader.h" bodystart="40" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFastaReader_1a98f1b983167352d50e446f2a8336cc57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastaReader::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>FastaReader::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="44" column="17" bodyfile="src/fastareader.cpp" bodystart="102" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classFastaReader_1a342d3cc5ae11a943a363b7acb1c5c430" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastaReader::readLine</definition>
+        <argsstring>()</argsstring>
+        <name>readLine</name>
+        <qualifiedname>FastaReader::readLine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1a173bec12477e187f16c85e2c12ac1c5d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FastaReader::endOfLine</definition>
+        <argsstring>(char c)</argsstring>
+        <name>endOfLine</name>
+        <qualifiedname>FastaReader::endOfLine</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classFastaReader_1a9491ffaa778516d7e94c1412442ce708" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FastaReader::setFastaSequenceIdDescription</definition>
+        <argsstring>()</argsstring>
+        <name>setFastaSequenceIdDescription</name>
+        <qualifiedname>FastaReader::setFastaSequenceIdDescription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fastareader.h" line="56" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/fastareader.h" line="16" column="1" bodyfile="src/fastareader.h" bodystart="17" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classFastaReader_1a8bab5351912b538d8ec2e9cf749518c1" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>contigs</name></member>
+      <member refid="classFastaReader_1a200d27dabac02489c306e0a5fdd5715c" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>currentDescription</name></member>
+      <member refid="classFastaReader_1afc5323ead9b9e33bec4e4b2a1f65512c" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>currentID</name></member>
+      <member refid="classFastaReader_1a47ace3df2b08bcfe8bc8b094c50763dc" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>currentSequence</name></member>
+      <member refid="classFastaReader_1a173bec12477e187f16c85e2c12ac1c5d" prot="private" virt="non-virtual"><scope>FastaReader</scope><name>endOfLine</name></member>
+      <member refid="classFastaReader_1a48a263b02899ebb8aab3104e1e408cf0" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>FastaReader</name></member>
+      <member refid="classFastaReader_1ab8c9b6c280186f7ef9a0ccf7421be88a" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>hasNext</name></member>
+      <member refid="classFastaReader_1aabc53d8d9dc0b945df182efc17e5dce2" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>mAllContigs</name></member>
+      <member refid="classFastaReader_1ab10489fd4121c16989d6515ae895c28e" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>mCurrentDescription</name></member>
+      <member refid="classFastaReader_1a676f69f9b3650f3d5437e7ba2dc56144" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>mCurrentID</name></member>
+      <member refid="classFastaReader_1a1eedba2fd6c9d5969f29c8f1dab89f2f" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>mCurrentSequence</name></member>
+      <member refid="classFastaReader_1a7c7008d257b656684430dab2d1b91da1" prot="private" virt="non-virtual"><scope>FastaReader</scope><name>mFastaFile</name></member>
+      <member refid="classFastaReader_1aa173b7ba95e64fe4db82f1a3820fadad" prot="private" virt="non-virtual"><scope>FastaReader</scope><name>mFastaFileStream</name></member>
+      <member refid="classFastaReader_1ae81d16a01f7dcff8bb4569329e37868f" prot="private" virt="non-virtual"><scope>FastaReader</scope><name>mForceUpperCase</name></member>
+      <member refid="classFastaReader_1ad8160b754d9cf1633d8564a2f7274b5d" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>readAll</name></member>
+      <member refid="classFastaReader_1a342d3cc5ae11a943a363b7acb1c5c430" prot="private" virt="non-virtual"><scope>FastaReader</scope><name>readLine</name></member>
+      <member refid="classFastaReader_1aaa0236f26b118fcab4c2657dfe75cd09" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>readNext</name></member>
+      <member refid="classFastaReader_1a9491ffaa778516d7e94c1412442ce708" prot="private" virt="non-virtual"><scope>FastaReader</scope><name>setFastaSequenceIdDescription</name></member>
+      <member refid="classFastaReader_1a98f1b983167352d50e446f2a8336cc57" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>test</name></member>
+      <member refid="classFastaReader_1a3a9b0ceccecb2166f435cec2156e7ca9" prot="public" virt="non-virtual"><scope>FastaReader</scope><name>~FastaReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

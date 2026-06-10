@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="peprocessor_8h" kind="file" language="C++">
+    <compoundname>peprocessor.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="read_8h" local="yes">read.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">condition_variable</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">thread</includes>
+    <includes refid="options_8h" local="yes">options.h</includes>
+    <includes refid="threadconfig_8h" local="yes">threadconfig.h</includes>
+    <includes refid="filter_8h" local="yes">filter.h</includes>
+    <includes refid="umiprocessor_8h" local="yes">umiprocessor.h</includes>
+    <includes refid="overlapanalysis_8h" local="yes">overlapanalysis.h</includes>
+    <includes refid="writerthread_8h" local="yes">writerthread.h</includes>
+    <includes refid="duplicate_8h" local="yes">duplicate.h</includes>
+    <includes refid="readpool_8h" local="yes">readpool.h</includes>
+    <includedby refid="filter_8cpp" local="yes">src/filter.cpp</includedby>
+    <includedby refid="peprocessor_8cpp" local="yes">src/peprocessor.cpp</includedby>
+    <includedby refid="processor_8cpp" local="yes">src/processor.cpp</includedby>
+    <incdepgraph>
+      <node id="19">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="30">
+        <label>duplicate.h</label>
+        <link refid="duplicate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>filter.h</label>
+        <link refid="filter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>filterresult.h</label>
+        <link refid="filterresult_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>overlapanalysis.h</label>
+        <link refid="overlapanalysis_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/peprocessor.h</label>
+        <link refid="peprocessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>readpool.h</label>
+        <link refid="readpool_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>singleproducersingleconsumerlist.h</label>
+        <link refid="singleproducersingleconsumerlist_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stats.h</label>
+        <link refid="stats_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>threadconfig.h</label>
+        <link refid="threadconfig_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>umiprocessor.h</label>
+        <link refid="umiprocessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>writerthread.h</label>
+        <link refid="writerthread_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>atomic</label>
+      </node>
+      <node id="25">
+        <label>cassert</label>
+      </node>
+      <node id="11">
+        <label>condition_variable</label>
+      </node>
+      <node id="10">
+        <label>cstdlib</label>
+      </node>
+      <node id="7">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>libdeflate.h</label>
+      </node>
+      <node id="15">
+        <label>map</label>
+      </node>
+      <node id="24">
+        <label>memory.h</label>
+      </node>
+      <node id="12">
+        <label>mutex</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>thread</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/peprocessor.cpp</label>
+        <link refid="peprocessor_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/peprocessor.h</label>
+        <link refid="peprocessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/processor.cpp</label>
+        <link refid="processor_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPairEndProcessor" prot="public">PairEndProcessor</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="peprocessor_8h_1a6a7384e5e73948fad999e8d95378dcca" prot="public" static="no">
+        <type>struct <ref refid="peprocessor_8h_1a6a7384e5e73948fad999e8d95378dcca" kindref="member">ReadPairRepository</ref></type>
+        <definition>typedef struct ReadPairRepository ReadPairRepository</definition>
+        <argsstring></argsstring>
+        <name>ReadPairRepository</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/peprocessor.h" line="24" column="33" bodyfile="src/peprocessor.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PE_PROCESSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PE_PROCESSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="read_8h" kindref="compound">read.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;condition_variable&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="options_8h" kindref="compound">options.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="threadconfig_8h" kindref="compound">threadconfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="filter_8h" kindref="compound">filter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="umiprocessor_8h" kindref="compound">umiprocessor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="overlapanalysis_8h" kindref="compound">overlapanalysis.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="writerthread_8h" kindref="compound">writerthread.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="duplicate_8h" kindref="compound">duplicate.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="readpool_8h" kindref="compound">readpool.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="peprocessor_8h_1a6a7384e5e73948fad999e8d95378dcca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="peprocessor_8h_1a6a7384e5e73948fad999e8d95378dcca" kindref="member">ReadPairRepository</ref><sp/><ref refid="peprocessor_8h_1a6a7384e5e73948fad999e8d95378dcca" kindref="member">ReadPairRepository</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classPairEndProcessor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPairEndProcessor_1a5c8f0062f8e980e06a07bba4abfb04d9" kindref="member">PairEndProcessor</ref>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPairEndProcessor_1a5c8f0062f8e980e06a07bba4abfb04d9" kindref="member">PairEndProcessor</ref>(<ref refid="classOptions" kindref="compound">Options</ref>*<sp/>opt);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPairEndProcessor_1a51025ff3f6fbd889977b071a1336c12a" kindref="member">~PairEndProcessor</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a49f131a3f2c6ae7554e3c143974263ee" kindref="member">process</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a28a9e02adbac691bd43c6928e9b9fb18" kindref="member">processPairEnd</ref>(<ref refid="structReadPack" kindref="compound">ReadPack</ref>*<sp/>leftPack,<sp/><ref refid="structReadPack" kindref="compound">ReadPack</ref>*<sp/>rightPack,<sp/><ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref>*<sp/>config);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a1652c055e6febf6340c3bafcaff5b0f0" kindref="member">readerTask</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isLeft);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a6a25f324d2008e6f9e97efef7c66355a" kindref="member">interleavedReaderTask</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1ac28979108069f4202f571446dbe32488" kindref="member">processorTask</ref>(<ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref>*<sp/>config);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a5e9b5e8ade9d8ff37d91bacd63584f35" kindref="member">initConfig</ref>(<ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref>*<sp/>config);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a4030de52f1242d7ac36a3b819c23d323" kindref="member">initOutput</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a61f9315b141f7808fa440fde0d8359cc" kindref="member">closeOutput</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a1ed09b1ed350ac890be50f5f69a58fe0" kindref="member">statInsertSize</ref>(<ref refid="classRead" kindref="compound">Read</ref>*<sp/>r1,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>r2,<sp/><ref refid="classOverlapResult" kindref="compound">OverlapResult</ref>&amp;<sp/>ov,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frontTrimmed1<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frontTrimmed2<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a8bfd34fbf2e72d18f04c1b1678e39180" kindref="member">getPeakInsertSize</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1ade953e1dab59cbd4fc658bbcbed953bc" kindref="member">writerTask</ref>(<ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/>config);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1ac586284e4c745c4c38ade2c6fffd06b9" kindref="member">recycleToPool1</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tid,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>r);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1ac8547a1681e4f572ab892d3b63bb23c0" kindref="member">recycleToPool2</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tid,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>r);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47" refid="classPairEndProcessor_1a92288ad801f2248de839d1a620c37569" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>atomic_bool<sp/><ref refid="classPairEndProcessor_1a92288ad801f2248de839d1a620c37569" kindref="member">mLeftReaderFinished</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classPairEndProcessor_1ad619db5cc0740f86213c5ad9a6363785" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>atomic_bool<sp/><ref refid="classPairEndProcessor_1ad619db5cc0740f86213c5ad9a6363785" kindref="member">mRightReaderFinished</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classPairEndProcessor_1aca493df06ba9f829eabd9f3462b40afa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">alignas</highlight><highlight class="normal">(128)<sp/>atomic_int<sp/><ref refid="classPairEndProcessor_1aca493df06ba9f829eabd9f3462b40afa" kindref="member">mFinishedThreads</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classPairEndProcessor_1a3eca167a1dc7a6c56a5f955bcd413a93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOptions" kindref="compound">Options</ref>*<sp/><ref refid="classPairEndProcessor_1a3eca167a1dc7a6c56a5f955bcd413a93" kindref="member">mOptions</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classPairEndProcessor_1ace9be7f93e4f28aa537b335fdcf9d692" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFilter" kindref="compound">Filter</ref>*<sp/><ref refid="classPairEndProcessor_1ace9be7f93e4f28aa537b335fdcf9d692" kindref="member">mFilter</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classPairEndProcessor_1af2763af2a1066fa2ac529efbe2ba1228" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor" kindref="compound">UmiProcessor</ref>*<sp/><ref refid="classPairEndProcessor_1af2763af2a1066fa2ac529efbe2ba1228" kindref="member">mUmiProcessor</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classPairEndProcessor_1a388e2a6911b141ae3ac560437f43c325" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>atomic_long*<sp/><ref refid="classPairEndProcessor_1a388e2a6911b141ae3ac560437f43c325" kindref="member">mInsertSizeHist</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classPairEndProcessor_1a698c38feeb4ede125ffd61815599cfe1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classPairEndProcessor_1a698c38feeb4ede125ffd61815599cfe1" kindref="member">mLeftWriter</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classPairEndProcessor_1a19a4c96bf685d8d01e89438f2fbcaf66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classPairEndProcessor_1a19a4c96bf685d8d01e89438f2fbcaf66" kindref="member">mRightWriter</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classPairEndProcessor_1adfe34f92e0f443642a22fb9b953746bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classPairEndProcessor_1adfe34f92e0f443642a22fb9b953746bb" kindref="member">mUnpairedLeftWriter</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classPairEndProcessor_1a64990bd5e99bfaf98925b7b03d36c52c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classPairEndProcessor_1a64990bd5e99bfaf98925b7b03d36c52c" kindref="member">mUnpairedRightWriter</ref>;</highlight></codeline>
+<codeline lineno="58" refid="classPairEndProcessor_1a0d28dfdb0f62ebcfbf57101b3d3e51ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classPairEndProcessor_1a0d28dfdb0f62ebcfbf57101b3d3e51ff" kindref="member">mMergedWriter</ref>;</highlight></codeline>
+<codeline lineno="59" refid="classPairEndProcessor_1aa911b5334cfcd75ecfec5956626acd35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classPairEndProcessor_1aa911b5334cfcd75ecfec5956626acd35" kindref="member">mFailedWriter</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classPairEndProcessor_1a3f3fe32e3bcb3130d9daee5a93cbd874" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classPairEndProcessor_1a3f3fe32e3bcb3130d9daee5a93cbd874" kindref="member">mOverlappedWriter</ref>;</highlight></codeline>
+<codeline lineno="61" refid="classPairEndProcessor_1a32318768b37c7252f1e5780af5cef94e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate" kindref="compound">Duplicate</ref>*<sp/><ref refid="classPairEndProcessor_1a32318768b37c7252f1e5780af5cef94e" kindref="member">mDuplicate</ref>;</highlight></codeline>
+<codeline lineno="62" refid="classPairEndProcessor_1abdb66a6b67dc33a5b90296454fa36236" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList&lt;ReadPack*&gt;</ref>**<sp/><ref refid="classPairEndProcessor_1abdb66a6b67dc33a5b90296454fa36236" kindref="member">mLeftInputLists</ref>;</highlight></codeline>
+<codeline lineno="63" refid="classPairEndProcessor_1a11cb9e95cdc58c258920c6cd5a25a553" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList&lt;ReadPack*&gt;</ref>**<sp/><ref refid="classPairEndProcessor_1a11cb9e95cdc58c258920c6cd5a25a553" kindref="member">mRightInputLists</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classPairEndProcessor_1a421be6fd44051e3bc12a1240e4c870ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a421be6fd44051e3bc12a1240e4c870ed" kindref="member">mLeftPackReadCounter</ref>;</highlight></codeline>
+<codeline lineno="65" refid="classPairEndProcessor_1a554eedf8169ecb89fc1ac4631c4e51b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classPairEndProcessor_1a554eedf8169ecb89fc1ac4631c4e51b7" kindref="member">mRightPackReadCounter</ref>;</highlight></codeline>
+<codeline lineno="66" refid="classPairEndProcessor_1af3a01b94aa0ff99508315c62fbca85cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">alignas</highlight><highlight class="normal">(128)<sp/>atomic_long<sp/><ref refid="classPairEndProcessor_1af3a01b94aa0ff99508315c62fbca85cb" kindref="member">mPackProcessedCounter</ref>;</highlight></codeline>
+<codeline lineno="67" refid="classPairEndProcessor_1a1bb8e19c273ece53d93f8e696958fb4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReadPool" kindref="compound">ReadPool</ref>*<sp/><ref refid="classPairEndProcessor_1a1bb8e19c273ece53d93f8e696958fb4a" kindref="member">mLeftReadPool</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classPairEndProcessor_1a185d1ee9ac28144f533d8e419d14b53a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReadPool" kindref="compound">ReadPool</ref>*<sp/><ref refid="classPairEndProcessor_1a185d1ee9ac28144f533d8e419d14b53a" kindref="member">mRightReadPool</ref>;</highlight></codeline>
+<codeline lineno="69" refid="classPairEndProcessor_1a39bc23e5df6558c15e6b5df802c89a67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>atomic_bool<sp/><ref refid="classPairEndProcessor_1a39bc23e5df6558c15e6b5df802c89a67" kindref="member">shouldStopReading</ref>;</highlight></codeline>
+<codeline lineno="70" refid="classPairEndProcessor_1a359bab39dc18e283fc284c74d9298ebb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/><ref refid="classPairEndProcessor_1a359bab39dc18e283fc284c74d9298ebb" kindref="member">mBackpressureMtx</ref>;</highlight></codeline>
+<codeline lineno="71" refid="classPairEndProcessor_1a5325bc1785a2a9f59b42593771a23c67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::condition_variable<sp/><ref refid="classPairEndProcessor_1a5325bc1785a2a9f59b42593771a23c67" kindref="member">mBackpressureCV</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/peprocessor.h"/>
+  </compounddef>
+</doxygen>

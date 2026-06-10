@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classBgzfMtReader" kind="class" language="C++" prot="public">
+    <compoundname>BgzfMtReader</compoundname>
+    <includes refid="bgzf_8h" local="no">bgzf.h</includes>
+    <innerclass refid="structBgzfMtReader_1_1Slot" prot="private">BgzfMtReader::Slot</innerclass>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classBgzfMtReader_1aee797ed97678328320db273ca1e75693" prot="private" static="no" strong="no">
+        <type></type>
+        <name>SlotState</name>
+        <qualifiedname>BgzfMtReader::SlotState</qualifiedname>
+        <enumvalue id="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22" prot="private">
+          <name>FREE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2" prot="private">
+          <name>COMPRESSED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a00089ae9def2cc2ecf08ce1ffd0256bd" prot="private">
+          <name>DECOMPRESSING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228" prot="private">
+          <name>READY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classBgzfMtReader_1aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1" prot="private">
+          <name>DONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="37" column="5" bodyfile="src/bgzf.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBgzfMtReader_1a9ef9a5cd59156ddd64b3de39e8e87fb2" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* BgzfMtReader::mFp</definition>
+        <argsstring></argsstring>
+        <name>mFp</name>
+        <qualifiedname>BgzfMtReader::mFp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="191" column="10" bodyfile="src/bgzf.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1aa37c9b5176467547760099e6b9cd2246" prot="private" static="no" mutable="no">
+        <type><ref refid="structBgzfMtReader_1_1Slot" kindref="compound">Slot</ref> *</type>
+        <definition>Slot* BgzfMtReader::mSlots</definition>
+        <argsstring></argsstring>
+        <name>mSlots</name>
+        <qualifiedname>BgzfMtReader::mSlots</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="192" column="10" bodyfile="src/bgzf.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1ab166feef864ea34db3745a791abc30c8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BgzfMtReader::mRingSize</definition>
+        <argsstring></argsstring>
+        <name>mRingSize</name>
+        <qualifiedname>BgzfMtReader::mRingSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="193" column="9" bodyfile="src/bgzf.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1a2562478e5080c81552a82c50142e9100" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; int &gt;</type>
+        <definition>std::atomic&lt;int&gt; BgzfMtReader::mConsumeIdx</definition>
+        <argsstring></argsstring>
+        <name>mConsumeIdx</name>
+        <qualifiedname>BgzfMtReader::mConsumeIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="194" column="17" bodyfile="src/bgzf.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1a07264db665f9a0720fb3da8e41e8f767" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BgzfMtReader::mConsumeOffset</definition>
+        <argsstring></argsstring>
+        <name>mConsumeOffset</name>
+        <qualifiedname>BgzfMtReader::mConsumeOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="195" column="9" bodyfile="src/bgzf.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1ad9fe79c25105be430e2f64229bf333e8" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; int &gt;</type>
+        <definition>std::atomic&lt;int&gt; BgzfMtReader::mProduceIdx</definition>
+        <argsstring></argsstring>
+        <name>mProduceIdx</name>
+        <qualifiedname>BgzfMtReader::mProduceIdx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="196" column="17" bodyfile="src/bgzf.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1a7063733b17ed8a7bdbc5fdf08879af81" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BgzfMtReader::mMaxPool</definition>
+        <argsstring></argsstring>
+        <name>mMaxPool</name>
+        <qualifiedname>BgzfMtReader::mMaxPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="197" column="9" bodyfile="src/bgzf.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1a318dbd8fd1106cb591859a07c78113b7" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; BgzfMtReader::mStop</definition>
+        <argsstring></argsstring>
+        <name>mStop</name>
+        <qualifiedname>BgzfMtReader::mStop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="198" column="17" bodyfile="src/bgzf.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1a60f12801d6f3a632fc01c0fd63e27a6f" prot="private" static="no" mutable="no">
+        <type>std::thread *</type>
+        <definition>std::thread* BgzfMtReader::mReaderThread</definition>
+        <argsstring></argsstring>
+        <name>mReaderThread</name>
+        <qualifiedname>BgzfMtReader::mReaderThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="200" column="17" bodyfile="src/bgzf.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1a1ec53f83c42eac0ded6e591867d50191" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::thread * &gt;</type>
+        <definition>std::vector&lt;std::thread*&gt; BgzfMtReader::mPool</definition>
+        <argsstring></argsstring>
+        <name>mPool</name>
+        <qualifiedname>BgzfMtReader::mPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="201" column="17" bodyfile="src/bgzf.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1ab2e951f140ecaedc0d1111e4e65899e1" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex BgzfMtReader::mConsumeMtx</definition>
+        <argsstring></argsstring>
+        <name>mConsumeMtx</name>
+        <qualifiedname>BgzfMtReader::mConsumeMtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="203" column="16" bodyfile="src/bgzf.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1af4c9b162a77e2119ec1878cbdd602d42" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex BgzfMtReader::mProduceMtx</definition>
+        <argsstring></argsstring>
+        <name>mProduceMtx</name>
+        <qualifiedname>BgzfMtReader::mProduceMtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="203" column="28" bodyfile="src/bgzf.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1ab53aa58d024aadb0ea5c3887b513acc7" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex BgzfMtReader::mDecompMtx</definition>
+        <argsstring></argsstring>
+        <name>mDecompMtx</name>
+        <qualifiedname>BgzfMtReader::mDecompMtx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="203" column="40" bodyfile="src/bgzf.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1aabb14dbaa99b86ff493f61f66ad81c2c" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable BgzfMtReader::mConsumeCv</definition>
+        <argsstring></argsstring>
+        <name>mConsumeCv</name>
+        <qualifiedname>BgzfMtReader::mConsumeCv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="204" column="29" bodyfile="src/bgzf.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1ad4fac5895b050216e9352aeb97adf5ce" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable BgzfMtReader::mProduceCv</definition>
+        <argsstring></argsstring>
+        <name>mProduceCv</name>
+        <qualifiedname>BgzfMtReader::mProduceCv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="204" column="40" bodyfile="src/bgzf.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBgzfMtReader_1a2f1aa5f2807c4985211afb97022db2f2" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable BgzfMtReader::mDecompCv</definition>
+        <argsstring></argsstring>
+        <name>mDecompCv</name>
+        <qualifiedname>BgzfMtReader::mDecompCv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="204" column="51" bodyfile="src/bgzf.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBgzfMtReader_1a35b61e054961e9804bcb8d6485e9073c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BgzfMtReader::BgzfMtReader</definition>
+        <argsstring>(FILE *fp, int threadBudget=0)</argsstring>
+        <name>BgzfMtReader</name>
+        <qualifiedname>BgzfMtReader::BgzfMtReader</qualifiedname>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>threadBudget</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="51" column="5" bodyfile="src/bgzf.h" bodystart="51" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classBgzfMtReader_1aff2fa38aa587c5817a2fe287d9954f91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BgzfMtReader::~BgzfMtReader</definition>
+        <argsstring>()</argsstring>
+        <name>~BgzfMtReader</name>
+        <qualifiedname>BgzfMtReader::~BgzfMtReader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="68" column="5" bodyfile="src/bgzf.h" bodystart="68" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classBgzfMtReader_1a24d228983d8bf1f3bcf952d915edcfa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BgzfMtReader::read</definition>
+        <argsstring>(char *outBuf, int outBufSize)</argsstring>
+        <name>read</name>
+        <qualifiedname>BgzfMtReader::read</qualifiedname>
+        <param>
+          <type>char *</type>
+          <declname>outBuf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>outBufSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="78" column="9" bodyfile="src/bgzf.h" bodystart="78" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBgzfMtReader_1a4bb241d72e8decbe65b44d0d6324c6c1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BgzfMtReader::readerLoop</definition>
+        <argsstring>()</argsstring>
+        <name>readerLoop</name>
+        <qualifiedname>BgzfMtReader::readerLoop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="108" column="10" bodyfile="src/bgzf.h" bodystart="108" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classBgzfMtReader_1a55cfa7330d2503ff958eef2bf2d038cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BgzfMtReader::decompWorker</definition>
+        <argsstring>()</argsstring>
+        <name>decompWorker</name>
+        <qualifiedname>BgzfMtReader::decompWorker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="143" column="10" bodyfile="src/bgzf.h" bodystart="143" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classBgzfMtReader_1a2179d5e54e5ebfdde86a007aacf78817" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BgzfMtReader::claimSlot</definition>
+        <argsstring>(Slot **out)</argsstring>
+        <name>claimSlot</name>
+        <qualifiedname>BgzfMtReader::claimSlot</qualifiedname>
+        <param>
+          <type><ref refid="structBgzfMtReader_1_1Slot" kindref="compound">Slot</ref> **</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="170" column="10" bodyfile="src/bgzf.h" bodystart="170" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classBgzfMtReader_1a41024dc0fb9f432b51920dd09671b74c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BgzfMtReader::markDone</definition>
+        <argsstring>(Slot &amp;s)</argsstring>
+        <name>markDone</name>
+        <qualifiedname>BgzfMtReader::markDone</qualifiedname>
+        <param>
+          <type><ref refid="structBgzfMtReader_1_1Slot" kindref="compound">Slot</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bgzf.h" line="185" column="10" bodyfile="src/bgzf.h" bodystart="185" bodyend="189"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>BgzfMtReader</label>
+        <link refid="classBgzfMtReader"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mSlots</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BgzfMtReader::Slot</label>
+        <link refid="structBgzfMtReader_1_1Slot"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/bgzf.h" line="36" column="1" bodyfile="src/bgzf.h" bodystart="36" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classBgzfMtReader_1a35b61e054961e9804bcb8d6485e9073c" prot="public" virt="non-virtual"><scope>BgzfMtReader</scope><name>BgzfMtReader</name></member>
+      <member refid="classBgzfMtReader_1a2179d5e54e5ebfdde86a007aacf78817" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>claimSlot</name></member>
+      <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a4f34cc41fb5569cbeaabf07e15b7a8e2" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>COMPRESSED</name></member>
+      <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a00089ae9def2cc2ecf08ce1ffd0256bd" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>DECOMPRESSING</name></member>
+      <member refid="classBgzfMtReader_1a55cfa7330d2503ff958eef2bf2d038cf" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>decompWorker</name></member>
+      <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693aa3e913301755f8dda6ea49ae6b8d68a1" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>DONE</name></member>
+      <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a7f707eebdafa5e68ba217ba557a2ae22" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>FREE</name></member>
+      <member refid="classBgzfMtReader_1a41024dc0fb9f432b51920dd09671b74c" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>markDone</name></member>
+      <member refid="classBgzfMtReader_1aabb14dbaa99b86ff493f61f66ad81c2c" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mConsumeCv</name></member>
+      <member refid="classBgzfMtReader_1a2562478e5080c81552a82c50142e9100" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mConsumeIdx</name></member>
+      <member refid="classBgzfMtReader_1ab2e951f140ecaedc0d1111e4e65899e1" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mConsumeMtx</name></member>
+      <member refid="classBgzfMtReader_1a07264db665f9a0720fb3da8e41e8f767" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mConsumeOffset</name></member>
+      <member refid="classBgzfMtReader_1a2f1aa5f2807c4985211afb97022db2f2" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mDecompCv</name></member>
+      <member refid="classBgzfMtReader_1ab53aa58d024aadb0ea5c3887b513acc7" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mDecompMtx</name></member>
+      <member refid="classBgzfMtReader_1a9ef9a5cd59156ddd64b3de39e8e87fb2" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mFp</name></member>
+      <member refid="classBgzfMtReader_1a7063733b17ed8a7bdbc5fdf08879af81" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mMaxPool</name></member>
+      <member refid="classBgzfMtReader_1a1ec53f83c42eac0ded6e591867d50191" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mPool</name></member>
+      <member refid="classBgzfMtReader_1ad4fac5895b050216e9352aeb97adf5ce" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mProduceCv</name></member>
+      <member refid="classBgzfMtReader_1ad9fe79c25105be430e2f64229bf333e8" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mProduceIdx</name></member>
+      <member refid="classBgzfMtReader_1af4c9b162a77e2119ec1878cbdd602d42" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mProduceMtx</name></member>
+      <member refid="classBgzfMtReader_1a60f12801d6f3a632fc01c0fd63e27a6f" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mReaderThread</name></member>
+      <member refid="classBgzfMtReader_1ab166feef864ea34db3745a791abc30c8" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mRingSize</name></member>
+      <member refid="classBgzfMtReader_1aa37c9b5176467547760099e6b9cd2246" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mSlots</name></member>
+      <member refid="classBgzfMtReader_1a318dbd8fd1106cb591859a07c78113b7" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>mStop</name></member>
+      <member refid="classBgzfMtReader_1a24d228983d8bf1f3bcf952d915edcfa3" prot="public" virt="non-virtual"><scope>BgzfMtReader</scope><name>read</name></member>
+      <member refid="classBgzfMtReader_1a4bb241d72e8decbe65b44d0d6324c6c1" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>readerLoop</name></member>
+      <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693a2d25bfe502c35134b60f176bf93cd228" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>READY</name></member>
+      <member refid="classBgzfMtReader_1aee797ed97678328320db273ca1e75693" prot="private" virt="non-virtual"><scope>BgzfMtReader</scope><name>SlotState</name></member>
+      <member refid="classBgzfMtReader_1aff2fa38aa587c5817a2fe287d9954f91" prot="public" virt="non-virtual"><scope>BgzfMtReader</scope><name>~BgzfMtReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

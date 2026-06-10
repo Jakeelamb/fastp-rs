@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacecmdline_1_1detail" kind="namespace" language="C++">
+    <compoundname>cmdline::detail</compoundname>
+    <innerclass refid="classcmdline_1_1detail_1_1lexical__cast__t" prot="public">cmdline::detail::lexical_cast_t</innerclass>
+    <innerclass refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01Source_00_01true_01_4" prot="public">cmdline::detail::lexical_cast_t&lt; Target, Source, true &gt;</innerclass>
+    <innerclass refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01std_1_1string_00_01Source_00_01false_01_4" prot="public">cmdline::detail::lexical_cast_t&lt; std::string, Source, false &gt;</innerclass>
+    <innerclass refid="classcmdline_1_1detail_1_1lexical__cast__t_3_01Target_00_01std_1_1string_00_01false_01_4" prot="public">cmdline::detail::lexical_cast_t&lt; Target, std::string, false &gt;</innerclass>
+    <innerclass refid="structcmdline_1_1detail_1_1is__same" prot="public">cmdline::detail::is_same</innerclass>
+    <innerclass refid="structcmdline_1_1detail_1_1is__same_3_01T_00_01T_01_4" prot="public">cmdline::detail::is_same&lt; T, T &gt;</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecmdline_1_1detail_1a5cd4d0bedba599ae78fc3b477d5b89fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Target</type>
+          </param>
+          <param>
+            <type>typename Source</type>
+          </param>
+        </templateparamlist>
+        <type>Target</type>
+        <definition>Target cmdline::detail::lexical_cast</definition>
+        <argsstring>(const Source &amp;arg)</argsstring>
+        <name>lexical_cast</name>
+        <qualifiedname>cmdline::detail::lexical_cast</qualifiedname>
+        <param>
+          <type>const Source &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="100" column="8" bodyfile="src/cmdline.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1_1detail_1a531047ed8f52b62caae26ab166520987" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string cmdline::detail::demangle</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>demangle</name>
+        <qualifiedname>cmdline::detail::demangle</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="105" column="27" bodyfile="src/cmdline.h" bodystart="105" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1_1detail_1a9e3c4f02792dba7836cb5d933bf8665f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string cmdline::detail::readable_typename</definition>
+        <argsstring>()</argsstring>
+        <name>readable_typename</name>
+        <qualifiedname>cmdline::detail::readable_typename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="115" column="13" bodyfile="src/cmdline.h" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1_1detail_1a0d8a8c2598d920091d2c1055516f8005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string cmdline::detail::default_value</definition>
+        <argsstring>(T def)</argsstring>
+        <name>default_value</name>
+        <qualifiedname>cmdline::detail::default_value</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>def</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="121" column="13" bodyfile="src/cmdline.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacecmdline_1_1detail_1aeaaa18e134cb1066b14d447a43c6386e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string cmdline::detail::readable_typename&lt; std::string &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>readable_typename&lt; std::string &gt;</name>
+        <qualifiedname>cmdline::detail::readable_typename&lt; std::string &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/cmdline.h" line="127" column="8" bodyfile="src/cmdline.h" bodystart="127" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cmdline.h" line="44" column="1"/>
+  </compounddef>
+</doxygen>

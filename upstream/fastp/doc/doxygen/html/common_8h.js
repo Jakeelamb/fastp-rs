@@ -1,0 +1,27 @@
+var common_8h =
+[
+    [ "_DEBUG", "common_8h.html#a152fc5203b90b1cff03b7b78579b8f52", null ],
+    [ "FASTP_VER", "common_8h.html#a87c86243c299a1db8d0e5038d438ac9a", null ],
+    [ "int16", "common_8h.html#a4355d16fcf9f644c9ac84293f0b1801f", null ],
+    [ "int32", "common_8h.html#a56f1a81c92849566ae864511088eb7e8", null ],
+    [ "int64", "common_8h.html#a565242d561045a1020e03cb560dcf774", null ],
+    [ "int8", "common_8h.html#ae47c588f3ab8c61121c1c7ab7edc47cd", null ],
+    [ "uint16", "common_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e", null ],
+    [ "uint32", "common_8h.html#a1134b580f8da4de94ca6b1de4d37975e", null ],
+    [ "uint64", "common_8h.html#a5975ce0896ee5ec5db2f1a411620a51a", null ],
+    [ "uint8", "common_8h.html#adde6aaee8457bee49c2a92621fe22b79", null ],
+    [ "ATCG_BASES", "common_8h.html#afd407574c55077093bccf61ea2df9f33", null ],
+    [ "FAIL_ADAPTER_DIMER", "common_8h.html#a5ce8461e9a1e188c3e5c844b821abb86", null ],
+    [ "FAIL_COMPLEXITY", "common_8h.html#ade3d51417c3d348c98e0eab75effd5e6", null ],
+    [ "FAIL_LENGTH", "common_8h.html#a8f231abf36def208f31f59426009d874", null ],
+    [ "FAIL_N_BASE", "common_8h.html#a180425a3a63300cdfcd8dcdc2c76101e", null ],
+    [ "FAIL_OVERLAP", "common_8h.html#a516da73383244c14769e19e4a7d9225f", null ],
+    [ "FAIL_POLY_X", "common_8h.html#ab58b4f24b1b469a3ca88dcfaa64be1ec", null ],
+    [ "FAIL_QUALITY", "common_8h.html#a00c2e23c2b29b775c2f1a79d5420badb", null ],
+    [ "FAIL_TOO_LONG", "common_8h.html#ab23168d51983d2f29062168cdf3514e8", null ],
+    [ "FAILED_TYPES", "common_8h.html#ace09a16677423cf8d67aa596f688ffa0", null ],
+    [ "FILTER_RESULT_TYPES", "common_8h.html#a8c5a7ac041084fa41637b7a74e177763", null ],
+    [ "PACK_IN_MEM_LIMIT", "common_8h.html#a3acefed9a72457805a26119394fa612e", null ],
+    [ "PACK_SIZE", "common_8h.html#a9ed9b00254dbca17327c599227b74634", null ],
+    [ "PASS_FILTER", "common_8h.html#a5fc9c45769af403dc3f7e650652da277", null ]
+];

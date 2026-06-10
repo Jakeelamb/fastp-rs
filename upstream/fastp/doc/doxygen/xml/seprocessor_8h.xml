@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="seprocessor_8h" kind="file" language="C++">
+    <compoundname>seprocessor.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="read_8h" local="yes">read.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">condition_variable</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">thread</includes>
+    <includes refid="options_8h" local="yes">options.h</includes>
+    <includes refid="threadconfig_8h" local="yes">threadconfig.h</includes>
+    <includes refid="filter_8h" local="yes">filter.h</includes>
+    <includes refid="umiprocessor_8h" local="yes">umiprocessor.h</includes>
+    <includes refid="writerthread_8h" local="yes">writerthread.h</includes>
+    <includes refid="duplicate_8h" local="yes">duplicate.h</includes>
+    <includes refid="singleproducersingleconsumerlist_8h" local="yes">singleproducersingleconsumerlist.h</includes>
+    <includes refid="readpool_8h" local="yes">readpool.h</includes>
+    <includedby refid="filter_8cpp" local="yes">src/filter.cpp</includedby>
+    <includedby refid="processor_8cpp" local="yes">src/processor.cpp</includedby>
+    <includedby refid="seprocessor_8cpp" local="yes">src/seprocessor.cpp</includedby>
+    <incdepgraph>
+      <node id="19">
+        <label>common.h</label>
+        <link refid="common_8h"/>
+      </node>
+      <node id="29">
+        <label>duplicate.h</label>
+        <link refid="duplicate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>filter.h</label>
+        <link refid="filter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>filterresult.h</label>
+        <link refid="filterresult_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>read.h</label>
+        <link refid="read_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>readpool.h</label>
+        <link refid="readpool_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/seprocessor.h</label>
+        <link refid="seprocessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sequence.h</label>
+        <link refid="sequence_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>singleproducersingleconsumerlist.h</label>
+        <link refid="singleproducersingleconsumerlist_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stats.h</label>
+        <link refid="stats_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>threadconfig.h</label>
+        <link refid="threadconfig_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>umiprocessor.h</label>
+        <link refid="umiprocessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>writerthread.h</label>
+        <link refid="writerthread_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>atomic</label>
+      </node>
+      <node id="25">
+        <label>cassert</label>
+      </node>
+      <node id="11">
+        <label>condition_variable</label>
+      </node>
+      <node id="10">
+        <label>cstdlib</label>
+      </node>
+      <node id="7">
+        <label>fstream</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>libdeflate.h</label>
+      </node>
+      <node id="15">
+        <label>map</label>
+      </node>
+      <node id="24">
+        <label>memory.h</label>
+      </node>
+      <node id="12">
+        <label>mutex</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>thread</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/processor.cpp</label>
+        <link refid="processor_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/seprocessor.cpp</label>
+        <link refid="seprocessor_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/seprocessor.h</label>
+        <link refid="seprocessor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSingleEndProcessor" prot="public">SingleEndProcessor</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="seprocessor_8h_1a8c9151c1e412cdb02288e77d0c3e4d5d" prot="public" static="no">
+        <type>struct <ref refid="seprocessor_8h_1a8c9151c1e412cdb02288e77d0c3e4d5d" kindref="member">ReadRepository</ref></type>
+        <definition>typedef struct ReadRepository ReadRepository</definition>
+        <argsstring></argsstring>
+        <name>ReadRepository</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/seprocessor.h" line="23" column="29" bodyfile="src/seprocessor.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SE_PROCESSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SE_PROCESSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="read_8h" kindref="compound">read.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;condition_variable&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="options_8h" kindref="compound">options.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="threadconfig_8h" kindref="compound">threadconfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="filter_8h" kindref="compound">filter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="umiprocessor_8h" kindref="compound">umiprocessor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="writerthread_8h" kindref="compound">writerthread.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="duplicate_8h" kindref="compound">duplicate.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="singleproducersingleconsumerlist_8h" kindref="compound">singleproducersingleconsumerlist.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="readpool_8h" kindref="compound">readpool.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="seprocessor_8h_1a8c9151c1e412cdb02288e77d0c3e4d5d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="seprocessor_8h_1a8c9151c1e412cdb02288e77d0c3e4d5d" kindref="member">ReadRepository</ref><sp/><ref refid="seprocessor_8h_1a8c9151c1e412cdb02288e77d0c3e4d5d" kindref="member">ReadRepository</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classSingleEndProcessor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSingleEndProcessor_1a23517a53bf114797efd701582dee0bd6" kindref="member">SingleEndProcessor</ref>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSingleEndProcessor_1a23517a53bf114797efd701582dee0bd6" kindref="member">SingleEndProcessor</ref>(<ref refid="classOptions" kindref="compound">Options</ref>*<sp/>opt);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSingleEndProcessor_1a200e744048328418b3f4c5e4cfe1e9db" kindref="member">~SingleEndProcessor</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1a0a884b7985b3b5eca45bf371fbfed1b7" kindref="member">process</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1aec4c12b0c0136eb961a5134a645b8714" kindref="member">processSingleEnd</ref>(<ref refid="structReadPack" kindref="compound">ReadPack</ref>*<sp/>pack,<sp/><ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref>*<sp/>config);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1aa705b2b4e1bc9f4b321e835bcc3425b0" kindref="member">readerTask</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1af9bb82a7162e6a3ba59d52013262a5ac" kindref="member">processorTask</ref>(<ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref>*<sp/>config);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1a4ba145f919e7d68855a436c31b6c8468" kindref="member">initConfig</ref>(<ref refid="classThreadConfig" kindref="compound">ThreadConfig</ref>*<sp/>config);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1a0d0fdb7d4c150cd3e2f8e98df15e8062" kindref="member">initOutput</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1ae602db756c00dbab997e5f9e41ce1ff2" kindref="member">closeOutput</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1aab7f54169933a17185add9ac7118aeb3" kindref="member">writerTask</ref>(<ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/>config);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1a7a56680ab84e4dd860fa1eebe4d5512c" kindref="member">recycleToPool</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tid,<sp/><ref refid="classRead" kindref="compound">Read</ref>*<sp/>r);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classSingleEndProcessor_1a6059329cf8ba803109dc3e2d36761e0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOptions" kindref="compound">Options</ref>*<sp/><ref refid="classSingleEndProcessor_1a6059329cf8ba803109dc3e2d36761e0a" kindref="member">mOptions</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classSingleEndProcessor_1a890cdf4098c90cb744c8570e16179137" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>atomic_bool<sp/><ref refid="classSingleEndProcessor_1a890cdf4098c90cb744c8570e16179137" kindref="member">mReaderFinished</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classSingleEndProcessor_1a1402e30a474628f53eec6d9856e69aa4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">alignas</highlight><highlight class="normal">(128)<sp/>atomic_int<sp/><ref refid="classSingleEndProcessor_1a1402e30a474628f53eec6d9856e69aa4" kindref="member">mFinishedThreads</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classSingleEndProcessor_1ad912dbe7a716206d219acda8b7fc8353" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFilter" kindref="compound">Filter</ref>*<sp/><ref refid="classSingleEndProcessor_1ad912dbe7a716206d219acda8b7fc8353" kindref="member">mFilter</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classSingleEndProcessor_1a65df518c3160d8f3044e4c7a2c8290a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUmiProcessor" kindref="compound">UmiProcessor</ref>*<sp/><ref refid="classSingleEndProcessor_1a65df518c3160d8f3044e4c7a2c8290a7" kindref="member">mUmiProcessor</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classSingleEndProcessor_1a1fad72710625479ad4d40ac6446abe2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classSingleEndProcessor_1a1fad72710625479ad4d40ac6446abe2a" kindref="member">mLeftWriter</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classSingleEndProcessor_1a0f60e8f7f2f61ac138acd6623616bf4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWriterThread" kindref="compound">WriterThread</ref>*<sp/><ref refid="classSingleEndProcessor_1a0f60e8f7f2f61ac138acd6623616bf4d" kindref="member">mFailedWriter</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classSingleEndProcessor_1ae0bb52b08011d7ed9b550c1764f4befc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDuplicate" kindref="compound">Duplicate</ref>*<sp/><ref refid="classSingleEndProcessor_1ae0bb52b08011d7ed9b550c1764f4befc" kindref="member">mDuplicate</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classSingleEndProcessor_1a830dac4b4a410f01f30c412b0c54cfa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSingleProducerSingleConsumerList" kindref="compound">SingleProducerSingleConsumerList&lt;ReadPack*&gt;</ref>**<sp/><ref refid="classSingleEndProcessor_1a830dac4b4a410f01f30c412b0c54cfa5" kindref="member">mInputLists</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classSingleEndProcessor_1a73ae44ab8a034d023e5aaade84eeda36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classSingleEndProcessor_1a73ae44ab8a034d023e5aaade84eeda36" kindref="member">mPackReadCounter</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classSingleEndProcessor_1a7d3c968d3c4cd97f1492562ed07b7bed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">alignas</highlight><highlight class="normal">(128)<sp/>atomic_long<sp/><ref refid="classSingleEndProcessor_1a7d3c968d3c4cd97f1492562ed07b7bed" kindref="member">mPackProcessedCounter</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classSingleEndProcessor_1a069271c1e226a4a70af4dfe7af524d01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReadPool" kindref="compound">ReadPool</ref>*<sp/><ref refid="classSingleEndProcessor_1a069271c1e226a4a70af4dfe7af524d01" kindref="member">mReadPool</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classSingleEndProcessor_1a6a3b727418f1d61c222f469fda5b5ad2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/><ref refid="classSingleEndProcessor_1a6a3b727418f1d61c222f469fda5b5ad2" kindref="member">mBackpressureMtx</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classSingleEndProcessor_1a7510e45c48aa401028e5a6db13173b9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::condition_variable<sp/><ref refid="classSingleEndProcessor_1a7510e45c48aa401028e5a6db13173b9d" kindref="member">mBackpressureCV</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/seprocessor.h"/>
+  </compounddef>
+</doxygen>

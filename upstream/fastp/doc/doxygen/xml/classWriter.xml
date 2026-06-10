@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classWriter" kind="class" language="C++" prot="public">
+    <compoundname>Writer</compoundname>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWriter_1a9aabedc94e657100c37da5a8075e743c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Writer::mFilename</definition>
+        <argsstring></argsstring>
+        <name>mFilename</name>
+        <qualifiedname>Writer::mFilename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="59" column="8" bodyfile="src/writer.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1a6e804f6274352e8a9ee3e818c777ce5f" prot="private" static="no" mutable="no">
+        <type>libdeflate_compressor *</type>
+        <definition>libdeflate_compressor* Writer::mCompressor</definition>
+        <argsstring></argsstring>
+        <name>mCompressor</name>
+        <qualifiedname>Writer::mCompressor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="60" column="23" bodyfile="src/writer.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1a8c8f56c5634c3fb2c54d0f9079ef563d" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Writer::mFP</definition>
+        <argsstring></argsstring>
+        <name>mFP</name>
+        <qualifiedname>Writer::mFP</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="62" column="6" bodyfile="src/writer.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1ac50ed9fcea702bd305af0134c1241653" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Writer::mZipped</definition>
+        <argsstring></argsstring>
+        <name>mZipped</name>
+        <qualifiedname>Writer::mZipped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="63" column="6" bodyfile="src/writer.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1ab34675ab54a10f7e543d634cad1cabe1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Writer::mCompression</definition>
+        <argsstring></argsstring>
+        <name>mCompression</name>
+        <qualifiedname>Writer::mCompression</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="64" column="5" bodyfile="src/writer.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1af562afdb17e25b94319e2bf9b582d581" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Writer::haveToClose</definition>
+        <argsstring></argsstring>
+        <name>haveToClose</name>
+        <qualifiedname>Writer::haveToClose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="65" column="6" bodyfile="src/writer.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1af4bdccd0fdf49f886fcf89b85dd9fbbf" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Writer::mBuffer</definition>
+        <argsstring></argsstring>
+        <name>mBuffer</name>
+        <qualifiedname>Writer::mBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="66" column="6" bodyfile="src/writer.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1a2f8b44c1d8f2ad7c9c41bea19641ee49" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Writer::mBufDataLen</definition>
+        <argsstring></argsstring>
+        <name>mBufDataLen</name>
+        <qualifiedname>Writer::mBufDataLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="67" column="8" bodyfile="src/writer.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1a47cd419ed1791c68cd1678366e58eeaf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Writer::mBufSize</definition>
+        <argsstring></argsstring>
+        <name>mBufSize</name>
+        <qualifiedname>Writer::mBufSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="68" column="8" bodyfile="src/writer.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1a411c52572201d85247bacc7e38cacc6e" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* Writer::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>Writer::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="69" column="9" bodyfile="src/writer.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWriter_1aea187c1e3ed4f57924dca2944912c45c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Writer::mSTDOUT</definition>
+        <argsstring></argsstring>
+        <name>mSTDOUT</name>
+        <qualifiedname>Writer::mSTDOUT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="70" column="6" bodyfile="src/writer.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWriter_1a164ddf3e7d126f8139d8194fe9cb2095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Writer::Writer</definition>
+        <argsstring>(Options *opt, string filename, int compression, bool isSTDOUT=false)</argsstring>
+        <name>Writer</name>
+        <qualifiedname>Writer::Writer</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compression</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isSTDOUT</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="41" column="1" bodyfile="src/writer.cpp" bodystart="29" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1a6f57399b94731301d267ce10a2f52ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Writer::~Writer</definition>
+        <argsstring>()</argsstring>
+        <name>~Writer</name>
+        <qualifiedname>Writer::~Writer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="42" column="1" bodyfile="src/writer.cpp" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1aa249dd7afcaf68cb4be413d4902d0056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Writer::isZipped</definition>
+        <argsstring>()</argsstring>
+        <name>isZipped</name>
+        <qualifiedname>Writer::isZipped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="43" column="6" bodyfile="src/writer.cpp" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1ae709c4e7ef43a4059f2553b7cb206c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Writer::writeString</definition>
+        <argsstring>(const string &amp;str)</argsstring>
+        <name>writeString</name>
+        <qualifiedname>Writer::writeString</qualifiedname>
+        <param>
+          <type>const string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="44" column="6" bodyfile="src/writer.cpp" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1aaff84ae022ac5097db2ed748c54b9c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Writer::writeString</definition>
+        <argsstring>(string *str)</argsstring>
+        <name>writeString</name>
+        <qualifiedname>Writer::writeString</qualifiedname>
+        <param>
+          <type>string *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="45" column="6" bodyfile="src/writer.cpp" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1ac43d0bd4db3024ada19e004ba0db11cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Writer::write</definition>
+        <argsstring>(const char *strdata, size_t size)</argsstring>
+        <name>write</name>
+        <qualifiedname>Writer::write</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>strdata</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="46" column="6" bodyfile="src/writer.cpp" bodystart="98" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1a85853ea21997297930329fd009718c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Writer::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>Writer::flush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="47" column="6" bodyfile="src/writer.cpp" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1ad74f455485d331512e5cc005963c30e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Writer::filename</definition>
+        <argsstring>()</argsstring>
+        <name>filename</name>
+        <qualifiedname>Writer::filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="48" column="8" bodyfile="src/writer.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classWriter_1a142d2601b0565c29c1ae7a5cd8a72184" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Writer::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>Writer::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="51" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classWriter_1a3c06b4a50402dfcbe88507805978f9fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Writer::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>Writer::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="54" column="6" bodyfile="src/writer.cpp" bodystart="61" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1ac26d0fb8f037786294e5669c3fb68fe4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Writer::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>Writer::close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="55" column="6" bodyfile="src/writer.cpp" bodystart="135" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classWriter_1a2fb2cf39ab547db41dc695d7a8027a7e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Writer::writeInternal</definition>
+        <argsstring>(const char *strdata, size_t size)</argsstring>
+        <name>writeInternal</name>
+        <qualifiedname>Writer::writeInternal</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>strdata</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/writer.h" line="56" column="6" bodyfile="src/writer.cpp" bodystart="110" bodyend="133"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+      <node id="1">
+        <label>Writer</label>
+        <link refid="classWriter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/writer.h" line="39" column="1" bodyfile="src/writer.h" bodystart="39" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classWriter_1ac26d0fb8f037786294e5669c3fb68fe4" prot="private" virt="non-virtual"><scope>Writer</scope><name>close</name></member>
+      <member refid="classWriter_1ad74f455485d331512e5cc005963c30e8" prot="public" virt="non-virtual"><scope>Writer</scope><name>filename</name></member>
+      <member refid="classWriter_1a85853ea21997297930329fd009718c05" prot="public" virt="non-virtual"><scope>Writer</scope><name>flush</name></member>
+      <member refid="classWriter_1af562afdb17e25b94319e2bf9b582d581" prot="private" virt="non-virtual"><scope>Writer</scope><name>haveToClose</name></member>
+      <member refid="classWriter_1a3c06b4a50402dfcbe88507805978f9fa" prot="private" virt="non-virtual"><scope>Writer</scope><name>init</name></member>
+      <member refid="classWriter_1aa249dd7afcaf68cb4be413d4902d0056" prot="public" virt="non-virtual"><scope>Writer</scope><name>isZipped</name></member>
+      <member refid="classWriter_1a2f8b44c1d8f2ad7c9c41bea19641ee49" prot="private" virt="non-virtual"><scope>Writer</scope><name>mBufDataLen</name></member>
+      <member refid="classWriter_1af4bdccd0fdf49f886fcf89b85dd9fbbf" prot="private" virt="non-virtual"><scope>Writer</scope><name>mBuffer</name></member>
+      <member refid="classWriter_1a47cd419ed1791c68cd1678366e58eeaf" prot="private" virt="non-virtual"><scope>Writer</scope><name>mBufSize</name></member>
+      <member refid="classWriter_1ab34675ab54a10f7e543d634cad1cabe1" prot="private" virt="non-virtual"><scope>Writer</scope><name>mCompression</name></member>
+      <member refid="classWriter_1a6e804f6274352e8a9ee3e818c777ce5f" prot="private" virt="non-virtual"><scope>Writer</scope><name>mCompressor</name></member>
+      <member refid="classWriter_1a9aabedc94e657100c37da5a8075e743c" prot="private" virt="non-virtual"><scope>Writer</scope><name>mFilename</name></member>
+      <member refid="classWriter_1a8c8f56c5634c3fb2c54d0f9079ef563d" prot="private" virt="non-virtual"><scope>Writer</scope><name>mFP</name></member>
+      <member refid="classWriter_1a411c52572201d85247bacc7e38cacc6e" prot="private" virt="non-virtual"><scope>Writer</scope><name>mOptions</name></member>
+      <member refid="classWriter_1aea187c1e3ed4f57924dca2944912c45c" prot="private" virt="non-virtual"><scope>Writer</scope><name>mSTDOUT</name></member>
+      <member refid="classWriter_1ac50ed9fcea702bd305af0134c1241653" prot="private" virt="non-virtual"><scope>Writer</scope><name>mZipped</name></member>
+      <member refid="classWriter_1a142d2601b0565c29c1ae7a5cd8a72184" prot="public" virt="non-virtual"><scope>Writer</scope><name>test</name></member>
+      <member refid="classWriter_1ac43d0bd4db3024ada19e004ba0db11cd" prot="public" virt="non-virtual"><scope>Writer</scope><name>write</name></member>
+      <member refid="classWriter_1a2fb2cf39ab547db41dc695d7a8027a7e" prot="private" virt="non-virtual"><scope>Writer</scope><name>writeInternal</name></member>
+      <member refid="classWriter_1a164ddf3e7d126f8139d8194fe9cb2095" prot="public" virt="non-virtual"><scope>Writer</scope><name>Writer</name></member>
+      <member refid="classWriter_1ae709c4e7ef43a4059f2553b7cb206c41" prot="public" virt="non-virtual"><scope>Writer</scope><name>writeString</name></member>
+      <member refid="classWriter_1aaff84ae022ac5097db2ed748c54b9c1c" prot="public" virt="non-virtual"><scope>Writer</scope><name>writeString</name></member>
+      <member refid="classWriter_1a6f57399b94731301d267ce10a2f52ea3" prot="public" virt="non-virtual"><scope>Writer</scope><name>~Writer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

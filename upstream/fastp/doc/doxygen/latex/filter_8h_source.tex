@@ -1,0 +1,38 @@
+\doxysection{filter.\+h}
+\hypertarget{filter_8h_source}{}\label{filter_8h_source}\index{src/filter.h@{src/filter.h}}
+\doxymbox{\hyperlink{filter_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FILTER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FILTER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{read_8h}{read.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classFilter_a92fa6d109e4b8a798e1f3a1b3bc0d651}{Filter}}\{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \doxymbox{\hyperlink{classFilter_a92fa6d109e4b8a798e1f3a1b3bc0d651}{Filter}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt);}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{classFilter_a502ee334d42eac3edbaf32b599f9c35e}{\string~Filter}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classFilter_ad0ed0d10583bb939f9451052f9cce930}{passFilter}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFilter_ad621657b7da9b0387447c4694e1db157}{passLowComplexityFilter}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r);}
+\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{classRead}{Read}}*\ \doxymbox{\hyperlink{classFilter_a2eee564e8d970850c1f87d06e3e5b55c}{trimAndCut}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r,\ \textcolor{keywordtype}{int}\ front,\ \textcolor{keywordtype}{int}\ tail,\ \textcolor{keywordtype}{int}\&\ frontTrimmed);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFilter_af529fbec75e362270bc1db6f483847b0}{filterByIndex}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFilter_af529fbec75e362270bc1db6f483847b0}{filterByIndex}}(\doxymbox{\hyperlink{classRead}{Read}}*\ r1,\ \doxymbox{\hyperlink{classRead}{Read}}*\ r2);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFilter_a6bd65071e3f2f8f715f79968dc7148b2}{test}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFilter_a67f3a45429fbef9f6ce8bcb9dd04f91e}{match}}(vector<string>\&\ list,\ \textcolor{keywordtype}{string}\ target,\ \textcolor{keywordtype}{int}\ threshold);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classFilter_af59e53198737709d138fbe29a5332655}{mOptions}};}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

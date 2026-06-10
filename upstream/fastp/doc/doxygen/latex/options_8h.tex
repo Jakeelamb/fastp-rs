@@ -1,0 +1,106 @@
+\doxysection{src/\+options.h File Reference}
+\hypertarget{options_8h}{}\label{options_8h}\index{src/options.h@{src/options.h}}
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$map$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classMergeOptions}{Merge\+Options}}
+\item 
+class \doxymbox{\hyperlink{classDuplicationOptions}{Duplication\+Options}}
+\item 
+class \doxymbox{\hyperlink{classIndexFilterOptions}{Index\+Filter\+Options}}
+\item 
+class \doxymbox{\hyperlink{classLowComplexityFilterOptions}{Low\+Complexity\+Filter\+Options}}
+\item 
+class \doxymbox{\hyperlink{classOverrepresentedSequenceAnasysOptions}{Overrepresented\+Sequence\+Anasys\+Options}}
+\item 
+class \doxymbox{\hyperlink{classPolyGTrimmerOptions}{Poly\+GTrimmer\+Options}}
+\item 
+class \doxymbox{\hyperlink{classPolyXTrimmerOptions}{Poly\+XTrimmer\+Options}}
+\item 
+class \doxymbox{\hyperlink{classUMIOptions}{UMIOptions}}
+\item 
+class \doxymbox{\hyperlink{classCorrectionOptions}{Correction\+Options}}
+\item 
+class \doxymbox{\hyperlink{classQualityCutOptions}{Quality\+Cut\+Options}}
+\item 
+class \doxymbox{\hyperlink{classSplitOptions}{Split\+Options}}
+\item 
+class \doxymbox{\hyperlink{classAdapterOptions}{Adapter\+Options}}
+\item 
+class \doxymbox{\hyperlink{classTrimmingOptions}{Trimming\+Options}}
+\item 
+class \doxymbox{\hyperlink{classQualityFilteringOptions}{Quality\+Filtering\+Options}}
+\item 
+class \doxymbox{\hyperlink{classReadLengthFilteringOptions}{Read\+Length\+Filtering\+Options}}
+\item 
+class \doxymbox{\hyperlink{classOptions}{Options}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{options_8h_adfaeb64fa9964f7883cc83df0c4a837b}{UMI\+\_\+\+LOC\+\_\+\+NONE}}~0
+\item 
+\+\#define \doxymbox{\hyperlink{options_8h_a7f21eb844e334922fe953a98534c1e3f}{UMI\+\_\+\+LOC\+\_\+\+INDEX1}}~1
+\item 
+\+\#define \doxymbox{\hyperlink{options_8h_a191ce48412c4baeab455ccfd4e56d8bb}{UMI\+\_\+\+LOC\+\_\+\+INDEX2}}~2
+\item 
+\+\#define \doxymbox{\hyperlink{options_8h_a47c65cefbd05003c253b1ce56867993d}{UMI\+\_\+\+LOC\+\_\+\+READ1}}~3
+\item 
+\+\#define \doxymbox{\hyperlink{options_8h_a8023d8803b58cbca4838b63fdf65eb03}{UMI\+\_\+\+LOC\+\_\+\+READ2}}~4
+\item 
+\+\#define \doxymbox{\hyperlink{options_8h_a8949a3db0997bcee09260efb4b46c46e}{UMI\+\_\+\+LOC\+\_\+\+PER\+\_\+\+INDEX}}~5
+\item 
+\+\#define \doxymbox{\hyperlink{options_8h_a3cb6ab26c4387d164cfce0eff0f3ab42}{UMI\+\_\+\+LOC\+\_\+\+PER\+\_\+\+READ}}~6
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{options_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{options_8h_a7f21eb844e334922fe953a98534c1e3f}\index{options.h@{options.h}!UMI\_LOC\_INDEX1@{UMI\_LOC\_INDEX1}}
+\index{UMI\_LOC\_INDEX1@{UMI\_LOC\_INDEX1}!options.h@{options.h}}
+\doxysubsubsection{\texorpdfstring{UMI\_LOC\_INDEX1}{UMI\_LOC\_INDEX1}}
+{\footnotesize\ttfamily \label{options_8h_a7f21eb844e334922fe953a98534c1e3f} 
+\+\#define UMI\+\_\+\+LOC\+\_\+\+INDEX1~1}
+
+\Hypertarget{options_8h_a191ce48412c4baeab455ccfd4e56d8bb}\index{options.h@{options.h}!UMI\_LOC\_INDEX2@{UMI\_LOC\_INDEX2}}
+\index{UMI\_LOC\_INDEX2@{UMI\_LOC\_INDEX2}!options.h@{options.h}}
+\doxysubsubsection{\texorpdfstring{UMI\_LOC\_INDEX2}{UMI\_LOC\_INDEX2}}
+{\footnotesize\ttfamily \label{options_8h_a191ce48412c4baeab455ccfd4e56d8bb} 
+\+\#define UMI\+\_\+\+LOC\+\_\+\+INDEX2~2}
+
+\Hypertarget{options_8h_adfaeb64fa9964f7883cc83df0c4a837b}\index{options.h@{options.h}!UMI\_LOC\_NONE@{UMI\_LOC\_NONE}}
+\index{UMI\_LOC\_NONE@{UMI\_LOC\_NONE}!options.h@{options.h}}
+\doxysubsubsection{\texorpdfstring{UMI\_LOC\_NONE}{UMI\_LOC\_NONE}}
+{\footnotesize\ttfamily \label{options_8h_adfaeb64fa9964f7883cc83df0c4a837b} 
+\+\#define UMI\+\_\+\+LOC\+\_\+\+NONE~0}
+
+\Hypertarget{options_8h_a8949a3db0997bcee09260efb4b46c46e}\index{options.h@{options.h}!UMI\_LOC\_PER\_INDEX@{UMI\_LOC\_PER\_INDEX}}
+\index{UMI\_LOC\_PER\_INDEX@{UMI\_LOC\_PER\_INDEX}!options.h@{options.h}}
+\doxysubsubsection{\texorpdfstring{UMI\_LOC\_PER\_INDEX}{UMI\_LOC\_PER\_INDEX}}
+{\footnotesize\ttfamily \label{options_8h_a8949a3db0997bcee09260efb4b46c46e} 
+\+\#define UMI\+\_\+\+LOC\+\_\+\+PER\+\_\+\+INDEX~5}
+
+\Hypertarget{options_8h_a3cb6ab26c4387d164cfce0eff0f3ab42}\index{options.h@{options.h}!UMI\_LOC\_PER\_READ@{UMI\_LOC\_PER\_READ}}
+\index{UMI\_LOC\_PER\_READ@{UMI\_LOC\_PER\_READ}!options.h@{options.h}}
+\doxysubsubsection{\texorpdfstring{UMI\_LOC\_PER\_READ}{UMI\_LOC\_PER\_READ}}
+{\footnotesize\ttfamily \label{options_8h_a3cb6ab26c4387d164cfce0eff0f3ab42} 
+\+\#define UMI\+\_\+\+LOC\+\_\+\+PER\+\_\+\+READ~6}
+
+\Hypertarget{options_8h_a47c65cefbd05003c253b1ce56867993d}\index{options.h@{options.h}!UMI\_LOC\_READ1@{UMI\_LOC\_READ1}}
+\index{UMI\_LOC\_READ1@{UMI\_LOC\_READ1}!options.h@{options.h}}
+\doxysubsubsection{\texorpdfstring{UMI\_LOC\_READ1}{UMI\_LOC\_READ1}}
+{\footnotesize\ttfamily \label{options_8h_a47c65cefbd05003c253b1ce56867993d} 
+\+\#define UMI\+\_\+\+LOC\+\_\+\+READ1~3}
+
+\Hypertarget{options_8h_a8023d8803b58cbca4838b63fdf65eb03}\index{options.h@{options.h}!UMI\_LOC\_READ2@{UMI\_LOC\_READ2}}
+\index{UMI\_LOC\_READ2@{UMI\_LOC\_READ2}!options.h@{options.h}}
+\doxysubsubsection{\texorpdfstring{UMI\_LOC\_READ2}{UMI\_LOC\_READ2}}
+{\footnotesize\ttfamily \label{options_8h_a8023d8803b58cbca4838b63fdf65eb03} 
+\+\#define UMI\+\_\+\+LOC\+\_\+\+READ2~4}
+

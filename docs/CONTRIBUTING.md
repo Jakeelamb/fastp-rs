@@ -1,0 +1,29 @@
+# Contributing
+
+## Local checks
+
+```bash
+cargo test
+cargo clippy --all-targets -- -D warnings
+```
+
+## Docs you might need
+
+| Doc | Purpose |
+|-----|---------|
+| [CONTEXT.md](../CONTEXT.md) | Parity vocabulary: CLI strictness, hybrid output contract, perf SLO shape, CI gates, gold fixtures **A/B**, semantic FASTQ **F1/F2**, JSON contracts, HTML smoke. |
+| [PARITY.md](PARITY.md) | Feature-level matrix vs upstream fastp. |
+| [BENCHMARKS.md](BENCHMARKS.md) | Pinned upstream binary, throughput/RSS methodology, result tables, **CI workflow** entry point. |
+| [Contracts](../contracts/README.md) | Versioned JSON allowlist stubs for strict report tests. |
+
+## CI — opt-in heavy jobs
+
+Workflow **[`.github/workflows/bench.yml`](../.github/workflows/bench.yml)** runs on a **nightly** schedule, **`workflow_dispatch`**, and when a pull request on **this repository** (not forks) has the **`bench`** label (exact string—create it under *Issues → Labels* if it is missing).
+
+The job downloads the **pinned** upstream `fastp` Linux binary from **opengene.org** (SHA256-checked; see [BENCHMARKS.md](BENCHMARKS.md)), builds **`fastp-rs`** in release mode, and runs **`scripts/ci/bench_compare.sh`** (synthetic fixture **A**, warm cache, median of three, GNU `time`). Results are appended to the GitHub Actions **job summary**.
+
+Until you add SLO thresholds, the workflow **never fails** on performance ratios—it only surfaces numbers for humans and for copying into [BENCHMARKS.md](BENCHMARKS.md).
+
+## Benchmarks
+
+If you publish or review performance numbers, follow **[BENCHMARKS.md](BENCHMARKS.md)** end to end (pinned **opengene.org** binary + SHA256, GNU **`/usr/bin/time -f '%e %M'`** or `-v`, warm cache **I1**, median of three **P2**, same numerator for ratios). Upstream runs use **`-w 1`** until `fastp-rs` exposes matching thread controls.

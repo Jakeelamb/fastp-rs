@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classMergeOptions" kind="class" language="C++" prot="public">
+    <compoundname>MergeOptions</compoundname>
+    <includes refid="options_8h" local="no">options.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMergeOptions_1a3d47b82ca26cec8cb66819a220f6bae5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MergeOptions::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <qualifiedname>MergeOptions::enabled</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="27" column="10" bodyfile="src/options.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMergeOptions_1a9a843b221a422d753ae70ab37ef25e9c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MergeOptions::includeUnmerged</definition>
+        <argsstring></argsstring>
+        <name>includeUnmerged</name>
+        <qualifiedname>MergeOptions::includeUnmerged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="28" column="10" bodyfile="src/options.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMergeOptions_1aeb833b5a92a65dd45b977772dae48eb5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string MergeOptions::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <qualifiedname>MergeOptions::out</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="29" column="12" bodyfile="src/options.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMergeOptions_1ada9bd67bd9f9d9c3ecb6426b488cdf2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MergeOptions::MergeOptions</definition>
+        <argsstring>()</argsstring>
+        <name>MergeOptions</name>
+        <qualifiedname>MergeOptions::MergeOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/options.h" line="22" column="5" bodyfile="src/options.h" bodystart="22" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/options.h" line="20" column="1" bodyfile="src/options.h" bodystart="20" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classMergeOptions_1a3d47b82ca26cec8cb66819a220f6bae5" prot="public" virt="non-virtual"><scope>MergeOptions</scope><name>enabled</name></member>
+      <member refid="classMergeOptions_1a9a843b221a422d753ae70ab37ef25e9c" prot="public" virt="non-virtual"><scope>MergeOptions</scope><name>includeUnmerged</name></member>
+      <member refid="classMergeOptions_1ada9bd67bd9f9d9c3ecb6426b488cdf2b" prot="public" virt="non-virtual"><scope>MergeOptions</scope><name>MergeOptions</name></member>
+      <member refid="classMergeOptions_1aeb833b5a92a65dd45b977772dae48eb5" prot="public" virt="non-virtual"><scope>MergeOptions</scope><name>out</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

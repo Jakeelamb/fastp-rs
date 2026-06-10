@@ -1,0 +1,72 @@
+\doxysection{Lock\+Free\+List\+Item\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structLockFreeListItem}{}\label{structLockFreeListItem}\index{LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}}
+
+
+{\ttfamily \+\#include $<$singleproducersingleconsumerlist.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{structLockFreeListItem_a2fb4565cc71cdc83c9876dd5efb0fd96}{Lock\+Free\+List\+Item}} (T val)
+\item 
+\doxymbox{\hyperlink{structLockFreeListItem_a90d054f397b745ce1da35cd8c1db31c6}{Lock\+Free\+List\+Item}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \doxymbox{\hyperlink{structLockFreeListItem_a7d7f4bc4a6537dcb579aebb4c6891db3}{value}}
+\item 
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structLockFreeListItem_ac501170d4b280882114bd15c395d9235}{next\+Item}}
+\item 
+std::\+atomic\+\_\+bool \doxymbox{\hyperlink{structLockFreeListItem_ad267fb237e6c2fb59d8d66782e4d2272}{next\+Item\+Ready}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{structLockFreeListItem_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structLockFreeListItem_a2fb4565cc71cdc83c9876dd5efb0fd96}\index{LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}!LockFreeListItem@{LockFreeListItem}}
+\index{LockFreeListItem@{LockFreeListItem}!LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LockFreeListItem()}{LockFreeListItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{structLockFreeListItem_a2fb4565cc71cdc83c9876dd5efb0fd96} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$::\+\+Lock\+Free\+List\+Item (\begin{DoxyParamCaption}\item[{T}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structLockFreeListItem_a90d054f397b745ce1da35cd8c1db31c6}\index{LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}!LockFreeListItem@{LockFreeListItem}}
+\index{LockFreeListItem@{LockFreeListItem}!LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LockFreeListItem()}{LockFreeListItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{structLockFreeListItem_a90d054f397b745ce1da35cd8c1db31c6} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$::\+\+Lock\+Free\+List\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{structLockFreeListItem_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structLockFreeListItem_ac501170d4b280882114bd15c395d9235}\index{LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}!nextItem@{nextItem}}
+\index{nextItem@{nextItem}!LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{nextItem}{nextItem}}
+{\footnotesize\ttfamily \label{structLockFreeListItem_ac501170d4b280882114bd15c395d9235} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$T$>$\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$::\+next\+Item}
+
+\Hypertarget{structLockFreeListItem_ad267fb237e6c2fb59d8d66782e4d2272}\index{LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}!nextItemReady@{nextItemReady}}
+\index{nextItemReady@{nextItemReady}!LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{nextItemReady}{nextItemReady}}
+{\footnotesize\ttfamily \label{structLockFreeListItem_ad267fb237e6c2fb59d8d66782e4d2272} 
+template$<$typename T$>$ \\
+std::\+atomic\+\_\+bool \doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$::\+next\+Item\+Ready}
+
+\Hypertarget{structLockFreeListItem_a7d7f4bc4a6537dcb579aebb4c6891db3}\index{LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}!value@{value}}
+\index{value@{value}!LockFreeListItem$<$ T $>$@{LockFreeListItem$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{structLockFreeListItem_a7d7f4bc4a6537dcb579aebb4c6891db3} 
+template$<$typename T$>$ \\
+T \doxymbox{\hyperlink{structLockFreeListItem}{Lock\+Free\+List\+Item}}$<$ T $>$::\+value}
+
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{singleproducersingleconsumerlist_8h}{singleproducersingleconsumerlist.\+h}}\end{DoxyCompactItemize}

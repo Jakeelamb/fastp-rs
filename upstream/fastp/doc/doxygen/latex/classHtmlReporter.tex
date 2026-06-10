@@ -1,0 +1,231 @@
+\doxysection{Html\+Reporter Class Reference}
+\hypertarget{classHtmlReporter}{}\label{classHtmlReporter}\index{HtmlReporter@{HtmlReporter}}
+
+
+{\ttfamily \+\#include $<$htmlreporter.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classHtmlReporter_a57d4ea37391de464edfd84400d4df8b2}{Html\+Reporter}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt)
+\item 
+\doxymbox{\hyperlink{classHtmlReporter_ae6aead7e4be2257112927c2e6c5558e4}{\texorpdfstring{$\sim$}{\string~}\+Html\+Reporter}} ()
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_aba94153c525b376d24d8c566ee78987c}{set\+Dup}} (double dup\+Rate)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_ab701792be1a8136fc183d34ddb72adb8}{set\+Insert\+Hist}} (atomic\+\_\+long \texorpdfstring{$\ast$}{*}insert\+Hist, int insert\+Size\+Peak)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_a7e9dd62e51134082034b1abab94bce9e}{report}} (\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}result, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}pre\+Stats1, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}post\+Stats1, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}pre\+Stats2=NULL, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}post\+Stats2=NULL)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \doxymbox{\hyperlink{classHtmlReporter_af80e6ea00c88f32d19d5f67c32d50b46}{output\+Row}} (ofstream \&ofs, string key, long value)
+\item 
+static void \doxymbox{\hyperlink{classHtmlReporter_ac7470714e953cf8ddfd379e82a7a5464}{output\+Row}} (ofstream \&ofs, string key, string value)
+\item 
+static string \doxymbox{\hyperlink{classHtmlReporter_a2cd13f5289655ae1bced187322c40c79}{format\+Number}} (long number)
+\item 
+static string \doxymbox{\hyperlink{classHtmlReporter_a5e9ab720eadb666289f9403ae4fa9fcc}{get\+Percents}} (long numerator, long denominator)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const string \doxymbox{\hyperlink{classHtmlReporter_ac328ed94fa6ed8622755429f7b9016e1}{get\+Current\+System\+Time}} ()
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_a897a18270fd125322990bf49bc4ae0ee}{print\+Header}} (ofstream \&ofs)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_a63274acaa3bcb377c0140d7b5dd60e5b}{print\+CSS}} (ofstream \&ofs)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_ad31b0eb65e18147d8788fb853add2409}{print\+JS}} (ofstream \&ofs)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_ae5fce1d959353ffddaefeff01751bd1a}{print\+Footer}} (ofstream \&ofs)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_aeb55b5e9a089e6ab1ef6a7f6488147db}{report\+Qual\+Histogram}} (ofstream \&ofs, string caption, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}stats1, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}stats2=NULL)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_a371bf6a3d0ac443e1f1120491951f18a}{report\+Duplication}} (ofstream \&ofs)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_a015fdca35ef887499d3901599f03e539}{report\+Insert\+Size}} (ofstream \&ofs, int isize\+Limit)
+\item 
+void \doxymbox{\hyperlink{classHtmlReporter_a0e6af5d904e0c998d1c2afd912305bd7}{print\+Summary}} (ofstream \&ofs, \doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}result, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}pre\+Stats1, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}post\+Stats1, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}pre\+Stats2, \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}post\+Stats2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classHtmlReporter_a02a03e600e134616d914c31ba9bd7709}{m\+Options}}
+\item 
+int \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classHtmlReporter_a30b8b92b014e7909ba6705645840716a}{m\+Dup\+Hist}}
+\item 
+double \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classHtmlReporter_aa6486b56a07991ec71c014223b08c265}{m\+Dup\+Mean\+GC}}
+\item 
+double \doxymbox{\hyperlink{classHtmlReporter_aa30220483c6d52e8c4b3f7c496daf8a9}{m\+Dup\+Rate}}
+\item 
+atomic\+\_\+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classHtmlReporter_a7e71ef856868fadcaa3893383f9108f9}{m\+Insert\+Hist}}
+\item 
+int \doxymbox{\hyperlink{classHtmlReporter_aa253bec109843dada32d836b992ba9b8}{m\+Insert\+Size\+Peak}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classHtmlReporter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classHtmlReporter_a57d4ea37391de464edfd84400d4df8b2}\index{HtmlReporter@{HtmlReporter}!HtmlReporter@{HtmlReporter}}
+\index{HtmlReporter@{HtmlReporter}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{HtmlReporter()}{HtmlReporter()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a57d4ea37391de464edfd84400d4df8b2} 
+Html\+Reporter::\+\+Html\+Reporter (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classHtmlReporter_ae6aead7e4be2257112927c2e6c5558e4}\index{HtmlReporter@{HtmlReporter}!````~HtmlReporter@{\texorpdfstring{$\sim$}{\string~}HtmlReporter}}
+\index{````~HtmlReporter@{\texorpdfstring{$\sim$}{\string~}HtmlReporter}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}HtmlReporter()}{\string~HtmlReporter()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_ae6aead7e4be2257112927c2e6c5558e4} 
+Html\+Reporter::\+\texorpdfstring{$\sim$}{\string~}\+Html\+Reporter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classHtmlReporter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classHtmlReporter_a2cd13f5289655ae1bced187322c40c79}\index{HtmlReporter@{HtmlReporter}!formatNumber@{formatNumber}}
+\index{formatNumber@{formatNumber}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{formatNumber()}{formatNumber()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a2cd13f5289655ae1bced187322c40c79} 
+string Html\+Reporter::\+format\+Number (\begin{DoxyParamCaption}\item[{long}]{number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classHtmlReporter_ac328ed94fa6ed8622755429f7b9016e1}\index{HtmlReporter@{HtmlReporter}!getCurrentSystemTime@{getCurrentSystemTime}}
+\index{getCurrentSystemTime@{getCurrentSystemTime}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{getCurrentSystemTime()}{getCurrentSystemTime()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_ac328ed94fa6ed8622755429f7b9016e1} 
+const string Html\+Reporter::\+get\+Current\+System\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_a5e9ab720eadb666289f9403ae4fa9fcc}\index{HtmlReporter@{HtmlReporter}!getPercents@{getPercents}}
+\index{getPercents@{getPercents}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{getPercents()}{getPercents()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a5e9ab720eadb666289f9403ae4fa9fcc} 
+string Html\+Reporter::\+get\+Percents (\begin{DoxyParamCaption}\item[{long}]{numerator}{, }\item[{long}]{denominator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classHtmlReporter_af80e6ea00c88f32d19d5f67c32d50b46}\index{HtmlReporter@{HtmlReporter}!outputRow@{outputRow}}
+\index{outputRow@{outputRow}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{outputRow()}{outputRow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classHtmlReporter_af80e6ea00c88f32d19d5f67c32d50b46} 
+void Html\+Reporter::\+output\+Row (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{key}{, }\item[{long}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classHtmlReporter_ac7470714e953cf8ddfd379e82a7a5464}\index{HtmlReporter@{HtmlReporter}!outputRow@{outputRow}}
+\index{outputRow@{outputRow}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{outputRow()}{outputRow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classHtmlReporter_ac7470714e953cf8ddfd379e82a7a5464} 
+void Html\+Reporter::\+output\+Row (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{key}{, }\item[{string}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classHtmlReporter_a63274acaa3bcb377c0140d7b5dd60e5b}\index{HtmlReporter@{HtmlReporter}!printCSS@{printCSS}}
+\index{printCSS@{printCSS}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{printCSS()}{printCSS()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a63274acaa3bcb377c0140d7b5dd60e5b} 
+void Html\+Reporter::\+print\+CSS (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_ae5fce1d959353ffddaefeff01751bd1a}\index{HtmlReporter@{HtmlReporter}!printFooter@{printFooter}}
+\index{printFooter@{printFooter}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{printFooter()}{printFooter()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_ae5fce1d959353ffddaefeff01751bd1a} 
+void Html\+Reporter::\+print\+Footer (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_a897a18270fd125322990bf49bc4ae0ee}\index{HtmlReporter@{HtmlReporter}!printHeader@{printHeader}}
+\index{printHeader@{printHeader}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{printHeader()}{printHeader()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a897a18270fd125322990bf49bc4ae0ee} 
+void Html\+Reporter::\+print\+Header (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_ad31b0eb65e18147d8788fb853add2409}\index{HtmlReporter@{HtmlReporter}!printJS@{printJS}}
+\index{printJS@{printJS}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{printJS()}{printJS()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_ad31b0eb65e18147d8788fb853add2409} 
+void Html\+Reporter::\+print\+JS (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_a0e6af5d904e0c998d1c2afd912305bd7}\index{HtmlReporter@{HtmlReporter}!printSummary@{printSummary}}
+\index{printSummary@{printSummary}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{printSummary()}{printSummary()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a0e6af5d904e0c998d1c2afd912305bd7} 
+void Html\+Reporter::\+print\+Summary (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}}]{result}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{pre\+Stats1}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{post\+Stats1}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{pre\+Stats2}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{post\+Stats2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_a7e9dd62e51134082034b1abab94bce9e}\index{HtmlReporter@{HtmlReporter}!report@{report}}
+\index{report@{report}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{report()}{report()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a7e9dd62e51134082034b1abab94bce9e} 
+void Html\+Reporter::\+report (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classFilterResult}{Filter\+Result}} \texorpdfstring{$\ast$}{*}}]{result}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{pre\+Stats1}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{post\+Stats1}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{pre\+Stats2}{ = {\ttfamily NULL}, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{post\+Stats2}{ = {\ttfamily NULL}}\end{DoxyParamCaption})}
+
+\Hypertarget{classHtmlReporter_a371bf6a3d0ac443e1f1120491951f18a}\index{HtmlReporter@{HtmlReporter}!reportDuplication@{reportDuplication}}
+\index{reportDuplication@{reportDuplication}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{reportDuplication()}{reportDuplication()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a371bf6a3d0ac443e1f1120491951f18a} 
+void Html\+Reporter::\+report\+Duplication (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_a015fdca35ef887499d3901599f03e539}\index{HtmlReporter@{HtmlReporter}!reportInsertSize@{reportInsertSize}}
+\index{reportInsertSize@{reportInsertSize}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{reportInsertSize()}{reportInsertSize()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a015fdca35ef887499d3901599f03e539} 
+void Html\+Reporter::\+report\+Insert\+Size (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{int}]{isize\+Limit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_aeb55b5e9a089e6ab1ef6a7f6488147db}\index{HtmlReporter@{HtmlReporter}!reportQualHistogram@{reportQualHistogram}}
+\index{reportQualHistogram@{reportQualHistogram}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{reportQualHistogram()}{reportQualHistogram()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_aeb55b5e9a089e6ab1ef6a7f6488147db} 
+void Html\+Reporter::\+report\+Qual\+Histogram (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{caption}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{stats1}{, }\item[{\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*}}]{stats2}{ = {\ttfamily NULL}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_aba94153c525b376d24d8c566ee78987c}\index{HtmlReporter@{HtmlReporter}!setDup@{setDup}}
+\index{setDup@{setDup}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{setDup()}{setDup()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_aba94153c525b376d24d8c566ee78987c} 
+void Html\+Reporter::\+set\+Dup (\begin{DoxyParamCaption}\item[{double}]{dup\+Rate}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classHtmlReporter_ab701792be1a8136fc183d34ddb72adb8}\index{HtmlReporter@{HtmlReporter}!setInsertHist@{setInsertHist}}
+\index{setInsertHist@{setInsertHist}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{setInsertHist()}{setInsertHist()}}
+{\footnotesize\ttfamily \label{classHtmlReporter_ab701792be1a8136fc183d34ddb72adb8} 
+void Html\+Reporter::\+set\+Insert\+Hist (\begin{DoxyParamCaption}\item[{atomic\+\_\+long \texorpdfstring{$\ast$}{*}}]{insert\+Hist}{, }\item[{int}]{insert\+Size\+Peak}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classHtmlReporter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classHtmlReporter_a30b8b92b014e7909ba6705645840716a}\index{HtmlReporter@{HtmlReporter}!mDupHist@{mDupHist}}
+\index{mDupHist@{mDupHist}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{mDupHist}{mDupHist}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a30b8b92b014e7909ba6705645840716a} 
+int\texorpdfstring{$\ast$}{*} Html\+Reporter::\+m\+Dup\+Hist\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_aa6486b56a07991ec71c014223b08c265}\index{HtmlReporter@{HtmlReporter}!mDupMeanGC@{mDupMeanGC}}
+\index{mDupMeanGC@{mDupMeanGC}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{mDupMeanGC}{mDupMeanGC}}
+{\footnotesize\ttfamily \label{classHtmlReporter_aa6486b56a07991ec71c014223b08c265} 
+double\texorpdfstring{$\ast$}{*} Html\+Reporter::\+m\+Dup\+Mean\+GC\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_aa30220483c6d52e8c4b3f7c496daf8a9}\index{HtmlReporter@{HtmlReporter}!mDupRate@{mDupRate}}
+\index{mDupRate@{mDupRate}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{mDupRate}{mDupRate}}
+{\footnotesize\ttfamily \label{classHtmlReporter_aa30220483c6d52e8c4b3f7c496daf8a9} 
+double Html\+Reporter::\+m\+Dup\+Rate\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_a7e71ef856868fadcaa3893383f9108f9}\index{HtmlReporter@{HtmlReporter}!mInsertHist@{mInsertHist}}
+\index{mInsertHist@{mInsertHist}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{mInsertHist}{mInsertHist}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a7e71ef856868fadcaa3893383f9108f9} 
+atomic\+\_\+long\texorpdfstring{$\ast$}{*} Html\+Reporter::\+m\+Insert\+Hist\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_aa253bec109843dada32d836b992ba9b8}\index{HtmlReporter@{HtmlReporter}!mInsertSizePeak@{mInsertSizePeak}}
+\index{mInsertSizePeak@{mInsertSizePeak}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{mInsertSizePeak}{mInsertSizePeak}}
+{\footnotesize\ttfamily \label{classHtmlReporter_aa253bec109843dada32d836b992ba9b8} 
+int Html\+Reporter::\+m\+Insert\+Size\+Peak\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classHtmlReporter_a02a03e600e134616d914c31ba9bd7709}\index{HtmlReporter@{HtmlReporter}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!HtmlReporter@{HtmlReporter}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classHtmlReporter_a02a03e600e134616d914c31ba9bd7709} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Html\+Reporter::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{htmlreporter_8h}{htmlreporter.\+h}}\item 
+src/\+\doxymbox{\hyperlink{htmlreporter_8cpp}{htmlreporter.\+cpp}}\end{DoxyCompactItemize}

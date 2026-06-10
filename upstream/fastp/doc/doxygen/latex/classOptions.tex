@@ -1,0 +1,489 @@
+\doxysection{Options Class Reference}
+\hypertarget{classOptions}{}\label{classOptions}\index{Options@{Options}}
+
+
+{\ttfamily \+\#include $<$options.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions_ab72fb640172a6109e34c8a5366563753}{Options}} ()
+\item 
+void \doxymbox{\hyperlink{classOptions_ae4b17f909414d89c505db817a39608db}{init}} ()
+\item 
+bool \doxymbox{\hyperlink{classOptions_ac12e9cc14732d8f545170ce92f76d4a4}{is\+Paired}} ()
+\item 
+bool \doxymbox{\hyperlink{classOptions_a6871fc2c01fb3d11b605149e71962f33}{validate}} ()
+\item 
+bool \doxymbox{\hyperlink{classOptions_ab257f1a699b3631813f2c4df6dfe54fe}{adapter\+Cutting\+Enabled}} ()
+\item 
+bool \doxymbox{\hyperlink{classOptions_ac3ce80db1b153984ab7f40b5584715e5}{poly\+XTrimming\+Enabled}} ()
+\item 
+string \doxymbox{\hyperlink{classOptions_a9b1b48038f8a323d2f821f96c4593e7b}{get\+Adapter1}} ()
+\item 
+string \doxymbox{\hyperlink{classOptions_a4de05c86b46d2d7ce2a88f149fefa7b3}{get\+Adapter2}} ()
+\item 
+void \doxymbox{\hyperlink{classOptions_ac4278f42d3ab2db76bb5adef237c1ff5}{init\+Index\+Filtering}} (string blacklist\+File1, string blacklist\+File2, int threshold=0)
+\item 
+vector$<$ string $>$ \doxymbox{\hyperlink{classOptions_aa27446a132792738f4c1e4d16964309a}{make\+List\+From\+File\+By\+Line}} (string filename)
+\item 
+bool \doxymbox{\hyperlink{classOptions_a5dbbf87d408711f24deecd3e786d4273}{shall\+Detect\+Adapter}} (bool is\+R2=false)
+\item 
+void \doxymbox{\hyperlink{classOptions_ac109dc037a08b45c3b4dc964ebbd97c2}{load\+Fasta\+Adapters}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{classOptions_a867153943d87550b22de1708a20283f4}{in1}}
+\item 
+string \doxymbox{\hyperlink{classOptions_a2663a57894fb248dbad36d06f843bd3f}{in2}}
+\item 
+string \doxymbox{\hyperlink{classOptions_a9c791494d7e9b5dc239bf270bca6773c}{out1}}
+\item 
+string \doxymbox{\hyperlink{classOptions_a4b8a79bb8da7fd1a7701b2a0f3f11bb2}{out2}}
+\item 
+string \doxymbox{\hyperlink{classOptions_addbd3e5b3ee85340af93e210c5a67119}{unpaired1}}
+\item 
+string \doxymbox{\hyperlink{classOptions_a6c05e96f20473f11f105fdddbc748c9e}{unpaired2}}
+\item 
+string \doxymbox{\hyperlink{classOptions_a2d6303a7fca31c581b777cd6764bc113}{failed\+Out}}
+\item 
+string \doxymbox{\hyperlink{classOptions_abf91da4425a1516d1feac2e7f05cf3eb}{overlapped\+Out}}
+\item 
+string \doxymbox{\hyperlink{classOptions_a56ff625b05f95289ea1267c64bc1d10c}{json\+File}}
+\item 
+string \doxymbox{\hyperlink{classOptions_ae18cc08006898e9f836b5a6c5352a2f6}{html\+File}}
+\item 
+string \doxymbox{\hyperlink{classOptions_a33eb0827641e09a164e40e2dbc221de2}{report\+Title}}
+\item 
+int \doxymbox{\hyperlink{classOptions_a1aed9ab748113ac3b4f8e4a37d12d56d}{compression}}
+\item 
+bool \doxymbox{\hyperlink{classOptions_ac45b72d19f458d16919fe63be8c9c8c2}{phred64}}
+\item 
+bool \doxymbox{\hyperlink{classOptions_a30e4e9592ecb76499dd68fb66b872561}{dont\+Overwrite}}
+\item 
+bool \doxymbox{\hyperlink{classOptions_aafe6b1439eaa776263ac8568c2cc8e2c}{input\+From\+STDIN}}
+\item 
+bool \doxymbox{\hyperlink{classOptions_a6dd223e9b98ca2760d6b89fb4c30af42}{output\+To\+STDOUT}}
+\item 
+bool \doxymbox{\hyperlink{classOptions_aea3b69af761016c407a0c69623a5c4b7}{interleaved\+Input}}
+\item 
+int \doxymbox{\hyperlink{classOptions_aa632a4f70ac7aa1d2694d8aedb236fd4}{reads\+To\+Process}}
+\item 
+bool \doxymbox{\hyperlink{classOptions_add32d97f9897d4ecee65c8d71fe66d8a}{fix\+MGI}}
+\item 
+int \doxymbox{\hyperlink{classOptions_a17ed7d97ffc6c85ec7d1a4279d7f79a3}{thread}}
+\item 
+\doxymbox{\hyperlink{classTrimmingOptions}{Trimming\+Options}} \doxymbox{\hyperlink{classOptions_a9a36c385d3551208d57f9cece88b2e22}{trim}}
+\item 
+\doxymbox{\hyperlink{classQualityFilteringOptions}{Quality\+Filtering\+Options}} \doxymbox{\hyperlink{classOptions_a9c549e5b7b31497e356ef740de44a3b9}{qualfilter}}
+\item 
+\doxymbox{\hyperlink{classReadLengthFilteringOptions}{Read\+Length\+Filtering\+Options}} \doxymbox{\hyperlink{classOptions_a24e6a0097f4e22f0efbf60749a39ad21}{length\+Filter}}
+\item 
+\doxymbox{\hyperlink{classAdapterOptions}{Adapter\+Options}} \doxymbox{\hyperlink{classOptions_af08ef7491aea7025205eb593c00093fd}{adapter}}
+\item 
+\doxymbox{\hyperlink{classSplitOptions}{Split\+Options}} \doxymbox{\hyperlink{classOptions_ade71d85bc107c67e8e6c3e4c1032e12a}{split}}
+\item 
+\doxymbox{\hyperlink{classQualityCutOptions}{Quality\+Cut\+Options}} \doxymbox{\hyperlink{classOptions_aee9b2785fa43d178a4a600c05d108bca}{quality\+Cut}}
+\item 
+\doxymbox{\hyperlink{classCorrectionOptions}{Correction\+Options}} \doxymbox{\hyperlink{classOptions_a2a224dbab4c8d8a508a7c1dc3b111b3f}{correction}}
+\item 
+\doxymbox{\hyperlink{classUMIOptions}{UMIOptions}} \doxymbox{\hyperlink{classOptions_aca57a9fc44e26fc73c1f98e87b515818}{umi}}
+\item 
+\doxymbox{\hyperlink{classPolyGTrimmerOptions}{Poly\+GTrimmer\+Options}} \doxymbox{\hyperlink{classOptions_a70a604ae8c23c944eccdc4ae8c723563}{poly\+GTrim}}
+\item 
+\doxymbox{\hyperlink{classPolyXTrimmerOptions}{Poly\+XTrimmer\+Options}} \doxymbox{\hyperlink{classOptions_a73af0c454838a42eb903289fc1862478}{poly\+XTrim}}
+\item 
+\doxymbox{\hyperlink{classOverrepresentedSequenceAnasysOptions}{Overrepresented\+Sequence\+Anasys\+Options}} \doxymbox{\hyperlink{classOptions_ab921d7a7d4f79284f02c09828dea20d8}{over\+Rep\+Analysis}}
+\item 
+map$<$ string, long $>$ \doxymbox{\hyperlink{classOptions_ac5c3bf17db780c4d53ae4dee622572fb}{over\+Rep\+Seqs1}}
+\item 
+map$<$ string, long $>$ \doxymbox{\hyperlink{classOptions_a4d07f14084acd69dc3c934f4357ee98f}{over\+Rep\+Seqs2}}
+\item 
+int \doxymbox{\hyperlink{classOptions_aa9eb3c81561f72107a83ea0916134f3b}{seq\+Len1}}
+\item 
+int \doxymbox{\hyperlink{classOptions_a9db285ebd621e0f10d0ac4c96c87f9ee}{seq\+Len2}}
+\item 
+\doxymbox{\hyperlink{classLowComplexityFilterOptions}{Low\+Complexity\+Filter\+Options}} \doxymbox{\hyperlink{classOptions_afcfa6c7f8ce55e09a31fdf332e31239c}{complexity\+Filter}}
+\item 
+\doxymbox{\hyperlink{classIndexFilterOptions}{Index\+Filter\+Options}} \doxymbox{\hyperlink{classOptions_aee7b084d86aad106f69fad176e993d85}{index\+Filter}}
+\item 
+\doxymbox{\hyperlink{classDuplicationOptions}{Duplication\+Options}} \doxymbox{\hyperlink{classOptions_a7c560dfc5ad0c0ef0a72be3bde0bdf57}{duplicate}}
+\item 
+int \doxymbox{\hyperlink{classOptions_ac3d553b690e7c29c4124d42cf1f2dfff}{insert\+Size\+Max}}
+\item 
+int \doxymbox{\hyperlink{classOptions_adb967c5e73e2884a1e1d5c142a6be75a}{overlap\+Require}}
+\item 
+int \doxymbox{\hyperlink{classOptions_adcae7e271b99c64a5371019e54a2d1ef}{overlap\+Diff\+Limit}}
+\item 
+int \doxymbox{\hyperlink{classOptions_a22a205937d87423b3d051e988c2efafb}{overlap\+Diff\+Percent\+Limit}}
+\item 
+bool \doxymbox{\hyperlink{classOptions_abaa084df3c7ed900634b4d187aa58ea0}{verbose}}
+\item 
+\doxymbox{\hyperlink{classMergeOptions}{Merge\+Options}} \doxymbox{\hyperlink{classOptions_a7be5bed96d23e92d9154cd9dbd9b2036}{merge}}
+\item 
+size\+\_\+t \doxymbox{\hyperlink{classOptions_a5913dc2fd969d6128b09ca7f1aafd86f}{writer\+Buffer\+Size}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classOptions_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classOptions_ab72fb640172a6109e34c8a5366563753}\index{Options@{Options}!Options@{Options}}
+\index{Options@{Options}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{Options()}{Options()}}
+{\footnotesize\ttfamily \label{classOptions_ab72fb640172a6109e34c8a5366563753} 
+Options::\+\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classOptions_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classOptions_ab257f1a699b3631813f2c4df6dfe54fe}\index{Options@{Options}!adapterCuttingEnabled@{adapterCuttingEnabled}}
+\index{adapterCuttingEnabled@{adapterCuttingEnabled}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{adapterCuttingEnabled()}{adapterCuttingEnabled()}}
+{\footnotesize\ttfamily \label{classOptions_ab257f1a699b3631813f2c4df6dfe54fe} 
+bool Options::\+adapter\+Cutting\+Enabled (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_a9b1b48038f8a323d2f821f96c4593e7b}\index{Options@{Options}!getAdapter1@{getAdapter1}}
+\index{getAdapter1@{getAdapter1}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{getAdapter1()}{getAdapter1()}}
+{\footnotesize\ttfamily \label{classOptions_a9b1b48038f8a323d2f821f96c4593e7b} 
+string Options::\+get\+Adapter1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_a4de05c86b46d2d7ce2a88f149fefa7b3}\index{Options@{Options}!getAdapter2@{getAdapter2}}
+\index{getAdapter2@{getAdapter2}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{getAdapter2()}{getAdapter2()}}
+{\footnotesize\ttfamily \label{classOptions_a4de05c86b46d2d7ce2a88f149fefa7b3} 
+string Options::\+get\+Adapter2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_ae4b17f909414d89c505db817a39608db}\index{Options@{Options}!init@{init}}
+\index{init@{init}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classOptions_ae4b17f909414d89c505db817a39608db} 
+void Options::\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_ac4278f42d3ab2db76bb5adef237c1ff5}\index{Options@{Options}!initIndexFiltering@{initIndexFiltering}}
+\index{initIndexFiltering@{initIndexFiltering}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{initIndexFiltering()}{initIndexFiltering()}}
+{\footnotesize\ttfamily \label{classOptions_ac4278f42d3ab2db76bb5adef237c1ff5} 
+void Options::\+init\+Index\+Filtering (\begin{DoxyParamCaption}\item[{string}]{blacklist\+File1}{, }\item[{string}]{blacklist\+File2}{, }\item[{int}]{threshold}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_ac12e9cc14732d8f545170ce92f76d4a4}\index{Options@{Options}!isPaired@{isPaired}}
+\index{isPaired@{isPaired}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{isPaired()}{isPaired()}}
+{\footnotesize\ttfamily \label{classOptions_ac12e9cc14732d8f545170ce92f76d4a4} 
+bool Options::\+is\+Paired (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_ac109dc037a08b45c3b4dc964ebbd97c2}\index{Options@{Options}!loadFastaAdapters@{loadFastaAdapters}}
+\index{loadFastaAdapters@{loadFastaAdapters}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{loadFastaAdapters()}{loadFastaAdapters()}}
+{\footnotesize\ttfamily \label{classOptions_ac109dc037a08b45c3b4dc964ebbd97c2} 
+void Options::\+load\+Fasta\+Adapters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_aa27446a132792738f4c1e4d16964309a}\index{Options@{Options}!makeListFromFileByLine@{makeListFromFileByLine}}
+\index{makeListFromFileByLine@{makeListFromFileByLine}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{makeListFromFileByLine()}{makeListFromFileByLine()}}
+{\footnotesize\ttfamily \label{classOptions_aa27446a132792738f4c1e4d16964309a} 
+vector$<$ string $>$ Options::\+make\+List\+From\+File\+By\+Line (\begin{DoxyParamCaption}\item[{string}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_ac3ce80db1b153984ab7f40b5584715e5}\index{Options@{Options}!polyXTrimmingEnabled@{polyXTrimmingEnabled}}
+\index{polyXTrimmingEnabled@{polyXTrimmingEnabled}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{polyXTrimmingEnabled()}{polyXTrimmingEnabled()}}
+{\footnotesize\ttfamily \label{classOptions_ac3ce80db1b153984ab7f40b5584715e5} 
+bool Options::\+poly\+XTrimming\+Enabled (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_a5dbbf87d408711f24deecd3e786d4273}\index{Options@{Options}!shallDetectAdapter@{shallDetectAdapter}}
+\index{shallDetectAdapter@{shallDetectAdapter}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{shallDetectAdapter()}{shallDetectAdapter()}}
+{\footnotesize\ttfamily \label{classOptions_a5dbbf87d408711f24deecd3e786d4273} 
+bool Options::\+shall\+Detect\+Adapter (\begin{DoxyParamCaption}\item[{bool}]{is\+R2}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\Hypertarget{classOptions_a6871fc2c01fb3d11b605149e71962f33}\index{Options@{Options}!validate@{validate}}
+\index{validate@{validate}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{classOptions_a6871fc2c01fb3d11b605149e71962f33} 
+bool Options::\+validate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classOptions_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classOptions_af08ef7491aea7025205eb593c00093fd}\index{Options@{Options}!adapter@{adapter}}
+\index{adapter@{adapter}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{adapter}{adapter}}
+{\footnotesize\ttfamily \label{classOptions_af08ef7491aea7025205eb593c00093fd} 
+\doxymbox{\hyperlink{classAdapterOptions}{Adapter\+Options}} Options::\+adapter}
+
+\Hypertarget{classOptions_afcfa6c7f8ce55e09a31fdf332e31239c}\index{Options@{Options}!complexityFilter@{complexityFilter}}
+\index{complexityFilter@{complexityFilter}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{complexityFilter}{complexityFilter}}
+{\footnotesize\ttfamily \label{classOptions_afcfa6c7f8ce55e09a31fdf332e31239c} 
+\doxymbox{\hyperlink{classLowComplexityFilterOptions}{Low\+Complexity\+Filter\+Options}} Options::\+complexity\+Filter}
+
+\Hypertarget{classOptions_a1aed9ab748113ac3b4f8e4a37d12d56d}\index{Options@{Options}!compression@{compression}}
+\index{compression@{compression}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{compression}{compression}}
+{\footnotesize\ttfamily \label{classOptions_a1aed9ab748113ac3b4f8e4a37d12d56d} 
+int Options::\+compression}
+
+\Hypertarget{classOptions_a2a224dbab4c8d8a508a7c1dc3b111b3f}\index{Options@{Options}!correction@{correction}}
+\index{correction@{correction}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{correction}{correction}}
+{\footnotesize\ttfamily \label{classOptions_a2a224dbab4c8d8a508a7c1dc3b111b3f} 
+\doxymbox{\hyperlink{classCorrectionOptions}{Correction\+Options}} Options::\+correction}
+
+\Hypertarget{classOptions_a30e4e9592ecb76499dd68fb66b872561}\index{Options@{Options}!dontOverwrite@{dontOverwrite}}
+\index{dontOverwrite@{dontOverwrite}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{dontOverwrite}{dontOverwrite}}
+{\footnotesize\ttfamily \label{classOptions_a30e4e9592ecb76499dd68fb66b872561} 
+bool Options::\+dont\+Overwrite}
+
+\Hypertarget{classOptions_a7c560dfc5ad0c0ef0a72be3bde0bdf57}\index{Options@{Options}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{duplicate}{duplicate}}
+{\footnotesize\ttfamily \label{classOptions_a7c560dfc5ad0c0ef0a72be3bde0bdf57} 
+\doxymbox{\hyperlink{classDuplicationOptions}{Duplication\+Options}} Options::\+duplicate}
+
+\Hypertarget{classOptions_a2d6303a7fca31c581b777cd6764bc113}\index{Options@{Options}!failedOut@{failedOut}}
+\index{failedOut@{failedOut}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{failedOut}{failedOut}}
+{\footnotesize\ttfamily \label{classOptions_a2d6303a7fca31c581b777cd6764bc113} 
+string Options::\+failed\+Out}
+
+\Hypertarget{classOptions_add32d97f9897d4ecee65c8d71fe66d8a}\index{Options@{Options}!fixMGI@{fixMGI}}
+\index{fixMGI@{fixMGI}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{fixMGI}{fixMGI}}
+{\footnotesize\ttfamily \label{classOptions_add32d97f9897d4ecee65c8d71fe66d8a} 
+bool Options::\+fix\+MGI}
+
+\Hypertarget{classOptions_ae18cc08006898e9f836b5a6c5352a2f6}\index{Options@{Options}!htmlFile@{htmlFile}}
+\index{htmlFile@{htmlFile}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{htmlFile}{htmlFile}}
+{\footnotesize\ttfamily \label{classOptions_ae18cc08006898e9f836b5a6c5352a2f6} 
+string Options::\+html\+File}
+
+\Hypertarget{classOptions_a867153943d87550b22de1708a20283f4}\index{Options@{Options}!in1@{in1}}
+\index{in1@{in1}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{in1}{in1}}
+{\footnotesize\ttfamily \label{classOptions_a867153943d87550b22de1708a20283f4} 
+string Options::\+in1}
+
+\Hypertarget{classOptions_a2663a57894fb248dbad36d06f843bd3f}\index{Options@{Options}!in2@{in2}}
+\index{in2@{in2}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{in2}{in2}}
+{\footnotesize\ttfamily \label{classOptions_a2663a57894fb248dbad36d06f843bd3f} 
+string Options::\+in2}
+
+\Hypertarget{classOptions_aee7b084d86aad106f69fad176e993d85}\index{Options@{Options}!indexFilter@{indexFilter}}
+\index{indexFilter@{indexFilter}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{indexFilter}{indexFilter}}
+{\footnotesize\ttfamily \label{classOptions_aee7b084d86aad106f69fad176e993d85} 
+\doxymbox{\hyperlink{classIndexFilterOptions}{Index\+Filter\+Options}} Options::\+index\+Filter}
+
+\Hypertarget{classOptions_aafe6b1439eaa776263ac8568c2cc8e2c}\index{Options@{Options}!inputFromSTDIN@{inputFromSTDIN}}
+\index{inputFromSTDIN@{inputFromSTDIN}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{inputFromSTDIN}{inputFromSTDIN}}
+{\footnotesize\ttfamily \label{classOptions_aafe6b1439eaa776263ac8568c2cc8e2c} 
+bool Options::\+input\+From\+STDIN}
+
+\Hypertarget{classOptions_ac3d553b690e7c29c4124d42cf1f2dfff}\index{Options@{Options}!insertSizeMax@{insertSizeMax}}
+\index{insertSizeMax@{insertSizeMax}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{insertSizeMax}{insertSizeMax}}
+{\footnotesize\ttfamily \label{classOptions_ac3d553b690e7c29c4124d42cf1f2dfff} 
+int Options::\+insert\+Size\+Max}
+
+\Hypertarget{classOptions_aea3b69af761016c407a0c69623a5c4b7}\index{Options@{Options}!interleavedInput@{interleavedInput}}
+\index{interleavedInput@{interleavedInput}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{interleavedInput}{interleavedInput}}
+{\footnotesize\ttfamily \label{classOptions_aea3b69af761016c407a0c69623a5c4b7} 
+bool Options::\+interleaved\+Input}
+
+\Hypertarget{classOptions_a56ff625b05f95289ea1267c64bc1d10c}\index{Options@{Options}!jsonFile@{jsonFile}}
+\index{jsonFile@{jsonFile}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{jsonFile}{jsonFile}}
+{\footnotesize\ttfamily \label{classOptions_a56ff625b05f95289ea1267c64bc1d10c} 
+string Options::\+json\+File}
+
+\Hypertarget{classOptions_a24e6a0097f4e22f0efbf60749a39ad21}\index{Options@{Options}!lengthFilter@{lengthFilter}}
+\index{lengthFilter@{lengthFilter}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{lengthFilter}{lengthFilter}}
+{\footnotesize\ttfamily \label{classOptions_a24e6a0097f4e22f0efbf60749a39ad21} 
+\doxymbox{\hyperlink{classReadLengthFilteringOptions}{Read\+Length\+Filtering\+Options}} Options::\+length\+Filter}
+
+\Hypertarget{classOptions_a7be5bed96d23e92d9154cd9dbd9b2036}\index{Options@{Options}!merge@{merge}}
+\index{merge@{merge}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{merge}{merge}}
+{\footnotesize\ttfamily \label{classOptions_a7be5bed96d23e92d9154cd9dbd9b2036} 
+\doxymbox{\hyperlink{classMergeOptions}{Merge\+Options}} Options::\+merge}
+
+\Hypertarget{classOptions_a9c791494d7e9b5dc239bf270bca6773c}\index{Options@{Options}!out1@{out1}}
+\index{out1@{out1}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{out1}{out1}}
+{\footnotesize\ttfamily \label{classOptions_a9c791494d7e9b5dc239bf270bca6773c} 
+string Options::\+out1}
+
+\Hypertarget{classOptions_a4b8a79bb8da7fd1a7701b2a0f3f11bb2}\index{Options@{Options}!out2@{out2}}
+\index{out2@{out2}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{out2}{out2}}
+{\footnotesize\ttfamily \label{classOptions_a4b8a79bb8da7fd1a7701b2a0f3f11bb2} 
+string Options::\+out2}
+
+\Hypertarget{classOptions_a6dd223e9b98ca2760d6b89fb4c30af42}\index{Options@{Options}!outputToSTDOUT@{outputToSTDOUT}}
+\index{outputToSTDOUT@{outputToSTDOUT}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{outputToSTDOUT}{outputToSTDOUT}}
+{\footnotesize\ttfamily \label{classOptions_a6dd223e9b98ca2760d6b89fb4c30af42} 
+bool Options::\+output\+To\+STDOUT}
+
+\Hypertarget{classOptions_adcae7e271b99c64a5371019e54a2d1ef}\index{Options@{Options}!overlapDiffLimit@{overlapDiffLimit}}
+\index{overlapDiffLimit@{overlapDiffLimit}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{overlapDiffLimit}{overlapDiffLimit}}
+{\footnotesize\ttfamily \label{classOptions_adcae7e271b99c64a5371019e54a2d1ef} 
+int Options::\+overlap\+Diff\+Limit}
+
+\Hypertarget{classOptions_a22a205937d87423b3d051e988c2efafb}\index{Options@{Options}!overlapDiffPercentLimit@{overlapDiffPercentLimit}}
+\index{overlapDiffPercentLimit@{overlapDiffPercentLimit}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{overlapDiffPercentLimit}{overlapDiffPercentLimit}}
+{\footnotesize\ttfamily \label{classOptions_a22a205937d87423b3d051e988c2efafb} 
+int Options::\+overlap\+Diff\+Percent\+Limit}
+
+\Hypertarget{classOptions_abf91da4425a1516d1feac2e7f05cf3eb}\index{Options@{Options}!overlappedOut@{overlappedOut}}
+\index{overlappedOut@{overlappedOut}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{overlappedOut}{overlappedOut}}
+{\footnotesize\ttfamily \label{classOptions_abf91da4425a1516d1feac2e7f05cf3eb} 
+string Options::\+overlapped\+Out}
+
+\Hypertarget{classOptions_adb967c5e73e2884a1e1d5c142a6be75a}\index{Options@{Options}!overlapRequire@{overlapRequire}}
+\index{overlapRequire@{overlapRequire}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{overlapRequire}{overlapRequire}}
+{\footnotesize\ttfamily \label{classOptions_adb967c5e73e2884a1e1d5c142a6be75a} 
+int Options::\+overlap\+Require}
+
+\Hypertarget{classOptions_ab921d7a7d4f79284f02c09828dea20d8}\index{Options@{Options}!overRepAnalysis@{overRepAnalysis}}
+\index{overRepAnalysis@{overRepAnalysis}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{overRepAnalysis}{overRepAnalysis}}
+{\footnotesize\ttfamily \label{classOptions_ab921d7a7d4f79284f02c09828dea20d8} 
+\doxymbox{\hyperlink{classOverrepresentedSequenceAnasysOptions}{Overrepresented\+Sequence\+Anasys\+Options}} Options::\+over\+Rep\+Analysis}
+
+\Hypertarget{classOptions_ac5c3bf17db780c4d53ae4dee622572fb}\index{Options@{Options}!overRepSeqs1@{overRepSeqs1}}
+\index{overRepSeqs1@{overRepSeqs1}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{overRepSeqs1}{overRepSeqs1}}
+{\footnotesize\ttfamily \label{classOptions_ac5c3bf17db780c4d53ae4dee622572fb} 
+map$<$string, long$>$ Options::\+over\+Rep\+Seqs1}
+
+\Hypertarget{classOptions_a4d07f14084acd69dc3c934f4357ee98f}\index{Options@{Options}!overRepSeqs2@{overRepSeqs2}}
+\index{overRepSeqs2@{overRepSeqs2}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{overRepSeqs2}{overRepSeqs2}}
+{\footnotesize\ttfamily \label{classOptions_a4d07f14084acd69dc3c934f4357ee98f} 
+map$<$string, long$>$ Options::\+over\+Rep\+Seqs2}
+
+\Hypertarget{classOptions_ac45b72d19f458d16919fe63be8c9c8c2}\index{Options@{Options}!phred64@{phred64}}
+\index{phred64@{phred64}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{phred64}{phred64}}
+{\footnotesize\ttfamily \label{classOptions_ac45b72d19f458d16919fe63be8c9c8c2} 
+bool Options::\+phred64}
+
+\Hypertarget{classOptions_a70a604ae8c23c944eccdc4ae8c723563}\index{Options@{Options}!polyGTrim@{polyGTrim}}
+\index{polyGTrim@{polyGTrim}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{polyGTrim}{polyGTrim}}
+{\footnotesize\ttfamily \label{classOptions_a70a604ae8c23c944eccdc4ae8c723563} 
+\doxymbox{\hyperlink{classPolyGTrimmerOptions}{Poly\+GTrimmer\+Options}} Options::\+poly\+GTrim}
+
+\Hypertarget{classOptions_a73af0c454838a42eb903289fc1862478}\index{Options@{Options}!polyXTrim@{polyXTrim}}
+\index{polyXTrim@{polyXTrim}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{polyXTrim}{polyXTrim}}
+{\footnotesize\ttfamily \label{classOptions_a73af0c454838a42eb903289fc1862478} 
+\doxymbox{\hyperlink{classPolyXTrimmerOptions}{Poly\+XTrimmer\+Options}} Options::\+poly\+XTrim}
+
+\Hypertarget{classOptions_a9c549e5b7b31497e356ef740de44a3b9}\index{Options@{Options}!qualfilter@{qualfilter}}
+\index{qualfilter@{qualfilter}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{qualfilter}{qualfilter}}
+{\footnotesize\ttfamily \label{classOptions_a9c549e5b7b31497e356ef740de44a3b9} 
+\doxymbox{\hyperlink{classQualityFilteringOptions}{Quality\+Filtering\+Options}} Options::\+qualfilter}
+
+\Hypertarget{classOptions_aee9b2785fa43d178a4a600c05d108bca}\index{Options@{Options}!qualityCut@{qualityCut}}
+\index{qualityCut@{qualityCut}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{qualityCut}{qualityCut}}
+{\footnotesize\ttfamily \label{classOptions_aee9b2785fa43d178a4a600c05d108bca} 
+\doxymbox{\hyperlink{classQualityCutOptions}{Quality\+Cut\+Options}} Options::\+quality\+Cut}
+
+\Hypertarget{classOptions_aa632a4f70ac7aa1d2694d8aedb236fd4}\index{Options@{Options}!readsToProcess@{readsToProcess}}
+\index{readsToProcess@{readsToProcess}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{readsToProcess}{readsToProcess}}
+{\footnotesize\ttfamily \label{classOptions_aa632a4f70ac7aa1d2694d8aedb236fd4} 
+int Options::\+reads\+To\+Process}
+
+\Hypertarget{classOptions_a33eb0827641e09a164e40e2dbc221de2}\index{Options@{Options}!reportTitle@{reportTitle}}
+\index{reportTitle@{reportTitle}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{reportTitle}{reportTitle}}
+{\footnotesize\ttfamily \label{classOptions_a33eb0827641e09a164e40e2dbc221de2} 
+string Options::\+report\+Title}
+
+\Hypertarget{classOptions_aa9eb3c81561f72107a83ea0916134f3b}\index{Options@{Options}!seqLen1@{seqLen1}}
+\index{seqLen1@{seqLen1}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{seqLen1}{seqLen1}}
+{\footnotesize\ttfamily \label{classOptions_aa9eb3c81561f72107a83ea0916134f3b} 
+int Options::\+seq\+Len1}
+
+\Hypertarget{classOptions_a9db285ebd621e0f10d0ac4c96c87f9ee}\index{Options@{Options}!seqLen2@{seqLen2}}
+\index{seqLen2@{seqLen2}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{seqLen2}{seqLen2}}
+{\footnotesize\ttfamily \label{classOptions_a9db285ebd621e0f10d0ac4c96c87f9ee} 
+int Options::\+seq\+Len2}
+
+\Hypertarget{classOptions_ade71d85bc107c67e8e6c3e4c1032e12a}\index{Options@{Options}!split@{split}}
+\index{split@{split}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{split}{split}}
+{\footnotesize\ttfamily \label{classOptions_ade71d85bc107c67e8e6c3e4c1032e12a} 
+\doxymbox{\hyperlink{classSplitOptions}{Split\+Options}} Options::\+split}
+
+\Hypertarget{classOptions_a17ed7d97ffc6c85ec7d1a4279d7f79a3}\index{Options@{Options}!thread@{thread}}
+\index{thread@{thread}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily \label{classOptions_a17ed7d97ffc6c85ec7d1a4279d7f79a3} 
+int Options::\+thread}
+
+\Hypertarget{classOptions_a9a36c385d3551208d57f9cece88b2e22}\index{Options@{Options}!trim@{trim}}
+\index{trim@{trim}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{trim}{trim}}
+{\footnotesize\ttfamily \label{classOptions_a9a36c385d3551208d57f9cece88b2e22} 
+\doxymbox{\hyperlink{classTrimmingOptions}{Trimming\+Options}} Options::\+trim}
+
+\Hypertarget{classOptions_aca57a9fc44e26fc73c1f98e87b515818}\index{Options@{Options}!umi@{umi}}
+\index{umi@{umi}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{umi}{umi}}
+{\footnotesize\ttfamily \label{classOptions_aca57a9fc44e26fc73c1f98e87b515818} 
+\doxymbox{\hyperlink{classUMIOptions}{UMIOptions}} Options::\+umi}
+
+\Hypertarget{classOptions_addbd3e5b3ee85340af93e210c5a67119}\index{Options@{Options}!unpaired1@{unpaired1}}
+\index{unpaired1@{unpaired1}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{unpaired1}{unpaired1}}
+{\footnotesize\ttfamily \label{classOptions_addbd3e5b3ee85340af93e210c5a67119} 
+string Options::\+unpaired1}
+
+\Hypertarget{classOptions_a6c05e96f20473f11f105fdddbc748c9e}\index{Options@{Options}!unpaired2@{unpaired2}}
+\index{unpaired2@{unpaired2}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{unpaired2}{unpaired2}}
+{\footnotesize\ttfamily \label{classOptions_a6c05e96f20473f11f105fdddbc748c9e} 
+string Options::\+unpaired2}
+
+\Hypertarget{classOptions_abaa084df3c7ed900634b4d187aa58ea0}\index{Options@{Options}!verbose@{verbose}}
+\index{verbose@{verbose}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily \label{classOptions_abaa084df3c7ed900634b4d187aa58ea0} 
+bool Options::\+verbose}
+
+\Hypertarget{classOptions_a5913dc2fd969d6128b09ca7f1aafd86f}\index{Options@{Options}!writerBufferSize@{writerBufferSize}}
+\index{writerBufferSize@{writerBufferSize}!Options@{Options}}
+\doxysubsubsection{\texorpdfstring{writerBufferSize}{writerBufferSize}}
+{\footnotesize\ttfamily \label{classOptions_a5913dc2fd969d6128b09ca7f1aafd86f} 
+size\+\_\+t Options::\+writer\+Buffer\+Size}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{options_8h}{options.\+h}}\item 
+src/\+\doxymbox{\hyperlink{options_8cpp}{options.\+cpp}}\end{DoxyCompactItemize}

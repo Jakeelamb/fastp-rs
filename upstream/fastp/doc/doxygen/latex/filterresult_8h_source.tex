@@ -1,0 +1,88 @@
+\doxysection{filterresult.\+h}
+\hypertarget{filterresult_8h_source}{}\label{filterresult_8h_source}\index{src/filterresult.h@{src/filterresult.h}}
+\doxymbox{\hyperlink{filterresult_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FILTER\_RESULT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FILTER\_RESULT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{common_8h}{common.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structclasscomp}{classcomp}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{structclasscomp_a0de325e95f0ccb06d697e0725a8a0b26}{operator()\ }}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ lhs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ rhs)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs.length()\ <\ rhs.length())}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(lhs.length()\ ==\ rhs.length())\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ <\ rhs;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classFilterResult_a92d995409da24d975aad26920359b75e}{FilterResult}}\{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{classFilterResult_a92d995409da24d975aad26920359b75e}{FilterResult}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt,\ \textcolor{keywordtype}{bool}\ paired\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{classFilterResult_a221e6a4a14fc08f26739afae4c90c704}{\string~FilterResult}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{long}*\ \doxymbox{\hyperlink{classFilterResult_a2903b8e2195ce50c32af8f71b4b96ad6}{getFilterReadStats}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classFilterResult_abc7eac664d2db4344f0f43780ae83dfc}{mFilterReadStats}};\}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_a87e955596f77005d6391e8ff8c369728}{addFilterResult}}(\textcolor{keywordtype}{int}\ result,\ \textcolor{keywordtype}{int}\ readNum=1);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classFilterResult}{FilterResult}}*\ \doxymbox{\hyperlink{classFilterResult_a2c096ae0fad4bc780bce2270c4234033}{merge}}(vector<FilterResult*>\&\ list);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_abf426bfeef2d6492806b7f0f3a7af361}{print}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ for\ single\ end}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_a1ce9566d7f147c39bed2b41855d08a0d}{addAdapterTrimmed}}(\textcolor{keywordtype}{string}\ adapter,\ \textcolor{keywordtype}{bool}\ isR2\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ for\ paired\ end}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_a1ce9566d7f147c39bed2b41855d08a0d}{addAdapterTrimmed}}(\textcolor{keywordtype}{string}\ adapter1,\ \textcolor{keywordtype}{string}\ adapter2);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_af565125bb743001aca21b2e7ba5db33e}{incTrimmedAdapterRead}}(\textcolor{keywordtype}{int}\ count\ =\ 1);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_a9d38f6b1f8bcd73936d394e5f40b41b9}{addPolyXTrimmed}}(\textcolor{keywordtype}{int}\ base,\ \textcolor{keywordtype}{int}\ length);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_a44d2e2fcb2b3b466cb7d84ce8869f320}{getTotalPolyXTrimmedReads}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_a9a5f3c8ba9c5016fc0e2d35ed7428367}{getTotalPolyXTrimmedBases}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ a\ part\ of\ JSON\ report}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_aae598e4ec5ec03ab47a9cbff09a514ee}{reportJson}}(ofstream\&\ ofs,\ \textcolor{keywordtype}{string}\ padding);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ a\ part\ of\ JSON\ report\ for\ adapters}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_ae60e6572d088ab0d7c51139ee043e975}{reportAdapterJson}}(ofstream\&\ ofs,\ \textcolor{keywordtype}{string}\ padding);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ a\ part\ of\ JSON\ report\ for\ polyX\ trim}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_aca6caa036703490eba4339563efdc3ec}{reportPolyXTrimJson}}(ofstream\&\ ofs,\ \textcolor{keywordtype}{string}\ padding);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//\ a\ part\ of\ HTML\ report}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_ad91b0434cbf8a6b172234b2857310c01}{reportHtml}}(ofstream\&\ ofs,\ \textcolor{keywordtype}{long}\ totalReads,\ \textcolor{keywordtype}{long}\ totalBases);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ a\ part\ of\ HTML\ report\ for\ adapters}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_ac2bbd2ce4d497f825502e10f307ec508}{reportAdapterHtml}}(ofstream\&\ ofs,\ \textcolor{keywordtype}{long}\ totalBases);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_a87538fd823083a53f21a340361926b0e}{outputAdaptersJson}}(ofstream\&\ ofs,\ map<string,\ long,\ classcomp>\&\ adapterCounts);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classFilterResult_a932889edff76dd1b462abe039aa92ec0}{outputAdaptersHtml}}(ofstream\&\ ofs,\ map<string,\ long,\ classcomp>\&\ adapterCounts,\ \textcolor{keywordtype}{long}\ totalBases,\ \textcolor{keywordtype}{int}\ limitCount\ =\ 0);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classFilterResult_a5bdbb58bbd5e80bf4d4c13f10e232e6e}{getAdapterReportCount}}(map<string,\ long,\ classcomp>\&\ adapterCounts);}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ deal\ with\ base\ correction\ results}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{long}*\ \doxymbox{\hyperlink{classFilterResult_a68cbaba8bf040f6e95ff142a891eefd3}{getCorrectionMatrix}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classFilterResult_afa868fd1ec214658e632b4710acf751c}{mCorrectionMatrix}};\}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_a96240aa94f778be5075eaa528909fa7e}{getTotalCorrectedBases}}();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_a8a8a1dbd29265cbb665b712251776cbd}{addCorrection}}(\textcolor{keywordtype}{char}\ from,\ \textcolor{keywordtype}{char}\ to);}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_a2242b4ebcbf313d520731f0bae18cf1a}{getCorrectionNum}}(\textcolor{keywordtype}{char}\ from,\ \textcolor{keywordtype}{char}\ to);}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_a70f898331df6ee78053be71285036282}{incCorrectedReads}}(\textcolor{keywordtype}{int}\ count);}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classFilterResult_af32e0889edf3fd337c18d8d1536dfbb7}{addMergedPairs}}(\textcolor{keywordtype}{int}\ pairs);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFilterResult_a4da19ff8d0e242da3b8a2b7630735576}{isLowComplexity}}(\textcolor{keywordtype}{string}\&\ adapter);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00067\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classFilterResult_a53e26f678366a58e63bf1c6a26233a5b}{mOptions}};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classFilterResult_a836e46d016ce976bb1cd176ad1c801cc}{mPaired}};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_aac97834fb2c1aafeb21f892308d1f1cd}{mCorrectedReads}};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_a20367cc8aeb8d9277c27b8042a769efe}{mMergedPairs}};}
+\DoxyCodeLine{00071\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_abc7eac664d2db4344f0f43780ae83dfc}{mFilterReadStats}}[\doxymbox{\hyperlink{common_8h_a8c5a7ac041084fa41637b7a74e177763}{FILTER\_RESULT\_TYPES}}];}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_acb87da988a13347fede28b4f6e8a6631}{mTrimmedAdapterRead}};}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_a1c4654907465bf9556468c9d4173a9ad}{mTrimmedAdapterBases}};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_a90a3c443823ed77502aae2c66cbfd981}{mTrimmedPolyXReads}}[4]\ =\ \{0\};}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classFilterResult_aac7bb94eb2fd45898d7076763cc1dc29}{mTrimmedPolyXBases}}[4]\ =\ \{0\};}
+\DoxyCodeLine{00077\ \ \ \ \ map<string,\ long,\ classcomp>\ \doxymbox{\hyperlink{classFilterResult_a24bb048d16563b26f7ddfc9f1b66c07a}{mAdapter1}};}
+\DoxyCodeLine{00078\ \ \ \ \ map<string,\ long,\ classcomp>\ \doxymbox{\hyperlink{classFilterResult_ab55e7674ffe335b5eb1474824bc784fe}{mAdapter2}};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{long}*\ \doxymbox{\hyperlink{classFilterResult_afa868fd1ec214658e632b4710acf751c}{mCorrectionMatrix}};}
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

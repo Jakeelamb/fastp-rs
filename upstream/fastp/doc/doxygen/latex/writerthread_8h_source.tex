@@ -1,0 +1,74 @@
+\doxysection{writerthread.\+h}
+\hypertarget{writerthread_8h_source}{}\label{writerthread_8h_source}\index{src/writerthread.h@{src/writerthread.h}}
+\doxymbox{\hyperlink{writerthread_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WRITER\_THREAD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WRITER\_THREAD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{writer_8h}{writer.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{options.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <atomic>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <libdeflate.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{singleproducersingleconsumerlist_8h}{singleproducersingleconsumerlist.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{writerthread_8h_ab539b40c685ab3d11cf4aa1d257a97d9}{OFFSET\_RING\_SIZE}}\ =\ 512;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{struct\ }\textcolor{keyword}{alignas}(64)\ \doxymbox{\hyperlink{structOffsetSlot}{OffsetSlot}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ std::atomic<size\_t>\ \doxymbox{\hyperlink{structOffsetSlot_af3e846bee8ff1861427c7b945eb0d004}{cumulative\_offset}}\{0\};}
+\DoxyCodeLine{00021\ \ \ \ \ std::atomic<size\_t>\ \doxymbox{\hyperlink{structOffsetSlot_a4de0c6d01bcf34ce33692ac17a8de4c6}{published\_seq}}\{SIZE\_MAX\};}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classWriterThread_ad85722858d6f73e7db995d7c940038eb}{WriterThread}}\{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread_ad85722858d6f73e7db995d7c940038eb}{WriterThread}}(\doxymbox{\hyperlink{classOptions}{Options}}*\ opt,\ \textcolor{keywordtype}{string}\ filename,\ \textcolor{keywordtype}{bool}\ isSTDOUT\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{classWriterThread_a1f6800d9e272c0cb2eb7a0c774b14f4e}{\string~WriterThread}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriterThread_a876dbb8b56ba5660ad370212e31b1b72}{initWriter}}(\textcolor{keywordtype}{string}\ filename1,\ \textcolor{keywordtype}{bool}\ isSTDOUT\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriterThread_a8bea61e2a4a63dd11ab55e5284026626}{initBufferLists}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriterThread_ad5a34ac64a25fed4e1e8b5c63061d579}{cleanup}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriterThread_a79f1d3c1090568800b7613b8a7689468}{isCompleted}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriterThread_a213a85cf26e05550566c3779a2b588b1}{output}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriterThread_a9b29200184e58f51fc366e38691c174b}{input}}(\textcolor{keywordtype}{int}\ tid,\ \textcolor{keywordtype}{string}*\ data);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriterThread_a590319d06f1de992b9621624dbbb8fc9}{setInputCompleted}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{classWriterThread_a09e82ab15e9a38c213117495c9c9fe58}{bufferLength}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classWriterThread_a6dbeca6d78c74aec366524b49fed0808}{mBufferLength}};\};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classWriterThread_a3d1949e8e7ba391898e67a6034cf61ce}{getFilename}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classWriterThread_aa855284d8283446d8010e8a3be0bd75f}{mFilename}};\}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriterThread_a5b9aa1dd1c66c4507414ead32caef0c7}{isPwriteMode}}()\ \{\textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classWriterThread_a1fd695053db832d8894bb07eb855327f}{mPwriteMode}};\}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriterThread_aec981cb042ef8d7d422c8ae1e92c11b6}{deleteWriter}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriterThread_a0d8d2f35142de5a61d3efdcdd8526dfc}{inputPwrite}}(\textcolor{keywordtype}{int}\ tid,\ \textcolor{keywordtype}{string}*\ data);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classWriterThread_a502ba2307fe879b41e5bfb01a253e675}{setInputCompletedPwrite}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \doxymbox{\hyperlink{classWriter}{Writer}}*\ \doxymbox{\hyperlink{classWriterThread_ac2c00f8ea2c638b346080b5ed6053f3c}{mWriter1}};}
+\DoxyCodeLine{00050\ \ \ \ \ \doxymbox{\hyperlink{classOptions}{Options}}*\ \doxymbox{\hyperlink{classWriterThread_a3563f37bc0d85dc10d7b3d509cfa5e11}{mOptions}};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classWriterThread_aa855284d8283446d8010e8a3be0bd75f}{mFilename}};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriterThread_a83ba79609c76ae183b246d3c8cee40e6}{mInputCompleted}};}
+\DoxyCodeLine{00054\ \ \ \ \ atomic\_long\ \doxymbox{\hyperlink{classWriterThread_a6dbeca6d78c74aec366524b49fed0808}{mBufferLength}};}
+\DoxyCodeLine{00055\ \ \ \ \ \doxymbox{\hyperlink{classSingleProducerSingleConsumerList}{SingleProducerSingleConsumerList<string*>}}**\ \doxymbox{\hyperlink{classWriterThread_aa134bf1af8bb678a156129fc0556742b}{mBufferLists}};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classWriterThread_ae0c4e96dbcdaebb33d05310fc47bdecb}{mWorkingBufferList}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ pwrite\ mode:\ parallel\ libdeflate\ gz\ compression\ +\ direct\ file\ write}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classWriterThread_a1fd695053db832d8894bb07eb855327f}{mPwriteMode}};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classWriterThread_a862ae22da6e9e2e6789519bb6aa08d04}{mFd}};}
+\DoxyCodeLine{00061\ \ \ \ \ \doxymbox{\hyperlink{structOffsetSlot}{OffsetSlot}}*\ \doxymbox{\hyperlink{classWriterThread_ad3c724af9d80f9a42041246dc77e8cf6}{mOffsetRing}};}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{size\_t}*\ \doxymbox{\hyperlink{classWriterThread_a204861ab743a5446351ca548aca4034a}{mNextSeq}};}
+\DoxyCodeLine{00063\ \ \ \ \ libdeflate\_compressor**\ \doxymbox{\hyperlink{classWriterThread_ac22849e47b5312d0385684af7c503828}{mCompressors}};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{char}**\ \doxymbox{\hyperlink{classWriterThread_a51ecdb4fb3baa26b8f365139dbbcc796}{mCompBufs}};\ \ \ \ \ \ \ \textcolor{comment}{//\ per-\/worker\ pre-\/allocated\ compress\ output\ buffers}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{size\_t}*\ \doxymbox{\hyperlink{classWriterThread_a3e14b5f84d2414ad8f8c783548b3de7c}{mCompBufSizes}};\ \ \textcolor{comment}{//\ per-\/worker\ buffer\ sizes}}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

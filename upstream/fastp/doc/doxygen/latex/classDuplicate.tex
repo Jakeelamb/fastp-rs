@@ -1,0 +1,172 @@
+\doxysection{Duplicate Class Reference}
+\hypertarget{classDuplicate}{}\label{classDuplicate}\index{Duplicate@{Duplicate}}
+
+
+{\ttfamily \+\#include $<$duplicate.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classDuplicate_a556f1ed55137a2044eedcd62cd442368}{Duplicate}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt)
+\item 
+\doxymbox{\hyperlink{classDuplicate_a34fc56b85205788738da635fcc3245bb}{\texorpdfstring{$\sim$}{\string~}\+Duplicate}} ()
+\item 
+bool \doxymbox{\hyperlink{classDuplicate_a168145b6efe245bc00a6e247241b183c}{check\+Read}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r1)
+\item 
+bool \doxymbox{\hyperlink{classDuplicate_ab46011e368c4dabd6a7147f549fde8a8}{check\+Pair}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r1, \doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r2)
+\item 
+void \doxymbox{\hyperlink{classDuplicate_a237315896ed2c23fcb40d576598fca21}{seq2intvector}} (const char \texorpdfstring{$\ast$}{*}data, int len, \doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} \texorpdfstring{$\ast$}{*}output, int pos\+Offset=0)
+\item 
+double \doxymbox{\hyperlink{classDuplicate_a2764bac72d620f1c296d77eb65b1aefc}{get\+Dup\+Rate}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classDuplicate_a8e57060bdc4cfa2813683e4482412014}{init\+Prime\+Arrays}} ()
+\item 
+bool \doxymbox{\hyperlink{classDuplicate_a14eaa18367015498b0a0b23b10b237a4}{apply\+Bloom\+Filter}} (\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} \texorpdfstring{$\ast$}{*}positions)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDuplicate_ac347a39888bf6bb8e5384aa41f542edc}{m\+Options}}
+\item 
+\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} \doxymbox{\hyperlink{classDuplicate_a60159fa0fa1b216f96f2f22190e1c0c2}{m\+Buf\+Len\+In\+Bits}}
+\item 
+\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} \doxymbox{\hyperlink{classDuplicate_ab4555b3b9434c951d9b2d57642f8e87b}{m\+Buf\+Len\+In\+Bytes}}
+\item 
+\doxymbox{\hyperlink{common_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}} \doxymbox{\hyperlink{classDuplicate_a2578a5d1e5eeeecb23a6dc79db93c433}{m\+Buf\+Num}}
+\item 
+atomic\+\_\+uchar \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDuplicate_a70160b6d74373828723ae77c99b281d4}{m\+Dup\+Buf}}
+\item 
+\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classDuplicate_a4eb6e1d9c1a25447dd0a5a36785308bb}{m\+Prime\+Arrays}}
+\item 
+atomic\+\_\+ulong \doxymbox{\hyperlink{classDuplicate_a4b02f4b9fdaba956a32500d2123a1fa4}{m\+Total\+Reads}}
+\item 
+atomic\+\_\+ulong \doxymbox{\hyperlink{classDuplicate_acf4dcf3341a875179ee25fa2614260c9}{m\+Dup\+Reads}}
+\item 
+\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} \doxymbox{\hyperlink{classDuplicate_ab16812c9a3e19ed3e379d1b508630546}{m\+Offset\+Mask}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classDuplicate_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDuplicate_a556f1ed55137a2044eedcd62cd442368}\index{Duplicate@{Duplicate}!Duplicate@{Duplicate}}
+\index{Duplicate@{Duplicate}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{Duplicate()}{Duplicate()}}
+{\footnotesize\ttfamily \label{classDuplicate_a556f1ed55137a2044eedcd62cd442368} 
+Duplicate::\+\+Duplicate (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classDuplicate_a34fc56b85205788738da635fcc3245bb}\index{Duplicate@{Duplicate}!````~Duplicate@{\texorpdfstring{$\sim$}{\string~}Duplicate}}
+\index{````~Duplicate@{\texorpdfstring{$\sim$}{\string~}Duplicate}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Duplicate()}{\string~Duplicate()}}
+{\footnotesize\ttfamily \label{classDuplicate_a34fc56b85205788738da635fcc3245bb} 
+Duplicate::\+\texorpdfstring{$\sim$}{\string~}\+Duplicate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classDuplicate_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDuplicate_a14eaa18367015498b0a0b23b10b237a4}\index{Duplicate@{Duplicate}!applyBloomFilter@{applyBloomFilter}}
+\index{applyBloomFilter@{applyBloomFilter}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{applyBloomFilter()}{applyBloomFilter()}}
+{\footnotesize\ttfamily \label{classDuplicate_a14eaa18367015498b0a0b23b10b237a4} 
+bool Duplicate::\+apply\+Bloom\+Filter (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} \texorpdfstring{$\ast$}{*}}]{positions}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_ab46011e368c4dabd6a7147f549fde8a8}\index{Duplicate@{Duplicate}!checkPair@{checkPair}}
+\index{checkPair@{checkPair}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{checkPair()}{checkPair()}}
+{\footnotesize\ttfamily \label{classDuplicate_ab46011e368c4dabd6a7147f549fde8a8} 
+bool Duplicate::\+check\+Pair (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r1}{, }\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classDuplicate_a168145b6efe245bc00a6e247241b183c}\index{Duplicate@{Duplicate}!checkRead@{checkRead}}
+\index{checkRead@{checkRead}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{checkRead()}{checkRead()}}
+{\footnotesize\ttfamily \label{classDuplicate_a168145b6efe245bc00a6e247241b183c} 
+bool Duplicate::\+check\+Read (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r1}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classDuplicate_a2764bac72d620f1c296d77eb65b1aefc}\index{Duplicate@{Duplicate}!getDupRate@{getDupRate}}
+\index{getDupRate@{getDupRate}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{getDupRate()}{getDupRate()}}
+{\footnotesize\ttfamily \label{classDuplicate_a2764bac72d620f1c296d77eb65b1aefc} 
+double Duplicate::\+get\+Dup\+Rate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classDuplicate_a8e57060bdc4cfa2813683e4482412014}\index{Duplicate@{Duplicate}!initPrimeArrays@{initPrimeArrays}}
+\index{initPrimeArrays@{initPrimeArrays}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{initPrimeArrays()}{initPrimeArrays()}}
+{\footnotesize\ttfamily \label{classDuplicate_a8e57060bdc4cfa2813683e4482412014} 
+void Duplicate::\+init\+Prime\+Arrays (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_a237315896ed2c23fcb40d576598fca21}\index{Duplicate@{Duplicate}!seq2intvector@{seq2intvector}}
+\index{seq2intvector@{seq2intvector}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{seq2intvector()}{seq2intvector()}}
+{\footnotesize\ttfamily \label{classDuplicate_a237315896ed2c23fcb40d576598fca21} 
+void Duplicate::\+seq2intvector (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{int}]{len}{, }\item[{\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{int}]{pos\+Offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classDuplicate_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classDuplicate_a60159fa0fa1b216f96f2f22190e1c0c2}\index{Duplicate@{Duplicate}!mBufLenInBits@{mBufLenInBits}}
+\index{mBufLenInBits@{mBufLenInBits}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mBufLenInBits}{mBufLenInBits}}
+{\footnotesize\ttfamily \label{classDuplicate_a60159fa0fa1b216f96f2f22190e1c0c2} 
+\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} Duplicate::\+m\+Buf\+Len\+In\+Bits\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_ab4555b3b9434c951d9b2d57642f8e87b}\index{Duplicate@{Duplicate}!mBufLenInBytes@{mBufLenInBytes}}
+\index{mBufLenInBytes@{mBufLenInBytes}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mBufLenInBytes}{mBufLenInBytes}}
+{\footnotesize\ttfamily \label{classDuplicate_ab4555b3b9434c951d9b2d57642f8e87b} 
+\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} Duplicate::\+m\+Buf\+Len\+In\+Bytes\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_a2578a5d1e5eeeecb23a6dc79db93c433}\index{Duplicate@{Duplicate}!mBufNum@{mBufNum}}
+\index{mBufNum@{mBufNum}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mBufNum}{mBufNum}}
+{\footnotesize\ttfamily \label{classDuplicate_a2578a5d1e5eeeecb23a6dc79db93c433} 
+\doxymbox{\hyperlink{common_8h_a1134b580f8da4de94ca6b1de4d37975e}{uint32}} Duplicate::\+m\+Buf\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_a70160b6d74373828723ae77c99b281d4}\index{Duplicate@{Duplicate}!mDupBuf@{mDupBuf}}
+\index{mDupBuf@{mDupBuf}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mDupBuf}{mDupBuf}}
+{\footnotesize\ttfamily \label{classDuplicate_a70160b6d74373828723ae77c99b281d4} 
+atomic\+\_\+uchar\texorpdfstring{$\ast$}{*} Duplicate::\+m\+Dup\+Buf\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_acf4dcf3341a875179ee25fa2614260c9}\index{Duplicate@{Duplicate}!mDupReads@{mDupReads}}
+\index{mDupReads@{mDupReads}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mDupReads}{mDupReads}}
+{\footnotesize\ttfamily \label{classDuplicate_acf4dcf3341a875179ee25fa2614260c9} 
+atomic\+\_\+ulong Duplicate::\+m\+Dup\+Reads\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_ab16812c9a3e19ed3e379d1b508630546}\index{Duplicate@{Duplicate}!mOffsetMask@{mOffsetMask}}
+\index{mOffsetMask@{mOffsetMask}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mOffsetMask}{mOffsetMask}}
+{\footnotesize\ttfamily \label{classDuplicate_ab16812c9a3e19ed3e379d1b508630546} 
+\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}} Duplicate::\+m\+Offset\+Mask\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_ac347a39888bf6bb8e5384aa41f542edc}\index{Duplicate@{Duplicate}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classDuplicate_ac347a39888bf6bb8e5384aa41f542edc} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Duplicate::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_a4eb6e1d9c1a25447dd0a5a36785308bb}\index{Duplicate@{Duplicate}!mPrimeArrays@{mPrimeArrays}}
+\index{mPrimeArrays@{mPrimeArrays}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mPrimeArrays}{mPrimeArrays}}
+{\footnotesize\ttfamily \label{classDuplicate_a4eb6e1d9c1a25447dd0a5a36785308bb} 
+\doxymbox{\hyperlink{common_8h_a5975ce0896ee5ec5db2f1a411620a51a}{uint64}}\texorpdfstring{$\ast$}{*} Duplicate::\+m\+Prime\+Arrays\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classDuplicate_a4b02f4b9fdaba956a32500d2123a1fa4}\index{Duplicate@{Duplicate}!mTotalReads@{mTotalReads}}
+\index{mTotalReads@{mTotalReads}!Duplicate@{Duplicate}}
+\doxysubsubsection{\texorpdfstring{mTotalReads}{mTotalReads}}
+{\footnotesize\ttfamily \label{classDuplicate_a4b02f4b9fdaba956a32500d2123a1fa4} 
+atomic\+\_\+ulong Duplicate::\+m\+Total\+Reads\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{duplicate_8h}{duplicate.\+h}}\item 
+src/\+\doxymbox{\hyperlink{duplicate_8cpp}{duplicate.\+cpp}}\end{DoxyCompactItemize}

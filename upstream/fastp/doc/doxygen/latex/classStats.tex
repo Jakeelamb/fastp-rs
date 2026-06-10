@@ -1,0 +1,570 @@
+\doxysection{Stats Class Reference}
+\hypertarget{classStats}{}\label{classStats}\index{Stats@{Stats}}
+
+
+{\ttfamily \+\#include $<$stats.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classStats_a6e3e014bddbda62dc0cc9012fe4a0707}{Stats}} (\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}opt, bool is\+Read2=false, int guessed\+Cycles=0, int buffer\+Margin=1024)
+\item 
+\doxymbox{\hyperlink{classStats_ad32aee12c7d460325f8d7a31159e8acc}{\texorpdfstring{$\sim$}{\string~}\+Stats}} ()
+\item 
+int \doxymbox{\hyperlink{classStats_a9f9530fbf16f39e5c9b953ebf8bbc664}{get\+Cycles}} ()
+\item 
+long \doxymbox{\hyperlink{classStats_a08a6adf2200fb1d8dc458534c70fb070}{get\+Reads}} ()
+\item 
+long \doxymbox{\hyperlink{classStats_a381dca93848aaea14f1dad4d66643fcf}{get\+Bases}} ()
+\item 
+long \doxymbox{\hyperlink{classStats_afb9f2e93a29dd795f46c358640197214}{get\+Q20}} ()
+\item 
+long \doxymbox{\hyperlink{classStats_a4036a0f6b3446e01bfbceaa6adddf689}{get\+Q30}} ()
+\item 
+long \doxymbox{\hyperlink{classStats_ab67ce987a6ccca4b9eae43c3aae361b1}{get\+Q40}} ()
+\item 
+long \doxymbox{\hyperlink{classStats_a6633bfc51f694e857ee1e9b824a5950d}{get\+GCNumber}} ()
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_a70c754f2f14822eafe3d7d46c3262156}{get\+Qual\+Hist}} ()
+\item 
+void \doxymbox{\hyperlink{classStats_ae5c55a5d6f03198bc81eb832c17920c2}{stat\+Read}} (\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}r)
+\item 
+void \doxymbox{\hyperlink{classStats_a41e2b6247986a16a7cb5c00991015dc5}{print}} ()
+\item 
+void \doxymbox{\hyperlink{classStats_adf4a74229128be698bb70ed5ececc963}{summarize}} (bool forced=false)
+\item 
+void \doxymbox{\hyperlink{classStats_ac36a9cefec78d7dbad9dcc1f47ce9436}{report\+Json}} (ofstream \&ofs, string padding)
+\item 
+void \doxymbox{\hyperlink{classStats_a80e3c45404999760838a79950e4b6004}{report\+Html}} (ofstream \&ofs, string filtering\+Type, string read\+Name)
+\item 
+void \doxymbox{\hyperlink{classStats_afd31fd47c1ac3444ee2a4e464dcd575a}{report\+Html\+Quality}} (ofstream \&ofs, string filtering\+Type, string read\+Name)
+\item 
+void \doxymbox{\hyperlink{classStats_a1f6e99391d63f7e136c285fca4476458}{report\+Html\+Contents}} (ofstream \&ofs, string filtering\+Type, string read\+Name)
+\item 
+void \doxymbox{\hyperlink{classStats_a8fc916cb284a1f4178b3344371bbf345}{report\+Html\+KMER}} (ofstream \&ofs, string filtering\+Type, string read\+Name)
+\item 
+void \doxymbox{\hyperlink{classStats_ad9103301c8b696b9a8ae4f548cdb0d3b}{report\+Html\+ORA}} (ofstream \&ofs, string filtering\+Type, string read\+Name)
+\item 
+bool \doxymbox{\hyperlink{classStats_af7f087cd6cba9ab9fb5ac376db003b8f}{is\+Long\+Read}} ()
+\item 
+void \doxymbox{\hyperlink{classStats_a3a1fa583073ce88dd0e34b13c5d52ddc}{init\+Over\+Rep\+Seq}} ()
+\item 
+int \doxymbox{\hyperlink{classStats_ac77e59d6ea9b2cafae2a07a4a63f4ef3}{get\+Mean\+Length}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_ac12ba352b19e6eccb1c4d59dfbd18723}{merge}} (vector$<$ \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} $>$ \&list)
+\item 
+static string \doxymbox{\hyperlink{classStats_a56733cef7c54fa5391671d998e628909}{list2string}} (double \texorpdfstring{$\ast$}{*}list, int size)
+\item 
+static string \doxymbox{\hyperlink{classStats_a56af54a3908e3ef6344ee987b24b3956}{list2string}} (double \texorpdfstring{$\ast$}{*}list, int size, long \texorpdfstring{$\ast$}{*}coords)
+\item 
+static string \doxymbox{\hyperlink{classStats_affc70e7fbe6a0d31541df5c5334350e9}{list2string}} (long \texorpdfstring{$\ast$}{*}list, int size)
+\item 
+static int \doxymbox{\hyperlink{classStats_a1e760301f6f24951e8efe7b401af9fd8}{base2val}} (char base)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classStats_a0243bd6cf86e5d677bd219b808e8fd30}{set\+Cycle\+Pointers}} (int buf\+Len)
+\item 
+void \doxymbox{\hyperlink{classStats_ace442825706816d32c7000f4a4b2e5fb}{extend\+Buffer}} (int new\+Buf\+Len)
+\item 
+string \doxymbox{\hyperlink{classStats_a56453c4010c52c746cbcc07e6f5c3c1b}{make\+Kmer\+TD}} (int i, int j)
+\item 
+string \doxymbox{\hyperlink{classStats_ad233d5194fe5599d059e8efa851ea55f}{kmer3}} (int val)
+\item 
+string \doxymbox{\hyperlink{classStats_a621f64c87df8a297981957ed915eb02a}{kmer2}} (int val)
+\item 
+void \doxymbox{\hyperlink{classStats_a52350f683294594f35fe4fc7db3f5d82}{delete\+Over\+Rep\+Seq\+Dist}} ()
+\item 
+bool \doxymbox{\hyperlink{classStats_a05f70b43f9b1237cb13312f129402fcf}{over\+Rep\+Passed}} (string \&seq, long count)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_a729fa232954d3b81b313d6ef157d638a}{m\+Options}}
+\item 
+bool \doxymbox{\hyperlink{classStats_a55c2da3cf8d2b79079321a77bce26d85}{m\+Is\+Read2}}
+\item 
+long \doxymbox{\hyperlink{classStats_a42a1223914bd31299e6862f3002989a1}{m\+Reads}}
+\item 
+int \doxymbox{\hyperlink{classStats_a340f27e72128dbdb1ce2473cbe6867f2}{m\+Evaluated\+Seq\+Len}}
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_a42ffa7d563c7ceb562b72f220b408c9c}{m\+Cycle\+Buffer}}
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_ae1b4f836cc62feea4e5c280d9a4e6cdb}{m\+Cycle\+Q30\+Bases}} \+[8]\+
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_adcf84dc3013fca1e5b7a4d51d936f016}{m\+Cycle\+Q20\+Bases}} \+[8]\+
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_a955290ac8221b197d08d3e0b5ffca5be}{m\+Cycle\+Base\+Contents}} \+[8]\+
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_a0de4fa9b5b47f256ea7014a4e1079f27}{m\+Cycle\+Base\+Qual}} \+[8]\+
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_ac403adaae64caf6c329f7fb05087a2e7}{m\+Cycle\+Total\+Base}}
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_a6a737d8bb248fcfc31c5d26766bc5635}{m\+Cycle\+Total\+Qual}}
+\item 
+long \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classStats_a7f5ec473f40a93e14d61105f7f211993}{m\+Kmer}}
+\item 
+long \doxymbox{\hyperlink{classStats_aec9d0fc7cbef3b0ebffec74d719de7b3}{m\+Base\+Qual\+Histogram}} \+[128]\+
+\item 
+map$<$ string, double \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{classStats_aa5d888afc7b8c82c8172ec9c5c7f5ee4}{m\+Quality\+Curves}}
+\item 
+map$<$ string, double \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{classStats_ace10d1fecc73060fa407d53c26608a19}{m\+Content\+Curves}}
+\item 
+map$<$ string, long $>$ \doxymbox{\hyperlink{classStats_afdd3d694e0482b4103618819a6823f0c}{m\+Over\+Rep\+Seq}}
+\item 
+map$<$ string, long \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{classStats_a6e749a56e715318d44ee8fbe810cd6b3}{m\+Over\+Rep\+Seq\+Dist}}
+\item 
+int \doxymbox{\hyperlink{classStats_a63af9a5ef51bb52c0e95a73b016b0a52}{m\+Cycles}}
+\item 
+int \doxymbox{\hyperlink{classStats_a3cc90afb06772b59244b874c71896234}{m\+Buf\+Len}}
+\item 
+long \doxymbox{\hyperlink{classStats_af6d612c26123d3b5ebd44e11c83969b0}{m\+Bases}}
+\item 
+long \doxymbox{\hyperlink{classStats_abd64631b60b9b537a34da6b1bd28312e}{m\+Q20\+Bases}} \+[8]\+
+\item 
+long \doxymbox{\hyperlink{classStats_aebd5413d37e0d9949a2d3569e36a5404}{m\+Q30\+Bases}} \+[8]\+
+\item 
+long \doxymbox{\hyperlink{classStats_a0b624a121f5d7f168308eccba73bcf06}{m\+Base\+Contents}} \+[8]\+
+\item 
+long \doxymbox{\hyperlink{classStats_a07de69d6992ee6953b6f9594d08f5e05}{m\+Q20\+Total}}
+\item 
+long \doxymbox{\hyperlink{classStats_aff18db23c2804c59d49c21daa57db8bb}{m\+Q30\+Total}}
+\item 
+long \doxymbox{\hyperlink{classStats_a5cec2391d31ca4404e41ce2e8694c075}{m\+Q40\+Total}}
+\item 
+bool \doxymbox{\hyperlink{classStats_ae91a6239373fe425550cb7aca45ca936}{summarized}}
+\item 
+long \doxymbox{\hyperlink{classStats_a974eeef30ea0dbc6eb0c44bdf1495907}{m\+Kmer\+Max}}
+\item 
+long \doxymbox{\hyperlink{classStats_ab4c39e3a5939e03c2b4acd3b7f466d51}{m\+Kmer\+Min}}
+\item 
+int \doxymbox{\hyperlink{classStats_ad46678dfd11da821f8a87c8f60894770}{m\+Kmer\+Buf\+Len}}
+\item 
+long \doxymbox{\hyperlink{classStats_a43d87fe98f7187c89d1babcee0765894}{m\+Length\+Sum}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \doxymbox{\hyperlink{classStats_a2abee1f8faf6ce20b7321a87a570e4ca}{CYCLE\+\_\+\+ARRAY\+\_\+\+COUNT}} = 34
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classStats_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classStats_a6e3e014bddbda62dc0cc9012fe4a0707}\index{Stats@{Stats}!Stats@{Stats}}
+\index{Stats@{Stats}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{Stats()}{Stats()}}
+{\footnotesize\ttfamily \label{classStats_a6e3e014bddbda62dc0cc9012fe4a0707} 
+Stats::\+\+Stats (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classOptions}{Options}} \texorpdfstring{$\ast$}{*}}]{opt}{, }\item[{bool}]{is\+Read2}{ = {\ttfamily false}, }\item[{int}]{guessed\+Cycles}{ = {\ttfamily 0}, }\item[{int}]{buffer\+Margin}{ = {\ttfamily 1024}}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_ad32aee12c7d460325f8d7a31159e8acc}\index{Stats@{Stats}!````~Stats@{\texorpdfstring{$\sim$}{\string~}Stats}}
+\index{````~Stats@{\texorpdfstring{$\sim$}{\string~}Stats}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Stats()}{\string~Stats()}}
+{\footnotesize\ttfamily \label{classStats_ad32aee12c7d460325f8d7a31159e8acc} 
+Stats::\+\texorpdfstring{$\sim$}{\string~}\+Stats (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classStats_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classStats_a1e760301f6f24951e8efe7b401af9fd8}\index{Stats@{Stats}!base2val@{base2val}}
+\index{base2val@{base2val}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{base2val()}{base2val()}}
+{\footnotesize\ttfamily \label{classStats_a1e760301f6f24951e8efe7b401af9fd8} 
+int Stats::\+base2val (\begin{DoxyParamCaption}\item[{char}]{base}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classStats_a52350f683294594f35fe4fc7db3f5d82}\index{Stats@{Stats}!deleteOverRepSeqDist@{deleteOverRepSeqDist}}
+\index{deleteOverRepSeqDist@{deleteOverRepSeqDist}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{deleteOverRepSeqDist()}{deleteOverRepSeqDist()}}
+{\footnotesize\ttfamily \label{classStats_a52350f683294594f35fe4fc7db3f5d82} 
+void Stats::\+delete\+Over\+Rep\+Seq\+Dist (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ace442825706816d32c7000f4a4b2e5fb}\index{Stats@{Stats}!extendBuffer@{extendBuffer}}
+\index{extendBuffer@{extendBuffer}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{extendBuffer()}{extendBuffer()}}
+{\footnotesize\ttfamily \label{classStats_ace442825706816d32c7000f4a4b2e5fb} 
+void Stats::\+extend\+Buffer (\begin{DoxyParamCaption}\item[{int}]{new\+Buf\+Len}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a381dca93848aaea14f1dad4d66643fcf}\index{Stats@{Stats}!getBases@{getBases}}
+\index{getBases@{getBases}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getBases()}{getBases()}}
+{\footnotesize\ttfamily \label{classStats_a381dca93848aaea14f1dad4d66643fcf} 
+long Stats::\+get\+Bases (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a9f9530fbf16f39e5c9b953ebf8bbc664}\index{Stats@{Stats}!getCycles@{getCycles}}
+\index{getCycles@{getCycles}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getCycles()}{getCycles()}}
+{\footnotesize\ttfamily \label{classStats_a9f9530fbf16f39e5c9b953ebf8bbc664} 
+int Stats::\+get\+Cycles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a6633bfc51f694e857ee1e9b824a5950d}\index{Stats@{Stats}!getGCNumber@{getGCNumber}}
+\index{getGCNumber@{getGCNumber}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getGCNumber()}{getGCNumber()}}
+{\footnotesize\ttfamily \label{classStats_a6633bfc51f694e857ee1e9b824a5950d} 
+long Stats::\+get\+GCNumber (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_ac77e59d6ea9b2cafae2a07a4a63f4ef3}\index{Stats@{Stats}!getMeanLength@{getMeanLength}}
+\index{getMeanLength@{getMeanLength}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getMeanLength()}{getMeanLength()}}
+{\footnotesize\ttfamily \label{classStats_ac77e59d6ea9b2cafae2a07a4a63f4ef3} 
+int Stats::\+get\+Mean\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_afb9f2e93a29dd795f46c358640197214}\index{Stats@{Stats}!getQ20@{getQ20}}
+\index{getQ20@{getQ20}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getQ20()}{getQ20()}}
+{\footnotesize\ttfamily \label{classStats_afb9f2e93a29dd795f46c358640197214} 
+long Stats::\+get\+Q20 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a4036a0f6b3446e01bfbceaa6adddf689}\index{Stats@{Stats}!getQ30@{getQ30}}
+\index{getQ30@{getQ30}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getQ30()}{getQ30()}}
+{\footnotesize\ttfamily \label{classStats_a4036a0f6b3446e01bfbceaa6adddf689} 
+long Stats::\+get\+Q30 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_ab67ce987a6ccca4b9eae43c3aae361b1}\index{Stats@{Stats}!getQ40@{getQ40}}
+\index{getQ40@{getQ40}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getQ40()}{getQ40()}}
+{\footnotesize\ttfamily \label{classStats_ab67ce987a6ccca4b9eae43c3aae361b1} 
+long Stats::\+get\+Q40 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a70c754f2f14822eafe3d7d46c3262156}\index{Stats@{Stats}!getQualHist@{getQualHist}}
+\index{getQualHist@{getQualHist}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getQualHist()}{getQualHist()}}
+{\footnotesize\ttfamily \label{classStats_a70c754f2f14822eafe3d7d46c3262156} 
+long \texorpdfstring{$\ast$}{*} Stats::\+get\+Qual\+Hist (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a08a6adf2200fb1d8dc458534c70fb070}\index{Stats@{Stats}!getReads@{getReads}}
+\index{getReads@{getReads}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{getReads()}{getReads()}}
+{\footnotesize\ttfamily \label{classStats_a08a6adf2200fb1d8dc458534c70fb070} 
+long Stats::\+get\+Reads (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a3a1fa583073ce88dd0e34b13c5d52ddc}\index{Stats@{Stats}!initOverRepSeq@{initOverRepSeq}}
+\index{initOverRepSeq@{initOverRepSeq}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{initOverRepSeq()}{initOverRepSeq()}}
+{\footnotesize\ttfamily \label{classStats_a3a1fa583073ce88dd0e34b13c5d52ddc} 
+void Stats::\+init\+Over\+Rep\+Seq (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_af7f087cd6cba9ab9fb5ac376db003b8f}\index{Stats@{Stats}!isLongRead@{isLongRead}}
+\index{isLongRead@{isLongRead}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{isLongRead()}{isLongRead()}}
+{\footnotesize\ttfamily \label{classStats_af7f087cd6cba9ab9fb5ac376db003b8f} 
+bool Stats::\+is\+Long\+Read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a621f64c87df8a297981957ed915eb02a}\index{Stats@{Stats}!kmer2@{kmer2}}
+\index{kmer2@{kmer2}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{kmer2()}{kmer2()}}
+{\footnotesize\ttfamily \label{classStats_a621f64c87df8a297981957ed915eb02a} 
+string Stats::\+kmer2 (\begin{DoxyParamCaption}\item[{int}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ad233d5194fe5599d059e8efa851ea55f}\index{Stats@{Stats}!kmer3@{kmer3}}
+\index{kmer3@{kmer3}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{kmer3()}{kmer3()}}
+{\footnotesize\ttfamily \label{classStats_ad233d5194fe5599d059e8efa851ea55f} 
+string Stats::\+kmer3 (\begin{DoxyParamCaption}\item[{int}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a56733cef7c54fa5391671d998e628909}\index{Stats@{Stats}!list2string@{list2string}}
+\index{list2string@{list2string}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{list2string()}{list2string()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classStats_a56733cef7c54fa5391671d998e628909} 
+string Stats::\+list2string (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{list}{, }\item[{int}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classStats_a56af54a3908e3ef6344ee987b24b3956}\index{Stats@{Stats}!list2string@{list2string}}
+\index{list2string@{list2string}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{list2string()}{list2string()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classStats_a56af54a3908e3ef6344ee987b24b3956} 
+string Stats::\+list2string (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{list}{, }\item[{int}]{size}{, }\item[{long \texorpdfstring{$\ast$}{*}}]{coords}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classStats_affc70e7fbe6a0d31541df5c5334350e9}\index{Stats@{Stats}!list2string@{list2string}}
+\index{list2string@{list2string}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{list2string()}{list2string()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classStats_affc70e7fbe6a0d31541df5c5334350e9} 
+string Stats::\+list2string (\begin{DoxyParamCaption}\item[{long \texorpdfstring{$\ast$}{*}}]{list}{, }\item[{int}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classStats_a56453c4010c52c746cbcc07e6f5c3c1b}\index{Stats@{Stats}!makeKmerTD@{makeKmerTD}}
+\index{makeKmerTD@{makeKmerTD}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{makeKmerTD()}{makeKmerTD()}}
+{\footnotesize\ttfamily \label{classStats_a56453c4010c52c746cbcc07e6f5c3c1b} 
+string Stats::\+make\+Kmer\+TD (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{j}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ac12ba352b19e6eccb1c4d59dfbd18723}\index{Stats@{Stats}!merge@{merge}}
+\index{merge@{merge}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{classStats_ac12ba352b19e6eccb1c4d59dfbd18723} 
+\doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} Stats::\+merge (\begin{DoxyParamCaption}\item[{vector$<$ \doxymbox{\hyperlink{classStats}{Stats}} \texorpdfstring{$\ast$}{*} $>$ \&}]{list}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classStats_a05f70b43f9b1237cb13312f129402fcf}\index{Stats@{Stats}!overRepPassed@{overRepPassed}}
+\index{overRepPassed@{overRepPassed}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{overRepPassed()}{overRepPassed()}}
+{\footnotesize\ttfamily \label{classStats_a05f70b43f9b1237cb13312f129402fcf} 
+bool Stats::\+over\+Rep\+Passed (\begin{DoxyParamCaption}\item[{string \&}]{seq}{, }\item[{long}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a41e2b6247986a16a7cb5c00991015dc5}\index{Stats@{Stats}!print@{print}}
+\index{print@{print}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{classStats_a41e2b6247986a16a7cb5c00991015dc5} 
+void Stats::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a80e3c45404999760838a79950e4b6004}\index{Stats@{Stats}!reportHtml@{reportHtml}}
+\index{reportHtml@{reportHtml}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{reportHtml()}{reportHtml()}}
+{\footnotesize\ttfamily \label{classStats_a80e3c45404999760838a79950e4b6004} 
+void Stats::\+report\+Html (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{filtering\+Type}{, }\item[{string}]{read\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a1f6e99391d63f7e136c285fca4476458}\index{Stats@{Stats}!reportHtmlContents@{reportHtmlContents}}
+\index{reportHtmlContents@{reportHtmlContents}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{reportHtmlContents()}{reportHtmlContents()}}
+{\footnotesize\ttfamily \label{classStats_a1f6e99391d63f7e136c285fca4476458} 
+void Stats::\+report\+Html\+Contents (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{filtering\+Type}{, }\item[{string}]{read\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a8fc916cb284a1f4178b3344371bbf345}\index{Stats@{Stats}!reportHtmlKMER@{reportHtmlKMER}}
+\index{reportHtmlKMER@{reportHtmlKMER}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{reportHtmlKMER()}{reportHtmlKMER()}}
+{\footnotesize\ttfamily \label{classStats_a8fc916cb284a1f4178b3344371bbf345} 
+void Stats::\+report\+Html\+KMER (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{filtering\+Type}{, }\item[{string}]{read\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_ad9103301c8b696b9a8ae4f548cdb0d3b}\index{Stats@{Stats}!reportHtmlORA@{reportHtmlORA}}
+\index{reportHtmlORA@{reportHtmlORA}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{reportHtmlORA()}{reportHtmlORA()}}
+{\footnotesize\ttfamily \label{classStats_ad9103301c8b696b9a8ae4f548cdb0d3b} 
+void Stats::\+report\+Html\+ORA (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{filtering\+Type}{, }\item[{string}]{read\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_afd31fd47c1ac3444ee2a4e464dcd575a}\index{Stats@{Stats}!reportHtmlQuality@{reportHtmlQuality}}
+\index{reportHtmlQuality@{reportHtmlQuality}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{reportHtmlQuality()}{reportHtmlQuality()}}
+{\footnotesize\ttfamily \label{classStats_afd31fd47c1ac3444ee2a4e464dcd575a} 
+void Stats::\+report\+Html\+Quality (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{filtering\+Type}{, }\item[{string}]{read\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_ac36a9cefec78d7dbad9dcc1f47ce9436}\index{Stats@{Stats}!reportJson@{reportJson}}
+\index{reportJson@{reportJson}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{reportJson()}{reportJson()}}
+{\footnotesize\ttfamily \label{classStats_ac36a9cefec78d7dbad9dcc1f47ce9436} 
+void Stats::\+report\+Json (\begin{DoxyParamCaption}\item[{ofstream \&}]{ofs}{, }\item[{string}]{padding}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_a0243bd6cf86e5d677bd219b808e8fd30}\index{Stats@{Stats}!setCyclePointers@{setCyclePointers}}
+\index{setCyclePointers@{setCyclePointers}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{setCyclePointers()}{setCyclePointers()}}
+{\footnotesize\ttfamily \label{classStats_a0243bd6cf86e5d677bd219b808e8fd30} 
+void Stats::\+set\+Cycle\+Pointers (\begin{DoxyParamCaption}\item[{int}]{buf\+Len}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ae5c55a5d6f03198bc81eb832c17920c2}\index{Stats@{Stats}!statRead@{statRead}}
+\index{statRead@{statRead}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{statRead()}{statRead()}}
+{\footnotesize\ttfamily \label{classStats_ae5c55a5d6f03198bc81eb832c17920c2} 
+void Stats::\+stat\+Read (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classRead}{Read}} \texorpdfstring{$\ast$}{*}}]{r}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classStats_adf4a74229128be698bb70ed5ececc963}\index{Stats@{Stats}!summarize@{summarize}}
+\index{summarize@{summarize}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{summarize()}{summarize()}}
+{\footnotesize\ttfamily \label{classStats_adf4a74229128be698bb70ed5ececc963} 
+void Stats::\+summarize (\begin{DoxyParamCaption}\item[{bool}]{forced}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classStats_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classStats_a2abee1f8faf6ce20b7321a87a570e4ca}\index{Stats@{Stats}!CYCLE\_ARRAY\_COUNT@{CYCLE\_ARRAY\_COUNT}}
+\index{CYCLE\_ARRAY\_COUNT@{CYCLE\_ARRAY\_COUNT}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{CYCLE\_ARRAY\_COUNT}{CYCLE\_ARRAY\_COUNT}}
+{\footnotesize\ttfamily \label{classStats_a2abee1f8faf6ce20b7321a87a570e4ca} 
+const int Stats::\+\+CYCLE\+\_\+\+ARRAY\+\_\+\+COUNT = 34\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classStats_a0b624a121f5d7f168308eccba73bcf06}\index{Stats@{Stats}!mBaseContents@{mBaseContents}}
+\index{mBaseContents@{mBaseContents}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mBaseContents}{mBaseContents}}
+{\footnotesize\ttfamily \label{classStats_a0b624a121f5d7f168308eccba73bcf06} 
+long Stats::\+m\+Base\+Contents\+[8]\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_aec9d0fc7cbef3b0ebffec74d719de7b3}\index{Stats@{Stats}!mBaseQualHistogram@{mBaseQualHistogram}}
+\index{mBaseQualHistogram@{mBaseQualHistogram}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mBaseQualHistogram}{mBaseQualHistogram}}
+{\footnotesize\ttfamily \label{classStats_aec9d0fc7cbef3b0ebffec74d719de7b3} 
+long Stats::\+m\+Base\+Qual\+Histogram\+[128]\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_af6d612c26123d3b5ebd44e11c83969b0}\index{Stats@{Stats}!mBases@{mBases}}
+\index{mBases@{mBases}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mBases}{mBases}}
+{\footnotesize\ttfamily \label{classStats_af6d612c26123d3b5ebd44e11c83969b0} 
+long Stats::\+m\+Bases\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a3cc90afb06772b59244b874c71896234}\index{Stats@{Stats}!mBufLen@{mBufLen}}
+\index{mBufLen@{mBufLen}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mBufLen}{mBufLen}}
+{\footnotesize\ttfamily \label{classStats_a3cc90afb06772b59244b874c71896234} 
+int Stats::\+m\+Buf\+Len\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ace10d1fecc73060fa407d53c26608a19}\index{Stats@{Stats}!mContentCurves@{mContentCurves}}
+\index{mContentCurves@{mContentCurves}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mContentCurves}{mContentCurves}}
+{\footnotesize\ttfamily \label{classStats_ace10d1fecc73060fa407d53c26608a19} 
+map$<$string, double\texorpdfstring{$\ast$}{*}$>$ Stats::\+m\+Content\+Curves\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a955290ac8221b197d08d3e0b5ffca5be}\index{Stats@{Stats}!mCycleBaseContents@{mCycleBaseContents}}
+\index{mCycleBaseContents@{mCycleBaseContents}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mCycleBaseContents}{mCycleBaseContents}}
+{\footnotesize\ttfamily \label{classStats_a955290ac8221b197d08d3e0b5ffca5be} 
+long\texorpdfstring{$\ast$}{*} Stats::\+m\+Cycle\+Base\+Contents\+[8]\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a0de4fa9b5b47f256ea7014a4e1079f27}\index{Stats@{Stats}!mCycleBaseQual@{mCycleBaseQual}}
+\index{mCycleBaseQual@{mCycleBaseQual}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mCycleBaseQual}{mCycleBaseQual}}
+{\footnotesize\ttfamily \label{classStats_a0de4fa9b5b47f256ea7014a4e1079f27} 
+long\texorpdfstring{$\ast$}{*} Stats::\+m\+Cycle\+Base\+Qual\+[8]\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a42ffa7d563c7ceb562b72f220b408c9c}\index{Stats@{Stats}!mCycleBuffer@{mCycleBuffer}}
+\index{mCycleBuffer@{mCycleBuffer}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mCycleBuffer}{mCycleBuffer}}
+{\footnotesize\ttfamily \label{classStats_a42ffa7d563c7ceb562b72f220b408c9c} 
+long\texorpdfstring{$\ast$}{*} Stats::\+m\+Cycle\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_adcf84dc3013fca1e5b7a4d51d936f016}\index{Stats@{Stats}!mCycleQ20Bases@{mCycleQ20Bases}}
+\index{mCycleQ20Bases@{mCycleQ20Bases}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mCycleQ20Bases}{mCycleQ20Bases}}
+{\footnotesize\ttfamily \label{classStats_adcf84dc3013fca1e5b7a4d51d936f016} 
+long\texorpdfstring{$\ast$}{*} Stats::\+m\+Cycle\+Q20\+Bases\+[8]\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ae1b4f836cc62feea4e5c280d9a4e6cdb}\index{Stats@{Stats}!mCycleQ30Bases@{mCycleQ30Bases}}
+\index{mCycleQ30Bases@{mCycleQ30Bases}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mCycleQ30Bases}{mCycleQ30Bases}}
+{\footnotesize\ttfamily \label{classStats_ae1b4f836cc62feea4e5c280d9a4e6cdb} 
+long\texorpdfstring{$\ast$}{*} Stats::\+m\+Cycle\+Q30\+Bases\+[8]\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a63af9a5ef51bb52c0e95a73b016b0a52}\index{Stats@{Stats}!mCycles@{mCycles}}
+\index{mCycles@{mCycles}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mCycles}{mCycles}}
+{\footnotesize\ttfamily \label{classStats_a63af9a5ef51bb52c0e95a73b016b0a52} 
+int Stats::\+m\+Cycles\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ac403adaae64caf6c329f7fb05087a2e7}\index{Stats@{Stats}!mCycleTotalBase@{mCycleTotalBase}}
+\index{mCycleTotalBase@{mCycleTotalBase}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mCycleTotalBase}{mCycleTotalBase}}
+{\footnotesize\ttfamily \label{classStats_ac403adaae64caf6c329f7fb05087a2e7} 
+long\texorpdfstring{$\ast$}{*} Stats::\+m\+Cycle\+Total\+Base\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a6a737d8bb248fcfc31c5d26766bc5635}\index{Stats@{Stats}!mCycleTotalQual@{mCycleTotalQual}}
+\index{mCycleTotalQual@{mCycleTotalQual}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mCycleTotalQual}{mCycleTotalQual}}
+{\footnotesize\ttfamily \label{classStats_a6a737d8bb248fcfc31c5d26766bc5635} 
+long\texorpdfstring{$\ast$}{*} Stats::\+m\+Cycle\+Total\+Qual\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a340f27e72128dbdb1ce2473cbe6867f2}\index{Stats@{Stats}!mEvaluatedSeqLen@{mEvaluatedSeqLen}}
+\index{mEvaluatedSeqLen@{mEvaluatedSeqLen}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mEvaluatedSeqLen}{mEvaluatedSeqLen}}
+{\footnotesize\ttfamily \label{classStats_a340f27e72128dbdb1ce2473cbe6867f2} 
+int Stats::\+m\+Evaluated\+Seq\+Len\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a55c2da3cf8d2b79079321a77bce26d85}\index{Stats@{Stats}!mIsRead2@{mIsRead2}}
+\index{mIsRead2@{mIsRead2}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mIsRead2}{mIsRead2}}
+{\footnotesize\ttfamily \label{classStats_a55c2da3cf8d2b79079321a77bce26d85} 
+bool Stats::\+m\+Is\+Read2\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a7f5ec473f40a93e14d61105f7f211993}\index{Stats@{Stats}!mKmer@{mKmer}}
+\index{mKmer@{mKmer}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mKmer}{mKmer}}
+{\footnotesize\ttfamily \label{classStats_a7f5ec473f40a93e14d61105f7f211993} 
+long\texorpdfstring{$\ast$}{*} Stats::\+m\+Kmer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ad46678dfd11da821f8a87c8f60894770}\index{Stats@{Stats}!mKmerBufLen@{mKmerBufLen}}
+\index{mKmerBufLen@{mKmerBufLen}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mKmerBufLen}{mKmerBufLen}}
+{\footnotesize\ttfamily \label{classStats_ad46678dfd11da821f8a87c8f60894770} 
+int Stats::\+m\+Kmer\+Buf\+Len\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a974eeef30ea0dbc6eb0c44bdf1495907}\index{Stats@{Stats}!mKmerMax@{mKmerMax}}
+\index{mKmerMax@{mKmerMax}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mKmerMax}{mKmerMax}}
+{\footnotesize\ttfamily \label{classStats_a974eeef30ea0dbc6eb0c44bdf1495907} 
+long Stats::\+m\+Kmer\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ab4c39e3a5939e03c2b4acd3b7f466d51}\index{Stats@{Stats}!mKmerMin@{mKmerMin}}
+\index{mKmerMin@{mKmerMin}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mKmerMin}{mKmerMin}}
+{\footnotesize\ttfamily \label{classStats_ab4c39e3a5939e03c2b4acd3b7f466d51} 
+long Stats::\+m\+Kmer\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a43d87fe98f7187c89d1babcee0765894}\index{Stats@{Stats}!mLengthSum@{mLengthSum}}
+\index{mLengthSum@{mLengthSum}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mLengthSum}{mLengthSum}}
+{\footnotesize\ttfamily \label{classStats_a43d87fe98f7187c89d1babcee0765894} 
+long Stats::\+m\+Length\+Sum\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a729fa232954d3b81b313d6ef157d638a}\index{Stats@{Stats}!mOptions@{mOptions}}
+\index{mOptions@{mOptions}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mOptions}{mOptions}}
+{\footnotesize\ttfamily \label{classStats_a729fa232954d3b81b313d6ef157d638a} 
+\doxymbox{\hyperlink{classOptions}{Options}}\texorpdfstring{$\ast$}{*} Stats::\+m\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_afdd3d694e0482b4103618819a6823f0c}\index{Stats@{Stats}!mOverRepSeq@{mOverRepSeq}}
+\index{mOverRepSeq@{mOverRepSeq}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mOverRepSeq}{mOverRepSeq}}
+{\footnotesize\ttfamily \label{classStats_afdd3d694e0482b4103618819a6823f0c} 
+map$<$string, long$>$ Stats::\+m\+Over\+Rep\+Seq\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a6e749a56e715318d44ee8fbe810cd6b3}\index{Stats@{Stats}!mOverRepSeqDist@{mOverRepSeqDist}}
+\index{mOverRepSeqDist@{mOverRepSeqDist}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mOverRepSeqDist}{mOverRepSeqDist}}
+{\footnotesize\ttfamily \label{classStats_a6e749a56e715318d44ee8fbe810cd6b3} 
+map$<$string, long\texorpdfstring{$\ast$}{*}$>$ Stats::\+m\+Over\+Rep\+Seq\+Dist\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_abd64631b60b9b537a34da6b1bd28312e}\index{Stats@{Stats}!mQ20Bases@{mQ20Bases}}
+\index{mQ20Bases@{mQ20Bases}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mQ20Bases}{mQ20Bases}}
+{\footnotesize\ttfamily \label{classStats_abd64631b60b9b537a34da6b1bd28312e} 
+long Stats::\+m\+Q20\+Bases\+[8]\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a07de69d6992ee6953b6f9594d08f5e05}\index{Stats@{Stats}!mQ20Total@{mQ20Total}}
+\index{mQ20Total@{mQ20Total}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mQ20Total}{mQ20Total}}
+{\footnotesize\ttfamily \label{classStats_a07de69d6992ee6953b6f9594d08f5e05} 
+long Stats::\+m\+Q20\+Total\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_aebd5413d37e0d9949a2d3569e36a5404}\index{Stats@{Stats}!mQ30Bases@{mQ30Bases}}
+\index{mQ30Bases@{mQ30Bases}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mQ30Bases}{mQ30Bases}}
+{\footnotesize\ttfamily \label{classStats_aebd5413d37e0d9949a2d3569e36a5404} 
+long Stats::\+m\+Q30\+Bases\+[8]\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_aff18db23c2804c59d49c21daa57db8bb}\index{Stats@{Stats}!mQ30Total@{mQ30Total}}
+\index{mQ30Total@{mQ30Total}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mQ30Total}{mQ30Total}}
+{\footnotesize\ttfamily \label{classStats_aff18db23c2804c59d49c21daa57db8bb} 
+long Stats::\+m\+Q30\+Total\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a5cec2391d31ca4404e41ce2e8694c075}\index{Stats@{Stats}!mQ40Total@{mQ40Total}}
+\index{mQ40Total@{mQ40Total}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mQ40Total}{mQ40Total}}
+{\footnotesize\ttfamily \label{classStats_a5cec2391d31ca4404e41ce2e8694c075} 
+long Stats::\+m\+Q40\+Total\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_aa5d888afc7b8c82c8172ec9c5c7f5ee4}\index{Stats@{Stats}!mQualityCurves@{mQualityCurves}}
+\index{mQualityCurves@{mQualityCurves}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mQualityCurves}{mQualityCurves}}
+{\footnotesize\ttfamily \label{classStats_aa5d888afc7b8c82c8172ec9c5c7f5ee4} 
+map$<$string, double\texorpdfstring{$\ast$}{*}$>$ Stats::\+m\+Quality\+Curves\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_a42a1223914bd31299e6862f3002989a1}\index{Stats@{Stats}!mReads@{mReads}}
+\index{mReads@{mReads}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{mReads}{mReads}}
+{\footnotesize\ttfamily \label{classStats_a42a1223914bd31299e6862f3002989a1} 
+long Stats::\+m\+Reads\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classStats_ae91a6239373fe425550cb7aca45ca936}\index{Stats@{Stats}!summarized@{summarized}}
+\index{summarized@{summarized}!Stats@{Stats}}
+\doxysubsubsection{\texorpdfstring{summarized}{summarized}}
+{\footnotesize\ttfamily \label{classStats_ae91a6239373fe425550cb7aca45ca936} 
+bool Stats::\+summarized\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+src/\+\doxymbox{\hyperlink{stats_8h}{stats.\+h}}\item 
+src/\+\doxymbox{\hyperlink{stats_8cpp}{stats.\+cpp}}\end{DoxyCompactItemize}

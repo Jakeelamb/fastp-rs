@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classUmiProcessor" kind="class" language="C++" prot="public">
+    <compoundname>UmiProcessor</compoundname>
+    <includes refid="umiprocessor_8h" local="no">umiprocessor.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" prot="private" static="no" mutable="no">
+        <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+        <definition>Options* UmiProcessor::mOptions</definition>
+        <argsstring></argsstring>
+        <name>mOptions</name>
+        <qualifiedname>UmiProcessor::mOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/umiprocessor.h" line="21" column="13" bodyfile="src/umiprocessor.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUmiProcessor_1aba53b09204bd4d30b31744304a1b754d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UmiProcessor::UmiProcessor</definition>
+        <argsstring>(Options *opt)</argsstring>
+        <name>UmiProcessor</name>
+        <qualifiedname>UmiProcessor::UmiProcessor</qualifiedname>
+        <param>
+          <type><ref refid="classOptions" kindref="compound">Options</ref> *</type>
+          <declname>opt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/umiprocessor.h" line="14" column="5" bodyfile="src/umiprocessor.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUmiProcessor_1a1d9b9454b85ce2fe1724d24ed71219b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UmiProcessor::~UmiProcessor</definition>
+        <argsstring>()</argsstring>
+        <name>~UmiProcessor</name>
+        <qualifiedname>UmiProcessor::~UmiProcessor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/umiprocessor.h" line="15" column="5" bodyfile="src/umiprocessor.cpp" bodystart="8" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUmiProcessor_1a1627f37ca86d10388f9152c776958b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UmiProcessor::process</definition>
+        <argsstring>(Read *r1, Read *r2=NULL)</argsstring>
+        <name>process</name>
+        <qualifiedname>UmiProcessor::process</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r1</declname>
+        </param>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r2</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/umiprocessor.h" line="16" column="10" bodyfile="src/umiprocessor.cpp" bodystart="11" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UmiProcessor::addUmiToName</definition>
+        <argsstring>(Read *r, string umi)</argsstring>
+        <name>addUmiToName</name>
+        <qualifiedname>UmiProcessor::addUmiToName</qualifiedname>
+        <param>
+          <type><ref refid="classRead" kindref="compound">Read</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>umi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/umiprocessor.h" line="17" column="10" bodyfile="src/umiprocessor.cpp" bodystart="63" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUmiProcessor_1a80e70afd80861284027547c03f9b8a6a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UmiProcessor::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <qualifiedname>UmiProcessor::test</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/umiprocessor.h" line="18" column="17" bodyfile="src/umiprocessor.cpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AdapterOptions</label>
+        <link refid="classAdapterOptions"/>
+      </node>
+      <node id="9">
+        <label>CorrectionOptions</label>
+        <link refid="classCorrectionOptions"/>
+      </node>
+      <node id="16">
+        <label>DuplicationOptions</label>
+        <link refid="classDuplicationOptions"/>
+      </node>
+      <node id="15">
+        <label>IndexFilterOptions</label>
+        <link refid="classIndexFilterOptions"/>
+      </node>
+      <node id="14">
+        <label>LowComplexityFilterOptions</label>
+        <link refid="classLowComplexityFilterOptions"/>
+      </node>
+      <node id="17">
+        <label>MergeOptions</label>
+        <link refid="classMergeOptions"/>
+      </node>
+      <node id="2">
+        <label>Options</label>
+        <link refid="classOptions"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>trim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>qualfilter</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lengthFilter</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>adapter</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>split</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>qualityCut</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>correction</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>umi</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>polyGTrim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>polyXTrim</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>overRepAnalysis</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>complexityFilter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>indexFilter</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>duplicate</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>merge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>OverrepresentedSequenceAnasysOptions</label>
+        <link refid="classOverrepresentedSequenceAnasysOptions"/>
+      </node>
+      <node id="11">
+        <label>PolyGTrimmerOptions</label>
+        <link refid="classPolyGTrimmerOptions"/>
+      </node>
+      <node id="12">
+        <label>PolyXTrimmerOptions</label>
+        <link refid="classPolyXTrimmerOptions"/>
+      </node>
+      <node id="8">
+        <label>QualityCutOptions</label>
+        <link refid="classQualityCutOptions"/>
+      </node>
+      <node id="4">
+        <label>QualityFilteringOptions</label>
+        <link refid="classQualityFilteringOptions"/>
+      </node>
+      <node id="5">
+        <label>ReadLengthFilteringOptions</label>
+        <link refid="classReadLengthFilteringOptions"/>
+      </node>
+      <node id="7">
+        <label>SplitOptions</label>
+        <link refid="classSplitOptions"/>
+      </node>
+      <node id="3">
+        <label>TrimmingOptions</label>
+        <link refid="classTrimmingOptions"/>
+      </node>
+      <node id="10">
+        <label>UMIOptions</label>
+        <link refid="classUMIOptions"/>
+      </node>
+      <node id="1">
+        <label>UmiProcessor</label>
+        <link refid="classUmiProcessor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mOptions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/umiprocessor.h" line="12" column="1" bodyfile="src/umiprocessor.h" bodystart="12" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classUmiProcessor_1acb507097e4bac61ff6f45cb58cfacc99" prot="public" virt="non-virtual"><scope>UmiProcessor</scope><name>addUmiToName</name></member>
+      <member refid="classUmiProcessor_1a73b4836b721b53f7bc4495bacef69a70" prot="private" virt="non-virtual"><scope>UmiProcessor</scope><name>mOptions</name></member>
+      <member refid="classUmiProcessor_1a1627f37ca86d10388f9152c776958b34" prot="public" virt="non-virtual"><scope>UmiProcessor</scope><name>process</name></member>
+      <member refid="classUmiProcessor_1a80e70afd80861284027547c03f9b8a6a" prot="public" virt="non-virtual"><scope>UmiProcessor</scope><name>test</name></member>
+      <member refid="classUmiProcessor_1aba53b09204bd4d30b31744304a1b754d" prot="public" virt="non-virtual"><scope>UmiProcessor</scope><name>UmiProcessor</name></member>
+      <member refid="classUmiProcessor_1a1d9b9454b85ce2fe1724d24ed71219b5" prot="public" virt="non-virtual"><scope>UmiProcessor</scope><name>~UmiProcessor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
