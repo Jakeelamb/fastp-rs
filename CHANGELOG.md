@@ -5,8 +5,10 @@
 - **CI:** `.github/workflows/ci.yml` on every **push** to `main` and all **pull requests**: `cargo fmt --check`, `cargo test --locked`, `cargo clippy -D warnings`.
 - **CI:** `.github/workflows/bench.yml` (nightly, `workflow_dispatch`, PR label **`bench`** on this repo): SHA256-pinned upstream `fastp` from opengene.org, release `fastp-rs`, and `scripts/ci/bench_compare.sh` smoke timings (median of 3; job summary).
 - **CI:** `Swatinem/rust-cache` on **Bench** and **CI** workflows; Dependabot weekly for **Cargo** + **GitHub Actions** (`.github/dependabot.yml`).
-- **Docs / contracts:** `docs/CONTRIBUTING.md`, `contracts/report-json-v1.json` stub + `contracts/README.md`; benchmark baseline notes (GitHub tag + opengene binary) in `docs/BENCHMARKS.md` and `CONTEXT.md`.
+- **Contracts / tests:** Filled **`contracts/report-json-v1.json`** (JSON pointers + rules + HTML smoke strings); integration tests **`tests/json_contract_and_html_smoke.rs`**; **`scripts/ci/fetch_fixture_b.sh`** + **`fixtures/b/README.md`**; docs (**BENCHMARKS**, **CONTRIBUTING**, **contracts/README**).
+- **Golden A (F1) + CLI smoke:** **`fixtures/a/`** SE + PE + interleaved passthrough vs **`expected/`** (`tests/golden_fixture_a.rs`); **`tests/cli_smoke.rs`** (`--help`, `--version`, subprocess passthrough vs same expected bytes).
 - **Style:** `cargo fmt` on the crate (small rustfmt-only diffs).
+- **Fix:** `clippy::while_let_loop` (`-D warnings`) in `src/pipeline.rs` and `src/lib.rs`.
 
 ## 0.2.0
 

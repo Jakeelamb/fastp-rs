@@ -19,7 +19,9 @@ These match **CI** flags (`--locked` everywhere).
 | [CONTEXT.md](../CONTEXT.md) | Parity vocabulary: CLI strictness, hybrid output contract, perf SLO shape, CI gates, gold fixtures **A/B**, semantic FASTQ **F1/F2**, JSON contracts, HTML smoke. |
 | [PARITY.md](PARITY.md) | Feature-level matrix vs upstream fastp. |
 | [BENCHMARKS.md](BENCHMARKS.md) | Pinned upstream binary, throughput/RSS methodology, result tables, **Bench** workflow entry point. |
-| [Contracts](../contracts/README.md) | Versioned JSON allowlist stubs for strict report tests. |
+| [Contracts](../contracts/README.md) | **`report-json-v1.json`** allowlist + HTML smoke strings; enforced by **`tests/json_contract_and_html_smoke.rs`**. |
+| [fixtures/a/](../fixtures/a/README.md) | Golden **A** FASTQ + **`expected/`** for F1 (`tests/golden_fixture_a.rs`); CLI golden + smoke (`tests/cli_smoke.rs`). |
+| [fixtures/b/](../fixtures/b/README.md) | Optional golden **B** corpus; **`scripts/ci/fetch_fixture_b.sh`** (URL + SHA256 env). |
 | [CI workflow](../.github/workflows/ci.yml) | Every PR / push to `main`: **fmt**, **test**, **clippy** (`--locked`). |
 
 ## CI — opt-in heavy jobs

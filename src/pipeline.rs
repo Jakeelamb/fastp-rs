@@ -273,10 +273,7 @@ fn run_single_end(cfg: &RunConfig, qc: &mut QcCollector, stats: &mut RunStats) -
         None
     };
 
-    loop {
-        let Some(start) = rec.read_four_lines(&mut reader, &mut global_line)? else {
-            break;
-        };
+    while let Some(start) = rec.read_four_lines(&mut reader, &mut global_line)? {
         if let Some(limit) = cfg.reads_to_process {
             if stats.reads_in >= limit {
                 break;
